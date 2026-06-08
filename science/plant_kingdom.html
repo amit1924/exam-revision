@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Kingdom — NCERT Class 6 to 12 Science Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; }
+.whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } .mobile-text-sm { font-size: 0.75rem !important; } .mobile-p-2 { padding: 0.5rem !important; } }
+.glow-card:hover { box-shadow: 0 0 20px rgba(16,185,129,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #064e3b 50%, #0f172a 100%); }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid rgba(16,185,129,0.15); }
+.gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); border: 1px solid rgba(251,191,36,0.15); }
+.gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); border: 1px solid rgba(56,189,248,0.15); }
+.gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); border: 1px solid rgba(192,132,252,0.15); }
+.hl-ruler { color: #60a5fa; font-weight: 600; }
+.hl-date { color: #34d399; font-weight: 600; }
+.hl-policy { color: #a78bfa; font-weight: 600; }
+.hl-event { color: #fb923c; font-weight: 600; }
+.hl-num { color: #f87171; font-weight: 600; }
+.hl-place { color: #22d3ee; font-weight: 500; }
+.hl-term { color: #fbbf24; font-weight: 600; }
+.hl-bg-ruler { background: rgba(96,165,250,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-date { background: rgba(52,211,153,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-policy { background: rgba(167,139,250,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-event { background: rgba(251,146,60,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-num { background: rgba(248,113,113,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-place { background: rgba(34,211,238,0.15); padding: 0 4px; border-radius: 3px; }
+.hl-bg-term { background: rgba(251,191,36,0.15); padding: 0 4px; border-radius: 3px; }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(16,185,129,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#10b981; }
+.bullet-list-green { list-style:none; padding-left:1rem; }
+.bullet-list-green li { position:relative; padding-left:1.5rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+.bullet-list-green li::before { content:'\f0e7'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.6rem; color:#fbbf24; }
+.fact-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(16,185,129,0.15); color:#6ee7b7; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(16,185,129,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(16,185,129,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(52,211,153,0.1); border:1px solid rgba(52,211,153,0.2); font-size:0.82rem; color:#34d399; }
+.mcq-ans.show { display:block; }
+.mcq-block.correct { border-color:rgba(52,211,153,0.3); }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .mnemonic-content { font-size:0.75rem; } }
+.card-border-green { border:1px solid rgba(16,185,129,0.2); }
+.card-border-blue { border:1px solid rgba(56,189,248,0.2); }
+.card-border-purple { border:1px solid rgba(192,132,252,0.2); }
+.card-border-amber { border:1px solid rgba(251,191,36,0.2); }
+.card-border-rose { border:1px solid rgba(244,63,94,0.2); }
+.card-border-cyan { border:1px solid rgba(34,211,238,0.2); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.grid-card { background:linear-gradient(145deg, #111827, #1a2332); border:1px solid #2a3a5c; border-radius:16px; padding:20px; transition:transform 0.3s, box-shadow 0.3s; }
+.grid-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(16,185,129,0.1); }
+.gradient-text { background:linear-gradient(135deg, #34d399, #14b8a6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.gradient-text-gold { background:linear-gradient(135deg, #fbbf24, #f59e0b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.gradient-text-blue { background:linear-gradient(135deg, #60a5fa, #818cf8); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+</style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+
+<!-- Header -->
+<div class="text-center mb-8 fade-in">
+  <div class="inline-block p-3 rounded-full bg-gradient-to-br from-emerald-500/20 to-teal-500/20 mb-4">
+    <i class="fas fa-leaf text-4xl text-emerald-400"></i>
+  </div>
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+    <span class="gradient-text">Plant Kingdom</span>
+  </h1>
+  <p class="text-gray-400 text-base sm:text-lg mb-1">Complete Study Notes — NCERT Class 6 to Class 12</p>
+  <p class="text-gray-500 text-xs sm:text-sm">
+    <i class="fas fa-book-open mr-1 text-emerald-400"></i> NCERT Science Class 6 Ch 7, Class 7 Ch 1, Class 8 Ch 6-8, Class 9 Ch 6, Class 11 Ch 3, Class 12 Ch 2
+    <span class="mx-2">|</span>
+    <i class="fas fa-calendar-alt mr-1 text-emerald-400"></i> 2026-06-08
+    <span class="mx-2">|</span>
+    <i class="fas fa-layer-group mr-1 text-emerald-400"></i> <span id="line-count">1500+</span> lines
+  </p>
+</div>
+
+<!-- Table of Contents - Hamburger Menu -->
+<div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <i class="fas fa-list text-emerald-400 text-sm"></i>
+      <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+      <span class="text-xs text-gray-500 hidden sm:inline">— Jump to section</span>
+    </div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800 transition-all" onclick="toggleMenu()" aria-label="Toggle navigation">
+      <i id="hamburger-icon" class="fas fa-bars text-emerald-400 text-lg"></i>
+    </button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#s1" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">1. Intro</a>
+    <a href="#s2" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">2. Classification</a>
+    <a href="#s3" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">3. Algae</a>
+    <a href="#s4" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">4. Bryophytes</a>
+    <a href="#s5" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">5. Pteridophytes</a>
+    <a href="#s6" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">6. Gymnosperms</a>
+    <a href="#s7" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">7. Angiosperms</a>
+    <a href="#s8" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">8. Life Cycles</a>
+    <a href="#s9" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">9. Tables</a>
+    <a href="#s10" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">10. Mnemonics</a>
+    <a href="#s11" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">11. Economic</a>
+    <a href="#s12" class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all">12. MCQs</a>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('nav-menu');
+  const icon = document.getElementById('hamburger-icon');
+  menu.classList.toggle('hidden');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
+}
+</script>
+
+<!-- ===== SECTION 1 ===== -->
+<div id="s1" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">1</span> Introduction — What Are Plants?</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-seedling"></i> Basic Characteristics</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Autotrophic</span> — can synthesize their own food via photosynthesis</li>
+        <li><span class="hl-term">Photosynthetic</span> — contain chlorophyll in chloroplasts</li>
+        <li><span class="hl-term">Cell wall</span> — made of cellulose (rigid outer covering)</li>
+        <li><span class="hl-term">Eukaryotic</span> — true nucleus and membrane-bound organelles</li>
+        <li><span class="hl-term">Immobile</span> — fixed to substratum (except some algae)</li>
+        <li><span class="hl-term">Primary producers</span> — base of most food chains</li>
+        <li><span class="hl-term">Store food</span> as starch (main reserve carbohydrate)</li>
+        <li><span class="hl-term">Unlimited growth</span> — thanks to meristematic tissues</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-shapes"></i> Types of Plants (Based on Size & Stem)</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Herbs</span> — Small, soft stem, non-woody (e.g., Wheat, Grass, Mint)</li>
+        <li><span class="hl-term">Shrubs</span> — Medium-sized, woody stem near base, branches near ground (e.g., Rose, Hibiscus, Lemon)</li>
+        <li><span class="hl-term">Trees</span> — Tall, thick woody stem (trunk), branches above ground (e.g., Mango, Banyan, Pine)</li>
+        <li><span class="hl-term">Creepers</span> — Weak stem, spread on ground (e.g., Watermelon, Pumpkin, Strawberry)</li>
+        <li><span class="hl-term">Climbers</span> — Weak stem, use support to climb (e.g., Money plant, Grapevine, Bean)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-puzzle-piece"></i> Parts of a Flowering Plant</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Root</span> — Underground, anchors plant, absorbs water & minerals. Types: Tap root (dicots), Fibrous root (monocots)</li>
+        <li><span class="hl-term">Stem</span> — Supports leaves, transports water & food, may store food (potato, ginger)</li>
+        <li><span class="hl-term">Leaf</span> — Photosynthesis, transpiration. Parts: Lamina, Petiole, Midrib, Veins</li>
+        <li><span class="hl-term">Flower</span> — Reproductive organ. Parts: Sepal, Petal, Stamen (male), Carpel/Pistil (female)</li>
+        <li><span class="hl-term">Fruit</span> — Ripened ovary, protects seeds, aids in dispersal</li>
+        <li><span class="hl-term">Seed</span> — Contains embryo, stored food, seed coat. Types: Monocot (1 cotyledon), Dicot (2 cotyledons)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-clock"></i> Classification by Life Cycle</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Annual</span> — Complete life cycle in one season/year (e.g., Wheat, Rice, Mustard, Sunflower)</li>
+        <li><span class="hl-term">Biennial</span> — Two-year cycle: vegetative growth in year 1, flowering & fruiting in year 2 (e.g., Carrot, Radish, Beetroot, Cabbage)</li>
+        <li><span class="hl-term">Perennial</span> — Live for many years, may flower every year (e.g., Mango, Apple, Banyan, Rose, Grass)</li>
+      </ul>
+      <div class="fact-box mt-3">
+        <div class="fact-box-title"><i class="fas fa-lightbulb"></i> Did You Know?</div>
+        <div class="fact-box-content">Some plants show <span class="hl-term">ephemeral</span> life cycles — completing their life cycle in just a few weeks (e.g., desert annuals).</div>
+      </div>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-balance-scale"></i> Classification Basis for Plants</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Basis</th><th>Categories</th><th>Examples</th></tr>
+        <tr><td>Height</td><td>Herb < Shrub < Tree</td><td>Grass < Rose < Mango</td></tr>
+        <tr><td>Stem Hardness</td><td>Herbaceous (soft) / Woody (hard)</td><td>Tomato (herb) / Banyan (woody)</td></tr>
+        <tr><td>Life Span</td><td>Annual / Biennial / Perennial</td><td>Wheat / Carrot / Mango</td></tr>
+        <tr><td>Habitat</td><td>Terrestrial / Aquatic / Epiphytic / Parasitic</td><td>Mango / Hydrilla / Orchid / Cuscuta</td></tr>
+        <tr><td>Mode of Nutrition</td><td>Autotrophic / Heterotrophic (parasitic, saprophytic, insectivorous)</td><td>Most plants / Cuscuta, Mushroom, Pitcher plant</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 2 ===== -->
+<div id="s2" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">2</span> Plant Classification Hierarchy</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-sitemap"></i> Whittaker's Five Kingdom System (1969)</div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Kingdom</th><th>Key Features</th></tr>
+          <tr><td>Monera</td><td>Prokaryotes, no nucleus, unicellular (Bacteria, Cyanobacteria)</td></tr>
+          <tr><td>Protista</td><td>Eukaryotes, unicellular/simple multicellular (Amoeba, Paramecium, Algae like Chlamydomonas)</td></tr>
+          <tr><td>Fungi</td><td>Heterotrophic, chitin cell wall, saprophytic/parasitic (Mushroom, Yeast, Penicillium)</td></tr>
+          <tr><td>Plantae</td><td>Autotrophic, photosynthetic, cellulose cell wall, multicellular</td></tr>
+          <tr><td>Animalia</td><td>Heterotrophic, no cell wall, motile, multicellular</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-code-branch"></i> Kingdom Plantae — Divisions</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Cryptogams</span> (Non-flowering, seedless) — Thallophyta, Bryophyta, Pteridophyta</li>
+        <li><span class="hl-term">Phanerogams</span> (Flowering, seed-bearing) — Gymnosperms, Angiosperms</li>
+        <li>Cryptogams have <span class="hl-term">hidden reproductive organs</span> (no flowers/seeds); Phanerogams have <span class="hl-term">visible reproductive organs</span></li>
+      </ul>
+      <div class="fact-box mt-3">
+        <div class="fact-box-title"><i class="fas fa-arrow-trend-up"></i> Evolutionary Trend</div>
+        <div class="fact-box-content">Thallus (undifferentiated body) → Root, stem, leaf differentiation → Vascular tissue → Seeds → Flowers → Fruits</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-layer-group"></i> The Five Plant Groups — Evolutionary Progression</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Group</th><th>Body Structure</th><th>Vascular Tissue</th><th>Seeds</th><th>Flowers</th><th>Dominant Generation</th></tr>
+        <tr><td><span class="hl-term">Thallophyta</span> (Algae)</td><td>Thalloid, no differentiation</td><td>Absent</td><td>No</td><td>No</td><td>Gametophyte</td></tr>
+        <tr><td><span class="hl-term">Bryophyta</span></td><td>Thalloid/leafy, no true roots/stem/leaves</td><td>Absent</td><td>No</td><td>No</td><td>Gametophyte</td></tr>
+        <tr><td><span class="hl-term">Pteridophyta</span></td><td>True roots, stem, leaves</td><td>Present</td><td>No</td><td>No</td><td>Sporophyte</td></tr>
+        <tr><td><span class="hl-term">Gymnosperms</span></td><td>Roots, stem, leaves</td><td>Present (xylem & phloem)</td><td>Naked seeds</td><td>No (cones)</td><td>Sporophyte</td></tr>
+        <tr><td><span class="hl-term">Angiosperms</span></td><td>Roots, stem, leaves</td><td>Present (vessels in xylem)</td><td>Enclosed in fruit</td><td>Yes</td><td>Sporophyte</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-arrows-spin"></i> Alternation of Generations — Overview</div>
+    <p class="content-text">Alternation of generations refers to the alternation between two multicellular phases: <span class="hl-term">haploid gametophyte</span> (n) and <span class="hl-term">diploid sporophyte</span> (2n).</p>
+    <ul class="bullet-list">
+      <li><span class="hl-term">Haplontic</span> — Gametophyte dominant, sporophyte is only the zygote (e.g., most algae like Spirogyra, Chlamydomonas)</li>
+      <li><span class="hl-term">Diplontic</span> — Sporophyte dominant, gametophyte reduced to few cells (e.g., animals, some algae like Fucus, angiosperms)</li>
+      <li><span class="hl-term">Haplo-diplontic</span> — Both phases multicellular and free-living, but one dominates (e.g., Bryophytes, Pteridophytes, Gymnosperms)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== SECTION 3 ===== -->
+<div id="s3" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">3</span> Algae (Thallophyta)</div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-water"></i> General Characteristics</div>
+    <ul class="bullet-list">
+      <li><span class="hl-term">Thalloid body</span> — No differentiation into root, stem, or leaves</li>
+      <li><span class="hl-term">Autotrophic</span> — Contain chlorophyll for photosynthesis</li>
+      <li><span class="hl-term">Aquatic</span> — Mostly found in freshwater (ponds, lakes) and marine (oceans, seas)</li>
+      <li>Also found in <span class="hl-term">moist terrestrial</span> habitats (tree bark, damp soil, walls)</li>
+      <li>Cell wall made of <span class="hl-term">cellulose</span> (in most algae)</li>
+      <li>Reserve food — <span class="hl-term">Starch</span> (green algae), <span class="hl-term">Floridean starch</span> (red algae), <span class="hl-term">Laminarin & Mannitol</span> (brown algae)</li>
+      <li>Reproduction: <span class="hl-term">Vegetative</span> (fragmentation), <span class="hl-term">Asexual</span> (zoospores, aplanospores), <span class="hl-term">Sexual</span> (isogamy, anisogamy, oogamy)</li>
+      <li>Size range: Microscopic (Chlamydomonas — 10µm) to giant kelps (<span class="hl-num">60-100m</span> long — Macrocystis)</li>
+    </ul>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-microscope"></i> Detailed Classification & Reproduction Types</div>
+    <p class="content-text">Algae show a remarkable diversity in form, from unicellular to multicellular, and in their reproductive strategies. The classification is primarily based on <span class="hl-term">pigment composition</span>, <span class="hl-term">reserve food</span>, and <span class="hl-term">cell wall composition</span>.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Reproduction Type</th><th>Description</th><th>Examples</th></tr>
+        <tr><td>Vegetative</td><td>Fragmentation — thallus breaks into fragments, each grows into new thallus</td><td>Spirogyra, Ulothrix, many filamentous algae</td></tr>
+        <tr><td>Asexual (Zoospores)</td><td>Flagellated motile spores produced in sporangia</td><td>Chlamydomonas, Ulothrix, Vaucheria</td></tr>
+        <tr><td>Asexual (Aplanospores)</td><td>Non-motile spores formed under unfavorable conditions</td><td>Chlamydomonas, Spirogyra (aplanospores)</td></tr>
+        <tr><td>Asexual (Akinetes)</td><td>Thick-walled resting spores</td><td>Ulothrix, Cladophora, Pithophora</td></tr>
+        <tr><td>Sexual (Isogamy)</td><td>Fusion of morphologically similar gametes</td><td>Chlamydomonas (some species), Ulothrix</td></tr>
+        <tr><td>Sexual (Anisogamy)</td><td>Fusion of morphologically different gametes (both motile)</td><td>Chlamydomonas (some species)</td></tr>
+        <tr><td>Sexual (Oogamy)</td><td>Fusion of large non-motile egg and small motile sperm</td><td>Chara, Volvox, Fucus</td></tr>
+        <tr><td>Sexual (Conjugation)</td><td>Gametes move through conjugation tube</td><td>Spirogyra (scalariform/lateral conjugation)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3.1 Green Algae -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 3.1 Green Algae (Chlorophyceae)</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-palette text-yellow-400"></i>
+        <span class="text-yellow-400 font-semibold text-sm">Pigments</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Chlorophyll <span class="hl-term">a</span></li>
+        <li>Chlorophyll <span class="hl-term">b</span></li>
+        <li>Carotenoids (yellow-orange)</li>
+        <li>Xanthophylls</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-utensils text-cyan-400"></i>
+        <span class="text-cyan-400 font-semibold text-sm">Reserve Food & Cell Wall</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Reserve food: <span class="hl-term">Starch</span></li>
+        <li>Cell wall: <span class="hl-term">Cellulose</span></li>
+        <li>Pyrenoids store starch</li>
+        <li>Habitat: <span class="hl-place">Freshwater (85%)</span>, Marine (15%)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-flask text-purple-400"></i>
+        <span class="text-purple-400 font-semibold text-sm">Key Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Chlamydomonas</span> — Unicellular, biflagellate, cup-shaped chloroplast</li>
+        <li><span class="hl-term">Spirogyra</span> — Filamentous, spiral chloroplast, conjugation</li>
+        <li><span class="hl-term">Ulothrix</span> — Filamentous, unbranched, band-shaped chloroplast</li>
+        <li><span class="hl-term">Chara</span> — Stonewort, branched, calcified, oogamous</li>
+        <li><span class="hl-term">Volvox</span> — Colonial, spherical, daughter colonies inside</li>
+        <li><span class="hl-term">Ulva</span> — Sea lettuce, multicellular, sheet-like thallus</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <p class="content-text"><span class="hl-term">Chlorophyceae</span> are called green algae because of the dominance of chlorophyll a and b. They are mostly freshwater forms. The chloroplasts can be cup-shaped (Chlamydomonas), spiral (Spirogyra), or band-shaped (Ulothrix). Sexual reproduction ranges from isogamy (similar gametes) to oogamy (egg and sperm).</p>
+  </div>
+
+  <!-- 3.2 Red Algae -->
+  <div class="subsection-heading"><i class="fas fa-circle text-rose-400 text-xs"></i> 3.2 Red Algae (Rhodophyceae)</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-palette text-rose-400"></i>
+        <span class="text-rose-400 font-semibold text-sm">Pigments</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Chlorophyll <span class="hl-term">a</span></li>
+        <li>Chlorophyll <span class="hl-term">d</span></li>
+        <li><span class="hl-term">r-Phycoerythrin</span> (red, dominant)</li>
+        <li><span class="hl-term">r-Phycocyanin</span> (blue)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-utensils text-cyan-400"></i>
+        <span class="text-cyan-400 font-semibold text-sm">Reserve Food & Cell Wall</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Reserve food: <span class="hl-term">Floridean starch</span></li>
+        <li>Cell wall: <span class="hl-term">Cellulose</span>, Pectin, Agar</li>
+        <li>Habitat: <span class="hl-place">Mostly marine</span></li>
+        <li>Found in <span class="hl-term">deeper waters</span> (absorb blue light)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-flask text-purple-400"></i>
+        <span class="text-purple-400 font-semibold text-sm">Key Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Polysiphonia</span> — Filamentous, branched, red</li>
+        <li><span class="hl-term">Porphyra</span> — Used as Nori (sushi wrap)</li>
+        <li><span class="hl-term">Gracilaria</span> — Agar source</li>
+        <li><span class="hl-term">Gelidium</span> — Main agar source</li>
+        <li><span class="hl-term">Batrachospermum</span> — Freshwater red alga</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <p class="content-text"><span class="hl-term">Rhodophyceae</span> appear red due to the pigment r-phycoerythrin which masks chlorophyll. This pigment absorbs blue light that penetrates deeper water, allowing red algae to live at greater depths than other algae. They are the source of <span class="hl-event">agar</span> (used as a solidifying agent in microbiology) and <span class="hl-event">nori</span> (used in sushi).</p>
+  </div>
+
+  <!-- 3.3 Brown Algae -->
+  <div class="subsection-heading"><i class="fas fa-circle text-amber-600 text-xs"></i> 3.3 Brown Algae (Phaeophyceae)</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-palette text-amber-500"></i>
+        <span class="text-amber-500 font-semibold text-sm">Pigments</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Chlorophyll <span class="hl-term">a</span></li>
+        <li>Chlorophyll <span class="hl-term">c</span></li>
+        <li><span class="hl-term">Fucoxanthin</span> (brown pigment, dominant)</li>
+        <li>Carotenoids</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-utensils text-cyan-400"></i>
+        <span class="text-cyan-400 font-semibold text-sm">Reserve Food & Cell Wall</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Reserve food: <span class="hl-term">Laminarin</span>, <span class="hl-term">Mannitol</span></li>
+        <li>Cell wall: <span class="hl-term">Cellulose</span> + <span class="hl-term">Algin</span></li>
+        <li>Habitat: <span class="hl-place">Marine, cold waters</span></li>
+        <li>Mostly found in intertidal zones</li>
+      </ul>
+    </div>
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-flask text-purple-400"></i>
+        <span class="text-purple-400 font-semibold text-sm">Key Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Laminaria</span> — Kelp, large brown algae</li>
+        <li><span class="hl-term">Sargassum</span> — Gulfweed, free-floating</li>
+        <li><span class="hl-term">Fucus</span> — Rockweed, intertidal</li>
+        <li><span class="hl-term">Dictyota</span> — Fan-shaped thallus</li>
+        <li><span class="hl-term">Macrocystis</span> — <span class="hl-event">Giant kelp</span>, largest algae (up to 100m)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <p class="content-text"><span class="hl-term">Phaeophyceae</span> are olive green to brown due to fucoxanthin pigment. They are almost exclusively marine and are the largest and most complex algae. <span class="hl-term">Macrocystis</span> (giant kelp) forms massive underwater forests off the coast of California, supporting rich marine ecosystems. Algin (alginic acid) extracted from brown algae is used as a thickener in ice creams, cosmetics, and pharmaceuticals.</p>
+  </div>
+
+  <!-- Economic Importance of Algae -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-globe"></i> Algae Habitats & Ecological Roles</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div>
+        <p class="content-text font-semibold text-gray-300">Habitat Diversity:</p>
+        <ul class="bullet-list">
+          <li><span class="hl-term">Freshwater</span> — Ponds, lakes, rivers, streams (Spirogyra, Chlamydomonas, Ulothrix, Volvox, Chara)</li>
+          <li><span class="hl-term">Marine</span> — Oceans, seas, intertidal zones (Ulva, Sargassum, Macrocystis, Polysiphonia, Porphyra)</li>
+          <li><span class="hl-term">Terrestrial</span> — Damp soil, tree bark, walls, rocks (Pleurococcus, Trentepohlia)</li>
+          <li><span class="hl-term">Symbiotic</span> — Lichens (algae + fungi), coral symbiosis (zooxanthellae)</li>
+          <li><span class="hl-term">Extreme habitats</span> — Hot springs (Cyanobacteria), snow (Chlamydomonas nivalis — red snow), high salinity (Dunaliella)</li>
+          <li><span class="hl-term">Epiphytic</span> — Growing on other plants (especially in tropical rainforests)</li>
+        </ul>
+      </div>
+      <div>
+        <p class="content-text font-semibold text-gray-300">Ecological Significance:</p>
+        <ul class="bullet-list">
+          <li><span class="hl-term">Oxygen production</span> — Algae (especially phytoplankton) produce ~50% of Earth's oxygen via photosynthesis</li>
+          <li><span class="hl-term">Carbon fixation</span> — Major role in global carbon cycle, sequestering CO₂ from atmosphere</li>
+          <li><span class="hl-term">Food chain base</span> — Phytoplankton forms the base of most aquatic food webs</li>
+          <li><span class="hl-term">Nitrogen fixation</span> — Cyanobacteria fix atmospheric nitrogen (Anabaena, Nostoc)</li>
+          <li><span class="hl-term">Primary succession</span> — Algae are pioneer species on bare rocks, start soil formation</li>
+          <li><span class="hl-term">Bioindicators</span> — Algal diversity indicates water quality; some are pollution indicators</li>
+          <li><span class="hl-term">Algal blooms</span> — Rapid growth due to eutrophication can be harmful (red tides, dead zones)</li>
+          <li><span class="hl-term">Coral reef formation</span> — Symbiotic zooxanthellae (dinoflagellate algae) provide energy to coral polyps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-coins"></i> Economic Importance of Algae</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-vial"></i> Agar</div>
+        <p class="text-gray-400 text-xs">From Gelidium & Gracilaria; used in microbiology as solid culture medium, in jellies, laxatives, cosmetics</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-cubes"></i> Carrageenan</div>
+        <p class="text-gray-400 text-xs">From red algae (Chondrus crispus, Gigartina); stabilizer in dairy, toothpaste, pet food, cosmetics</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-bottle-droplet"></i> Algin/Alginic Acid</div>
+        <p class="text-gray-400 text-xs">From brown algae (Laminaria, Macrocystis); thickener in ice creams, jellies, dental impressions, textiles</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-gas-pump"></i> Biofuel</div>
+        <p class="text-gray-400 text-xs">Algae are a promising source of biodiesel (high lipid content up to 60% dry weight) and bioethanol</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-seedling"></i> Fertilizer & Soil Conditioner</div>
+        <p class="text-gray-400 text-xs">Seaweed (Sargassum, Laminaria, Ascophyllum) used as organic fertilizer rich in K, trace minerals, growth hormones</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-bowl-food"></i> Food & Supplements</div>
+        <p class="text-gray-400 text-xs">Nori (Porphyra) for sushi, Chlorella & Spirulina as dietary supplements, DHA (omega-3) from algae, kelp as food</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-flask"></i> Pharmaceuticals</div>
+        <p class="text-gray-400 text-xs">Antiviral (sulfated polysaccharides), antitumor (carrageenan), anticoagulant, anti-inflammatory compounds</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-water"></i> Wastewater Treatment</div>
+        <p class="text-gray-400 text-xs">Algae remove excess nutrients (N, P) from wastewater, reduce eutrophication, produce biomass for biofuel</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-atom"></i> Bioremediation</div>
+        <p class="text-gray-400 text-xs">Algae absorb heavy metals (Pb, Cd, Hg), radioactive isotopes, and organic pollutants from water</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 4 ===== -->
+<div id="s4" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">4</span> Bryophytes — Amphibians of Plant Kingdom</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-frog"></i> Why "Amphibians of Plant Kingdom"?</div>
+      <ul class="bullet-list">
+        <li>They live in <span class="hl-term">moist, shady habitats</span> (damp soil, tree bark, walls, rock crevices)</li>
+        <li>Require <span class="hl-term">water for fertilization</span> — biflagellate sperm must swim through water to reach egg in archegonium</li>
+        <li>Can survive on land but are <span class="hl-term">dependent on water</span> for sexual reproduction</li>
+        <li>Like amphibians (frogs), they are <span class="hl-term">tied to water</span> for completion of their life cycle</li>
+        <li>They are the <span class="hl-term">first land plants</span> but not fully adapted to dry terrestrial conditions</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-dna"></i> General Characteristics</div>
+      <ul class="bullet-list">
+        <li>Body is <span class="hl-term">thalloid</span> (flat, ribbon-like, no differentiation) or <span class="hl-term">leafy</span> (stem-like axis + leaf-like appendages)</li>
+        <li><span class="hl-term">No true roots</span> — have <span class="hl-term">rhizoids</span> for anchorage (not for water/mineral absorption)</li>
+        <li><span class="hl-term">No vascular tissue</span> (xylem & phloem absent) — water transport by diffusion and capillary action</li>
+        <li><span class="hl-term">Gametophyte</span> (haploid, n) is the dominant, independent, photosynthetic generation</li>
+        <li>Sporophyte (diploid, 2n) is <span class="hl-term">dependent on gametophyte</span> for water and nutrition</li>
+        <li>Sex organs: <span class="hl-term">Antheridium</span> (male — produces biflagellate sperm) and <span class="hl-term">Archegonium</span> (female — flask-shaped, contains egg)</li>
+        <li>Fertilization produces a <span class="hl-term">zygote</span> → embryo → sporophyte (foot + seta + capsule) → spores (via meiosis) → new gametophyte</li>
+        <li>Water is essential for <span class="hl-term">sperm motility</span> — without water, fertilization cannot occur</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <p class="content-text">The zygote in bryophytes is the <span class="hl-term">first cell of the sporophyte generation</span>. Unlike algae, the sporophyte does not become free-living. Instead, it <span class="hl-term">remains attached</span> to the gametophyte and derives nutrition from it throughout its life. The sporophyte consists of three parts: <span class="hl-term">foot</span> (anchored in gametophyte tissue), <span class="hl-term">seta</span> (stalk), and <span class="hl-term">capsule</span> (sporangium). Meiosis occurs inside the capsule to produce haploid spores.</p>
+  </div>
+
+  <!-- 4.1 Liverworts -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 4.1 Liverworts (Hepaticopsida)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-info-circle text-yellow-400"></i>
+        <span class="text-yellow-400 font-semibold text-sm">Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Thalloid or leafy body, <span class="hl-term">dorsiventral</span> (distinct upper and lower surface)</li>
+        <li>Unicellular rhizoids</li>
+        <li>Asexual reproduction by <span class="hl-term">gemmae</span> (small multicellular bodies in gemma cups)</li>
+        <li>Sporophyte has foot, seta, and capsule</li>
+        <li>Spores germinate to form new thallus</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-flask text-cyan-400"></i>
+        <span class="text-cyan-400 font-semibold text-sm">Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Marchantia</span> — Thalloid with gemma cups, rosette-shaped, dioecious</li>
+        <li><span class="hl-term">Riccia</span> — Simple thalloid, rosette-like, dichotomously branched</li>
+        <li><span class="hl-term">Pellia</span> — Thalloid, irregularly branched</li>
+      </ul>
+      <div class="fact-box mt-2">
+        <div class="fact-box-title"><i class="fas fa-lightbulb"></i> Key Point</div>
+        <div class="fact-box-content"><span class="hl-term">Gemmae</span> are green, multicellular structures in gemma cups on Marchantia thallus; they get dispersed by rain splash and grow into new thallus.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4.2 Mosses -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 4.2 Mosses (Bryopsida)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-info-circle text-yellow-400"></i>
+        <span class="text-yellow-400 font-semibold text-sm">Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Leafy</span> with stem-like and leaf-like structures</li>
+        <li><span class="hl-term">Multicellular rhizoids</span> for anchorage</li>
+        <li>Life cycle: Spore → <span class="hl-term">Protonema</span> (thread-like, filamentous stage) → Leafy gametophore</li>
+        <li>Protonema is the <span class="hl-term">juvenile stage</span> that develops from spores</li>
+        <li>Sporophyte has foot, seta (stalk), and capsule (with operculum & peristome)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fas fa-flask text-cyan-400"></i>
+        <span class="text-cyan-400 font-semibold text-sm">Examples & Economic Importance</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Funaria</span> — Carpet moss, common, found on damp soil & walls</li>
+        <li><span class="hl-term">Sphagnum</span> — Peat moss, <span class="hl-event">high ecological importance</span></li>
+        <li><span class="hl-term">Polytrichum</span> — Hair cap moss, tall, found in forests</li>
+      </ul>
+      <div class="fact-box mt-2">
+        <div class="fact-box-title"><i class="fas fa-fire"></i> Sphagnum — Peat Moss</div>
+        <div class="fact-box-content">Sphagnum forms <span class="hl-term">peat bogs</span> in wetlands. Peat is used as <span class="hl-term">fuel</span>, <span class="hl-term">soil conditioner</span> (highest water holding capacity), and for packing plants. Also used in whisky production (peat-smoked malt).</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4.3 Hornworts -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 4.3 Hornworts (Anthocerotopsida)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-emerald-400 font-semibold text-sm"><i class="fas fa-info-circle"></i> Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Thalloid body, <span class="hl-term">horn-like sporophyte</span> (elongated, finger-like capsule)</li>
+        <li>Sporophyte has <span class="hl-term">meristematic tissue</span> at base (continuous growth)</li>
+        <li>Cells contain <span class="hl-term">single large chloroplast</span> (unique)</li>
+        <li>Often have <span class="hl-term">symbiotic cyanobacteria</span> (Nostoc) in thallus cavities</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-emerald-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Anthoceros</span> — Most common genus; dark green, rosette-forming thallus</li>
+        <li>Named for its <span class="hl-term">horn-shaped</span> sporophyte (1-5 cm tall)</li>
+        <li>Sporophyte has <span class="hl-term">stomata</span> (unlike other bryophytes)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 5 ===== -->
+<div id="s5" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">5</span> Pteridophytes — First Vascular Land Plants</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-tree"></i> Key Characteristics</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">True roots, stem, and leaves</span> — first plants with organ differentiation</li>
+        <li><span class="hl-term">Vascular tissue present</span> — Xylem (water transport) and Phloem (food transport)</li>
+        <li>Xylem lacks vessels (tracheids only) — <span class="hl-term">except in some ferns</span></li>
+        <li><span class="hl-term">Spore-producing</span> — No seeds or flowers</li>
+        <li><span class="hl-term">Sporophyte (2n) dominant</span> — independent, large generation</li>
+        <li>Gametophyte (n) — called <span class="hl-term">prothallus</span>, small, independent, heart-shaped</li>
+        <li><span class="hl-term">Heterosporous</span> in some — produce microspores (male) and megaspores (female)</li>
+        <li>Water required for fertilization (flagellated sperm swim to egg)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-clock"></i> Evolutionary Significance</div>
+      <p class="content-text">Pteridophytes are the <span class="hl-term">first true land plants</span> with a vascular system. They were the <span class="hl-term">dominant vegetation</span> during the Carboniferous period (~360-300 million years ago) — known as the "Age of Ferns."</p>
+      <div class="fact-box mt-3">
+        <div class="fact-box-title"><i class="fas fa-fire"></i> Coal Formation</div>
+        <div class="fact-box-content">The massive forests of pteridophytes during the Carboniferous period were buried and compressed over millions of years, forming <span class="hl-term">coal deposits</span> that we use today as fossil fuel.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 5.1 Four Classes of Pteridophytes</div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm">1. Psilopsida (Whisk Ferns)</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Most primitive pteridophytes</li>
+        <li>No true roots — have <span class="hl-term">rhizomes</span> with rhizoids</li>
+        <li>Example: <span class="hl-term">Psilotum</span> — whisk fern, found in tropics</li>
+        <li>Dichotomously branched stems</li>
+      </ul>
+    </div>
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm">2. Lycopsida (Club Mosses)</span>
+      </div>
+      <ul class="bullet-list">
+        <li>True roots and stems present</li>
+        <li>Leaves small (microphylls)</li>
+        <li>Examples: <span class="hl-term">Lycopodium</span> (club moss), <span class="hl-term">Selaginella</span> (spike moss)</li>
+        <li>Selaginella is <span class="hl-term">heterosporous</span></li>
+        <li>Lycopodium spores used as flash powder (earlier photography)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm">3. Sphenopsida (Horsetails)</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Jointed stems with <span class="hl-term">nodes and internodes</span></li>
+        <li>Whorls of small leaves at nodes</li>
+        <li>Example: <span class="hl-term">Equisetum</span> — horsetail, "living fossil"</li>
+        <li>Silica deposits in stem → used as scouring rush</li>
+      </ul>
+    </div>
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm">4. Pteropsida (Ferns)</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Most advanced pteridophytes</li>
+        <li>Large leaves called <span class="hl-term">fronds</span> (megaphylls)</li>
+        <li>Examples: <span class="hl-term">Dryopteris</span> (wood fern), <span class="hl-term">Pteris</span>, <span class="hl-term">Adiantum</span> (maidenhair), <span class="hl-term">Marsilea</span> (water fern), <span class="hl-term">Azolla</span> (mosquito fern), <span class="hl-term">Pteridium</span> (bracken)</li>
+        <li>Azolla has <span class="hl-term">Anabaena symbiosis</span> (N-fixing cyanobacterium) → used as biofertilizer</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-biohazard"></i> Economic Importance of Pteridophytes</div>
+    <ul class="bullet-list">
+      <li><span class="hl-term">Ornamental</span> — Ferns are popular indoor and garden plants (Adiantum (maidenhair), Dryopteris (wood fern), Nephrolepis (Boston fern), Pteris)</li>
+      <li><span class="hl-term">Medicinal</span> — Equisetum used in diuretic preparations (rich in silica); Lycopodium spores used in homoeopathy (Lycopodium clavatum) and as dusting powder</li>
+      <li><span class="hl-term">Biofertilizer</span> — Azolla-Anabaena symbiosis fixes atmospheric nitrogen at an impressive rate; used as green manure in rice paddies of S.E. Asia, China, India</li>
+      <li><span class="hl-term">Soil binding & Erosion control</span> — Ferns and club mosses prevent soil erosion on slopes and in forests</li>
+      <li><span class="hl-term">Coal formation</span> — Fossil pteridophytes from Carboniferous period formed major coal deposits used as fossil fuel today</li>
+      <li><span class="hl-term">Food</span> — Young fiddleheads of some ferns are eaten as vegetables (Matteuccia, Pteridium); Marsilea tubers edible</li>
+      <li><span class="hl-term">Indicator plants</span> — Some pteridophytes indicate soil type, mineral content, and moisture levels</li>
+      <li><span class="hl-term">Floristry</span> — Fern fronds widely used in flower arrangements and bouquets</li>
+    </ul>
+  </div>
+  <!-- Pteridophyte Sporophyte & Gametophyte Details -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-dna"></i> Sporophyte vs Gametophyte in Pteridophytes</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-cyan-400 font-semibold text-sm mb-1"><i class="fas fa-tree"></i> Sporophyte (2n)</div>
+        <ul class="bullet-list">
+          <li>Dominant, large, long-lived generation</li>
+          <li>Well-differentiated: roots, stem, leaves (fronds)</li>
+          <li>Has vascular tissue (xylem + phloem)</li>
+          <li>Produces sporangia on leaves (sporophylls)</li>
+          <li>Sori = clusters of sporangia (in ferns)</li>
+          <li>Indusium = protective cover over sorus</li>
+          <li>Independent, free-living, photosynthetic</li>
+        </ul>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-yellow-400 font-semibold text-sm mb-1"><i class="fas fa-heart"></i> Gametophyte — Prothallus (n)</div>
+        <ul class="bullet-list">
+          <li>Small, inconspicuous, short-lived</li>
+          <li>Heart-shaped (in ferns), green, photosynthetic</li>
+          <li>No vascular tissue</li>
+          <li>Thalloid body with rhizoids (not roots)</li>
+          <li>Bears antheridia (on lower surface, near apex)</li>
+          <li>Bears archegonia (near notch of heart)</li>
+          <li>Free-living but requires moist conditions</li>
+          <li>Water needed for sperm to swim to archegonia</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 6 ===== -->
+<div id="s6" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">6</span> Gymnosperms — Naked Seed Plants</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-seedling"></i> General Characteristics</div>
+      <ul class="bullet-list">
+        <li>"<span class="hl-term">Gymnos</span>" = naked, "<span class="hl-term">sperma</span>" = seed → seeds are <span class="hl-ruler">not enclosed in fruits</span></li>
+        <li>Seeds are borne on <span class="hl-term">cones</span> (strobili) — male and female cones</li>
+        <li><span class="hl-term">Sporophyte (2n) dominant</span> — tall trees, well-differentiated body</li>
+        <li><span class="hl-term">Heterosporous</span> — produce microspores (male) and megaspores (female)</li>
+        <li><span class="hl-term">No flowers</span> — reproductive structures are cones (strobili)</li>
+        <li>Xylem has <span class="hl-term">tracheids only</span> (no vessels) — except Gnetopsida</li>
+        <li>Phloem has <span class="hl-term">sieve cells</span> (no companion cells)</li>
+        <li>Leaves may be needle-like (Pinus) or scale-like to reduce water loss</li>
+        <li>Pollination is by <span class="hl-term">wind</span> (anemophilous)</li>
+        <li>Water <span class="hl-term">not required</span> for fertilization — pollen tube carries sperm to egg</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-clock"></i> Evolutionary Position</div>
+      <p class="content-text">Gymnosperms are <span class="hl-term">transitional</span> between pteridophytes and angiosperms. They evolved seeds (like angiosperms) but lack flowers and fruits (like pteridophytes). They were dominant in the <span class="hl-term">Mesozoic Era</span> ("Age of Gymnosperms" ~250-65 mya).</p>
+      <div class="fact-box mt-3">
+        <div class="fact-box-title"><i class="fas fa-lightbulb"></i> Key Point</div>
+        <div class="fact-box-content">Gymnosperms are called "<span class="hl-term">naked seed</span>" plants because the seeds are not enclosed in an ovary wall. The seeds lie exposed on the surface of cone scales.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 6.1 Cycadopsida (Cycads)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm"><i class="fas fa-palm-tree"></i> Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Palm-like, <span class="hl-term">unbranched</span> stem with crown of leaves</li>
+        <li>Large, pinnate leaves (like palms)</li>
+        <li>Dioecious — male and female cones on separate plants</li>
+        <li>Flagellated sperm (primitive, like pteridophytes)</li>
+        <li>Slow-growing, long-lived</li>
+      </ul>
+    </div>
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Cycas</span> — Sago palm, most common cycad, used for sago starch</li>
+        <li><span class="hl-term">Zamia</span> — Coontie, produces edible starch (but toxic if raw)</li>
+        <li>Cycas is the only gymnosperm with <span class="hl-term">circinate vernation</span> (like ferns)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 6.2 Coniferopsida (Conifers)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-cyan-400 font-semibold text-sm"><i class="fas fa-tree"></i> Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Cone-bearing (conifers), <span class="hl-term">branched trees</span></li>
+        <li>Needle-like or scale-like leaves (reduce water loss)</li>
+        <li>Monoecious or dioecious</li>
+        <li>Woody cones, resin canals present</li>
+        <li>Evergreen (retain leaves year-round)</li>
+        <li>Form large forests in cold/temperate regions (Taiga)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-cyan-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Pinus</span> — Pine, most widespread, source of timber & turpentine</li>
+        <li><span class="hl-term">Cedrus</span> — Cedar/Deodar, aromatic wood, resistant to decay</li>
+        <li><span class="hl-term">Abies</span> — Fir, Christmas tree, softwood timber</li>
+        <li><span class="hl-term">Picea</span> — Spruce, used for paper and musical instruments</li>
+        <li><span class="hl-term">Araucaria</span> — Monkey puzzle tree, ornamental</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 6.3 Gnetopsida</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-purple-400 font-semibold text-sm"><i class="fas fa-arrow-up"></i> Advanced Features</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Most advanced gymnosperms</li>
+        <li><span class="hl-term">Vessels in xylem</span> (like angiosperms) — unique among gymnosperms</li>
+        <li>Flower-like cones in some (Gnetum)</li>
+        <li>Some have insect pollination (advanced feature)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-purple-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Ephedra</span> — Joint fir, desert shrub, contains ephedrine (medicinal — decongestant)</li>
+        <li><span class="hl-term">Gnetum</span> — Vine or tree, broad leaves like angiosperms, found in tropics</li>
+        <li><span class="hl-term">Welwitschia</span> — Only 2 leaves that grow continuously, found in Namib desert; can live 1000+ years</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-coins"></i> Economic Importance of Gymnosperms</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-chair"></i> Timber</div>
+        <p class="text-gray-400 text-xs">Pine, Cedar (Deodar), Spruce, Fir — used in construction, furniture, railway sleepers</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-tint"></i> Resin & Turpentine</div>
+        <p class="text-gray-400 text-xs">From Pinus; resin used in varnishes, paints; turpentine as solvent & medicine</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-file"></i> Paper</div>
+        <p class="text-gray-400 text-xs">Softwood of conifers (Picea, Pinus) major source of wood pulp for paper industry</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-pills"></i> Medicinal</div>
+        <p class="text-gray-400 text-xs">Ephedra → ephedrine (bronchodilator); Taxus → taxol (anti-cancer drug)</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-seedling"></i> Ornamental</div>
+        <p class="text-gray-400 text-xs">Araucaria, Thuja, Cupressus — widely planted as ornamental trees in gardens</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-sm mb-1"><i class="fas fa-leaf"></i> Food</div>
+        <p class="text-gray-400 text-xs">Sago starch from Cycas; pine nuts (seeds) from Pinus species — edible</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 7 ===== -->
+<div id="s7" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">7</span> Angiosperms — Flowering Plants</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-seedling"></i> General Characteristics</div>
+      <ul class="bullet-list">
+        <li>"<span class="hl-term">Angios</span>" = covered/vessel, "<span class="hl-term">sperma</span>" = seed → seeds enclosed within fruits</li>
+        <li><span class="hl-term">Flowers present</span> — reproductive organs</li>
+        <li><span class="hl-term">Double fertilization</span> — unique to angiosperms</li>
+        <li><span class="hl-term">Endosperm formation</span> — triploid (3n) nutritive tissue for embryo</li>
+        <li><span class="hl-term">Sporophyte (2n) dominant</span> — large, complex, well-differentiated</li>
+        <li>Gametophyte highly <span class="hl-term">reduced</span> — just a few cells (embryo sac, pollen grain)</li>
+        <li>Xylem has <span class="hl-term">vessels</span> (tracheids + vessels) — efficient water transport</li>
+        <li>Phloem has <span class="hl-term">sieve tubes + companion cells</span></li>
+        <li>Pollination by wind, water, insects, birds, bats</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-arrows-spin"></i> Unique Features of Angiosperms</div>
+      <ul class="bullet-list">
+        <li><span class="hl-event">Double Fertilization</span> — One sperm (n) fuses with egg (n) → zygote (2n); second sperm (n) fuses with two polar nuclei (2n) → triploid endosperm (3n)</li>
+        <li><span class="hl-event">Triploid Endosperm</span> — Provides nutrition to the developing embryo; unique to angiosperms</li>
+        <li><span class="hl-event">Fruit Formation</span> — Ovary ripens into fruit; ovules become seeds; fruit protects & aids seed dispersal</li>
+        <li><span class="hl-event">Highly efficient vascular system</span> — vessels in xylem, companion cells in phloem</li>
+        <li><span class="hl-event">Diverse pollination strategies</span> — co-evolution with pollinators</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 7.1 Monocots -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 7.1 Monocotyledons (Monocots)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm"><i class="fas fa-info-circle"></i> Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">1 cotyledon</span> in seed</li>
+        <li><span class="hl-term">Parallel venation</span> in leaves</li>
+        <li><span class="hl-term">Fibrous root</span> system</li>
+        <li>Floral parts in <span class="hl-term">multiples of 3</span></li>
+        <li>Vascular bundles <span class="hl-term">scattered</span> in stem</li>
+        <li>No secondary growth (no cambium)</li>
+        <li>Pollen grain with <span class="hl-term">single pore</span> (monocolpate)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-yellow-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Cereals</span>: Wheat (<i>Triticum</i>), Rice (<i>Oryza</i>), Maize (<i>Zea mays</i>), Barley, Oats</li>
+        <li><span class="hl-term">Sugarcane</span> (<i>Saccharum officinarum</i>) — major sugar source</li>
+        <li><span class="hl-term">Bamboo</span> — fastest growing plant, used in construction</li>
+        <li><span class="hl-term">Coconut</span> (<i>Cocos nucifera</i>) — versatile palm</li>
+        <li><span class="hl-term">Grasses</span> — Poaceae family (largest plant family)</li>
+        <li><span class="hl-term">Lily</span> (<i>Lilium</i>), <span class="hl-term">Orchid</span> (<i>Orchidaceae</i>), <span class="hl-term">Banana</span> (<i>Musa</i>)</li>
+        <li>Onion (<i>Allium cepa</i>), Garlic (<i>Allium sativum</i>)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 7.2 Dicots -->
+  <div class="subsection-heading"><i class="fas fa-circle text-emerald-400 text-xs"></i> 7.2 Dicotyledons (Dicots)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-cyan-400 font-semibold text-sm"><i class="fas fa-info-circle"></i> Characteristics</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">2 cotyledons</span> in seed</li>
+        <li><span class="hl-term">Reticulate venation</span> in leaves</li>
+        <li><span class="hl-term">Tap root</span> system</li>
+        <li>Floral parts in <span class="hl-term">multiples of 4 or 5</span></li>
+        <li>Vascular bundles in <span class="hl-term">ring</span> (arranged in a circle)</li>
+        <li>Secondary growth present (cambium active)</li>
+        <li>Pollen grain with <span class="hl-term">3 pores</span> (tricolpate)</li>
+      </ul>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-cyan-400 font-semibold text-sm"><i class="fas fa-flask"></i> Examples</span>
+      </div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Mango</span> (<i>Mangifera indica</i>) — National fruit of India</li>
+        <li><span class="hl-term">Pea</span> (<i>Pisum sativum</i>) — Mendel's experimental plant</li>
+        <li><span class="hl-term">Rose</span> (<i>Rosa</i>), <span class="hl-term">Sunflower</span> (<i>Helianthus</i>)</li>
+        <li><span class="hl-term">Mustard</span> (<i>Brassica</i>) — oilseed</li>
+        <li><span class="hl-term">Tomato</span> (<i>Solanum lycopersicum</i>), <span class="hl-term">Potato</span> (<i>Solanum tuberosum</i>)</li>
+        <li><span class="hl-term">Peepal</span> (<i>Ficus religiosa</i>), <span class="hl-term">Banyan</span> (<i>Ficus benghalensis</i>)</li>
+        <li>Apple (<i>Malus domestica</i>), Groundnut (<i>Arachis hypogaea</i>)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Angiosperm Life Cycle -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-arrows-spin"></i> Angiosperm Life Cycle — Detailed Steps</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">1.</span> Sporogenesis</div>
+        <p class="text-gray-400 text-xs">Microsporogenesis (in anther): microspore mother cell (2n) → meiosis → 4 microspores (n) → pollen grains. Megasporogenesis (in ovule): megaspore mother cell (2n) → meiosis → 4 megaspores (n) — only 1 functional.</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">2.</span> Gametogenesis</div>
+        <p class="text-gray-400 text-xs">Pollen grain (male gametophyte): generative cell → 2 sperm cells + tube cell. Embryo sac (female gametophyte): 7 cells, 8 nuclei — egg cell, 2 synergids, 3 antipodals, 2 polar nuclei (central cell).</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">3.</span> Pollination</div>
+        <p class="text-gray-400 text-xs">Transfer of pollen from anther to stigma. Self-pollination (autogamy — same flower; geitonogamy — same plant). Cross-pollination (xenogamy — different plant). Agents: wind (anemophily), insects (entomophily), birds (ornithophily), bats (chiropterophily), water (hydrophily).</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">4.</span> Fertilization</div>
+        <p class="text-gray-400 text-xs">Pollen tube enters ovule via micropyle. Double fertilization: Sperm 1 + egg → diploid zygote (2n). Sperm 2 + 2 polar nuclei → triploid primary endosperm nucleus (3n). This is the defining feature of angiosperms!</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">5.</span> Seed Development</div>
+        <p class="text-gray-400 text-xs">Zygote → embryo (radicle, plumule, cotyledons). Endosperm (3n) → nutritive tissue. Integuments → seed coat. Ovule → seed. Monocot: 1 cotyledon (scutellum). Dicot: 2 cotyledons.</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">6.</span> Fruit Formation</div>
+        <p class="text-gray-400 text-xs">Ovary → fruit (pericarp: epicarp, mesocarp, endocarp). Types: fleshy (mango, apple, tomato), dry (pea pod, mustard), aggregate (strawberry), multiple (pineapple). Parthenocarpy: fruit without fertilization (banana, seedless grapes).</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">7.</span> Seed Dispersal</div>
+        <p class="text-gray-400 text-xs">Wind (cotton, dandelion — pappus), water (coconut — fibrous husk), animals (Xanthium — hooks; berries — eaten & excreted), explosive (castor, balsam — dehiscence). Ensures colonization of new areas.</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><span class="hl-num">8.</span> Germination</div>
+        <p class="text-gray-400 text-xs">Seed absorbs water → radicle emerges → plumule emerges → seedling → mature sporophyte. Epigeal (cotyledons above ground — bean) vs Hypogeal (cotyledons underground — pea, maize).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flower Structure Details -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-pagelines"></i> Flower Structure & Types</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <p class="content-text font-semibold text-gray-300">Parts of a Typical Flower:</p>
+        <ul class="bullet-list">
+          <li><span class="hl-term">Sepals (Calyx)</span> — Outermost whorl, green, protect flower bud</li>
+          <li><span class="hl-term">Petals (Corolla)</span> — 2nd whorl, colorful, attract pollinators</li>
+          <li><span class="hl-term">Stamens (Androecium)</span> — Male reproductive whorl: anther (pollen production) + filament (stalk)</li>
+          <li><span class="hl-term">Carpels/Pistil (Gynoecium)</span> — Female reproductive whorl: stigma (pollen reception) + style (tube passage) + ovary (contains ovules)</li>
+          <li><span class="hl-term">Receptacle</span> — Thickened part of flower stalk that holds floral organs</li>
+          <li><span class="hl-term">Nectaries</span> — Glands that secrete nectar to attract pollinators</li>
+        </ul>
+      </div>
+      <div>
+        <p class="content-text font-semibold text-gray-300">Floral Classification:</p>
+        <ul class="bullet-list">
+          <li><span class="hl-term">Complete vs Incomplete</span> — Has all 4 whorls vs missing one or more</li>
+          <li><span class="hl-term">Perfect vs Imperfect</span> — Bisexual (both stamens & carpels) vs Unisexual (male/female flowers separate)</li>
+          <li><span class="hl-term">Monoecious vs Dioecious</span> — Male & female flowers on same plant (maize, cucumber) vs on separate plants (papaya, date palm)</li>
+          <li><span class="hl-term">Actinomorphic vs Zygomorphic</span> — Radial symmetry (rose) vs Bilateral symmetry (pea, orchid)</li>
+          <li><span class="hl-term">Hypogynous vs Perigynous vs Epigynous</span> — Based on ovary position relative to other floral parts</li>
+          <li><span class="hl-term">Inflorescence types</span> — Racemose (indeterminate, e.g., radish) vs Cymose (determinate, e.g., jasmine)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 8 ===== -->
+<div id="s8" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">8</span> Plant Life Cycles & Alternation of Generations</div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-arrows-spin"></i> Understanding Alternation of Generations</div>
+    <p class="content-text">Alternation of generations is the phenomenon where the life cycle of a plant alternates between two distinct multicellular phases: the <span class="hl-ruler">haploid (n) gametophyte</span> which produces gametes by mitosis, and the <span class="hl-policy">diploid (2n) sporophyte</span> which produces spores by meiosis. This is a fundamental characteristic of all land plants and many algae.</p>
+    <p class="content-text">The key event that links these two generations is <span class="hl-term">fertilization</span> (fusion of gametes → diploid zygote → sporophyte) and <span class="hl-term">meiosis</span> (in sporangia → haploid spores → gametophyte). The relative prominence of these two phases varies greatly among different plant groups.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="gradient-card-2 rounded-xl p-4 glow-card card-border-amber">
+      <div class="subsection-heading text-yellow-400 text-sm"><i class="fas fa-circle"></i> Haplontic Life Cycle</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Gametophyte (n) is dominant</span> and free-living — photosynthetic, independent</li>
+        <li>Sporophyte stage is only the <span class="hl-term">zygote</span> (2n) — single-celled, not free-living</li>
+        <li>Zygote undergoes <span class="hl-term">zygotic meiosis</span> (immediate meiosis) to produce haploid spores</li>
+        <li><span class="hl-term">No multicellular sporophyte</span> stage ever develops</li>
+        <li>Found in: <span class="hl-term">Most algae</span> (Chlamydomonas, Spirogyra, Ulothrix, Volvox, Chara)</li>
+        <li>Considered the <span class="hl-term">primitive ancestral condition</span> from which other life cycles evolved</li>
+      </ul>
+      <div class="fact-box mt-2">
+        <div class="fact-box-title">Example: Chlamydomonas cycle</div>
+        <div class="fact-box-content">Haploid cell → produces gametes by mitosis → fusion → diploid zygote → zygotic meiosis → 4 haploid spores → new haploid cells</div>
+      </div>
+    </div>
+    <div class="gradient-card-3 rounded-xl p-4 glow-card card-border-cyan">
+      <div class="subsection-heading text-cyan-400 text-sm"><i class="fas fa-circle"></i> Diplontic Life Cycle</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Sporophyte (2n) is dominant</span> and free-living — large, complex, independent</li>
+        <li>Gametophyte stage is <span class="hl-term">highly reduced</span> to just a few cells (pollen grain, embryo sac)</li>
+        <li>Gametophyte produces gametes by <span class="hl-term">mitosis</span> (no meiosis needed in gametophyte)</li>
+        <li>Zygote grows directly into multicellular sporophyte</li>
+        <li>Meiosis occurs in <span class="hl-term">sporogenous tissue</span> to produce spores</li>
+        <li>Found in: <span class="hl-term">Animals</span>, some brown algae (Fucus, Sargassum), <span class="hl-term">Gymnosperms</span>, <span class="hl-term">Angiosperms</span></li>
+        <li>Considered the <span class="hl-term">most evolutionarily advanced</span> life cycle type</li>
+      </ul>
+      <div class="fact-box mt-2">
+        <div class="fact-box-title">Example: Angiosperm cycle</div>
+        <div class="fact-box-content">Sporophyte (tree) → meiosis in anthers & ovules → microspores & megaspores → pollen grain & embryo sac (reduced gametophytes) → fertilization → seed → new sporophyte</div>
+      </div>
+    </div>
+    <div class="gradient-card-4 rounded-xl p-4 glow-card card-border-purple">
+      <div class="subsection-heading text-purple-400 text-sm"><i class="fas fa-circle"></i> Haplo-diplontic Life Cycle</div>
+      <ul class="bullet-list">
+        <li>Both <span class="hl-term">sporophyte (2n) and gametophyte (n)</span> are multicellular and free-living</li>
+        <li>Both stages are <span class="hl-term">photosynthetic and independent</span> (in pteridophytes)</li>
+        <li>In bryophytes: sporophyte is <span class="hl-term">dependent on gametophyte</span> for nutrition</li>
+        <li>In pteridophytes: both are <span class="hl-term">independent</span>; gametophyte (prothallus) is small but free-living</li>
+        <li>Found in: <span class="hl-term">Bryophytes</span>, <span class="hl-term">Pteridophytes</span></li>
+        <li><span class="hl-term">Intermediate</span> between haplontic and diplontic — a transitional evolutionary stage</li>
+      </ul>
+      <div class="fact-box mt-2">
+        <div class="fact-box-title">Example: Fern life cycle</div>
+        <div class="fact-box-content">Sporophyte (fern frond) → sporangia → meiosis → spores → prothallus (heart-shaped gametophyte) → antheridia & archegonia → fertilization → new sporophyte</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-chart-line"></i> Detailed Life Cycle Comparison</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Feature</th><th>Haplontic</th><th>Diplontic</th><th>Haplo-diplontic</th></tr>
+        <tr><td>Dominant generation</td><td>Gametophyte (n)</td><td>Sporophyte (2n)</td><td>Both (varies by group)</td></tr>
+        <tr><td>Sporophyte</td><td>Single-celled (zygote only)</td><td>Multicellular, dominant</td><td>Multicellular (dependent/independent)</td></tr>
+        <tr><td>Gametophyte</td><td>Multicellular, dominant</td><td>Reduced to few cells</td><td>Multicellular, free-living</td></tr>
+        <tr><td>Meiosis type</td><td>Zygotic meiosis</td><td>Sporic meiosis (in sporangia)</td><td>Sporic meiosis (in sporangia)</td></tr>
+        <tr><td>Zygote behavior</td><td>Undergoes meiosis immediately</td><td>Grows into multicellular sporophyte</td><td>Grows into multicellular sporophyte</td></tr>
+        <tr><td>Found in</td><td>Most algae, some fungi</td><td>Animals, Fucus, Gymnosperms, Angiosperms</td><td>Bryophytes, Pteridophytes</td></tr>
+        <tr><td>Evolutionary status</td><td>Primitive/ancestral</td><td>Most advanced</td><td>Intermediate/transitional</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-balance-scale"></i> Generation Dominance Across Plant Groups</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Plant Group</th><th>Dominant Generation</th><th>Dependent Generation</th><th>Life Cycle Type</th></tr>
+        <tr><td>Algae (most)</td><td>Gametophyte (n)</td><td>Zygote only</td><td>Haplontic</td></tr>
+        <tr><td>Algae (Fucus)</td><td>Sporophyte (2n)</td><td>Gametophyte reduced</td><td>Diplontic</td></tr>
+        <tr><td>Bryophytes</td><td>Gametophyte (n)</td><td>Sporophyte on gametophyte</td><td>Haplo-diplontic</td></tr>
+        <tr><td>Pteridophytes</td><td>Sporophyte (2n)</td><td>Gametophyte (prothallus) independent</td><td>Haplo-diplontic</td></tr>
+        <tr><td>Gymnosperms</td><td>Sporophyte (2n)</td><td>Gametophyte reduced (cones)</td><td>Diplontic</td></tr>
+        <tr><td>Angiosperms</td><td>Sporophyte (2n)</td><td>Gametophyte highly reduced</td><td>Diplontic</td></tr>
+      </table>
+    </div>
+    <p class="content-text mt-3"><span class="hl-term">Evolutionary trend:</span> Gametophyte dominance (algae, bryophytes) → Sporophyte dominance (pteridophytes → gymnosperms → angiosperms). The sporophyte becomes increasingly dominant and complex, while the gametophyte becomes progressively reduced.</p>
+  </div>
+</div>
+
+<!-- ===== SECTION 9 ===== -->
+<div id="s9" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">9</span> Comparison Tables</div>
+
+  <!-- Table 1: All 5 Plant Groups -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-table"></i> All 5 Plant Groups at a Glance</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Feature</th><th>Algae</th><th>Bryophytes</th><th>Pteridophytes</th><th>Gymnosperms</th><th>Angiosperms</th></tr>
+        <tr><td>Body Structure</td><td>Thalloid</td><td>Thalloid/Leafy</td><td>Root, Stem, Leaf</td><td>Root, Stem, Leaf</td><td>Root, Stem, Leaf</td></tr>
+        <tr><td>Vascular Tissue</td><td>Absent</td><td>Absent</td><td>Present (Tracheids)</td><td>Present (Tracheids)</td><td>Present (Vessels)</td></tr>
+        <tr><td>Seeds</td><td>No</td><td>No</td><td>No</td><td>Naked seeds</td><td>Enclosed in fruit</td></tr>
+        <tr><td>Flowers</td><td>No</td><td>No</td><td>No</td><td>No (Cones)</td><td>Yes</td></tr>
+        <tr><td>Fruits</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Dominant Gen.</td><td>Gametophyte</td><td>Gametophyte</td><td>Sporophyte</td><td>Sporophyte</td><td>Sporophyte</td></tr>
+        <tr><td>Water for Fertilization</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No (Pollen tube)</td><td>No (Pollen tube)</td></tr>
+        <tr><td>Double Fertilization</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Dependent Generation</td><td>Zygote only</td><td>Sporophyte on gametophyte</td><td>Gametophyte independent</td><td>Gametophyte reduced</td><td>Gametophyte highly reduced</td></tr>
+        <tr><td>Examples</td><td>Spirogyra, Chlamydomonas</td><td>Marchantia, Funaria</td><td>Fern, Equisetum</td><td>Pinus, Cycas</td><td>Mango, Wheat, Rose</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Table 2: Monocot vs Dicot -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-table"></i> Monocot vs Dicot — 12 Key Differences</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>#</th><th>Feature</th><th>Monocot</th><th>Dicot</th></tr>
+        <tr><td><span class="hl-num">1</span></td><td>Cotyledons</td><td>1 cotyledon</td><td>2 cotyledons</td></tr>
+        <tr><td><span class="hl-num">2</span></td><td>Leaf Venation</td><td>Parallel venation</td><td>Reticulate venation</td></tr>
+        <tr><td><span class="hl-num">3</span></td><td>Root System</td><td>Fibrous root</td><td>Tap root</td></tr>
+        <tr><td><span class="hl-num">4</span></td><td>Floral Parts</td><td>Multiples of 3</td><td>Multiples of 4 or 5</td></tr>
+        <tr><td><span class="hl-num">5</span></td><td>Vascular Bundles</td><td>Scattered in stem</td><td>Arranged in a ring</td></tr>
+        <tr><td><span class="hl-num">6</span></td><td>Secondary Growth</td><td>Absent (no cambium)</td><td>Present (cambium active)</td></tr>
+        <tr><td><span class="hl-num">7</span></td><td>Pollen Grain</td><td>Single pore (monocolpate)</td><td>3 pores (tricolpate)</td></tr>
+        <tr><td><span class="hl-num">8</span></td><td>Flowering</td><td>Usually trimerous</td><td>Usually tetramerous/pentamerous</td></tr>
+        <tr><td><span class="hl-num">9</span></td><td>Leaf Shape</td><td>Long, narrow (linear)</td><td>Broad, diverse shapes</td></tr>
+        <tr><td><span class="hl-num">10</span></td><td>Stem Branching</td><td>Usually unbranched</td><td>Often branched</td></tr>
+        <tr><td><span class="hl-num">11</span></td><td>Seed Germination</td><td>Hypogeal (cotyledons underground)</td><td>Epigeal (cotyledons above ground)</td></tr>
+        <tr><td><span class="hl-num">12</span></td><td>Examples</td><td>Wheat, Rice, Maize, Bamboo</td><td>Mango, Pea, Rose, Sunflower</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Table 3: Gymnosperm vs Angiosperm -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-table"></i> Gymnosperm vs Angiosperm</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Feature</th><th>Gymnosperm</th><th>Angiosperm</th></tr>
+        <tr><td>Seed Covering</td><td>Naked seeds (no fruit)</td><td>Seeds enclosed in fruit</td></tr>
+        <tr><td>Flowers</td><td>Absent (cones present)</td><td>Present</td></tr>
+        <tr><td>Fruits</td><td>Absent</td><td>Present</td></tr>
+        <tr><td>Xylem</td><td>Tracheids only (no vessels) — except Gnetopsida</td><td>Vessels + Tracheids</td></tr>
+        <tr><td>Phloem</td><td>Sieve cells (no companion cells)</td><td>Sieve tubes + Companion cells</td></tr>
+        <tr><td>Double Fertilization</td><td>Absent</td><td>Present</td></tr>
+        <tr><td>Endosperm</td><td>Haploid (n, pre-fertilization)</td><td>Triploid (3n, post-fertilization)</td></tr>
+        <tr><td>Pollination</td><td>Only wind</td><td>Wind, insects, birds, bats, water</td></tr>
+        <tr><td>Leaves</td><td>Mostly needle-like/scale-like</td><td>Broad, diverse shapes</td></tr>
+        <tr><td>Habit</td><td>Mostly trees, some shrubs</td><td>Trees, shrubs, herbs, climbers</td></tr>
+        <tr><td>Diversity</td><td>~900 species</td><td>~300,000 species (dominant)</td></tr>
+        <tr><td>Examples</td><td>Pinus, Cycas, Cedar</td><td>Mango, Rose, Wheat, Oak</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Table 4: Algae Comparison -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-table"></i> Green vs Red vs Brown Algae</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Feature</th><th>Green Algae (Chlorophyceae)</th><th>Red Algae (Rhodophyceae)</th><th>Brown Algae (Phaeophyceae)</th></tr>
+        <tr><td>Chlorophyll</td><td>a, b</td><td>a, d</td><td>a, c</td></tr>
+        <tr><td>Accessory Pigments</td><td>Carotenoids, Xanthophyll</td><td>r-Phycoerythrin, r-Phycocyanin</td><td>Fucoxanthin</td></tr>
+        <tr><td>Color Reason</td><td>Chlorophyll dominance</td><td>Phycoerythrin masks chlorophyll</td><td>Fucoxanthin masks chlorophyll</td></tr>
+        <tr><td>Reserve Food</td><td>Starch</td><td>Floridean starch</td><td>Laminarin, Mannitol</td></tr>
+        <tr><td>Cell Wall</td><td>Cellulose</td><td>Cellulose, Pectin, Agar</td><td>Cellulose, Algin</td></tr>
+        <tr><td>Habitat</td><td>Freshwater (85%), Marine (15%)</td><td>Mostly marine, deeper waters</td><td>Marine, cold waters</td></tr>
+        <tr><td>Body Form</td><td>Unicellular to multicellular</td><td>Mostly multicellular</td><td>Multicellular, large</td></tr>
+        <tr><td>Storage Location</td><td>Pyrenoids in chloroplast</td><td>In cytoplasm</td><td>In cells</td></tr>
+        <tr><td>Economic Use</td><td>Food (Chlorella, Spirulina)</td><td>Agar, Nori, Carrageenan</td><td>Algin, Fertilizer, Food</td></tr>
+        <tr><td>Key Examples</td><td>Chlamydomonas, Spirogyra, Ulothrix, Chara, Volvox, Ulva</td><td>Polysiphonia, Porphyra, Gracilaria, Gelidium, Batrachospermum</td><td>Laminaria, Sargassum, Fucus, Dictyota, Macrocystis</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Table 5: Liverworts vs Mosses -->
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mb-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-table"></i> Liverworts vs Mosses</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Feature</th><th>Liverworts (Hepaticopsida)</th><th>Mosses (Bryopsida)</th></tr>
+        <tr><td>Body Form</td><td>Thalloid (flat, ribbon-like) or leafy</td><td>Leafy (stem-like + leaf-like)</td></tr>
+        <tr><td>Rhizoids</td><td>Unicellular</td><td>Multicellular</td></tr>
+        <tr><td>Symmetry</td><td>Dorsiventral (upper & lower surfaces distinct)</td><td>Radial (all sides similar)</td></tr>
+        <tr><td>Protonema Stage</td><td>Absent (spore → thallus directly)</td><td>Present (spore → protonema → leafy gametophore)</td></tr>
+        <tr><td>Gemmae</td><td>Present (in Marchantia gemma cups)</td><td>Absent</td></tr>
+        <tr><td>Sporophyte</td><td>Simple capsule</td><td>Complex capsule with operculum, peristome teeth</td></tr>
+        <tr><td>Seta</td><td>Short/absent</td><td>Long, prominent seta</td></tr>
+        <tr><td>Capsule Dehiscence</td><td>Irregular splitting</td><td>Via operculum (lid-like)</td></tr>
+        <tr><td>Examples</td><td>Marchantia, Riccia, Pellia</td><td>Funaria, Sphagnum, Polytrichum</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 10 ===== -->
+<div id="s10" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">10</span> Mnemonics & Memory Tricks</div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Plant Classification Hierarchy</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">K</span>ing <span class="hl-term">P</span>hilip <span class="hl-term">C</span>ame <span class="hl-term">O</span>ver <span class="hl-term">F</span>or <span class="hl-term">G</span>ood <span class="hl-term">S</span>oup<br>
+        → <span class="hl-term">K</span>ingdom, <span class="hl-term">P</span>hylum/Division, <span class="hl-term">C</span>lass, <span class="hl-term">O</span>rder, <span class="hl-term">F</span>amily, <span class="hl-term">G</span>enus, <span class="hl-term">S</span>pecies
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Cryptogams (Seedless Plants)</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">T</span>hallo <span class="hl-term">B</span>ryo <span class="hl-term">P</span>teri<br>
+        → <span class="hl-term">T</span>hallophyta → <span class="hl-term">B</span>ryophyta → <span class="hl-term">P</span>teridophyta<br>
+        <span class="hl-event">"The Boy Plays Cryptogams"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Phanerogams (Seed Plants)</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">G</span>ymno before <span class="hl-term">A</span>ngio<br>
+        → <span class="hl-term">G</span>ymnosperms → <span class="hl-term">A</span>ngiosperms<br>
+        <span class="hl-event">"Gym First, Angio Later"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Monocot vs Dicot</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">M</span>ono = <span class="hl-num">1</span> cot, <span class="hl-term">P</span>arallel veins, <span class="hl-term">F</span>ibrous roots, <span class="hl-term">F</span>loral <span class="hl-num">3</span><br>
+        <span class="hl-term">D</span>i = <span class="hl-num">2</span> cots, <span class="hl-term">R</span>eticulate veins, <span class="hl-term">T</span>ap root, <span class="hl-term">F</span>loral <span class="hl-num">4-5</span><br>
+        <span class="hl-event">"MPFF for Mono, DRTT for Di"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Green Algae Examples</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">C</span>hlamydomonas, <span class="hl-term">S</span>pirogyra, <span class="hl-term">U</span>lothrix, <span class="hl-term">C</span>hara, <span class="hl-term">V</span>olvox, <span class="hl-term">U</span>lva<br>
+        <span class="hl-event">"CSU CVU — Clean School University Creates Very Useful"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Red Algae Examples</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">P</span>orphyra, <span class="hl-term">G</span>racilaria, <span class="hl-term">G</span>elidium, <span class="hl-term">P</span>olysiphonia, <span class="hl-term">B</span>atrachospermum<br>
+        <span class="hl-event">"PGG PB — Please Give Gelidium, Polysiphonia & Batrachospermum"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Brown Algae Examples</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">L</span>aminaria, <span class="hl-term">S</span>argassum, <span class="hl-term">F</span>ucus, <span class="hl-term">D</span>ictyota, <span class="hl-term">M</span>acrocystis<br>
+        <span class="hl-event">"LSF DM — Large Seaweeds Found in Deep Marine"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Bryophyte Examples</div>
+      <div class="mnemonic-content">
+        Liverworts: <span class="hl-term">M</span>archantia, <span class="hl-term">R</span>iccia, <span class="hl-term">P</span>ellia <span class="hl-event">→ "MRP Stores"</span><br>
+        Mosses: <span class="hl-term">F</span>unaria, <span class="hl-term">S</span>phagnum, <span class="hl-term">P</span>olytrichum <span class="hl-event">→ "FSP Travels"</span><br>
+        Hornworts: <span class="hl-term">A</span>nthoceros <span class="hl-event">→ "A for Antlers"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Pteridophyte Classes</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">P</span>silopsida, <span class="hl-term">L</span>ycopsida, <span class="hl-term">S</span>phenopsida, <span class="hl-term">P</span>teropsida<br>
+        <span class="hl-event">"Please Learn Sphenophyta & Pterophyta"</span><br>
+        Examples: <span class="hl-event">"Psilo loves Lyco, Spheno runs with Ptero"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Gymnosperm Classes</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">C</span>ycadopsida, <span class="hl-term">C</span>oniferopsida, <span class="hl-term">G</span>netopsida<br>
+        <span class="hl-event">"CCG — Cycas, Conifers, Gnetum"</span><br>
+        Or: <span class="hl-event">"Can Cycas Grow?"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Life Cycle Types</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">H</span>aplontic (Algae) → <span class="hl-term">H</span>aplo-<span class="hl-term">D</span>iplontic (Bryophytes, Pteridophytes) → <span class="hl-term">D</span>iplontic (Gymno, Angio)<br>
+        <span class="hl-event">"H → HD → D = Evolution of dominance"</span>
+      </div>
+    </div>
+    <div class="mnemonic-box">
+      <div class="mnemonic-title"><i class="fas fa-brain"></i> Ecological Groups</div>
+      <div class="mnemonic-content">
+        <span class="hl-term">P</span>ioneers (Algae/Bryophytes) → <span class="hl-term">P</span>teridophytes → <span class="hl-term">G</span>ymnosperms → <span class="hl-term">A</span>ngiosperms<br>
+        <span class="hl-event">"PPGA — Plant Progression Goes Ahead"</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 11 ===== -->
+<div id="s11" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">11</span> Economic Importance of Plants</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-bowl-food"></i> Food Plants</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Cereals</span> — Wheat (<i>Triticum</i>), Rice (<i>Oryza</i>), Maize (<i>Zea</i>), Barley, Millet — staple food for humanity</li>
+        <li><span class="hl-term">Pulses</span> — Gram (<i>Cicer</i>), Pea (<i>Pisum</i>), Lentil (<i>Lens</i>), Bean (<i>Phaseolus</i>) — protein source</li>
+        <li><span class="hl-term">Vegetables</span> — Potato (<i>Solanum</i>), Tomato, Onion, Carrot, Spinach, Cabbage, Cauliflower</li>
+        <li><span class="hl-term">Fruits</span> — Mango, Apple, Banana, Orange, Grape, Papaya, Guava — vitamins & minerals</li>
+        <li><span class="hl-term">Oilseeds</span> — Mustard, Groundnut, Soybean, Sunflower, Coconut — edible oils</li>
+        <li><span class="hl-term">Spices</span> — Black pepper, Turmeric, Chilli, Cardamom, Cinnamon, Clove — flavoring & medicinal</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-pills"></i> Medicinal Plants</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Cinchona</span> — Bark yields quinine (anti-malarial drug)</li>
+        <li><span class="hl-term">Rauwolfia serpentina</span> — Sarpagandha; contains reserpine (anti-hypertensive)</li>
+        <li><span class="hl-term">Digitalis purpurea</span> — Foxglove; contains digitalin (cardiac stimulant)</li>
+        <li><span class="hl-term">Papaver somniferum</span> — Opium poppy; source of morphine (painkiller), codeine</li>
+        <li><span class="hl-term">Taxus brevifolia</span> — Pacific yew; contains taxol (anti-cancer drug)</li>
+        <li><span class="hl-term">Ephedra</span> — Contains ephedrine (bronchodilator for asthma)</li>
+        <li><span class="hl-term">Azadirachta indica</span> — Neem; antibacterial, antifungal, insecticidal</li>
+        <li><span class="hl-term">Ocimum sanctum</span> — Tulsi; adaptogen, anti-inflammatory</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-chair"></i> Timber Plants</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Teak</span> (<i>Tectona grandis</i>) — most valuable timber, furniture, shipbuilding</li>
+        <li><span class="hl-term">Sal</span> (<i>Shorea robusta</i>) — Indian timber, railway sleepers, construction</li>
+        <li><span class="hl-term">Pine</span> (<i>Pinus</i>) — softwood, construction, paper pulp, resin</li>
+        <li><span class="hl-term">Deodar</span> (<i>Cedrus deodara</i>) — Himalayan cedar, durable, aromatic wood</li>
+        <li><span class="hl-term">Rosewood</span> (<i>Dalbergia sissoo</i>) — Shisham, furniture, plywood</li>
+        <li><span class="hl-term">Sandalwood</span> (<i>Santalum album</i>) — fragrant wood, carving, essential oil</li>
+        <li><span class="hl-term">Mahogany</span> (<i>Swietenia</i>) — cabinet making, furniture</li>
+      </ul>
+    </div>
+    <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green">
+      <div class="subsection-heading text-emerald-400"><i class="fas fa-industry"></i> Industrial Plants</div>
+      <ul class="bullet-list">
+        <li><span class="hl-term">Rubber</span> (<i>Hevea brasiliensis</i>) — natural rubber from latex; used in tires, gloves</li>
+        <li><span class="hl-term">Jute</span> (<i>Corchorus</i>) — golden fiber; used in sacks, ropes, carpets</li>
+        <li><span class="hl-term">Cotton</span> (<i>Gossypium</i>) — natural fiber for textiles; seed oil</li>
+        <li><span class="hl-term">Sugarcane</span> (<i>Saccharum</i>) — sugar, ethanol, molasses</li>
+        <li><span class="hl-term">Tea</span> (<i>Camellia sinensis</i>) — beverage industry</li>
+        <li><span class="hl-term">Coffee</span> (<i>Coffea arabica</i>) — global stimulant beverage</li>
+        <li><span class="hl-term">Tobacco</span> (<i>Nicotiana tabacum</i>) — cigarettes, contains nicotine</li>
+        <li><span class="hl-term">Bamboo</span> — construction, paper, textiles, scaffolding</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gradient-card-1 rounded-xl p-4 glow-card card-border-green mt-4">
+    <div class="subsection-heading text-emerald-400"><i class="fas fa-flower"></i> Ornamental Plants</div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><i class="fas fa-flower"></i> Flowering Ornamentals</div>
+        <p class="text-gray-400 text-xs">Rose, Lily, Orchid, Jasmine, Marigold, Sunflower, Dahlia, Chrysanthemum, Tulip</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><i class="fas fa-tree"></i> Foliage & Trees</div>
+        <p class="text-gray-400 text-xs">Banyan, Peepal, Monstera, Fern, Araucaria, Thuja, Ficus benjamina, Areca palm</p>
+      </div>
+      <div class="bg-emerald-500/5 rounded-lg p-3 border border-emerald-500/10">
+        <div class="text-emerald-400 font-semibold text-xs mb-1"><i class="fas fa-leaf"></i> Succulents & Others</div>
+        <p class="text-gray-400 text-xs">Cactus, Aloe vera, Jade plant, Snake plant, Money plant, Peace lily, Bamboo palm</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 12 ===== -->
+<div id="s12" class="mb-8 fade-in">
+  <div class="section-heading"><span class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center text-xs font-bold text-emerald-400">12</span> Practice Questions — MCQs</div>
+  <p class="content-text mb-4">Click on any MCQ to reveal the correct answer.</p>
+  <div id="mcq-container"></div>
+</div>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 pt-6 pb-4 text-center text-gray-500 text-xs">
+  <p><i class="fas fa-map-pin mr-1 text-emerald-400"></i> /home/amit/Desktop/ncert/history/science/plant_kingdom.html</p>
+  <p class="mt-1"><i class="fas fa-leaf mr-1 text-emerald-400"></i> Plant Kingdom — NCERT Class 6 to 12 | Tailwind CSS · Font Awesome · Dark Theme</p>
+  <p class="mt-1 text-gray-600">Sources: NCERT Class 6 Ch 7, Class 7 Ch 1, Class 8 Ch 6-8, Class 9 Ch 6, Class 11 Ch 3, Class 12 Ch 2</p>
+</footer>
+
+</div><!-- end #app -->
+
+<script>
+const MCQS = [
+  {q:"Which pigment is dominant in Green Algae?", o:["Fucoxanthin","Phycoerythrin","Chlorophyll a & b","Phycocyanin"], c:2},
+  {q:"Spirogyra is an example of which group?", o:["Brown Algae","Red Algae","Green Algae","Blue-green Algae"], c:2},
+  {q:"Which algae is used as a source of Agar?", o:["Spirogyra","Gelidium","Chlamydomonas","Volvox"], c:1},
+  {q:"Bryophytes are called amphibians of plant kingdom because:", o:["They live on land but need water for reproduction","They live in water","They have gills","They have scales"], c:0},
+  {q:"Which bryophyte is known as 'Peat Moss'?", o:["Funaria","Polytrichum","Sphagnum","Marchantia"], c:2},
+  {q:"The dominant generation in pteridophytes is:", o:["Gametophyte","Sporophyte","Both equally","Prothallus"], c:1},
+  {q:"Which of the following is a gymnosperm?", o:["Mango","Pinus","Wheat","Rose"], c:1},
+  {q:"Double fertilization is a characteristic of:", o:["Gymnosperms","Pteridophytes","Angiosperms","Bryophytes"], c:2},
+  {q:"The endosperm in angiosperms is:", o:["Haploid","Diploid","Triploid","Tetraploid"], c:2},
+  {q:"Monocot seeds have:", o:["One cotyledon","Two cotyledons","No cotyledon","Multiple cotyledons"], c:0},
+  {q:"Which is a dicot plant?", o:["Wheat","Rice","Maize","Pea"], c:3},
+  {q:"Reserve food in red algae is:", o:["Starch","Laminarin","Floridean starch","Mannitol"], c:2},
+  {q:"Fucoxanthin is found in:", o:["Green Algae","Red Algae","Brown Algae","All algae"], c:2},
+  {q:"Which is NOT a characteristic of bryophytes?", o:["Rhizoids present","Vascular tissue absent","True roots present","Gametophyte dominant"], c:2},
+  {q:"The largest algae is:", o:["Laminaria","Macrocystis","Sargassum","Fucus"], c:1},
+  {q:"Which plant is a source of quinine (anti-malarial)?", o:["Rauwolfia","Digitalis","Cinchona","Ephedra"], c:2},
+  {q:"Pteridophytes are also called:", o:["Flowering plants","Cryptogams","Phanerogams","Bacteria"], c:1},
+  {q:"Which is a liverwort?", o:["Funaria","Sphagnum","Marchantia","Anthoceros"], c:2},
+  {q:"The prothallus in ferns is:", o:["Sporophyte","Gametophyte","Sporangium","Archegonium"], c:1},
+  {q:"Parallel venation is found in:", o:["Mango","Peepal","Wheat","Rose"], c:2},
+  {q:"Which gymnosperm has vessels in xylem?", o:["Pinus","Cycas","Ephedra","Cedrus"], c:2},
+  {q:"Which is a unicellular green alga?", o:["Spirogyra","Chlamydomonas","Ulothrix","Volvox"], c:1},
+  {q:"The cell wall of brown algae contains:", o:["Cellulose only","Cellulose + Algin","Cellulose + Pectin","Chitin"], c:1},
+  {q:"Which is also called 'maidenhair fern'?", o:["Pteris","Dryopteris","Adiantum","Marsilea"], c:2},
+  {q:"Heterosporous condition (microspores & megaspores) is seen in:", o:["All pteridophytes","Some pteridophytes like Selaginella","Only ferns","Bryophytes"], c:1},
+  {q:"Azolla is used as biofertilizer because it has:", o:["Root nodules","Anabaena symbiosis","Mycorrhiza","Chlorophyll"], c:1},
+  {q:"Sago starch is obtained from:", o:["Pinus","Cycas","Cedrus","Gnetum"], c:1},
+  {q:"Floral parts in multiples of 3 is characteristic of:", o:["Dicots","Monocots","Gymnosperms","All plants"], c:1},
+  {q:"Which plant is used as a cardiac stimulant (Digitalis)?", o:["Rauwolfia","Digitalis purpurea","Papaver somniferum","Cinchona"], c:1},
+  {q:"Mannitol is reserve food in:", o:["Green Algae","Red Algae","Brown Algae","All of these"], c:2},
+  {q:"Which is NOT an example of green algae?", o:["Chlamydomonas","Spirogyra","Polysiphonia","Ulva"], c:2},
+  {q:"The pigment r-Phycoerythrin is found in:", o:["Chlorophyceae","Phaeophyceae","Rhodophyceae","Xanthophyceae"], c:2},
+  {q:"Which bryophyte has a horn-like sporophyte?", o:["Marchantia","Riccia","Anthoceros","Funaria"], c:2},
+  {q:"Tap root system is found in:", o:["Monocots","Dicots","Both","None"], c:1},
+  {q:"Which of the following has naked seeds?", o:["Pteridophytes","Gymnosperms","Angiosperms","Bryophytes"], c:1},
+  {q:"Which plant is a source of taxol (anti-cancer)?", o:["Taxus","Ephedra","Gnetum","Pinus"], c:0},
+  {q:"The scientific name of the giant kelp is:", o:["Fucus","Laminaria","Macrocystis","Sargassum"], c:2},
+  {q:"Which part of the plant is responsible for photosynthesis?", o:["Root","Stem","Leaf","Flower"], c:2},
+  {q:"Perennial plants live for:", o:["One year","Two years","Many years","Few months"], c:2},
+  {q:"Which is NOT a monocot?", o:["Banana","Coconut","Onion","Mango"], c:3},
+  {q:"The haploid generation in plants is called:", o:["Sporophyte","Gametophyte","Zygote","Endosperm"], c:1},
+  {q:"Which group is considered 'first vascular land plants'?", o:["Bryophytes","Pteridophytes","Gymnosperms","Angiosperms"], c:1},
+  {q:"The male sex organ of bryophytes is called:", o:["Archegonium","Antheridium","Sporangium","Gemma cup"], c:1},
+  {q:"Equisetum belongs to which class?", o:["Psilopsida","Lycopsida","Sphenopsida","Pteropsida"], c:2},
+  {q:"Reticulate venation is seen in:", o:["Monocots","Dicots","Both","Ferns"], c:1},
+];
+
+function renderMCQs() {
+  const container = document.getElementById('mcq-container');
+  const letters = ['A','B','C','D'];
+  let html = '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">';
+  MCQS.forEach((item, idx) => {
+    const correctText = letters[item.c] + '. ' + item.o[item.c];
+    html += '<div class="mcq-block" onclick="toggleAnswer('+idx+')" id="mcq-'+idx+'">';
+    html += '<div class="mcq-q"><span class="text-emerald-400 font-bold mr-2">Q'+(idx+1)+'.</span>'+item.q+'</div>';
+    html += '<div class="mcq-opt">'+letters[0]+'. '+item.o[0]+'</div>';
+    html += '<div class="mcq-opt">'+letters[1]+'. '+item.o[1]+'</div>';
+    html += '<div class="mcq-opt">'+letters[2]+'. '+item.o[2]+'</div>';
+    html += '<div class="mcq-opt">'+letters[3]+'. '+item.o[3]+'</div>';
+    html += '<div class="mcq-ans" id="ans-'+idx+'"><i class="fas fa-check-circle mr-1"></i> Correct: '+correctText+'</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function toggleAnswer(idx) {
+  const el = document.getElementById('ans-'+idx);
+  const block = document.getElementById('mcq-'+idx);
+  if (el.classList.contains('show')) {
+    el.classList.remove('show');
+    block.classList.remove('correct');
+  } else {
+    el.classList.add('show');
+    block.classList.add('correct');
+  }
+}
+
+renderMCQs();
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

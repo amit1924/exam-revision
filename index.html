@@ -30,6 +30,7 @@
     .badge-current { background: linear-gradient(135deg, #10b981, #059669); }
     .badge-economics { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
     .badge-geography { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+    .badge-science { background: linear-gradient(135deg, #6366f1, #4f46e5); }
     .gradient-bar {
       height: 4px;
       border-radius: 2px;
@@ -41,11 +42,14 @@
 
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-[#0a0e1a]/95 backdrop-blur border-b border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-4">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
         <i class="fas fa-book-open mr-2"></i>BPSC Notes
       </a>
-      <div class="flex flex-wrap items-center gap-1 md:gap-4 text-sm">
+      <button id="main-hamburger" class="md:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMainMenu()" aria-label="Toggle menu">
+        <i id="main-hamburger-icon" class="fas fa-bars text-blue-400 text-xl"></i>
+      </button>
+      <div id="main-nav-menu" class="hidden md:flex flex-wrap items-center gap-1 md:gap-4 text-sm">
         <div class="relative group">
           <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-landmark mr-1"></i>History <i class="fas fa-chevron-down text-xs ml-1"></i></button>
           <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -75,26 +79,70 @@
             <a href="economics/bihar_economics_terms.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-book w-5 text-purple-400"></i> 100+ Economic Terms</a>
           </div>
         </div>
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-dna mr-1"></i>Science <i class="fas fa-chevron-down text-xs ml-1"></i></button>
+          <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="science/acids_bases_salts.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-flask w-5 text-amber-400"></i> Acids, Bases &amp; Salts</a>
+            <a href="science/plant_kingdom.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-seedling w-5 text-emerald-400"></i> Plant Kingdom</a>
+            <a href="science/animal_kingdom.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-paw w-5 text-indigo-400"></i> Animal Kingdom</a>
+          </div>
+        </div>
         <a href="geography/bihar_geography.html" class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-mountain mr-1"></i>Geography</a>
       </div>
     </div>
+    <!-- Mobile menu dropdown -->
+    <div id="main-mobile-menu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-1 text-sm">
+      <div class="font-semibold text-yellow-400 px-3 py-1"><i class="fas fa-landmark mr-2"></i>History</div>
+      <a href="history/indus_valley_civilization_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Indus Valley</a>
+      <a href="history/mauryan_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Mauryan Empire</a>
+      <a href="history/delhi_sultanate_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Delhi Sultanate</a>
+      <a href="history/mughal_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Mughal Empire</a>
+      <a href="history/later_mughals_1857.html" class="block px-6 py-1.5 hover:text-yellow-400">Later Mughals & 1857</a>
+      <a href="history/maratha_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Maratha Empire</a>
+      <a href="history/deccan_empires_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Deccan Empires</a>
+      <a href="history/european_powers_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">European Powers</a>
+      <div class="font-semibold text-green-400 px-3 py-1 mt-2"><i class="fas fa-newspaper mr-2"></i>Current Affairs</div>
+      <a href="current-affairs/bihar_current_affairs_january_2026.html" class="block px-6 py-1.5 hover:text-green-400">January 2026</a>
+      <a href="current-affairs/bihar_current_affairs_february_2026.html" class="block px-6 py-1.5 hover:text-green-400">February 2026</a>
+      <a href="current-affairs/bihar_current_affairs_march_2026.html" class="block px-6 py-1.5 hover:text-green-400">March 2026</a>
+      <a href="current-affairs/bihar_current_affairs_april_2026.html" class="block px-6 py-1.5 hover:text-green-400">April 2026</a>
+      <div class="font-semibold text-purple-400 px-3 py-1 mt-2"><i class="fas fa-chart-pie mr-2"></i>Economics</div>
+      <a href="economics/bihar_budget_economic_survey_2026.html" class="block px-6 py-1.5 hover:text-purple-400">Budget & Survey 2026</a>
+      <a href="economics/bihar_economics_terms.html" class="block px-6 py-1.5 hover:text-purple-400">100+ Economic Terms</a>
+      <div class="font-semibold text-indigo-400 px-3 py-1 mt-2"><i class="fas fa-dna mr-2"></i>Science</div>
+      <a href="science/acids_bases_salts.html" class="block px-6 py-1.5 hover:text-indigo-400">Acids, Bases &amp; Salts</a>
+      <a href="science/plant_kingdom.html" class="block px-6 py-1.5 hover:text-indigo-400">Plant Kingdom</a>
+      <a href="science/animal_kingdom.html" class="block px-6 py-1.5 hover:text-indigo-400">Animal Kingdom</a>
+      <div class="font-semibold text-cyan-400 px-3 py-1 mt-2"><i class="fas fa-mountain mr-2"></i>Geography</div>
+      <a href="geography/bihar_geography.html" class="block px-6 py-1.5 hover:text-cyan-400">Bihar Geography</a>
+    </div>
   </nav>
+  <script>
+  function toggleMainMenu() {
+    const m = document.getElementById('main-mobile-menu');
+    const i = document.getElementById('main-hamburger-icon');
+    m.classList.toggle('hidden');
+    i.classList.toggle('fa-bars');
+    i.classList.toggle('fa-times');
+  }
+  </script>
 
   <!-- Hero -->
   <div class="max-w-7xl mx-auto px-4 py-12 text-center">
     <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
       <i class="fas fa-graduation-cap mr-3"></i>BPSC / UPSC Study Notes
     </h1>
-    <p class="text-gray-400 text-lg mb-2">Comprehensive notes on Bihar History, Current Affairs, Budget &amp; Geography</p>
-    <p class="text-gray-500 text-sm">15 files — Dark themed · NCERT-based · District-wise · MCQ included</p>
+    <p class="text-gray-400 text-lg mb-2">Comprehensive notes on History, Current Affairs, Economics, Science &amp; Geography</p>
+    <p class="text-gray-500 text-sm">18 files — Dark themed · NCERT-based · District-wise · MCQ included</p>
   </div>
 
   <!-- Stats -->
   <div class="max-w-5xl mx-auto px-4 mb-12">
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
       <div class="card"><div class="text-3xl font-bold text-yellow-400">8</div><div class="text-gray-400 text-sm">History Topics</div></div>
       <div class="card"><div class="text-3xl font-bold text-green-400">4</div><div class="text-gray-400 text-sm">Monthly CA Files</div></div>
       <div class="card"><div class="text-3xl font-bold text-purple-400">2</div><div class="text-gray-400 text-sm">Economics Files</div></div>
+      <div class="card"><div class="text-3xl font-bold text-indigo-400">3</div><div class="text-gray-400 text-sm">Science Notes</div></div>
       <div class="card"><div class="text-3xl font-bold text-cyan-400">1</div><div class="text-gray-400 text-sm">Geography</div></div>
       <div class="card"><div class="text-3xl font-bold text-pink-400">114</div><div class="text-gray-400 text-sm">Economic Terms</div></div>
     </div>
@@ -135,6 +183,16 @@
     </div>
   </div>
 
+  <!-- Science Section -->
+  <div class="max-w-7xl mx-auto px-4 mb-12">
+    <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center"><span class="badge-science text-white text-xs px-3 py-1 rounded-full mr-3">SCIENCE</span> NCERT Science (Class 6–12)</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="science/acids_bases_salts.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-flask text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Acids, Bases &amp; Salts</h3><p class="text-sm text-gray-400">NCERT Class 6–10. Indicators, pH scale, neutralization, common salts (NaCl, NaOH, CaOCl2, NaHCO3, Na2CO3, POP), water of crystallization, 60 MCQs. 1,469 lines.</p></a>
+      <a href="science/plant_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-seedling text-2xl text-emerald-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Plant Kingdom</h3><p class="text-sm text-gray-400">Complete classification: Algae (Green/Red/Brown), Bryophytes, Pteridophytes, Gymnosperms, Angiosperms. Monocots vs Dicots, life cycles, 45 MCQs. 1,547 lines.</p></a>
+      <a href="science/animal_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-paw text-2xl text-indigo-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Animal Kingdom</h3><p class="text-sm text-gray-400">11 phyla with all examples: Porifera to Chordata. 7 vertebrate classes, comparison tables, 47 MCQs, mnemonics. 1,931 lines.</p></a>
+    </div>
+  </div>
+
   <!-- Geography Section -->
   <div class="max-w-7xl mx-auto px-4 mb-12">
     <h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center"><span class="badge-geography text-white text-xs px-3 py-1 rounded-full mr-3">GEOGRAPHY</span> Bihar Geography</h2>
@@ -146,7 +204,7 @@
   <!-- Footer -->
   <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
     <p><i class="fas fa-map-pin mr-1"></i> /home/amit/Desktop/ncert/history/</p>
-    <p class="mt-1">14 files · Dark themed · Tailwind CSS · Font Awesome</p>
+    <p class="mt-1">18 files · Dark themed · Tailwind CSS · Font Awesome</p>
   </footer>
 
 </body>

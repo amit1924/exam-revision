@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acids, Bases & Salts | NCERT Science Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+    .glow-card:hover { box-shadow: 0 0 20px rgba(251,191,36,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; }
+    .subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; margin-bottom:0.75rem; margin-top:1rem; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #34d399; font-weight: 600; }
+    .hl-policy { color: #a78bfa; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-num { color: #f87171; font-weight: 600; }
+    .hl-place { color: #22d3ee; font-weight: 500; }
+    .hl-term { color: #fbbf24; font-weight: 600; }
+    .bullet-list { list-style:none; padding-left:1rem; }
+    .bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; }
+    .bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#f59e0b; }
+    .table-wrap { overflow-x:auto; margin:0.75rem 0; }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+    .table-wrap th { background:rgba(251,191,36,0.15); color:#fcd34d; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(251,191,36,0.3); }
+    .table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+    .mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; }
+    .mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+    .mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+    .mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem; border-radius:0.5rem; background:rgba(251,191,36,0.1); font-size:0.82rem; color:#fbbf24; }
+    .mcq-ans.show { display:block; }
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.08)); border:1px solid rgba(99,102,241,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-flask text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Acids, Bases &amp; Salts</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Science · Class 6 to 10 · Comprehensive Notes</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-flask text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Intro</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Indicators</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Acids</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Bases</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. pH Scale</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Neutralization</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Salts Types</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Common Salts</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Water of Cryst.</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Reactions</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Comparisons</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. Mnemonics</a>
+        <a href="#sec13" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">13. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Introduction -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-book-open text-amber-400 text-sm"></i> 1. Introduction – What are Acids &amp; Bases?</h2>
+      <p class="text-sm text-gray-400 mb-3">Everything around us is either <span class="hl-term">acidic</span>, <span class="hl-term">basic</span> (alkaline), or <span class="hl-term">neutral</span>. Acids and bases are two fundamental categories of chemical substances that we encounter in daily life.</p>
+
+      <div class="subsection-heading"><i class="fas fa-magnifying-glass text-amber-400 text-xs mr-2"></i>Definitions</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Acid</span> – A substance that tastes <span class="hl-event">sour</span> and turns <span class="hl-ruler">blue litmus red</span>. Derived from Latin word <em>acidus</em> meaning sour.</li>
+        <li><span class="hl-term">Base</span> – A substance that tastes <span class="hl-event">bitter</span>, feels <span class="hl-place">soapy/slippery</span> to touch, and turns <span class="hl-ruler">red litmus blue</span>.</li>
+        <li><span class="hl-term">Neutral</span> – Substances that are neither acidic nor basic (e.g., pure water, sugar solution).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-seedling text-green-400 text-xs mr-2"></i>Natural Indicators</div>
+      <p class="text-sm text-gray-400 mb-2">Indicators are substances that change colour in acidic or basic media. Natural indicators are obtained from plants and lichens.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Indicator</th><th>Source</th><th>Colour in Acid</th><th>Colour in Base</th></tr></thead>
+          <tbody>
+            <tr><td>Litmus</td><td>Lichens (<em>Roccella tinctoria</em>)</td><td><span class="hl-event">Red</span></td><td><span class="hl-ruler">Blue</span></td></tr>
+            <tr><td>Turmeric</td><td>Turmeric root (<em>Curcuma longa</em>)</td><td>Yellow</td><td><span class="hl-event">Reddish-brown</span></td></tr>
+            <tr><td>China Rose (Red Cabbage)</td><td>Red cabbage / Hibiscus petals</td><td><span class="hl-event">Magenta</span></td><td><span class="hl-place">Greenish-yellow</span></td></tr>
+            <tr><td>Coloured Petals</td><td>Hydrangea, Petunia, Geranium</td><td>Variable</td><td>Variable</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lemon text-yellow-400 text-xs mr-2"></i>Acids in Everyday Life</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Substance</th><th>Acid Present</th><th>Acid Type</th></tr></thead>
+          <tbody>
+            <tr><td>Lemon / Orange</td><td>Citric acid + Ascorbic acid (Vitamin&nbsp;C)</td><td>Organic</td></tr>
+            <tr><td>Vinegar</td><td>Acetic acid (about 5-8%)</td><td>Organic</td></tr>
+            <tr><td>Curd / Yogurt</td><td>Lactic acid</td><td>Organic</td></tr>
+            <tr><td>Tamarind</td><td>Tartaric acid</td><td>Organic</td></tr>
+            <tr><td>Tomato</td><td>Oxalic acid</td><td>Organic</td></tr>
+            <tr><td>Apple</td><td>Malic acid</td><td>Organic</td></tr>
+            <tr><td>Grapes</td><td>Tartaric acid</td><td>Organic</td></tr>
+            <tr><td>Spinach</td><td>Oxalic acid</td><td>Organic</td></tr>
+            <tr><td>Stomach</td><td>Hydrochloric acid (HCl)</td><td>Mineral</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-hand-sparkles text-blue-300 text-xs mr-2"></i>Bases in Everyday Life</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Substance</th><th>Base Present</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td>Soap</td><td>Sodium / Potassium hydroxide</td><td>Alkali</td></tr>
+            <tr><td>Baking Soda</td><td>Sodium hydrogen carbonate (NaHCO₃)</td><td>Alkali</td></tr>
+            <tr><td>Toothpaste</td><td>Calcium carbonate / Fluoride compounds</td><td>Mild base</td></tr>
+            <tr><td>Window Cleaner</td><td>Ammonia (NH₃) / Ammonium hydroxide</td><td>Alkali</td></tr>
+            <tr><td>Lime Water</td><td>Calcium hydroxide – Ca(OH)₂</td><td>Alkali</td></tr>
+            <tr><td>Milk of Magnesia</td><td>Magnesium hydroxide – Mg(OH)₂</td><td>Base</td></tr>
+            <tr><td>Antacid Tablets</td><td>Mg(OH)₂ / Al(OH)₃</td><td>Base</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Fact:</span> The word <em>alkali</em> comes from Arabic <em>al-qaly</em> meaning "the roasted ashes". Water-soluble bases are called <span class="hl-term">alkalis</span>.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Indicators -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-vial text-amber-400 text-sm"></i> 2. Indicators – Types &amp; Colour Changes</h2>
+      <p class="text-sm text-gray-400 mb-3">Indicators are chemical substances that change colour in acidic or basic media. They help us identify the nature of a substance.</p>
+
+      <div class="subsection-heading"><i class="fas fa-leaf text-green-400 text-xs mr-2"></i>Types of Indicators</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Category</th><th>Examples</th><th>Nature</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Natural</span></td><td>Litmus, Turmeric, Red cabbage, China rose (Hibiscus), Coloured petals</td><td>Derived from plants/lichens</td></tr>
+            <tr><td><span class="hl-term">Synthetic</span></td><td>Phenolphthalein, Methyl orange, Methyl red</td><td>Man-made chemicals</td></tr>
+            <tr><td><span class="hl-term">Olfactory</span></td><td>Onion, Vanilla essence, Clove oil</td><td>Based on smell change</td></tr>
+            <tr><td><span class="hl-term">Universal</span></td><td>Universal indicator / pH paper</td><td>Mixture of indicators – shows pH value</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-palette text-pink-400 text-xs mr-2"></i>Colour Changes of Indicators</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Indicator</th><th>Colour in Acid</th><th>Colour in Base</th><th>Rare/Neutral</th></tr></thead>
+          <tbody>
+            <tr><td>Blue Litmus</td><td><span class="hl-event">Turns Red</span></td><td>Stays Blue</td><td>Purple (neutral)</td></tr>
+            <tr><td>Red Litmus</td><td>Stays Red</td><td><span class="hl-ruler">Turns Blue</span></td><td>Purple (neutral)</td></tr>
+            <tr><td>Turmeric</td><td>Yellow</td><td><span class="hl-event">Reddish-brown</span></td><td>Yellow</td></tr>
+            <tr><td>Red Cabbage</td><td><span class="hl-event">Magenta / Red</span></td><td><span class="hl-place">Greenish-yellow / Blue</span></td><td>Purple</td></tr>
+            <tr><td>China Rose</td><td><span class="hl-event">Dark pink / Magenta</span></td><td><span class="hl-place">Green</span></td><td>Original colour</td></tr>
+            <tr><td>Phenolphthalein</td><td><span class="hl-term">Colourless</span></td><td><span class="hl-event">Pink</span></td><td>Colourless</td></tr>
+            <tr><td>Methyl Orange</td><td><span class="hl-event">Red / Orange-red</span></td><td><span class="hl-date">Yellow</span></td><td>Orange</td></tr>
+            <tr><td>Methyl Red</td><td><span class="hl-event">Red</span></td><td><span class="hl-date">Yellow</span></td><td>Orange</td></tr>
+            <tr><td>Litmus Solution</td><td><span class="hl-event">Red</span></td><td><span class="hl-ruler">Blue</span></td><td>Purple</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-nose text-orange-300 text-xs mr-2"></i>Olfactory (Smell-based) Indicators</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Onion:</span> Destroyed smell in acid; retains smell in base.</li>
+        <li><span class="hl-term">Vanilla Essence:</span> Smell disappears in base; remains in acid.</li>
+        <li><span class="hl-term">Clove Oil:</span> Smell vanishes in base; persists in acid.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-cyan-400 text-xs mr-2"></i>Universal Indicator &amp; pH Paper</div>
+      <p class="text-sm text-gray-400">A <span class="hl-term">universal indicator</span> is a mixture of several indicators that gives a distinct colour for different pH values. <span class="hl-term">pH paper</span> is paper impregnated with universal indicator – dip it in a solution and match the colour to a pH scale.</p>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic:</span> "Methyl Orange in Acid = Red" – think <span class="hl-event">MARA</span> (Methyl = Acid = Red). "Phenolphthalein in Base = Pink" – think <span class="hl-event">PBP</span> (Phenol = Base = Pink).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Acids - Properties & Classification -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-flask text-amber-400 text-sm"></i> 3. Acids – Properties &amp; Classification</h2>
+
+      <div class="subsection-heading"><i class="fas fa-atom text-amber-400 text-xs mr-2"></i>Definition (Arrhenius Concept)</div>
+      <p class="text-sm text-gray-400 mb-2">According to Arrhenius (1884), an <span class="hl-term">acid</span> is a substance that <span class="hl-event">donates H⁺ ions</span> (protons) when dissolved in water.</p>
+      <p class="text-sm text-gray-400 mb-3">Example: HCl → H⁺ + Cl⁻ (in water)</p>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Classification of Acids</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">1. Based on Strength – Strong vs Weak</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Strong Acids</th><th>Weak Acids</th></tr></thead>
+          <tbody>
+            <tr><td>Ionization</td><td>Completely ionize in water</td><td>Partially ionize in water</td></tr>
+            <tr><td>H⁺ concentration</td><td>High</td><td>Low</td></tr>
+            <tr><td>pH</td><td>0–3</td><td>3–6</td></tr>
+            <tr><td>Examples</td><td>HCl, H₂SO₄, HNO₃, HBr, HI, HClO₄</td><td>CH₃COOH (acetic), H₂CO₃ (carbonic), H₃PO₄ (phosphoric)</td></tr>
+            <tr><td>Corrosive nature</td><td>Highly corrosive</td><td>Less corrosive</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">2. Based on Source – Mineral vs Organic</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Mineral Acids (Inorganic)</th><th>Organic Acids</th></tr></thead>
+          <tbody>
+            <tr><td>Source</td><td>Minerals (chemical synthesis)</td><td>Living organisms (plants/animals)</td></tr>
+            <tr><td>Strength</td><td>Generally strong</td><td>Generally weak</td></tr>
+            <tr><td>Carbon chain</td><td>No carbon backbone</td><td>Contain -COOH (carboxyl) group</td></tr>
+            <tr><td>Examples</td><td>HCl (hydrochloric), H₂SO₄ (sulphuric), HNO₃ (nitric), H₃PO₄ (phosphoric)</td><td>CH₃COOH (acetic), C₆H₈O₇ (citric), H₂C₂O₄ (oxalic), C₄H₆O₆ (tartaric), C₃H₆O₃ (lactic), CH₂O₂ (formic)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">3. Based on Concentration – Concentrated vs Dilute</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Concentrated acid:</span> Large amount of acid dissolved in small amount of water (high solute). Corrosive, requires careful handling.</li>
+        <li><span class="hl-term">Dilute acid:</span> Small amount of acid dissolved in large amount of water (low solute). Safer to handle.</li>
+      </ul>
+      <div class="fact-box">
+        <i class="fas fa-triangle-exclamation text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Safety:</span> Always add <strong>acid to water</strong>, never water to acid! Adding water to concentrated acid produces extreme heat that can cause explosion.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-gears text-amber-400 text-xs mr-2"></i>Physical Properties of Acids</div>
+      <ul class="bullet-list text-sm">
+        <li>Sour taste (e.g., lemon, vinegar).</li>
+        <li>Turn blue litmus red.</li>
+        <li>Corrosive in nature – can damage skin, paper, fabric, and metals.</li>
+        <li>Good conductors of electricity in aqueous solution (due to ionization).</li>
+        <li>React with active metals to liberate hydrogen gas.</li>
+        <li>pH less than 7.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-rotate text-amber-400 text-xs mr-2"></i>Chemical Properties of Acids</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Metals:</p>
+      <p class="text-sm text-gray-400 mb-2">Acid + Metal → Salt + Hydrogen gas ↑</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)↑</div>
+      <p class="text-sm text-gray-400 mb-3">Test for H₂: Bring a burning splinter near the mouth of test tube – it burns with a <span class="hl-event">pop sound</span>.</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Carbonates &amp; Hydrogen Carbonates:</p>
+      <p class="text-sm text-gray-400 mb-2">Acid + Carbonate → Salt + CO₂ + H₂O</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + CO₂(g) + H₂O(l)</div>
+      <p class="text-sm text-gray-400 mb-3">CO₂ turns lime water milky (Ca(OH)₂ + CO₂ → CaCO₃ + H₂O).</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Bases (Neutralization):</p>
+      <p class="text-sm text-gray-400 mb-2">Acid + Base → Salt + Water + Heat</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l) + Heat</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Metal Oxides:</p>
+      <p class="text-sm text-gray-400 mb-2">Acid + Metal Oxide → Salt + Water</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">CuO(s) + 2HCl(aq) → CuCl₂(aq) + H₂O(l)</div>
+      <p class="text-sm text-gray-400">Black copper oxide dissolves to form blue-green copper chloride solution.</p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Bases - Properties & Classification -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-hand-sparkles text-amber-400 text-sm"></i> 4. Bases – Properties &amp; Classification</h2>
+
+      <div class="subsection-heading"><i class="fas fa-atom text-amber-400 text-xs mr-2"></i>Definition (Arrhenius Concept)</div>
+      <p class="text-sm text-gray-400 mb-2">A <span class="hl-term">base</span> is a substance that <span class="hl-date">donates OH⁻ ions</span> (hydroxide ions) when dissolved in water.</p>
+      <p class="text-sm text-gray-400 mb-3">Example: NaOH → Na⁺ + OH⁻ (in water)</p>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Classification of Bases</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">1. Strong vs Weak Bases</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Strong Bases</th><th>Weak Bases</th></tr></thead>
+          <tbody>
+            <tr><td>Ionization</td><td>Completely ionize in water</td><td>Partially ionize in water</td></tr>
+            <tr><td>OH⁻ concentration</td><td>High</td><td>Low</td></tr>
+            <tr><td>pH</td><td>12–14</td><td>8–11</td></tr>
+            <tr><td>Examples</td><td>NaOH (sodium hydroxide), KOH (potassium hydroxide), Ca(OH)₂ (calcium hydroxide)</td><td>NH₄OH (ammonium hydroxide), Mg(OH)₂ (magnesium hydroxide), Al(OH)₃ (aluminium hydroxide)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">2. Alkalis (Water-soluble) vs Insoluble Bases</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Alkalis</span> are water-soluble bases. E.g., NaOH, KOH, Ca(OH)₂, NH₄OH.</li>
+        <li><span class="hl-term">Insoluble bases</span> do not dissolve in water. E.g., Cu(OH)₂, Fe(OH)₃, Zn(OH)₂, Al(OH)₃.</li>
+        <li>All alkalis are bases, but NOT all bases are alkalis.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-gears text-amber-400 text-xs mr-2"></i>Physical Properties of Bases</div>
+      <ul class="bullet-list text-sm">
+        <li>Bitter taste.</li>
+        <li>Soapy or slippery feel to touch (due to saponification of skin oils).</li>
+        <li>Turn red litmus blue.</li>
+        <li>Good conductors of electricity in aqueous solution.</li>
+        <li>pH greater than 7.</li>
+        <li>Corrosive in concentrated form (especially strong alkalis like NaOH).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-rotate text-amber-400 text-xs mr-2"></i>Chemical Properties of Bases</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Metals:</p>
+      <p class="text-sm text-gray-400 mb-2">Base + Metal → Salt + Hydrogen gas ↑</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">2NaOH(aq) + Zn(s) → Na₂ZnO₂(sodium zincate) + H₂(g)↑</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Acids (Neutralization):</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l) + Heat</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Reaction with Non-Metal Oxides:</p>
+      <p class="text-sm text-gray-400 mb-2">Base + Non-metal oxide → Salt + Water</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">2NaOH(aq) + CO₂(g) → Na₂CO₃(aq) + H₂O(l)</div>
+      <p class="text-sm text-gray-400 mb-3">This is why NaOH pellets absorb CO₂ from air and should be stored in airtight containers.</p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: pH Scale -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-ruler-combined text-amber-400 text-sm"></i> 5. pH Scale – Acidity &amp; Alkalinity</h2>
+
+      <div class="subsection-heading"><i class="fas fa-square-root-variable text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">pH</span> stands for <em>Potenz</em> of Hydrogen (power of hydrogen). It is defined as the <span class="hl-num">negative logarithm of H⁺ ion concentration</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">pH = –log₁₀[H⁺]</div>
+
+      <div class="subsection-heading"><i class="fas fa-scale-balanced text-amber-400 text-xs mr-2"></i>The pH Scale (0 to 14)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>pH Range</th><th>Nature</th><th>H⁺ Concentration</th></tr></thead>
+          <tbody>
+            <tr><td>0 – 6</td><td><span class="hl-event">Acidic</span></td><td>High [H⁺]</td></tr>
+            <tr><td>7</td><td><span class="hl-date">Neutral</span></td><td>[H⁺] = [OH⁻] = 10⁻⁷ M</td></tr>
+            <tr><td>8 – 14</td><td><span class="hl-ruler">Basic (Alkaline)</span></td><td>Low [H⁺]</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>pH of Common Substances</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Substance</th><th>Approx. pH</th><th>Nature</th></tr></thead>
+          <tbody>
+            <tr><td>Stomach Acid (HCl)</td><td><span class="hl-num">1.0 – 1.5</span></td><td><span class="hl-event">Strongly Acidic</span></td></tr>
+            <tr><td>Lemon Juice</td><td><span class="hl-num">2.2</span></td><td><span class="hl-event">Acidic</span></td></tr>
+            <tr><td>Vinegar</td><td><span class="hl-num">3.0</span></td><td><span class="hl-event">Acidic</span></td></tr>
+            <tr><td>Tomato Juice</td><td><span class="hl-num">4.0 – 4.5</span></td><td><span class="hl-event">Acidic</span></td></tr>
+            <tr><td>Black Coffee</td><td><span class="hl-num">5.0</span></td><td><span class="hl-event">Weakly Acidic</span></td></tr>
+            <tr><td>Milk</td><td><span class="hl-num">6.5</span></td><td><span class="hl-event">Slightly Acidic</span></td></tr>
+            <tr><td>Pure Water</td><td><span class="hl-date">7.0</span></td><td><span class="hl-date">Neutral</span></td></tr>
+            <tr><td>Human Blood</td><td><span class="hl-num">7.35 – 7.45</span></td><td><span class="hl-place">Slightly Basic</span></td></tr>
+            <tr><td>Seawater</td><td><span class="hl-num">8.0 – 8.5</span></td><td><span class="hl-ruler">Basic</span></td></tr>
+            <tr><td>Baking Soda Solution</td><td><span class="hl-num">9.0</span></td><td><span class="hl-ruler">Basic</span></td></tr>
+            <tr><td>Milk of Magnesia</td><td><span class="hl-num">10.0 – 10.5</span></td><td><span class="hl-ruler">Basic</span></td></tr>
+            <tr><td>Ammonia Solution</td><td><span class="hl-num">11.0 – 11.5</span></td><td><span class="hl-ruler">Strongly Basic</span></td></tr>
+            <tr><td>NaOH (1M)</td><td><span class="hl-num">14.0</span></td><td><span class="hl-ruler">Very Strong Base</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-heart-pulse text-red-400 text-xs mr-2"></i>Importance of pH in Everyday Life</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">a) pH in Digestive System</p>
+      <p class="text-sm text-gray-400 mb-3">Our stomach produces <span class="hl-event">HCl</span> (pH ~1.2) to kill bacteria and activate digestive enzymes. Excess acid causes <em>acidity</em>/<em>heartburn</em>, treated with <span class="hl-term">antacids</span> (mild bases).</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">b) pH of Soil</p>
+      <p class="text-sm text-gray-400 mb-3">Plants grow best in specific pH ranges. Most prefer <span class="hl-place">pH 6.5–7.5</span>. Acidic soil is treated with <span class="hl-term">quicklime</span> (CaO) or <span class="hl-term">slaked lime</span> (Ca(OH)₂). Basic soil is treated with organic matter (compost).</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">c) pH &amp; Tooth Decay</p>
+      <p class="text-sm text-gray-400 mb-3">Bacteria in mouth produce acids by breaking down sugars. Acids attack tooth enamel (pH &lt; 5.5 causes demineralization). <span class="hl-term">Toothpaste</span> is basic (pH ~8) to neutralize acid.</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">d) Acid Rain</p>
+      <p class="text-sm text-gray-400 mb-3">Rain with pH &lt; 5.6 due to SO₂ and NOₓ dissolving in rainwater forming H₂SO₄ and HNO₃. Damages buildings (marble – CaCO₃ reacts), soil, and water bodies.</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">e) Self Defence by Animals</p>
+      <p class="text-sm text-gray-400 mb-3">Bees and ants inject <span class="hl-term">formic acid</span> (HCOOH) when they sting. Nettle stings contain <span class="hl-term">methanoic acid</span>. These are treated with mild bases like <span class="hl-term">baking soda</span> paste.</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> pH of human blood is strictly maintained at <span class="hl-num">7.35 – 7.45</span>. If it drops below 6.8 or rises above 7.8, it is life-threatening.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Neutralization Reactions -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-equals text-amber-400 text-sm"></i> 6. Neutralization Reactions</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Neutralization</span> is a chemical reaction in which an <span class="hl-event">acid</span> and a <span class="hl-ruler">base</span> react with each other to produce a <span class="hl-date">salt</span> and <span class="hl-place">water</span>. The reaction is <span class="hl-num">exothermic</span> (releases heat).</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">General Equation:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">Acid + Base → Salt + Water + Heat</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Examples:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l) + Heat</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">H₂SO₄(aq) + 2KOH(aq) → K₂SO₄(aq) + 2H₂O(l) + Heat</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">HNO₃(aq) + KOH(aq) → KNO₃(aq) + H₂O(l) + Heat</div>
+
+      <div class="subsection-heading"><i class="fas fa-stethoscope text-amber-400 text-xs mr-2"></i>Applications of Neutralization in Daily Life</div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Application</th><th>Acid/Base</th><th>How it Works</th></tr></thead>
+          <tbody>
+            <tr><td>Antacids (Eno, Gelusil, Digene)</td><td>Mg(OH)₂, Al(OH)₃ – <span class="hl-ruler">Bases</span></td><td>Neutralize excess HCl in stomach</td></tr>
+            <tr><td>Calamine Lotion</td><td>ZnCO₃ or ZnO – <span class="hl-ruler">Base</span></td><td>Neutralizes acid from insect bites</td></tr>
+            <tr><td>Bee Sting Treatment</td><td>Baking soda (NaHCO₃) – <span class="hl-ruler">Base</span></td><td>Neutralizes formic acid from bee sting</td></tr>
+            <tr><td>Nettle Sting Treatment</td><td>Dock leaf (contains base) – <span class="hl-ruler">Base</span></td><td>Neutralizes methanoic acid</td></tr>
+            <tr><td>Factory Waste Treatment</td><td>Quicklime (CaO) / Slaked lime – <span class="hl-ruler">Base</span></td><td>Neutralizes acidic industrial waste before disposal</td></tr>
+            <tr><td>Soil Treatment</td><td>Quicklime (CaO) – <span class="hl-ruler">Base</span></td><td>Neutralizes acidic soil for farming</td></tr>
+            <tr><td>Ant Bite</td><td>Wet baking soda / Calamine</td><td>Neutralizes formic acid from ant sting</td></tr>
+            <tr><td>Wasp Sting</td><td>Vinegar (acetic acid) – <span class="hl-event">Acid</span></td><td>Wasp sting is basic – neutralized with acid</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Trick to Remember:</span> Bee sting → Basic treatment (Baking soda). Wasp sting → Acid treatment (Vinegar). <span class="hl-event">Bee = Base treatment</span>; <span class="hl-event">Wasp = Acid treatment</span>.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Salts - Types & Properties -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-crystal text-amber-400 text-sm"></i> 7. Salts – Types &amp; Properties</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">salt</span> is a compound formed by the <span class="hl-event">neutralization</span> of an acid by a base. Salts are ionic compounds consisting of a cation (from base) and an anion (from acid).</p>
+      <div class="text-sm text-gray-400 mb-3">General formula: Salt = Cation from base + Anion from acid</div>
+
+      <div class="subsection-heading"><i class="fas fa-diagram-group text-amber-400 text-xs mr-2"></i>Types of Salts</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Definition</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Normal Salt</span></td><td>All H⁺ of acid replaced by metal; all OH⁻ of base replaced</td><td>NaCl, Na₂SO₄, KNO₃, CaCO₃</td></tr>
+            <tr><td><span class="hl-event">Acidic Salt</span></td><td>Contains replaceable H⁺ atoms (from polybasic acid)</td><td>NaHSO₄, NaH₂PO₄, NaHCO₃, KHCO₃</td></tr>
+            <tr><td><span class="hl-date">Basic Salt</span></td><td>Contains replaceable OH⁻ groups (from polyacidic base)</td><td>Mg(OH)Cl, CuCO₃·Cu(OH)₂, Pb(OH)NO₃</td></tr>
+            <tr><td><span class="hl-policy">Double Salt</span></td><td>Two different salts crystallized together in fixed ratio</td><td>Potash alum K₂SO₄·Al₂(SO₄)₃·24H₂O, Mohr's salt FeSO₄·(NH₄)₂SO₄·6H₂O</td></tr>
+            <tr><td><span class="hl-place">Complex Salt</span></td><td>Contains a complex ion (metal + ligands)</td><td>K₄[Fe(CN)₆] (potassium ferrocyanide), [Cu(NH₃)₄]SO₄</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-water text-amber-400 text-xs mr-2"></i>pH of Salt Solutions (Hydrolysis)</div>
+      <p class="text-sm text-gray-400 mb-2">When a salt dissolves in water, it may produce acidic, basic, or neutral solutions depending on the strength of the parent acid and base.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Parent Acid</th><th>Parent Base</th><th>Salt pH</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Strong (HCl)</td><td>Strong (NaOH)</td><td><span class="hl-date">Neutral (pH 7)</span></td><td>NaCl</td></tr>
+            <tr><td>Strong (HCl)</td><td>Weak (NH₄OH)</td><td><span class="hl-event">Acidic (pH &lt; 7)</span></td><td>NH₄Cl</td></tr>
+            <tr><td>Weak (CH₃COOH)</td><td>Strong (NaOH)</td><td><span class="hl-ruler">Basic (pH &gt; 7)</span></td><td>CH₃COONa (sodium acetate)</td></tr>
+            <tr><td>Weak (CH₃COOH)</td><td>Weak (NH₄OH)</td><td>~7 (depends on Ka/Kb)</td><td>CH₃COONH₄</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic:</span> <span class="hl-event">SASB = Neutral</span> (Strong Acid + Strong Base → pH 7). <span class="hl-event">SAWB = Acidic</span> (Strong Acid + Weak Base → pH &lt; 7). <span class="hl-event">WASB = Basic</span> (Weak Acid + Strong Base → pH &gt; 7).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Common Salts - Preparation & Uses -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-cube text-amber-400 text-sm"></i> 8. Common Salts – Preparation &amp; Uses</h2>
+
+      <!-- 8a: Sodium Chloride -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Sodium Chloride – NaCl (Common Salt / Rock Salt)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Sources:</span> Sea water (2.7% NaCl), rock salt deposits (Himalayan pink salt, Khewra mine).</li>
+        <li><span class="hl-term">Uses:</span> Seasoning food, preserving meat/pickles, manufacture of NaOH, Cl₂, Na₂CO₃, soap.</li>
+        <li><span class="hl-term">Electrolysis of brine</span> (Chlor-alkali process):</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">2NaCl(aq) + 2H₂O(l) → 2NaOH(aq) + Cl₂(g)↑ + H₂(g)↑ (electrolysis)</div>
+      <ul class="bullet-list text-sm mb-2">
+        <li>Products: <span class="hl-event">NaOH</span> (caustic soda), <span class="hl-place">Cl₂</span> (chlorine), <span class="hl-date">H₂</span> (hydrogen).</li>
+        <li>Name "Chlor-alkali" because Cl₂ and alkali (NaOH) are produced.</li>
+      </ul>
+
+      <!-- 8b: Caustic Soda -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Sodium Hydroxide – NaOH (Caustic Soda / Lye)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Manufacture:</span> Chlor-alkali process (electrolysis of brine).</li>
+        <li><span class="hl-term">Uses:</span> Manufacture of soap (saponification), paper, textiles (rayon), drain cleaners, petroleum refining, detergents, artificial fibres.</li>
+        <li>Storage: NaOH is <span class="hl-event">hygroscopic</span> (absorbs moisture) and reacts with CO₂ → must store in airtight containers.</li>
+      </ul>
+
+      <!-- 8c: Bleaching Powder -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Bleaching Powder – CaOCl₂ (Calcium Oxychloride)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Manufacture:</span> Passing Cl₂ gas over dry slaked lime.</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">Ca(OH)₂(s) + Cl₂(g) → CaOCl₂(s) + H₂O(l)</div>
+      <ul class="bullet-list text-sm mb-2">
+        <li><span class="hl-term">Uses:</span> Bleaching cotton, linen, wood pulp (in paper industry); disinfecting drinking water; oxidizing agent in chemical industry.</li>
+        <li>Chlorine smell due to slow decomposition with moisture.</li>
+      </ul>
+
+      <!-- 8d: Baking Soda -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Sodium Hydrogen Carbonate – NaHCO₃ (Baking Soda)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Preparation:</span> Solvay process intermediate.</li>
+        <li><span class="hl-term">Uses:</span> Baking agent (cakes/bread rise due to CO₂), antacid (neutralizes stomach acid), ingredient in fire extinguishers, cleaning agent.</li>
+        <li>On heating:</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">2NaHCO₃(s) → Na₂CO₃(s) + CO₂(g)↑ + H₂O(g) (heating)</div>
+
+      <!-- 8e: Washing Soda -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Sodium Carbonate Decahydrate – Na₂CO₃·10H₂O (Washing Soda)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Preparation:</span> Solvay process or heating baking soda.</li>
+        <li>Na₂CO₃ is obtained from baking soda by heating; then crystallized with 10H₂O.</li>
+        <li><span class="hl-term">Uses:</span> Manufacture of glass (SiO₂ + Na₂CO₃ → Na₂SiO₃), soap, paper, water softening (removes Ca²⁺, Mg²⁺), detergents, borax.</li>
+        <li>Anhydrous Na₂CO₃ = <span class="hl-term">soda ash</span>.</li>
+      </ul>
+
+      <!-- 8f: Plaster of Paris -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Plaster of Paris – CaSO₄·½H₂O (Calcium Sulphate Hemihydrate)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Preparation:</span> Heating gypsum to ~100°C (373 K).</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono">CaSO₄·2H₂O(s) → CaSO₄·½H₂O(s) + 1½H₂O(g) (heated ~100°C)</div>
+      <ul class="bullet-list text-sm mb-2">
+        <li>When mixed with water, it sets into a hard mass (rehydrates to gypsum).</li>
+        <li><span class="hl-term">Uses:</span> Making plaster casts for broken bones, sculptures and statues, construction (false ceilings), dentist's moulds.</li>
+        <li>Store in moisture-proof containers – otherwise it absorbs water and loses setting property.</li>
+      </ul>
+
+      <!-- 8g: Gypsum -->
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Gypsum – CaSO₄·2H₂O (Calcium Sulphate Dihydrate)</div>
+      <ul class="bullet-list text-sm">
+        <li>Naturally occurring mineral.</li>
+        <li><span class="hl-term">Uses:</span> Cement manufacturing (retarder – slows setting), fertilizer, plasterboard, blackboard chalk.</li>
+        <li>On heating to 100°C → Plaster of Paris; on heating to 200°C → anhydrous CaSO₄ (dead burnt plaster – does not set).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Key Difference:</span> Baking soda (NaHCO₃) on heating gives Washing soda (Na₂CO₃). Gypsum (CaSO₄·2H₂O) on heating gives Plaster of Paris (CaSO₄·½H₂O).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Water of Crystallization -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-droplet text-amber-400 text-sm"></i> 9. Water of Crystallization</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Water of crystallization</span> is the fixed number of water molecules chemically bound to a salt in its crystalline structure. These water molecules give the crystals their shape and colour.</p>
+
+      <div class="subsection-heading"><i class="fas fa-cube text-amber-400 text-xs mr-2"></i>Examples of Hydrated Salts</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Hydrated Salt</th><th>Formula</th><th>Common Name</th><th>Colour</th><th>Anhydrous Colour</th></tr></thead>
+          <tbody>
+            <tr><td>Copper sulphate pentahydrate</td><td>CuSO₄·5H₂O</td><td>Blue Vitriol</td><td><span class="hl-ruler">Blue</span></td><td><span class="hl-event">White</span></td></tr>
+            <tr><td>Ferrous sulphate heptahydrate</td><td>FeSO₄·7H₂O</td><td>Green Vitriol</td><td><span class="hl-date">Green</span></td><td><span class="hl-event">White</span></td></tr>
+            <tr><td>Sodium carbonate decahydrate</td><td>Na₂CO₃·10H₂O</td><td>Washing Soda</td><td>White crystalline</td><td>White powder</td></tr>
+            <tr><td>Calcium sulphate dihydrate</td><td>CaSO₄·2H₂O</td><td>Gypsum</td><td>White</td><td>White</td></tr>
+            <tr><td>Magnesium sulphate heptahydrate</td><td>MgSO₄·7H₂O</td><td>Epsom Salt</td><td>White</td><td>White</td></tr>
+            <tr><td>Potash alum</td><td>K₂SO₄·Al₂(SO₄)₃·24H₂O</td><td>Fitkari / Alum</td><td>Colourless</td><td>White</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-trend-down text-amber-400 text-xs mr-2"></i>Heating Effect on Hydrated Salts</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">CuSO₄·5H₂O (Blue) → CuSO₄ (White) + 5H₂O</span> – on heating, blue colour disappears, white powder remains. Add water, blue colour returns (reversible).</li>
+        <li><span class="hl-term">FeSO₄·7H₂O (Green) → FeSO₄ (White) + 7H₂O</span> – on heating, green turns white, then decomposes to Fe₂O₃ (red-brown) + SO₂ + SO₃.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-wind text-amber-400 text-xs mr-2"></i>Efflorescence, Deliquescence &amp; Hygroscopy</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Term</th><th>Definition</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Efflorescence</span></td><td>Loss of water of crystallization when exposed to air (crystals lose water and become powdery)</td><td>Na₂CO₃·10H₂O → Na₂CO₃·H₂O (crystals turn white/powdery)</td></tr>
+            <tr><td><span class="hl-term">Deliquescence</span></td><td>Substances absorb moisture from air and eventually dissolve in it (form solution)</td><td>CaCl₂, MgCl₂, NaOH, KOH, P₂O₅</td></tr>
+            <tr><td><span class="hl-term">Hygroscopy</span></td><td>Substances absorb moisture from air but do NOT dissolve (just become sticky/damp)</td><td>Concentrated H₂SO₄, NaOH pellets, Silica gel, CaO</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Memory Aid:</span> <span class="hl-event">Efflorescence = Exit of water</span> (loses water). <span class="hl-event">Deliquescence = Dissolves</span> (absorbs &amp; dissolves). <span class="hl-event">Hygroscopy = Holds moisture</span> (just damp, no solution).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Important Reactions -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-flask text-amber-400 text-sm"></i> 10. Important Reactions – Balanced Equations</h2>
+      <p class="text-sm text-gray-400 mb-3">All key reactions from NCERT Class 7–10, balanced and ready for exams.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Reaction Name</th><th>Balanced Equation</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Neutralization – HCl + NaOH</td><td class="font-mono text-cyan-300 text-xs">HCl + NaOH → NaCl + H₂O</td></tr>
+            <tr><td>2</td><td>Neutralization – H₂SO₄ + NaOH</td><td class="font-mono text-cyan-300 text-xs">H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O</td></tr>
+            <tr><td>3</td><td>Neutralization – HNO₃ + KOH</td><td class="font-mono text-cyan-300 text-xs">HNO₃ + KOH → KNO₃ + H₂O</td></tr>
+            <tr><td>4</td><td>Metal + Acid (Zn + H₂SO₄)</td><td class="font-mono text-cyan-300 text-xs">Zn + H₂SO₄ → ZnSO₄ + H₂↑</td></tr>
+            <tr><td>5</td><td>Metal + Acid (Mg + HCl)</td><td class="font-mono text-cyan-300 text-xs">Mg + 2HCl → MgCl₂ + H₂↑</td></tr>
+            <tr><td>6</td><td>Carbonate + Acid (NaHCO₃ + HCl)</td><td class="font-mono text-cyan-300 text-xs">NaHCO₃ + HCl → NaCl + CO₂↑ + H₂O</td></tr>
+            <tr><td>7</td><td>Carbonate + Acid (Na₂CO₃ + HCl)</td><td class="font-mono text-cyan-300 text-xs">Na₂CO₃ + 2HCl → 2NaCl + CO₂↑ + H₂O</td></tr>
+            <tr><td>8</td><td>Limestone + Acid (CaCO₃ + HCl)</td><td class="font-mono text-cyan-300 text-xs">CaCO₃ + 2HCl → CaCl₂ + CO₂↑ + H₂O</td></tr>
+            <tr><td>9</td><td>Baking soda heating</td><td class="font-mono text-cyan-300 text-xs">2NaHCO₃ → Na₂CO₃ + CO₂↑ + H₂O (heat)</td></tr>
+            <tr><td>10</td><td>Solvay process step</td><td class="font-mono text-cyan-300 text-xs">NaCl + NH₃ + CO₂ + H₂O → NaHCO₃ + NH₄Cl</td></tr>
+            <tr><td>11</td><td>Chlor-alkali (brine electrolysis)</td><td class="font-mono text-cyan-300 text-xs">2NaCl + 2H₂O → 2NaOH + Cl₂↑ + H₂↑ (electrolysis)</td></tr>
+            <tr><td>12</td><td>Bleaching powder manufacture</td><td class="font-mono text-cyan-300 text-xs">Ca(OH)₂ + Cl₂ → CaOCl₂ + H₂O</td></tr>
+            <tr><td>13</td><td>Plaster of Paris preparation</td><td class="font-mono text-cyan-300 text-xs">CaSO₄·2H₂O → CaSO₄·½H₂O + 1½H₂O (heat ~100°C)</td></tr>
+            <tr><td>14</td><td>Blue vitriol dehydration</td><td class="font-mono text-cyan-300 text-xs">CuSO₄·5H₂O → CuSO₄ + 5H₂O (heat, blue to white)</td></tr>
+            <tr><td>15</td><td>Iron + Copper sulphate (displacement)</td><td class="font-mono text-cyan-300 text-xs">Fe + CuSO₄ → FeSO₄ + Cu (blue to green)</td></tr>
+            <tr><td>16</td><td>CO₂ test with lime water</td><td class="font-mono text-cyan-300 text-xs">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O (milky)</td></tr>
+            <tr><td>17</td><td>Acid + Metal oxide (CuO + HCl)</td><td class="font-mono text-cyan-300 text-xs">CuO + 2HCl → CuCl₂ + H₂O</td></tr>
+            <tr><td>18</td><td>Base + Non-metal oxide (NaOH + CO₂)</td><td class="font-mono text-cyan-300 text-xs">2NaOH + CO₂ → Na₂CO₃ + H₂O</td></tr>
+            <tr><td>19</td><td>Zn + NaOH (base + metal)</td><td class="font-mono text-cyan-300 text-xs">2NaOH + Zn → Na₂ZnO₂ + H₂↑</td></tr>
+            <tr><td>20</td><td>Decomposition of CaCO₃</td><td class="font-mono text-cyan-300 text-xs">CaCO₃ → CaO + CO₂↑ (heat, quicklime formation)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 11. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Acids vs Bases (8+ Differences)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Acid</th><th>Base</th></tr></thead>
+          <tbody>
+            <tr><td>Taste</td><td><span class="hl-event">Sour</span></td><td><span class="hl-place">Bitter</span></td></tr>
+            <tr><td>Touch</td><td>Generally not slippery</td><td><span class="hl-ruler">Soapy / Slippery</span></td></tr>
+            <tr><td>Litmus (Blue)</td><td><span class="hl-event">Turns Red</span></td><td>Stays Blue</td></tr>
+            <tr><td>Litmus (Red)</td><td>Stays Red</td><td><span class="hl-ruler">Turns Blue</span></td></tr>
+            <tr><td>pH</td><td>&lt; 7</td><td>&gt; 7</td></tr>
+            <tr><td>H⁺ ion concentration</td><td><span class="hl-num">High [H⁺]</span></td><td>Low [H⁺]</td></tr>
+            <tr><td>OH⁻ ion concentration</td><td>Low [OH⁻]</td><td><span class="hl-num">High [OH⁻]</span></td></tr>
+            <tr><td>Reaction with metals</td><td>Produces H₂ gas</td><td>Some produce H₂ (e.g., Zn + NaOH)</td></tr>
+            <tr><td>Reaction with carbonates</td><td>Produces CO₂ gas</td><td>No reaction</td></tr>
+            <tr><td>Corrosive nature</td><td>Corrosive (especially mineral)</td><td>Corrosive (especially strong alkalis)</td></tr>
+            <tr><td>Electrical conductivity</td><td>Conducts in aqueous solution</td><td>Conducts in aqueous solution</td></tr>
+            <tr><td>Phenolphthalein</td><td><span class="hl-term">Colourless</span></td><td><span class="hl-event">Pink</span></td></tr>
+            <tr><td>Methyl Orange</td><td><span class="hl-event">Red</span></td><td><span class="hl-date">Yellow</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Strong vs Weak Acids</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Strong Acids</th><th>Weak Acids</th></tr></thead>
+          <tbody>
+            <tr><td>Ionization in water</td><td>Complete (100%)</td><td>Partial (&lt; 100%)</td></tr>
+            <tr><td>pH range</td><td>0–3</td><td>3–6</td></tr>
+            <tr><td>Ka value</td><td>Large (→ ∞)</td><td>Small</td></tr>
+            <tr><td>H⁺ released</td><td>All H⁺ dissociate</td><td>Only some H⁺ dissociate</td></tr>
+            <tr><td>Examples</td><td>HCl, H₂SO₄, HNO₃, HBr, HI, HClO₄</td><td>CH₃COOH, H₂CO₃, H₃PO₄, H₂SO₃</td></tr>
+            <tr><td>Electrical conductivity</td><td>High</td><td>Low</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Strong vs Weak Bases</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Strong Bases</th><th>Weak Bases</th></tr></thead>
+          <tbody>
+            <tr><td>Ionization</td><td>Complete</td><td>Partial</td></tr>
+            <tr><td>pH range</td><td>12–14</td><td>8–11</td></tr>
+            <tr><td>Kb value</td><td>Large</td><td>Small</td></tr>
+            <tr><td>Examples</td><td>NaOH, KOH, Ca(OH)₂, Ba(OH)₂</td><td>NH₄OH, Mg(OH)₂, Al(OH)₃, Fe(OH)₃</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Mineral vs Organic Acids</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Mineral Acids</th><th>Organic Acids</th></tr></thead>
+          <tbody>
+            <tr><td>Source</td><td>Minerals / Chemical synthesis</td><td>Living organisms (plants/animals)</td></tr>
+            <tr><td>Strength</td><td>Strong (generally)</td><td>Weak (generally)</td></tr>
+            <tr><td>Carbon in molecule</td><td>Absent (except H₂CO₃)</td><td>Present (-COOH group)</td></tr>
+            <tr><td>Examples</td><td>HCl, H₂SO₄, HNO₃, H₃PO₄</td><td>Acetic, Citric, Tartaric, Lactic, Oxalic, Formic, Malic</td></tr>
+            <tr><td>Corrosive</td><td>Highly corrosive</td><td>Less corrosive</td></tr>
+            <tr><td>Taste</td><td>Sharp, pungent</td><td>Pleasant sour (fruits)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>All Common Salts – Formula &amp; Uses</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Common Name</th><th>Chemical Name</th><th>Formula</th><th>Key Use</th></tr></thead>
+          <tbody>
+            <tr><td>Common salt</td><td>Sodium chloride</td><td>NaCl</td><td>Food, Chlor-alkali feed</td></tr>
+            <tr><td>Caustic soda</td><td>Sodium hydroxide</td><td>NaOH</td><td>Soap, paper, drain cleaner</td></tr>
+            <tr><td>Bleaching powder</td><td>Calcium oxychloride</td><td>CaOCl₂</td><td>Bleaching, disinfectant</td></tr>
+            <tr><td>Baking soda</td><td>Sodium hydrogen carbonate</td><td>NaHCO₃</td><td>Baking, antacid, fire extinguisher</td></tr>
+            <tr><td>Washing soda</td><td>Sodium carbonate decahydrate</td><td>Na₂CO₃·10H₂O</td><td>Glass, soap, water softener</td></tr>
+            <tr><td>Plaster of Paris</td><td>Calcium sulphate hemihydrate</td><td>CaSO₄·½H₂O</td><td>Bone casts, sculptures</td></tr>
+            <tr><td>Gypsum</td><td>Calcium sulphate dihydrate</td><td>CaSO₄·2H₂O</td><td>Cement, plasterboard</td></tr>
+            <tr><td>Blue vitriol</td><td>Copper sulphate pentahydrate</td><td>CuSO₄·5H₂O</td><td>Fungicide, electroplating</td></tr>
+            <tr><td>Green vitriol</td><td>Ferrous sulphate heptahydrate</td><td>FeSO₄·7H₂O</td><td>Iron supplement, water treatment</td></tr>
+            <tr><td>Epsom salt</td><td>Magnesium sulphate heptahydrate</td><td>MgSO₄·7H₂O</td><td>Bath salts, laxative</td></tr>
+            <tr><td>Potash alum</td><td>Potassium aluminium sulphate</td><td>K₂SO₄·Al₂(SO₄)₃·24H₂O</td><td>Water purification, antiseptic</td></tr>
+            <tr><td>Slaked lime</td><td>Calcium hydroxide</td><td>Ca(OH)₂</td><td>Neutralizing acidic soil</td></tr>
+            <tr><td>Quicklime</td><td>Calcium oxide</td><td>CaO</td><td>Cement, soil treatment</td></tr>
+            <tr><td>Lime stone</td><td>Calcium carbonate</td><td>CaCO₃</td><td>Cement, building material</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Mnemonics -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 12. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Indicator Colour Tricks</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Methyl Orange:</span> Acid → <span class="hl-event">Red</span>, Base → <span class="hl-date">Yellow</span>. Trick: <span class="hl-event">"MARA"</span> = Methyl = Acid = Red. <span class="hl-date">"MOBY"</span> = Methyl Orange = Base = Yellow.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Phenolphthalein:</span> Acid → <span class="hl-term">Colourless</span>, Base → <span class="hl-event">Pink</span>. Trick: <span class="hl-event">"PBP"</span> = Phenol = Base = Pink. In acid, it's <span class="hl-term">"PAC"</span> = Phenol = Acid = Colourless.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Litmus Trick:</span> <span class="hl-event">"BRA"</span> = Blue litmus turns Red in Acid. <span class="hl-ruler">"RAB"</span> = Red litmus turns Blue in Base. The <span class="hl-event">R</span> in B<span class="hl-event">R</span>A and the <span class="hl-ruler">B</span> in R<span class="hl-ruler">A</span>B tell you the colour change direction!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>pH Scale Trick</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">0–6 Acidic, 7 Neutral, 8–14 Basic.</span> Trick: <span class="hl-event">"ANB"</span> = 0-6 Acid, 7 Neutral, 8-14 Basic. Or remember: <span class="hl-event">"A is 1st letter, 0–6 (first range). N is middle, 7. B is 2nd letter, 8–14 (last range)."</span>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Common Salts Formulas</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Baking Soda = NaHCO₃:</span> <span class="hl-event">"Na HCO₃"</span> – Think "NaHCO₃ = Na + H + CO₃ = Sodium Hydrogen Carbonate". The "Bi" in Baking is like "Bicarbonate".
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Plaster of Paris = CaSO₄·½H₂O:</span> <span class="hl-event">"CaSO₄ dot half H₂O"</span> – Plaster sets with half a water molecule. Gypsum = CaSO₄·2H₂O (full 2 water molecules).
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Chlor-alkali products:</span> <span class="hl-event">"C·H·Na"</span> = Chlorine (Cl₂) + Hydrogen (H₂) + Sodium hydroxide (NaOH). Listen to the name: <span class="hl-event">Chlor</span> (Cl₂) + <span class="hl-event">alkali</span> (NaOH).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Neutralization Applications</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Bee sting vs Wasp sting:</span> <span class="hl-event">"Bee = Base treatment"</span> (Baking soda). <span class="hl-event">"Wasp = Acid treatment"</span> (Vinegar). Remember: Bee → B (Baking soda / Base). Wasp → W (Well, use Vinegar/Acid).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Water of Crystallization</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">CuSO₄·5H₂O (Blue → White):</span> <span class="hl-event">"Copper Blue loses 5 H₂O turns White"</span>. Cu = Copper (brown/red metal). The hydrated salt is Blue. Anhydrous = White.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Strong Acids (6 common)</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">6 Strong Acids:</span> <span class="hl-event">"HCl, H₂SO₄, HNO₃, HBr, HI, HClO₄"</span>. Trick: <span class="hl-event">"Clint's Black Socks Never Smell Briny In Hawaii"</span> – HCl, H₂SO₄, HNO₃, HBr, HI, HClO₄.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 13: Practice Questions (30+ MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec13" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 13. Practice Questions – 60 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. Which of the following is a natural indicator?</div>
+        <div class="mcq-opt">A) Phenolphthalein</div>
+        <div class="mcq-opt">B) Methyl orange</div>
+        <div class="mcq-opt">C) Litmus</div>
+        <div class="mcq-opt">D) Universal indicator</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Litmus</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. The acid present in lemon is:</div>
+        <div class="mcq-opt">A) Tartaric acid</div>
+        <div class="mcq-opt">B) Citric acid</div>
+        <div class="mcq-opt">C) Oxalic acid</div>
+        <div class="mcq-opt">D) Malic acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Citric acid</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. Blue litmus turns red in:</div>
+        <div class="mcq-opt">A) Base</div>
+        <div class="mcq-opt">B) Acid</div>
+        <div class="mcq-opt">C) Neutral solution</div>
+        <div class="mcq-opt">D) Salt solution</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Acid</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. The pH of pure water at 25°C is:</div>
+        <div class="mcq-opt">A) 0</div>
+        <div class="mcq-opt">B) 14</div>
+        <div class="mcq-opt">C) 7</div>
+        <div class="mcq-opt">D) 1</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 7</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. Which gas is produced when an acid reacts with a metal?</div>
+        <div class="mcq-opt">A) Oxygen</div>
+        <div class="mcq-opt">B) Carbon dioxide</div>
+        <div class="mcq-opt">C) Hydrogen</div>
+        <div class="mcq-opt">D) Nitrogen</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Hydrogen</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. Bee sting contains which acid?</div>
+        <div class="mcq-opt">A) Acetic acid</div>
+        <div class="mcq-opt">B) Formic acid</div>
+        <div class="mcq-opt">C) Citric acid</div>
+        <div class="mcq-opt">D) Tartaric acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Formic acid (HCOOH)</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. Which of the following is a strong base?</div>
+        <div class="mcq-opt">A) NH₄OH</div>
+        <div class="mcq-opt">B) Mg(OH)₂</div>
+        <div class="mcq-opt">C) NaOH</div>
+        <div class="mcq-opt">D) Al(OH)₃</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) NaOH (Sodium hydroxide)</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. The colour of phenolphthalein in basic medium is:</div>
+        <div class="mcq-opt">A) Colourless</div>
+        <div class="mcq-opt">B) Pink</div>
+        <div class="mcq-opt">C) Yellow</div>
+        <div class="mcq-opt">D) Red</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Pink</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. Which salt is used in fire extinguishers?</div>
+        <div class="mcq-opt">A) NaCl</div>
+        <div class="mcq-opt">B) NaHCO₃</div>
+        <div class="mcq-opt">C) CaOCl₂</div>
+        <div class="mcq-opt">D) NaOH</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) NaHCO₃ (Baking soda)</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. What is the pH of human blood?</div>
+        <div class="mcq-opt">A) 6.5 – 6.8</div>
+        <div class="mcq-opt">B) 7.35 – 7.45</div>
+        <div class="mcq-opt">C) 7.8 – 8.2</div>
+        <div class="mcq-opt">D) 5.5 – 6.0</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 7.35 – 7.45</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. The acid present in vinegar is:</div>
+        <div class="mcq-opt">A) Lactic acid</div>
+        <div class="mcq-opt">B) Formic acid</div>
+        <div class="mcq-opt">C) Acetic acid</div>
+        <div class="mcq-opt">D) Tartaric acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Acetic acid (CH₃COOH)</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. Which process is used to manufacture NaOH from brine?</div>
+        <div class="mcq-opt">A) Solvay process</div>
+        <div class="mcq-opt">B) Contact process</div>
+        <div class="mcq-opt">C) Chlor-alkali process</div>
+        <div class="mcq-opt">D) Haber's process</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Chlor-alkali process</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. CuSO₄·5H₂O is also known as:</div>
+        <div class="mcq-opt">A) Green vitriol</div>
+        <div class="mcq-opt">B) Blue vitriol</div>
+        <div class="mcq-opt">C) Epsom salt</div>
+        <div class="mcq-opt">D) Potash alum</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Blue vitriol</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. When baking soda is heated, which gas is produced?</div>
+        <div class="mcq-opt">A) O₂</div>
+        <div class="mcq-opt">B) Cl₂</div>
+        <div class="mcq-opt">C) CO₂</div>
+        <div class="mcq-opt">D) H₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) CO₂ (Carbon dioxide)</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. The reaction between an acid and a base is called:</div>
+        <div class="mcq-opt">A) Oxidation</div>
+        <div class="mcq-opt">B) Reduction</div>
+        <div class="mcq-opt">C) Neutralization</div>
+        <div class="mcq-opt">D) Electrolysis</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Neutralization</div>
+      </div>
+
+      <!-- MCQ 16 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">16. Which of the following is NOT an alkali?</div>
+        <div class="mcq-opt">A) NaOH</div>
+        <div class="mcq-opt">B) KOH</div>
+        <div class="mcq-opt">C) Cu(OH)₂</div>
+        <div class="mcq-opt">D) Ca(OH)₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Cu(OH)₂ (Copper hydroxide is insoluble)</div>
+      </div>
+
+      <!-- MCQ 17 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">17. Toothpaste is generally:</div>
+        <div class="mcq-opt">A) Acidic</div>
+        <div class="mcq-opt">B) Neutral</div>
+        <div class="mcq-opt">C) Basic</div>
+        <div class="mcq-opt">D) Amphoteric</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Basic (to neutralize mouth acids)</div>
+      </div>
+
+      <!-- MCQ 18 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">18. The chemical name of bleaching powder is:</div>
+        <div class="mcq-opt">A) Calcium chloride</div>
+        <div class="mcq-opt">B) Calcium oxychloride</div>
+        <div class="mcq-opt">C) Calcium hydroxide</div>
+        <div class="mcq-opt">D) Calcium carbonate</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Calcium oxychloride (CaOCl₂)</div>
+      </div>
+
+      <!-- MCQ 19 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">19. Which of the following is an olfactory indicator?</div>
+        <div class="mcq-opt">A) Litmus</div>
+        <div class="mcq-opt">B) Phenolphthalein</div>
+        <div class="mcq-opt">C) Onion</div>
+        <div class="mcq-opt">D) Methyl orange</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Onion (smell-based indicator)</div>
+      </div>
+
+      <!-- MCQ 20 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">20. The formula of plaster of Paris is:</div>
+        <div class="mcq-opt">A) CaSO₄·2H₂O</div>
+        <div class="mcq-opt">B) CaSO₄·½H₂O</div>
+        <div class="mcq-opt">C) CaSO₄·H₂O</div>
+        <div class="mcq-opt">D) CaSO₄</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) CaSO₄·½H₂O</div>
+      </div>
+
+      <!-- MCQ 21 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">21. What is the colour of methyl orange in a basic solution?</div>
+        <div class="mcq-opt">A) Red</div>
+        <div class="mcq-opt">B) Pink</div>
+        <div class="mcq-opt">C) Yellow</div>
+        <div class="mcq-opt">D) Orange</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Yellow</div>
+      </div>
+
+      <!-- MCQ 22 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">22. Which acid is present in the stomach?</div>
+        <div class="mcq-opt">A) H₂SO₄</div>
+        <div class="mcq-opt">B) HNO₃</div>
+        <div class="mcq-opt">C) HCl</div>
+        <div class="mcq-opt">D) H₃PO₄</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) HCl (Hydrochloric acid)</div>
+      </div>
+
+      <!-- MCQ 23 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">23. What happens when CO₂ is passed through lime water?</div>
+        <div class="mcq-opt">A) Turns acidic</div>
+        <div class="mcq-opt">B) Turns milky</div>
+        <div class="mcq-opt">C) Turns blue</div>
+        <div class="mcq-opt">D) No change</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Turns milky (CaCO₃ precipitate)</div>
+      </div>
+
+      <!-- MCQ 24 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">24. Which salt is used to make casts for broken bones?</div>
+        <div class="mcq-opt">A) Gypsum</div>
+        <div class="mcq-opt">B) Baking soda</div>
+        <div class="mcq-opt">C) Plaster of Paris</div>
+        <div class="mcq-opt">D) Washing soda</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Plaster of Paris (CaSO₄·½H₂O)</div>
+      </div>
+
+      <!-- MCQ 25 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">25. The acid in tamarind is:</div>
+        <div class="mcq-opt">A) Citric acid</div>
+        <div class="mcq-opt">B) Tartaric acid</div>
+        <div class="mcq-opt">C) Lactic acid</div>
+        <div class="mcq-opt">D) Oxalic acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Tartaric acid</div>
+      </div>
+
+      <!-- MCQ 26 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">26. In the Chlor-alkali process, the products are:</div>
+        <div class="mcq-opt">A) Cl₂, H₂, NaOH</div>
+        <div class="mcq-opt">B) Cl₂, O₂, NaOH</div>
+        <div class="mcq-opt">C) NaCl, H₂, O₂</div>
+        <div class="mcq-opt">D) NaCl, Cl₂, H₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Cl₂, H₂, NaOH</div>
+      </div>
+
+      <!-- MCQ 27 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">27. Which of the following is a strong acid?</div>
+        <div class="mcq-opt">A) Acetic acid</div>
+        <div class="mcq-opt">B) Carbonic acid</div>
+        <div class="mcq-opt">C) Sulphuric acid</div>
+        <div class="mcq-opt">D) Formic acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Sulphuric acid (H₂SO₄)</div>
+      </div>
+
+      <!-- MCQ 28 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">28. The colour of FeSO₄·7H₂O crystals is:</div>
+        <div class="mcq-opt">A) Blue</div>
+        <div class="mcq-opt">B) Green</div>
+        <div class="mcq-opt">C) White</div>
+        <div class="mcq-opt">D) Pink</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Green (Green vitriol)</div>
+      </div>
+
+      <!-- MCQ 29 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">29. Which substance is used to treat acidic soil?</div>
+        <div class="mcq-opt">A) Vinegar</div>
+        <div class="mcq-opt">B) Quicklime (CaO)</div>
+        <div class="mcq-opt">C) Lemon juice</div>
+        <div class="mcq-opt">D) Baking soda</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Quicklime (CaO)</div>
+      </div>
+
+      <!-- MCQ 30 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">30. The pH of a basic solution is:</div>
+        <div class="mcq-opt">A) Less than 7</div>
+        <div class="mcq-opt">B) Greater than 7</div>
+        <div class="mcq-opt">C) Equal to 7</div>
+        <div class="mcq-opt">D) Exactly 0</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Greater than 7</div>
+      </div>
+
+      <!-- MCQ 31 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">31. Which of the following is a double salt?</div>
+        <div class="mcq-opt">A) NaCl</div>
+        <div class="mcq-opt">B) NaHCO₃</div>
+        <div class="mcq-opt">C) K₂SO₄·Al₂(SO₄)₃·24H₂O</div>
+        <div class="mcq-opt">D) CaOCl₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Potash alum</div>
+      </div>
+
+      <!-- MCQ 32 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">32. When CuSO₄·5H₂O is heated, it turns:</div>
+        <div class="mcq-opt">A) Blue to Green</div>
+        <div class="mcq-opt">B) Blue to White</div>
+        <div class="mcq-opt">C) Green to White</div>
+        <div class="mcq-opt">D) White to Blue</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Blue to White (loses water of crystallization)</div>
+      </div>
+
+      <!-- MCQ 33 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">33. Which acid is used in car batteries?</div>
+        <div class="mcq-opt">A) HCl</div>
+        <div class="mcq-opt">B) HNO₃</div>
+        <div class="mcq-opt">C) H₂SO₄</div>
+        <div class="mcq-opt">D) H₃PO₄</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) H₂SO₄ (Sulphuric acid)</div>
+      </div>
+
+      <!-- MCQ 34 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">34. The process of losing water of crystallization on exposure to air is called:</div>
+        <div class="mcq-opt">A) Deliquescence</div>
+        <div class="mcq-opt">B) Hygroscopy</div>
+        <div class="mcq-opt">C) Efflorescence</div>
+        <div class="mcq-opt">D) Dehydration</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Efflorescence</div>
+      </div>
+
+      <!-- MCQ 35 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">35. The acid present in nettle sting is:</div>
+        <div class="mcq-opt">A) Formic acid</div>
+        <div class="mcq-opt">B) Methanoic acid</div>
+        <div class="mcq-opt">C) Acetic acid</div>
+        <div class="mcq-opt">D) Both A and B</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Both A and B (Formic acid = Methanoic acid)</div>
+      </div>
+
+      <!-- MCQ 36 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">36. Salt of strong acid + weak base produces pH:</div>
+        <div class="mcq-opt">A) = 7</div>
+        <div class="mcq-opt">B) &gt; 7</div>
+        <div class="mcq-opt">C) &lt; 7</div>
+        <div class="mcq-opt">D) = 0</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) &lt; 7 (Acidic)</div>
+      </div>
+
+      <!-- MCQ 37 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">37. Which of these substances has the lowest pH?</div>
+        <div class="mcq-opt">A) Lemon juice</div>
+        <div class="mcq-opt">B) Stomach acid</div>
+        <div class="mcq-opt">C) Vinegar</div>
+        <div class="mcq-opt">D) Tomato juice</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Stomach acid (pH ~1.2)</div>
+      </div>
+
+      <!-- MCQ 38 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">38. Which of the following does NOT contain acid?</div>
+        <div class="mcq-opt">A) Tomato</div>
+        <div class="mcq-opt">B) Apple</div>
+        <div class="mcq-opt">C) Soap</div>
+        <div class="mcq-opt">D) Curd</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Soap (contains base)</div>
+      </div>
+
+      <!-- MCQ 39 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">39. The chemical formula of washing soda is:</div>
+        <div class="mcq-opt">A) Na₂CO₃</div>
+        <div class="mcq-opt">B) Na₂CO₃·H₂O</div>
+        <div class="mcq-opt">C) Na₂CO₃·10H₂O</div>
+        <div class="mcq-opt">D) NaHCO₃</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Na₂CO₃·10H₂O (Sodium carbonate decahydrate)</div>
+      </div>
+
+      <!-- MCQ 40 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">40. Antacids contain:</div>
+        <div class="mcq-opt">A) Strong acids</div>
+        <div class="mcq-opt">B) Weak acids</div>
+        <div class="mcq-opt">C) Mild bases</div>
+        <div class="mcq-opt">D) Strong bases</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Mild bases like Mg(OH)₂, Al(OH)₃</div>
+      </div>
+
+      <!-- MCQ 41 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">41. Turmeric is a natural indicator. Its colour in basic medium is:</div>
+        <div class="mcq-opt">A) Yellow</div>
+        <div class="mcq-opt">B) Red</div>
+        <div class="mcq-opt">C) Green</div>
+        <div class="mcq-opt">D) Reddish-brown</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Reddish-brown (turns red/brown in base, stays yellow in acid)</div>
+      </div>
+
+      <!-- MCQ 42 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">42. The acid present in tomato is:</div>
+        <div class="mcq-opt">A) Citric acid</div>
+        <div class="mcq-opt">B) Oxalic acid</div>
+        <div class="mcq-opt">C) Tartaric acid</div>
+        <div class="mcq-opt">D) Malic acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Oxalic acid</div>
+      </div>
+
+      <!-- MCQ 43 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">43. Which of the following is an olfactory indicator?</div>
+        <div class="mcq-opt">A) Litmus</div>
+        <div class="mcq-opt">B) Phenolphthalein</div>
+        <div class="mcq-opt">C) Onion</div>
+        <div class="mcq-opt">D) Methyl orange</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Onion (smell-based indicator)</div>
+      </div>
+
+      <!-- MCQ 44 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">44. When an acid reacts with a metal carbonate, which gas is produced?</div>
+        <div class="mcq-opt">A) H₂</div>
+        <div class="mcq-opt">B) O₂</div>
+        <div class="mcq-opt">C) CO₂</div>
+        <div class="mcq-opt">D) Cl₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) CO₂ (Carbon dioxide)</div>
+      </div>
+
+      <!-- MCQ 45 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">45. The pH of a salt formed from strong acid and weak base is:</div>
+        <div class="mcq-opt">A) 7</div>
+        <div class="mcq-opt">B) &gt;7</div>
+        <div class="mcq-opt">C) &lt;7</div>
+        <div class="mcq-opt">D) 0</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) &lt;7 (acidic, e.g. NH₄Cl)</div>
+      </div>
+
+      <!-- MCQ 46 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">46. Which of the following is NOT a mineral acid?</div>
+        <div class="mcq-opt">A) HCl</div>
+        <div class="mcq-opt">B) H₂SO₄</div>
+        <div class="mcq-opt">C) Citric acid</div>
+        <div class="mcq-opt">D) HNO₃</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Citric acid (it is an organic acid from citrus fruits)</div>
+      </div>
+
+      <!-- MCQ 47 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">47. Common salt is obtained from sea water by:</div>
+        <div class="mcq-opt">A) Distillation</div>
+        <div class="mcq-opt">B) Evaporation</div>
+        <div class="mcq-opt">C) Filtration</div>
+        <div class="mcq-opt">D) Sublimation</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Evaporation (sun drying of sea water)</div>
+      </div>
+
+      <!-- MCQ 48 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">48. The formula of gypsum is:</div>
+        <div class="mcq-opt">A) CaSO₄·½H₂O</div>
+        <div class="mcq-opt">B) CaSO₄·2H₂O</div>
+        <div class="mcq-opt">C) CaSO₄</div>
+        <div class="mcq-opt">D) CaSO₄·H₂O</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) CaSO₄·2H₂O (Calcium sulphate dihydrate)</div>
+      </div>
+
+      <!-- MCQ 49 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">49. When plaster of Paris is mixed with water, it:</div>
+        <div class="mcq-opt">A) Dissolves completely</div>
+        <div class="mcq-opt">B) Sets into a hard mass</div>
+        <div class="mcq-opt">C) Produces gas</div>
+        <div class="mcq-opt">D) Turns yellow</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Sets into a hard mass (rehydrates to gypsum)</div>
+      </div>
+
+      <!-- MCQ 50 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">50. The acid produced in our stomach is:</div>
+        <div class="mcq-opt">A) H₂SO₄</div>
+        <div class="mcq-opt">B) HNO₃</div>
+        <div class="mcq-opt">C) HCl</div>
+        <div class="mcq-opt">D) H₃PO₄</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) HCl (hydrochloric acid, pH ~1.2–3.0)</div>
+      </div>
+
+      <!-- MCQ 51 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">51. China rose indicator turns _______ in basic solution.</div>
+        <div class="mcq-opt">A) Pink</div>
+        <div class="mcq-opt">B) Green</div>
+        <div class="mcq-opt">C) Yellow</div>
+        <div class="mcq-opt">D) Red</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Green (China rose turns dark pink in acid, green in base)</div>
+      </div>
+
+      <!-- MCQ 52 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">52. Which of the following is used in the manufacture of soap?</div>
+        <div class="mcq-opt">A) NaCl</div>
+        <div class="mcq-opt">B) NaOH</div>
+        <div class="mcq-opt">C) CaOCl₂</div>
+        <div class="mcq-opt">D) NaHCO₃</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) NaOH (Sodium hydroxide / Caustic soda)</div>
+      </div>
+
+      <!-- MCQ 53 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">53. Wasp sting is treated with:</div>
+        <div class="mcq-opt">A) Baking soda</div>
+        <div class="mcq-opt">B) Vinegar</div>
+        <div class="mcq-opt">C) Lemon juice</div>
+        <div class="mcq-opt">D) Calamine lotion</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Vinegar (wasp sting is basic, neutralized by acid)</div>
+      </div>
+
+      <!-- MCQ 54 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">54. The gas produced when NaOH reacts with Zn is:</div>
+        <div class="mcq-opt">A) O₂</div>
+        <div class="mcq-opt">B) H₂</div>
+        <div class="mcq-opt">C) Cl₂</div>
+        <div class="mcq-opt">D) CO₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) H₂ (2NaOH + Zn → Na₂ZnO₂ + H₂)</div>
+      </div>
+
+      <!-- MCQ 55 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">55. Which of the following is used as a disinfectant in drinking water?</div>
+        <div class="mcq-opt">A) Baking soda</div>
+        <div class="mcq-opt">B) Caustic soda</div>
+        <div class="mcq-opt">C) Bleaching powder</div>
+        <div class="mcq-opt">D) Washing soda</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Bleaching powder (CaOCl₂)</div>
+      </div>
+
+      <!-- MCQ 56 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">56. The acid present in curd is:</div>
+        <div class="mcq-opt">A) Citric acid</div>
+        <div class="mcq-opt">B) Tartaric acid</div>
+        <div class="mcq-opt">C) Lactic acid</div>
+        <div class="mcq-opt">D) Acetic acid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Lactic acid (formed by bacterial fermentation)</div>
+      </div>
+
+      <!-- MCQ 57 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">57. Tooth enamel is mainly made of:</div>
+        <div class="mcq-opt">A) CaCO₃</div>
+        <div class="mcq-opt">B) Ca₃(PO₄)₂</div>
+        <div class="mcq-opt">C) Ca₅(PO₄)₃OH</div>
+        <div class="mcq-opt">D) Ca(OH)₂</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Hydroxyapatite — Ca₅(PO₄)₃OH (attacked by acids causing tooth decay)</div>
+      </div>
+
+      <!-- MCQ 58 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">58. Which of the following is a deliquescent substance?</div>
+        <div class="mcq-opt">A) CaCl₂</div>
+        <div class="mcq-opt">B) CaO</div>
+        <div class="mcq-opt">C) Na₂CO₃·10H₂O</div>
+        <div class="mcq-opt">D) CuSO₄·5H₂O</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) CaCl₂ (absorbs moisture and dissolves in it)</div>
+      </div>
+
+      <!-- MCQ 59 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">59. The colour of methyl orange in acidic medium is:</div>
+        <div class="mcq-opt">A) Yellow</div>
+        <div class="mcq-opt">B) Red</div>
+        <div class="mcq-opt">C) Pink</div>
+        <div class="mcq-opt">D) Orange</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Red (Methyl Orange is Red in Acid, Yellow in Base)</div>
+      </div>
+
+      <!-- MCQ 60 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">60. Which of the following is NOT a use of quicklime (CaO)?</div>
+        <div class="mcq-opt">A) Treating acidic soil</div>
+        <div class="mcq-opt">B) Manufacture of cement</div>
+        <div class="mcq-opt">C) As an antacid</div>
+        <div class="mcq-opt">D) Manufacture of bleaching powder</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) As an antacid (CaO is too corrosive; mild bases like Mg(OH)₂, Al(OH)₃ are used)</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-flask text-amber-400/50 mr-2"></i>
+      Acids, Bases &amp; Salts · NCERT Science Notes · Class 6–10
+      <br>Compiled for revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Toggle MCQ answers
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    // Hamburger menu
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPSC/UPSC Study Notes — Bihar</title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background: #0a0e1a;
+      color: #e0e6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav-link { transition: all 0.2s; }
+    .nav-link:hover { color: #60a5fa; }
+    .card {
+      background: linear-gradient(135deg, #111827, #1a2332);
+      border: 1px solid #2a3a5c;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+    }
+    .badge-history { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .badge-current { background: linear-gradient(135deg, #10b981, #059669); }
+    .badge-economics { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+    .badge-geography { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+    .gradient-bar {
+      height: 4px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-[#0a0e1a]/95 backdrop-blur border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-4">
+      <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+        <i class="fas fa-book-open mr-2"></i>BPSC Notes
+      </a>
+      <div class="flex flex-wrap items-center gap-1 md:gap-4 text-sm">
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-landmark mr-1"></i>History <i class="fas fa-chevron-down text-xs ml-1"></i></button>
+          <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="history/indus_valley_civilization_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-archway w-5 text-yellow-400"></i> Indus Valley</a>
+            <a href="history/mauryan_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-crown w-5 text-yellow-400"></i> Mauryan Empire</a>
+            <a href="history/delhi_sultanate_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-mosque w-5 text-yellow-400"></i> Delhi Sultanate</a>
+            <a href="history/mughal_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-taj-mahal w-5 text-yellow-400"></i> Mughal Empire</a>
+            <a href="history/later_mughals_1857.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-hourglass-end w-5 text-yellow-400"></i> Later Mughals & 1857</a>
+            <a href="history/maratha_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-horse-head w-5 text-yellow-400"></i> Maratha Empire</a>
+            <a href="history/deccan_empires_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-fort-awesome w-5 text-yellow-400"></i> Deccan Empires</a>
+            <a href="history/european_powers_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-ship w-5 text-yellow-400"></i> European Powers</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-newspaper mr-1"></i>Current Affairs <i class="fas fa-chevron-down text-xs ml-1"></i></button>
+          <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="current-affairs/bihar_current_affairs_january_2026.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-calendar-alt w-5 text-green-400"></i> January 2026</a>
+            <a href="current-affairs/bihar_current_affairs_february_2026.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-calendar-alt w-5 text-green-400"></i> February 2026</a>
+            <a href="current-affairs/bihar_current_affairs_march_2026.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-calendar-alt w-5 text-green-400"></i> March 2026</a>
+            <a href="current-affairs/bihar_current_affairs_april_2026.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-calendar-alt w-5 text-green-400"></i> April 2026</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-chart-pie mr-1"></i>Economics <i class="fas fa-chevron-down text-xs ml-1"></i></button>
+          <div class="absolute top-full left-0 mt-1 w-64 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="economics/bihar_budget_economic_survey_2026.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-file-invoice w-5 text-purple-400"></i> Budget &amp; Survey 2026</a>
+            <a href="economics/bihar_economics_terms.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-book w-5 text-purple-400"></i> 100+ Economic Terms</a>
+          </div>
+        </div>
+        <a href="geography/bihar_geography.html" class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-mountain mr-1"></i>Geography</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+      <i class="fas fa-graduation-cap mr-3"></i>BPSC / UPSC Study Notes
+    </h1>
+    <p class="text-gray-400 text-lg mb-2">Comprehensive notes on Bihar History, Current Affairs, Budget &amp; Geography</p>
+    <p class="text-gray-500 text-sm">15 files — Dark themed · NCERT-based · District-wise · MCQ included</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="max-w-5xl mx-auto px-4 mb-12">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+      <div class="card"><div class="text-3xl font-bold text-yellow-400">8</div><div class="text-gray-400 text-sm">History Topics</div></div>
+      <div class="card"><div class="text-3xl font-bold text-green-400">4</div><div class="text-gray-400 text-sm">Monthly CA Files</div></div>
+      <div class="card"><div class="text-3xl font-bold text-purple-400">2</div><div class="text-gray-400 text-sm">Economics Files</div></div>
+      <div class="card"><div class="text-3xl font-bold text-cyan-400">1</div><div class="text-gray-400 text-sm">Geography</div></div>
+      <div class="card"><div class="text-3xl font-bold text-pink-400">114</div><div class="text-gray-400 text-sm">Economic Terms</div></div>
+    </div>
+  </div>
+
+  <!-- History Section -->
+  <div class="max-w-7xl mx-auto px-4 mb-12">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-6 flex items-center"><span class="badge-history text-white text-xs px-3 py-1 rounded-full mr-3">HISTORY</span> Indian &amp; Bihar History</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="history/indus_valley_civilization_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-archway text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Indus Valley Civilization</h3><p class="text-sm text-gray-400">NCERT Class 6–12 compilation. Towns, economy, society, religion, decline.</p></a>
+      <a href="history/mauryan_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-crown text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mauryan Empire</h3><p class="text-sm text-gray-400">Chandragupta to Ashoka. Administration, art, economy, Kalinga war, pillars.</p></a>
+      <a href="history/delhi_sultanate_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-mosque text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Delhi Sultanate</h3><p class="text-sm text-gray-400">Slave to Lodi dynasty. Five dynasties, administration, architecture, invasions.</p></a>
+      <a href="history/mughal_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-taj-mahal text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mughal Empire</h3><p class="text-sm text-gray-400">Babur to Aurangzeb. Mansabdari, architecture, economy, religious policy, decline.</p></a>
+      <a href="history/later_mughals_1857.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-hourglass-end text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Later Mughals &amp; 1857</h3><p class="text-sm text-gray-400">Decline, regional states, British expansion, Revolt of 1857 causes &amp; events.</p></a>
+      <a href="history/maratha_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-horse-head text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Maratha Empire</h3><p class="text-sm text-gray-400">Shivaji to Panipat. Administration, military, confederacy, Anglo-Maratha wars.</p></a>
+      <a href="history/deccan_empires_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-fort-awesome text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Deccan Empires</h3><p class="text-sm text-gray-400">Bahmani, Vijayanagara, Deccan Sultanates. Administration, architecture, conflicts.</p></a>
+      <a href="history/european_powers_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-ship text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">European Powers</h3><p class="text-sm text-gray-400">Portuguese, Dutch, English, French. Carnatic wars, Battle of Plassey, Buxar.</p></a>
+    </div>
+  </div>
+
+  <!-- Current Affairs Section -->
+  <div class="max-w-7xl mx-auto px-4 mb-12">
+    <h2 class="text-2xl font-bold text-green-400 mb-6 flex items-center"><span class="badge-current text-white text-xs px-3 py-1 rounded-full mr-3">CA</span> Bihar Current Affairs 2026</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="current-affairs/bihar_current_affairs_january_2026.html" class="card block"><div class="gradient-bar bg-green-500/50"></div><i class="fas fa-calendar-alt text-2xl text-green-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">January 2026</h3><p class="text-sm text-gray-400">Samriddhi Yatra, Budget Session, 10 Mega Projects, 30 MCQs. 929 lines.</p></a>
+      <a href="current-affairs/bihar_current_affairs_february_2026.html" class="card block"><div class="gradient-bar bg-green-500/50"></div><i class="fas fa-calendar-alt text-2xl text-green-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">February 2026</h3><p class="text-sm text-gray-400">Budget 2026-27, CM Udyami Yojana, Mahila Rozgar Yojana, 5 expressways, 20 MCQs.</p></a>
+      <a href="current-affairs/bihar_current_affairs_march_2026.html" class="card block"><div class="gradient-bar bg-green-500/50"></div><i class="fas fa-calendar-alt text-2xl text-green-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">March 2026</h3><p class="text-sm text-gray-400">Semiconductor Policy, generational shift in politics, expressways, tourism push, 15 MCQs.</p></a>
+      <a href="current-affairs/bihar_current_affairs_april_2026.html" class="card block"><div class="gradient-bar bg-green-500/50"></div><i class="fas fa-calendar-alt text-2xl text-green-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">April 2026</h3><p class="text-sm text-gray-400">CM transition (Nitish→Samrat Choudhary), BPSC Mains, Patna Metro, new IAS, 15 MCQs.</p></a>
+    </div>
+  </div>
+
+  <!-- Economics Section -->
+  <div class="max-w-7xl mx-auto px-4 mb-12">
+    <h2 class="text-2xl font-bold text-purple-400 mb-6 flex items-center"><span class="badge-economics text-white text-xs px-3 py-1 rounded-full mr-3">ECONOMICS</span> Economics &amp; Finance</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="economics/bihar_budget_economic_survey_2026.html" class="card block"><div class="gradient-bar bg-purple-500/50"></div><i class="fas fa-chart-pie text-2xl text-purple-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Budget 2026-27 &amp; Economic Survey 2025-26</h3><p class="text-sm text-gray-400">Complete budget analysis: ₹3.47 lakh cr outlay, fiscal deficit 2.99%, GSDP growth 15%, Saat Nishchay-3 targets. 708 lines, 20 MCQs, 6 quick-fact cards.</p></a>
+      <a href="economics/bihar_economics_terms.html" class="card block"><div class="gradient-bar bg-purple-500/50"></div><i class="fas fa-book text-2xl text-purple-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">100+ Economic Terms</h3><p class="text-sm text-gray-400">Glossary with definitions, formulas, real-world examples, mnemonics &amp; memory tips. Searchable, animated cards across 6 categories. 1,288 lines, 114 terms.</p></a>
+    </div>
+  </div>
+
+  <!-- Geography Section -->
+  <div class="max-w-7xl mx-auto px-4 mb-12">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center"><span class="badge-geography text-white text-xs px-3 py-1 rounded-full mr-3">GEOGRAPHY</span> Bihar Geography</h2>
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+      <a href="geography/bihar_geography.html" class="card block"><div class="gradient-bar bg-cyan-500/50"></div><i class="fas fa-mountain text-2xl text-cyan-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Bihar Geography</h3><p class="text-sm text-gray-400">District-wise coverage: 20+ rivers, 10 soil types, 25+ crops, 20+ minerals, forest cover (all 38 districts). 25 MCQs, 6 quick-fact cards. 1,064 lines.</p></a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+    <p><i class="fas fa-map-pin mr-1"></i> /home/amit/Desktop/ncert/history/</p>
+    <p class="mt-1">14 files · Dark themed · Tailwind CSS · Font Awesome</p>
+  </footer>
+
+</body>
+</html>

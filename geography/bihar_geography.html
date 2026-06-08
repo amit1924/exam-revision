@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Geography - Rivers, Soil, Crops, Minerals & Forest</title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background: #0a0e1a;
+      color: #e0e6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .dark-card {
+      background: linear-gradient(135deg, #111827, #1a2332);
+      border: 1px solid #2a3a5c;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+    .gradient-card-1 {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      border: 1px solid #3a6a7a;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .gradient-card-2 {
+      background: linear-gradient(135deg, #1a0a2e, #2d1b4e, #3d2a5e);
+      border: 1px solid #5a3a8a;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .gradient-card-3 {
+      background: linear-gradient(135deg, #1a2a0e, #2a3a1e, #3a4a2e);
+      border: 1px solid #4a6a3a;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .gradient-card-4 {
+      background: linear-gradient(135deg, #2e1a0a, #4e2a1a, #5e3a2a);
+      border: 1px solid #7a5a3a;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .glow-card {
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.15), 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+    .fact-box {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border-left: 4px solid #3b82f6;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .timeline-item {
+      border-left: 2px solid #3b82f6;
+      padding-left: 20px;
+      margin: 16px 0;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+    .hl-ruler { color: #f59e0b; font-weight: 600; }
+    .hl-date { color: #10b981; font-weight: 600; }
+    .hl-policy { color: #8b5cf6; font-weight: 600; }
+    .hl-event { color: #f97316; font-weight: 600; }
+    .hl-num { color: #f43f5e; font-weight: 600; }
+    .hl-place { color: #06b6d4; font-weight: 600; }
+    .hl-term { color: #f59e0b; font-weight: 600; }
+    .hl-bg-1 { background: rgba(59, 130, 246, 0.15); padding: 2px 8px; border-radius: 6px; }
+    .hl-bg-2 { background: rgba(16, 185, 129, 0.15); padding: 2px 8px; border-radius: 6px; }
+    .hl-bg-3 { background: rgba(139, 92, 246, 0.15); padding: 2px 8px; border-radius: 6px; }
+    .section-heading {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 40px 0 20px 0;
+      border-bottom: 2px solid #2a3a5c;
+      padding-bottom: 10px;
+    }
+    .subsection-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #60a5fa;
+      margin: 30px 0 15px 0;
+    }
+    .ca-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .mcq-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 12px 0;
+    }
+    .mcq-card p { margin-bottom: 8px; }
+    .mcq-card .options { color: #94a3b8; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th { background: #1e293b; color: #60a5fa; padding: 12px; text-align: left; border: 1px solid #334155; }
+    td { padding: 12px; border: 1px solid #2a3a5c; }
+    tr:hover { background: rgba(59, 130, 246, 0.05); }
+    @media (max-width: 768px) {
+      table { font-size: 0.85rem; }
+      th, td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 bg-clip-text text-transparent">
+        <i class="fas fa-mountain mr-3 text-cyan-400"></i>Bihar Geography
+      </h1>
+      <p class="text-xl text-gray-400">Rivers · Soil · Crops · Minerals · Forest Cover — District-wise</p>
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <span class="ca-badge"><i class="fas fa-water mr-1"></i>Rivers (20+)</span>
+        <span class="ca-badge"><i class="fas fa-mountain mr-1"></i>Soil Types (10+)</span>
+        <span class="ca-badge"><i class="fas fa-seedling mr-1"></i>Crops (25+)</span>
+        <span class="ca-badge"><i class="fas fa-gem mr-1"></i>Minerals (20+)</span>
+        <span class="ca-badge"><i class="fas fa-tree mr-1"></i>Forest Cover</span>
+      </div>
+    </div>
+
+    <!-- Quick Fact Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="gradient-card-1 glow-card text-center">
+        <i class="fas fa-water text-4xl text-cyan-400 mb-3"></i>
+        <div class="text-3xl font-bold text-cyan-300">~20</div>
+        <div class="text-gray-400">Major Rivers<br><span class="text-xs text-gray-500">Ganga, Gandak, Kosi, Son & more</span></div>
+      </div>
+      <div class="gradient-card-3 glow-card text-center">
+        <i class="fas fa-seedling text-4xl text-green-400 mb-3"></i>
+        <div class="text-3xl font-bold text-green-300">>150%</div>
+        <div class="text-gray-400">Cropping Intensity<br><span class="text-xs text-gray-500">Highest in India</span></div>
+      </div>
+      <div class="gradient-card-4 glow-card text-center">
+        <i class="fas fa-gem text-4xl text-yellow-400 mb-3"></i>
+        <div class="text-3xl font-bold text-yellow-300">95%</div>
+        <div class="text-gray-400">India's Pyrite in Rohtas<br><span class="text-xs text-gray-500">+ Gold, Mica, Bauxite, Limestone</span></div>
+      </div>
+      <div class="gradient-card-2 glow-card text-center">
+        <i class="fas fa-tree text-4xl text-purple-400 mb-3"></i>
+        <div class="text-3xl font-bold text-purple-300">7,381</div>
+        <div class="text-gray-400">sq km Forest Cover<br><span class="text-xs text-gray-500">~7.84% of state area</span></div>
+      </div>
+      <div class="gradient-card-1 glow-card text-center">
+        <i class="fas fa-apple-alt text-4xl text-orange-400 mb-3"></i>
+        <div class="text-3xl font-bold text-orange-300">#1</div>
+        <div class="text-gray-400">Litchi & Makhana Producer<br><span class="text-xs text-gray-500">Pineapple #4, Cauliflower #4</span></div>
+      </div>
+      <div class="gradient-card-3 glow-card text-center">
+        <i class="fas fa-meteor text-4xl text-red-400 mb-3"></i>
+        <div class="text-3xl font-bold text-red-300">93%</div>
+        <div class="text-gray-400">of India's Kyanite<br><span class="text-xs text-gray-500">in Kharagpur Hills, Munger</span></div>
+      </div>
+    </div>
+
+    <!-- ===================== RIVERS SECTION ===================== -->
+    <h2 class="section-heading"><i class="fas fa-water mr-3 text-cyan-400"></i>Rivers of Bihar</h2>
+
+    <div class="dark-card mb-8">
+      <p class="text-gray-300 mb-4">Bihar has a dense network of rivers, primarily fed by Himalayan and Central Indian mountain systems. The Ganga is the master stream, flowing eastward across the middle of the state, dividing it into <span class="hl-term">North Bihar</span> (Himalayan-fed) and <span class="hl-term">South Bihar</span> (Peninsular-fed).</p>
+      <p class="text-gray-400 text-sm">Total drainage area: ~94,163 sq km | Rivers flow SW to NE in North Bihar, SE in South Bihar</p>
+    </div>
+
+    <!-- Subsection: Ganga -->
+    <h3 class="subsection-heading"><i class="fas fa-arrows-alt-h mr-2 text-yellow-400"></i>Ganga — The Master Stream</h3>
+    <div class="dark-card mb-8">
+      <table>
+        <thead>
+          <tr><th>Attribute</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="font-semibold">Entry Point</td><td><span class="hl-place">Chausa, Buxar</span> (from UP)</td></tr>
+          <tr><td class="font-semibold">Exit Point</td><td><span class="hl-place">Manihari, Katihar</span> (into Jharkhand/Bengal)</td></tr>
+          <tr><td class="font-semibold">Length in Bihar</td><td><span class="hl-num">~445 km</span></td></tr>
+          <tr><td class="font-semibold">Districts traversed</td><td><span class="hl-place">Buxar, Saran, Vaishali, Patna, Munger, Bhagalpur, Katihar</span></td></tr>
+          <tr><td class="font-semibold">Major Tributaries (North)</td><td><span class="hl-term">Ghaghra, Gandak, Burhi Gandak, Bagmati, Kamla, Kosi, Mahananda</span></td></tr>
+          <tr><td class="font-semibold">Major Tributaries (South)</td><td><span class="hl-term">Son, Punpun, Kiul, Chandan, Karmnasa, Badua</span></td></tr>
+          <tr><td class="font-semibold">Key Feature</td><td>Forms <span class="hl-term">Diara (sandy islands)</span> in Patna–Bhagalpur stretch</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- North Bihar Rivers -->
+    <h3 class="subsection-heading"><i class="fas fa-arrow-up mr-2 text-green-400"></i>North Bihar Rivers (Himalayan-fed)</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Ghaghra (Saryu)</h4>
+        <table>
+          <tr><th>Origin</th><td>Mapchachungo Glacier, Tibet</td></tr>
+          <tr><th>Length</th><td>~1,080 km (joint system)</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Gopalganj, Siwan, Saran</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Chhapra</span> (Saran)</td></tr>
+          <tr><th>Key</th><td>Flood-prone; forms <span class="hl-term">Ghodaur Tal</span> region</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Gandak (Narayani)</h4>
+        <table>
+          <tr><th>Origin</th><td>Nhubine Himal Glacier, Nepal</td></tr>
+          <tr><th>Length</th><td>~630 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">West Champaran, East Champaran, Muzaffarpur, Saran, Vaishali, Patna</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Sonepur, Saran</span></td></tr>
+          <tr><th>Key</th><td><span class="hl-term">Gandak Project</span> — first major irrigation project in Bihar (1960s)</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Burhi Gandak</h4>
+        <table>
+          <tr><th>Origin</th><td>Chautarwa Chaur, West Champaran</td></tr>
+          <tr><th>Length</th><td>~320 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">West Champaran, East Champaran, Muzaffarpur, Samastipur, Khagaria</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Roshra, Samastipur</span> (via distributary)</td></tr>
+          <tr><th>Key</th><td>"Old Gandak" — <span class="hl-term">originates within Bihar</span></td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Bagmati</h4>
+        <table>
+          <tr><th>Origin</th><td>Shivapuri Hills, Kathmandu, Nepal</td></tr>
+          <tr><th>Length</th><td>~396 km (in India)</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Sitamarhi, Muzaffarpur, Darbhanga, Samastipur, Khagaria</span></td></tr>
+          <tr><th>Confluence</th><td>Kosi at <span class="hl-place">Badlaghat, Khagaria</span></td></tr>
+          <tr><th>Key</th><td>Also called <span class="hl-term">Kamla</span> in lower reach; severe floods in Sitamarhi-Darbhanga</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Kamla-Balan</h4>
+        <table>
+          <tr><th>Origin</th><td>Nepal hills</td></tr>
+          <tr><th>Length</th><td>~240 km (combined)</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Madhubani, Darbhanga</span></td></tr>
+          <tr><th>Confluence</th><td>Bagmati (Kamla + Balan)</td></tr>
+          <tr><th>Key</th><td><span class="hl-term">Triangular delta</span> at Madhubani-Darbhanga border</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Kosi (Sorrow of Bihar)</h4>
+        <table>
+          <tr><th>Origin</th><td>Tibet (Saptakoshi — 7 streams)</td></tr>
+          <tr><th>Length</th><td>~730 km total</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Madhubani, Darbhanga, Saharsa, Supaul, Madhepura, Araria, Purnea, Katihar, Khagaria, Bhagalpur</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Kursela, Katihar</span></td></tr>
+          <tr><th>Key</th><td><span class="hl-term">Kosi Embankment Project</span> (1954–60) — world's longest embankment (~280 km). River shifted ~120 km west in 200 years; carried highest silt load in India</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-cyan-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Mahananda</h4>
+        <table>
+          <tr><th>Origin</th><td>Singalila Range, Darjeeling</td></tr>
+          <tr><th>Length</th><td>~325 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Purnea, Katihar</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Manihari, Katihar</span></td></tr>
+          <tr><th>Key</th><td>Eastern-most tributary of Ganga in Bihar</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <!-- South Bihar Rivers -->
+    <h3 class="subsection-heading"><i class="fas fa-arrow-down mr-2 text-orange-400"></i>South Bihar Rivers (Peninsular-fed)</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Son (Sone)</h4>
+        <table>
+          <tr><th>Origin</th><td>Amarkantak Plateau, MP</td></tr>
+          <tr><th>Length</th><td>~784 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Rohtas, Bhojpur, Patna</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Pahleza Ghat, Patna</span></td></tr>
+          <tr><th>Key</th><td>Largest Peninsular tributary of Ganga; <span class="hl-term">Indrapuri Barrage</span> (Dehri-on-Son) — longest canal irrigation system in Bihar. Seasonal but perennial with barrage; also known as <span class="hl-term">Sone</span></td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Punpun</h4>
+        <table>
+          <tr><th>Origin</th><td>Palamu, Jharkhand</td></tr>
+          <tr><th>Length</th><td>~200 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Aurangabad, Gaya, Patna</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Fatuha, Patna</span></td></tr>
+          <tr><th>Key</th><td>Highly seasonal; causes flooding in Patna urban area. Known as the <span class="hl-term">swollen river</span> in monsoon</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Kiul (Uttar Vahini)</h4>
+        <table>
+          <tr><th>Origin</th><td>Jharkhand hills</td></tr>
+          <tr><th>Length</th><td>~112 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Jamui, Sheikhpura, Lakhisarai, Munger</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Munger</span></td></tr>
+          <tr><th>Key</th><td>Major stream of Munger-Jamui region</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Chandan</h4>
+        <table>
+          <tr><th>Origin</th><td>Jharkhand (Dumka)</td></tr>
+          <tr><th>Length</th><td>~80 km in Bihar</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Bhagalpur</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga at <span class="hl-place">Sultanganj, Bhagalpur</span></td></tr>
+          <tr><th>Key</th><td>Pilgrimage site — <span class="hl-term">Sultanganj</span> on its bank</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Karmnasa</h4>
+        <table>
+          <tr><th>Origin</th><td>Kaimur Plateau</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Kaimur (Bhabhua)</span></td></tr>
+          <tr><th>Confluence</th><td>Ganga (UP border)</td></tr>
+          <tr><th>Key</th><td>Forms Bihar-UP border; considered <span class="hl-term">inauspicious</span> in Hindu tradition</td></tr>
+        </tbody></table>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-xl font-semibold text-orange-400 mb-2"><i class="fas fa-chevron-right mr-1"></i>Badua</h4>
+        <table>
+          <tr><th>Origin</th><td>Sanjay Parvat, Jharkhand</td></tr>
+          <tr><th>Length</th><td>~96 km</td></tr>
+          <tr><th>Districts</th><td><span class="hl-place">Banka</span></td></tr>
+          <tr><th>Confluence</th><td>Chandan then Ganga</td></tr>
+          <tr><th>Key</th><td>Main river of Banka district</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <!-- River System Summary -->
+    <div class="fact-box mb-8">
+      <h4 class="text-blue-400 font-semibold text-lg mb-2"><i class="fas fa-sitemap mr-2"></i>River System Summary</h4>
+      <ul class="text-gray-300 space-y-1">
+        <li><strong class="text-yellow-300">Ganga System:</strong> Ganga + Son + Punpun + Kiul + Chandan (South) and Ghaghra + Gandak + Kosi + Mahananda (North)</li>
+        <li><strong class="text-yellow-300">Gandak System:</strong> Gandak + Burhi Gandak (parallel streams, Burhi originates inside Bihar)</li>
+        <li><strong class="text-yellow-300">Kosi System:</strong> 7 streams (Saptakoshi) — Sun Kosi, Indravati, Bhote Kosi, Arun, Tamur, Dudh Kosi, Likhu Khola</li>
+        <li><strong class="text-yellow-300">Bagmati System:</strong> Bagmati + Kamla + Balan — drain into Kosi floodplain</li>
+        <li><strong class="text-yellow-300">Son System:</strong> Son + Rihand + Koil + Auranga — largest southern tributary of Ganga</li>
+      </ul>
+    </div>
+
+    <!-- ===================== SOIL SECTION ===================== -->
+    <h2 class="section-heading"><i class="fas fa-mountain mr-3 text-yellow-400"></i>Soil Types of Bihar</h2>
+
+    <div class="dark-card mb-8">
+      <p class="text-gray-300">Bihar has diverse soil types due to its unique geography — from Himalayan foothills in the north to plateau fringe in the south. The <span class="hl-term">Indo-Gangetic alluvium</span> dominates, covering >90% of state area.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">1. Piedmont Swamp Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">West Champaran</span> (foothills of Himalayas)</p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Waterlogged, thick clay, rich in organic matter. Found in <span class="hl-term">Chaur</span> (oxbow lake) lands. High carbon content.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">2. Terai Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">West Champaran, East Champaran, Kishanganj</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Fine silt, high moisture, rich humus. Dark grey to black. <span class="hl-term">High fertility</span> — ideal for jute, rice, sugarcane. High water table.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">3. Gangetic Alluvium — New (Khadar)</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Supaul, Saharsa, Darbhanga, Madhubani, Sitamarhi, Purnea, Katihar, Muzaffarpur, Samastipur, Khagaria</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Fresh silt deposited annually by floods. Sandy-loam, <span class="hl-term">light grey</span>. Neutral to slightly alkaline. Excellent for rice, wheat, maize, sugarcane.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">4. Gangetic Alluvium — Old (Bhangar)</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Patna, Nalanda, Bhojpur, Buxar, Vaishali, Saran, Gopalganj, Siwan, Rohtas, Aurangabad</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Older alluvium above flood level, <span class="hl-term">dark grey to black</span>. Contains calcareous concretions (kankar). Clay-loam, rich in potash and lime.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">5. Calcareous Soil (Rarh)</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Muzaffarpur, Saran, East Champaran, West Champaran, Vaishali</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> High lime content (CaCO3), <span class="hl-term">sticky when wet, hard when dry</span>. Rich in calcium but may be deficient in nitrogen and humus. White efflorescence visible in summer.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">6. Red & Yellow Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Gaya, Nawada, Jamui, Rohtas (southern parts), Kaimur, Banka, Munger</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Derived from granite/gneiss. <span class="hl-term">Red due to iron oxide</span>, yellow when hydrated. Low fertility, sandy, needs irrigation and fertilizers. Found on plateau fringe.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">7. Sandy Soil (Diara)</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Buxar, Saran, Patna, Vaishali, Bhagalpur, Katihar, Munger</span> (along Ganga)</p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Coarse sand deposited on river islands/banks. <span class="hl-term">Low water retention</span>. Suitable for watermelon, vegetables, cucurbits with irrigation.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">8. Tal Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> South bank of Ganga from <span class="hl-place">Patna to Bhagalpur</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Heavy clay with high moisture retention. Waterlogged in rainy season. <span class="hl-term">Suited for rice cultivation</span> (especially in Nalanda, Sheikhpura, Lakhisarai).</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">9. Balthar Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> Southern plateau fringe — <span class="hl-place">Kaimur, Rohtas, Aurangabad, Gaya, Nawada, Jamui, Banka, Munger</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> Coarse-grained, gravelly soil formed from <span class="hl-term">sandstone</span>. Poor fertility, low organic matter. Light coloured, needs significant inputs for farming.</p>
+      </div>
+      <div class="gradient-card-1">
+        <h4 class="text-lg font-semibold text-cyan-300 mb-2">10. Karail-Kewal Soil</h4>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Location:</strong> <span class="hl-place">Rohtas, Gaya, Aurangabad, Jahanabad, Munger, Bhagalpur</span></p>
+        <p class="text-gray-300 text-sm"><strong class="text-yellow-300">Feature:</strong> <span class="hl-term">Clay-loam with calcareous nodules (Kankar)</span>. Dark coloured. Moderately fertile. Kewal is lighter variant; Karail is heavier. Found in undulating plains.</p>
+      </div>
+    </div>
+
+    <!-- ===================== CROPS SECTION ===================== -->
+    <h2 class="section-heading"><i class="fas fa-seedling mr-3 text-green-400"></i>Crops of Bihar</h2>
+
+    <div class="dark-card mb-8">
+      <p class="text-gray-300">Bihar is predominantly agricultural, with ~76% of its population dependent on agriculture. The state has <span class="hl-term">three cropping seasons</span>: Kharif (June–Oct), Rabi (Oct–Mar), and Zaid (Apr–Jun). Cropping intensity >150% is among the highest in India.</p>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-wheat-alt mr-2"></i>Major Cereals</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Rice (Kharif)</h4>
+        <p class="text-sm text-gray-300"><strong>Area:</strong> ~3.3 million ha (largest crop by area)<br>
+        <strong>Production:</strong> ~8 million tonnes<br>
+        <strong>Key Districts:</strong> <span class="hl-place">Gaya, Rohtas, Aurangabad, Nalanda, Muzaffarpur, East Champaran, Purnea, Katihar, Darbhanga, Madhubani, Saharsa, Supaul, Saran, Gopalganj, Siwan</span><br>
+        <strong>Types:</strong> Sali (main kharif), Aghani (winter), Garma (summer/irrigated)<br>
+        <strong>Bihar's share:</strong> ~3.5% of India's rice area</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Wheat (Rabi)</h4>
+        <p class="text-sm text-gray-300"><strong>Area:</strong> ~2.1 million ha<br>
+        <strong>Production:</strong> ~5 million tonnes<br>
+        <strong>Key Districts:</strong> <span class="hl-place">Rohtas, Bhojpur, Gaya, Patna, Nalanda, Buxar, Saran, Siwan, Gopalganj, Muzaffarpur, East Champaran, Vaishali</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">4th largest</span> wheat producer in India<br>
+        <strong>Key:</strong> Grown in <span class="hl-term">Bhangar (old alluvium)</span> with adequate moisture</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Maize</h4>
+        <p class="text-sm text-gray-300"><strong>Area:</strong> ~700,000 ha<br>
+        <strong>Production:</strong> ~2.5 million tonnes<br>
+        <strong>Key Districts:</strong> <span class="hl-place">Munger, Khagaria, Bhagalpur, Katihar, Purnea, Begusarai, Samastipur, Darbhanga, Madhubani, Araria, Supaul</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">3rd largest</span> maize producer in India<br>
+        <strong>Season:</strong> Grown in <span class="hl-term">both Kharif and Rabi</span></p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Coarse Grains (Bajra, Jowar)</h4>
+        <p class="text-sm text-gray-300"><strong>Bajra:</strong> <span class="hl-place">Gaya, Nawada, Rohtas, Aurangabad</span> — dry regions<br>
+        <strong>Jowar:</strong> Minor crop, primarily for cattle feed<br>
+        <strong>Barley (Jau):</strong> <span class="hl-place">Bhojpur, Buxar, Rohtas</span> — limited area</p>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-seedling mr-2"></i>Pulses</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Pulses Overview</h4>
+        <p class="text-sm text-gray-300"><strong>Total Area:</strong> ~600,000 ha<br>
+        <strong>Key Types:</strong> Arhar (Tur/Pigeon pea), Urad (Black gram), Moong (Green gram), Gram (Chana), Pea (Matar), Lentils (Masoor), Khesari<br>
+        <strong>Key Districts:</strong> <span class="hl-place">Rohtas, Gaya, Aurangabad, Nawada, Jamui, Bhojpur, Nalanda, Patna, Muzaffarpur, Saran, East Champaran</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">5th</span> in pulses area nationally</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Key Pulse Types & Districts</h4>
+        <div class="text-sm text-gray-300">
+          <p><span class="hl-term">Arhar:</span> <span class="hl-place">Rohtas, Gaya, Aurangabad, Nalanda, Bhojpur, Patna</span></p>
+          <p><span class="hl-term">Gram:</span> <span class="hl-place">Rohtas, Gaya, Bhojpur, Patna, Nalanda, Aurangabad, Saran</span></p>
+          <p><span class="hl-term">Pea:</span> <span class="hl-place">Bhojpur, Nalanda, Patna, Gaya, Vaishali, Saran, Siwan</span></p>
+          <p><span class="hl-term">Masoor (Lentil):</span> <span class="hl-place">Bhojpur, Nalanda, Gaya, Aurangabad</span></p>
+          <p><span class="hl-term">Khesari:</span> <span class="hl-place">Purnea, Katihar, Araria, Saharsa</span> — mainly for cattle feed</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-crop mr-2"></i>Cash Crops</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Sugarcane</h4>
+        <p class="text-sm text-gray-300"><strong>Area:</strong> ~230,000 ha<br>
+        <strong>Production:</strong> ~14 million tonnes<br>
+        <strong>Key Districts:</strong> <span class="hl-place">West Champaran, East Champaran, Muzaffarpur, Sitamarhi, Saran, Gopalganj, Siwan, Vaishali, Samastipur</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">5th</span> in sugarcane production<br>
+        <strong>Key:</strong> Champaran is the <span class="hl-term">sugar bowl of Bihar</span> with 10+ sugar mills</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Jute</h4>
+        <p class="text-sm text-gray-300"><strong>Area:</strong> ~55,000 ha<br>
+        <strong>Production:</strong> ~130,000 bales<br>
+        <strong>Key Districts:</strong> <span class="hl-place">Purnea, Katihar, Kishanganj, Araria, West Champaran</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">3rd</span> in jute production (after WB, Assam)<br>
+        <strong>Key:</strong> Grown in <span class="hl-term">Terai</span> belt with high moisture; also called "golden fibre"</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Tobacco</h4>
+        <p class="text-sm text-gray-300"><strong>Key Districts:</strong> <span class="hl-place">Darbhanga, Madhubani, Muzaffarpur, Samastipur</span><br>
+        <strong>Type:</strong> Chewing tobacco (dominant), also hookah tobacco<br>
+        <strong>Bihar's share:</strong> ~10% of India's tobacco area</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-lg font-semibold text-green-400 mb-2">Oilseeds</h4>
+        <p class="text-sm text-gray-300"><strong>Mustard/Rapeseed:</strong> <span class="hl-place">Rohtas, Gaya, Nalanda, Bhojpur, Buxar, Patna, Aurangabad</span><br>
+        <strong>Linseed:</strong> <span class="hl-place">Rohtas, Gaya, Nawada, Jamui</span><br>
+        <strong>Groundnut:</strong> <span class="hl-place">Gaya, Nawada, Rohtas, Aurangabad</span><br>
+        <strong>Sesame:</strong> <span class="hl-place">Gaya, Nawada, Jamui, Banka</span><br>
+        <strong>Bihar's rank:</strong> <span class="hl-event">6th</span> in mustard production</p>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-apple-alt mr-2"></i>Fruits & Vegetables</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="gradient-card-3">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2">Fruits</h4>
+        <div class="text-sm text-gray-300">
+          <p><span class="hl-term">Litchi:</span> <span class="hl-event">Largest producer in India</span> — <span class="hl-place">Bhagalpur, Muzaffarpur, Vaishali, East Champaran, Samastipur</span>. Bhagalpur litchi has GI tag.</p>
+          <p><span class="hl-term">Mango:</span> <span class="hl-place">Darbhanga, Muzaffarpur, Bhagalpur, Katihar, Purnea, Vaishali, Samastipur</span>. Zardalu from Bhagalpur has GI tag.</p>
+          <p><span class="hl-term">Banana:</span> <span class="hl-place">Vaishali, Muzaffarpur, Samastipur, East Champaran, Bhagalpur</span></p>
+          <p><span class="hl-term">Guava:</span> <span class="hl-place">Patna, Nalanda, Bhojpur, Vaishali, Muzaffarpur</span></p>
+          <p><span class="hl-term">Pineapple:</span> <span class="hl-event">4th largest</span> in India — <span class="hl-place">Purnea, Katihar, Kishanganj, Araria</span></p>
+          <p><span class="hl-term">Makhana (Foxnut):</span> <span class="hl-event">Largest producer</span> — <span class="hl-place">Darbhanga, Madhubani, Saharsa, Supaul, Katihar, Purnea</span>. GI tag for Mithila Makhana.</p>
+        </div>
+      </div>
+      <div class="gradient-card-3">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2">Vegetables</h4>
+        <div class="text-sm text-gray-300">
+          <p><span class="hl-term">Potato:</span> <span class="hl-place">Nalanda, Patna, Bhojpur, Muzaffarpur, Vaishali, Samastipur, Gaya, Rohtas</span>. Bihar is <span class="hl-event">3rd largest</span> potato producer.</p>
+          <p><span class="hl-term">Onion:</span> <span class="hl-place">Nalanda, Patna, Gaya, Rohtas, Bhojpur, Aurangabad</span></p>
+          <p><span class="hl-term">Cauliflower:</span> <span class="hl-event">4th largest</span> — <span class="hl-place">Patna, Nalanda, Bhojpur, Vaishali, Samastipur, Muzaffarpur</span></p>
+          <p><span class="hl-term">Brinjal:</span> <span class="hl-place">Patna, Nalanda, Vaishali, Muzaffarpur, Samastipur, Gaya</span></p>
+          <p><span class="hl-term">Tomato:</span> <span class="hl-place">Nalanda, Patna, Bhojpur, Vaishali, Saran, Siwan, Muzaffarpur</span></p>
+          <p><span class="hl-term">Ladyfinger (Bhindi):</span> <span class="hl-place">Patna, Nalanda, Bhojpur, Vaishali</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- District-wise Crop Specialization Table -->
+    <h3 class="subsection-heading"><i class="fas fa-table mr-2"></i>District-wise Crop Specialization</h3>
+    <div class="dark-card mb-8 overflow-x-auto">
+      <table>
+        <thead>
+          <tr><th>District</th><th>Primary Crops</th><th>Specialty</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gaya</td><td>Rice, Wheat, Pulses, Potato</td><td>Dry-land farming; coarse grains</td></tr>
+          <tr><td>Rohtas</td><td>Rice, Wheat, Pulses, Mustard</td><td>Highest wheat & pulse area</td></tr>
+          <tr><td>Nalanda</td><td>Rice, Wheat, Potato, Vegetables</td><td>Vegetable basket of Bihar</td></tr>
+          <tr><td>Patna</td><td>Rice, Wheat, Potato, Vegetables</td><td>High-value vegetables, floriculture</td></tr>
+          <tr><td>Bhojpur</td><td>Wheat, Rice, Gram, Pea, Potato</td><td>Rabi crop specialization</td></tr>
+          <tr><td>Buxar</td><td>Wheat, Rice, Barley</td><td>Wheat & barley belt</td></tr>
+          <tr><td>East Champaran</td><td>Sugarcane, Rice, Wheat, Maize</td><td>Second highest sugarcane</td></tr>
+          <tr><td>West Champaran</td><td>Sugarcane, Jute, Rice, Maize</td><td>Highest sugarcane; Terai crops</td></tr>
+          <tr><td>Muzaffarpur</td><td>Rice, Wheat, Sugarcane, Litchi</td><td>Litchi hub; sugarcane</td></tr>
+          <tr><td>Vaishali</td><td>Rice, Wheat, Banana, Sugarcane</td><td>Banana production leader</td></tr>
+          <tr><td>Saran</td><td>Rice, Wheat, Sugarcane, Pulses</td><td>Rice-wheat system</td></tr>
+          <tr><td>Siwan</td><td>Rice, Wheat, Sugarcane</td><td>Rice-wheat dominance</td></tr>
+          <tr><td>Gopalganj</td><td>Rice, Wheat, Sugarcane, Pulses</td><td>Sugar mill belt</td></tr>
+          <tr><td>Bhagalpur</td><td>Litchi, Mango, Wheat, Maize</td><td>Litchi (GI) & Mango (Zardalu GI)</td></tr>
+          <tr><td>Munger</td><td>Maize, Rice, Wheat</td><td>Maize production leader</td></tr>
+          <tr><td>Darbhanga</td><td>Rice, Wheat, Makhana, Tobacco</td><td>Makhana capital; tobacco</td></tr>
+          <tr><td>Madhubani</td><td>Rice, Makhana, Tobacco</td><td>Makhana & fish farming</td></tr>
+          <tr><td>Samastipur</td><td>Rice, Wheat, Maize, Litchi</td><td>Litchi & maize diversification</td></tr>
+          <tr><td>Purnea</td><td>Jute, Pineapple, Rice, Maize</td><td>Jute & pineapple hub</td></tr>
+          <tr><td>Katihar</td><td>Jute, Pineapple, Rice, Makhana</td><td>Jute & pineapple</td></tr>
+          <tr><td>Kishanganj</td><td>Jute, Pineapple, Rice</td><td>Terai fruit belt</td></tr>
+          <tr><td>Araria</td><td>Jute, Pineapple, Rice, Maize</td><td>Jute & pineapple</td></tr>
+          <tr><td>Saharsa</td><td>Rice, Maize, Makhana</td><td>Kosi belt rice & makhana</td></tr>
+          <tr><td>Supaul</td><td>Rice, Maize, Makhana</td><td>Kosi belt; makhana</td></tr>
+          <tr><td>Madhepura</td><td>Rice, Maize</td><td>Rice & maize rotation</td></tr>
+          <tr><td>Sitamarhi</td><td>Sugarcane, Rice, Wheat</td><td>Sugarcane belt</td></tr>
+          <tr><td>Aurangabad</td><td>Rice, Wheat, Pulses</td><td>Pulse & cereal belt</td></tr>
+          <tr><td>Nawada</td><td>Rice, Wheat, Pulses, Groundnut</td><td>Coarse grains & oilseeds</td></tr>
+          <tr><td>Jamui</td><td>Pulses, Oilseeds, Rice</td><td>Pulse & oilseed region</td></tr>
+          <tr><td>Banka</td><td>Rice, Maize, Pulses</td><td>Forest fringe agriculture</td></tr>
+          <tr><td>Kaimur</td><td>Rice, Wheat, Pulses</td><td>Plateau agriculture</td></tr>
+          <tr><td>Jahanabad</td><td>Rice, Wheat, Pulses</td><td>Cereal-pulse system</td></tr>
+          <tr><td>Sheikhpura</td><td>Rice, Wheat, Maize</td><td>Small area, high intensity</td></tr>
+          <tr><td>Lakhisarai</td><td>Rice, Wheat, Maize</td><td>Maize & cereals</td></tr>
+          <tr><td>Begusarai</td><td>Rice, Wheat, Maize</td><td>Maize & wheat</td></tr>
+          <tr><td>Khagaria</td><td>Maize, Rice, Wheat</td><td>Highest maize concentration</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== MINERALS SECTION ===================== -->
+    <h2 class="section-heading"><i class="fas fa-gem mr-3 text-yellow-400"></i>Minerals of Bihar</h2>
+
+    <div class="dark-card mb-8">
+      <p class="text-gray-300">Bihar has significant mineral wealth concentrated in its <span class="hl-term">southern plateau region</span> (Kaimur, Rohtas, Gaya, Jamui, Munger, Bhagalpur, Banka). The state is a national leader in pyrite, kyanite, and gold resources.</p>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4">
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-yellow-300">95%</span><br><span class="text-xs text-gray-400">India's Pyrite</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-yellow-300">93%</span><br><span class="text-xs text-gray-400">India's Kyanite</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-yellow-300">57%</span><br><span class="text-xs text-gray-400">India's Gold</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-yellow-300">#1</span><br><span class="text-xs text-gray-400">Limestone in East</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-yellow-300">160MT</span><br><span class="text-xs text-gray-400">Coal Reserves</span></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-mountain mr-1"></i>Limestone</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Kaimur (Bhabhua), Munger, Rohtas</span><br>
+        <strong>Key:</strong> Major cement industry raw material. <span class="hl-term">Kaimur</span> has the largest deposits in Bihar. Munger deposits in <span class="hl-term">Kharagpur Hills</span>. Used by Bihar State Cement Corp.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-star mr-1"></i>Mica</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Nawada, Jamui, Gaya, Bhagalpur, Munger</span><br>
+        <strong>Key:</strong> Found in pegmatite veins. <span class="hl-term">Ruby mica</span> variety present. Once a major export item from Bihar. Mostly mined in small scale now.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-bolt mr-1"></i>Quartz & Silica</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Bhagalpur, Jamui, Munger, Nalanda</span><br>
+        <strong>Key:</strong> High-purity silica for glass and ceramic industries. <span class="hl-term">Bhagalpur quartz</span> used for glass manufacturing. Quartzite in <span class="hl-place">Lakhisarai, Munger, Nalanda</span>.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-fire mr-1"></i>Bauxite</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Munger (Kharagpur Hills), Rohtas</span><br>
+        <strong>Key:</strong> Aluminium ore. Deposits found in lateritic caps. Not extensively mined due to forest coverage and logistics.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-palette mr-1"></i>China Clay (Kaolin)</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Bhagalpur, Munger, Banka, Vaishali</span><br>
+        <strong>Key:</strong> Used in ceramics, paper, paint and rubber industries. <span class="hl-term">Bhagalpur</span> has the highest quality china clay deposits in the state.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-coins mr-1"></i>Gold</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Jamui (Sono block), Gaya, Nalanda</span><br>
+        <strong>Key:</strong> Bihar holds <span class="hl-term">57% of India's gold resources</span>. <span class="hl-place">Sono, Jamui</span> is the most prominent gold-bearing area. GSI has identified multiple gold belts in the state. Ancient gold mining sites exist at <span class="hl-place">Dumri, Ganeshpur, Chakai</span>.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-hammer mr-1"></i>Iron Ore</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Gaya (magnetite), Jamui (magnetite), Bhagalpur (hematite)</span><br>
+        <strong>Key:</strong> Magnetite deposits in <span class="hl-term">Rahatia, Karmatia</span> (Gaya). Hematite in <span class="hl-term">Champanagar, Bhagalpur</span>. Small-scale, not commercially mined at scale.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-biohazard mr-1"></i>Pyrites</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Rohtas (Amjhor)</span><br>
+        <strong>Key:</strong> Bihar holds <span class="hl-term">~95% of India's pyrite reserves</span>. Sulfur source for sulfuric acid production. The <span class="hl-term">Pyrites, Phosphates & Chemicals Ltd (PPCL)</span> operates at Amjhor. Used for fertilizer industry.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-industry mr-1"></i>Coal</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Bhagalpur, Munger (Rajmahal region)</span><br>
+        <strong>Key:</strong> Estimated <span class="hl-term">160 million tonnes</span> in the Rajmahal basin area (extending into Jharkhand). Not extensively mined in Bihar portion due to forest cover and proximity to Rajmahal coalfield in Jharkhand.</p>
+      </div>
+      <div class="gradient-card-4">
+        <h4 class="text-lg font-semibold text-yellow-300 mb-2"><i class="fas fa-battery-full mr-1"></i>Lead-Zinc</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Banka, Rohtas</span><br>
+        <strong>Key:</strong> Small deposits found in <span class="hl-term">Banka district</span> (Kurumdih area). Not commercially exploited at scale. Rohtas has minor lead occurrences.</p>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-table mr-2"></i>District-wise Mineral Distribution</h3>
+    <div class="dark-card mb-8 overflow-x-auto">
+      <table>
+        <thead>
+          <tr><th>District</th><th>Major Minerals</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kaimur</td><td><span class="hl-term">Limestone</span> (largest deposits), Quartzite</td></tr>
+          <tr><td>Rohtas</td><td><span class="hl-term">Limestone, Pyrites</span> (95% of India), Bauxite, Lead-Zinc, Sandstone</td></tr>
+          <tr><td>Munger</td><td><span class="hl-term">Limestone, Kyanite</span> (93% of India), Bauxite, China Clay, Mica, Quartz, Asbestos, Slate, Fireclay</td></tr>
+          <tr><td>Gaya</td><td><span class="hl-term">Gold, Mica, Iron Ore</span> (magnetite), Feldspar, Beryllium, Uranium, Manganese, Steatite</td></tr>
+          <tr><td>Nawada</td><td><span class="hl-term">Mica, Gold</span>, Feldspar, Uranium (pegmatite)</td></tr>
+          <tr><td>Jamui</td><td><span class="hl-term">Gold</span> (Sono block, 57% of India), Mica, Quartz, Iron Ore (magnetite), Feldspar, Steatite, Granite</td></tr>
+          <tr><td>Bhagalpur</td><td><span class="hl-term">Quartz, China Clay, Coal</span> (Rajmahal), Mica, Granite, Iron Ore (hematite), Fireclay</td></tr>
+          <tr><td>Banka</td><td><span class="hl-term">China Clay, Lead-Zinc</span>, Granite</td></tr>
+          <tr><td>Nalanda</td><td><span class="hl-term">Gold, Quartz</span>, Quartzite</td></tr>
+          <tr><td>Jahanabad</td><td>Granite</td></tr>
+          <tr><td>Vaishali</td><td>China Clay</td></tr>
+          <tr><td>Purnea</td><td>Fireclay</td></tr>
+          <tr><td>Patna</td><td>Manganese (minor)</td></tr>
+          <tr><td>Gopalganj</td><td><span class="hl-term">Saltpetre</span> (Saraiya Pahari)</td></tr>
+          <tr><td>Saran</td><td>Saltpetre (Manjhi)</td></tr>
+          <tr><td>Muzaffarpur</td><td>Saltpetre (minor)</td></tr>
+          <tr><td>East Champaran</td><td>Saltpetre (minor)</td></tr>
+          <tr><td>Darbhanga</td><td>Saltpetre (minor)</td></tr>
+          <tr><td>Bhojpur</td><td>Saltpetre (minor)</td></tr>
+          <tr><td>Lakhisarai</td><td>Quartzite</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== FOREST SECTION ===================== -->
+    <h2 class="section-heading"><i class="fas fa-tree mr-3 text-green-400"></i>Forest Cover of Bihar</h2>
+
+    <div class="dark-card mb-8">
+      <p class="text-gray-300">Bihar has a <span class="hl-term">total forest cover of 7,380.79 sq km</span> as per ISFR 2021, which is <span class="hl-num">7.84%</span> of the state's geographical area. The forest cover has increased by <span class="hl-event">74.80 sq km</span> compared to ISFR 2019. State's total carbon stock is <span class="hl-num">56.88 MT</span>.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-green-300">7,381</span><br><span class="text-xs text-gray-400">Total Forest (sq km)</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-green-300">7.84%</span><br><span class="text-xs text-gray-400">% of State Area</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-green-300">+75</span><br><span class="text-xs text-gray-400">Increase (2019-21) sq km</span></div>
+        <div class="text-center p-3 bg-gray-800 rounded-lg"><span class="text-2xl font-bold text-green-300">3.44%</span><br><span class="text-xs text-gray-400">Protected Area Cover</span></div>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-layer-group mr-2"></i>Forest Classification (ISFR 2021)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <table>
+          <thead>
+            <tr><th>Type</th><th>Area (sq km)</th><th>% of State Area</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Very Dense Forest</td><td>332.97</td><td>0.35%</td></tr>
+            <tr><td>Moderately Dense Forest</td><td>3,260.39</td><td>3.46%</td></tr>
+            <tr><td>Open Forest</td><td>3,787.43</td><td>4.02%</td></tr>
+            <tr><td class="font-bold text-green-300">Total</td><td class="font-bold text-green-300">7,380.79</td><td class="font-bold text-green-300">7.84%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dark-card">
+        <table>
+          <thead>
+            <tr><th>Recorded Forest Area</th><th>Area (sq km)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Reserved Forest</td><td>693.52</td></tr>
+            <tr><td>Protected Forest</td><td>6,183.91</td></tr>
+            <tr><td>Unclassed Forest</td><td>1.00</td></tr>
+            <tr><td class="font-bold text-green-300">Total</td><td class="font-bold text-green-300">6,878.43</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-map-marker-alt mr-2"></i>District-wise Forest Cover</h3>
+    <div class="dark-card mb-8 overflow-x-auto">
+      <table>
+        <thead>
+          <tr><th>District</th><th>Geographical Area (sq km)</th><th>Forest Cover (sq km)</th><th>% of District</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Kaimur</strong></td><td>3,363</td><td><span class="hl-num">1,092</span></td><td>32.47%</td><td>Dry deciduous + scrub</td></tr>
+          <tr><td><strong>West Champaran</strong></td><td>5,229</td><td><span class="hl-num">765</span></td><td>14.63%</td><td>Moist deciduous + Terai</td></tr>
+          <tr><td><strong>Rohtas</strong></td><td>3,851</td><td><span class="hl-num">581</span></td><td>15.09%</td><td>Dry deciduous</td></tr>
+          <tr><td><strong>Gaya</strong></td><td>4,976</td><td><span class="hl-num">517</span></td><td>10.39%</td><td>Dry deciduous + shrub</td></tr>
+          <tr><td><strong>Aurangabad</strong></td><td>3,305</td><td><span class="hl-num">260</span></td><td>7.87%</td><td>Scrub + dry deciduous</td></tr>
+          <tr><td><strong>Nalanda</strong></td><td>2,355</td><td><span class="hl-num">183</span></td><td>7.77%</td><td>Scrub + plantation</td></tr>
+          <tr><td><strong>Munger</strong></td><td>1,419</td><td><span class="hl-num">170</span></td><td>11.98%</td><td>Dry deciduous</td></tr>
+          <tr><td><strong>Jehanabad</strong></td><td>1,569</td><td><span class="hl-num">108</span></td><td>6.88%</td><td>Scrub forest</td></tr>
+          <tr><td><strong>Banka</strong></td><td>3,020</td><td><span class="hl-num">100</span></td><td>3.31%</td><td>Dry deciduous (highest increase)</td></tr>
+          <tr><td><strong>Nawada</strong></td><td>2,494</td><td><span class="hl-num">93</span></td><td>3.73%</td><td>Scrub + plantation</td></tr>
+          <tr><td><strong>Bhagalpur</strong></td><td>2,570</td><td><span class="hl-num">78</span></td><td>3.03%</td><td>Riverine + dry deciduous</td></tr>
+          <tr><td>Jamui</td><td>3,098</td><td>60</td><td>1.94%</td><td>Scrub + dry deciduous</td></tr>
+          <tr><td>East Champaran</td><td>3,969</td><td>52</td><td>1.31%</td><td>Terai plantation</td></tr>
+          <tr><td>Lakhisarai</td><td>1,229</td><td>32</td><td>2.60%</td><td>Scrub</td></tr>
+          <tr><td>Patna</td><td>3,202</td><td>30</td><td>0.94%</td><td>Riverine + urban plantation</td></tr>
+          <tr><td>Katihar</td><td>3,057</td><td>26</td><td>0.85%</td><td>Riverine</td></tr>
+          <tr><td>Bhojpur</td><td>2,395</td><td>21</td><td>0.88%</td><td>Riverine</td></tr>
+          <tr><td>Araria</td><td>2,830</td><td>20</td><td>0.71%</td><td>Riverine + plantation</td></tr>
+          <tr><td>Samastipur</td><td>2,905</td><td>20</td><td>0.69%</td><td>Plantation</td></tr>
+          <tr><td>Vaishali</td><td>2,036</td><td>18</td><td>0.88%</td><td>Plantation</td></tr>
+          <tr><td>Kishanganj</td><td>1,884</td><td>18</td><td>0.96%</td><td>Terai plantation</td></tr>
+          <tr><td>Buxar</td><td>1,624</td><td><span class="hl-num">3</span></td><td>0.18%</td><td>Minimal</td></tr>
+          <tr><td>Gopalganj</td><td>2,033</td><td><span class="hl-num">4</span></td><td>0.20%</td><td>Minimal</td></tr>
+          <tr><td>Siwan</td><td>2,219</td><td><span class="hl-num">2</span></td><td>0.09%</td><td>Minimal</td></tr>
+          <tr><td>Sheikhpura</td><td>689</td><td><span class="hl-num">~1</span></td><td>~0.15%</td><td>Negligible</td></tr>
+          <tr><td>Saran</td><td>2,641</td><td>10</td><td>0.38%</td><td>Plantation</td></tr>
+          <tr><td>Sitamarhi</td><td>2,294</td><td>8</td><td>0.35%</td><td>Plantation</td></tr>
+          <tr><td>Muzaffarpur</td><td>3,125</td><td>13</td><td>0.42%</td><td>Plantation</td></tr>
+          <tr><td>Darbhanga</td><td>2,279</td><td>11</td><td>0.48%</td><td>Plantation</td></tr>
+          <tr><td>Madhubani</td><td>3,501</td><td>9</td><td>0.26%</td><td>Plantation</td></tr>
+          <tr><td>Supaul</td><td>2,410</td><td>7</td><td>0.29%</td><td>Plantation</td></tr>
+          <tr><td>Purnea</td><td>3,210</td><td>8</td><td>0.25%</td><td>Plantation</td></tr>
+          <tr><td>Saharsa</td><td>1,696</td><td>5</td><td>0.29%</td><td>Plantation</td></tr>
+          <tr><td>Madhepura</td><td>1,788</td><td>4</td><td>0.22%</td><td>Plantation</td></tr>
+          <tr><td>Khagaria</td><td>1,486</td><td>4</td><td>0.27%</td><td>Plantation</td></tr>
+          <tr><td>Begusarai</td><td>1,918</td><td>7</td><td>0.36%</td><td>Plantation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subsection-heading"><i class="fas fa-tree mr-2"></i>Forest Types</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-green-400 font-semibold mb-2">Tropical Moist Deciduous</h4>
+        <p class="text-sm text-gray-300">Found in <span class="hl-place">West Champaran (Valmiki Tiger Reserve)</span>. Sal is the dominant tree species. Other species: Khair, Semal, Asan, Jamun, Amla. High biodiversity with tiger, elephant, deer, leopard.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-green-400 font-semibold mb-2">Tropical Dry Deciduous</h4>
+        <p class="text-sm text-gray-300">Found across <span class="hl-place">Kaimur, Rohtas, Gaya, Aurangabad, Munger, Banka, Nawada, Jamui</span>. Sal, Mahua, Palash, Tendu, Aonla, Bel. Largest forest type in Bihar. Rain-dependent, leafless in summer.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-green-400 font-semibold mb-2">Riverine Forest</h4>
+        <p class="text-sm text-gray-300">Along <span class="hl-place">Ganga, Gandak, Kosi</span> river banks. Khair, Shisham, Semal, Babul, Bamboo. Narrow strips of riparian vegetation. Important for wildlife corridors and soil conservation.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-green-400 font-semibold mb-2">Plantation Forest</h4>
+        <p class="text-sm text-gray-300">Distributed across all districts, especially <span class="hl-place">North Bihar</span> (flood-prone areas). Species: Eucalyptus, Poplar, Subabul, Acacia, Shisham, Bamboo. Social forestry and farm forestry initiatives.</p>
+      </div>
+    </div>
+
+    <!-- Protected Areas -->
+    <h3 class="subsection-heading"><i class="fas fa-shield-alt mr-2"></i>Protected Areas</h3>
+    <div class="dark-card mb-8 overflow-x-auto">
+      <table>
+        <thead>
+          <tr><th>Name</th><th>District</th><th>Area (sq km)</th><th>Type</th><th>Key Wildlife</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="hl-term">Valmiki Tiger Reserve</span></td><td>West Champaran</td><td>898.45</td><td>National Park + Tiger Reserve</td><td>Tiger, Elephant, Leopard, Sloth Bear, Wild Boar, Deer, Python</td></tr>
+          <tr><td><span class="hl-term">Bhimbandh Wildlife Sanctuary</span></td><td>Munger</td><td>682.02</td><td>Wildlife Sanctuary</td><td>Leopard, Wild Boar, Sambar, Chital, Peacock, Sloth Bear</td></tr>
+          <tr><td><span class="hl-term">Kaimur Wildlife Sanctuary</span></td><td>Kaimur</td><td>1,342.13</td><td>Wildlife Sanctuary</td><td>Leopard, Wild Boar, Chinkara, Blackbuck, Wolf, Hyena</td></tr>
+          <tr><td><span class="hl-term">Gautam Buddha Wildlife Sanctuary</span></td><td>Gaya, Nawada</td><td>259.48</td><td>Wildlife Sanctuary</td><td>Leopard, Wolf, Hyena, Jackal, Wild Boar, Deer, Peacock</td></tr>
+          <tr><td><span class="hl-term">Pant Wildlife Sanctuary</span></td><td>Gaya</td><td>43.33</td><td>Wildlife Sanctuary</td><td>Leopard, Wild Boar, Deer, Birds</td></tr>
+          <tr><td><span class="hl-term">Udaypur Wildlife Sanctuary</span></td><td>West Champaran</td><td>12.35</td><td>Wildlife Sanctuary</td><td>Elephant, Spotted Deer, Birds</td></tr>
+          <tr><td><span class="hl-term">Kusheshwar Asthan Bird Sanctuary</span></td><td>Darbhanga</td><td>0.95</td><td>Bird Sanctuary</td><td>Migratory birds, Darter, Cormorant, Egrets, Storks</td></tr>
+          <tr><td><span class="hl-term">Barela Bird Sanctuary</span></td><td>Darbhanga</td><td>0.51</td><td>Bird Sanctuary</td><td>Migratory waterfowl, Heron, Egret, Kingfisher</td></tr>
+          <tr><td><span class="hl-term">Nagi Dam Bird Sanctuary</span></td><td>Jamui</td><td>7.91</td><td>Bird Sanctuary</td><td>Migratory birds, Waterfowl, Crane, Duck</td></tr>
+          <tr><td><span class="hl-term">Nakti Dam Bird Sanctuary</span></td><td>Jamui</td><td>3.32</td><td>Bird Sanctuary</td><td>Migratory birds, Stork, Crane, Duck, Goose</td></tr>
+          <tr><td><span class="hl-term">Kanwarjheel Wetland Complex</span></td><td>Begusarai</td><td>8.89</td><td>Wetland + Bird Sanctuary</td><td>Migratory birds, Watercock, Purple Moorhen, Jakanas</td></tr>
+          <tr><td><span class="hl-term">Sanjay Gandhi Wildlife Sanctuary</span></td><td>Rohtas</td><td>144.76</td><td>Wildlife Sanctuary</td><td>Leopard, Wolf, Hyena, Bear, Deer</td></tr>
+          <tr><td><span class="hl-term">Vikramshila Gangetic Dolphin Sanctuary</span></td><td>Bhagalpur</td><td>60.00</td><td>Dolphin Sanctuary</td><td>Ganges River Dolphin, Gharial, Turtle, Otter</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== ADDITIONAL TOPICS ===================== -->
+    <h2 class="section-heading"><i class="fas fa-globe-asia mr-3 text-blue-400"></i>Additional Geography</h2>
+
+    <h3 class="subsection-heading">Physical Divisions</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-cyan-400 font-semibold mb-2">1. The Northern Terai Region</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">West Champaran, East Champaran, Kishanganj</span><br>
+        <strong>Feature:</strong> <span class="hl-term">Sivalik foothills</span> and marshy plains. <span class="hl-num">60–90m</span> elevation. Dense forests, high rainfall, numerous rivers (Gandak, Bagmati). Valmiki Tiger Reserve located here. <span class="hl-term">Chaur lands</span> (oxbow lakes) are typical.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-cyan-400 font-semibold mb-2">2. North Bihar Plains</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> All of Tirhut, Darbhanga, Kosi, Purnia divisions<br>
+        <strong>Feature:</strong> <span class="hl-term">Flat alluvial plain</span>, elevation <span class="hl-num">30–60m</span>. Formed by Ganga and its northern tributaries. Highly fertile but flood-prone. <span class="hl-term">Kosi megafan</span> covers ~15,000 sq km. <span class="hl-term">Tal</span> (depression) lands common. High groundwater table.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-cyan-400 font-semibold mb-2">3. South Bihar Plains</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> Patna, Magadh, Munger divisions (northern parts)<br>
+        <strong>Feature:</strong> <span class="hl-term">Bhangar (old alluvium)</span> dominated. Elevation <span class="hl-num">40–80m</span>. Relatively less flood-prone. <span class="hl-term">Diara lands</span> along Ganga (sandy islands). Rich in potash and lime. Higher cropping intensity.</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-cyan-400 font-semibold mb-2">4. Southern Plateau Fringe</h4>
+        <p class="text-sm text-gray-300"><strong>Districts:</strong> <span class="hl-place">Kaimur, Rohtas, Aurangabad, Gaya, Nawada, Jamui, Munger, Banka, Bhagalpur (southern parts)</span><br>
+        <strong>Feature:</strong> Northern extension of the <span class="hl-term">Chotanagpur Plateau</span>. Elevation <span class="hl-num">100–500m</span>. Undulating terrain with hills and valleys. <span class="hl-term">Rich in minerals</span>. Kaimur range (highest point in Bihar). Forested. Soil is red/yellow and Balthar type.</p>
+      </div>
+    </div>
+
+    <h3 class="subsection-heading">Physical Extension</h3>
+    <div class="dark-card mb-8">
+      <table>
+        <thead>
+          <tr><th>Parameter</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Latitudinal extent</td><td><span class="hl-num">24°20'10" N to 27°31'15" N</span></td></tr>
+          <tr><td>Longitudinal extent</td><td><span class="hl-num">83°19'50" E to 88°17'40" E</span></td></tr>
+          <tr><td>Total Area</td><td><span class="hl-num">94,163 sq km</span></td></tr>
+          <tr><td>Length (East-West)</td><td><span class="hl-num">~445 km</span></td></tr>
+          <tr><td>Width (North-South)</td><td><span class="hl-num">~345 km</span></td></tr>
+          <tr><td>Highest Point</td><td><span class="hl-term">Someshwar Shikhar</span> (Kaimur Range) — ~880m</td></tr>
+          <tr><td>Bordering States</td><td>UP (West), Jharkhand (South), West Bengal (East)</td></tr>
+          <tr><td>International Border</td><td>Nepal (North) — ~727 km</td></tr>
+          <tr><td>Total Districts</td><td>38</td></tr>
+          <tr><td>Population Density</td><td><span class="hl-num">~1,106</span> persons/sq km (highest among large states)</td></tr>
+          <tr><td>Major River Basins</td><td>Kosi (30.5%), Ganga (19%), Gandak (17.5%), Son (12.7%), Ghaghra (7.9%), Mahananda (5.4%), Others (7%)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subsection-heading">Climate</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div class="dark-card">
+        <h4 class="text-yellow-300 font-semibold mb-2">Climate Overview</h4>
+        <p class="text-sm text-gray-300"><strong>Type:</strong> <span class="hl-term">Sub-tropical monsoon</span> (Cwa Koppen classification)<br>
+        <strong>Summer:</strong> Mar–Jun. Max temp <span class="hl-num">40–46°C</span> (Gaya hottest)<br>
+        <strong>Monsoon:</strong> Jun–Sep. Average rainfall <span class="hl-num">~1,200 mm</span><br>
+        <strong>Winter:</strong> Nov–Feb. Min temp <span class="hl-num">4–10°C</span> (Gaya, Aurangabad coldest)<br>
+        <strong>Highest Rainfall:</strong> <span class="hl-place">Kishanganj</span> (~2,500 mm)<br>
+        <strong>Lowest Rainfall:</strong> <span class="hl-place">Gaya, Aurangabad</span> (~800 mm)<br>
+        <strong>Rainfall Pattern:</strong> Decreases from NE to SW</p>
+      </div>
+      <div class="dark-card">
+        <h4 class="text-yellow-300 font-semibold mb-2">Seasons</h4>
+        <table>
+          <thead>
+            <tr><th>Season</th><th>Months</th><th>Characteristic</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Winter</td><td>Dec–Feb</td><td>Cool, dry, occasional western disturbances</td></tr>
+            <tr><td>Summer</td><td>Mar–May</td><td>Hot, dry, Loo (hot winds), occasional thunderstorms (Kal Baisakhi)</td></tr>
+            <tr><td>Monsoon</td><td>Jun–Sep</td><td>SW monsoon, 85% of annual rainfall, floods in North Bihar</td></tr>
+            <tr><td>Post-monsoon</td><td>Oct–Nov</td><td>Retreating monsoon, clear skies, mild weather</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===================== MCQs ===================== -->
+    <h2 class="section-heading"><i class="fas fa-question-circle mr-3 text-purple-400"></i>Practice MCQs</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q1</span> Which river divides Bihar into North and South Bihar?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Kosi</span><br><span class="text-gray-400">B) Son</span><br><span class="text-gray-400">C) Ganga</span><br><span class="text-gray-400">D) Gandak</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Ganga</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q2</span> Which river is known as the 'Sorrow of Bihar'?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gandak</span><br><span class="text-gray-400">B) Bagmati</span><br><span class="text-gray-400">C) Kosi</span><br><span class="text-gray-400">D) Ghaghra</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Kosi</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q3</span> The Indrapuri Barrage is built across which river?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gandak</span><br><span class="text-gray-400">B) Son</span><br><span class="text-gray-400">C) Kosi</span><br><span class="text-gray-400">D) Punpun</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Son (at Dehri-on-Son, Rohtas)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q4</span> Bihar holds what percentage of India's pyrite reserves?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) 75%</span><br><span class="text-gray-400">B) 85%</span><br><span class="text-gray-400">C) 95%</span><br><span class="text-gray-400">D) 99%</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) 95% (in Rohtas district, Amjhor)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q5</span> Which district in Bihar has the highest forest cover?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) West Champaran</span><br><span class="text-gray-400">B) Rohtas</span><br><span class="text-gray-400">C) Gaya</span><br><span class="text-gray-400">D) Kaimur</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>D) Kaimur (~1,092 sq km, 32.47%)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q6</span> Bihar's largest soil type by area is:</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Red & Yellow</span><br><span class="text-gray-400">B) Calcareous</span><br><span class="text-gray-400">C) Gangetic Alluvium</span><br><span class="text-gray-400">D) Piedmont Swamp</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Gangetic Alluvium (new + old covers >90%)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q7</span> Bhagalpur district is famous for which fruit with GI tag?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Mango (Zardalu)</span><br><span class="text-gray-400">B) Litchi</span><br><span class="text-gray-400">C) Pineapple</span><br><span class="text-gray-400">D) Makhana</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Litchi (Bhagalpur Litchi has GI tag)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q8</span> Which Bihar district holds ~57% of India's gold resources?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gaya</span><br><span class="text-gray-400">B) Nalanda</span><br><span class="text-gray-400">C) Jamui (Sono block)</span><br><span class="text-gray-400">D) Munger</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Jamui (Sono block)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q9</span> Valmiki Tiger Reserve is located in which district?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) East Champaran</span><br><span class="text-gray-400">B) West Champaran</span><br><span class="text-gray-400">C) Rohtas</span><br><span class="text-gray-400">D) Kaimur</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) West Champaran</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q10</span> The Burhi Gandak river originates from:</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Nepal</span><br><span class="text-gray-400">B) Tibet</span><br><span class="text-gray-400">C) Chautarwa Chaur (West Champaran)</span><br><span class="text-gray-400">D) Someshwar Hills</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Chautarwa Chaur (West Champaran) — originates within Bihar</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q11</span> Which soil type is found in the Diara region along the Ganga?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Tal soil</span><br><span class="text-gray-400">B) Sandy soil</span><br><span class="text-gray-400">C) Calcareous soil</span><br><span class="text-gray-400">D) Balthar soil</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Sandy soil (coarse sand deposits on river islands)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q12</span> Bihar is the _____ largest producer of Maize in India.</p>
+        <p class="options mt-2"><span class="text-gray-400">A) 2nd</span><br><span class="text-gray-400">B) 3rd</span><br><span class="text-gray-400">C) 4th</span><br><span class="text-gray-400">D) 5th</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) 3rd (after Karnataka, MP)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q13</span> The Kharagpur Hills in Munger are known for which mineral?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gold</span><br><span class="text-gray-400">B) Kyanite (93% of India)</span><br><span class="text-gray-400">C) Limestone</span><br><span class="text-gray-400">D) Mica</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Kyanite (93% of India reserves in Munger)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q14</span> The Vikramshila Gangetic Dolphin Sanctuary is located along which river?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gandak</span><br><span class="text-gray-400">B) Kosi</span><br><span class="text-gray-400">C) Ganga (Bhagalpur)</span><br><span class="text-gray-400">D) Son</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Ganga (Bhagalpur stretch)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q15</span> Which district receives the highest annual rainfall in Bihar?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) West Champaran</span><br><span class="text-gray-400">B) Kishanganj</span><br><span class="text-gray-400">C) Katihar</span><br><span class="text-gray-400">D) Gaya</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Kishanganj (~2,500 mm)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q16</span> 'Tal' soil is primarily found in which region?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) North Bihar plains</span><br><span class="text-gray-400">B) South bank of Ganga (Patna to Bhagalpur)</span><br><span class="text-gray-400">C) Southern plateau</span><br><span class="text-gray-400">D) Terai belt</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) South bank of Ganga from Patna to Bhagalpur (heavy clay, waterlogged)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q17</span> Bihar's sugarcane belt is concentrated in which region?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Kosi region</span><br><span class="text-gray-400">B) Champaran (West & East)</span><br><span class="text-gray-400">C) Magadh region</span><br><span class="text-gray-400">D) Anga region</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Champaran (sugar bowl of Bihar)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q18</span> Which of the following rivers does NOT originate from Nepal/Tibet?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Gandak</span><br><span class="text-gray-400">B) Kosi</span><br><span class="text-gray-400">C) Burhi Gandak</span><br><span class="text-gray-400">D) Ghaghra</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>C) Burhi Gandak (originates in West Champaran)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q19</span> What percentage of Bihar's geographical area is under forest cover?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) 5.5%</span><br><span class="text-gray-400">B) 7.84%</span><br><span class="text-gray-400">C) 10.2%</span><br><span class="text-gray-400">D) 12.3%</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) 7.84% (7,380.79 sq km as per ISFR 2021)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q20</span> Bihar's highest point, Someshwar Shikhar, is located in which range?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Rajmahal Hills</span><br><span class="text-gray-400">B) Kaimur Range</span><br><span class="text-gray-400">C) Kharagpur Hills</span><br><span class="text-gray-400">D) Sivalik Hills</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Kaimur Range (~880m)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q21</span> Makhana (foxnut) is mainly grown in which districts?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Patna, Nalanda, Bhojpur</span><br><span class="text-gray-400">B) Darbhanga, Madhubani, Saharsa, Supaul</span><br><span class="text-gray-400">C) Gaya, Aurangabad, Rohtas</span><br><span class="text-gray-400">D) Bhagalpur, Munger, Banka</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Darbhanga, Madhubani, Saharsa, Supaul, Katihar, Purnea</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q22</span> The Son river is a tributary of which river?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Yamuna</span><br><span class="text-gray-400">B) Ganga</span><br><span class="text-gray-400">C) Kosi</span><br><span class="text-gray-400">D) Gandak</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Ganga (at Pahleza Ghat, Patna)</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q23</span> Which Bihar district has the LEAST forest cover?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Sheikhpura</span><br><span class="text-gray-400">B) Siwan</span><br><span class="text-gray-400">C) Buxar</span><br><span class="text-gray-400">D) All three negligible</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>D) All three are <10 sq km; Sheikhpura ~1, Siwan ~2, Buxar ~3 sq km</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q24</span> The Punpun river meets the Ganga at which place?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Sonepur</span><br><span class="text-gray-400">B) Fatuha (Patna)</span><br><span class="text-gray-400">C) Pahleza Ghat</span><br><span class="text-gray-400">D) Kursela</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Fatuha, Patna</p></details>
+      </div>
+
+      <div class="mcq-card">
+        <p class="text-blue-400 font-semibold"><span class="ca-badge mr-2">Q25</span> Which soil type is found in the Terai belt of Bihar?</p>
+        <p class="options mt-2"><span class="text-gray-400">A) Red & Yellow</span><br><span class="text-gray-400">B) Terai soil (fine silt, high humus)</span><br><span class="text-gray-400">C) Balthar</span><br><span class="text-gray-400">D) Karail-Kewal</span></p>
+        <details class="mt-2"><summary class="text-green-400 cursor-pointer text-sm">Show Answer</summary><p class="text-green-300 mt-1"><i class="fas fa-check mr-1"></i>B) Terai soil (West Champaran, East Champaran, Kishanganj)</p></details>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center py-8 border-t border-gray-700 mt-12">
+      <p class="text-gray-500">Bihar Geography — Rivers · Soil · Crops · Minerals · Forest Cover</p>
+      <p class="text-gray-600 text-sm mt-2">Data sourced from: ISFR 2021, GSI, LotusArise, BPSC Pathshala, Drishti IAS, Testbook, Adda247, PRS India</p>
+    </div>
+
+  </div>
+</body>
+</html>

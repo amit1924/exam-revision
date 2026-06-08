@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mughal Empire - UPSC NCERT Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    /* Highlight colors for important terms */
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-arch { color: #f472b6; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    /* Background highlight variants */
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .dynasty-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+</div>
+
+<script>
+  const DATA = {
+    title: "Mughal Empire - UPSC NCERT Notes",
+    location: "NCERT Class 7 History (Our Pasts II) - Chapter 4",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 6-10 History, UPSC reference materials",
+    chapters: [
+      { class: 7, chapter: 4, name: "The Mughal Empire", book: "Our Pasts II" },
+      { class: 7, chapter: 10, name: "Eighteenth-Century Political Formations", book: "Our Pasts II" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-landmark text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>181 Years (1526-1707)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">1. Introduction</a>
+          <a href="#babur" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Babur (1526-1530)</a>
+          <a href="#humayun" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Humayun (1530-1556)</a>
+          <a href="#sher-shah" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Sher Shah Suri (1540-1545)</a>
+          <a href="#akbar" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Akbar (1556-1605)</a>
+          <a href="#jahangir" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Jahangir (1605-1627)</a>
+          <a href="#shah-jahan" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Shah Jahan (1627-1658)</a>
+          <a href="#aurangzeb" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Aurangzeb (1658-1707)</a>
+          <a href="#admin" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Mughal Administration</a>
+          <a href="#architecture" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Mughal Architecture</a>
+          <a href="#economy-society" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. Economy & Society</a>
+          <a href="#culture" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Culture</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Complete Timeline</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. UPSC Key Facts</a>
+        </div>
+      </div>`;
+
+    // ===== 1. INTRODUCTION =====
+    html += `<section id="intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scroll text-amber-400"></i> 1. Introduction</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      The <span class="hl-dynasty hl-bg-dynasty">Mughal Empire</span> was an <span class="hl-term hl-bg-term">Islamic imperial power</span> that ruled the <span class="hl-place">Indian subcontinent</span> from <span class="hl-date">1526 to 1707 CE</span> (significant rule), continuing nominally until <span class="hl-num">1857</span>. The Mughals were <span class="hl-term">descendants of two great lineages</span> — their mothers were descendants of <span class="hl-ruler hl-bg-ruler">Genghis Khan</span> (Mongol ruler) and their fathers were descendants of <span class="hl-ruler hl-bg-ruler">Timur (Tamerlane)</span>, the Turkish ruler who had captured Delhi in <span class="hl-date">1398</span>.
+    </p>`;
+    html += `<p class="content-text">
+      The Mughals were <span class="hl-term">proud of their Timurid ancestry</span> (not Mongol), because Genghis Khan's memory was associated with the <span class="hl-event">massacre of countless people</span>. They disliked being called <span class="hl-term">"Mughal" or "Mongol"</span>. The term <span class="hl-term hl-bg-term">Mughal</span> comes from the Persian word for Mongol.
+    </p>`;
+    html += `<p class="content-text">
+      The Mughal Empire was founded by <span class="hl-ruler hl-bg-ruler">Babur</span> in <span class="hl-date">1526</span> after his victory at the <span class="hl-battle hl-bg-battle">First Battle of Panipat</span>. At its zenith under <span class="hl-ruler hl-bg-ruler">Aurangzeb</span>, the empire covered almost the entire Indian subcontinent — from <span class="hl-place">Kashmir in the north</span> to <span class="hl-place">Tamil Nadu in the south</span>, from <span class="hl-place">Assam in the east</span> to <span class="hl-place">Balochistan in the west</span>.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The Mughals were <span class="hl-term">not Indians</span> originally — they came from <span class="hl-place">Central Asia</span> (present-day Uzbekistan). But they made India their home, married into local Rajput families, and <span class="hl-term hl-bg-term">created a composite ruling class</span> that included Indians, Iranians, Turanis, and Afghans.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. BABUR =====
+    html += `<section id="babur">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 2. Babur (1526-1530) — Founder of the Mughal Empire</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Early Life</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Zahir-ud-din Muhammad Babur</span> was born in <span class="hl-date">1483</span> in <span class="hl-place">Ferghana</span> (present-day Uzbekistan). He succeeded his father's throne at the age of <span class="hl-num">12</span>, but was forced to leave his kingdom by the <span class="hl-term">Uzbegs</span> (Central Asian tribal group). After years of wandering, he seized <span class="hl-place">Kabul</span> in <span class="hl-date">1504</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Major Battles</h3>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">First Battle of Panipat (1526)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought between <span class="hl-ruler hl-bg-ruler">Babur</span> and <span class="hl-ruler hl-bg-ruler">Ibrahim Lodi</span> (last Lodi Sultan) on <span class="hl-date">21 April 1526</span></li>`;
+    html += `<li>Babur used the <span class="hl-term hl-bg-term">Tulugma (flanking) tactic</span> — dividing army into three divisions (left, right, centre) and using gaps for cavalry charges</li>`;
+    html += `<li>He also used <span class="hl-term hl-bg-term">artillery and firearms</span> — the first significant use of gunpowder in Indian warfare (Rumi Khan was his artillery expert)</li>`;
+    html += `<li>Ibrahim Lodi was killed on the battlefield; approximately <span class="hl-num">20,000</span> soldiers died</li>`;
+    html += `<li><span class="hl-event">Established the Mughal Empire in India</span></li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Battle of Khanwa (1527)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought between <span class="hl-ruler">Babur</span> and <span class="hl-ruler hl-bg-ruler">Rana Sanga</span> of <span class="hl-place">Mewar</span> (Rajput confederacy)</li>`;
+    html += `<li>Rana Sanga had assembled a large Rajput army; Babur declared this a <span class="hl-term hl-bg-event">jihad (holy war)</span> against non-Muslims</li>`;
+    html += `<li>Babur won decisively; Rana Sanga escaped but died shortly after</li>`;
+    html += `<li><span class="hl-event">Established Mughal supremacy over Rajputana</span></li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Battle of Chanderi (1528)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Babur defeated <span class="hl-ruler">Medini Rai</span>, a Rajput chief allied with Rana Sanga</li>`;
+    html += `<li>The fort of <span class="hl-place">Chanderi</span> (Madhya Pradesh) was captured</li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Battle of Ghaghra (1529)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Babur defeated the <span class="hl-term">Afghan chiefs</span> of Bihar and Bengal</li>`;
+    html += `<li>This secured the <span class="hl-place">eastern frontier</span> of the Mughal Empire</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-book text-cyan-400 text-xs"></i> Baburnama & Death</h3>`;
+    html += `<p class="content-text">
+      Babur wrote his autobiography <span class="hl-term hl-bg-term">"Baburnama"</span> in <span class="hl-term">Chagatai Turkish</span>. It provides a vivid account of his life, battles, and the flora & fauna of India. He died in <span class="hl-date">1530</span> at <span class="hl-place">Agra</span> and was initially buried there; later his body was moved to <span class="hl-place">Kabul</span> (in present-day Afghanistan), where his garden-tomb still exists.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Babur</span> introduced <span class="hl-term hl-bg-term">firearms and artillery</span> in Indian warfare. His use of the <span class="hl-term">Tulugma tactic</span> (flanking) and field fortifications (linking carts with ropes, known as <span class="hl-term">araba</span>) revolutionized Indian military strategy.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 3. HUMAYUN =====
+    html += `<section id="humayun">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 3. Humayun (1530-1556)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Nasir-ud-din Humayun</span> succeeded his father Babur at the age of <span class="hl-num">22</span>. He inherited a <span class="hl-term">fragile empire</span> with many challenges.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Division of Empire (A Major Weakness)</h3>`;
+    html += `<p class="content-text">
+      Humayun <span class="hl-event">divided the empire among his three brothers</span> — a fatal mistake:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler">Kamran</span> — received <span class="hl-place">Kabul and Kandahar</span></li>`;
+    html += `<li><span class="hl-ruler">Askari</span> — received <span class="hl-place">Sambhal</span></li>`;
+    html += `<li><span class="hl-ruler">Hindal</span> — received <span class="hl-place">Alwar</span></li>`;
+    html += `<li>This <span class="hl-term hl-bg-event">division weakened central authority</span> and the brothers never helped Humayun when he was in need</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Battles Against Sher Shah Suri</h3>`;
+    html += `<p class="content-text font-semibold text-white mt-2">Battle of Chausa (1539)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought between <span class="hl-ruler">Humayun</span> and <span class="hl-ruler hl-bg-ruler">Sher Shah Suri</span></li>`;
+    html += `<li>Sher Shah <span class="hl-event">decisively defeated</span> Humayun</li>`;
+    html += `<li>Humayun barely escaped — legend says he crossed the <span class="hl-place">Ganga river</span> on a water-skin</li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Battle of Kanauj (1540)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Also called the <span class="hl-term">Battle of Bilgram</span></li>`;
+    html += `<li><span class="hl-ruler">Sher Shah</span> defeated Humayun again</li>`;
+    html += `<li>Humayun <span class="hl-event">fled to Iran</span> — beginning his <span class="hl-date">15-year exile</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Exile & Return</h3>`;
+    html += `<p class="content-text">
+      Humayun spent <span class="hl-date">15 years</span> in exile (1540-1555), mostly at the court of the <span class="hl-term hl-bg-ruler">Safavid Shah of Iran</span>. With <span class="hl-term">Safavid military help</span>, he recaptured <span class="hl-place">Kabul</span> (1545) and later <span class="hl-place">Delhi</span> (1555). He restored Mughal rule after the <span class="hl-dynasty">Sur Dynasty</span> collapsed.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Death</h3>`;
+    html += `<p class="content-text">
+      Humayun died in <span class="hl-date">1556</span> from a <span class="hl-event">fall down the stairs of his library</span> (called <span class="hl-term">Dinpanah</span> library) in Delhi. His wife <span class="hl-ruler">Hamida Banu Begum</span> built the magnificent <span class="hl-arch hl-bg-arch">Humayun's Tomb</span> in Delhi — a <span class="hl-term">UNESCO World Heritage Site</span> and a precursor to the <span class="hl-arch">Taj Mahal</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Humayun</span> was a <span class="hl-term">devoted astrologer</span>. He divided his week into days for different activities and wore specific coloured robes for each day. He built <span class="hl-arch">Dinpanah</span> as his capital in Delhi.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 4. SHER SHAH SURI =====
+    html += `<section id="sher-shah">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 4. Sher Shah Suri (Interlude: 1540-1545)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Sher Shah Suri</span> (born <span class="hl-term">Farid Khan</span>) was an Afghan ruler who <span class="hl-event">defeated Humayun</span> and founded the <span class="hl-dynasty hl-bg-dynasty">Sur Dynasty</span> (1540-1555). He had served under Babur and later rebelled against Humayun.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building-columns text-cyan-400 text-xs"></i> Administrative Reforms</h3>`;
+    html += `<p class="content-text">Sher Shah's administration was <span class="hl-event">remarkably efficient</span> and became the <span class="hl-term">model for Akbar's policies</span>:</p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Reform</th><th>Description</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term">Division of Empire</td><td>Divided into <span class="hl-num">47 sarkars</span> (districts), each further divided into <span class="hl-term">parganas</span></td></tr>`;
+    html += `<tr><td class="hl-term">Silver Rupiya</td><td>Introduced the <span class="hl-term hl-bg-term">silver rupiya (rupee)</span> — standardized coin that remained the basis of Indian currency for centuries</td></tr>`;
+    html += `<tr><td class="hl-term">Grand Trunk Road</td><td>Built the <span class="hl-arch hl-bg-arch">Grand Trunk Road (GT Road)</span> from <span class="hl-place">Bengal to Punjab</span> — improved trade and communication</td></tr>`;
+    html += `<tr><td class="hl-term">Land Revenue</td><td>Based on <span class="hl-term">measurement/zabt</span> — standardized land measurement, fixed tax at <span class="hl-num">1/3 to 1/4</span> of produce</td></tr>`;
+    html += `<tr><td class="hl-term">Postal System</td><td>Introduced <span class="hl-term hl-bg-term">dak chauki</span> (horse-post) — improved communication across the empire</td></tr>`;
+    html += `<tr><td class="hl-term">Police System</td><td>Introduced <span class="hl-term">local policing</span> — village headmen made responsible for law & order</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building text-cyan-400 text-xs"></i> Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Rohtas Fort</span> (in present-day <span class="hl-place">Pakistan</span>) — a massive strategic fortress</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Sher Shah Suri Masjid</span> in Delhi — built in Indo-Afghan style</li>`;
+    html += `<li><span class="hl-arch">Qila-i-Kuhna Mosque</span> inside Purana Qila, Delhi</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Death</h3>`;
+    html += `<p class="content-text">
+      Sher Shah died in <span class="hl-date">1545</span> during the <span class="hl-event">siege of Kalinjar fort</span> (Bundelkhand) when a <span class="hl-term">gunpowder explosion</span> occurred. The Sur Dynasty continued under his successors (Islam Shah, etc.) but collapsed in 1555, allowing Humayun to return.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Sher Shah Suri</span> is regarded as one of the <span class="hl-event">greatest administrators in Indian history</span>. His administrative framework — including land revenue system, coinage (rupya), road network, and provincial governance — was later <span class="hl-term">adopted and refined by Akbar</span>. Sher Shah's reign, though short (1540-1545), was transformative.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 5. AKBAR =====
+    html += `<section id="akbar">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 5. Akbar (1556-1605) — The Greatest Mughal Emperor</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Jalal-ud-din Muhammad Akbar</span> was born in <span class="hl-date">1542</span> at <span class="hl-place">Amarkot</span> (Sindh). Crowned at age <span class="hl-num">13</span>, he is widely regarded as <span class="hl-event">the greatest Mughal emperor</span> and one of the greatest rulers in world history.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Bairam Khan as Regent (1556-1560)</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler">Bairam Khan</span> served as Akbar's regent during the early years. The major event was the <span class="hl-battle hl-bg-battle">Second Battle of Panipat (1556)</span>.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought between Mughal forces (led by Bairam Khan) and <span class="hl-ruler">Hemu (Vikramaditya)</span>, a Hindu general who had captured Delhi</li>`;
+    html += `<li>Hemu was hit by an arrow and captured; Akbar killed him (or Bairam Khan)</li>`;
+    html += `<li><span class="hl-event">Established Mughal supremacy in North India</span></li>`;
+    html += `<li>Akbar dismissed Bairam Khan in 1560; Bairam Khan was later killed on his way to Mecca</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-map-location-dot text-cyan-400 text-xs"></i> Conquests & Territorial Expansion</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Year</th><th>Region</th><th>Details</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-date">1562</td><td class="hl-place">Malwa</td><td>Conquered from <span class="hl-ruler">Baz Bahadur</span></td></tr>`;
+    html += `<tr><td class="hl-date">1568</td><td class="hl-place">Chittor</td><td>Capital of <span class="hl-dynasty">Sisodiya Rajputs</span> (Mewar); Jai Mal & Patta defended; <span class="hl-event">massacre after capture</span></td></tr>`;
+    html += `<tr><td class="hl-date">1569</td><td class="hl-place">Ranthambore</td><td>One of the strongest Rajput forts</td></tr>`;
+    html += `<tr><td class="hl-date">1570-1585</td><td class="hl-place">Gujarat, Bihar, Bengal, Orissa</td><td>Western and Eastern India brought under Mughal control</td></tr>`;
+    html += `<tr><td class="hl-date">1585-1605</td><td class="hl-place">Kashmir, Berar, Khandesh</td><td>Parts of Deccan also annexed</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-handshake text-cyan-400 text-xs"></i> Rajput Policy</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Akbar pursued a <span class="hl-term hl-bg-policy">policy of reconciliation and alliance</span> with Rajputs</li>`;
+    html += `<li>He married <span class="hl-term">Harka Bai (Mariam-uz-Zamani)</span>, the princess of <span class="hl-place">Amber (Jaipur)</span> — this was a political marriage</li>`;
+    html += `<li>Rajput rulers like <span class="hl-term">Raja Man Singh (Amber)</span> and <span class="hl-term">Raja Bhagwant Das</span> served as high-ranking Mughal officers</li>`;
+    html += `<li>Rajputs were given <span class="hl-term">high mansabs (ranks)</span> and positions in the imperial court</li>`;
+    html += `<li>This policy <span class="hl-event">strengthened the Mughal Empire</span> by bringing Rajput military power under the Mughal umbrella</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ranking-star text-cyan-400 text-xs"></i> Mansabdari System</h3>`;
+    html += `<p class="content-text">
+      The <span class="hl-term hl-bg-term">Mansabdari system</span> was the administrative-cum-military ranking system introduced by Akbar. Every officer (mansabdar) was given a rank:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Zat</span> — personal rank (determined salary)</li>`;
+    html += `<li><span class="hl-term">Sawar</span> — number of cavalrymen the mansabdar had to maintain</li>`;
+    html += `<li>Mansabdars were paid in <span class="hl-term">jagirs</span> (revenue assignments) or cash</li>`;
+    html += `<li>Ranks ranged from <span class="hl-num">10</span> to <span class="hl-num">7,000</span> (princes got even higher)</li>`;
+    html += `<li>The system <span class="hl-event">centralized control</span> — mansabdars were transferable, preventing them from building local power bases</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-coins text-cyan-400 text-xs"></i> Zabt Revenue System (Todar Mal's Bandobast)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Raja <span class="hl-term hl-bg-ruler">Todar Mal</span> (Akbar's finance minister) surveyed crop yields between <span class="hl-date">1570-1580</span></li>`;
+    html += `<li>Land was <span class="hl-term">measured and classified</span> into good, middling, and bad categories</li>`;
+    html += `<li>Tax was fixed in <span class="hl-term">cash</span> based on average yield over the past <span class="hl-num">10 years</span></li>`;
+    html += `<li>The state's share was <span class="hl-num">1/3</span> of the produce</li>`;
+    html += `<li>This system was called <span class="hl-term hl-bg-policy">Zabt (or Dahsala system)</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building-columns text-cyan-400 text-xs"></i> Provincial Administration</h3>`;
+    html += `<p class="content-text">
+      The empire was divided into <span class="hl-term">Subas (provinces)</span>. Each suba had:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-policy">Subadar (Governor)</span> — head of civil & military administration</li>`;
+    html += `<li><span class="hl-term hl-bg-policy">Diwan (Financial Officer)</span> — managed revenue and finance</li>`;
+    html += `<li><span class="hl-term">Bakshi</span> — paymaster & military officer</li>`;
+    html += `<li><span class="hl-term">Faujdar</span> — head of law & order in smaller units (sarkars)</li>`;
+    html += `<li><span class="hl-term">Kotwal</span> — police chief in cities</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star-and-crescent text-cyan-400 text-xs"></i> Religious Policies</h3>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Ibadat Khana (House of Worship)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Built at <span class="hl-place">Fatehpur Sikri</span> in the <span class="hl-date">1570s</span></li>`;
+    html += `<li>Akbar invited <span class="hl-term">religious scholars, Sufis, Hindu philosophers, Jesuits, Zoroastrians, and Jains</span> for debates</li>`;
+    html += `<li>Initially debates were among Muslims only; later opened to all faiths</li>`;
+    html += `<li><span class="hl-term hl-bg-policy">Sulh-i-Kul (Universal Peace)</span> — policy of tolerance towards all religions</li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text font-semibold text-white mt-2">Din-i-Ilahi (1582)</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Akbar created a <span class="hl-term hl-bg-policy">new religion called Din-i-Ilahi (Divine Faith)</span></li>`;
+    html += `<li>It combined elements of <span class="hl-term">Islam, Hinduism, Zoroastrianism, Christianity, and Jainism</span></li>`;
+    html += `<li>Core principles: <span class="hl-term hl-bg-term">Sulh-i-Kul (universal peace), monotheism, rationalism</span></li>`;
+    html += `<li><span class="hl-event">Very few people actually joined</span> — only about <span class="hl-num">19 followers</span> (including Birbal and Abul Fazl)</li>`;
+    html += `<li>It <span class="hl-event">did not survive after Akbar's death</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-book text-cyan-400 text-xs"></i> Abul Fazl & Akbarnama</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-ruler">Abul Fazl</span> was Akbar's friend, advisor, and court historian</li>`;
+    html += `<li>He wrote <span class="hl-term hl-bg-term">Akbarnama</span> in 3 volumes:</li>`;
+    html += `<li><span class="hl-term">Volume 1:</span> History of Akbar's ancestors and his early reign</li>`;
+    html += `<li><span class="hl-term">Volume 2 (Akbarnama proper):</span> Detailed history of Akbar's reign (1556-1602)</li>`;
+    html += `<li><span class="hl-term">Volume 3 (Ain-i-Akbari):</span> Administrative manual — gives details of the empire, revenue, army, culture, geography</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star text-cyan-400 text-xs"></i> Nine Gems (Navaratnas) of Akbar's Court</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Gem</th><th>Specialty</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Abul Fazl</td><td>Historian & advisor — wrote Akbarnama</td></tr>`;
+    html += `<tr><td class="hl-ruler">Faizi</td><td>Poet; brother of Abul Fazl; translated Sanskrit works into Persian</td></tr>`;
+    html += `<tr><td class="hl-ruler">Tansen</td><td>Musician (Dhrupad style); originally in Rewa court</td></tr>`;
+    html += `<tr><td class="hl-ruler">Birbal (Mahesh Das)</td><td>Court wit, poet, and minister; died in 1586 in Yusufzai Afghan rebellion</td></tr>`;
+    html += `<tr><td class="hl-ruler">Todar Mal</td><td>Finance minister; pioneered Zabt revenue system</td></tr>`;
+    html += `<tr><td class="hl-ruler">Raja Man Singh</td><td>Rajput general of Amber; served as governor of Kabul, Bengal</td></tr>`;
+    html += `<tr><td class="hl-ruler">Abdul Rahim Khan-i-Khanan</td><td>Poet; commander; wrote Hindi couplets (dohe)</td></tr>`;
+    html += `<tr><td class="hl-ruler">Mulla Do Piyaza</td><td>Witty courtier</td></tr>`;
+    html += `<tr><td class="hl-ruler">Hakim Humam</td><td>Physician</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building text-cyan-400 text-xs"></i> Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Agra Fort</span> — built in red sandstone</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Fatehpur Sikri</span> — his capital city near Agra; includes <span class="hl-arch hl-bg-arch">Buland Darwaza</span> (54m high gateway, built to commemorate Gujarat victory), <span class="hl-arch">Panch Mahal, Jodha Bai's Palace, Diwan-i-Khas, Diwan-i-Am</span></li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Lahore Fort</span> — extensively rebuilt</li>`;
+    html += `<li><span class="hl-arch">Akbar's Tomb</span> at <span class="hl-place">Sikandra</span> (near Agra) — blend of Hindu and Islamic styles</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Akbar</span> was illiterate (could not read or write) but had a <span class="hl-term">phenomenal memory</span> and was a great patron of learning. He had books read out to him daily and personally supervised translations of Sanskrit, Greek, and Arabic works into Persian.</div></div>`;
+
+    html += `<p class="content-text">
+      Akbar died in <span class="hl-date">1605</span> at <span class="hl-place">Agra Fort</span>. His mausoleum at <span class="hl-place">Sikandra</span> was built by his son Jahangir.
+    </p>`;
+    html += `</div></section>`;
+
+    // ===== 6. JAHANGIR =====
+    html += `<section id="jahangir">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 6. Jahangir (1605-1627)</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Nur-ud-din Muhammad Jahangir</span> was born as <span class="hl-term">Prince Salim</span>. He <span class="hl-event">revolted against Akbar</span> between <span class="hl-date">1599-1604</span>, but was forgiven and succeeded the throne in <span class="hl-date">1605</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Key Events</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-event hl-bg-event">Executed Guru Arjun Dev</span> (5th Sikh Guru) in <span class="hl-date">1606</span> for supporting Prince Khusrau's rebellion — this led to the beginning of Sikh militarization</li>`;
+    html += `<li>Married <span class="hl-ruler hl-bg-ruler">Mehrunissa (Nur Jahan)</span> in <span class="hl-date">1611</span> — she became the <span class="hl-event">real power behind the throne</span> and dominated court politics</li>`;
+    html += `<li>Her father <span class="hl-term">Itimad-ud-daula</span> was appointed Wazir; her brother <span class="hl-term">Asaf Khan</span> also held high office</li>`;
+    html += `<li>Nur Jahan's name appeared on coins — <span class="hl-event">unprecedented for a Mughal empress</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Military Campaigns</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-place">Mewar</span> — Amar Singh of Mewar submitted in <span class="hl-date">1615</span> after prolonged fighting; peace treaty signed</li>`;
+    html += `<li><span class="hl-place">Kangra</span> — captured in <span class="hl-date">1620</span></li>`;
+    html += `<li>Deccan campaigns and Ahom rebellion</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ship text-cyan-400 text-xs"></i> European Contacts</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">English East India Company</span> established a factory at <span class="hl-place">Surat</span> in <span class="hl-date">1613</span> — Captain <span class="hl-ruler">William Hawkins</span> visited Jahangir's court</li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Sir Thomas Roe</span> (English ambassador) visited Jahangir's court (<span class="hl-date">1615-1618</span>) — obtained trade concessions for the English</li>`;
+    html += `<li>Roe's embassy laid the foundation for <span class="hl-term">British commercial presence in India</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-book text-cyan-400 text-xs"></i> Autobiography</h3>`;
+    html += `<p class="content-text">
+      Jahangir wrote his autobiography <span class="hl-term hl-bg-term">"Tuzuk-i-Jahangiri"</span> in Persian. It is known for its <span class="hl-term">frank and personal style</span>, describing his love of nature, art, and justice.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-gavel text-cyan-400 text-xs"></i> Chain of Justice</h3>`;
+    html += `<p class="content-text">
+      Outside the <span class="hl-arch">Agra Fort</span>, Jahangir set up a <span class="hl-term hl-bg-term">"Chain of Justice"</span> — a golden chain with <span class="hl-num">60 bells</span> that any subject could pull to get direct access to the emperor for justice.
+    </p>`;
+
+    html += `<p class="content-text">
+      Jahangir died in <span class="hl-date">1627</span> and was buried at <span class="hl-place">Shahdara, Lahore</span>. His period is noted for <span class="hl-term">great painting and art</span> — he had an exceptional eye for detail in paintings.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Nur Jahan</span> was the <span class="hl-event">most powerful woman in Mughal history</span>. She issued coins in her name, gave audience, and was involved in administration. She built <span class="hl-arch">Itimad-ud-daula's Tomb</span> in Agra (the "Baby Taj"), which is considered a precursor to the Taj Mahal.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 7. SHAH JAHAN =====
+    html += `<section id="shah-jahan">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 7. Shah Jahan (1627-1658)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Shahab-ud-din Muhammad Shah Jahan</span> was born as <span class="hl-term">Prince Khurram</span>. His reign is regarded as the <span class="hl-event hl-bg-event">golden age of Mughal architecture</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Military Campaigns</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-place">Ahmadnagar</span> was annexed in <span class="hl-date">1632</span></li>`;
+    html += `<li><span class="hl-place">Bijapur</span> and <span class="hl-place">Golconda</span> became tributary states</li>`;
+    html += `<li><span class="hl-event">Failed campaigns:</span> <span class="hl-place">Kandahar</span> was lost to the Persians (<span class="hl-date">1649</span>), and the campaigns in <span class="hl-place">Balkh and Badakhshan</span> were costly failures</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building text-cyan-400 text-xs"></i> Architectural Achievements (The Golden Age)</h3>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Monument</th><th>Period</th><th>Details</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-arch hl-bg-arch">Taj Mahal</td><td class="hl-date">1632-1653</td><td>Built for wife <span class="hl-term">Mumtaz Mahal</span>; designed by <span class="hl-term">Ustad Ahmad Lahori</span>; made of white marble; <span class="hl-term hl-bg-term">UNESCO World Heritage Site, one of the Seven Wonders of the World</span></td></tr>`;
+    html += `<tr><td class="hl-arch hl-bg-arch">Shahjahanabad</td><td>1639-1648</td><td>Old Delhi city; includes the <span class="hl-arch">Red Fort (Lal Qila)</span> and <span class="hl-arch">Jama Masjid</span></td></tr>`;
+    html += `<tr><td class="hl-arch hl-bg-arch">Red Fort (Lal Qila)</td><td>1639-1648</td><td>Built in red sandstone; contained the <span class="hl-arch">Peacock Throne</span> (adorned with precious gems including the <span class="hl-term">Koh-i-Noor diamond</span>)</td></tr>`;
+    html += `<tr><td class="hl-arch hl-bg-arch">Jama Masjid</td><td>1650-1656</td><td>Largest mosque in India at the time; can hold <span class="hl-num">25,000</span> worshippers</td></tr>`;
+    html += `<tr><td class="hl-arch hl-bg-arch">Moti Masjid (Agra)</td><td>1648-1654</td><td>Pearl Mosque inside Agra Fort; made of white marble</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<p class="content-text">
+      Shah Jahan also built the <span class="hl-arch">Peacock Throne</span>, described by French traveller <span class="hl-term">Jean-Baptiste Tavernier</span> as the most magnificent throne in the world, valued at millions of rupees.
+    </p>`;
+
+    html += `<p class="content-text">
+      During his reign, a <span class="hl-event">severe famine in the Deccan</span> (<span class="hl-date">1630-1632</span>) killed millions of people, but the emperor did little to alleviate the suffering.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> War of Succession & Imprisonment</h3>`;
+    html += `<p class="content-text">
+      Shah Jahan fell seriously ill in <span class="hl-date">1657</span>, triggering a <span class="hl-event hl-bg-event">war of succession among his four sons</span>: <span class="hl-ruler">Dara Shikoh</span> (the eldest, liberal), <span class="hl-ruler">Shah Shuja</span> (Bengal governor), <span class="hl-ruler">Murad Baksh</span> (Gujarat governor), and <span class="hl-ruler">Aurangzeb</span> (Deccan governor). <span class="hl-ruler">Aurangzeb</span> emerged victorious, imprisoned Shah Jahan in <span class="hl-arch">Agra Fort</span> (<span class="hl-date">1658-1666</span>). Shah Jahan died a heartbroken captive, looking at the <span class="hl-arch">Taj Mahal</span> from his window.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Dara Shikoh</span>, the eldest son and Akbar-like liberal, was a scholar who translated the <span class="hl-term">Upanishads</span> into Persian (called <span class="hl-term">Sirr-i-Akbar</span>). He also wrote <span class="hl-term">Majma-ul-Bahrain</span> (Mingling of Two Oceans) on the commonalities between Islam and Hinduism. He was executed by Aurangzeb for heresy.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 8. AURANGZEB =====
+    html += `<section id="aurangzeb">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 8. Aurangzeb (1658-1707) — The Last Great Mughal Emperor</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Muhi-ud-din Muhammad Aurangzeb</span> was the <span class="hl-event">last great Mughal emperor</span>. His reign was the <span class="hl-term">longest (50 years)</span> and saw the <span class="hl-event">maximum territorial expansion</span> of the Mughal Empire — but also the <span class="hl-event">beginning of its decline</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> War of Succession</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Aurangzeb defeated his brothers: <span class="hl-ruler">Dara Shikoh</span> (executed 1659 for heresy), <span class="hl-ruler">Shah Shuja</span> (died in Arakan), <span class="hl-ruler">Murad Baksh</span> (executed)</li>`;
+    html += `<li>Key battles: <span class="hl-battle">Samugarh (1658)</span> — Aurangzeb defeated Dara Shikoh; <span class="hl-battle">Khajwa (1659)</span> — Aurangzeb defeated Shah Shuja</li>`;
+    html += `<li>He formally crowned himself in <span class="hl-date">1659</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-scale-balanced text-cyan-400 text-xs"></i> Policies — Reversal of Akbar's Approach</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-event hl-bg-policy">Reimposed Jizya (1679)</span> — the tax on non-Muslims that Akbar had abolished</li>`;
+    html += `<li><span class="hl-event hl-bg-policy">Banned music in the imperial court</span> — dismissed musicians and singers</li>`;
+    html += `<li><span class="hl-event hl-bg-policy">Abolished Jarokha Darshan</span> — the tradition of showing oneself to subjects from the balcony</li>`;
+    html += `<li><span class="hl-event">Destroyed many Hindu temples</span> — most notably the <span class="hl-arch">Kashi Vishwanath Temple (Varanasi)</span> and <span class="hl-arch">Keshavdev Temple (Mathura)</span></li>`;
+    html += `<li>Followed strict <span class="hl-term">sharia-based governance</span> and Islamic orthodoxy</li>`;
+    html += `<li>Appointed <span class="hl-term">Muhtasibs</span> (censors of public morals) in major cities</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-map-location-dot text-cyan-400 text-xs"></i> Deccan Campaigns (1681-1707)</h3>`;
+    html += `<p class="content-text">
+      Aurangzeb spent the <span class="hl-event">last 26 years of his life</span> in the Deccan, campaigning against the <span class="hl-term">Marathas</span> and the Deccan Sultanates:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-battle hl-bg-battle">Annexed Bijapur (1686)</span> and <span class="hl-battle hl-bg-battle">Golconda (1687)</span> — the last two Deccan Sultanates</li>`;
+    html += `<li><span class="hl-ruler">Sambhaji</span> (Maratha leader, son of Shivaji) was captured and <span class="hl-event">executed in 1689</span> after terrible torture</li>`;
+    html += `<li>Marathas continued guerrilla warfare under <span class="hl-ruler">Rajaram</span> and later <span class="hl-ruler">Tarabai</span></li>`;
+    html += `<li><span class="hl-event">Never fully conquered the Marathas</span> despite massive military effort</li>`;
+    html += `<li>The Deccan campaigns <span class="hl-event hl-bg-event">drained the Mughal treasury</span> — overexpansion became a major cause of decline</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-warning text-cyan-400 text-xs"></i> Other Revolts</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Sikh revolts</span> — Guru Tegh Bahadur was <span class="hl-event">executed in 1675</span> for refusing to convert to Islam; this led to the militarization of Sikhs under Guru Gobind Singh (who founded the <span class="hl-term">Khalsa</span> in 1699)</li>`;
+    html += `<li><span class="hl-term">Jat revolts</span> — in the Agra-Mathura region</li>`;
+    html += `<li><span class="hl-term">Satnami revolts</span> — in Narnaul (Punjab)</li>`;
+    html += `<li>These revolts <span class="hl-event">weakened the empire</span> and drained resources</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building-columns text-cyan-400 text-xs"></i> Administrative Breakdown</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The <span class="hl-term">Mansabdari system broke down</span> — there were more mansabdars than jagirs available (jagirdari crisis)</li>`;
+    html += `<li>Nobles became <span class="hl-term">corrupt and inefficient</span></li>`;
+    html += `<li>Revenue collection became oppressive — peasants rebelled</li>`;
+    html += `<li>Military technology <span class="hl-term">stagnated</span> while European powers advanced</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Death</h3>`;
+    html += `<p class="content-text">
+      Aurangzeb died in <span class="hl-date">1707</span> at <span class="hl-place">Ahmednagar</span> at the age of <span class="hl-num">89</span>. He was buried in a <span class="hl-term">simple, open-air grave</span> at <span class="hl-place">Khuldabad</span> (near Aurangabad) — he paid for the grave by stitching skullcaps. His simplicity in death contrasts sharply with the grandeur of his predecessors.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point — Why Aurangzeb Failed</div><div class="fact-box-content">Aurangzeb's <span class="hl-term hl-bg-policy">religious orthodoxy (jizya, temple destruction)</span> alienated the Rajputs, Hindus, and Sikhs. His <span class="hl-term">Deccan wars</span> drained the treasury. The <span class="hl-term hl-bg-event">overexpansion of the empire</span> made it impossible to govern effectively. The Marathas <span class="hl-event">were never fully crushed</span> and re-emerged after his death to challenge Mughal authority.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 9. MUGHAL ADMINISTRATION =====
+    html += `<section id="admin">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building-columns text-emerald-400"></i> 9. Mughal Administration</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-indigo-400 text-xs"></i> Central Administration</h3>`;
+    html += `<p class="content-text">The <span class="hl-term">Emperor</span> was the supreme authority. Key ministers included:</p>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Minister</th><th>Department</th><th>Role</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term">Wazir (Vakil)</td><td>Prime Minister's Office</td><td>Overall administration; later the Diwan became more powerful</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan</td><td>Finance Department</td><td>Head of revenue & finance; most powerful minister under Akbar</td></tr>`;
+    html += `<tr><td class="hl-term">Mir Bakshi</td><td>Military Department</td><td>Head of army; also responsible for mansabdari appointments</td></tr>`;
+    html += `<tr><td class="hl-term">Khan-i-Saman</td><td>Imperial Household</td><td>In charge of imperial workshops, stores, and royal household</td></tr>`;
+    html += `<tr><td class="hl-term">Sadr-us-Sudur</td><td>Religious Affairs & Charity</td><td>Chief religious officer; managed grants and charities</td></tr>`;
+    html += `<tr><td class="hl-term">Qazi-ul-Quzat (Chief Qazi)</td><td>Judicial Department</td><td>Head of justice; interpreted Islamic law</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-map-location-dot text-indigo-400 text-xs"></i> Provincial Administration</h3>`;
+    html += `<p class="content-text">The empire was divided into <span class="hl-num">15</span> <span class="hl-term">Subas (provinces)</span> under Akbar (later increased to <span class="hl-num">21</span>):</p>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Officer</th><th>Role</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term">Subadar (Governor)</td><td>Head of civil & military administration; implemented imperial orders</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan (Financial Officer)</td><td>Managed revenue; reported directly to the central Diwan (check on Subadar)</td></tr>`;
+    html += `<tr><td class="hl-term">Bakshi</td><td>Military paymaster; maintained army accounts</td></tr>`;
+    html += `<tr><td class="hl-term">Faujdar</td><td>Maintained law & order in sarkars (districts)</td></tr>`;
+    html += `<tr><td class="hl-term">Kotwal</td><td>City police chief; managed urban administration</td></tr>`;
+    html += `<tr><td class="hl-term">Qazi</td><td>Administered justice at provincial/city level</td></tr>`;
+    html += `<tr><td class="hl-term">Amil (Amalguzar)</td><td>Revenue collector at pargana level</td></tr>`;
+    html += `<tr><td class="hl-term">Patwari & Muqaddam</td><td>Village-level accountant and headman</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<p class="content-text">Provincial divisions: <span class="hl-term">Suba → Sarkar (district) → Pargana → Village</span></p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ranking-star text-indigo-400 text-xs"></i> Mansabdari System — Detailed</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Introduced by <span class="hl-ruler">Akbar</span>; continued under later Mughals</li>`;
+    html += `<li>Every civil and military officer was given a <span class="hl-term">mansab (rank)</span></li>`;
+    html += `<li><span class="hl-term">Zat</span> — determined personal salary and status</li>`;
+    html += `<li><span class="hl-term">Sawar</span> — determined how many cavalrymen the officer maintained</li>`;
+    html += `<li>Ranks ranged from <span class="hl-num">10</span> to <span class="hl-num">7,000</span> (highest for princes)</li>`;
+    html += `<li>Mansabdars were paid through <span class="hl-term">jagirs</span> (revenue assignments of land)</li>`;
+    html += `<li>The system ensured <span class="hl-term">loyalty</span> — mansabdars were transferable and not hereditary</li>`;
+    html += `<li>Under Aurangzeb, the system <span class="hl-event">collapsed</span> — too many mansabdars and not enough jagirs (jagirdari crisis)</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-coins text-indigo-400 text-xs"></i> Revenue System</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Term</th><th>Type</th><th>Description</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term">Zabt (Dahsala)</td><td>Land Revenue</td><td>Akbar's system — 1/3 of average produce (10 years) paid in cash</td></tr>`;
+    html += `<tr><td class="hl-term">Kharaj</td><td>Land Tax</td><td>General land tax paid by peasants</td></tr>`;
+    html += `<tr><td class="hl-term">Jizya</td><td>Religious Tax</td><td>Tax on non-Muslims; abolished by Akbar, reimposed by Aurangzeb</td></tr>`;
+    html += `<tr><td class="hl-term">Zakat</td><td>Wealth Tax</td><td>2.5% tax on Muslims with sufficient wealth</td></tr>`;
+    html += `<tr><td class="hl-term">Khams</td><td>War Booty</td><td>1/5 of plunder from war belonged to the state</td></tr>`;
+    html += `<tr><td class="hl-term">Tolls & Customs</td><td>Trade Tax</td><td>Taxes on goods entering/leaving cities and ports</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-gavel text-indigo-400 text-xs"></i> Judicial System</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The Emperor was the <span class="hl-term">highest court of appeal</span></li>`;
+    html += `<li><span class="hl-term">Chief Qazi (Qazi-ul-Quzat)</span> — head of judiciary</li>`;
+    html += `<li>Qazis at provincial and district levels administered justice</li>`;
+    html += `<li>Hindus could follow their <span class="hl-term">personal laws (Shastric law)</span></li>`;
+    html += `<li><span class="hl-term">Faujdari (criminal) and Diwani (civil)</span> — two broad categories of law</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">Mansabdari system</span> was the backbone of Mughal administration. It was a <span class="hl-event">unique system</span> that combined civil and military hierarchies. The <span class="hl-term">jagirdari crisis</span> (more mansabdars than jagirs available) was a major cause of the empire's decline after Aurangzeb.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 10. MUGHAL ARCHITECTURE =====
+    html += `<section id="architecture">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building text-rose-400"></i> 10. Mughal Architecture</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<p class="content-text">
+      Mughal architecture represents a <span class="hl-event">synthesis of Indo-Islamic architecture</span> — blending Persian, Central Asian, and Indian elements. Key features: <span class="hl-arch">large domes (bulbous/lotus-shaped)</span>, <span class="hl-arch">pointed arches</span>, <span class="hl-arch">slender minarets</span>, <span class="hl-arch">calligraphy</span>, <span class="hl-arch">pietra dura (marble inlay with precious stones)</span>, <span class="hl-arch">char bagh (Persian gardens divided into four parts)</span>.
+    </p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Emperor</th><th>Key Monuments</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Babur</td><td><span class="hl-arch">Babri Masjid (Ayodhya)</span>, <span class="hl-arch">Kabuli Bagh Masjid (Panipat)</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Humayun</td><td><span class="hl-arch hl-bg-arch">Humayun's Tomb (Delhi)</span> — built by Hamida Banu Begum; first Mughal garden-tomb; precursor to Taj Mahal</td></tr>`;
+    html += `<tr><td class="hl-ruler">Akbar</td><td><span class="hl-arch hl-bg-arch">Agra Fort</span>, <span class="hl-arch hl-bg-arch">Fatehpur Sikri</span> (Buland Darwaza, Panch Mahal, Diwan-i-Khas, Jodha Bai's Palace), <span class="hl-arch">Lahore Fort</span>, <span class="hl-arch">Akbar's Tomb (Sikandra)</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Jahangir</td><td><span class="hl-arch hl-bg-arch">Shalimar Bagh (Kashmir)</span>, <span class="hl-arch hl-bg-arch">Jahangir's Tomb (Lahore)</span>, <span class="hl-arch">Moti Masjid (Lahore Fort)</span>, <span class="hl-arch">Itimad-ud-daula's Tomb (Agra — "Baby Taj")</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Shah Jahan</td><td><span class="hl-arch hl-bg-arch">Taj Mahal (Agra)</span>, <span class="hl-arch hl-bg-arch">Red Fort (Delhi)</span>, <span class="hl-arch hl-bg-arch">Jama Masjid (Delhi)</span>, <span class="hl-arch">Shahjahanabad (Old Delhi)</span>, <span class="hl-arch">Moti Masjid (Agra Fort)</span>, <span class="hl-arch">Peacock Throne</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Aurangzeb</td><td><span class="hl-arch hl-bg-arch">Badshahi Masjid (Lahore)</span>, <span class="hl-arch hl-bg-arch">Bibi Ka Maqbara (Aurangabad)</span> — a poor copy of the Taj Mahal built for his wife Rabia-ud-Daurani</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-palette text-rose-400 text-xs"></i> Key Features of Mughal Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch">Arches & Domes</span> — true arches (not corbelled), bulbous domes with lotus finial</li>`;
+    html += `<li><span class="hl-arch">Minarets</span> — tall, slender structures for call to prayer (azaan)</li>`;
+    html += `<li><span class="hl-arch">Calligraphy</span> — Quranic verses in beautiful Arabic script (Thuluth, Naskh)</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Pietra Dura</span> — marble inlay with semi-precious stones (flowers, arabesques)</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Char Bagh</span> — Persian four-part garden divided by water channels (paradise garden)</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Red sandstone and white marble</span> — the signature Mughal building materials</li>`;
+    html += `<li><span class="hl-arch">Jali (lattice screens)</span> — carved stone screens for light and privacy</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-square text-rose-400 text-xs"></i> Indo-Islamic Architectural Synthesis</h3>`;
+    html += `<p class="content-text">
+      Mughal architecture reached its <span class="hl-event">zenith under Shah Jahan</span>. The <span class="hl-arch hl-bg-arch">Taj Mahal</span> (1632-1653) is the crowning achievement — a perfect blend of Persian, Islamic, and Indian styles. It was designed by <span class="hl-term">Ustad Ahmad Lahori</span> and built by <span class="hl-num">20,000</span> artisans. The Mughal architectural legacy can be seen in <span class="hl-arch hl-bg-arch">Humayun's Tomb</span>, <span class="hl-arch">Fatehpur Sikri</span>, <span class="hl-arch">Red Fort</span>, and <span class="hl-arch">Shalimar Gardens</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">Mughal architecture evolved through distinct phases: (1) <span class="hl-term">Early/Babur-Humayun</span> — Persian inspiration; (2) <span class="hl-term">Akbar</span> — Red sandstone, Hindu-Islamic fusion (Fatehpur Sikri); (3) <span class="hl-term">Jahangir</span> — White marble, garden tombs; (4) <span class="hl-term">Shah Jahan</span> — Peak period, perfect marble architecture (Taj Mahal); (5) <span class="hl-term">Aurangzeb</span> — Decline, simpler structures.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 11. ECONOMY & SOCIETY =====
+    html += `<section id="economy-society">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line text-emerald-400"></i> 11. Economy & Society</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-tractor text-emerald-400 text-xs"></i> Agriculture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Agriculture was the main occupation</span> of the majority of the population</li>`;
+    html += `<li>The Mughal state derived its <span class="hl-term">primary income from land revenue</span></li>`;
+    html += `<li>Canals were built for irrigation (especially under Shah Jahan and Firuz Shah Tughlaq before)</li>`;
+    html += `<li>New crops: tobacco, maize, potato, chillies, groundnut were introduced from the New World</li>`;
+    html += `<li>Indigo, sugarcane, cotton, and opium were major cash crops</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ship text-emerald-400 text-xs"></i> Trade & Commerce</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Indian textiles were world-famous</span> — calico (from Calicut), chintz, muslin (from Bengal)</li>`;
+    html += `<li>Exports: <span class="hl-term">textiles, spices (pepper, cardamom), indigo, opium, saltpetre, sugar</span></li>`;
+    html += `<li>Imports: <span class="hl-term">horses (from Arabia, Iran, Central Asia), silk (from China), porcelain, ivory, precious stones</span></li>`;
+    html += `<li>Major ports: <span class="hl-place">Surat, Hooghly, Masulipatnam, Cambay</span></li>`;
+    html += `<li>European trading companies: <span class="hl-term">Portuguese, English (East India Company), Dutch, French</span></li>`;
+    html += `<li>Inland trade was active along the <span class="hl-arch">Grand Trunk Road</span> and rivers (Ganga, Yamuna)</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-people-group text-emerald-400 text-xs"></i> Social Structure</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Nobility (Umara)</span> — highest class; included Iranis, Turanis, Afghans, Indian Muslims, Rajputs</li>`;
+    html += `<li><span class="hl-term">Merchants & Traders</span> — wealthy; included Hindu banias and Muslim traders</li>`;
+    html += `<li><span class="hl-term">Artisans & Craftsmen</span> — produced world-famous textiles, carpets, metalwork</li>`;
+    html += `<li><span class="hl-term">Peasants</span> — majority of the population; lived in villages; heavily taxed</li>`;
+    html += `<li><span class="hl-term">Slaves</span> — domestic slavery existed; prisoners of war were enslaved</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-person-dress text-emerald-400 text-xs"></i> Position of Women</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Women in Mughal India were subject to <span class="hl-term">purdah (veil system)</span> — especially in upper-class families</li>`;
+    html += `<li><span class="hl-term">Sati</span> (widow burning) was practiced among Hindus — Akbar tried to discourage it</li>`;
+    html += `<li>Women had <span class="hl-term">limited property rights</span> — could inherit under Islamic law</li>`;
+    html += `<li>Some royal women were powerful: <span class="hl-ruler">Nur Jahan</span>, <span class="hl-ruler">Mumtaz Mahal</span>, <span class="hl-ruler">Jahanara Begum</span> (Shah Jahan's daughter)</li>`;
+    html += `<li>Common women worked in fields, sold goods in markets</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-globe text-emerald-400 text-xs"></i> Francois Bernier's Account</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-term hl-bg-term">Francois Bernier</span> was a French traveller and physician who visited India during Shah Jahan and Aurangzeb's reign (<span class="hl-date">1656-1668</span>). He wrote <span class="hl-term hl-bg-term">"Travels in the Mogul Empire"</span>. His observations:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Compared Mughal India to contemporary Europe; found India lacking in science and technology</li>`;
+    html += `<li>Criticized the <span class="hl-term">lack of private property in land</span> — the king owned everything</li>`;
+    html += `<li>Described the <span class="hl-term">opulence of the nobility</span> and the <span class="hl-term">misery of peasants</span></li>`;
+    html += `<li>His accounts influenced European thinkers like <span class="hl-term">Marx</span> (Asiatic Mode of Production)</li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 12. CULTURE =====
+    html += `<section id="culture">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-palette text-indigo-400"></i> 12. Culture</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-language text-indigo-400 text-xs"></i> Language & Literature</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Persian</span> was the official language of the Mughal court and administration</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Urdu</span> emerged as a language — a mixture of Persian, Arabic, Turkish, and local languages (Hindi, Punjabi, etc.) — originally called <span class="hl-term">"Zaban-i-Urdu" (language of the camp)</span></li>`;
+    html += `<li>Important literary works: <span class="hl-term hl-bg-term">Akbarnama</span> (Abul Fazl), <span class="hl-term">Baburnama</span> (Babur), <span class="hl-term">Tuzuk-i-Jahangiri</span> (Jahangir), <span class="hl-term">Padshahnama</span> (Abdul Hamid Lahori — history of Shah Jahan)</li>`;
+    html += `<li><span class="hl-term">Hindi and regional languages</span> also developed — Bhakti poetry in Braj, Awadhi, Maithili</li>`;
+    html += `<li>Sanskrit works were translated into Persian (e.g., Upanishads by Dara Shikoh)</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-paintbrush text-indigo-400 text-xs"></i> Mughal School of Painting</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Mughal painting reached its <span class="hl-event">zenith under Akbar and Jahangir</span></li>`;
+    html += `<li>Akbar commissioned <span class="hl-term">Hamzanama</span> (illustrated stories of Amir Hamza) and <span class="hl-term">Razmnama</span> (Persian translation of Mahabharata)</li>`;
+    html += `<li>Jahangir was a <span class="hl-term">connoisseur of painting</span> — he could identify individual artists from their work</li>`;
+    html += `<li>Famous painters: <span class="hl-term">Basawan, Daswanth, Mansur</span> (Jahangir's court painter for animals and birds)</li>`;
+    html += `<li>Mughal painting was a <span class="hl-term hl-bg-term">synthesis of Persian and Indian styles</span> — realistic portraiture, court scenes, hunting scenes, nature studies</li>`;
+    html += `<li>Under <span class="hl-ruler">Aurangzeb</span>, painting <span class="hl-event">declined</span> due to his disapproval of figurative art</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-music text-indigo-400 text-xs"></i> Music</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-ruler">Tansen</span> (one of Akbar's Navaratnas) was the greatest musician of the Mughal period</li>`;
+    html += `<li>He is credited with founding the <span class="hl-term">Dhrupad style</span> of Hindustani classical music</li>`;
+    html += `<li>Akbar patronized music — <span class="hl-term">many musical instruments and ragas</span> were developed</li>`;
+    html += `<li>Jahangir and Shah Jahan also patronized music</li>`;
+    html += `<li>Aurangzeb <span class="hl-term">banned music in court</span> — musicians lost patronage</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star-and-crescent text-indigo-400 text-xs"></i> Religion</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Sufi movement</span> flourished under the Mughals — <span class="hl-term">Chishti order</span> (Moinuddin Chishti of Ajmer, Nizamuddin Auliya of Delhi) and <span class="hl-term">Naqshbandi order</span> (Sirhindi)</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Bhakti movement</span> continued — saints like Kabir, Guru Nanak, Mirabai, Surdas, Tulsidas</li>`;
+    html += `<li>Akbar's <span class="hl-term">Din-i-Ilahi</span> and <span class="hl-term">Sulh-i-Kul</span> policy promoted interfaith harmony</li>`;
+    html += `<li>Aurangzeb's <span class="hl-term">Islamic orthodoxy</span> reversed this — reimposed jizya, destroyed temples</li>`;
+    html += `<li><span class="hl-term">Sikhism</span> grew from a small sect to a military power under Guru Gobind Singh (Khalsa, 1699)</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Mughal cultural synthesis</span> is one of the finest examples of <span class="hl-term hl-bg-term">Ganga-Jamuni tehzeeb</span> — the composite culture of North India where Hindu and Muslim traditions blended in architecture, music, painting, language (Urdu), and cuisine.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 13. TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 13. Complete Timeline (1526-1707)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "1483", event: "Birth of Babur in Ferghana (Central Asia)" },
+      { year: "1494", event: "Babur succeeds Ferghana throne at age 12" },
+      { year: "1504", event: "Babur seizes Kabul" },
+      { year: "1526", event: "First Battle of Panipat — Babur defeats Ibrahim Lodi; Mughal Empire founded", battle: true },
+      { year: "1527", event: "Battle of Khanwa — Babur defeats Rana Sanga of Mewar", battle: true },
+      { year: "1528", event: "Battle of Chanderi — Babur defeats Medini Rai", battle: true },
+      { year: "1529", event: "Battle of Ghaghra — Babur defeats Afghan chiefs", battle: true },
+      { year: "1530", event: "Death of Babur; Humayun succeeds" },
+      { year: "1539", event: "Battle of Chausa — Sher Shah Suri defeats Humayun", battle: true },
+      { year: "1540", event: "Battle of Kanauj — Sher Shah defeats Humayun again; Humayun flees to Iran", battle: true },
+      { year: "1540-1545", event: "Reign of Sher Shah Suri (Sur Dynasty)", dyn: true },
+      { year: "1545", event: "Death of Sher Shah Suri (gunpowder explosion at Kalinjar)" },
+      { year: "1555", event: "Humayun recaptures Delhi with Safavid help; Mughal rule restored" },
+      { year: "1556", event: "Death of Humayun (falls down library stairs); Akbar succeeds at age 13", dyn: true },
+      { year: "1556", event: "Second Battle of Panipat — Bairam Khan (regent) defeats Hemu", battle: true },
+      { year: "1560", event: "Akbar dismisses Bairam Khan and takes direct control" },
+      { year: "1562", event: "Akbar conquers Malwa; marries Harka Bai (Mariam-uz-Zamani)" },
+      { year: "1568", event: "Akbar captures Chittor (Sisodiya capital)" },
+      { year: "1569", event: "Akbar captures Ranthambore" },
+      { year: "1570s", event: "Ibadat Khana (House of Worship) established at Fatehpur Sikri" },
+      { year: "1570-1580", event: "Todar Mal surveys crops — Zabt revenue system introduced" },
+      { year: "1582", event: "Akbar proclaims Din-i-Ilahi (Divine Faith)" },
+      { year: "1585-1605", event: "Akbar annexes Kashmir, Berar, Khandesh, parts of Deccan" },
+      { year: "1599-1604", event: "Prince Salim (Jahangir) revolts against Akbar" },
+      { year: "1605", event: "Death of Akbar; Jahangir succeeds" },
+      { year: "1606", event: "Execution of Guru Arjun Dev (5th Sikh Guru)" },
+      { year: "1611", event: "Jahangir marries Mehrunissa (Nur Jahan)" },
+      { year: "1613", event: "English East India Company establishes factory at Surat" },
+      { year: "1615-1618", event: "Sir Thomas Roe visits Jahangir's court" },
+      { year: "1615", event: "Mewar submits to Mughals (peace treaty)" },
+      { year: "1620", event: "Kangra fort captured by Mughals" },
+      { year: "1627", event: "Death of Jahangir; Shah Jahan succeeds" },
+      { year: "1630-1632", event: "Severe famine in Deccan" },
+      { year: "1632", event: "Ahmadnagar annexed by Shah Jahan" },
+      { year: "1632-1653", event: "Construction of Taj Mahal" },
+      { year: "1639-1648", event: "Construction of Shahjahanabad (Old Delhi) and Red Fort" },
+      { year: "1649", event: "Kandahar lost to Persians" },
+      { year: "1650-1656", event: "Construction of Jama Masjid, Delhi" },
+      { year: "1657", event: "Shah Jahan's illness triggers war of succession" },
+      { year: "1658", event: "Battle of Samugarh — Aurangzeb defeats Dara Shikoh; Aurangzeb crowns himself", battle: true },
+      { year: "1658-1666", event: "Shah Jahan imprisoned in Agra Fort by Aurangzeb" },
+      { year: "1659", event: "Battle of Khajwa — Aurangzeb defeats Shah Shuja", battle: true },
+      { year: "1659", event: "Dara Shikoh executed for heresy" },
+      { year: "1666", event: "Death of Shah Jahan in Agra Fort" },
+      { year: "1675", event: "Execution of Guru Tegh Bahadur (9th Sikh Guru) by Aurangzeb" },
+      { year: "1679", event: "Aurangzeb reimposes Jizya on non-Muslims" },
+      { year: "1681-1707", event: "Aurangzeb's Deccan campaigns (26 years in Deccan)" },
+      { year: "1686", event: "Annexation of Bijapur by Aurangzeb", battle: true },
+      { year: "1687", event: "Annexation of Golconda by Aurangzeb", battle: true },
+      { year: "1689", event: "Sambhaji (Maratha leader) captured and executed by Aurangzeb" },
+      { year: "1699", event: "Guru Gobind Singh creates the Khalsa (Sikh military brotherhood)" },
+      { year: "1707", event: "Death of Aurangzeb at Ahmednagar; END of great Mughal period" }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.battle) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30">⚔ Battle</span>';
+      if (t.dyn) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">👑 New Dynasty</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 14. UPSC KEY FACTS =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 14. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Fact Card 1: Emperors & Reign
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-crown mr-1"></i> Emperors & Reign</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-amber-300">Babur:</span> 1526-1530 — Founder; Panipat I, Khanwa</li>`;
+    html += `<li><span class="text-blue-300">Humayun:</span> 1530-1556 (with 15yr gap) — Defeated by Sher Shah, exiled</li>`;
+    html += `<li><span class="text-emerald-300">Akbar:</span> 1556-1605 — Greatest; Mansabdari, Din-i-Ilahi, Navaratnas</li>`;
+    html += `<li><span class="text-purple-300">Jahangir:</span> 1605-1627 — Nur Jahan, Roe, Chain of Justice</li>`;
+    html += `<li><span class="text-pink-300">Shah Jahan:</span> 1627-1658 — Taj Mahal, Red Fort, Golden Age of architecture</li>`;
+    html += `<li><span class="text-red-300">Aurangzeb:</span> 1658-1707 — Longest reign; jizya, Deccan wars, decline begins</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 2: Important Battles
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-bolt mr-1"></i> Important Battles</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">1526:</span> Panipat I — Babur beat Ibrahim Lodi (Tulugma tactic)</li>`;
+    html += `<li><span class="text-red-300">1527:</span> Khanwa — Babur beat Rana Sanga</li>`;
+    html += `<li><span class="text-red-300">1529:</span> Ghaghra — Babur beat Afghan chiefs</li>`;
+    html += `<li><span class="text-red-300">1539:</span> Chausa — Sher Shah beat Humayun</li>`;
+    html += `<li><span class="text-red-300">1540:</span> Kanauj — Sher Shah beat Humayun again</li>`;
+    html += `<li><span class="text-red-300">1556:</span> Panipat II — Bairam Khan beat Hemu</li>`;
+    html += `<li><span class="text-red-300">1658:</span> Samugarh — Aurangzeb beat Dara Shikoh</li>`;
+    html += `<li><span class="text-red-300">1659:</span> Khajwa — Aurangzeb beat Shah Shuja</li>`;
+    html += `<li><span class="text-red-300">1686-87:</span> Bijapur & Golconda annexed by Aurangzeb</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 3: Architectural Monuments
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-landmark mr-1"></i> Architectural Monuments</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-rose-300">Taj Mahal</span> — Shah Jahan (1632-1653)</li>`;
+    html += `<li><span class="text-rose-300">Humayun's Tomb</span> — Hamida Banu Begum</li>`;
+    html += `<li><span class="text-rose-300">Red Fort (Delhi)</span> — Shah Jahan</li>`;
+    html += `<li><span class="text-rose-300">Jama Masjid</span> — Shah Jahan</li>`;
+    html += `<li><span class="text-rose-300">Fatehpur Sikri</span> — Akbar (Buland Darwaza)</li>`;
+    html += `<li><span class="text-rose-300">Agra Fort</span> — Akbar</li>`;
+    html += `<li><span class="text-rose-300">Badshahi Masjid (Lahore)</span> — Aurangzeb</li>`;
+    html += `<li><span class="text-rose-300">Bibi ka Maqbara</span> — Aurangzeb (poor copy of Taj)</li>`;
+    html += `<li><span class="text-rose-300">Shalimar Bagh (Kashmir)</span> — Jahangir</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 4: Important Departments & Officials
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-blue-500/20">`;
+    html += `<h4 class="text-sm font-bold text-blue-400 mb-2"><i class="fa-solid fa-briefcase mr-1"></i> Important Departments & Officials</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-blue-300">Wazir/Vakil:</span> Prime Minister (overall admin)</li>`;
+    html += `<li><span class="text-blue-300">Diwan:</span> Finance & Revenue (most powerful)</li>`;
+    html += `<li><span class="text-blue-300">Mir Bakshi:</span> Military Dept & Mansabdari</li>`;
+    html += `<li><span class="text-blue-300">Khan-i-Saman:</span> Imperial Household</li>`;
+    html += `<li><span class="text-blue-300">Sadr-us-Sudur:</span> Religious Affairs</li>`;
+    html += `<li><span class="text-blue-300">Qazi-ul-Quzat:</span> Chief Justice</li>`;
+    html += `<li><span class="text-blue-300">Subadar:</span> Provincial Governor</li>`;
+    html += `<li><span class="text-blue-300">Faujdar:</span> District Law & Order</li>`;
+    html += `<li><span class="text-blue-300">Kotwal:</span> City Police Chief</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 5: Foreign Travellers
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-globe mr-1"></i> Foreign Travellers to Mughal India</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Francois Bernier:</span> French (1656-1668) — Travels in the Mogul Empire</li>`;
+    html += `<li><span class="text-emerald-300">Sir Thomas Roe:</span> English (1615-1618) — Jahangir's court; trade concessions</li>`;
+    html += `<li><span class="text-emerald-300">Jean-Baptiste Tavernier:</span> French (6 visits, 1640s-1660s) — gem trader; described Peacock Throne</li>`;
+    html += `<li><span class="text-emerald-300">William Hawkins:</span> English (1608-1613) — Jahangir's court; Surat factory</li>`;
+    html += `<li><span class="text-emerald-300">Peter Mundy:</span> English (1628-1634) — described Taj Mahal under construction</li>`;
+    html += `<li><span class="text-emerald-300">Abdul Hamid Lahori:</span> Historian — wrote Padshahnama (Shah Jahan's reign)</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 6: Revenue & Taxation
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-orange-500/20">`;
+    html += `<h4 class="text-sm font-bold text-orange-400 mb-2"><i class="fa-solid fa-sack-dollar mr-1"></i> Revenue & Taxation</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-orange-300">Zabt/Dahsala:</span> Akbar's land revenue (1/3 produce in cash)</li>`;
+    html += `<li><span class="text-orange-300">Kharaj:</span> General land tax</li>`;
+    html += `<li><span class="text-orange-300">Jizya:</span> Tax on non-Muslims (abolished by Akbar, reimposed by Aurangzeb)</li>`;
+    html += `<li><span class="text-orange-300">Zakat:</span> Wealth tax on Muslims (2.5%)</li>`;
+    html += `<li><span class="text-orange-300">Khams:</span> 1/5 of war booty</li>`;
+    html += `<li><span class="text-orange-300">Jagir:</span> Revenue assignment (salary for mansabdars)</li>`;
+    html += `<li><span class="text-orange-300">Rupiya:</span> Silver rupee (Sher Shah Suri)</li>`;
+    html += `<li><span class="text-orange-300">Tanka/Jital:</span> Silver/copper coins (Ilutmish → Mughal)</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `<span class="hl-ruler">Akbar's Mansabdari & Zabt systems</span>, <span class="hl-ruler">Aurangzeb's Deccan policy & religious orthodoxy</span>, <span class="hl-arch">Mughal architecture features (pietra dura, char bagh, bulbous domes)</span>, <span class="hl-term">Sher Shah's administrative reforms as model for Akbar</span>, <span class="hl-term">foreign traveller accounts (Bernier, Roe, Tavernier)</span>, and the <span class="hl-term">war of succession (1657-58)</span> are frequently asked topics. </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Mughal Empire UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 7 History (Our Pasts II) Chapter 4 & UPSC reference materials</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

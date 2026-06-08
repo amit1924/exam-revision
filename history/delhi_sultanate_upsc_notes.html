@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Sultanate - UPSC NCERT Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    /* Highlight colors for important terms */
+    .hl-dynasty { color: #fbbf24; font-weight: 600; } /* Amber - dynasties */
+    .hl-ruler { color: #60a5fa; font-weight: 600; } /* Blue - rulers */
+    .hl-date { color: #a78bfa; font-weight: 500; } /* Purple - dates */
+    .hl-policy { color: #34d399; font-weight: 600; } /* Emerald - policies */
+    .hl-arch { color: #f472b6; font-weight: 600; } /* Pink - architecture */
+    .hl-event { color: #fb923c; font-weight: 600; } /* Orange - events */
+    .hl-term { color: #2dd4bf; font-weight: 600; } /* Teal - important terms */
+    .hl-battle { color: #ef4444; font-weight: 600; } /* Red - battles */
+    .hl-place { color: #a3e635; font-weight: 500; } /* Lime - places */
+    .hl-num { color: #c084fc; font-weight: 600; } /* Violet - numbers */
+
+    /* Background highlight variants */
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .dynasty-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+</div>
+
+<script>
+  const DATA = {
+    title: "Delhi Sultanate - UPSC NCERT Notes",
+    location: "NCERT Class 7 History (Our Pasts II) - Chapter 3",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 6-10 History, UPSC reference materials",
+    chapters: [
+      { class: 7, chapter: 3, name: "The Delhi Sultans", book: "Our Pasts II" },
+      { class: 7, chapter: 4, name: "The Mughal Empire", book: "Our Pasts II" },
+      { class: 6, chapter: 10, name: "New Empires and Kingdoms", book: "Our Pasts I" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-landmark text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>320 Years (1206-1526)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">1. Introduction & Background</a>
+          <a href="#arab-invasion" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Arab & Turkish Invasions</a>
+          <a href="#dynasties" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. The Five Dynasties</a>
+          <a href="#administration" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Administration System</a>
+          <a href="#economy" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Economy & Market Reforms</a>
+          <a href="#society" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Society & Culture</a>
+          <a href="#architecture" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Architecture</a>
+          <a href="#military" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Military Organization</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Complete Timeline</a>
+          <a href="#decline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Decline & Legacy</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. UPSC Key Facts</a>
+        </div>
+      </div>`;
+
+    // ===== 1. INTRODUCTION =====
+    html += `<section id="intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scroll text-amber-400"></i> 1. Introduction & Background</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      The <span class="hl-dynasty hl-bg-dynasty">Delhi Sultanate</span> was an <span class="hl-term hl-bg-term">Islamic empire</span> based in Delhi that ruled large parts of the <span class="hl-place hl-bg-term">Indian subcontinent</span> for <span class="hl-num hl-bg-date">320 years (1206–1526 CE)</span>. It was established after the conquests of <span class="hl-ruler hl-bg-ruler">Muhammad Ghori</span> and his lieutenant <span class="hl-ruler hl-bg-ruler">Qutb-ud-din Aibak</span>.
+    </p>`;
+    html += `<p class="content-text">
+      Before the Delhi Sultanate, <span class="hl-place hl-bg-term">Delhi</span> became an important city only in the <span class="hl-date hl-bg-date">12th century</span>. It was the capital of the <span class="hl-dynasty">Tomara Rajputs</span> (who were defeated by the <span class="hl-dynasty">Chauhans/Chahamanas</span> of Ajmer in the mid-12th century). Under the Tomaras and Chauhans, Delhi became an important <span class="hl-term hl-bg-term">commercial centre</span>. Rich <span class="hl-term">Jaina merchants</span> lived in the city and constructed several temples. Coins called <span class="hl-term hl-bg-term">dehliwal</span> were minted here.
+    </p>`;
+    html += `<p class="content-text">
+      <span class="hl-term hl-bg-term">Five dynasties</span> ruled over the Delhi Sultanate sequentially:
+    </p>`;
+    html += `<div class="flex flex-wrap gap-2 mt-2 mb-2">`;
+    html += `<span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 text-xs border border-amber-500/30">1. Mamluk / Slave (1206-1290)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-blue-500/15 text-blue-300 text-xs border border-blue-500/30">2. Khalji (1290-1320)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 text-xs border border-emerald-500/30">3. Tughlaq (1320-1414)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-purple-500/15 text-purple-300 text-xs border border-purple-500/30">4. Sayyid (1414-1451)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-pink-500/15 text-pink-300 text-xs border border-pink-500/30">5. Lodi (1451-1526)</span>`;
+    html += `</div>`;
+    html += `<p class="content-text">
+      It covered large swathes of territory in modern-day <span class="hl-place">India, Pakistan, Bangladesh</span> as well as some parts of southern Nepal.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The term <span class="hl-term hl-bg-term">"Sultan"</span> is an Arabic word meaning "power" or "authority". The Delhi Sultans built many cities in the area we now know as Delhi — including <span class="hl-place">Siri, Jahanpanah, Tughlaqabad, Firuzabad, and Dinpanah</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. ARAB & TURKISH INVASIONS =====
+    html += `<section id="arab-invasion">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-sword text-orange-400"></i> 2. Arab & Turkish Invasions</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Arab Invasion of Sindh (712 CE)</h3>`;
+    html += `<p class="content-text">
+      Muslim rule in the subcontinent began in <span class="hl-date hl-bg-date">8th century CE</span> when the Arab general <span class="hl-ruler hl-bg-ruler">Muhammad bin Qasim</span> conquered <span class="hl-place">Sindh and Multan</span> (now in Pakistan). The Persian text <span class="hl-term hl-bg-term">Chach Nama</span> provides information on this invasion.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Reasons for Arab invasion:</span> Spread of Islam, attraction to India's wealth, expansion of Islamic empire</li>`;
+    html += `<li><span class="hl-term">Reasons for failure</span> to build permanent empire: Imprisonment of Muhammad bin Qasim by new Khalifa, indifferent attitude of new Khalifa, long distance between Baghdad and Sindh</li>`;
+    html += `<li><span class="hl-term">Impact:</span> Foundation of Islam in India, introduction of formal <span class="hl-term">slavery system</span>, promotion of Arab trade, new settlements on sea-coast</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Turkish Invasions</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Mahmud of Ghazni</span> (<span class="hl-date">998-1030 CE</span>) invaded India <span class="hl-num hl-bg-date">17 times</span> between 1000-1027 CE. His main target was the <span class="hl-place">Somnath Temple</span> (1025 CE). He plundered wealth to finance his empire in Central Asia.
+    </p>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Muhammad Ghori</span> (<span class="hl-date">1175-1206 CE</span>) was the <span class="hl-term">founder of Muslim rule in India</span>. He fought two major battles:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-battle hl-bg-battle">First Battle of Tarain (1191):</span> <span class="hl-ruler">Prithviraj Chauhan</span> defeated Muhammad Ghori</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Second Battle of Tarain (1192):</span> <span class="hl-ruler">Muhammad Ghori</span> defeated Prithviraj Chauhan — <span class="hl-event">this opened North India to Muslim rule</span></li>`;
+    html += `<li><span class="hl-battle">Battle of Chandawar (1194):</span> Ghori defeated <span class="hl-ruler">Jayachandra</span> of Kannauj (Gahadavala dynasty)</li>`;
+    html += `</ul>`;
+    html += `<p class="content-text">
+      After Ghori's death in <span class="hl-date">1206</span>, his general <span class="hl-ruler hl-bg-ruler">Qutb-ud-din Aibak</span> declared independence and became the <span class="hl-event">first Sultan of Delhi</span>, founding the <span class="hl-dynasty">Mamluk (Slave) Dynasty</span>.
+    </p>`;
+    html += `</div></section>`;
+
+    // ===== 3. THE FIVE DYNASTIES =====
+    html += `<section id="dynasties">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 3. The Five Dynasties of Delhi Sultanate</h2>`;
+
+    // --- 3.1 Mamluk Dynasty ---
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<div class="flex items-center gap-3 mb-3">`;
+    html += `<span class="dynasty-badge bg-amber-500/20 text-amber-300 border border-amber-500/30">1206-1290</span>`;
+    html += `<h3 class="text-base sm:text-lg font-bold text-white">3.1 Mamluk / Slave Dynasty</h3>`;
+    html += `</div>`;
+    html += `<p class="content-text"><span class="hl-term">Mamluk</span> is an Arabic word meaning <span class="hl-term">"owned"</span>. It distinguished imported Turkish slaves meant for military service. Also called the <span class="hl-dynasty">Ghulam dynasty</span>.</p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Ruler</th><th>Reign</th><th>Key Facts</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Qutb-ud-din Aibak</td><td class="hl-date">1206-1210</td><td>Founder; built <span class="hl-arch">Quwwat-ul-Islam Mosque</span> in Delhi & <span class="hl-arch">Adhai Din ka Jhonpra</span> in Ajmer; started <span class="hl-arch">Qutb Minar</span>; died playing <span class="hl-term">chaugan (polo)</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Aram Shah</td><td class="hl-date">1210-1211</td><td>Eldest son of Aibak; weak ruler, deposed by Iltutmish</td></tr>`;
+    html += `<tr><td class="hl-ruler">Shams-ud-din Iltutmish</td><td class="hl-date">1211-1236</td><td><span class="hl-event">Greatest slave ruler</span>; son-in-law of Aibak; shifted capital from <span class="hl-place">Lahore to Delhi</span>; introduced <span class="hl-term">silver tanka</span> (rupee ancestor) and <span class="hl-term">copper jital</span>; completed <span class="hl-arch">Qutb Minar</span>; formed <span class="hl-term hl-bg-term">Chalisa (Group of 40 nobles)</span>; received <span class="hl-term">mansur (letter of investiture)</span> from Abbasid Caliph</td></tr>`;
+    html += `<tr><td class="hl-ruler">Rukn-ud-din Firuz</td><td class="hl-date">1236</td><td>Son of Iltutmish; ruled only 6 months; assassinated</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Razia Sultana</td><td class="hl-date">1236-1240</td><td><span class="hl-event">First & only woman ruler of Delhi Sultanate</span>; daughter of Iltutmish; chronicler <span class="hl-term">Minhaj-i-Siraj</span> stated she was more able than her brothers; nobles not happy; removed in 1240; married <span class="hl-term">Malik Altunia</span> (governor of Bathinda); killed by her brother's forces</td></tr>`;
+    html += `<tr><td class="hl-ruler">Muiz-ud-din Bahram</td><td class="hl-date">1240-1242</td><td>Son of Iltutmish</td></tr>`;
+    html += `<tr><td class="hl-ruler">Alauddin Masud</td><td class="hl-date">1242-1246</td><td>Son of Rukn-ud-din Firuz</td></tr>`;
+    html += `<tr><td class="hl-ruler">Nasir-ud-din Mahmud</td><td class="hl-date">1246-1266</td><td>Grandson of Iltutmish; known for his <span class="hl-term">piety</span>; Balban was his de facto ruler (Naib)</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Ghiyas-ud-din Balban</td><td class="hl-date">1266-1286</td><td><span class="hl-event">Most powerful ruler of Slave dynasty</span>; father-in-law of Nasir-ud-din Mahmud; theory of <span class="hl-term hl-bg-term">kingship (divine right of king)</span>; <span class="hl-term">sijda (prostration)</span> and <span class="hl-term">paibos (kissing feet)</span> introduced; broke power of <span class="hl-term">Chalisa (40 nobles)</span>; organized military; Persian model of monarchy; faced Mongol threats; died of grief after son's death</td></tr>`;
+    html += `<tr><td class="hl-ruler">Muiz-ud-din Kaiqubad</td><td class="hl-date">1287-1290</td><td>Grandson of Balban; last ruler of Slave dynasty</td></tr>`;
+    html += `<tr><td class="hl-ruler">Kaimur</td><td class="hl-date">1290</td><td>Son of Kaiqubad; ruled briefly</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-term">Chalisa (Turkan-i-Chahalgani):</span> Group of 40 Turkish nobles formed by Iltutmish as an advisory body. Balban later broke their power to centralize authority. This conflict between the Sultan and the nobility was a recurring theme in the Delhi Sultanate.</div></div>`;
+    html += `</div>`;
+
+    // --- 3.2 Khalji Dynasty ---
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">`;
+    html += `<div class="flex items-center gap-3 mb-3">`;
+    html += `<span class="dynasty-badge bg-blue-500/20 text-blue-300 border border-blue-500/30">1290-1320</span>`;
+    html += `<h3 class="text-base sm:text-lg font-bold text-white">3.2 Khalji Dynasty</h3>`;
+    html += `</div>`;
+    html += `<p class="content-text">The Khaljis were <span class="hl-term">Central Asians</span> who had lived in <span class="hl-place">Afghanistan</span> for a long time. Their rise marked the end of Turkish monopoly over high offices.</p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Ruler</th><th>Reign</th><th>Key Facts</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Jalal-ud-din Khalji</td><td class="hl-date">1290-1296</td><td>Founder; <span class="hl-term">mild & generous</span> ruler; killed by his nephew Alauddin Khalji</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Alauddin Khalji</td><td class="hl-date">1296-1316</td><td><span class="hl-event">One of India's greatest military geniuses</span>; <span class="hl-term hl-bg-term">market control (price regulation)</span> system; <span class="hl-term">conquered Deccan (Malwa, Gujarat, Ranthambore, Chittor)</span>; <span class="hl-event">repelled Mongol invasions</span> (defeated Mongols <span class="hl-num">several times</span> — Zafar Khan's victories); <span class="hl-term hl-bg-term">land revenue reform (50% of produce as tax)</span>; <span class="hl-term">permanent standing army</span>; <span class="hl-arch">built Alai Darwaza, Siri (his capital), Hauz Khas</span>; introduced <span class="hl-term">dag (branding of horses)</span> and <span class="hl-term">chehra (descriptive roll of soldiers)</span>; banned <span class="hl-term">alcohol, gambling</span>; died of <span class="hl-term">dropsy</span></td></tr>`;
+    html += `<tr><td class="hl-ruler">Qutb-ud-din Mubarak Shah</td><td class="hl-date">1316-1320</td><td>Son of Alauddin; killed by <span class="hl-term">Khusrau Khan</span> (his Hindu convert general), ending the Khalji dynasty</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point — Alauddin's Market Reforms</div><div class="fact-box-content">Alauddin Khalji fixed prices of all goods from grain to cloth, slaves, and cattle. He created a <span class="hl-term">central market (Mandi)</span> at Delhi, appointed <span class="hl-term">shahna (market superintendent)</span>, and <span class="hl-term">diwan-i-riyasat (controller of markets)</span>. Strict punishments for cheating. Land revenue was fixed at <span class="hl-num">50% of produce</span> paid in cash. This kept the army happy with low prices.</div></div>`;
+    html += `</div>`;
+
+    // --- 3.3 Tughlaq Dynasty ---
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+    html += `<div class="flex items-center gap-3 mb-3">`;
+    html += `<span class="dynasty-badge bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">1320-1414</span>`;
+    html += `<h3 class="text-base sm:text-lg font-bold text-white">3.3 Tughlaq Dynasty</h3>`;
+    html += `</div>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Ruler</th><th>Reign</th><th>Key Facts</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Ghiyas-ud-din Tughlaq</td><td class="hl-date">1320-1325</td><td>Founder; built <span class="hl-arch">Tughlaqabad Fort</span>; good administrator; improved postal system; died when a wooden pavilion collapsed on him</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Muhammad bin Tughlaq</td><td class="hl-date">1325-1351</td><td><span class="hl-event">Most controversial ruler — known for his 5 ambitious projects</span>; <span class="hl-term hl-bg-term">(1) Transfer of capital from Delhi to Daulatabad (failed)</span>; <span class="hl-term">(2) Introduction of token currency (failed due to forgery)</span>; <span class="hl-term">(3) Taxation in the Doab (failed due to famine)</span>; <span class="hl-term">(4) Khurasan expedition (abandoned)</span>; <span class="hl-term">(5) Kharaji expedition in Himalayas (failed)</span>; <span class="hl-term hl-bg-policy">Diwan-i-Kohi (Department of Agriculture)</span> established; <span class="hl-term">Called "a mixture of opposites"</span> by historians; patron of intellectuals (<span class="hl-term">Ibn Battuta</span> visited his court); capable administrator despite failures</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Firuz Shah Tughlaq</td><td class="hl-date">1351-1388</td><td><span class="hl-event">Known for public welfare works</span>; built canals, hospitals, rest houses; established <span class="hl-term">Diwan-i-Khairat (Dept of Charity)</span> and <span class="hl-term">Diwan-i-Bandagan (Dept of Slaves)</span>; constructed cities of <span class="hl-arch">Firuzabad, Jaunpur, Hissar</span>; repaired <span class="hl-arch">Qutb Minar</span>; introduced <span class="hl-term">ijara system (revenue farming)</span>; reduced punishment for crimes; wrote autobiography <span class="hl-term hl-bg-term">Futuhat-i-Firuz Shahi</span>; brought <span class="hl-arch">Ashoka pillars</span> to Delhi</td></tr>`;
+    html += `<tr><td class="hl-ruler">Ghiyas-ud-din Tughlaq Shah II</td><td class="hl-date">1388-1389</td><td>Weak ruler; assassinated</td></tr>`;
+    html += `<tr><td class="hl-ruler">Nasir-ud-din Mahmud</td><td class="hl-date">1394-1413</td><td>Last Tughlaq ruler; <span class="hl-event hl-bg-event">Timur's invasion (1398)</span> during his reign — Delhi was sacked, devastated</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point — Ibn Battuta's Account</div><div class="fact-box-content"><span class="hl-term">Ibn Battuta</span>, the Moroccan traveller, visited India during Muhammad bin Tughlaq's reign (1333-1342). He wrote <span class="hl-term hl-bg-term">Rihla (The Travels)</span>, which provides detailed information about Indian society, economy, and administration under the Delhi Sultanate. He served as the <span class="hl-term">Qazi (judge)</span> of Delhi.</div></div>`;
+    html += `</div>`;
+
+    // --- 3.4 Sayyid Dynasty ---
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+    html += `<div class="flex items-center gap-3 mb-3">`;
+    html += `<span class="dynasty-badge bg-purple-500/20 text-purple-300 border border-purple-500/30">1414-1451</span>`;
+    html += `<h3 class="text-base sm:text-lg font-bold text-white">3.4 Sayyid Dynasty</h3>`;
+    html += `</div>`;
+    html += `<p class="content-text">The Sayyids claimed descent from the <span class="hl-term">Prophet Muhammad</span> (through his daughter Fatima). They ruled a much <span class="hl-term">reduced territory</span> after Timur's invasion.</p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Ruler</th><th>Reign</th><th>Key Facts</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Khizr Khan</td><td class="hl-date">1414-1421</td><td>Founder; appointed by <span class="hl-term">Timur</span> as governor of Multan, later took Delhi</td></tr>`;
+    html += `<tr><td class="hl-ruler">Mubarak Shah</td><td class="hl-date">1421-1434</td><td>Son of Khizr Khan; faced rebellions</td></tr>`;
+    html += `<tr><td class="hl-ruler">Muhammad Shah</td><td class="hl-date">1434-1445</td><td>Weak ruler; lost control to nobles</td></tr>`;
+    html += `<tr><td class="hl-ruler">Alam Shah</td><td class="hl-date">1445-1451</td><td>Last Sayyid ruler; voluntarily <span class="hl-term">abdicated</span> in favour of Bahlul Lodi</td></tr>`;
+    html += `</tbody></table></div>`;
+    html += `</div>`;
+
+    // --- 3.5 Lodi Dynasty ---
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-pink-500/20">`;
+    html += `<div class="flex items-center gap-3 mb-3">`;
+    html += `<span class="dynasty-badge bg-pink-500/20 text-pink-300 border border-pink-500/30">1451-1526</span>`;
+    html += `<h3 class="text-base sm:text-lg font-bold text-white">3.5 Lodi Dynasty</h3>`;
+    html += `</div>`;
+    html += `<p class="content-text">The Lodis were of <span class="hl-term">Afghan origin</span>. They were the <span class="hl-event">first non-Turkish dynasty</span> of the Delhi Sultanate and the <span class="hl-event">last dynasty</span> before the Mughals.</p>`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Ruler</th><th>Reign</th><th>Key Facts</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-ruler">Bahlul Lodi</td><td class="hl-date">1451-1489</td><td>Founder; Afghan noble; expanded territory; good relations with Afghan chiefs</td></tr>`;
+    html += `<tr><td class="hl-ruler hl-bg-ruler">Sikandar Lodi</td><td class="hl-date">1489-1517</td><td><span class="hl-event">Greatest Lodi ruler</span>; built <span class="hl-arch">Sikandra (Agra)</span>; shifted capital from Delhi to <span class="hl-place">Agra</span>; introduced <span class="hl-term">Gaz-i-Sikandari (measurement yard)</span>; patron of learning; ordered destruction of Hindu temples</td></tr>`;
+    html += `<tr><td class="hl-ruler">Ibrahim Lodi</td><td class="hl-date">1517-1526</td><td><span class="hl-event">Last ruler of Delhi Sultanate</span>; defeated by <span class="hl-ruler">Babur</span> at <span class="hl-battle hl-bg-battle">First Battle of Panipat (1526)</span>; his <span class="hl-term">arrogance towards Afghan nobles</span> led to Daulat Khan Lodi inviting Babur to India</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point — Battle of Panipat</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">First Battle of Panipat (21 April 1526)</span> between <span class="hl-ruler">Babur</span> and <span class="hl-ruler">Ibrahim Lodi</span> marked the <span class="hl-event">end of the Delhi Sultanate</span> and the <span class="hl-event">beginning of the Mughal Empire</span>. Babur used the <span class="hl-term">Tulugma (flanking) tactic</span> and superior artillery. Ibrahim Lodi was killed on the battlefield. Approximately <span class="hl-num">20,000</span> soldiers died.</div></div>`;
+    html += `</div>`;
+
+    html += `</section>`;
+
+    // ===== 4. ADMINISTRATION =====
+    html += `<section id="administration">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building-columns text-emerald-400"></i> 4. Administration System</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-indigo-400 text-xs"></i> Central Administration</h3>`;
+    html += `<p class="content-text">The Sultan was the <span class="hl-term">head of state</span> with absolute powers. Key ministers included:</p>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Minister</th><th>Department</th><th>Role</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term">Wazir</td><td>Diwan-i-Wizarat</td><td>Finance & Revenue (most powerful)</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan-i-Arz</td><td>Military Department</td><td>Army organization (headed by <span class="hl-term">Ariz-i-Mumalik</span>)</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan-i-Insha</td><td>Royal Correspondence</td><td>State correspondence, records (headed by <span class="hl-term">Dabir-i-Khas</span>)</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan-i-Risalat</td><td>Religious Affairs</td><td>Justice, religious matters (headed by <span class="hl-term">Qazi-ul-Mulk</span> / Chief Qazi)</td></tr>`;
+    html += `<tr><td class="hl-term">Diwan-i-Qaza</td><td>Judicial Department</td><td>Justice administration</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-policy">Diwan-i-Kohi</td><td>Agriculture</td><td>Dept of Agriculture (established by <span class="hl-ruler">Muhammad bin Tughlaq</span>)</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-policy">Diwan-i-Khairat</td><td>Charity</td><td>Dept of Charity (established by <span class="hl-ruler">Firuz Shah Tughlaq</span>)</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-policy">Diwan-i-Bandagan</td><td>Slaves</td><td>Dept of Slaves (established by <span class="hl-ruler">Firuz Shah Tughlaq</span>)</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-map-location-dot text-indigo-400 text-xs"></i> Provincial Administration</h3>`;
+    html += `<p class="content-text">The empire was divided into <span class="hl-term">Iqtas</span> (provinces) under <span class="hl-term">Iqtadars/Muqtis</span>. Their duties included:</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Lead military campaigns and maintain law & order</li>`;
+    html += `<li>Collect revenues as salary and pay soldiers from this revenue</li>`;
+    html += `<li>Office was <span class="hl-term">not inheritable</span> — assigned for short periods before being shifted</li>`;
+    html += `<li>Accountants checked revenue collection by muqtis</li>`;
+    html += `<li>Under <span class="hl-ruler">Alauddin Khalji</span>, the state brought land revenue assessment under its own control</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-scale-balanced text-indigo-400 text-xs"></i> Judicial System</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The Sultan was the <span class="hl-term">highest court of appeal</span></li>`;
+    html += `<li><span class="hl-term">Chief Qazi (Qazi-ul-Mulk)</span> headed judicial department</li>`;
+    html += `<li><span class="hl-term">Qazis</span> administered justice at provincial & city levels</li>`;
+    html += `<li><span class="hl-term">Sharia law</span> applied to Muslims; Hindus followed personal laws</li>`;
+    html += `<li><span class="hl-term">Muhtasib</span> — looked after public morals & market regulations</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-coins text-indigo-400 text-xs"></i> Revenue System</h3>`;
+    html += `<p class="content-text">Three types of taxes under Delhi Sultanate:</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Kharaj</span> — Land tax (about <span class="hl-num">50%</span> of peasant's produce)</li>`;
+    html += `<li><span class="hl-term">Zakat</span> — Tax on Muslims (wealth tax, 2.5% of income)</li>`;
+    html += `<li><span class="hl-term">Jizya</span> — Tax on non-Muslims (religious tax)</li>`;
+    html += `<li><span class="hl-term">Khams</span> — 1/5th of booty from war</li>`;
+    html += `<li>Other taxes: on cattle, houses, grazing, trade</li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text">During <span class="hl-ruler">Firuz Shah Tughlaq</span>'s time, <span class="hl-term hl-bg-policy">Ijara system (revenue farming)</span> was introduced — tax collection was leased out to contractors, leading to exploitation of peasants.</p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ranking-star text-indigo-400 text-xs"></i> Sources of Revenue</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Land revenue</span> — Main source (Kharaj)</li>`;
+    html += `<li><span class="hl-term">Booty from wars & campaigns</span></li>`;
+    html += `<li><span class="hl-term">Trade taxes & customs</span></li>`;
+    html += `<li><span class="hl-term">Jizya</span> from non-Muslims</li>`;
+    html += `<li><span class="hl-term">Zakat</span> from Muslims</li>`;
+    html += `<li><span class="hl-term">Khams</span> (1/5 of war booty)</li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 5. ECONOMY & MARKET REFORMS =====
+    html += `<section id="economy">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line text-emerald-400"></i> 5. Economy & Market Reforms</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-store text-emerald-400 text-xs"></i> Alauddin Khalji's Market Control (1296-1316)</h3>`;
+    html += `<p class="content-text">Alauddin's market reforms were <span class="hl-event">unprecedented in medieval India</span>. He fixed prices of all commodities:</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Central market (Mandi)</span> at Delhi for grain</li>`;
+    html += `<li><span class="hl-term">Shahna-i-Mandi</span> — Superintendent of Market</li>`;
+    html += `<li><span class="hl-term">Diwan-i-Riyasat</span> — Controller of markets</li>`;
+    html += `<li>Fixed prices for: grain, cloth, slaves, cattle, horses, weapons</li>`;
+    html += `<li><span class="hl-term">Land revenue paid in cash</span> (instead of kind)</li>`;
+    html += `<li><span class="hl-term">State granaries</span> maintained as buffer stock</li>`;
+    html += `<li>Strict <span class="hl-term">punishment for cheating</span> (fines, imprisonment)</li>`;
+    html += `<li>Prices remained stable for <span class="hl-num">12 years</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-coins text-emerald-400 text-xs"></i> Currency System</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Silver Tanka</span> (introduced by Iltutmish) — standard currency</li>`;
+    html += `<li><span class="hl-term">Copper Jital</span> — fractional currency (50 jitals = 1 tanka)</li>`;
+    html += `<li><span class="hl-term hl-bg-event">Muhammad bin Tughlaq introduced token currency</span> (copper/brass coins with same value as silver tanka) — <span class="hl-event">failed due to massive forgery</span></li>`;
+    html += `<li><span class="hl-term">Billon coins</span> — mixture of silver and copper</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-tractor text-emerald-400 text-xs"></i> Agriculture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Canals built by <span class="hl-ruler">Firuz Shah Tughlaq</span> for irrigation (longest: 200 km)</li>`;
+    html += `<li><span class="hl-term">Diwan-i-Kohi</span> (Agriculture Dept) established by Muhammad bin Tughlaq</li>`;
+    html += `<li>State provided <span class="hl-term">takavi loans</span> to farmers</li>`;
+    html += `<li>New crops introduced from Central Asia & Persia</li>`;
+    html += `<li>Forests cleared in Ganga-Yamuna doab for cultivation</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-ship text-emerald-400 text-xs"></i> Trade & Commerce</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Delhi was a major centre of <span class="hl-term">inter-regional trade</span></li>`;
+    html += `<li>Trade with <span class="hl-place">West Asia, Central Asia, China, Southeast Asia</span></li>`;
+    html += `<li>Exports: textiles, spices, indigo, leather, slaves</li>`;
+    html += `<li>Imports: horses (from Arabia/Central Asia), silk, porcelain, precious stones</li>`;
+    html += `<li><span class="hl-term">Karavansarais</span> (rest houses) built for traders</li>`;
+    html += `<li>New towns established: <span class="hl-place">Jaunpur, Hissar, Firuzabad</span></li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 6. SOCIETY & CULTURE =====
+    html += `<section id="society">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-users text-indigo-400"></i> 6. Society & Culture</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-people-group text-indigo-400 text-xs"></i> Social Structure</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Society was <span class="hl-term">divided on religious lines</span> — Muslims (ruling class) and Hindus (subjects)</li>`;
+    html += `<li>Muslim society: <span class="hl-term">Nobles (Umara)</span>, <span class="hl-term">Ulema (religious scholars)</span>, traders, artisans, slaves</li>`;
+    html += `<li>Hindu society: <span class="hl-term">Caste system</span> continued with Brahmins at top</li>`;
+    html += `<li>Urban population increased significantly</li>`;
+    html += `<li>Large number of <span class="hl-term">slaves</span> — domestic, military, administrative</li>`;
+    html += `<li>Firuz Shah Tughlaq had <span class="hl-num">180,000</span> slaves</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-book text-indigo-400 text-xs"></i> Language & Literature</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Persian</span> was the official language of administration</li>`;
+    html += `<li>Important Persian historians: <span class="hl-term">Minhaj-i-Siraj (Tabqat-i-Nasiri)</span>, <span class="hl-term">Ziauddin Barani (Tarikh-i-Firuz Shahi, Fatwa-i-Jahandari)</span>, <span class="hl-term">Amir Khusrau (Khazain-ul-Futuh, Tughlaq Nama)</span></li>`;
+    html += `<li><span class="hl-term">Amir Khusrau</span> was the <span class="hl-event">"father of Urdu literature"</span> and a disciple of Nizamuddin Auliya</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Sanskrit</span> works were translated into Persian</li>`;
+    html += `<li>Regional languages like <span class="hl-term">Braj, Awadhi, Maithili</span> developed</li>`;
+    html += `<li><span class="hl-term">Futuhat-i-Firuz Shahi</span> — autobiography of Firuz Shah Tughlaq</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Rihla</span> by Ibn Battuta — Moroccan traveller's account of India</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star-and-crescent text-indigo-400 text-xs"></i> Religious Life</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>State religion was <span class="hl-term">Islam</span> (Sunni)</li>`;
+    html += `<li><span class="hl-term">Sufi movement</span> flourished — <span class="hl-term">Nizamuddin Auliya (Chishti order)</span> in Delhi</li>`;
+    html += `<li><span class="hl-term">Bhakti movement</span> also grew — <span class="hl-term">Ramananda, Kabir, Guru Nanak</span></li>`;
+    html += `<li>Policy towards Hindus varied — Alauddin Khalji was strict, Firuz Shah discriminatory, Sikandar Lodi ordered temple destruction, but some Sultans were tolerant</li>`;
+    html += `<li><span class="hl-term">Jizya</span> was a major source of revenue from non-Muslims</li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 7. ARCHITECTURE =====
+    html += `<section id="architecture">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building text-rose-400"></i> 7. Architecture</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<p class="content-text">The Delhi Sultanate period saw the <span class="hl-event hl-bg-term">development of Indo-Islamic architecture</span> — a blend of Islamic (Persian, Central Asian) and Indian (Hindu, Jain) architectural traditions. Key features: <span class="hl-arch">arches, domes, minarets, calligraphy, geometric patterns</span>.</p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-archway text-rose-400 text-xs"></i> Mamluk / Slave Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Quwwat-ul-Islam Mosque</span> (Delhi) — built by <span class="hl-ruler">Qutb-ud-din Aibak</span>, first mosque in India; built using materials from <span class="hl-term">27 Hindu/Jain temples</span></li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Qutb Minar</span> (73m, 5 storeys) — started by Aibak, completed by <span class="hl-ruler">Iltutmish</span>; red sandstone; <span class="hl-term">UNESCO World Heritage Site</span></li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Adhai Din ka Jhonpra</span> (Ajmer) — built by Aibak; converted from a Sanskrit college</li>`;
+    html += `<li><span class="hl-arch">Iltutmish's Tomb</span> — first Indian building with a true dome</li>`;
+    html += `<li>Style: <span class="hl-term">Indo-Islamic (use of Hindu craftsmen, Islamic forms)</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-archway text-rose-400 text-xs"></i> Khalji Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Alai Darwaza</span> (built by <span class="hl-ruler">Alauddin Khalji</span>, 1311) — southern gateway of Quwwat-ul-Islam Mosque; first building with <span class="hl-term">true arch, dome, and Arabic calligraphy</span> in India; red sandstone & white marble</li>`;
+    html += `<li><span class="hl-arch">Siri Fort</span> — Alauddin's capital city (first city of Delhi built by Turks)</li>`;
+    html += `<li><span class="hl-arch">Hauz Khas</span> (water tank) — built for water supply</li>`;
+    html += `<li>Alauddin planned a <span class="hl-arch">second Qutb Minar</span> (twice as high) but never completed</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-archway text-rose-400 text-xs"></i> Tughlaq Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Tughlaqabad Fort</span> (built by Ghiyas-ud-din Tughlaq) — massive fortification, sloping walls (batter), battlements</li>`;
+    html += `<li>Style: <span class="hl-term hl-bg-term">austere, heavy, fortress-like</span> — less ornamentation, more military character</li>`;
+    html += `<li>Use of <span class="hl-term">grey stone + plaster (instead of red sandstone)</span></li>`;
+    html += `<li><span class="hl-arch">Firuzabad Kotla</span> — built by Firuz Shah Tughlaq</li>`;
+    html += `<li><span class="hl-arch">Jaunpur city</span> and <span class="hl-arch">Atala Mosque</span> — built under Firuz Shah</li>`;
+    html += `<li><span class="hl-arch">Ashoka pillars</span> brought from Topra & Meerut to Delhi by Firuz Shah</li>`;
+    html += `<li><span class="hl-arch">Begumpuri Mosque</span> in Jahanpanah</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-archway text-rose-400 text-xs"></i> Lodi Architecture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Lodi Gardens</span> (Delhi) — tombs of Muhammad Shah & Sikandar Lodi</li>`;
+    html += `<li><span class="hl-arch">Moth ki Masjid</span> (built by Sikandar Lodi's minister)</li>`;
+    html += `<li>Style: <span class="hl-term">double dome, octagonal tombs, more decorative</span> — bridge between Tughlaq and Mughal architecture</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-term hl-bg-arch">Indo-Islamic architecture</span> evolved through 3 stages: (1) <span class="hl-term">Mamluk/Khalji</span> — use of Hindu artisans, Islamic forms (Qutb Minar, Alai Darwaza); (2) <span class="hl-term">Tughlaq</span> — austere, military style; (3) <span class="hl-term">Lodi</span> — decorative elements, double dome, paving way for Mughal architecture (Humayun's Tomb, Taj Mahal).</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 8. MILITARY =====
+    html += `<section id="military">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-shield-halved text-orange-400"></i> 8. Military Organization</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li>Army consisted of: <span class="hl-term">cavalry</span> (backbone), <span class="hl-term">infantry</span>, <span class="hl-term">elephants</span></li>`;
+    html += `<li><span class="hl-term">Allauddin Khalji</span> introduced a <span class="hl-term hl-bg-term">permanent standing army</span> paid in cash</li>`;
+    html += `<li><span class="hl-term">Dag (branding of horses)</span> and <span class="hl-term">Chehra (descriptive roll)</span> — introduced by Alauddin Khalji to prevent corruption in army</li>`;
+    html += `<li><span class="hl-term">Ariz-i-Mumalik</span> — head of military department (Diwan-i-Arz)</li>`;
+    html += `<li><span class="hl-term">Iqta system</span> — military commanders (muqtis) collected revenue from assigned territories to maintain troops</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Mongol invasions</span> were a constant threat — Delhi Sultanate faced attacks from Genghis Khan's successors</li>`;
+    html += `<li><span class="hl-term hl-bg-battle">Alauddin Khalji</span> successfully repelled Mongol invasions on multiple occasions (Zafar Khan's victories, later Ghazi Malik)</li>`;
+    html += `<li>Arms: swords, bows & arrows, spears, battle-axes, maces, shields</li>`;
+    html += `<li>War elephants were used for shock value & breaking enemy formations</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point — Mongol Threat</div><div class="fact-box-content"><span class="hl-event">Mongol invasions</span> were a defining challenge for the Delhi Sultanate. <span class="hl-ruler">Alauddin Khalji</span> maintained a large standing army specifically to counter Mongol threats. His market reforms (low prices) were partly designed to support this large army. After Alauddin's death, Mongol pressure decreased but did not disappear entirely.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 9. TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 9. Complete Timeline</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "712 CE", event: "Muhammad bin Qasim conquers Sindh — first Muslim rule in India" },
+      { year: "1000-1027", event: "Mahmud of Ghazni's 17 invasions of India" },
+      { year: "1191", event: "First Battle of Tarain — Prithviraj Chauhan defeats Muhammad Ghori", battle: true },
+      { year: "1192", event: "Second Battle of Tarain — Muhammad Ghori defeats Prithviraj Chauhan", battle: true },
+      { year: "1194", event: "Battle of Chandawar — Ghori defeats Jayachandra of Kannauj", battle: true },
+      { year: "1206", event: "Death of Muhammad Ghori; Qutb-ud-din Aibak founds Mamluk (Slave) Dynasty", dyn: true },
+      { year: "1210", event: "Death of Qutb-ud-din Aibak (died playing polo)" },
+      { year: "1211-1236", event: "Reign of Iltutmish — greatest slave ruler; introduced silver tanka, completed Qutb Minar" },
+      { year: "1236-1240", event: "Reign of Razia Sultana — first & only woman ruler of Delhi" },
+      { year: "1241", event: "Mongols invade Punjab for the first time" },
+      { year: "1246-1266", event: "Reign of Nasir-ud-din Mahmud (Balban as de facto ruler)" },
+      { year: "1266-1286", event: "Reign of Balban — theory of kingship, sijda & paibos" },
+      { year: "1290", event: "Jalal-ud-din Khalji founds Khalji Dynasty", dyn: true },
+      { year: "1296-1316", event: "Reign of Alauddin Khalji — market reforms, Deccan conquests, Mongol defense" },
+      { year: "1303", event: "Alauddin Khalji conquers Chittor" },
+      { year: "1311", event: "Alai Darwaza built — first true arch & dome in India" },
+      { year: "1320", event: "Ghiyas-ud-din Tughlaq founds Tughlaq Dynasty", dyn: true },
+      { year: "1325-1351", event: "Reign of Muhammad bin Tughlaq — capital transfer, token currency, Diwan-i-Kohi" },
+      { year: "1333", event: "Ibn Battuta arrives in India" },
+      { year: "1336", event: "Founding of Vijayanagara Empire" },
+      { year: "1347", event: "Founding of Bahmani Sultanate (revolt against Tughlaqs)" },
+      { year: "1351-1388", event: "Reign of Firuz Shah Tughlaq — canals, charities, Diwan-i-Bandagan" },
+      { year: "1398", event: "Timur (Tamerlane) invades & sacks Delhi — Sultanate shattered", battle: true },
+      { year: "1414", event: "Khizr Khan founds Sayyid Dynasty", dyn: true },
+      { year: "1451", event: "Bahlul Lodi founds Lodi Dynasty", dyn: true },
+      { year: "1489-1517", event: "Reign of Sikandar Lodi — greatest Lodi ruler; built Agra" },
+      { year: "1526", event: "First Battle of Panipat — Babur defeats Ibrahim Lodi; END of Delhi Sultanate; BEGINNING of Mughal Empire", battle: true }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.battle) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30">⚔ Battle</span>';
+      if (t.dyn) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">👑 New Dynasty</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 10. DECLINE & LEGACY =====
+    html += `<section id="decline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-arrow-trend-down text-red-400"></i> 10. Decline & Legacy</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-triangle-exclamation text-red-400 text-xs"></i> Causes of Decline</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Timur's invasion (1398)</span> — Delhi was sacked, economy destroyed, administration collapsed</li>`;
+    html += `<li><span class="hl-term">Weak successors</span> after Firuz Shah Tughlaq</li>`;
+    html += `<li><span class="hl-term">Rebellions & loss of provinces</span> — Bengal, Deccan, Gujarat, Malwa became independent</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Iqta system breakdown</span> — governors became hereditary, central control weakened</li>`;
+    html += `<li><span class="hl-term">Nobility factions</span> — constant conflict between Turkish, Afghan, and Indian Muslim nobles</li>`;
+    html += `<li><span class="hl-term">Military weaknesses</span> — outdated technology, reliance on Afghan nobles</li>`;
+    html += `<li><span class="hl-term">Empty treasury</span> — expensive wars, loss of revenue from breakaway provinces</li>`;
+    html += `<li><span class="hl-term hl-bg-event">Invitation to Babur</span> — Daulat Khan Lodi and Rana Sanga invited Babur to counter Ibrahim Lodi's arrogance</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-award text-amber-400 text-xs"></i> Legacy of the Delhi Sultanate</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Indo-Islamic architecture</span> — synthesis of Indian & Islamic styles (Qutb Minar, Alai Darwaza, Tughlaqabad)</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Persian language & culture</span> — became official language, influenced Urdu, Hindi, regional languages</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Administrative system</span> — Iqta system, revenue collection, coinage (silver tanka) influenced Mughal administration</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Sufi & Bhakti movements</span> — both flourished during this period, shaping Indian religious traditions</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Economic integration</span> — North & South India brought under one rule for the first time since the Guptas</li>`;
+    html += `<li>The Sultanate's <span class="hl-term">administrative framework</span> became the model for <span class="hl-ruler">Akbar's</span> Mughal administration</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Sher Shah Suri</span> (who defeated Humayun) borrowed elements from Alauddin Khalji's administration and created the template for Akbar's policies</li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 11. UPSC KEY FACTS =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 11. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Fact Card 1
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-crown mr-1"></i> Dynasties & Duration</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-amber-300">Mamluk:</span> 1206-1290 (84 yrs) — Aibak, Iltutmish, Razia, Balban</li>`;
+    html += `<li><span class="text-blue-300">Khalji:</span> 1290-1320 (30 yrs) — Alauddin Khalji</li>`;
+    html += `<li><span class="text-emerald-300">Tughlaq:</span> 1320-1414 (94 yrs) — M. bin Tughlaq, Firuz Shah</li>`;
+    html += `<li><span class="text-purple-300">Sayyid:</span> 1414-1451 (37 yrs) — Khizr Khan</li>`;
+    html += `<li><span class="text-pink-300">Lodi:</span> 1451-1526 (75 yrs) — Sikandar Lodi, Ibrahim Lodi</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 2
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-coins mr-1"></i> Important Departments</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Wizarat:</span> Finance (Wazir)</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Arz:</span> Military (Ariz-i-Mumalik)</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Insha:</span> Correspondence</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Risalat:</span> Religious Affairs</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Kohi:</span> Agriculture (M. bin Tughlaq)</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Khairat:</span> Charity (Firuz Shah)</li>`;
+    html += `<li><span class="text-emerald-300">Diwan-i-Bandagan:</span> Slaves (Firuz Shah)</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 3
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-blue-500/20">`;
+    html += `<h4 class="text-sm font-bold text-blue-400 mb-2"><i class="fa-solid fa-gavel mr-1"></i> Important Travelers / Chroniclers</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-blue-300">Ibn Battuta:</span> Moroccan traveler (1333-1342) — <span class="text-slate-500">Rihla</span></li>`;
+    html += `<li><span class="text-blue-300">Minhaj-i-Siraj:</span> — <span class="text-slate-500">Tabqat-i-Nasiri</span> (on Razia Sultana)</li>`;
+    html += `<li><span class="text-blue-300">Ziauddin Barani:</span> — <span class="text-slate-500">Tarikh-i-Firuz Shahi, Fatwa-i-Jahandari</span></li>`;
+    html += `<li><span class="text-blue-300">Amir Khusrau:</span> — <span class="text-slate-500">Khazain-ul-Futuh, Tughlaq Nama</span></li>`;
+    html += `<li><span class="text-blue-300">Firuz Shah Tughlaq:</span> — <span class="text-slate-500">Futuhat-i-Firuz Shahi</span> (autobiography)</li>`;
+    html += `<li><span class="text-blue-300">Marco Polo:</span> Visited South India (Pandya kingdom) around 1292-93</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 4
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-landmark mr-1"></i> Key Architectural Monuments</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-rose-300">Qutb Minar</span> — Aibak started, Iltutmish completed</li>`;
+    html += `<li><span class="text-rose-300">Quwwat-ul-Islam Mosque</span> — Aibak</li>`;
+    html += `<li><span class="text-rose-300">Alai Darwaza</span> — Alauddin Khalji (true arch)</li>`;
+    html += `<li><span class="text-rose-300">Tughlaqabad Fort</span> — Ghiyas-ud-din Tughlaq</li>`;
+    html += `<li><span class="text-rose-300">Hauz Khas</span> — Alauddin Khalji</li>`;
+    html += `<li><span class="text-rose-300">Firuzabad Kotla</span> — Firuz Shah Tughlaq</li>`;
+    html += `<li><span class="text-rose-300">Lodi Gardens</span> — Lodi dynasty tombs</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 5
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-orange-500/20">`;
+    html += `<h4 class="text-sm font-bold text-orange-400 mb-2"><i class="fa-solid fa-sack-dollar mr-1"></i> Taxation System</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-orange-300">Kharaj:</span> Land tax (50% of produce)</li>`;
+    html += `<li><span class="text-orange-300">Jizya:</span> Tax on non-Muslims</li>`;
+    html += `<li><span class="text-orange-300">Zakat:</span> Wealth tax on Muslims (2.5%)</li>`;
+    html += `<li><span class="text-orange-300">Khams:</span> 1/5 of war booty for state</li>`;
+    html += `<li><span class="text-orange-300">Ijara:</span> Revenue farming (Firuz Shah)</li>`;
+    html += `<li><span class="text-orange-300">Dehliwal:</span> Coin of Tomara period</li>`;
+    html += `<li><span class="text-orange-300">Tanka/Jital:</span> Silver/copper coins (Iltutmish)</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 6
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-violet-500/20">`;
+    html += `<h4 class="text-sm font-bold text-violet-400 mb-2"><i class="fa-solid fa-bolt mr-1"></i> Important Battles</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">1191:</span> 1st Tarain — P. Chauhan beat Ghori</li>`;
+    html += `<li><span class="text-red-300">1192:</span> 2nd Tarain — Ghori beat P. Chauhan</li>`;
+    html += `<li><span class="text-red-300">1194:</span> Chandawar — Ghori beat Jayachandra</li>`;
+    html += `<li><span class="text-red-300">1299:</span> Kili — Alauddin vs Mongols</li>`;
+    html += `<li><span class="text-red-300">1526:</span> Panipat I — Babur beat Ibrahim Lodi</li>`;
+    html += `<li><span class="text-red-300">1539:</span> Chausa — Sher Shah beat Humayun</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `<span class="hl-ruler">Alauddin Khalji's market reforms</span>, <span class="hl-ruler">Muhammad bin Tughlaq's 5 experiments</span>, <span class="hl-ruler">Balban's theory of kingship</span>, <span class="hl-term">Iqta system</span>, <span class="hl-arch">Indo-Islamic architecture features</span>, <span class="hl-term">Mongol invasions of Delhi</span>, and the <span class="hl-term">traveller accounts (Ibn Battuta, Marco Polo)</span> are frequently asked topics. </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Delhi Sultanate UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 7 History (Our Pasts II) Chapter 3 & UPSC reference materials</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

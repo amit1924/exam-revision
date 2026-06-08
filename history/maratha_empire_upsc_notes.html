@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maratha Empire (1674-1818) — Zero to Advance — UPSC NCERT Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-arch { color: #f472b6; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .dynasty-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+</div>
+
+<script>
+  const DATA = {
+    title: "Maratha Empire (1674-1818): Rise, Zenith & Fall",
+    location: "NCERT Class 7-12 History, UPSC reference materials",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 7-10 History, UPSC reference materials",
+    chapters: [
+      { class: 7, chapter: 10, name: "Eighteenth-Century Political Formations", book: "Our Pasts II" },
+      { class: 8, chapter: 3, name: "The Rise of the Marathas", book: "Our Pasts III" },
+      { class: 10, chapter: 2, name: "From Trade to Territory", book: "India and the Contemporary World II" },
+      { class: 12, book: "Themes in Indian History", name: "Colonialism and the Countryside" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-chess-king text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>144 Years (1674-1818)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">1. Introduction & Origins</a>
+          <a href="#shivaji" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Chhatrapati Shivaji Maharaj</a>
+          <a href="#sambhaji" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Sambhaji (1680-1689)</a>
+          <a href="#rajaram" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Rajaram (1689-1700)</a>
+          <a href="#tarabai" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Tarabai's Regency</a>
+          <a href="#shahu" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Shahu vs Tarabai</a>
+          <a href="#peshwas" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Rise of the Peshwas</a>
+          <a href="#administration" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Maratha Administration</a>
+          <a href="#confederacy" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Maratha Confederacy</a>
+          <a href="#anglo-maratha" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Anglo-Maratha Wars</a>
+          <a href="#navy" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. Maratha Navy</a>
+          <a href="#culture" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Culture, Society & Economy</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Complete Timeline (1627-1818)</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. UPSC Key Facts at a Glance</a>
+        </div>
+      </div>`;
+
+    // ===== 1. INTRODUCTION & ORIGINS =====
+    html += `<section id="intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scroll text-amber-400"></i> 1. Introduction & Origins of the Marathas</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      The <span class="hl-dynasty hl-bg-dynasty">Marathas</span> are a group native to the <span class="hl-place hl-bg-place">Deccan plateau</span> (present-day <span class="hl-place">Maharashtra</span>). The <span class="hl-term">Marathi language</span> has a rich literary history since the <span class="hl-date">12th century</span>. In the <span class="hl-date">13th century</span>, the <span class="hl-dynasty hl-bg-dynasty">Yadava dynasty</span> ruled Maharashtra with <span class="hl-place">Devagiri (Daulatabad)</span> as capital. The early <span class="hl-date">14th century</span> saw the <span class="hl-dynasty hl-bg-dynasty">Khilji Sultanate</span> from Delhi defeat the Yadavas.
+    </p>`;
+    html += `<p class="content-text">
+      Despite political changes, cultural traditions continued through the <span class="hl-term">Bhakti movement</span>. Saints: <span class="hl-ruler">Dnyaneshwar</span> (<span class="hl-date">13th c.</span>), <span class="hl-ruler">Namdev</span> (<span class="hl-date">14th c.</span>), <span class="hl-ruler">Tukaram</span> (<span class="hl-date">17th c.</span>), <span class="hl-ruler">Ramdas</span> (<span class="hl-date">17th c.</span>) — made Upanishads and Gita accessible in Marathi. These saints promoted <span class="hl-term">spiritual devotion, social organisation, and political awareness</span>.
+    </p>`;
+    html += `<p class="content-text">
+      In the <span class="hl-date">17th century</span>, early attempts at Maratha sovereignty failed until <span class="hl-ruler hl-bg-ruler">Shivaji</span> emerged as a unifying leader who laid the foundation of Maratha power.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The <span class="hl-dynasty hl-bg-dynasty">Marathas</span> are discussed in NCER<span class="hl-term">T Class 7 Chapter 10</span> as a major post-Mughal power and in <span class="hl-term">NCERT Class 8 Chapter 3</span> with a dedicated chapter on <span class="hl-term hl-bg-term">"The Rise of the Marathas"</span>. Their story illustrates how local identities and <span class="hl-term">Bhakt</span>i movements shaped political consciousness.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. CHHATRAPATI SHIVAJI MAHARAJ =====
+    html += `<section id="shivaji">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 2. Chhatrapati Shivaji Maharaj (1630-1680)</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-person-military-pointing text-cyan-400 text-xs"></i> Early Life & Background</h3>`;
+    html += `<p class="content-text">
+      Born <span class="hl-date">1630</span> at <span class="hl-place">Shivneri Fort</span> to <span class="hl-ruler hl-bg-ruler">Shahji Bhonsle</span> and <span class="hl-ruler">Jijabai</span>. Family: <span class="hl-term">Bhonsle clan</span>; Shahji served Deccan Sultanate<span class="hl-term">s (Ahmednagar, then Bijapur)</span>. Shahji obtained <span class="hl-place">Poona</span> as <span class="hl-term">jagir in 1636</span>. Shivaji was raised in Pune under <span class="hl-ruler">Jijabai's</span> guidance and <span class="hl-ruler">Dadaji Kondadev's</span> guardianship. He assumed full charge of the jagir in <span class="hl-date">1647</span> after Dadaji Kondadev's death.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-bullseye text-cyan-400 text-xs"></i> Vision: Hindavi Swarajya</h3>`;
+    html += `<p class="content-text">
+      Shivaji's vision was <span class="hl-term hl-bg-term">Hindavi Swarajya</span> — self-rule of the people, establishing a sovereign state free from foreign domination.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Early Conquests (1646-1656)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Captured fort <span class="hl-place hl-bg-place">Torana</span> (<span class="hl-date">1646</span>) — first major conquest</li>`;
+    html += `<li>Captured <span class="hl-place">Raigarh</span>, <span class="hl-place">Kondana</span>, <span class="hl-place">Purandhar</span> from Bijapur</li>`;
+    html += `<li>Captured <span class="hl-place">Javli</span> from <span class="hl-ruler">Chandra Rao More</span> (<span class="hl-date">1656</span>) — eliminated rival Maratha chief</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Major Battles</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Pratapgarh (1659)</span>: <span class="hl-event">Killed Afzal Khan</span> (Bijapur general sent by Adil Shah II) — a turning point. Shivaji used <span class="hl-term">guerrilla tactics (ganimi kawa)</span> and a hidden dagger (wagh nakh)</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Kolhapur (1659)</span>: Defeated <span class="hl-ruler">Rustemjaman</span> (Bijapur)</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Pavankhind (1660)</span>: <span class="hl-ruler">Siddi Johar</span> vs Shivaji; ceasefire negotiated after Maratha rear-guard heroics by <span class="hl-term">Baji Prabhu Deshpande</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-fire text-cyan-400 text-xs"></i> Conflict with Mughals</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Shaista Khan</span> appointed Governor of Deccan (<span class="hl-date">1660</span>) by <span class="hl-ruler">Aurangzeb</span></li>`;
+    html += `<li><span class="hl-event hl-bg-event">Shivaji attacked Shaista Khan's camp (1663)</span> — Khan fled, lost his fingers; a humiliating blow to Mughal prestige</li>`;
+    html += `<li>Plundered <span class="hl-place">Surat</span> (<span class="hl-date">1664</span>, <span class="hl-date">1670</span>) and <span class="hl-place">Ahmednagar</span></li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Treaty of Purandhar (1665)</span>: with <span class="hl-ruler">Mirza Raja Jai Singh</span>; Shivaji surrendered <span class="hl-num">23</span> forts, kept <span class="hl-num">12</span></li>`;
+    html += `<li><span class="hl-event hl-bg-event">Visited Agra (1666)</span> — Aurangzeb insulted him (given low mansab); Shivaji <span class="hl-term">escaped from captivity</span> in fruit baskets</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crown text-cyan-400 text-xs"></i> Coronation (1674)</h3>`;
+    html += `<p class="content-text">
+      Crowned <span class="hl-ruler hl-bg-ruler">Chhatrapati</span> at <span class="hl-place">Raigad Fort</span> with <span class="hl-term">Vedic rituals</span>. Titles: <span class="hl-term">Haindava Dharma-Dharak</span> (Protector of Hinduism), <span class="hl-term">Chhatrapati</span>, <span class="hl-term">Shakakarta</span>. <span class="hl-place">Raigad</span> became capital.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-globe text-cyan-400 text-xs"></i> Later Conquests</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-event">Dakshina Digvijaya (1677)</span> — southern campaign conquering <span class="hl-place">Gingee</span>, <span class="hl-place">Vellore</span>, <span class="hl-place">Tanjore</span>. Died <span class="hl-date">1680</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-shield-halved text-cyan-400 text-xs"></i> Military Innovations</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Guerrilla warfare (ganimi kawa)</span> — hit-and-run tactics suited to the hilly terrain</li>`;
+    html += `<li><span class="hl-arch">Hill forts</span> — core of Maratha defence strategy; many forts captured and fortified</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Navy</span> — founded in <span class="hl-date">1657</span> to protect Konkan coast from Siddis, Portuguese, and British</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-users text-cyan-400 text-xs"></i> Ashtapradhan (Eight Ministers)</h3>`;
+    html += `<p class="content-text">The council of eight ministers that administered the Maratha state:</p>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>#</th><th>Minister</th><th>Role</th></tr></thead><tbody>`;
+    html += `<tr><td>1</td><td><span class="hl-term hl-bg-term">Peshwa</span></td><td>Prime Minister — head of administration</td></tr>`;
+    html += `<tr><td>2</td><td><span class="hl-term hl-bg-term">Amatya</span></td><td>Finance & Accounts</td></tr>`;
+    html += `<tr><td>3</td><td><span class="hl-term hl-bg-term">Mantri</span></td><td>Records & Documentation</td></tr>`;
+    html += `<tr><td>4</td><td><span class="hl-term hl-bg-term">Sachiv</span></td><td>Correspondence & Royal Secretariat</td></tr>`;
+    html += `<tr><td>5</td><td><span class="hl-term hl-bg-term">Samant</span></td><td>Foreign Affairs</td></tr>`;
+    html += `<tr><td>6</td><td><span class="hl-term hl-bg-term">Senapati</span></td><td>Military Commander</td></tr>`;
+    html += `<tr><td>7</td><td><span class="hl-term hl-bg-term">Pandit</span></td><td>Religious Affairs</td></tr>`;
+    html += `<tr><td>8</td><td><span class="hl-term hl-bg-term">Nyayadhish</span></td><td>Chief Justice</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-coins text-cyan-400 text-xs"></i> Revenue System</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-policy hl-bg-policy">Chauth</span> — <span class="hl-num">1/4</span> (25%) of revenue collected from enemy territory as "protection fee"</li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Sardeshmukhi</span> — <span class="hl-num">1/10</span> (10%) additional levy as hereditary headship fee</li>`;
+    html += `<li><span class="hl-term">Land revenue ~30-40% of produce</span> — collected through efficient administration</li>`;
+    html += `<li><span class="hl-term">Forts</span> core of Maratha state; each fort had a <span class="hl-term">Killedar</span> (fort commander)</li>`;
+    html += `<li><span class="hl-term">Navy</span> under <span class="hl-ruler hl-bg-ruler">Kanhoji Angre</span> — protected Konkan coast</li>`;
+    html += `</ul>`;
+
+    html += `<p class="content-text">
+      Shivaji promoted <span class="hl-term">Marathi language</span> (replaced Persian in court) and maintained a simple, efficient administration.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Shivaji</span> is one of the most important figures in Indian history. He established the <span class="hl-term">first indigenous sovereign state</span> in the Deccan since the Yadavas. Key innovations: <span class="hl-term hl-bg-term">Ashtapradhan</span>, <span class="hl-policy">Chauth & Sardeshmukhi</span>, <span class="hl-term">guerrilla warfare</span>, and <span class="hl-term">Naval defence</span>. His coronation in <span class="hl-date">1674</span> marked the formal beginning of the <span class="hl-dynasty">Maratha Empire</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 3. SAMBHAJI =====
+    html += `<section id="sambhaji">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 3. Sambhaji (1680-1689)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Sambhaji</span> was the elder son of <span class="hl-ruler">Shivaji</span>. He fought the Mughals continuously and allied with the <span class="hl-term">Portuguese</span> and <span class="hl-term">Golconda</span>. He was <span class="hl-event">captured by Mughals at Sangameshwar (1689)</span> through treachery by his own relatives.
+    </p>`;
+    html += `<p class="content-text">
+      <span class="hl-event hl-bg-event">Executed by Aurangzeb</span> — tortured for months but <span class="hl-term">refused to convert to Islam</span>. Died as a <span class="hl-term">martyr</span>. His execution strengthened Maratha resistance.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Sambhaji's</span> brutal execution by <span class="hl-ruler">Aurangzeb</span> was a <span class="hl-event hl-bg-event">grave miscalculation</span> — it turned the Marathas from a regional power into a <span class="hl-term">nationwide resistance movement</span> against the Mughals.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 4. RAJARAM =====
+    html += `<section id="rajaram">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 4. Rajaram (1689-1700)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Rajaram</span> was the younger son of <span class="hl-ruler">Shivaji</span>. The capital was shifted to <span class="hl-place">Gingee Fort</span> (<span class="hl-place">Tamil Nadu</span>) for strategic defence against the Mughals.
+    </p>`;
+    html += `<p class="content-text">
+      His generals <span class="hl-ruler hl-bg-ruler">Santaji Ghorpade</span> and <span class="hl-ruler hl-bg-ruler">Dhanaji Jadhav</span> led brilliant <span class="hl-term">guerrilla campaigns</span> across the Deccan. The Mughals occupied <span class="hl-place">Raigad</span> but the Marathas remained unconquered. Rajaram died in <span class="hl-date">1700</span>.
+    </p>`;
+    html += `</div></section>`;
+
+    // ===== 5. TARABAI'S REGENCY =====
+    html += `<section id="tarabai">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 5. Tarabai's Regency (1700-1707)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Tarabai</span>, Rajaram's wife, acted as regent for her minor son <span class="hl-ruler">Shivaji II</span>. A <span class="hl-term">skilled leader</span>, she coordinated Maratha resistance against the Mughals.
+    </p>`;
+    html += `<p class="content-text">
+      By the time of <span class="hl-ruler">Aurangzeb's</span> death in <span class="hl-date">1707</span>, the Mughals were <span class="hl-event">completely exhausted</span> after <span class="hl-num">20+</span> years of war. They <span class="hl-event">failed to crush the Marathas</span> despite deploying the full might of the empire. This was a <span class="hl-term hl-bg-term">decisive turning point</span> — the Marathas emerged as the <span class="hl-event">dominant power in the Deccan</span>.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Tarabai</span> was one of the <span class="hl-term">earliest female rulers in Indian history</span> to lead military resistance. Her regency <span class="hl-event">saved the Maratha nation</span> from extinction during its darkest hour.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 6. SHAHU VS TARABAI =====
+    html += `<section id="shahu">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 6. Shahu vs Tarabai (1707-1714)</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-orange-500/20">`;
+    html += `<p class="content-text">
+      After <span class="hl-ruler">Aurangzeb's</span> death (<span class="hl-date">1707</span>), the Mughals released <span class="hl-ruler hl-bg-ruler">Shahu</span> (Sambhaji's son) to <span class="hl-term">weaken the Marathas</span> by creating internal division.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Khed (1707)</span>: Shahu defeated Tarabai</li>`;
+    html += `<li>Maratha <span class="hl-event">civil war</span> ensued — Shahu at <span class="hl-place">Satara</span>, Tarabai at <span class="hl-place">Kolhapur</span></li>`;
+    html += `<li><span class="hl-date">1714</span>: <span class="hl-ruler">Balaji Vishwanath</span> became <span class="hl-term">Peshwa</span> under Shahu — <span class="hl-event hl-bg-event">reorganised Maratha polity</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The Mughal policy of <span class="hl-term hl-bg-term">"divide and rule"</span> — releasing Shahu to create a Maratha civil war — temporarily succeeded but ultimately backfired. The <span class="hl-term">Peshwa system</span> that emerged from this chaos <span class="hl-event">transformed the Marathas into an all-India power</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 7. RISE OF THE PESHWAS =====
+    html += `<section id="peshwas">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chess-queen text-amber-400"></i> 7. Rise of the Peshwas (1713-1818)</h2>`;
+
+    // --- Balaji Vishwanath ---
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Balaji Vishwanath (1713-1720) — First Peshwa</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Appointed <span class="hl-term">Peshwa</span> by <span class="hl-ruler">Shahu</span> in <span class="hl-date">1713</span></li>`;
+    html += `<li>Reorganised administration and negotiated alliances with Maratha <span class="hl-term">sardars</span></li>`;
+    html += `<li><span class="hl-date">1719</span>: Marathas supported the <span class="hl-term">Sayyid Brothers</span> in Delhi — secured <span class="hl-policy hl-bg-policy">farmans granting Chauth and Sardeshmukhi</span> from <span class="hl-num">6</span> Mughal Deccan provinces</li>`;
+    html += `<li>Died <span class="hl-date">1720</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Balaji Vishwanath</span> laid the foundation of the <span class="hl-term">Peshwa system</span> — where the Peshwa became the <span class="hl-event">de facto ruler</span> while the Chhatrapati remained a <span class="hl-term">ceremonial head</span>. The <span class="hl-date">1719</span> farmans gave <span class="hl-term">legal sanction</span> to Maratha revenue collection in the Deccan.</div></div>`;
+    html += `</div>`;
+
+    // --- Baji Rao I ---
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Baji Rao I (1720-1740) — The Great Expansion</h3>`;
+    html += `<p class="content-text">
+      Known as <span class="hl-term hl-bg-term">"Shrimant Baji Rao"</span> — one of the greatest cavalry generals in Indian history. His famous strategic vision: <span class="hl-term">"Strike at the roots and the tree will fall"</span> — advocating hitting the Mughal core rather than peripheral territories.
+    </p>`;
+    html += `<p class="content-text">
+      <span class="hl-event">Never lost a battle</span> in a <span class="hl-num">20</span>-year career, fighting <span class="hl-num">40+</span> battles.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Palkhed (1728)</span>: Defeated <span class="hl-ruler">Nizam-ul-Mulk</span> with swift cavalry tactics — a masterpiece of military strategy</li>`;
+    html += `<li><span class="hl-event">Malwa campaign (1728-1738)</span>: Conquered <span class="hl-place">Malwa</span> from the Mughals</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Bhopal (1737)</span>: Defeated the Mughal-Nizam-Rajput coalition</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Delhi (1737)</span>: Raided the Mughal capital — a <span class="hl-event hl-bg-event">psychological blow</span> to Mughal prestige</li>`;
+    html += `<li>Maratha presence extended to <span class="hl-place">Gujarat</span>, <span class="hl-place">Bundelkhand</span>, and the outskirts of <span class="hl-place">Delhi</span></li>`;
+    html += `<li>Outcome: Mughal emperor <span class="hl-event">ceded Malwa</span> and paid <span class="hl-num">5 million rupees</span> indemnity</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Baji Rao I</span> is considered the <span class="hl-term">greatest Peshwa</span> and one of the finest cavalry generals in world history. His <span class="hl-term">lightning cavalry campaigns</span> shattered the Mughal Empire and <span class="hl-event">extended Maratha power from the Deccan to the Indus</span>. He reportedly said: <span class="hl-term">"Let us strike at the trunk of the withering tree and the branches will fall of themselves."</span></div></div>`;
+    html += `</div>`;
+
+    // --- Balaji Baji Rao (Nanasaheb) ---
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Balaji Baji Rao (Nanasaheb) (1740-1761)</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Balaji Baji Rao (Nanasaheb)</span>, eldest son of Baji Rao I, was an able administrator but his reign was marked by <span class="hl-event">military failures</span> — most catastrophically at <span class="hl-battle hl-bg-battle">Panipat</span>.
+    </p>`;
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-skull text-red-400 text-xs"></i> Third Battle of Panipat (1761)</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought on <span class="hl-date">14 January 1761</span> between the <span class="hl-term">Marathas</span> and <span class="hl-ruler">Ahmad Shah Abdali (Durrani)</span></li>`;
+    html += `<li>Maratha army of ~<span class="hl-num">100,000</span> was <span class="hl-event hl-bg-event">almost completely destroyed</span></li>`;
+    html += `<li>Key Maratha chiefs killed: <span class="hl-ruler">Sadashivrao Bhau</span> (commander), <span class="hl-ruler">Vishwasrao</span> (Peshwa's son)</li>`;
+    html += `<li><span class="hl-event">End of Maratha expansion northward</span> — a devastating blow</li>`;
+    html += `<li>Peshwa <span class="hl-ruler">Nanasaheb</span> died from the shock of hearing the news</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Third Battle of Panipat (1761)</span> was one of the <span class="hl-term">bloodiest battles of the 18th century</span>. It <span class="hl-event">shattered Maratha power</span> temporarily, but they recovered within a decade. This battle <span class="hl-term">opened the way for British expansion</span> by weakening both Marathas and Afghans.</div></div>`;
+    html += `</div>`;
+
+    // --- Madhavrao I ---
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Madhavrao I (1761-1772)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Restored Maratha power after the <span class="hl-battle">Panipat</span> disaster — remarkable recovery</li>`;
+    html += `<li>Defeated the <span class="hl-ruler">Nizam</span> at <span class="hl-battle hl-bg-battle">Battle of Rakshasbhuvan (1763)</span></li>`;
+    html += `<li>Recovered lost territories in North India and the Deccan</li>`;
+    html += `<li>Died young (<span class="hl-date">1772</span>) — a <span class="hl-event">great loss for the Marathas</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Madhavrao I</span> showed remarkable <span class="hl-term">resilience and administrative ability</span> in restoring the Maratha state after the <span class="hl-battle hl-bg-battle">Panipat</span> catastrophe. His early death was a <span class="hl-event">major setback</span> for Maratha unity.</div></div>`;
+    html += `</div>`;
+
+    // --- Narayanrao ---
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Narayanrao (1772-1773)</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler">Narayanrao</span>, younger son of Nanasaheb, was <span class="hl-event hl-bg-event">assassinated by his uncle Raghunathrao (Raghoba)</span> in <span class="hl-date">1773</span> — plunging the Maratha state into <span class="hl-term">internal conflict</span>.
+    </p>`;
+    html += `</div>`;
+
+    // --- Madhavrao II ---
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Madhavrao II (1774-1795) — Regent Period</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Posthumous son of Narayanrao — <span class="hl-ruler hl-bg-ruler">Nana Phadnavis</span> served as <span class="hl-term">regent</span></li>`;
+    html += `<li><span class="hl-term">Maratha Confederacy</span> reached its peak: <span class="hl-term">Scindia</span> (Gwalior), <span class="hl-term">Holkar</span> (Indore), <span class="hl-term">Gaekwad</span> (Baroda), <span class="hl-term">Bhonsle</span> (Nagpur)</li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Treaty of Salbai (1782)</span> ended the <span class="hl-term">First Anglo-Maratha War</span></li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // --- Baji Rao II ---
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Baji Rao II (1796-1818) — Last Peshwa</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-event">Defeated by Holkar (1802)</span> — forced to flee Pune</li>`;
+    html += `<li>Signed the infamous <span class="hl-policy hl-bg-policy">Treaty of Bassein (1802)</span> with the British — became a <span class="hl-term">subsidiary ally</span></li>`;
+    html += `<li>This treaty led to the <span class="hl-term">Second and Third Anglo-Maratha Wars</span></li>`;
+    html += `<li><span class="hl-event hl-bg-event">Surrendered to the British in 1818</span> — the Maratha Empire ended</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-policy hl-bg-policy">Treaty of Bassein (1802)</span> was the <span class="hl-term">death knell of the Maratha Empire</span>. By accepting subsidiary alliance, <span class="hl-ruler">Baji Rao II</span> compromised Maratha sovereignty and <span class="hl-event">triggered the chain of events</span> that led to British domination of India.</div></div>`;
+    html += `</div>`;
+
+    html += `</section>`;
+
+    // ===== 8. MARATHA ADMINISTRATION =====
+    html += `<section id="administration">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building-columns text-emerald-400"></i> 8. Maratha Administration</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-users mr-1"></i> Central Administration</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The <span class="hl-term">Ashtapradhan Council</span> (8 ministers) headed by the <span class="hl-term">Peshwa</span>. Under <span class="hl-ruler">Shahu</span>, the Peshwa became <span class="hl-event">hereditary</span> and the <span class="hl-term">de facto ruler</span>. The <span class="hl-ruler">Chhatrapati</span> became a ceremonial figurehead.</p></div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-map mr-1"></i> Provincial Administration</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Provinces called <span class="hl-term">Subas</span> under <span class="hl-term">Subedars</span>. Lower units: <span class="hl-term">Tarfs</span> under <span class="hl-term">Havaldars</span>. <span class="hl-term">Deshmukhs</span> and <span class="hl-term">Patils</span> handled local administration at village level.</p></div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-coins mr-1"></i> Revenue System</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Land revenue ~<span class="hl-num">30-40%</span> of produce. <span class="hl-policy">Chauth</span> (<span class="hl-num">1/4</span>) and <span class="hl-policy">Sardeshmukhi</span> (<span class="hl-num">1/10</span>) were the main levies on neighbouring/enemy territories. Efficient assessment and collection.</p></div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-shield mr-1"></i> Military System</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Cavalry: <span class="hl-term">Silhedar</span> (own equipment) and <span class="hl-term">Bargir</span> (state-provided) systems. <span class="hl-term">Fort administration</span> — each fort under a <span class="hl-term">Killedar</span>. <span class="hl-term">Navy</span> under <span class="hl-ruler">Kanhoji Angre</span> protected Konkan coast.</p></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The Maratha administration under <span class="hl-ruler">Shivaji</span> was <span class="hl-term">simple, efficient, and people-oriented</span>. It used <span class="hl-term">Marathi in courts</span> (replacing Persian), had a <span class="hl-term">well-organised revenue system (Chauth & Sardeshmukhi)</span>, and maintained a <span class="hl-term">strong military with forts and navy</span>. The shift to hereditary Peshwaship transformed the nature of the state.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 9. MARATHA CONFEDERACY =====
+    html += `<section id="confederacy">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-handshake text-amber-400"></i> 9. Maratha Confederacy (1720-1818)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      The Maratha Confederacy was a <span class="hl-term">loose federation of powerful Maratha chiefs</span> under the nominal leadership of the <span class="hl-term">Peshwa</span>. These chiefs had their own territories and armies but <span class="hl-event">acknowledged Peshwa's suzerainty</span>.
+    </p>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>House</th><th>Capital</th><th>Founder</th><th>Key Rulers / Notes</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-dynasty hl-bg-dynasty">Scindia</span></td><td><span class="hl-place">Gwalior</span></td><td><span class="hl-ruler">Ranoji Scindia</span></td><td><span class="hl-ruler">Mahadji Scindia</span> (greatest — restored Mughal Emperor Shah Alam II, <span class="hl-date">1771</span>), <span class="hl-ruler">Daulat Rao Scindia</span> (fought British)</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty hl-bg-dynasty">Holkar</span></td><td><span class="hl-place">Indore</span></td><td><span class="hl-ruler">Malhar Rao Holkar</span></td><td><span class="hl-ruler">Ahilyabai Holkar</span> (one of India's greatest female rulers, <span class="hl-date">1767-1795</span>), <span class="hl-ruler">Tukoji Holkar</span>, <span class="hl-ruler">Yashwantrao Holkar</span></td></tr>`;
+    html += `<tr><td><span class="hl-dynasty hl-bg-dynasty">Gaekwad</span></td><td><span class="hl-place">Baroda</span></td><td><span class="hl-ruler">Pilaji Gaekwad</span></td><td><span class="hl-ruler">Sayaji Rao Gaekwad</span> (later became prominent); ruled Baroda until independence</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty hl-bg-dynasty">Bhonsle</span></td><td><span class="hl-place">Nagpur</span></td><td><span class="hl-ruler">Raghuji Bhonsle</span></td><td>Controlled Berar and parts of Central India; fought in Anglo-Maratha Wars</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<p class="content-text mt-3">
+      These chiefs became <span class="hl-event">semi-independent powers</span> by the late <span class="hl-date">18th century</span>. They often <span class="hl-term">fought among themselves</span>, which the British exploited through <span class="hl-term">divide and rule</span>.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">Maratha Confederacy</span> was both a <span class="hl-event">strength and weakness</span>. It allowed rapid expansion but the <span class="hl-term">lack of central cohesion</span> and <span class="hl-event">internal rivalries</span> (Scindia vs Holkar) made it vulnerable to British manipulation.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 10. ANGLO-MARATHA WARS =====
+    html += `<section id="anglo-maratha">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crossed-swords text-red-400"></i> 10. Anglo-Maratha Wars</h2>`;
+
+    // First
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-1 text-cyan-400 text-xs"></i> First Anglo-Maratha War (1775-1782)</h3>`;
+    html += `<p class="content-text"><span class="hl-event">Cause</span>: British supported <span class="hl-ruler">Raghunathrao (Raghoba)</span> against Peshwa <span class="hl-ruler">Madhavrao II</span></p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-policy hl-bg-policy">Treaty of Surat (1775)</span>: Raghunathrao ceded <span class="hl-place">Salsette & Bassein</span> to British</li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Treaty of Purandhar (1776)</span>: annulled Treaty of Surat</li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Wadgaon (1779)</span>: Marathas under <span class="hl-ruler">Mahadji Scindia</span> <span class="hl-event">decisively defeated the British</span></li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Treaty of Salbai (1782)</span>: <span class="hl-term">status quo restored</span>; British retained Salsette</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Battle of Wadgaon (1779)</span> was the <span class="hl-term">first significant British defeat in India</span> at Indian hands. The <span class="hl-policy hl-bg-policy">Treaty of Salbai (1782)</span> gave the Marathas <span class="hl-num">20</span> years of peace, during which they <span class="hl-event">failed to consolidate</span> while the British grew stronger.</div></div>`;
+    html += `</div>`;
+
+    // Second
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-2 text-cyan-400 text-xs"></i> Second Anglo-Maratha War (1803-1805)</h3>`;
+    html += `<p class="content-text"><span class="hl-event">Cause</span>: Peshwa <span class="hl-ruler">Baji Rao II</span> signed the <span class="hl-policy hl-bg-policy">Treaty of Bassein (1802)</span> with British — a <span class="hl-term">subsidiary alliance</span></p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Maratha chiefs <span class="hl-term">Scindia and Bhonsle</span> opposed the treaty; war followed</li>`;
+    html += `<li>British victories: <span class="hl-battle hl-bg-battle">Laswari (1803)</span>, <span class="hl-battle hl-bg-battle">Assaye (1803)</span> — the latter won by <span class="hl-ruler">Arthur Wellesley</span> (future Duke of Wellington)</li>`;
+    html += `<li><span class="hl-place">Delhi</span> captured by British; <span class="hl-ruler">Shah Alam II</span> became a British pensioner</li>`;
+    html += `<li><span class="hl-ruler">Holkar</span> fought back but was eventually defeated; <span class="hl-policy hl-bg-policy">Treaty of Rajghat (1805)</span></li>`;
+    html += `<li>Outcome: <span class="hl-event">Scindia and Bhonsle lost significant territories</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Battle of Assaye (1803)</span> was <span class="hl-ruler">Arthur Wellesley's</span> greatest victory in India. The <span class="hl-policy hl-bg-policy">Treaty of Bassein (1802)</span> proved to be the <span class="hl-term hl-bg-term">most disastrous treaty for the Marathas</span> — it gave the British a <span class="hl-event">foothold in Maratha internal affairs</span> and led to the subjugation of all Maratha chiefs.</div></div>`;
+    html += `</div>`;
+
+    // Third
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-3 text-cyan-400 text-xs"></i> Third Anglo-Maratha War (1817-1819)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Peshwa <span class="hl-ruler">Baji Rao II</span> attacked the British residency at <span class="hl-place">Poona (Pune)</span> in <span class="hl-date">1817</span></li>`;
+    html += `<li>British defeated the Peshwa at <span class="hl-battle">Khadki (Kirkee)</span> and <span class="hl-battle">Koregaon (1818)</span></li>`;
+    html += `<li>Maratha chiefs <span class="hl-term">Scindia, Holkar, Bhonsle</span> defeated one by one</li>`;
+    html += `<li><span class="hl-event hl-bg-event">Baji Rao II surrendered (1818)</span>; Peshwaship abolished</li>`;
+    html += `<li><span class="hl-dynasty hl-bg-dynasty">Maratha Empire dissolved</span> and annexed to British India</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">Third Anglo-Maratha War (1817-1819)</span> marked the <span class="hl-event hl-bg-event">final end of the Maratha Empire</span>. With the abolition of the Peshwaship, the British became the <span class="hl-term">undisputed masters of India</span>. The Maratha territories were incorporated into the <span class="hl-term">Bombay Presidency</span>.</div></div>`;
+    html += `</div>`;
+    html += `</section>`;
+
+    // ===== 11. MARATHA NAVY =====
+    html += `<section id="navy">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-ship text-cyan-400"></i> 11. Maratha Navy</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-cyan-500/20">`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Shivaji</span> in <span class="hl-date">1657</span> to protect the <span class="hl-place">Konkan coast</span></li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Kanhoji Angre</span> (<span class="hl-date">1698-1729</span>) was the greatest Maratha naval commander — known as the <span class="hl-term">"Shivaji of the Sea"</span></li>`;
+    html += `<li><span class="hl-ruler">Kanhoji Angre</span> kept European powers (<span class="hl-term">British, Portuguese, Dutch</span>) in check along the Konkan coast, attacking their ships and ports</li>`;
+    html += `<li>The Maratha navy <span class="hl-event">declined after Kanhoji Angre's death</span> in <span class="hl-date">1729</span></li>`;
+    html += `<li>Naval bases: <span class="hl-place">Suvarnadurg</span>, <span class="hl-place">Vijaydurg</span>, <span class="hl-place">Kolaba</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">Maratha Navy</span> was one of the <span class="hl-term">few Indian powers to develop a naval capability</span> in the early modern period. <span class="hl-ruler">Shivaji</span> recognised the importance of <span class="hl-term">sea power</span> for protecting trade and coastline, but the navy declined after <span class="hl-ruler">Kanhoji Angre</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 12. CULTURE, SOCIETY & ECONOMY =====
+    html += `<section id="culture">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-palette text-pink-400"></i> 12. Culture, Society & Economy</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-language mr-1"></i> Language & Literature</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed"><span class="hl-term">Marathi</span> promoted in courts and administration, replacing Persian. Literature: <span class="hl-term hl-bg-term">Adnyapatra</span> by <span class="hl-ruler">Ramachandrapant Amatya</span> (<span class="hl-date">1715</span>) — a key administrative treatise. Rich tradition of <span class="hl-term">Bhakti poetry</span> — <span class="hl-ruler">Tukaram's</span> abhangs.</p></div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-church mr-1"></i> Religion & Architecture</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Temple restoration: <span class="hl-arch">Saptakoteshwar Temple (Goa)</span>, etc. <span class="hl-term">Shivaji</span> positioned himself as a <span class="hl-term">defender of Hinduism</span> against Muslim rule. Fort architecture reached new heights — <span class="hl-place">Raigad</span>, <span class="hl-place">Pratapgad</span>, <span class="hl-place">Sinhagad</span> were major forts.</p></div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-store mr-1"></i> Economy & Society</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Agriculture was the <span class="hl-term">primary occupation</span>. Trade through <span class="hl-place">Konkan coast</span> ports — textiles, spices. Social structure: <span class="hl-term">Deshmukhs</span> (district heads), <span class="hl-term">Patils</span> (village heads), <span class="hl-term">Kunbis</span> (farmers), <span class="hl-term">Brahmins</span> (priests/administrators).</p></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="fact-box mt-3"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">Bhakti movement</span> was the <span class="hl-term">cultural backbone</span> of Maratha identity. Saints like <span class="hl-ruler">Tukaram</span> and <span class="hl-ruler">Ramdas</span> provided <span class="hl-term">spiritual and moral guidance</span> to the Maratha struggle. <span class="hl-term">Marathi language</span> flourished and <span class="hl-term">fort architecture</span> became a defining feature of Maratha culture.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 13. COMPLETE TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 13. Complete Timeline (1627-1818)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "1627/1630", event: "Shivaji born at Shivneri Fort to Shahji Bhonsle and Jijabai", dyn: true },
+      { year: "1646", event: "Capture of Torana fort — first major conquest by Shivaji" },
+      { year: "1656", event: "Capture of Javli from Chandra Rao More" },
+      { year: "1657", event: "Founding of the Maratha Navy by Shivaji" },
+      { year: "1659", event: "Battle of Pratapgarh — Afzal Khan killed by Shivaji", battle: true },
+      { year: "1659", event: "Battle of Kolhapur — Shivaji defeats Rustemjaman", battle: true },
+      { year: "1660", event: "Battle of Pavankhind — Baji Prabhu Deshpande's heroic rear-guard action", battle: true },
+      { year: "1663", event: "Shivaji attacks Shaista Khan's camp in Pune — Khan flees" },
+      { year: "1664", event: "First sack of Surat by Shivaji" },
+      { year: "1665", event: "Treaty of Purandhar — Shivaji surrenders 23 forts to Mirza Raja Jai Singh", dyn: true },
+      { year: "1666", event: "Shivaji visits Agra; insulted by Aurangzeb; escapes captivity" },
+      { year: "1670", event: "Second sack of Surat by Shivaji" },
+      { year: "1674", event: "Shivaji crowned Chhatrapati at Raigad Fort — formal beginning of Maratha Empire", dyn: true },
+      { year: "1677", event: "Dakshina Digvijaya — Shivaji's southern campaign (Gingee, Vellore, Tanjore)" },
+      { year: "1680", event: "Death of Shivaji at Raigad" },
+      { year: "1680-1689", event: "Reign of Sambhaji — continuous warfare with Mughals" },
+      { year: "1689", event: "Sambhaji captured at Sangameshwar and executed by Aurangzeb", battle: true },
+      { year: "1689-1700", event: "Reign of Rajaram; capital shifted to Gingee Fort" },
+      { year: "1700-1707", event: "Tarabai's regency; Marathas resist Mughal onslaught" },
+      { year: "1707", event: "Death of Aurangzeb; Shahu released by Mughals to divide Marathas", dyn: true },
+      { year: "1707", event: "Battle of Khed — Shahu defeats Tarabai" },
+      { year: "1713", event: "Balaji Vishwanath becomes Peshwa under Shahu", dyn: true },
+      { year: "1719", event: "Marathas secure farmans for Chauth & Sardeshmukhi from Delhi" },
+      { year: "1720", event: "Baji Rao I becomes Peshwa", dyn: true },
+      { year: "1728", event: "Battle of Palkhed — Baji Rao I defeats Nizam-ul-Mulk", battle: true },
+      { year: "1737", event: "Battle of Bhopal — Marathas defeat Mughal-Nizam-Rajput coalition", battle: true },
+      { year: "1737", event: "Battle of Delhi — Marathas raid Mughal capital", battle: true },
+      { year: "1740", event: "Death of Baji Rao I; Balaji Baji Rao (Nanasaheb) becomes Peshwa" },
+      { year: "1761", event: "Third Battle of Panipat (Jan 14) — Marathas defeated by Ahmad Shah Abdali", battle: true },
+      { year: "1763", event: "Battle of Rakshasbhuvan — Madhavrao I defeats Nizam", battle: true },
+      { year: "1771", event: "Mahadji Scindia captures Delhi; restores Shah Alam II" },
+      { year: "1775-1782", event: "First Anglo-Maratha War", battle: true },
+      { year: "1779", event: "Battle of Wadgaon — Marathas defeat British", battle: true },
+      { year: "1782", event: "Treaty of Salbai — ends First Anglo-Maratha War", dyn: true },
+      { year: "1802", event: "Treaty of Bassein — Baji Rao II signs subsidiary alliance with British", dyn: true },
+      { year: "1803", event: "Battle of Assaye — Arthur Wellesley defeats Scindia-Bhonsle alliance", battle: true },
+      { year: "1803-1805", event: "Second Anglo-Maratha War", battle: true },
+      { year: "1817-1819", event: "Third Anglo-Maratha War", battle: true },
+      { year: "1818", event: "Peshwa Baji Rao II surrenders; Maratha Empire ends", dyn: true }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.battle) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30">⚔ Battle</span>';
+      if (t.dyn) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">👑 Key Event</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 14. UPSC KEY FACTS =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 14. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Card 1: Chhatrapatis & Peshwas
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-crown mr-1"></i> Chhatrapatis & Peshwas</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-amber-300">Chhatrapati Shivaji:</span> 1630-1680 — Founded empire, crowned 1674</li>`;
+    html += `<li><span class="text-amber-300">Sambhaji:</span> 1680-1689 — Executed by Aurangzeb</li>`;
+    html += `<li><span class="text-amber-300">Rajaram:</span> 1689-1700 — Gingee Fort base</li>`;
+    html += `<li><span class="text-amber-300">Tarabai:</span> 1700-1707 — Regent, led resistance</li>`;
+    html += `<li><span class="text-amber-300">Shahu:</span> 1707-1749 — Released by Mughals; Peshwa era begins</li>`;
+    html += `<li><span class="text-blue-300">Balaji Vishwanath:</span> 1713-1720 — 1st Peshwa</li>`;
+    html += `<li><span class="text-blue-300">Baji Rao I:</span> 1720-1740 — Greatest Peshwa, never lost a battle</li>`;
+    html += `<li><span class="text-blue-300">Nanasaheb:</span> 1740-1761 — Panipat defeat</li>`;
+    html += `<li><span class="text-blue-300">Madhavrao I:</span> 1761-1772 — Restored power</li>`;
+    html += `<li><span class="text-blue-300">Baji Rao II:</span> 1796-1818 — Last Peshwa; Bassein Treaty</li>`;
+    html += `</ul></div>`;
+
+    // Card 2: Important Battles
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-crosshairs mr-1"></i> Important Battles</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">Pratapgarh (1659):</span> Shivaji kills Afzal Khan</li>`;
+    html += `<li><span class="text-red-300">Pavankhind (1660):</span> Baji Prabhu's heroism vs Siddi Johar</li>`;
+    html += `<li><span class="text-red-300">Palkhed (1728):</span> Baji Rao I defeats Nizam</li>`;
+    html += `<li><span class="text-red-300">Bhopal (1737):</span> Marathas defeat coalition</li>`;
+    html += `<li><span class="text-red-300">Delhi (1737):</span> Marathas raid Mughal capital</li>`;
+    html += `<li><span class="text-red-300">Third Panipat (1761):</span> Marathas vs Abdali — Maratha defeat</li>`;
+    html += `<li><span class="text-red-300">Rakshasbhuvan (1763):</span> Madhavrao I defeats Nizam</li>`;
+    html += `<li><span class="text-red-300">Wadgaon (1779):</span> Marathas defeat British</li>`;
+    html += `<li><span class="text-red-300">Assaye (1803):</span> British defeat Scindia-Bhonsle</li>`;
+    html += `<li><span class="text-red-300">Khadki/Kirkee (1817):</span> British defeat Peshwa</li>`;
+    html += `</ul></div>`;
+
+    // Card 3: Administration
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-building-columns mr-1"></i> Administration</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-indigo-300">Ashtapradhan:</span> 8 ministers — Peshwa (PM), Amatya (Finance), Mantri (Records), Sachiv (Correspondence), Samant (Foreign), Senapati (Military), Pandit (Religious), Nyayadhish (Justice)</li>`;
+    html += `<li><span class="text-indigo-300">Revenue:</span> Chauth (25%), Sardeshmukhi (10%), Land revenue 30-40%</li>`;
+    html += `<li><span class="text-indigo-300">Navy:</span> Founded 1657; Kanhoji Angre (1698-1729); Vijaydurg base</li>`;
+    html += `<li><span class="text-indigo-300">Forts:</span> Killedar system; hill forts core of defence</li>`;
+    html += `<li><span class="text-indigo-300">Military:</span> Silhedar & Bargir cavalry; guerrilla tactics</li>`;
+    html += `</ul></div>`;
+
+    // Card 4: Maratha Confederacy Houses
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-handshake mr-1"></i> Maratha Confederacy — Major Houses</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Scindia:</span> Gwalior — Ranoji, Mahadji (restored Mughal emperor 1771), Daulat Rao</li>`;
+    html += `<li><span class="text-emerald-300">Holkar:</span> Indore — Malhar Rao, Ahilyabai (famous female ruler), Tukoji, Yashwantrao</li>`;
+    html += `<li><span class="text-emerald-300">Gaekwad:</span> Baroda — Pilaji, Sayaji Rao; ruled until independence</li>`;
+    html += `<li><span class="text-emerald-300">Bhonsle:</span> Nagpur — Raghuji; controlled Berar</li>`;
+    html += `</ul></div>`;
+
+    // Card 5: Anglo-Maratha Wars Overview
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-crossed-swords mr-1"></i> Anglo-Maratha Wars Overview</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-rose-300">First (1775-82):</span> British support Raghunathrao; Battle of Wadgaon (Maratha victory); Treaty of Salbai (status quo)</li>`;
+    html += `<li><span class="text-rose-300">Second (1803-05):</span> Baji Rao II signs Bassein Treaty (1802); Assaye, Laswari; Scindia-Bhonsle lose territories</li>`;
+    html += `<li><span class="text-rose-300">Third (1817-19):</span> Peshwa attacks British; Khadki, Koregaon; Peshwa surrenders 1818 — Maratha Empire ends</li>`;
+    html += `</ul></div>`;
+
+    // Card 6: Treaties
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-blue-500/20">`;
+    html += `<h4 class="text-sm font-bold text-blue-400 mb-2"><i class="fa-solid fa-file-signature mr-1"></i> Major Treaties</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-blue-300">Purandhar (1665):</span> Shivaji surrenders 23 forts to Jai Singh</li>`;
+    html += `<li><span class="text-blue-300">Surat (1775):</span> Raghunathrao cedes Salsette & Bassein to British</li>`;
+    html += `<li><span class="text-blue-300">Purandhar (1776):</span> Annuls Treaty of Surat</li>`;
+    html += `<li><span class="text-blue-300">Salbai (1782):</span> Ends First Anglo-Maratha War; status quo</li>`;
+    html += `<li><span class="text-blue-300">Bassein (1802):</span> Baji Rao II signs subsidiary alliance with British — most disastrous treaty for Marathas</li>`;
+    html += `<li><span class="text-blue-300">Rajghat (1805):</span> Ends Second Anglo-Maratha War with Holkar</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `<span class="hl-ruler">Chhatrapati Shivaji's</span> coronation <span class="hl-date">(1674)</span>, <span class="hl-term hl-bg-term">Ashtapradhan</span> council, <span class="hl-policy hl-bg-policy">Chauth & Sardeshmukhi</span> revenue system, <span class="hl-battle hl-bg-battle">Third Battle of Panipat (1761)</span>, <span class="hl-battle hl-bg-battle">Battle of Palkhed (1728)</span>, <span class="hl-ruler hl-bg-ruler">Baji Rao I's</span> expansion, <span class="hl-policy hl-bg-policy">Treaty of Bassein (1802)</span>, <span class="hl-term hl-bg-term">Maratha Confederacy</span> (Scindia, Holkar, Gaekwad, Bhonsle), and the <span class="hl-term hl-bg-term">Anglo-Maratha Wars</span> are frequently asked topics. Also remember <span class="hl-ruler">Kanhoji Angre</span> (Maratha navy), <span class="hl-term">Hindavi Swarajya</span>, and the <span class="hl-event">shift from Chhatrapati to Peshwa rule</span>. </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Maratha Empire (1674-1818) UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 7-12 History & UPSC reference materials</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

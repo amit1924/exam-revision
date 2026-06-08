@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Later Mughals (1707-1857) — Decline & Fall — UPSC Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-arch { color: #f472b6; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .dynasty-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+</div>
+
+<script>
+  const DATA = {
+    title: "Later Mughals (1707-1857): Decline & Fall",
+    location: "NCERT Class 7-8 History, UPSC reference materials",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 7-10 History, UPSC reference materials",
+    chapters: [
+      { class: 7, chapter: 10, name: "Eighteenth-Century Political Formations", book: "Our Pasts II" },
+      { class: 8, chapter: 2, name: "From Trade to Territory", book: "Our Pasts III" },
+      { class: 8, chapter: 5, name: "When People Rebel (1857)", book: "Our Pasts III" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-landmark text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>150 Years (1707-1857)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">1. Introduction</a>
+          <a href="#bahadur-shah" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Bahadur Shah I (1707-1712)</a>
+          <a href="#jahandar-shah" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Jahandar Shah (1712-1713)</a>
+          <a href="#farrukh-siyar" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Farrukh Siyar (1713-1719)</a>
+          <a href="#sayyid-brothers" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. The Sayyid Brothers</a>
+          <a href="#muhammad-shah" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Muhammad Shah (1719-1748)</a>
+          <a href="#ahmad-shah" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Ahmad Shah (1748-1754)</a>
+          <a href="#alamgir-ii" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Alamgir II (1754-1759)</a>
+          <a href="#shah-alam" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Shah Alam II (1759-1806)</a>
+          <a href="#akbar-ii" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Akbar II (1806-1837)</a>
+          <a href="#bahadur-shah-zafar" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. Bahadur Shah Zafar (1837-1857)</a>
+          <a href="#causes-decline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Causes of Decline</a>
+          <a href="#regional-states" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Rise of Regional States</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. Complete Timeline (1707-1862)</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">15. UPSC Key Facts</a>
+        </div>
+      </div>`;
+
+    // ===== 1. INTRODUCTION =====
+    html += `<section id="intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scroll text-amber-400"></i> 1. Introduction</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      The <span class="hl-dynasty hl-bg-dynasty">Mughal Empire</span> began its rapid decline after the death of <span class="hl-ruler hl-bg-ruler">Aurangzeb</span> in <span class="hl-date">1707</span>. Over the next <span class="hl-num">150</span> years (<span class="hl-date">1707-1857</span>), the empire saw <span class="hl-event">12 different emperors</span> — compared to just <span class="hl-num">6</span> in the first <span class="hl-num">200</span> years of its existence. Most of these later emperors were <span class="hl-term hl-bg-term">weak puppets</span> controlled by powerful nobles, factional groups, or outside forces.
+    </p>`;
+    html += `<p class="content-text">
+      The period saw <span class="hl-event">foreign invasions</span> (<span class="hl-ruler">Nadir Shah</span> in <span class="hl-date">1739</span>, <span class="hl-ruler">Ahmad Shah Abdali</span> from <span class="hl-date">1748</span>), the <span class="hl-event">rise of independent regional states</span> (Bengal, Hyderabad, Awadh, Mysore, Marathas, Sikhs), and the <span class="hl-event">growing power of the British East India Company</span>. The empire was formally abolished after the <span class="hl-battle hl-bg-battle">1857 War of Independence</span> when the last emperor <span class="hl-ruler">Bahadur Shah Zafar</span> was exiled to Rangoon.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">After <span class="hl-ruler hl-bg-ruler">Aurangzeb's</span> death in <span class="hl-date">1707</span>, the <span class="hl-term hl-bg-term">Mansabdari and Jagir systems</span> broke down, the <span class="hl-term">nobility became factionalized</span> (Turanis vs Iranis vs Hindustanis), and the empire's <span class="hl-event">economic base collapsed</span>. The Mughal Empire, which had been the <span class="hl-term">wealthiest empire in the world</span>, rapidly disintegrated.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. BAHADUR SHAH I =====
+    html += `<section id="bahadur-shah">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 2. Bahadur Shah I (1707-1712)</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Bahadur Shah I</span> (also called <span class="hl-term">Shah Alam I</span> or <span class="hl-term">"Bahadur Shah"</span>) was the son of <span class="hl-ruler">Aurangzeb</span>. He ascended the throne at the age of <span class="hl-num">64</span> after a <span class="hl-event">war of succession</span> with his brothers.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-handshake text-cyan-400 text-xs"></i> Policy of Conciliation</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-policy hl-bg-policy">Abolished Jizya</span> — reversed Aurangzeb's policy</li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Reconciled with Marathas</span> — recognized <span class="hl-term">Shahu</span> as the legitimate Maratha ruler</li>`;
+    html += `<li><span class="hl-policy">Reconciled with Rajputs</span> — restored their mansabs and privileges</li>`;
+    html += `<li>Released <span class="hl-term">Guru Gobind Singh's son</span> from prison</li>`;
+    html += `<li>Attempted to win over <span class="hl-term">Sikhs</span> — but relations soured later</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-people-group text-cyan-400 text-xs"></i> Court Factions</h3>`;
+    html += `<p class="content-text">Three major noble factions competed for power:</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Turani (Turan)</span> — Central Asian nobles, mostly Sunni Muslims</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Irani (Persian)</span> — Persian nobles, many Shia Muslims</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Hindustani (Indian)</span> — Indian Muslims and Rajputs</li>`;
+    html += `</ul>`;
+    html += `<p class="content-text">
+      Bahadur Shah fought campaigns against <span class="hl-term">Marathas</span> and <span class="hl-term">Sikhs</span> but failed to achieve decisive victories. He died in <span class="hl-date">1712</span> at <span class="hl-place">Lahore</span>.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Bahadur Shah I</span> was the <span class="hl-event">last Mughal emperor</span> who exercised some degree of independent authority. After his death, the <span class="hl-term">nobles became the real power</span> behind the throne. He attempted to reverse Aurangzeb's orthodox policies but <span class="hl-event">lacked the resources and time</span> to stabilize the empire.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 3. JAHANDAR SHAH =====
+    html += `<section id="jahandar-shah">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 3. Jahandar Shah (1712-1713)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Jahandar Shah</span>, son of <span class="hl-ruler">Bahadur Shah I</span>, became emperor with the support of <span class="hl-term">Zulfiqar Khan</span>, the powerful <span class="hl-term">Wazir</span>. He was the <span class="hl-event hl-bg-event">first Mughal ruler to completely abdicate power to a noble</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Role of Zulfiqar Khan</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-ruler">Zulfiqar Khan</span> was the <span class="hl-term">Wazir (Prime Minister)</span> who controlled the entire administration</li>`;
+    html += `<li>He adopted a policy of <span class="hl-policy">peace with Rajputs and Marathas</span></li>`;
+    html += `<li>Attempted to <span class="hl-policy">restore the Mansabdari system</span> by granting new jagirs</li>`;
+    html += `<li>These policies <span class="hl-event">alienated the orthodox nobles</span></li>`;
+    html += `</ul>`;
+    html += `<p class="content-text">
+      Jahandar Shah was <span class="hl-event">murdered by Farrukh Siyar</span> after a brief reign of less than a year in <span class="hl-date">1713</span>. Zulfiqar Khan was also killed.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Jahandar Shah's</span> reign marked the <span class="hl-event hl-bg-event">beginning of the era of "Puppet Emperors"</span> in Mughal history. From this point onward, the emperor was a <span class="hl-term">ceremonial figurehead</span> while real power rested with nobles like Zulfiqar Khan and later the <span class="hl-term">Sayyid Brothers</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 4. FARRUKH SIYAR =====
+    html += `<section id="farrukh-siyar">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 4. Farrukh Siyar (1713-1719)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Farrukh Siyar</span> was the nephew of <span class="hl-ruler">Jahandar Shah</span>. He became emperor with the <span class="hl-event">crucial support of the Sayyid Brothers</span> — <span class="hl-term hl-bg-ruler">Hussain Ali Khan</span> and <span class="hl-term hl-bg-ruler">Abdullah Khan</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Struggle with Sayyid Brothers</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The <span class="hl-term">Sayyid Brothers</span> (King Makers) installed Farrukh Siyar on the throne</li>`;
+    html += `<li>They became the <span class="hl-event">real power behind the throne</span> — held all key positions</li>`;
+    html += `<li>Farrukh Siyar tried to overthrow them by <span class="hl-term">conspiring with other nobles</span> (e.g., Mir Jumla, Muhammad Shah)</li>`;
+    html += `<li>His attempts <span class="hl-event">failed</span> — the Sayyid Brothers discovered the plots</li>`;
+    html += `<li>In <span class="hl-date">1719</span>, Farrukh Siyar was <span class="hl-event">deposed, blinded, and murdered</span> by the Sayyid Brothers</li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-event hl-bg-event">murder of Farrukh Siyar (1719)</span> was a turning point. It showed that the emperor was <span class="hl-term">no longer sacrosanct</span> — nobles could now kill and replace emperors at will. This set a dangerous precedent.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 5. THE SAYYID BROTHERS =====
+    html += `<section id="sayyid-brothers">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 5. The Sayyid Brothers — The King Makers (1713-1720)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-term hl-bg-ruler">Abdullah Khan</span> and <span class="hl-term hl-bg-ruler">Hussain Ali Khan</span> (the <span class="hl-term hl-bg-event">Sayyid Brothers</span>) were two powerful <span class="hl-term">Barha Sayyid</span> nobles who <span class="hl-event">controlled the Mughal court</span> from <span class="hl-date">1713 to 1720</span>. They are known as the <span class="hl-term hl-bg-term">"King Makers"</span> of the Mughal Empire.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Installed & Removed Emperors</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Installed <span class="hl-ruler hl-bg-ruler">Farrukh Siyar</span> (1713) — then deposed and murdered him (1719)</li>`;
+    html += `<li>Installed <span class="hl-ruler hl-bg-ruler">Rafi-ud-Darajat</span> (1719) — reigned only <span class="hl-num">~3 months</span>, died of illness</li>`;
+    html += `<li>Installed <span class="hl-ruler hl-bg-ruler">Shah Jahan II</span> (1719) — reigned only <span class="hl-num">~2 months</span>, died of illness</li>`;
+    html += `<li>Installed <span class="hl-ruler hl-bg-ruler">Muhammad Shah</span> (1719) — the <span class="hl-num">17-year-old</span> prince</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Downfall</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler">Muhammad Shah</span>, with the help of <span class="hl-term hl-bg-ruler">Nizam-ul-Mulk</span>, defeated and killed the Sayyid Brothers in <span class="hl-date">1720</span>. Hussain Ali Khan was assassinated, and Abdullah Khan was defeated at the <span class="hl-battle">Battle of Hasanpur (1720)</span> and later poisoned.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-event">Sayyid Brothers</span> demonstrated the <span class="hl-term">extreme weakness of the Mughal emperors</span> after Aurangzeb. Their rise and fall showed that <span class="hl-event">noble factions could make and unmake emperors</span>. This period marked the <span class="hl-term hl-bg-term">lowest point of Mughal imperial prestige</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 6. MUHAMMAD SHAH =====
+    html += `<section id="muhammad-shah">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 6. Muhammad Shah (1719-1748) — "Rangeela"</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-orange-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Muhammad Shah</span> was nicknamed <span class="hl-term hl-bg-event">"Rangeela" (the pleasure-loving)</span> for his love of music, art, and entertainment. His reign of <span class="hl-num">29</span> years saw both <span class="hl-event">cultural efflorescence</span> and <span class="hl-event">political catastrophe</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Early Reign</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Became emperor at age <span class="hl-num">17</span> — installed by Sayyid Brothers</li>`;
+    html += `<li>Defeated the <span class="hl-term">Sayyid Brothers</span> in <span class="hl-date">1720</span> with help of <span class="hl-ruler hl-bg-ruler">Nizam-ul-Mulk</span></li>`;
+    html += `<li><span class="hl-ruler">Nizam-ul-Mulk Asaf Jah I</span> founded the independent <span class="hl-dynasty">Hyderabad state</span> in <span class="hl-date">1724</span> — this was a <span class="hl-event hl-bg-event">major blow to Mughal authority</span></li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-bolt text-cyan-400 text-xs"></i> Nadir Shah's Invasion (1738-1739)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Nadir Shah</span>, the ruler of <span class="hl-place">Persia (Iran)</span>, invaded India in <span class="hl-date">1738</span></li>`;
+    html += `<li><span class="hl-battle hl-bg-battle">Battle of Karnal (1739)</span> — Mughal army <span class="hl-event">decisively defeated</span> despite numerical superiority</li>`;
+    html += `<li>Nadir Shah entered <span class="hl-place">Delhi</span> and <span class="hl-event hl-bg-event">looted the city</span> — a <span class="hl-event">massacre of ~30,000 people</span></li>`;
+    html += `<li>The <span class="hl-arch">Peacock Throne</span> was taken to Persia (used as a symbol of Persian monarchy)</li>`;
+    html += `<li>The <span class="hl-term">Kohinoor diamond</span> was taken by Nadir Shah</li>`;
+    html += `<li>Nadir Shah <span class="hl-event">annexed all territories west of the Indus</span> (Kabul, Kandahar, Sindh, etc.)</li>`;
+    html += `<li>He left India but the <span class="hl-event">Mughal Empire never recovered</span></li>`;
+    html += `</ul>`;
+    html += `<p class="content-text">
+      <span class="hl-event">Decline accelerated rapidly</span> after Nadir Shah's invasion. The empire's <span class="hl-term">military weakness, depleted treasury, and loss of prestige</span> were now apparent to all.
+    </p>`;
+    html += `<p class="content-text">
+      Muhammad Shah died in <span class="hl-date">1748</span>. Despite his weaknesses, he was a <span class="hl-term">patron of arts and culture</span> — Urdu poetry and music flourished during his reign.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Battle of Karnal (1739)</span> and <span class="hl-ruler">Nadir Shah's invasion</span> is one of the <span class="hl-event">most devastating events in Indian history</span>. The <span class="hl-term">Peacock Throne</span> and <span class="hl-term">Kohinoor diamond</span> — symbols of Mughal wealth and power — were lost forever. The <span class="hl-event">Mughal Empire was mortally wounded</span> and never regained its former glory.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 7. AHMAD SHAH BAHADUR =====
+    html += `<section id="ahmad-shah">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 7. Ahmad Shah Bahadur (1748-1754)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Ahmad Shah Bahadur</span> was the son of <span class="hl-ruler">Muhammad Shah</span>. He was a <span class="hl-term">weak and incompetent ruler</span> who was completely dominated by his Wazir, <span class="hl-term hl-bg-ruler">Safdar Jung</span> (the Nawab of Awadh).
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Ahmad Shah Abdali's Invasions</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Ahmad Shah Abdali (Durrani)</span>, a former general of Nadir Shah, invaded India for the first time in <span class="hl-date">1748</span></li>`;
+    html += `<li>He ruled <span class="hl-place">Afghanistan</span> and launched repeated invasions of India</li>`;
+    html += `<li>The <span class="hl-term">Mughals could not effectively resist</span> his incursions</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Rise of Marathas</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>After Nadir Shah's invasion, the <span class="hl-term hl-bg-term">Marathas became the dominant power</span> in Delhi politics</li>`;
+    html += `<li>They effectively <span class="hl-event">controlled large parts of North India</span></li>`;
+    html += `<li>Ahmad Shah was <span class="hl-event">deposed and blinded</span> in <span class="hl-date">1754</span> by <span class="hl-term">Ghazi-ud-Din Feroze Jung III (Imad-ul-Mulk)</span></li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 8. ALAMGIR II =====
+    html += `<section id="alamgir-ii">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 8. Alamgir II (1754-1759)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Alamgir II</span> was the son of <span class="hl-ruler">Jahandar Shah</span>. He was placed on the throne by <span class="hl-term hl-bg-ruler">Ghazi-ud-Din Feroze Jung III (Imad-ul-Mulk)</span>, who became the <span class="hl-term">de facto ruler</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Third Battle of Panipat (1761)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The <span class="hl-battle hl-bg-battle">Third Battle of Panipat (14 January 1761)</span> was fought between the <span class="hl-term">Marathas</span> and <span class="hl-term">Ahmad Shah Abdali (Durrani)</span></li>`;
+    html += `<li>The Marathas were <span class="hl-event">decisively defeated</span> — it was one of the <span class="hl-term">bloodiest battles of the 18th century</span></li>`;
+    html += `<li>Maratha leader <span class="hl-ruler">Sadashiv Rao Bhau</span> was killed</li>`;
+    html += `<li>This battle <span class="hl-event">shattered Maratha power</span> temporarily and opened the way for <span class="hl-term">British expansion</span></li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Murder of Alamgir II</h3>`;
+    html += `<p class="content-text">
+      Alamgir II was <span class="hl-event hl-bg-event">murdered by Ghazi-ud-Din (Imad-ul-Mulk) in 1759</span> — a shocking act that demonstrated the <span class="hl-term">complete moral and political decay</span> of the Mughal nobility.
+    </p>`;
+    html += `</div></section>`;
+
+    // ===== 9. SHAH ALAM II =====
+    html += `<section id="shah-alam">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 9. Shah Alam II (1759-1806) — The Longest Reigning Later Mughal</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Shah Alam II</span> was the son of <span class="hl-ruler">Alamgir II</span>. He reigned for <span class="hl-num">47</span> years (<span class="hl-date">1759-1806</span>) — the <span class="hl-term">longest reign among the Later Mughals</span>. His reign saw the <span class="hl-event hl-bg-event">final transition of power from Mughals to the British</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> Battle of Buxar (1764)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Fought on <span class="hl-date">22 October 1764</span> at <span class="hl-place">Buxar (Bihar)</span></li>`;
+    html += `<li>The combined forces of <span class="hl-ruler">Shah Alam II</span> (Mughal), <span class="hl-ruler">Shuja-ud-Daulah</span> (Awadh), and <span class="hl-ruler">Mir Qasim</span> (Bengal) were <span class="hl-event">decisively defeated</span> by the <span class="hl-term">British East India Company</span> under <span class="hl-ruler">Major Hector Munro</span></li>`;
+    html += `<li>This was a <span class="hl-event hl-bg-event">turning point in Indian history</span> — it established British military supremacy</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-file-signature text-cyan-400 text-xs"></i> Treaty of Allahabad (1765)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Signed in <span class="hl-date">August 1765</span> between <span class="hl-ruler">Shah Alam II</span> and <span class="hl-ruler">Robert Clive</span> (British East India Company)</li>`;
+    html += `<li>The British <span class="hl-event hl-bg-policy">granted the <span class="hl-term">Diwani (right to collect revenue)</span> of Bengal, Bihar, and Orissa</span> to the Company</li>`;
+    html += `<li>In return, the Company paid an <span class="hl-term">annual tribute of ₹26 lakh</span> to the emperor</li>`;
+    html += `<li>Shah Alam II was to reside at <span class="hl-place">Allahabad</span> under British protection</li>`;
+    html += `<li>The emperor became a <span class="hl-term hl-bg-event">British pensioner</span> — a ceremonial figurehead</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Later Life</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Shah Alam II was <span class="hl-event">blinded in 1788</span> by <span class="hl-term hl-bg-ruler">Ghulam Qadir Rohilla</span> (a Rohilla chief who captured Delhi)</li>`;
+    html += `<li>The <span class="hl-term hl-bg-policy">Pitt's India Act (1784)</span> was passed during his reign — established dual control of British Indian affairs</li>`;
+    html += `<li>He died a <span class="hl-term">helpless pensioner</span> under British control in <span class="hl-date">1806</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Battle of Buxar (1764)</span> and <span class="hl-policy hl-bg-policy">Treaty of Allahabad (1765)</span> mark the <span class="hl-event hl-bg-event">beginning of British colonial rule in India</span>. The Mughal emperor formally <span class="hl-term">ceded sovereignty over Bengal, Bihar, and Orissa</span> — the richest provinces of the empire. From this point, the Mughal emperor was <span class="hl-term">merely a British puppet</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 10. AKBAR II =====
+    html += `<section id="akbar-ii">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 10. Akbar II (1806-1837) — A Ceremonial Emperor</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Akbar II</span>, son of <span class="hl-ruler">Shah Alam II</span>, ruled as a <span class="hl-term">titular emperor</span> with no real power. The British East India Company <span class="hl-event">controlled everything</span> — the emperor was a mere <span class="hl-term">ceremonial figurehead</span>.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-cyan-400 text-xs"></i> Key Aspects</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The emperor lived on a <span class="hl-term">British pension</span> confined to the <span class="hl-arch">Red Fort</span></li>`;
+    html += `<li><span class="hl-term">Rajput chiefs</span> stopped paying tribute to the Mughal emperor</li>`;
+    html += `<li>He granted the title of <span class="hl-term">"Raja"</span> to <span class="hl-ruler">Raja Ram Mohan Roy</span> — a social reformer</li>`;
+    html += `<li>British officials <span class="hl-event">treated the emperor with diminishing respect</span></li>`;
+    html += `<li>Died in <span class="hl-date">1837</span> — succeeded by his son <span class="hl-ruler">Bahadur Shah Zafar</span></li>`;
+    html += `</ul>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">During <span class="hl-ruler">Akbar II's</span> reign, the <span class="hl-dynasty hl-bg-dynasty">Mughal Empire</span> existed <span class="hl-term">only in name</span>. The British had <span class="hl-event">complete control</span> over the emperor's movements, communications, and finances. The Mughal Empire was <span class="hl-term">already dead in practice</span> — only the formal abolition remained.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 11. BAHADUR SHAH ZAFAR =====
+    html += `<section id="bahadur-shah-zafar">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 11. Bahadur Shah Zafar (1837-1857) — The Last Mughal Emperor</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Bahadur Shah Zafar</span> was the <span class="hl-event hl-bg-event">LAST Mughal emperor</span>. He was a <span class="hl-term">nominal ruler</span> who reigned only in name under British suzerainty. He was also a noted <span class="hl-term">Urdu poet</span> who wrote poignant verses about his fate.
+    </p>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-crosshairs text-cyan-400 text-xs"></i> The 1857 War of Independence</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The <span class="hl-battle hl-bg-battle">Indian Rebellion of 1857</span> (also called the <span class="hl-term">Sepoy Mutiny</span> or <span class="hl-term">First War of Independence</span>) began in <span class="hl-date">May 1857</span></li>`;
+    html += `<li>Rebel sepoys from <span class="hl-place">Meerut</span> marched to Delhi and <span class="hl-event">proclaimed Bahadur Shah Zafar as the Emperor of Hindustan</span></li>`;
+    html += `<li>Zafar <span class="hl-event">reluctantly accepted</span> the leadership of the rebellion</li>`;
+    html += `<li>The Red Fort became the <span class="hl-term">headquarters of the rebellion</span></li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-circle-info text-cyan-400 text-xs"></i> Aftermath & Exile</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>The British <span class="hl-event">recaptured Delhi in September 1857</span> after fierce fighting</li>`;
+    html += `<li>Zafar was <span class="hl-event">tried for rebellion</span> by a British military court</li>`;
+    html += `<li>He was <span class="hl-event">exiled to Rangoon (Burma)</span> — never returned to India</li>`;
+    html += `<li>He died in exile in <span class="hl-date">1862</span> at the age of <span class="hl-num">87</span></li>`;
+    html += `<li>His tomb in <span class="hl-place">Yangon (Rangoon)</span> remains a historic site</li>`;
+    html += `</ul>`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-pen-fancy text-cyan-400 text-xs"></i> Poetic Works</h3>`;
+    html += `<p class="content-text">
+      Bahadur Shah Zafar was a <span class="hl-term">skilled Urdu poet</span>. His most famous couplet, written during his exile, reflects the tragedy of the last Mughal:
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-quote-left"></i> Zafar's Famous Couplet</div><div class="fact-box-content"><em>"Na kisi ki aankh ka noor hoon, na kisi ke dil ka qarar hoon;<br>Jo kisi ke kaam na aa sake, main wo ek musht-e-ghubar hoon."</em><br><br>(I am neither the light of anyone's eye, nor the comfort of anyone's heart;<br>I am that handful of dust that is of no use to anyone.)</div></div>`;
+    html += `<p class="content-text">
+      With Zafar's exile, the <span class="hl-dynasty hl-bg-dynasty">Mughal Empire</span>, which had ruled India for over <span class="hl-num">330</span> years, <span class="hl-event hl-bg-event">came to a definitive end</span>.
+    </p>`;
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-event hl-bg-event">1857 Rebellion</span> was the <span class="hl-term">last attempt to restore the Mughal Empire</span>. After its failure, the British <span class="hl-term">abolished the Mughal dynasty</span> and transferred power from the East India Company to the <span class="hl-term">British Crown (Queen Victoria)</span> through the <span class="hl-policy hl-bg-policy">Government of India Act, 1858</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 12. CAUSES OF DECLINE =====
+    html += `<section id="causes-decline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line-down text-red-400"></i> 12. Causes of Decline of the Mughal Empire</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Cause 1
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-1 mr-1"></i> Weak Successors</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">After <span class="hl-ruler hl-bg-ruler">Aurangzeb</span> (<span class="hl-date">1707</span>), the Mughal emperors were <span class="hl-term">weak, incompetent, and pleasure-loving</span>. They were controlled by nobles and could not provide strong leadership. <span class="hl-event">12 emperors in 150 years</span> — constant instability at the top.</p></div>`;
+
+    // Cause 2
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-2 mr-1"></i> Breakdown of Mansabdari & Jagir System</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The <span class="hl-term hl-bg-term">Mansabdari system</span> collapsed under its own weight. There were <span class="hl-event">more mansabdars than available jagirs</span> (jagirdari crisis). Nobles became <span class="hl-term">corrupt</span> and revenue collection <span class="hl-event">oppressive</span>. The <span class="hl-term">administrative machinery</span> ground to a halt.</p></div>`;
+
+    // Cause 3
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-3 mr-1"></i> Economic Depletion</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed"><span class="hl-term">Constant wars</span> (Deccan campaigns, rebellions), <span class="hl-term">lavish spending</span> by nobles, and <span class="hl-term">declining trade</span> depleted the treasury. <span class="hl-ruler">Nadir Shah's</span> invasion (<span class="hl-date">1739</span>) <span class="hl-event">looted immense wealth</span>. Agriculture declined due to oppressive taxation — peasants abandoned land.</p></div>`;
+
+    // Cause 4
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-4 mr-1"></i> Foreign Invasions</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed"><span class="hl-ruler hl-bg-ruler">Nadir Shah</span> (<span class="hl-date">1739</span>) and <span class="hl-ruler hl-bg-ruler">Ahmad Shah Abdali</span> (<span class="hl-date">1748-1767</span>) repeatedly invaded and <span class="hl-event">devastated North India</span>. These invasions <span class="hl-term">exposed Mughal military weakness</span>, drained resources, and <span class="hl-event">shattered the empire's prestige</span>.</p></div>`;
+
+    // Cause 5
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-5 mr-1"></i> Rise of Independent Regional States</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed"><span class="hl-term">Bengal</span> (Murshid Quli Khan, <span class="hl-date">1717</span>), <span class="hl-term">Hyderabad</span> (Nizam-ul-Mulk, <span class="hl-date">1724</span>), <span class="hl-term">Awadh</span> (Saadat Khan), <span class="hl-term">Mysore</span> (Haidar Ali, <span class="hl-date">1761</span>), <span class="hl-term">Marathas</span>, <span class="hl-term">Sikhs</span> — all broke away. These states <span class="hl-event">stopped sending revenue</span> to Delhi and <span class="hl-term">became independent in all but name</span>.</p></div>`;
+
+    // Cause 6
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-6 mr-1"></i> British East India Company's Rise</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">After <span class="hl-battle hl-bg-battle">Buxar (1764)</span> and the <span class="hl-policy hl-bg-policy">Treaty of Allahabad (1765)</span>, the <span class="hl-term hl-bg-term">British East India Company</span> became the <span class="hl-event">dominant power in India</span>. The Mughal emperor became a <span class="hl-term">British pensioner</span>. The Company systematically <span class="hl-term">annexed Indian states</span> and sidelined the Mughal emperor.</p></div>`;
+
+    // Cause 7
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-7 mr-1"></i> No Fixed Succession Law</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The Mughals had <span class="hl-term">no fixed law of succession</span> (like primogeniture). Every emperor's death triggered a <span class="hl-event hl-bg-event">bloody war of succession</span> among brothers/sons. This <span class="hl-term">weakened the empire</span> repeatedly, drained resources, and <span class="hl-event">prevented stable governance</span>.</p></div>`;
+
+    // Cause 8
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-8 mr-1"></i> Military Stagnation</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The Mughal army <span class="hl-term">failed to modernize</span>. While European powers advanced in <span class="hl-term">firearms, artillery, and military tactics</span>, the Mughals continued using <span class="hl-term">old-fashioned cavalry-based warfare</span>. The <span class="hl-event">Battle of Karnal (1739)</span> exposed this technological gap.</p></div>`;
+
+    // Cause 9
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-9 mr-1"></i> Corrupt & Self-Serving Nobility</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The Mughal nobility became <span class="hl-term">corrupt, factionalized</span> (Turani vs Irani vs Hindustani), and <span class="hl-term">self-serving</span>. They cared more about <span class="hl-event">personal power than the empire's welfare</span>. The <span class="hl-term">Sayyid Brothers</span> epitomized this — they killed and replaced emperors at will.</p></div>`;
+
+    // Cause 10
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-0 mr-1"></i> Aurangzeb's Legacy</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">Aurangzeb's <span class="hl-policy">religious orthodoxy (jizya, temple destruction)</span> alienated <span class="hl-term">Rajputs, Hindus, and Sikhs</span>. His <span class="hl-event">long Deccan wars (1681-1707)</span> drained the treasury. The <span class="hl-term">overexpansion of the empire</span> made it impossible to govern effectively. He left a <span class="hl-event hl-bg-event">weakened, overextended empire</span> to his successors.</p></div>`;
+
+    html += `</div>`;
+
+    html += `</div></section>`;
+
+    // ===== 13. RISE OF INDEPENDENT REGIONAL STATES =====
+    html += `<section id="regional-states">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-map-location-dot text-emerald-400"></i> 13. Rise of Independent Regional States</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+    html += `<p class="content-text">
+      As the Mughal Empire declined, several <span class="hl-term hl-bg-term">independent regional states</span> emerged across India. These states <span class="hl-event">stopped sending revenue to Delhi</span> and functioned as <span class="hl-term">sovereign kingdoms</span>.
+    </p>`;
+
+    // Table of regional states
+    html += `<div class="table-wrap"><table><thead><tr><th>State</th><th>Founder</th><th>Year</th><th>Key Rulers / Notes</th></tr></thead><tbody>`;
+    html += `<tr><td class="hl-term hl-bg-term">Bengal</td><td class="hl-ruler">Murshid Quli Khan</td><td class="hl-date">1717</td><td>Independent governor; later <span class="hl-ruler">Siraj-ud-Daulah</span> (last independent Nawab, defeated at <span class="hl-battle">Plassey 1757</span>)</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Awadh (Oudh)</td><td class="hl-ruler">Saadat Khan Burhan-ul-Mulk</td><td class="hl-date">1722</td><td><span class="hl-ruler">Safdar Jung</span>, <span class="hl-ruler">Shuja-ud-Daulah</span> (fought at <span class="hl-battle">Buxar 1764</span>)</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Hyderabad</td><td class="hl-ruler">Nizam-ul-Mulk Asaf Jah I</td><td class="hl-date">1724</td><td>Most stable successor state; <span class="hl-term">Asaf Jahi dynasty</span> ruled until 1948</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Mysore</td><td class="hl-ruler">Haidar Ali</td><td class="hl-date">1761</td><td><span class="hl-ruler">Tipu Sultan</span> (<span class="hl-term">"Tiger of Mysore"</span>, died <span class="hl-date">1799</span> at <span class="hl-battle">Seringapatam</span>) — modernized army with French help</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Maratha Empire</td><td class="hl-ruler">Shivaji</td><td class="hl-date">1674</td><td><span class="hl-ruler">Peshwas</span>: Balaji Vishwanath (1713), <span class="hl-ruler">Baji Rao I</span> (greatest Peshwa), <span class="hl-battle">Third Panipat 1761</span> — major setback</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Sikh Empire</td><td class="hl-ruler">Banda Singh Bahadur</td><td class="hl-date">1710</td><td><span class="hl-ruler">Maharaja Ranjit Singh</span> (<span class="hl-date">1799-1839</span>) — unified Punjab, ruled until British annexation 1849</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Rajput States</td><td class="hl-ruler">Various</td><td class="hl-date">—</td><td><span class="hl-place">Amber/Jaipur</span> (Sawai Jai Singh), <span class="hl-place">Jodhpur</span>, <span class="hl-place">Mewar</span> — became British allies</td></tr>`;
+    html += `<tr><td class="hl-term hl-bg-term">Rohilkhand</td><td class="hl-ruler">Ali Muhammad Khan Rohilla</td><td class="hl-date">1721</td><td>Afghan Rohilla chief; region in <span class="hl-place">northwest Uttar Pradesh</span></td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star text-emerald-400 text-xs"></i> Key Features of Regional States</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Most were <span class="hl-term">former Mughal provinces</span> whose governors declared independence</li>`;
+    html += `<li>They <span class="hl-event">stopped remitting revenue</span> to the Mughal emperor</li>`;
+    html += `<li>They <span class="hl-term">fought among themselves</span> for territory — weakening each other</li>`;
+    html += `<li>The <span class="hl-term">British East India Company</span> exploited these rivalries to expand its control</li>`;
+    html += `<li>By the <span class="hl-date">early 19th century</span>, most regional states had been <span class="hl-event">annexed or made subordinate</span> to the British</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">rise of regional states</span> is a crucial topic for UPSC. The <span class="hl-event">successor states</span> (Bengal, Awadh, Hyderabad) were former Mughal provinces. The <span class="hl-event">new states</span> (Mysore, Marathas, Sikhs) emerged from <span class="hl-term">resistance to Mughal rule</span>. Both categories played a role in the <span class="hl-term">ultimate British victory</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 14. COMPLETE TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 14. Complete Timeline (1707-1862)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "1707", event: "Death of Aurangzeb at Ahmednagar; Bahadur Shah I succeeds", dyn: true },
+      { year: "1707-1712", event: "Reign of Bahadur Shah I — conciliation policy, abolishes jizya" },
+      { year: "1712", event: "Death of Bahadur Shah I; Jahandar Shah succeeds" },
+      { year: "1712-1713", event: "Reign of Jahandar Shah — controlled by Zulfiqar Khan" },
+      { year: "1713", event: "Farrukh Siyar becomes emperor with Sayyid Brothers' help" },
+      { year: "1713-1720", event: "Sayyid Brothers (King Makers) control Delhi", dyn: true },
+      { year: "1717", event: "Murshid Quli Khan becomes independent governor of Bengal", dyn: true },
+      { year: "1719", event: "Farrukh Siyar deposed, blinded, murdered by Sayyid Brothers" },
+      { year: "1719", event: "Rafi-ud-Darajat (reigns ~3 months) and Shah Jahan II (~2 months)" },
+      { year: "1719", event: "Muhammad Shah 'Rangeela' becomes emperor at age 17" },
+      { year: "1720", event: "Battle of Hasanpur — Sayyid Brothers defeated by Nizam-ul-Mulk" },
+      { year: "1722", event: "Saadat Khan founds independent Awadh kingdom", dyn: true },
+      { year: "1724", event: "Nizam-ul-Mulk Asaf Jah I founds independent Hyderabad state", dyn: true },
+      { year: "1738-1739", event: "Nadir Shah invades India", battle: true },
+      { year: "1739", event: "Battle of Karnal — Mughals defeated; Nadir Shah loots Delhi, takes Peacock Throne & Kohinoor", battle: true },
+      { year: "1748", event: "Death of Muhammad Shah; Ahmad Shah Bahadur succeeds" },
+      { year: "1748", event: "First invasion of Ahmad Shah Abdali (Durrani)" },
+      { year: "1754", event: "Ahmad Shah Bahadur deposed and blinded" },
+      { year: "1754-1759", event: "Reign of Alamgir II — controlled by Ghazi-ud-Din (Imad-ul-Mulk)" },
+      { year: "1757", event: "Battle of Plassey — British defeat Siraj-ud-Daulah; start of British rule in Bengal", battle: true },
+      { year: "1759", event: "Alamgir II murdered by Ghazi-ud-Din" },
+      { year: "1759-1806", event: "Reign of Shah Alam II — longest reign among Later Mughals" },
+      { year: "1761", event: "Third Battle of Panipat — Marathas defeated by Ahmad Shah Abdali", battle: true },
+      { year: "1764", event: "Battle of Buxar — British defeat Mughal-Awadh-Bengal alliance", battle: true },
+      { year: "1765", event: "Treaty of Allahabad — British get Diwani of Bengal, Bihar, Orissa", dyn: true },
+      { year: "1784", event: "Pitt's India Act passed in British Parliament" },
+      { year: "1788", event: "Shah Alam II blinded by Ghulam Qadir Rohilla" },
+      { year: "1799", event: "Tipu Sultan (Tiger of Mysore) killed at Seringapatam", battle: true },
+      { year: "1799-1839", event: "Rise of Sikh Empire under Maharaja Ranjit Singh" },
+      { year: "1806", event: "Death of Shah Alam II; Akbar II succeeds" },
+      { year: "1837", event: "Death of Akbar II; Bahadur Shah Zafar becomes last Mughal emperor" },
+      { year: "1837-1857", event: "Reign of Bahadur Shah Zafar (titular, under British control)" },
+      { year: "1857", event: "War of Independence (Indian Rebellion) — Zafar proclaimed Emperor of Hindustan", battle: true },
+      { year: "1857", event: "British recapture Delhi (September); Zafar captured and tried" },
+      { year: "1858", event: "Government of India Act, 1858 — British Crown takes direct control of India" },
+      { year: "1862", event: "Bahadur Shah Zafar dies in exile in Rangoon (Burma) — END of Mughal Empire" }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.battle) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30">⚔ Battle</span>';
+      if (t.dyn) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">👑 Key Event</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 15. UPSC KEY FACTS =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 15. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Fact Card 1: Later Mughal Emperors
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-crown mr-1"></i> Later Mughal Emperors (1707-1857)</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-amber-300">Bahadur Shah I:</span> 1707-1712 — Conciliation policy, abolished jizya</li>`;
+    html += `<li><span class="text-blue-300">Jahandar Shah:</span> 1712-1713 — Controlled by Zulfiqar Khan</li>`;
+    html += `<li><span class="text-red-300">Farrukh Siyar:</span> 1713-1719 — Murdered by Sayyid Brothers</li>`;
+    html += `<li><span class="text-purple-300">Rafi-ud-Darajat:</span> 1719 (~3 months)</li>`;
+    html += `<li><span class="text-purple-300">Shah Jahan II:</span> 1719 (~2 months)</li>`;
+    html += `<li><span class="text-emerald-300">Muhammad Shah:</span> 1719-1748 — Nadir Shah invasion 1739</li>`;
+    html += `<li><span class="text-orange-300">Ahmad Shah:</span> 1748-1754 — Deposed & blinded</li>`;
+    html += `<li><span class="text-rose-300">Alamgir II:</span> 1754-1759 — Murdered by Imad-ul-Mulk</li>`;
+    html += `<li><span class="text-indigo-300">Shah Alam II:</span> 1759-1806 — Buxar, Treaty of Allahabad</li>`;
+    html += `<li><span class="text-gray-300">Akbar II:</span> 1806-1837 — Ceremonial, British pensioner</li>`;
+    html += `<li><span class="text-red-400"><strong>Bahadur Shah Zafar:</strong></span> 1837-1857 — Last emperor; exiled to Rangoon</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 2: Foreign Invasions
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-bolt mr-1"></i> Foreign Invasions</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">Nadir Shah (Persia):</span> 1738-1739 — Battle of Karnal; looted Delhi, took Peacock Throne & Kohinoor</li>`;
+    html += `<li><span class="text-red-300">Ahmad Shah Abdali (Durrani):</span> 1748-1767 — Multiple invasions; Third Panipat 1761 vs Marathas</li>`;
+    html += `<li>Both invasions <span class="hl-event">exposed Mughal military weakness</span> and accelerated decline</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 3: Regional States & Founders
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-map-location-dot mr-1"></i> Regional States & Founders</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Bengal:</span> Murshid Quli Khan (1717)</li>`;
+    html += `<li><span class="text-emerald-300">Awadh:</span> Saadat Khan Burhan-ul-Mulk (1722)</li>`;
+    html += `<li><span class="text-emerald-300">Hyderabad:</span> Nizam-ul-Mulk Asaf Jah I (1724)</li>`;
+    html += `<li><span class="text-emerald-300">Mysore:</span> Haidar Ali (1761) → Tipu Sultan</li>`;
+    html += `<li><span class="text-emerald-300">Marathas:</span> Peshwa Balaji Vishwanath (1713) → Baji Rao I</li>`;
+    html += `<li><span class="text-emerald-300">Sikhs:</span> Banda Singh Bahadur (1710) → Ranjit Singh (1799)</li>`;
+    html += `<li><span class="text-emerald-300">Rohilkhand:</span> Ali Muhammad Khan (1721)</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 4: British Milestones
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-blue-500/20">`;
+    html += `<h4 class="text-sm font-bold text-blue-400 mb-2"><i class="fa-solid fa-flag mr-1"></i> British Milestones</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-blue-300">Plassey (1757):</span> Clive defeats Siraj-ud-Daulah — British control Bengal</li>`;
+    html += `<li><span class="text-blue-300">Buxar (1764):</span> Munro defeats Mughal-Awadh-Bengal alliance</li>`;
+    html += `<li><span class="text-blue-300">Treaty of Allahabad (1765):</span> Diwani of Bengal, Bihar, Orissa to Company</li>`;
+    html += `<li><span class="text-blue-300">Pitt's India Act (1784):</span> British govt regulates Company affairs</li>`;
+    html += `<li><span class="text-blue-300">Seringapatam (1799):</span> Tipu Sultan killed; Mysore under British</li>`;
+    html += `<li><span class="text-blue-300">Anglo-Maratha Wars:</span> Maratha power crushed by 1818</li>`;
+    html += `<li><span class="text-blue-300">Anglo-Sikh Wars:</span> Punjab annexed 1849</li>`;
+    html += `<li><span class="text-blue-300">Govt of India Act 1858:</span> Crown takes over; Mughal Empire abolished</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 5: Important Battles
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-orange-500/20">`;
+    html += `<h4 class="text-sm font-bold text-orange-400 mb-2"><i class="fa-solid fa-crosshairs mr-1"></i> Important Battles</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-orange-300">Karnal (1739):</span> Mughals vs Nadir Shah — Mughals defeated; Delhi sacked</li>`;
+    html += `<li><span class="text-orange-300">Third Panipat (1761):</span> Marathas vs Abdali — Marathas decisively defeated</li>`;
+    html += `<li><span class="text-orange-300">Plassey (1757):</span> British vs Siraj-ud-Daulah — British victory in Bengal</li>`;
+    html += `<li><span class="text-orange-300">Buxar (1764):</span> British vs Mughal-Awadh-Bengal — British supremacy established</li>`;
+    html += `<li><span class="text-orange-300">Seringapatam (1799):</span> British vs Tipu Sultan — Tipu killed</li>`;
+    html += `</ul></div>`;
+
+    // Fact Card 6: Causes of Decline
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-list mr-1"></i> Causes of Decline (Overview)</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-rose-300">Political:</span> Weak successors, no succession law, factional nobility</li>`;
+    html += `<li><span class="text-rose-300">Administrative:</span> Mansabdari & Jagirdari crisis, corruption</li>`;
+    html += `<li><span class="text-rose-300">Economic:</span> Depleted treasury, declining trade & agriculture</li>`;
+    html += `<li><span class="text-rose-300">Military:</span> Technological stagnation, overexpansion</li>`;
+    html += `<li><span class="text-rose-300">External:</span> Nadir Shah, Abdali invasions</li>`;
+    html += `<li><span class="text-rose-300">Internal:</span> Rise of regional states, Maratha/Sikh revolts</li>`;
+    html += `<li><span class="text-rose-300">Colonial:</span> British East India Company's expansion</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `<span class="hl-ruler">Later Mughal emperors in chronological order</span>, <span class="hl-battle hl-bg-battle">Karnal (1739)</span> and <span class="hl-battle hl-bg-battle">Third Panipat (1761)</span>, <span class="hl-term hl-bg-term">Sayyid Brothers as King Makers</span>, <span class="hl-policy hl-bg-policy">Treaty of Allahabad (1765)</span> granting Diwani to British, <span class="hl-term">rise of regional states (Bengal, Hyderabad, Awadh, Mysore)</span>, <span class="hl-ruler">Nadir Shah's invasion</span> and the loss of the <span class="hl-arch">Peacock Throne & Kohinoor</span>, and the <span class="hl-event">1857 Rebellion & end of Mughal Empire</span> are frequently asked topics. </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Later Mughals (1707-1857) UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 7-10 History & UPSC reference materials</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

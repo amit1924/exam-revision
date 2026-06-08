@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deccan Empires (1336-1687) — Vijayanagar, Bahmani & Deccan Sultanates — UPSC NCERT Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-arch { color: #f472b6; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .dynasty-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8"></div>
+
+<script>
+  const DATA = {
+    title: "Deccan Empires (1336–1687): Vijayanagar, Bahmani & Deccan Sultanates",
+    location: "NCERT Class 7 & 12 History, UPSC reference materials",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 7 Ch 2, Class 12 Theme 7 (Vijayanagara), UPSC reference materials",
+    chapters: [
+      { class: 7, chapter: 2, name: "New Kings and Kingdoms", book: "Our Pasts II" },
+      { class: 12, theme: 7, name: "An Imperial Capital: Vijayanagara", book: "Themes in Indian History" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-chess-king text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>351 Years (1336-1687)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#vijay-intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-crown text-amber-400 mr-1"></i> 1. Vijayanagar — Introduction</a>
+          <a href="#vijay-dynasties" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Vijayanagar — Four Dynasties</a>
+          <a href="#vijay-sangama" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Sangama Dynasty</a>
+          <a href="#vijay-saluva" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Saluva Dynasty</a>
+          <a href="#vijay-tuluva" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Tuluva Dynasty — Golden Age</a>
+          <a href="#vijay-talikota" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Battle of Talikota (1565)</a>
+          <a href="#vijay-aravidu" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Aravidu Dynasty & Decline</a>
+          <a href="#vijay-admin" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Amara-Nayaka System</a>
+          <a href="#vijay-society" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Society & Economy</a>
+          <a href="#vijay-arch" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Architecture & Culture</a>
+          <a href="#bahmani" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-mosque text-green-400 mr-1"></i> 11. Bahmani Sultanate — Foundation</a>
+          <a href="#bahmani-rulers" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Bahmani Rulers</a>
+          <a href="#bahmani-gawan" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Mahmud Gawan</a>
+          <a href="#bahmani-admin" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. Bahmani Administration</a>
+          <a href="#bahmani-society" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">15. Bahmani Society & Economy</a>
+          <a href="#bahmani-arch" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">16. Bahmani Art & Architecture</a>
+          <a href="#bahmani-decline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">17. Decline of Bahmani</a>
+          <a href="#deccan-sultanates" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-flag text-rose-400 mr-1"></i> 18. The Five Deccan Sultanates</a>
+          <a href="#deccan-contrib" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">19. Contributions of Deccan Sultanates</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">20. Complete Timeline (1336-1687)</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">21. UPSC Key Facts at a Glance</a>
+        </div>
+      </div>`;
+
+    // ===== 1. VIJAYANAGAR — INTRODUCTION =====
+    html += `<section id="vijay-intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 1. Vijayanagar Empire — Introduction & Discovery</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      <span class="hl-dynasty hl-bg-dynasty">Vijayanagara</span> means <span class="hl-term">"City of Victory"</span> — both a <span class="hl-term">city (capital)</span> and an <span class="hl-term">empire</span>. It stretched from the <span class="hl-place">Krishna river</span> in the north to the <span class="hl-term">extreme south of the peninsula</span>. People remembered it as <span class="hl-place">Hampi</span> — named after the local mother goddess <span class="hl-term">Pampadevi</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-compass text-cyan-400 text-xs"></i> Discovery of Hampi Ruins</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Colonel Colin Mackenzie</span> (<span class="hl-date">1800</span>) — first <span class="hl-term">Surveyor General of India</span>, employee of <span class="hl-dynasty">East India Company</span> — discovered the ruins and prepared the <span class="hl-term">first survey map</span> based on memories of <span class="hl-term">priests of Virupaksha temple</span></li>`;
+    html += `<li><span class="hl-ruler">Alexander Greenlaw</span> (<span class="hl-date">1856</span>) — took the <span class="hl-term">first detailed photographs</span> of the ruins</li>`;
+    html += `<li><span class="hl-ruler">J.F. Fleet</span> (<span class="hl-date">1876</span>) — began <span class="hl-term">documenting inscriptions</span></li>`;
+    html += `<li><span class="hl-ruler">John Marshall</span> (<span class="hl-date">1902</span>) — began <span class="hl-term">conservation work</span></li>`;
+    html += `<li><span class="hl-place">Hampi</span> declared a <span class="hl-term">site of national importance (1976)</span> and <span class="hl-event hl-bg-event">UNESCO World Heritage Site (1986)</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-seedling text-cyan-400 text-xs"></i> Foundation (1336)</h3>`;
+    html += `<p class="content-text">
+      Founded in <span class="hl-date">1336</span> by two brothers: <span class="hl-ruler hl-bg-ruler">Harihara</span> and <span class="hl-ruler hl-bg-ruler">Bukka</span>, belonging to the <span class="hl-dynasty hl-bg-dynasty">Sangama dynasty</span>. Rulers called themselves <span class="hl-term">"Rayas"</span>. The empire consisted of people speaking <span class="hl-term">Kannada, Telugu, Tamil, Malayalam, Sanskrit</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">Vijayanagara is covered in <span class="hl-term">NCERT Class 12 Theme 7 "An Imperial Capital: Vijayanagara"</span> — a dedicated chapter in <span class="hl-term">Themes in Indian History</span>. It is the <span class="hl-term hl-bg-term">most detailed NCERT source on any medieval Indian kingdom</span>, covering its urban layout, architecture, administration, and society. The <span class="hl-term">Hampi ruins</span> are one of the most important archaeological sites in India. The discovery by <span class="hl-ruler">Colin Mackenzie (1800)</span> is a landmark moment in Indian archaeology.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. FOUR DYNASTIES OVERVIEW =====
+    html += `<section id="vijay-dynasties">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-tree text-amber-400"></i> 2. Four Dynasties of Vijayanagar</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<div class="table-wrap"><table><thead><tr><th>Dynasty</th><th>Period</th><th>Founder</th><th>Key Rulers</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-dynasty">Sangama</span></td><td><span class="hl-date">1336-1485</span></td><td><span class="hl-ruler">Harihara I & Bukka I</span></td><td>Deva Raya I, Deva Raya II</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Saluva</span></td><td><span class="hl-date">1485-1505</span></td><td><span class="hl-ruler">Saluva Narasimha</span></td><td>Short-lived dynasty</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Tuluva</span></td><td><span class="hl-date">1505-1570</span></td><td><span class="hl-ruler">Vira Narasimha</span></td><td><span class="hl-ruler hl-bg-ruler">Krishnadeva Raya</span> (greatest), Achyuta Raya, Sadasiva Raya</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Aravidu</span></td><td><span class="hl-date">1570-1646</span></td><td><span class="hl-ruler">Tirumala</span></td><td>Venkata II; Nayakas became independent; empire ended 1646</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">four dynasties of Vijayanagar</span> are frequently tested. The <span class="hl-dynasty hl-bg-dynasty">Tuluva dynasty</span> represents the <span class="hl-term hl-bg-term">Golden Age</span> under <span class="hl-ruler">Krishnadeva Raya (1509-1529)</span>. The <span class="hl-dynasty">Aravidu dynasty</span> was the last, declining after the <span class="hl-battle hl-bg-battle">Battle of Talikota (1565)</span>. Remember the sequence: <span class="hl-term">Sangama → Saluva → Tuluva → Aravidu</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 3. SANGAMA DYNASTY =====
+    html += `<section id="vijay-sangama">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-1 text-amber-400"></i> 3. Sangama Dynasty (1336-1485)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Harihara I (1336-1356)</span>: co-founder with <span class="hl-ruler">Bukka</span>, established the capital</li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Bukka I (1356-1377)</span>: expanded the empire, fought the <span class="hl-dynasty">Bahmani Sultanate</span></li>`;
+    html += `<li><span class="hl-ruler">Harihara II (1377-1404)</span>: further expansion of territories</li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Deva Raya I (1406-1422)</span>: built <span class="hl-arch">dams, canals, forts</span>; fought <span class="hl-ruler">Firuz Shah Bahmani</span></li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Deva Raya II (1422-1446)</span>: called the <span class="hl-term hl-bg-term">"greatest of Sangama rulers"</span>; patronized literature (<span class="hl-term">Telugu, Kannada, Sanskrit</span>); built large <span class="hl-arch">irrigation works</span>; sent an embassy to <span class="hl-term">China</span>; Persian traveller <span class="hl-ruler">Abdur Razzaq</span> visited his court</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler">Deva Raya II</span> is often asked about as the <span class="hl-term">greatest Sangama ruler</span>. The visit of <span class="hl-ruler">Abdur Razzaq</span> (Persian traveller) and the embassy to China are key facts. His <span class="hl-term">patronage of Telugu, Kannada, and Sanskrit literature</span> is important.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 4. SALUVA DYNASTY =====
+    html += `<section id="vijay-saluva">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-2 text-amber-400"></i> 4. Saluva Dynasty (1485-1505)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Saluva Narasimha</span> seized power from the Sangama dynasty. This was a <span class="hl-term">short-lived dynasty</span> lasting only about <span class="hl-num">20 years</span>. It was followed by the <span class="hl-dynasty">Tuluva dynasty</span>.
+    </p>`;
+    html += `</div></section>`;
+
+    // ===== 5. TULUVA DYNASTY — GOLDEN AGE =====
+    html += `<section id="vijay-tuluva">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-3 text-amber-400"></i> 5. Tuluva Dynasty (1505-1570) — The Golden Age</h2>`;
+
+    // Vira Narasimha
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Vira Narasimha (1505-1509)</h3>`;
+    html += `<p class="content-text">Founder of the <span class="hl-dynasty">Tuluva dynasty</span>. His reign was short but he laid the foundation for the empire's greatest period.</p>`;
+    html += `</div>`;
+
+    // Krishnadeva Raya
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/30">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star text-yellow-400 text-xs"></i> Krishnadeva Raya (1509-1529) — THE GREATEST RULER</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Krishnadeva Raya</span> is considered <span class="hl-term hl-bg-term">the most powerful Hindu ruler of India</span> and the <span class="hl-term">greatest emperor of Vijayanagar</span>. His reign represents the <span class="hl-term hl-bg-term">zenith of Vijayanagar power, prosperity, and cultural achievement</span>.
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-crossed-swords text-cyan-400 text-xs"></i> Military Campaigns</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Defeated <span class="hl-ruler">Adil Shah of Bijapur</span> — the most powerful of the Deccan Sultanates</li>`;
+    html += `<li>Conquered the <span class="hl-place">Raichur Doab (1512)</span> — the strategically vital region between Krishna and Tungabhadra rivers</li>`;
+    html += `<li>Defeated the <span class="hl-dynasty">Gajapati of Odisha</span> — pushed the empire to its <span class="hl-term">maximum territorial extent</span></li>`;
+    html += `<li>Expanded the empire from <span class="hl-place">Krishna river</span> in the north to <span class="hl-place">Cape Comorin (Kanyakumari)</span> in the south</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-building-columns text-cyan-400 text-xs"></i> Construction & Patronage</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Built fine <span class="hl-arch">temples and gopurams</span> — including the magnificent <span class="hl-arch hl-bg-arch">Virupaksha temple hall</span> and the <span class="hl-arch">eastern gopuram</span></li>`;
+    html += `<li>Built the new suburban township <span class="hl-place">Nagalapuram</span> (named after his queen <span class="hl-ruler">Nagala Devi</span>)</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-feather-pointed text-cyan-400 text-xs"></i> Literature & Culture</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Himself a writer — composed <span class="hl-term hl-bg-term">Amuktamalyada</span> in <span class="hl-term">Telugu</span> (a poetic work on the life of the Tamil <span class="hl-term">Alvar saint Andal</span>)</li>`;
+    html += `<li>His court had the famous <span class="hl-term hl-bg-term">Ashtadiggajas</span> (eight great poets), including <span class="hl-ruler">Allasani Peddana</span> (<span class="hl-term">Andhra Kavita Pitamaha</span> — father of Telugu poetry), <span class="hl-ruler">Nandi Thimmana</span>, <span class="hl-ruler">Dhurjati</span>, and others</li>`;
+    html += `<li><span class="hl-term">Telugu, Kannada, Tamil, Sanskrit</span> all flourished under his patronage</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-ship text-cyan-400 text-xs"></i> Foreign Relations & Trade</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Prosperous trade</span> with the <span class="hl-dynasty">Portuguese</span> — especially in horses and firearms</li>`;
+    html += `<li>Foreign travellers who visited his court: <span class="hl-ruler hl-bg-ruler">Domingo Paes</span> (Portuguese traveller who left a detailed account of Vijayanagar) and <span class="hl-ruler">Barbosa</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Krishnadeva Raya (1509-1529)</span> is the <span class="hl-term hl-bg-term">most important ruler of Vijayanagar</span> for UPSC. Key points: <span class="hl-term">Amuktamalyada</span>, <span class="hl-term">Ashtadiggajas</span> (8 poets), <span class="hl-term">Allasani Peddana</span> (Andhra Kavita Pitamaha), capture of <span class="hl-place">Raichur Doab (1512)</span>, defeat of Adil Shah and Gajapati, construction of <span class="hl-arch">Nagalapuram</span> and the <span class="hl-arch">Virupaksha temple hall</span>, trade with Portuguese, and accounts of <span class="hl-ruler">Domingo Paes</span>.</div></div>`;
+    html += `</div>`;
+
+    // Achyuta Raya & Sadasiva
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Achyuta Raya (1529-1542)</h3>`;
+    html += `<p class="content-text">A <span class="hl-term">weaker ruler</span> compared to Krishnadeva Raya. His reign saw the beginning of internal conflicts and the rise of the <span class="hl-dynasty">Aravidu family</span> under <span class="hl-ruler">Rama Raya</span>.</p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Sadasiva Raya (1542-1570)</h3>`;
+    html += `<p class="content-text">Though nominally the ruler, the <span class="hl-term">real power</span> was exercised by <span class="hl-ruler hl-bg-ruler">Rama Raya</span> of the <span class="hl-dynasty">Aravidu family</span>. This period set the stage for the <span class="hl-battle hl-bg-battle">Battle of Talikota</span>.</p>`;
+    html += `</div></section>`;
+
+    // ===== 6. BATTLE OF TALIKOTA =====
+    html += `<section id="vijay-talikota">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-crossed-swords text-red-400"></i> 6. Battle of Talikota (1565)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/30">`;
+    html += `<p class="content-text">
+      Also known as the <span class="hl-battle hl-bg-battle">Battle of Rakkasagi-Tangadagi</span>. Fought in <span class="hl-date">1565</span> between <span class="hl-dynasty">Vijayanagar</span> (led by <span class="hl-ruler hl-bg-ruler">Rama Raya</span>) and the <span class="hl-term">combined Deccan Sultanates</span> — <span class="hl-dynasty">Bijapur, Golconda, Ahmadnagar, Bidar, Berar</span>.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-event">Rama Raya was defeated and killed</span> — a catastrophic blow to Vijayanagar</li>`;
+    html += `<li>The magnificent city of <span class="hl-place">Vijayanagara (Hampi)</span> was <span class="hl-event hl-bg-event">sacked, looted, and destroyed</span> by the Sultanate armies</li>`;
+    html += `<li><span class="hl-place">Hampi</span> was <span class="hl-term">abandoned</span> and fell into ruin</li>`;
+    html += `<li>The <span class="hl-dynasty">Aravidu dynasty</span> moved the capital first to <span class="hl-place">Penukonda</span>, then to <span class="hl-place">Chandragiri</span></li>`;
+    html += `<li>The empire <span class="hl-event">declined gradually</span> and ended around <span class="hl-date">1646</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-battle hl-bg-battle">Battle of Talikota (1565)</span> is one of the <span class="hl-term hl-bg-term">most important battles in Indian history</span>. It marked the <span class="hl-event">end of the last great Hindu empire of South India</span>. The <span class="hl-term">combined Deccan Sultanates</span> alliance and the <span class="hl-event">sack of Hampi</span> are key facts. Note: the battle is also called <span class="hl-battle">Rakkasagi-Tangadagi</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 7. ARAVIDU DYNASTY =====
+    html += `<section id="vijay-aravidu">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-4 text-amber-400"></i> 7. Aravidu Dynasty (1570-1646) & Decline</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler">Tirumala (1570-1572)</span>: first Aravidu ruler, moved capital to <span class="hl-place">Penukonda</span></li>`;
+    html += `<li><span class="hl-ruler">Sriranga I</span> and <span class="hl-ruler">Venkata II</span>: tried to revive the empire but faced constant challenges</li>`;
+    html += `<li>Later rulers were <span class="hl-term">weak</span>; the <span class="hl-term">Nayakas</span> (military governors) became <span class="hl-event">increasingly independent</span></li>`;
+    html += `<li>The empire <span class="hl-event hl-bg-event">fragmented into Nayaka states</span>: <span class="hl-place">Madurai</span> (under <span class="hl-ruler">Tirumala Nayaka</span>), <span class="hl-place">Tanjore</span>, <span class="hl-place">Gingee</span></li>`;
+    html += `<li>The Vijayanagar Empire finally ended around <span class="hl-date">1646</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-dynasty">Aravidu dynasty</span> was the <span class="hl-term">last dynasty of Vijayanagar</span>. After Talikota, the empire <span class="hl-event">fragmented into Nayaka kingdoms</span> — <span class="hl-place">Madurai, Tanjore, Gingee</span> — which preserved Vijayanagar traditions. The <span class="hl-term">Nayaka system</span> continued in the south for many decades.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 8. AMARA-NAYAKA SYSTEM =====
+    html += `<section id="vijay-admin">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building-columns text-emerald-400"></i> 8. Administration — Amara-Nayaka System</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+
+    html += `<p class="content-text">
+      The <span class="hl-policy hl-bg-policy">Amara-Nayaka system</span> was the <span class="hl-term hl-bg-term">administrative backbone of the Vijayanagar Empire</span>. Under this system:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Military commanders (Amara-nayakas)</span> were given <span class="hl-term">territories to govern</span> — similar to the <span class="hl-policy">Iqta system</span> of the <span class="hl-dynasty">Delhi Sultanate</span></li>`;
+    html += `<li>Amara-nayakas sent <span class="hl-term">annual tribute</span> to the king and appeared at court with gifts</li>`;
+    html += `<li>They <span class="hl-term">maintained troops</span> for the emperor's service</li>`;
+    html += `<li>In return, they held <span class="hl-term">land (revenue assignments)</span></li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-sitemap text-cyan-400 text-xs"></i> Central Administration</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">King (Raya)</span> — supreme authority</li>`;
+    html += `<li><span class="hl-term">Mahapradhana</span> — chief minister</li>`;
+    html += `<li><span class="hl-term">Dandanayaka</span> — commander of the army</li>`;
+    html += `<li>Empire divided into <span class="hl-term">Mandalas, Nadus, and villages</span></li>`;
+    html += `<li><span class="hl-term">Land revenue</span> was the main source of income</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-policy hl-bg-policy">Amara-Nayaka system</span> is frequently compared with the <span class="hl-policy">Iqta system</span> of the Delhi Sultanate. Both involved <span class="hl-term">assigning revenue territories to military commanders in exchange for service</span>. However, the Amara-nayakas were <span class="hl-term">more autonomous</span> than Iqtadars and could <span class="hl-term">pass on their territories hereditarily</span> in practice.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 9. SOCIETY & ECONOMY =====
+    html += `<section id="vijay-society">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scale-balanced text-purple-400"></i> 9. Society & Economy</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-sack-dollar text-cyan-400 text-xs"></i> Economy & Trade</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Highly prosperous trade</span> — <span class="hl-term">spices, textiles, precious stones</span></li>`;
+    html += `<li><span class="hl-term">Horses</span> were imported from <span class="hl-place">Arabia</span> — controlled by <span class="hl-term">Arab and Portuguese traders</span> and <span class="hl-term">Kudirai Chettis</span> (horse merchants)</li>`;
+    html += `<li>The <span class="hl-term">Portuguese controlled the horse trade</span> — a critical strategic commodity</li>`;
+    html += `<li>Markets in the capital city were <span class="hl-term">famous for their variety and prosperity</span></li>`;
+    html += `<li><span class="hl-term">Agriculture</span> was well-developed with <span class="hl-arch">irrigation tanks, canals, and dams</span></li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-users text-cyan-400 text-xs"></i> Social Structure</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Hierarchical</span> society — <span class="hl-term">Brahmins</span> were highly respected and held key positions</li>`;
+    html += `<li><span class="hl-term">Position of women</span>: some women owned property and were literate; however, <span class="hl-term">sati</span> (widow immolation) existed as a practice</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">economy of Vijayanagar</span> was heavily dependent on <span class="hl-term">trade</span> — especially the <span class="hl-term">horse trade</span> controlled by the Portuguese. The empire's <span class="hl-term">agricultural prosperity</span> was supported by extensive <span class="hl-arch">irrigation works</span>. The <span class="hl-term">Kudirai Chettis</span> (horse merchants) are a unique feature of Vijayanagar trade.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 10. ARCHITECTURE & CULTURE =====
+    html += `<section id="vijay-arch">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-landmark text-pink-400"></i> 10. Architecture & Culture of Vijayanagar</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-pink-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-city text-cyan-400 text-xs"></i> Physical Layout of the Capital</h3>`;
+    html += `<p class="content-text">
+      The city was located in a <span class="hl-term">natural basin</span> formed by the <span class="hl-place">Tungabhadra river</span>. It was an <span class="hl-term">arid zone</span>, so large <span class="hl-arch">reservoirs</span> were built to store water — including the <span class="hl-arch">Kamalapuram tank</span> and the <span class="hl-arch">Hiriya canal</span>. The city had <span class="hl-num">seven lines of forts</span> (mentioned by <span class="hl-ruler">Abdur Razzaq</span>).
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-building text-cyan-400 text-xs"></i> Royal Centre</h4>`;
+    html += `<p class="content-text">
+      Located in the <span class="hl-term">southwestern part</span> of the city. Contained <span class="hl-num">60+ temples</span> and <span class="hl-term">palace enclosures</span>. Key structures:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Mahanavami Dibba</span> — a massive platform (<span class="hl-num">11,000 sq ft</span>, <span class="hl-num">40 ft</span> high) used for <span class="hl-term">ceremonies, worship of the image, horse sacrifice, and buffalo sacrifice</span></li>`;
+    html += `<li><span class="hl-arch">Lotus Mahal</span> — a beautiful Indo-Islamic style palace</li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Hazara Rama Temple</span> — known for its exquisite bas-reliefs depicting scenes from the <span class="hl-term">Ramayana</span></li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-place-of-worship text-cyan-400 text-xs"></i> Sacred Centre</h4>`;
+    html += `<p class="content-text">
+      Located at the <span class="hl-term">rocky northern end</span> on the banks of the <span class="hl-place">Tungabhadra</span>. Contained the most important temples:
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Virupaksha Temple</span> — the <span class="hl-term">main shrine</span> dedicated to <span class="hl-term">Virupaksha (a form of Shiva)</span>. <span class="hl-ruler">Krishnadeva Raya</span> built the <span class="hl-arch">hall</span> and the magnificent <span class="hl-arch">eastern gopuram</span>. The kings claimed to rule on behalf of <span class="hl-term">God Virupaksha</span></li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Vitthala Temple</span> — dedicated to <span class="hl-term">Vitthala (a form of Vishnu)</span>. Famous for its <span class="hl-arch">stone chariot</span> (inspired by Konark's Sun Temple) and <span class="hl-arch">musical pillars</span> that produce musical notes when struck</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-palette text-cyan-400 text-xs"></i> Architectural Features & Style</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Indo-Islamic architecture influence</span> — <span class="hl-arch">arches</span> and <span class="hl-arch">domes</span> over gates show clear Islamic influence</li>`;
+    html += `<li><span class="hl-arch">Gopurams</span> (royal gateways) and <span class="hl-arch">mandapas</span> (pavilions) — the <span class="hl-term">characteristic Vijayanagar style</span> of temple architecture</li>`;
+    html += `<li>Kings used the title <span class="hl-term hl-bg-term">"Hindu Suratrana"</span> (Hindu Sultan) — showing their adoption of Islamic courtly titles even as they championed Hinduism</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-feather text-cyan-400 text-xs"></i> Culture & Literature</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Telugu, Kannada, Tamil, Sanskrit</span> — all four languages flourished</li>`;
+    html += `<li><span class="hl-ruler">Krishnadeva Raya's</span> <span class="hl-term">Amuktamalyada</span> in Telugu</li>`;
+    html += `<li>The <span class="hl-term">Ashtadiggajas</span> — 8 great poets in Krishnadeva Raya's court</li>`;
+    html += `<li><span class="hl-term">Music and dance</span> were integral to temple worship and festivals</li>`;
+    html += `<li><span class="hl-term">Pilgrimage and temple festivals</span> were important features of religious life</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">architecture of Vijayanagar</span> is a <span class="hl-term hl-bg-term">major UPSC topic</span>. Key structures: <span class="hl-arch">Virupaksha Temple</span> (main shrine, Krishnadeva Raya's hall and eastern gopuram), <span class="hl-arch">Vitthala Temple</span> (stone chariot, musical pillars), <span class="hl-arch">Mahanavami Dibba</span> (ceremonial platform), <span class="hl-arch">Hazara Rama Temple</span> (Ramayana reliefs), <span class="hl-arch">Lotus Mahal</span>. Note the <span class="hl-term">Indo-Islamic architectural synthesis</span> and the term <span class="hl-term">"Hindu Suratrana"</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 11. BAHMANI SULTANATE — FOUNDATION =====
+    html += `<section id="bahmani">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-mosque text-green-400"></i> 11. Bahmani Sultanate — Foundation (1347)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+
+    html += `<p class="content-text">
+      After the fall of the <span class="hl-dynasty">Yadavas</span> and <span class="hl-dynasty">Kakatiyas</span> to the <span class="hl-dynasty">Khaljis</span> and <span class="hl-dynasty">Tughlaqs</span>, <span class="hl-term">Muslim governorships</span> were established in the Deccan. <span class="hl-ruler">Muhammad bin Tughlaq</span> appointed <span class="hl-term">Amiran-i-sada</span> (chiefs of 100 villages). Revolts in the Deccan led to the establishment of an independent Bahmani Kingdom.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler hl-bg-ruler">Alauddin Bahman Shah</span> (also known as <span class="hl-ruler">Hasan Gangu</span> / <span class="hl-ruler">Zafar Khan</span>) in <span class="hl-date">1347</span></li>`;
+    html += `<li>Took the title: <span class="hl-term">Abu'l-Muzaffar Ala-ud-din Bahman Shah</span></li>`;
+    html += `<li>Capital: <span class="hl-place">Ahsanabad (Gulbarga)</span></li>`;
+    html += `<li>Kingdom spread over modern <span class="hl-place">Karnataka, Maharashtra, Andhra Pradesh</span></li>`;
+    html += `<li>Name derived from the mythical Iranian hero <span class="hl-term">Bahman Shah</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Context</div><div class="fact-box-content">The <span class="hl-dynasty">Bahmani Sultanate</span> is covered in <span class="hl-term">NCERT Class 7 Chapter 2 "New Kings and Kingdoms"</span> (in the context of the Deccan) and in <span class="hl-term">Class 12 Theme 7</span> (in the context of Vijayanagar's conflicts). The Bahmani-Vijayanagar rivalry is a <span class="hl-term hl-bg-term">crucial theme in medieval Deccan history</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 12. BAHMANI RULERS =====
+    html += `<section id="bahmani-rulers">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-users text-green-400"></i> 12. Bahmani Rulers</h2>`;
+
+    // Alauddin Bahman Shah
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Alauddin Hasan Bahman Shah (1347-1358)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Divided the kingdom into <span class="hl-num">4 tarafs</span> (provinces): <span class="hl-place">Gulbarga, Daulatabad, Berar, Bidar</span></li>`;
+    html += `<li>Clashed with <span class="hl-dynasty">Vijayanagar</span> and <span class="hl-dynasty">Warangal</span></li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Mohammed Shah I
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Mohammed Shah I (1358-1375)</h3>`;
+    html += `<p class="content-text">Occupied in wars against <span class="hl-dynasty">Warangal</span> and <span class="hl-dynasty">Vijayanagar</span>.</p>`;
+    html += `</div>`;
+
+    // Alauddin Mujahid
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Alauddin Mujahid (1375-1378)</h3>`;
+    html += `<p class="content-text"><span class="hl-term">Afaqis</span> (foreigners from <span class="hl-place">Iraq/Iran</span>) were introduced into the nobility during his reign — this <span class="hl-event">created a lasting division</span> between Deccanis and Afaqis.</p>`;
+    html += `</div>`;
+
+    // Firuz Shah
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/30">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star text-yellow-400 text-xs"></i> Taj ud-Din Firuz Shah (1397-1422) — Greatest Bahmani Ruler</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Greatest ruler of the Bahmani Sultanate</span> — expanded the kingdom significantly</li>`;
+    html += `<li>Conquered the <span class="hl-place">Raichur Doab</span> — the fertile region between Krishna and Tungabhadra</li>`;
+    html += `<li>Wanted to make the Deccan a <span class="hl-term">cultural capital</span> of the Islamic world</li>`;
+    html += `<li>Learned in the <span class="hl-term">Quran</span> and <span class="hl-term">natural sciences</span></li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Included Hindus in his administration</span> — a progressive policy</li>`;
+    html += `<li>Married the <span class="hl-term">daughter of Deva Raya I</span> of Vijayanagar — a diplomatic marriage to seal peace</li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Ahmad Shah
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-user text-cyan-400 text-xs"></i> Ahmad Shah Al Wali (1422-1435)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Shifted the capital from <span class="hl-place">Gulbarga</span> to <span class="hl-place">Bidar</span></li>`;
+    html += `<li>Defeated <span class="hl-dynasty">Warangal</span></li>`;
+    html += `</ul>`;
+    html += `</div></section>`;
+
+    // ===== 13. MAHMUD GAWAN =====
+    html += `<section id="bahmani-gawan">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-user-graduate text-green-400"></i> 13. Mahmud Gawan (1466-1481)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/30">`;
+
+    html += `<p class="content-text">
+      <span class="hl-ruler hl-bg-ruler">Mahmud Gawan</span> was an <span class="hl-term">Iranian merchant</span> who became the <span class="hl-term">Prime Minister (Peshwa)</span> under <span class="hl-ruler">Muhammad Shah III</span>. He dominated the Bahmani kingdom for approximately <span class="hl-num">20 years</span> (<span class="hl-date">1466-1481</span>) and brought it to its <span class="hl-term hl-bg-term">greatest territorial extent</span>.
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-crossed-swords text-cyan-400 text-xs"></i> Military Achievements</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Conquered <span class="hl-place">Kanchi (Kanjeevaram)</span> — deep inside Vijayanagar territory</li>`;
+    html += `<li>Captured <span class="hl-place">Goa</span> and <span class="hl-place">Dabhol</span> — the major economic centres on the west coast</li>`;
+    html += `<li>Fought campaigns in <span class="hl-place">Konkan, Sangameshwara, Orissa</span></li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-sitemap text-cyan-400 text-xs"></i> Administrative Reforms</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Reorganized the kingdom: divided the territory into <span class="hl-num hl-bg-num">8 tarafs</span> (provinces), each under a <span class="hl-term">Tarafdar</span></li>`;
+    html += `<li><span class="hl-policy hl-bg-policy">Reformed land measurement</span> and revenue assessment</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-graduation-cap text-cyan-400 text-xs"></i> Cultural Contributions</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Built the magnificent <span class="hl-arch hl-bg-arch">Madrasa of Mahmud Gawan</span> in <span class="hl-place">Bidar</span> — a Persian-style <span class="hl-term">centre of Islamic learning</span> that attracted scholars from across the Islamic world</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Introduced gunpowder</span> in warfare against Vijayanagar</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-book text-cyan-400 text-xs"></i> Traveller Accounts</h4>`;
+    html += `<p class="content-text">
+      The <span class="hl-term">Russian traveller <span class="hl-ruler hl-bg-ruler">Nikitin</span></span> visited the Bahmani kingdom during this period. He wrote <span class="hl-term hl-bg-term">"The Journey Beyond Three Seas"</span> — a valuable source on Bahmani society and trade.
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-skull text-red-400 text-xs"></i> Execution & Aftermath</h4>`;
+    html += `<p class="content-text">
+      <span class="hl-event hl-bg-event">Mahmud Gawan was executed in 1482</span> on <span class="hl-term">false allegations</span> of treason, instigated by the <span class="hl-term">native Deccani nobles</span> who resented his power and influence. His execution was a <span class="hl-term hl-bg-term">catastrophic blow</span> to the Bahmani Sultanate — it <span class="hl-event">accelerated the kingdom's decline and fragmentation</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-ruler hl-bg-ruler">Mahmud Gawan</span> is a <span class="hl-term hl-bg-term">very important figure for UPSC</span>. Key points: his <span class="hl-term">administrative reforms (8 tarafs)</span>, <span class="hl-arch">Madrasa at Bidar</span>, <span class="hl-term">introduction of gunpowder</span>, conquest of <span class="hl-place">Kanchi, Goa, Dabhol</span>, the <span class="hl-term">rivalry between Deccanis and Afaqis</span> that led to his execution, and <span class="hl-ruler">Nikitin's</span> account. His death in <span class="hl-date">1482</span> marked the <span class="hl-event">beginning of the end of the Bahmani Sultanate</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 14. BAHMANI ADMINISTRATION =====
+    html += `<section id="bahmani-admin">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-building-columns text-green-400"></i> 14. Bahmani Administration</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+
+    html += `<p class="content-text">The Bahmani administration <span class="hl-term">adopted the Delhi Sultanate's administrative system</span> with modifications for the Deccan context.</p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-sitemap text-cyan-400 text-xs"></i> Administrative Divisions</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Initially <span class="hl-num">4 tarafs</span> (provinces) — later expanded to <span class="hl-num hl-bg-num">8 tarafs</span> under <span class="hl-ruler">Mahmud Gawan</span></li>`;
+    html += `<li>Each <span class="hl-term">taraf</span> under a <span class="hl-term">Tarafdar (Subedar)</span></li>`;
+    html += `<li><span class="hl-term">Khalisa</span> land — reserved directly for the king/royal household</li>`;
+    html += `<li>Nobles received salaries through <span class="hl-term">cash payments</span> or <span class="hl-term">jagirs</span> (land assignments)</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-user-tie text-cyan-400 text-xs"></i> Nobility Division: Deccanis vs Afaqis</h4>`;
+    html += `<p class="content-text">The nobility was deeply divided:</p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Deccanis</span> — old settlers, Muslims who had lived in the Deccan for generations</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Afaqis / Pardesis</span> — newcomers from <span class="hl-place">Central Asia, Iran, Iraq</span> who received high positions under Firuz Shah and Mahmud Gawan</li>`;
+    html += `<li>This <span class="hl-event hl-bg-event">rivalry between Deccanis and Afaqis</span> was the <span class="hl-term hl-bg-term">single greatest internal weakness</span> of the Bahmani Sultanate and a major cause of its decline</li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-users-gear text-cyan-400 text-xs"></i> Key Officials</h4>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Official</th><th>Title</th><th>Function</th></tr></thead><tbody>`;
+    html += `<tr><td>Prime Minister</td><td><span class="hl-term">Wazir-i-kul</span></td><td>Head of administration</td></tr>`;
+    html += `<tr><td>Finance Minister</td><td><span class="hl-term">Amir-i-kul</span></td><td>Managed finances and revenue</td></tr>`;
+    html += `<tr><td>Foreign Affairs</td><td><span class="hl-term">Wazir Ashraf</span></td><td>Handled diplomatic relations</td></tr>`;
+    html += `<tr><td>Chief Justice</td><td><span class="hl-term">Sadar-i-jahan</span></td><td>Head of the judicial system</td></tr>`;
+    html += `<tr><td>Governor</td><td><span class="hl-term">Tarafdar</span></td><td>Provincial administrator</td></tr>`;
+    html += `<tr><td>Commander of Army</td><td><span class="hl-term">Amir-ul-Umara</span></td><td>Military commander-in-chief</td></tr>`;
+    html += `<tr><td>Royal Bodyguards</td><td><span class="hl-term">Khassakhel</span></td><td>Elite personal guard of the Sultan</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">Deccani vs Afaqi</span> conflict is the <span class="hl-term hl-bg-term">single most important internal factor</span> for the Bahmani Sultanate's decline. The division of the nobility along ethnic lines (<span class="hl-term">old settlers vs newcomers</span>) led to constant court intrigues and the <span class="hl-event">execution of Mahmud Gawan</span>. Remember key officials: <span class="hl-term">Wazir-i-kul, Amir-i-kul, Sadar-i-jahan, Tarafdar, Amir-ul-Umara, Khassakhel</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 15. BAHMANI SOCIETY & ECONOMY =====
+    html += `<section id="bahmani-society">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-scale-balanced text-green-400"></i> 15. Bahmani Society & Economy</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-users text-cyan-400 text-xs"></i> Society</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Cosmopolitan society</span> — Hindus, Muslims, Iranians, Abyssinians all coexisted</li>`;
+    html += `<li>Languages: <span class="hl-term">Dakhani (proto-Urdu)</span>, <span class="hl-term">Marathi</span>, <span class="hl-term">Kannada</span>, <span class="hl-term">Telugu</span></li>`;
+    html += `<li><span class="hl-term">Dakhani</span> was introduced by <span class="hl-ruler">Ibrahim Adil Shah</span> as a court language replacing Persian</li>`;
+    html += `<li><span class="hl-term">Sufis</span> were greatly venerated in the Bahmani kingdom</li>`;
+    html += `<li><span class="hl-term">Shia influence</span> grew due to the influx of Afaqis from Iran</li>`;
+    html += `<li>Some rulers were <span class="hl-term">intolerant towards Hindus</span>, but <span class="hl-ruler">Firuz Shah</span> was more <span class="hl-policy hl-bg-policy">tolerant and inclusive</span></li>`;
+    html += `</ul>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-sack-dollar text-cyan-400 text-xs"></i> Economy & Trade</h4>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Main economic activities: <span class="hl-term">agriculture, trade in horses, cloth, silk, pepper</span></li>`;
+    html += `<li><span class="hl-place">Dabul (Dabhol)</span> was the <span class="hl-term">major port</span> of the Bahmani kingdom</li>`;
+    html += `<li>Trade was largely in the hands of <span class="hl-term">Hindu merchants</span></li>`;
+    html += `<li><span class="hl-ruler">Mahmud Gawan</span> carried out <span class="hl-policy">land measurement reforms</span> to improve revenue collection</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">Dakhani language</span> developed during the Bahmani period as a <span class="hl-term">proto-Urdu</span> blending Persian, Arabic, and local Deccan languages. The <span class="hl-term">cosmopolitan nature</span> of Bahmani society and the <span class="hl-term">trade network</span> through <span class="hl-place">Dabhol</span> are important. <span class="hl-ruler">Ibrahim Adil Shah</span> (later Adil Shahi ruler) is credited with promoting Dakhani over Persian.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 16. BAHMANI ART & ARCHITECTURE =====
+    html += `<section id="bahmani-arch">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-landmark text-green-400"></i> 16. Bahmani Art & Architecture</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-pink-500/20">`;
+
+    html += `<p class="content-text">
+      The Bahmani Sultanate developed a distinctive <span class="hl-term">Indo-Islamic architecture</span> with strong <span class="hl-term">Persian influence</span>.
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-building text-cyan-400 text-xs"></i> Key Architectural Structures</h4>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Structure</th><th>Location</th><th>Builder</th><th>Significance</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-arch">Gulbarga Fort</span></td><td>Gulbarga</td><td><span class="hl-ruler">Alauddin Bahman Shah</span></td><td>Fortified capital of early Bahmani</td></tr>`;
+    html += `<tr><td><span class="hl-arch">Jama Masjid</span></td><td>Gulbarga</td><td>Bahmani period</td><td>Unique covered mosque with no courtyard</td></tr>`;
+    html += `<tr><td><span class="hl-arch hl-bg-arch">Bidar Fort</span></td><td>Bidar</td><td><span class="hl-ruler">Ahmad Shah</span></td><td>New capital after 1422; impressive fortifications</td></tr>`;
+    html += `<tr><td><span class="hl-arch hl-bg-arch">Madrasa of Mahmud Gawan</span></td><td>Bidar</td><td><span class="hl-ruler">Mahmud Gawan</span></td><td>Persian-style Islamic university; attracted scholars from across the Islamic world</td></tr>`;
+    html += `<tr><td><span class="hl-arch">Chand Minar</span></td><td>Daulatabad</td><td><span class="hl-ruler">Alauddin Bahman Shah</span></td><td>64m high minaret; built to commemorate capture of Daulatabad</td></tr>`;
+    html += `<tr><td><span class="hl-arch hl-bg-arch">Gol Gumbaz</span></td><td>Bijapur</td><td><span class="hl-ruler">Muhammad Adil Shah</span></td><td><span class="hl-term">World's 2nd largest dome</span> (diameter 44m); whispering gallery</td></tr>`;
+    html += `<tr><td><span class="hl-arch hl-bg-arch">Golconda Fort</span></td><td>Hyderabad</td><td><span class="hl-dynasty">Qutb Shahi</span></td><td>Famous for acoustic system and diamond trade</td></tr>`;
+    html += `<tr><td><span class="hl-arch hl-bg-arch">Charminar</span></td><td>Hyderabad</td><td><span class="hl-ruler">Muhammad Quli Qutb Shah</span></td><td><span class="hl-term">Symbol of Hyderabad</span>; built 1591; four minarets</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-palette text-cyan-400 text-xs"></i> Bahmani Tombs</h4>`;
+    html += `<p class="content-text">
+      The <span class="hl-arch">Bahmani Tombs</span> at <span class="hl-place">Gulbarga</span> and <span class="hl-place">Bidar</span> are notable for their <span class="hl-term">coloured tile exteriors</span>, showcasing Persian influence in their design and decoration.
+    </p>`;
+
+    html += `<h4 class="subsection-heading" style="font-size:0.9rem;"><i class="fa-solid fa-hand-sparkles text-cyan-400 text-xs"></i> Bidri Art</h4>`;
+    html += `<p class="content-text">
+      <span class="hl-term hl-bg-term">Bidri ware</span> is a unique <span class="hl-term">metal handicraft</span> from <span class="hl-place">Bidar</span>. It involves <span class="hl-term">blackened white brass inlaid with silver</span> — a technique with <span class="hl-term">Persian origins</span>. It was <span class="hl-event">granted a GI tag in 2006</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">Key architectural structures: <span class="hl-arch">Bidar Fort</span> (Ahmad Shah), <span class="hl-arch">Madrasa of Mahmud Gawan</span> (Bidar), <span class="hl-arch">Chand Minar</span> (Daulatabad), <span class="hl-arch">Gol Gumbaz</span> (2nd largest dome in world), <span class="hl-arch">Golconda Fort</span> (acoustic system), <span class="hl-arch">Charminar</span> (Hyderabad). <span class="hl-term">Bidri ware</span> (GI tag 2006) is an important cultural contribution of the Bahmani/Deccan period.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 17. DECLINE OF BAHMANI =====
+    html += `<section id="bahmani-decline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line-down text-green-400"></i> 17. Decline of the Bahmani Sultanate</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-event">Constant wars</span> with <span class="hl-dynasty">Vijayanagar</span> and <span class="hl-dynasty">Warangal</span> drained the treasury</li>`;
+    html += `<li><span class="hl-event hl-bg-event">Internal tussle between Afaqis and Deccanis</span> — the nobility was permanently divided</li>`;
+    html += `<li><span class="hl-term">Provincial governors</span> became <span class="hl-term">powerful and independent</span> — especially after Mahmud Gawan's execution</li>`;
+    html += `<li>No <span class="hl-term">definite law of succession</span> led to frequent civil wars and assassinations</li>`;
+    html += `<li><span class="hl-term">Fanatical religious policy</span> against the <span class="hl-term">Hindu majority</span> alienated the populace</li>`;
+    html += `<li>After <span class="hl-ruler">Muhammad Shah III's</span> death (<span class="hl-date">1482</span>), the last sultans became <span class="hl-term">figureheads</span> under the <span class="hl-dynasty">Barid Shahi</span> ministers</li>`;
+    html += `<li><span class="hl-ruler">Krishnadeva Raya</span> of Vijayanagar defeated the <span class="hl-event">last Bahmani ruler (1518)</span></li>`;
+    html += `<li>The Bahmani Sultanate <span class="hl-event hl-bg-event">fragmented into 5 Deccan Sultanates</span> — Ahmadnagar, Berar, Bijapur, Golconda, Bidar</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">Deccani-Afaqi rivalry</span> was the <span class="hl-term">most important internal cause</span> of the Bahmani decline. The <span class="hl-event">rise of independent provincial governors</span> after Mahmud Gawan's death completed the disintegration. The Bahmani Sultanate <span class="hl-event">fragmented into 5 states</span> between <span class="hl-date">1490-1528</span>. <span class="hl-ruler">Krishnadeva Raya's</span> defeat of the last Bahmani ruler in <span class="hl-date">1518</span> was the final blow.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 18. THE FIVE DECCAN SULTANATES =====
+    html += `<section id="deccan-sultanates">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-flag text-rose-400"></i> 18. The Five Deccan Sultanates (1490-1687)</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+
+    html += `<p class="content-text">
+      The Bahmani Kingdom broke up into <span class="hl-num hl-bg-num">5 Deccan Sultanates</span> between <span class="hl-date">1490</span> and <span class="hl-date">1528</span>. Also called the <span class="hl-term">"Shahi" kingdoms</span>, they remained influential in the Deccan until they were <span class="hl-event">absorbed by the Mughals</span> under <span class="hl-ruler">Aurangzeb</span>.
+    </p>`;
+
+    // Comparison table
+    html += `<div class="table-wrap"><table><thead><tr><th>Sultanate</th><th>Founded</th><th>Founder</th><th>Capital</th><th>Annexed By</th><th>Year</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-dynasty">Nizam Shahi</span></td><td><span class="hl-date">1490</span></td><td><span class="hl-ruler">Ahmad Nizam Shah</span></td><td><span class="hl-place">Ahmednagar</span></td><td>Mughals (<span class="hl-ruler">Aurangzeb</span>)</td><td><span class="hl-date">1636</span></td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Imad Shahi</span></td><td><span class="hl-date">1490</span></td><td><span class="hl-ruler">Fathullah Imad-ul-Mulk</span></td><td><span class="hl-place">Daulatabad</span></td><td>Ahmadnagar</td><td><span class="hl-date">1574</span></td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Adil Shahi</span></td><td><span class="hl-date">1490</span></td><td><span class="hl-ruler">Yusuf Adil Shah</span></td><td><span class="hl-place">Bijapur</span></td><td>Mughals (<span class="hl-ruler">Aurangzeb</span>)</td><td><span class="hl-date">1686</span></td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Qutb Shahi</span></td><td><span class="hl-date">1518</span></td><td><span class="hl-ruler">Muhammad Quli Qutb-ul-Mulk</span></td><td><span class="hl-place">Golconda / Hyderabad</span></td><td>Mughals (<span class="hl-ruler">Aurangzeb</span>)</td><td><span class="hl-date">1687</span></td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Barid Shahi</span></td><td><span class="hl-date">1528</span></td><td><span class="hl-ruler">Ali Barid</span></td><td><span class="hl-place">Bidar</span></td><td>Bijapur</td><td><span class="hl-date">1619</span></td></tr>`;
+    html += `</tbody></table></div>`;
+
+    // Nizam Shahi
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-flag text-cyan-400 text-xs"></i> Nizam Shahis of Ahmadnagar (1490-1636)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Ahmad Nizam Shah</span> — originally a <span class="hl-term">Brahmin</span> convert to Islam</li>`;
+    html += `<li>Capital: <span class="hl-place">Ahmednagar</span></li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Chand Bibi</span> (<span class="hl-date">d. 1600</span>) — famous <span class="hl-term">female ruler</span> who <span class="hl-event hl-bg-event">bravely defended the kingdom against Mughal attacks</span></li>`;
+    html += `<li>Conquered by <span class="hl-ruler">Aurangzeb</span> (<span class="hl-date">1636</span>) — first Deccan Sultanate to fall to the Mughals</li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Imad Shahi
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-flag text-cyan-400 text-xs"></i> Imad Shahis of Berar (1490-1574)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Fathullah Imad-ul-Mulk</span></li>`;
+    html += `<li>Capital: <span class="hl-place">Daulatabad</span></li>`;
+    html += `<li><span class="hl-event">Annexed by Ahmadnagar (1574)</span> — the <span class="hl-term">shortest-lived</span> of all Deccan Sultanates</li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Qutb Shahi
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-flag text-cyan-400 text-xs"></i> Qutb Shahis of Golconda (1518-1687)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Muhammad Quli Qutb-ul-Mulk</span></li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Muhammad Quli Qutb Shah</span> (5th ruler) built the iconic <span class="hl-arch hl-bg-arch">Charminar (1591)</span> in <span class="hl-place">Hyderabad</span></li>`;
+    html += `<li>Famous for the <span class="hl-arch hl-bg-arch">Golconda Fort</span> — renowned for its <span class="hl-term">acoustic system</span> (a handclap at the entrance could be heard at the top)</li>`;
+    html += `<li>Rich in <span class="hl-term hl-bg-term">diamond mines</span> — the <span class="hl-term">Kohinoor</span> and <span class="hl-term">Hope diamond</span> came from Golconda mines</li>`;
+    html += `<li>Conquered by <span class="hl-ruler">Aurangzeb</span> (<span class="hl-date">1687</span>) — after a <span class="hl-term">long siege</span></li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Adil Shahi
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-flag text-cyan-400 text-xs"></i> Adil Shahis of Bijapur (1490-1686)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Yusuf Adil Shah</span> (originally a <span class="hl-term">Georgian slave</span>)</li>`;
+    html += `<li><span class="hl-ruler">Muhammad Adil Shah</span> built the magnificent <span class="hl-arch hl-bg-arch">Gol Gumbaz</span> — <span class="hl-term">world's 2nd largest dome</span>, featuring a <span class="hl-term">whispering gallery</span></li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Ibrahim Adil Shah II</span> (1580-1627): known as <span class="hl-term">Jagadguru Badshah</span>, wrote <span class="hl-term">Kitab-e-Nauras</span> (Book of the Nine Rasas), <span class="hl-policy">promoted Dakhani language</span> over Persian, known for his <span class="hl-term">syncretic religious policy</span></li>`;
+    html += `<li>Annexed by <span class="hl-ruler">Aurangzeb</span> (<span class="hl-date">1686</span>)</li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Barid Shahi
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-flag text-cyan-400 text-xs"></i> Barid Shahis of Bidar (1528-1619)</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li>Founded by <span class="hl-ruler">Ali Barid</span> — originally the <span class="hl-term">prime ministers (Barid)</span> of the Bahmani sultans</li>`;
+    html += `<li><span class="hl-term">Smallest of the 5 sultanates</span></li>`;
+    html += `<li><span class="hl-event">Annexed by the Adil Shahis of Bijapur (1619)</span></li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">5 Deccan Sultanates</span> are frequently tested. Key points: <span class="hl-dynasty">Nizam Shahi</span> — <span class="hl-ruler">Chand Bibi</span>; <span class="hl-dynasty">Imad Shahi</span> — shortest-lived, annexed 1574; <span class="hl-dynasty">Qutb Shahi</span> — <span class="hl-arch">Charminar</span>, Golconda Fort, diamond mines; <span class="hl-dynasty">Adil Shahi</span> — <span class="hl-arch">Gol Gumbaz</span>, <span class="hl-ruler">Ibrahim Adil Shah II</span> (Jagadguru Badshah, Kitab-e-Nauras); <span class="hl-dynasty">Barid Shahi</span> — smallest, annexed 1619. All the larger sultanates were <span class="hl-event">conquered by Aurangzeb</span> (Ahmadnagar 1636, Bijapur 1686, Golconda 1687).</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 19. CONTRIBUTIONS OF DECCAN SULTANATES =====
+    html += `<section id="deccan-contrib">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-lightbulb text-rose-400"></i> 19. Contributions of Deccan Sultanates</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-language mr-1"></i> Dakhani Urdu Language</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">The <span class="hl-term">Dakhani</span> language emerged as a <span class="hl-term">blend of Persian, Arabic, and local Deccan languages</span> (Marathi, Kannada, Telugu). <span class="hl-ruler">Ibrahim Adil Shah II</span> promoted it as a <span class="hl-term">court language</span> replacing Persian, making literature accessible to the masses.</p>`;
+    html += `</div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-landmark mr-1"></i> Deccani Architecture</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">A <span class="hl-term">unique synthesis</span> of <span class="hl-term">Persian, Hindu, and local Deccani styles</span>. Masterpieces include <span class="hl-arch">Charminar, Gol Gumbaz, Golconda Fort, Bidar Fort</span>. Characterised by <span class="hl-arch">arches, domes, minarets</span> with <span class="hl-term">Hindu decorative elements</span>.</p>`;
+    html += `</div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-hand-sparkles mr-1"></i> Bidri Ware</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed"><span class="hl-term">Bidri ware</span> from <span class="hl-place">Bidar</span> — <span class="hl-term">blackened brass inlaid with silver</span>. Persian influence, <span class="hl-event">GI tag 2006</span>. A unique metallurgical art form that continues to be produced today.</p>`;
+    html += `</div>`;
+
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-music mr-1"></i> Courtly Culture</h4>`;
+    html += `<p class="text-xs text-slate-400 leading-relaxed">A <span class="hl-term">blended Persian-Deccani court culture</span> developed. <span class="hl-ruler">Ibrahim Adil Shah II's</span> <span class="hl-term">Kitab-e-Nauras</span> is a classic example — a work on <span class="hl-term">music and rasa theory</span> in Dakhani, showing <span class="hl-term">syncretic Hindu-Muslim cultural fusion</span>.</p>`;
+    html += `</div>`;
+
+    html += `</div>`;
+
+    html += `<p class="content-text mt-3">
+      The Deccan Sultanates were eventually <span class="hl-event hl-bg-event">absorbed into the Mughal Empire</span> through <span class="hl-ruler">Aurangzeb's</span> aggressive Deccan policy (<span class="hl-date">1636-1687</span>). However, their <span class="hl-term">cultural, architectural, and linguistic legacy</span> continued to shape the Deccan region for centuries.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">syncretic Deccani culture</span> — blending Persian, Hindu, and local traditions — is a key UPSC theme. <span class="hl-term">Dakhani language</span>, <span class="hl-arch">Deccani architecture</span> (Charminar, Gol Gumbaz), <span class="hl-term">Bidri ware</span>, and <span class="hl-ruler">Ibrahim Adil Shah II's</span> <span class="hl-term">Kitab-e-Nauras</span> represent this unique cultural synthesis. The <span class="hl-event">Mughal absorption</span> under <span class="hl-ruler">Aurangzeb</span> (1636-1687) ended the Deccan Sultanates' political independence.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 20. COMPLETE TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 20. Complete Timeline (1336-1687)</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "1336", event: "Vijayanagar Empire founded by Harihara and Bukka (Sangama dynasty)", y: true },
+      { year: "1347", event: "Bahmani Sultanate founded by Alauddin Bahman Shah (Hasan Gangu)", y: true },
+      { year: "1358-1375", event: "Mohammed Shah I of Bahmani — wars with Warangal and Vijayanagar" },
+      { year: "1397-1422", event: "Firuz Shah Bahmani — greatest Bahmani ruler; conquered Raichur Doab", y: true },
+      { year: "1406-1422", event: "Deva Raya I of Vijayanagar — built dams, canals, forts" },
+      { year: "1422-1435", event: "Ahmad Shah Al Wali shifts Bahmani capital from Gulbarga to Bidar", y: true },
+      { year: "1422-1446", event: "Deva Raya II of Vijayanagar — greatest Sangama ruler; Abdur Razzaq visits", y: true },
+      { year: "1466-1481", event: "Mahmud Gawan dominates Bahmani kingdom as Peshwa", y: true },
+      { year: "1482", event: "Mahmud Gawan executed by Muhammad Shah III on false charges", y: true },
+      { year: "1485", event: "Saluva Narasimha seizes power — Saluva dynasty begins" },
+      { year: "1490", event: "Nizam Shahi of Ahmadnagar founded by Ahmad Nizam Shah", y: true },
+      { year: "1490", event: "Imad Shahi of Berar founded by Fathullah Imad-ul-Mulk", y: true },
+      { year: "1490", event: "Adil Shahi of Bijapur founded by Yusuf Adil Shah", y: true },
+      { year: "1505", event: "Tuluva dynasty begins under Vira Narasimha" },
+      { year: "1509-1529", event: "Krishnadeva Raya's rule — Golden Age of Vijayanagar", y: true },
+      { year: "1512", event: "Krishnadeva Raya captures Raichur Doab", battle: true },
+      { year: "1518", event: "Qutb Shahi of Golconda founded by Muhammad Quli Qutb-ul-Mulk", y: true },
+      { year: "1518", event: "Krishnadeva Raya defeats the last Bahmani ruler" },
+      { year: "1527", event: "Bahmani Sultanate formally ends", y: true },
+      { year: "1528", event: "Barid Shahi of Bidar founded by Ali Barid", y: true },
+      { year: "1529", event: "Krishnadeva Raya dies" },
+      { year: "1565", event: "Battle of Talikota — Vijayanagar defeated by combined Deccan Sultanates", battle: true, y: true },
+      { year: "1570", event: "Aravidu dynasty begins under Tirumala; capital moved to Penukonda" },
+      { year: "1574", event: "Berar (Imad Shahi) annexed by Ahmadnagar" },
+      { year: "1619", event: "Bidar (Barid Shahi) annexed by Bijapur" },
+      { year: "1636", event: "Ahmadnagar (Nizam Shahi) conquered by Mughals under Aurangzeb", y: true },
+      { year: "1646", event: "Vijayanagar Empire ends", y: true },
+      { year: "1686", event: "Bijapur (Adil Shahi) annexed by Aurangzeb", y: true },
+      { year: "1687", event: "Golconda (Qutb Shahi) annexed by Aurangzeb", y: true }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.battle) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30"><i class="fa-solid fa-crossed-swords mr-0.5"></i>Battle</span>';
+      if (t.y) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-star mr-0.5"></i>Key Event</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 21. UPSC KEY FACTS =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 21. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Card 1: Vijayanagar Dynasties & Key Rulers
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-crown mr-1"></i> Vijayanagar Dynasties & Key Rulers</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-amber-300">Sangama (1336-1485):</span> Harihara I, Bukka I, Deva Raya I & II</li>`;
+    html += `<li><span class="text-amber-300">Saluva (1485-1505):</span> Saluva Narasimha — short-lived</li>`;
+    html += `<li><span class="text-amber-300">Tuluva (1505-1570):</span> <span class="hl-ruler">Krishnadeva Raya</span> (greatest) — Golden Age</li>`;
+    html += `<li><span class="text-amber-300">Aravidu (1570-1646):</span> Tirumala, Venkata II — declined after Talikota</li>`;
+    html += `<li><span class="text-amber-300">Capital:</span> Hampi (Vijayanagara) → Penukonda → Chandragiri</li>`;
+    html += `<li><span class="text-amber-300">Key title:</span> <span class="hl-term">"Hindu Suratrana"</span> (Hindu Sultan)</li>`;
+    html += `</ul></div>`;
+
+    // Card 2: Bahmani Sultans & Mahmud Gawan
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-green-500/20">`;
+    html += `<h4 class="text-sm font-bold text-green-400 mb-2"><i class="fa-solid fa-mosque mr-1"></i> Bahmani Sultans & Mahmud Gawan</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-green-300">Alauddin Bahman Shah (1347):</span> Founder; 4 tarafs</li>`;
+    html += `<li><span class="text-green-300">Firuz Shah (1397-1422):</span> Greatest Bahmani; Raichur Doab; tolerant policy</li>`;
+    html += `<li><span class="text-green-300">Ahmad Shah (1422-1435):</span> Capital shifted to Bidar</li>`;
+    html += `<li><span class="text-green-300">Mahmud Gawan (1466-1481):</span> Peshwa; 8 tarafs; Madrasa at Bidar; executed 1482</li>`;
+    html += `<li><span class="text-green-300">Nobility conflict:</span> <span class="hl-term">Deccanis vs Afaqis</span> — main cause of decline</li>`;
+    html += `<li><span class="text-green-300">Traveler:</span> <span class="hl-ruler">Nikitin</span> (Russian) — "The Journey Beyond Three Seas"</li>`;
+    html += `</ul></div>`;
+
+    // Card 3: 5 Deccan Sultanates Comparison
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-flag mr-1"></i> The 5 Deccan Sultanates</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-rose-300">Ahmadnagar (1490-1636):</span> Ahmad Nizam Shah; Chand Bibi; annexed by Mughals 1636</li>`;
+    html += `<li><span class="text-rose-300">Berar (1490-1574):</span> Fathullah Imad-ul-Mulk; annexed by Ahmadnagar 1574</li>`;
+    html += `<li><span class="text-rose-300">Bijapur (1490-1686):</span> Yusuf Adil Shah; Gol Gumbaz; Ibrahim Adil Shah II; annexed 1686</li>`;
+    html += `<li><span class="text-rose-300">Golconda (1518-1687):</span> Qutb-ul-Mulk; Charminar; Golconda Fort; diamonds; annexed 1687</li>`;
+    html += `<li><span class="text-rose-300">Bidar (1528-1619):</span> Ali Barid; smallest; annexed by Bijapur 1619</li>`;
+    html += `</ul></div>`;
+
+    // Card 4: Major Battles & Conflicts
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-crossed-swords mr-1"></i> Major Battles & Conflicts</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">Raichur Doab (1512):</span> Krishnadeva Raya captures strategic region</li>`;
+    html += `<li><span class="text-red-300">Talikota (1565):</span> Vijayanagar vs 5 Sultanates; Hampi sacked</li>`;
+    html += `<li><span class="text-red-300">Vijayanagar-Bahmani wars:</span> Constant conflict over Raichur Doab for 200+ years</li>`;
+    html += `<li><span class="text-red-300">Deccani-Afaqi conflict:</span> Internal Bahmani feud — led to decline</li>`;
+    html += `<li><span class="text-red-300">Mughal annexations:</span> Ahmadnagar (1636), Bijapur (1686), Golconda (1687)</li>`;
+    html += `</ul></div>`;
+
+    // Card 5: Architecture Highlights
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-landmark mr-1"></i> Architecture Highlights</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-pink-300">Virupaksha Temple:</span> Main shrine; Krishnadeva Raya built hall & eastern gopuram</li>`;
+    html += `<li><span class="text-pink-300">Vitthala Temple:</span> Stone chariot; musical pillars</li>`;
+    html += `<li><span class="text-pink-300">Mahanavami Dibba:</span> Ceremonial platform (11,000 sq ft)</li>`;
+    html += `<li><span class="text-pink-300">Charminar (1591):</span> Muhammad Quli Qutb Shah; Hyderabad's symbol</li>`;
+    html += `<li><span class="text-pink-300">Gol Gumbaz:</span> 2nd largest dome in world; whispering gallery; Bijapur</li>`;
+    html += `<li><span class="text-pink-300">Bidri ware:</span> Blackened brass with silver inlay; GI tag 2006; Bidar</li>`;
+    html += `</ul></div>`;
+
+    // Card 6: Administration Comparison
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-building-columns mr-1"></i> Admin Comparison: Amara-Nayaka vs Taraf System</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-indigo-300">Vijayanagar:</span> <span class="hl-policy">Amara-Nayaka system</span> — military commanders hold land; send tribute & troops</li>`;
+    html += `<li><span class="text-indigo-300">Bahmani:</span> <span class="hl-policy">Taraf system</span> — 4 (later 8) provinces under Tarafdars</li>`;
+    html += `<li><span class="text-indigo-300">Similarity:</span> Both are <span class="hl-term">feudal-military assignments</span> for revenue and military service</li>`;
+    html += `<li><span class="text-indigo-300">Difference:</span> Amara-nayakas more autonomous/hereditary; Tarafdars more centrally controlled</li>`;
+    html += `<li><span class="text-indigo-300">Key officials (V):</span> Raya, Mahapradhana, Dandanayaka</li>`;
+    html += `<li><span class="text-indigo-300">Key officials (B):</span> Wazir-i-kul, Amir-i-kul, Sadar-i-jahan, Tarafdar</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `The <span class="hl-dynasty hl-bg-dynasty">Vijayanagar Empire</span> (1336-1646): <span class="hl-ruler">Krishnadeva Raya</span> (1509-1529), <span class="hl-term">Amuktamalyada</span>, <span class="hl-term">Ashtadiggajas</span> (8 poets), <span class="hl-term">Allasani Peddana</span> (Andhra Kavita Pitamaha), <span class="hl-arch">Virupaksha & Vitthala Temples</span>, <span class="hl-battle">Battle of Talikota (1565)</span>, <span class="hl-policy">Amara-Nayaka system</span>. The <span class="hl-dynasty hl-bg-dynasty">Bahmani Sultanate</span> (1347-1527): <span class="hl-ruler">Alauddin Bahman Shah</span>, <span class="hl-ruler">Firuz Shah</span>, <span class="hl-ruler">Mahmud Gawan</span> (executed 1482), <span class="hl-term">Deccani vs Afaqi conflict</span>, <span class="hl-arch">Madrasa at Bidar</span>, <span class="hl-term">Nikitin's account</span>. The <span class="hl-term hl-bg-term">5 Deccan Sultanates</span>: <span class="hl-dynasty">Nizam Shahi</span> (Chand Bibi), <span class="hl-dynasty">Adil Shahi</span> (Gol Gumbaz, Ibrahim Adil Shah II, Kitab-e-Nauras), <span class="hl-dynasty">Qutb Shahi</span> (Charminar, Golconda Fort, diamonds), <span class="hl-dynasty">Barid Shahi</span> (smallest), <span class="hl-dynasty">Imad Shahi</span> (shortest). <span class="hl-arch">Bidri ware</span> (GI tag 2006). The <span class="hl-term hl-bg-term">chronology</span>: Vijayanagar founded (1336) → Bahmani founded (1347) → Talikota (1565) → Mughal annexations (1636-1687). </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Deccan Empires (1336-1687) UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 7 Ch 2, Class 12 Theme 7 (Vijayanagara) & UPSC reference materials</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

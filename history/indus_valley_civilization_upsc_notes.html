@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indus Valley Civilization (Harappan) — UPSC NCERT Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-arch { color: #f472b6; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-arch { background: rgba(244, 114, 182, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239, 68, 68, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8"></div>
+
+<script>
+  const DATA = {
+    title: "Indus Valley Civilization (Harappan) — 6000 BCE to 1300 BCE",
+    location: "NCERT Class 6 (OLD Ch 3), Class 6 (NEW Ch 6), Class 12 Theme 1",
+    last_updated: "2026-06-08",
+    source: "NCERT Class 6 Our Pasts I Ch 3, Class 6 NEW Ch 6, Class 12 Themes in Indian History Theme 1",
+    chapters: [
+      { class: 6, chapter: 3, name: "In the Earliest Cities", book: "Our Pasts I (OLD)" },
+      { class: 6, chapter: 6, name: "The Beginnings of Indian Civilisation", book: "Our Pasts I (NEW)" },
+      { class: 12, theme: 1, name: "Bricks, Beads and Bones: The Harappan Civilisation", book: "Themes in Indian History" }
+    ]
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-landmark text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">${DATA.title}</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-book text-rose-400"></i> ${DATA.location}
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Updated: ${DATA.last_updated}
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>~4700 Years (6000 BCE - 1300 BCE)</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>
+        </div>
+      </div>`;
+
+    // ===== NAVIGATION INDEX =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#intro" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-book-open text-amber-400 mr-1"></i> 1. Introduction</a>
+          <a href="#discovery" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Discovery & Excavation</a>
+          <a href="#extent" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Extent & Geographical Spread</a>
+          <a href="#cities" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Major Cities & Sites</a>
+          <a href="#town-planning" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Town Planning</a>
+          <a href="#great-bath" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Great Bath</a>
+          <a href="#economy" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Economy & Subsistence</a>
+          <a href="#craft" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Craft & Technology</a>
+          <a href="#trade" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Trade & Contact</a>
+          <a href="#society" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Society</a>
+          <a href="#religion" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. Religion</a>
+          <a href="#script" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Script</a>
+          <a href="#pottery" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Harappan Pottery</a>
+          <a href="#decline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. Decline of Harappan Civilization</a>
+          <a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">15. Complete Timeline</a>
+          <a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-file-pen text-yellow-400 mr-1"></i> 16. UPSC Key Facts at a Glance</a>
+        </div>
+      </div>`;
+
+    // ===== 1. INTRODUCTION =====
+    html += `<section id="intro">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-book-open text-amber-400"></i> 1. Introduction — The Indus Valley Civilization</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      The <span class="hl-dynasty hl-bg-dynasty">Indus Valley Civilization (IVC)</span>, also called the <span class="hl-term hl-bg-term">Harappan Civilization</span>, is one of the world's <span class="hl-term">earliest urban civilizations</span> — alongside <span class="hl-term">Mesopotamia, Egypt, and China</span>. It was named after <span class="hl-place">Harappa</span> (Punjab province, Pakistan), the first site to be discovered. The civilization flourished in the <span class="hl-term">Indus river valley</span> and its tributaries, covering parts of modern <span class="hl-place">Pakistan, India, Afghanistan</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-clock text-cyan-400 text-xs"></i> Time Span & Periodization</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Phase</th><th>Period</th><th>Characteristics</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-dynasty">Early Harappan</span></td><td><span class="hl-date">6000-2600 BCE</span></td><td>Formative phase — early farming communities, domestication, trade networks beginning</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty hl-bg-dynasty">Mature Harappan</span></td><td><span class="hl-date hl-bg-date">2600-1900 BCE</span></td><td><span class="hl-term hl-bg-term">Urban phase</span> — peak prosperity, planned cities, standardised weights & seals, extensive trade</td></tr>`;
+    html += `<tr><td><span class="hl-dynasty">Late Harappan</span></td><td><span class="hl-date">1900-1300 BCE</span></td><td>Decadent phase — gradual decline, cities abandoned, shift to rural settlement patterns</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The Harappan Civilization is covered in <span class="hl-term">NCERT Class 12 Theme 1 "Bricks, Beads and Bones: The Harappan Civilisation"</span> — the <span class="hl-term hl-bg-term">dedicated chapter</span> in <span class="hl-term">Themes in Indian History</span>. Also in <span class="hl-term">Class 6 (OLD) Chapter 3 "In the Earliest Cities"</span> and <span class="hl-term">Class 6 (NEW) Chapter 6 "The Beginnings of Indian Civilisation"</span>. The timeline of <span class="hl-date">2600-1900 BCE</span> for the Mature Harappan phase is the <span class="hl-term hl-bg-term">most important chronological fact</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 2. DISCOVERY & EXCAVATION =====
+    html += `<section id="discovery">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-compass text-amber-400"></i> 2. Discovery & Excavation</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      The story of the discovery of the Harappan Civilization is a fascinating chapter in the history of <span class="hl-term">Indian archaeology</span>. The sites were first noticed in the <span class="hl-date">1850s</span> when <span class="hl-term">railway lines</span> were being laid in the Punjab — engineers <span class="hl-event">carried off bricks</span> from the ancient mound of Harappa for ballast.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-users text-cyan-400 text-xs"></i> Key Archaeologists & Excavations</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Daya Ram Sahni</span> (<span class="hl-date">1921</span>) — <span class="hl-term hl-bg-term">first excavated Harappa</span>, marking the official discovery of the civilization</li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">Rakhal Das Banerjee</span> (<span class="hl-date">1922</span>) — discovered <span class="hl-place hl-bg-place">Mohenjodaro</span> (Mound of the Dead)</li>`;
+    html += `<li><span class="hl-ruler hl-bg-ruler">John Marshall</span> (<span class="hl-date">1924</span>) — <span class="hl-term hl-bg-term">Director General of ASI</span> who formally <span class="hl-event hl-bg-event">announced the discovery of a new civilization</span> to the world</li>`;
+    html += `<li><span class="hl-ruler">R.E.M. Wheeler</span> (<span class="hl-date">1946</span>) — carried out <span class="hl-term">excavations at Harappa</span>, established the <span class="hl-term">chronological sequence</span> of the civilization</li>`;
+    html += `<li><span class="hl-ruler">S.R. Rao</span> — excavated <span class="hl-place">Lothal</span> (Gujarat), discovered the <span class="hl-arch">dockyard</span></li>`;
+    html += `<li><span class="hl-ruler">R.S. Bisht</span> — excavated <span class="hl-place">Dholavira</span> (Gujarat), revealed sophisticated <span class="hl-arch">water management system</span></li>`;
+    html += `<li><span class="hl-ruler">B.K. Thapar</span> — excavated <span class="hl-place">Kalibangan</span> (Rajasthan)</li>`;
+    html += `<li><span class="hl-ruler">Colin Mackenzie</span> (earlier) — first <span class="hl-term">Surveyor General of India</span>, surveyed the area but did <span class="hl-event">not recognize the significance</span></li>`;
+    html += `<li><span class="hl-ruler">Alexander Cunningham</span> (first DG of ASI) — thought <span class="hl-term">Indian history began with Ganga valley cities</span>, missed the importance</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The discovery chronology is frequently tested: <span class="hl-ruler">Daya Ram Sahni</span> (Harappa 1921) → <span class="hl-ruler">Rakhal Das Banerjee</span> (Mohenjodaro 1922) → <span class="hl-ruler">John Marshall</span> (announced 1924). <span class="hl-ruler">Wheeler's</span> 1946 excavations at Harappa established the <span class="hl-term">chronological sequence</span>. The <span class="hl-term">railway brick theft (1850s)</span> is a famous anecdote.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 3. EXTENT & GEOGRAPHICAL SPREAD =====
+    html += `<section id="extent">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-map text-amber-400"></i> 3. Extent & Geographical Spread</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      The Harappan Civilization was <span class="hl-term hl-bg-term">larger than contemporary Egypt and Mesopotamia combined</span>. It stretched over an enormous area:
+    </p>`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">`;
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-arrow-up mr-1"></i> Northern Limit</h4>`;
+    html += `<p class="text-xs text-slate-400"><span class="hl-place hl-bg-place">Manda</span> (<span class="hl-place">Jammu & Kashmir</span>)</p></div>`;
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-rose-500/20">`;
+    html += `<h4 class="text-sm font-bold text-rose-400 mb-2"><i class="fa-solid fa-arrow-down mr-1"></i> Southern Limit</h4>`;
+    html += `<p class="text-xs text-slate-400"><span class="hl-place hl-bg-place">Daimabad</span> (<span class="hl-place">Maharashtra</span>)</p></div>`;
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-arrow-left mr-1"></i> Western Limit</h4>`;
+    html += `<p class="text-xs text-slate-400"><span class="hl-place hl-bg-place">Sutkagendor</span> (<span class="hl-place">Balochistan, Pakistan</span>) — on the Makran coast</p></div>`;
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-arrow-right mr-1"></i> Eastern Limit</h4>`;
+    html += `<p class="text-xs text-slate-400"><span class="hl-place hl-bg-place">Alamgirpur</span> (<span class="hl-place">Uttar Pradesh</span>)</p></div>`;
+    html += `</div>`;
+
+    html += `<p class="content-text">
+      Major sites in <span class="hl-term">Pakistan</span>: <span class="hl-place">Harappa, Mohenjodaro, Chanhudaro, Ganweriwala</span>. Major sites in <span class="hl-term">India</span>: <span class="hl-place">Rakhigarhi</span> (Haryana — <span class="hl-term hl-bg-term">largest Indian site</span>), <span class="hl-place">Dholavira</span> (Gujarat — water management), <span class="hl-place">Lothal</span> (Gujarat — dockyard), <span class="hl-place">Kalibangan</span> (Rajasthan — ploughed field), <span class="hl-place">Banawali</span> (Haryana), <span class="hl-place">Rangpur</span> (Gujarat), <span class="hl-place">Surkotada</span> (Gujarat). <span class="hl-place">Shortughai</span> (<span class="hl-term">Afghanistan</span>) — shows <span class="hl-arch">canal irrigation</span> evidence.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">extent of the Harappan Civilization</span> is a frequently asked topic. Remember the four limits: <span class="hl-place">Manda</span> (N), <span class="hl-place">Daimabad</span> (S), <span class="hl-place">Sutkagendor</span> (W), <span class="hl-place">Alamgirpur</span> (E). The civilization was <span class="hl-term">larger than Egypt and Mesopotamia combined</span>. <span class="hl-place">Rakhigarhi</span> is the <span class="hl-term">largest Indian site</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 4. MAJOR CITIES & SITES =====
+    html += `<section id="cities">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-city text-amber-400"></i> 4. Major Cities & Sites</h2>`;
+
+    // Harappa
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-location-dot text-cyan-400 text-xs"></i> Harappa (Punjab, Pakistan)</h3>`;
+    html += `<p class="content-text">The <span class="hl-term hl-bg-term">first discovered site</span>, after which the civilization is named. Key features include a <span class="hl-arch">citadel and lower town</span>, <span class="hl-arch">granaries</span> (rows of brick platforms), and <span class="hl-term">working women's quarters</span>. Excavated by <span class="hl-ruler">Daya Ram Sahni (1921)</span> and later by <span class="hl-ruler">Wheeler (1946)</span>.</p>`;
+    html += `</div>`;
+
+    // Mohenjodaro
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/30">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-star text-yellow-400 text-xs"></i> Mohenjodaro (Sindh, Pakistan) — The Best-Planned City</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-place hl-bg-place">Mohenjodaro</span> (<span class="hl-term">"Mound of the Dead"</span>) is the <span class="hl-term hl-bg-term">most well-known Harappan site</span>, discovered by <span class="hl-ruler">Rakhal Das Banerjee (1922)</span>. It is considered the <span class="hl-term">best-planned city</span> of the ancient world.
+    </p>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Great Bath</span> — the most famous structure, used for ritual purification</li>`;
+    html += `<li><span class="hl-arch">Great Granary</span> — massive storage facility</li>`;
+    html += `<li><span class="hl-arch">Assembly Hall</span> — large pillared building for gatherings</li>`;
+    html += `<li><span class="hl-arch">College of Priests</span> — a large building with multiple rooms and a courtyard</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Bearded Priest</span> — famous steatite statue of a bearded man, interpreted as a priest-king</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Dancing Girl</span> — famous bronze figurine of a young woman, one of the earliest bronze castings</li>`;
+    html += `</ul>`;
+    html += `</div>`;
+
+    // Dholavira
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-location-dot text-cyan-400 text-xs"></i> Dholavira (Gujarat, India) — Water Management Marvel</h3>`;
+    html += `<p class="content-text">
+      Discovered by <span class="hl-ruler">R.S. Bisht</span>. Known for <span class="hl-term hl-bg-term">unique water management system</span> — giant <span class="hl-arch">reservoirs</span> carved out of rock and built with stone. It had a <span class="hl-arch">stadium</span> and a famous <span class="hl-term hl-bg-term">signboard</span> with <span class="hl-num">10 large Harappan signs</span> inlaid with white gypsum. The city had <span class="hl-term">three parts</span> (citadel, middle town, lower town) unlike the usual two.
+    </p>`;
+    html += `</div>`;
+
+    // Lothal
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-location-dot text-cyan-400 text-xs"></i> Lothal (Gujarat, India) — Dockyard & Bead Centre</h3>`;
+    html += `<p class="content-text">
+      Excavated by <span class="hl-ruler">S.R. Rao</span>. Famous for its <span class="hl-arch hl-bg-arch">dockyard</span> — a brick-lined basin connected to the <span class="hl-term">Sabarmati river</span>, believed to be a <span class="hl-term hl-bg-term">maritime trade hub</span>. Also a major <span class="hl-term">bead-making factory</span> and <span class="hl-term">seal impressions</span> were found. Evidence of a <span class="hl-term">measurement system</span>.
+    </p>`;
+    html += `</div>`;
+
+    // Other sites
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-list text-cyan-400 text-xs"></i> Other Important Sites</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-place">Kalibangan</span> (Rajasthan) — <span class="hl-term hl-bg-term">ploughed field</span> (earliest evidence of ploughing in the world), <span class="hl-term">fire altars</span>, <span class="hl-event">early earthquake evidence</span></li>`;
+    html += `<li><span class="hl-place">Rakhigarhi</span> (Haryana) — <span class="hl-term hl-bg-term">largest Indian site</span>, extensive excavations ongoing, <span class="hl-term">DNA studies</span> being conducted</li>`;
+    html += `<li><span class="hl-place">Chanhudaro</span> (Sindh, Pakistan) — <span class="hl-term hl-bg-term">only city without a citadel</span>, important <span class="hl-term">bead-making centre</span></li>`;
+    html += `<li><span class="hl-place">Banawali</span> (Haryana) — <span class="hl-term">terracotta plough model</span> found</li>`;
+    html += `<li><span class="hl-place">Shortughai</span> (Afghanistan) — <span class="hl-term">canal irrigation</span> evidence, <span class="hl-term">lapis lazuli</span> trade centre</li>`;
+    html += `<li><span class="hl-place">Surkotada</span> (Gujarat) — <span class="hl-term">horse bones</span> found (debated evidence)</li>`;
+    html += `<li><span class="hl-place">Sutkagendor</span> (Balochistan) — on the <span class="hl-term">Makran coast</span>, important <span class="hl-term">trade route</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-place">Mohenjodaro</span> — Great Bath, Bearded Priest, Dancing Girl. <span class="hl-place">Dholavira</span> — water management, signboard, stadium. <span class="hl-place">Lothal</span> — dockyard, bead factory. <span class="hl-place">Kalibangan</span> — ploughed field, fire altars. <span class="hl-place">Rakhigarhi</span> — largest Indian site. <span class="hl-place">Chanhudaro</span> — no citadel. Each site has a <span class="hl-term">unique feature</span> that UPSC frequently tests.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 5. TOWN PLANNING =====
+    html += `<section id="town-planning">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-grid-2 text-amber-400"></i> 5. Town Planning</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      The Harappan cities are remarkable for their <span class="hl-term hl-bg-term">sophisticated and standardized town planning</span>, unparalleled in the contemporary world.
+    </p>`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-arch hl-bg-arch">Grid pattern</span>: streets cut at right angles, dividing the city into rectangular blocks</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Two parts</span>: <span class="hl-arch">Citadel</span> (higher western part — public buildings, granaries, religious structures) and <span class="hl-arch">Lower Town</span> (residential area)</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Baked bricks</span>: used extensively with a <span class="hl-term">uniform size ratio of 1:2:4</span> — this standardization was maintained for <span class="hl-num">1000s of years</span></li>`;
+    html += `<li><span class="hl-arch hl-bg-arch">Advanced drainage system</span>: <span class="hl-term">covered drains</span>, <span class="hl-term">inspection holes</span>, <span class="hl-term">brick-lined channels</span> connected to <span class="hl-term">every house</span> — one of the most sophisticated of the ancient world</li>`;
+    html += `<li><span class="hl-term">Wells</span>: <span class="hl-num">~700 wells</span> at Mohenjodaro — almost every house had its own well</li>`;
+    html += `<li>Streets and houses <span class="hl-term">aligned to the grid</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">Harappan <span class="hl-term">town planning</span> is the <span class="hl-term hl-bg-term">most distinct feature of the civilization</span>. Key aspects: <span class="hl-arch">grid pattern</span>, <span class="hl-term">citadel + lower town</span>, <span class="hl-term">1:2:4 brick ratio</span>, <span class="hl-arch">covered drainage system</span>, <span class="hl-num">700 wells</span> at Mohenjodaro. The <span class="hl-term">standardized brick size</span> is a mark of <span class="hl-term">strong central authority or coordination</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 6. GREAT BATH =====
+    html += `<section id="great-bath">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-water text-amber-400"></i> 6. The Great Bath (Mohenjodaro)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-cyan-500/30">`;
+
+    html += `<p class="content-text">
+      The <span class="hl-arch hl-bg-arch">Great Bath</span> of Mohenjodaro is the <span class="hl-term hl-bg-term">best-known structure</span> of the Harappan Civilization and one of the <span class="hl-term">earliest public water tanks</span> in the ancient world.
+    </p>`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li>Dimensions: <span class="hl-num">11.88m x 7.01m x 2.43m</span> deep</li>`;
+    html += `<li>Made <span class="hl-term">watertight</span> with <span class="hl-arch">bricks, plaster, and a layer of natural tar (bitumen)</span></li>`;
+    html += `<li><span class="hl-term">Steps</span> from two sides lead into the tank</li>`;
+    html += `<li><span class="hl-arch">Rooms</span> (possibly changing rooms) on all four sides</li>`;
+    html += `<li>Used for <span class="hl-term hl-bg-term">ritual bathing / ceremonial purification</span></li>`;
+    html += `<li>A <span class="hl-arch">well</span> in one of the rooms supplied water; a <span class="hl-arch">drain</span> in the corner emptied the tank</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-arch hl-bg-arch">Great Bath</span> is the <span class="hl-term">single most iconic structure</span> of the Harappan Civilization. Key details: <span class="hl-num">11.88 x 7.01 x 2.43m</span>, <span class="hl-term">bitumen waterproofing</span>, steps on two sides, rooms on all sides, used for <span class="hl-term">ritual bathing</span>. Always remember the precise dimensions for UPSC Prelims.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 7. ECONOMY & SUBSISTENCE =====
+    html += `<section id="economy">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-wheat-awn text-amber-400"></i> 7. Economy & Subsistence</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-seedling text-cyan-400 text-xs"></i> Agriculture</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Main crops</span>: <span class="hl-term">wheat, barley, lentils, chickpea, sesame</span></li>`;
+    html += `<li><span class="hl-term">Millets</span> — grown in Gujarat region</li>`;
+    html += `<li><span class="hl-term">Rice</span> — rare evidence, found at <span class="hl-place">Lothal</span> and <span class="hl-place">Rangpur</span> (not a major crop)</li>`;
+    html += `<li><span class="hl-term">Ploughing</span>: <span class="hl-term">terracotta plough models</span> found at <span class="hl-place">Banawali</span> and <span class="hl-place">Cholistan</span>; actual <span class="hl-arch hl-bg-arch">ploughed field</span> discovered at <span class="hl-place">Kalibangan</span></li>`;
+    html += `<li><span class="hl-arch">Irrigation</span>: <span class="hl-term">canals</span> (Shortughai, Afghanistan), <span class="hl-term">wells</span> for water supply</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-cow text-cyan-400 text-xs"></i> Animal Husbandry</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Domesticated</span>: cattle (humped bull known), sheep, goat, buffalo, pig, fish, fowl</li>`;
+    html += `<li><span class="hl-term">Wild species</span> hunted: boar, deer, gharial</li>`;
+    html += `<li><span class="hl-term">Oxen</span> used for ploughing</li>`;
+    html += `<li><span class="hl-event hl-bg-event">No evidence of horse in Mature Harappan</span> — horse bones at <span class="hl-place">Surkotada</span> are debated and contested</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">Key agricultural facts: <span class="hl-term">wheat and barley</span> were the main crops; <span class="hl-term">rice was rare</span> (only at Lothal/Rangpur); <span class="hl-arch">ploughed field at Kalibangan</span> is unique; <span class="hl-term">canal irrigation at Shortughai</span> (Afghanistan). The <span class="hl-event hl-bg-event">absence of horse in Mature Harappan</span> is a very important UPSC point — the horse debate is frequently asked.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 8. CRAFT & TECHNOLOGY =====
+    html += `<section id="craft">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-hammer text-amber-400"></i> 8. Craft & Technology</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-pink-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-fire text-cyan-400 text-xs"></i> Bronze Age Technology</h3>`;
+    html += `<p class="content-text">The Harappan Civilization was a <span class="hl-term hl-bg-term">Bronze Age civilization</span> — they used <span class="hl-term">bronze extensively</span> for tools, weapons, vessels, and art. They produced bronze by <span class="hl-term">alloying copper with tin</span>.</p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-palette text-cyan-400 text-xs"></i> Major Crafts</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Craft</th><th>Details</th><th>Famous Example</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-term">Bronze casting</span></td><td>Lost-wax process used to create bronze figurines</td><td><span class="hl-term hl-bg-term">Dancing Girl</span> (Mohenjodaro) — bronze figurine of a young woman</td></tr>`;
+    html += `<tr><td><span class="hl-term">Steatite seals</span></td><td><span class="hl-term hl-bg-term">Most distinctive artefact</span> — animal motifs, undeciphered script</td><td><span class="hl-term">Pashupati Seal</span> (horned deity surrounded by animals)</td></tr>`;
+    html += `<tr><td><span class="hl-term">Bead-making</span></td><td>Carnelian, jasper, crystal, quartz, steatite; etched carnelian beads</td><td>Lothal and Chanhudaro were major bead-making centres</td></tr>`;
+    html += `<tr><td><span class="hl-term">Pottery</span></td><td><span class="hl-term">Red and black ware</span>, painted designs, wheel-made</td><td>Painted designs of trees, birds, animals, fish, geometrical patterns</td></tr>`;
+    html += `<tr><td><span class="hl-term">Shell working</span></td><td>Ornaments, inlay work from marine shells</td><td>Shell bangles found at many sites</td></tr>`;
+    html += `<tr><td><span class="hl-term">Ivory carving</span></td><td>Ivory objects carved from elephant tusks</td><td>Ivory dice, combs, and figurines</td></tr>`;
+    html += `<tr><td><span class="hl-term">Faience production</span></td><td>Glazed ceramic material, artificial precious stone substitute</td><td>Faience beads, bangles, and ornaments</td></tr>`;
+    html += `<tr><td><span class="hl-term">Stone blade industry</span></td><td>Chert blades used as knives, scrapers</td><td>Standardized blade production at many sites</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">Dancing Girl bronze</span> (Mohenjodaro) and <span class="hl-term hl-bg-term">steatite seals</span> (especially Pashupati Seal) are the <span class="hl-term">most iconic artefacts</span>. The <span class="hl-term">lost-wax technique</span> for bronze casting shows advanced metallurgical knowledge. <span class="hl-place">Chanhudaro</span> and <span class="hl-place">Lothal</span> were major <span class="hl-term">bead-making centres</span>.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 9. TRADE & CONTACT =====
+    html += `<section id="trade">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-ship text-amber-400"></i> 9. Trade & Contact</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right-arrow-left text-cyan-400 text-xs"></i> Internal Trade</h3>`;
+    html += `<p class="content-text">
+      Raw materials were <span class="hl-term">brought from different regions</span> to the urban centres — <span class="hl-term">timber (Himalayas), copper (Rajasthan/Oman), lapis lazuli (Afghanistan), carnelian (Gujarat), steatite</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-globe text-cyan-400 text-xs"></i> External Trade — Mesopotamia & Beyond</h3>`;
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Extensive external trade</span> with <span class="hl-term">Mesopotamia (Sumeria), Oman, Bahrain (Dilmun), Iran, Afghanistan</span></li>`;
+    html += `<li>Trade goods: <span class="hl-term">timber, lapis lazuli, copper, carnelian, steatite, shell</span></li>`;
+    html += `<li><span class="hl-place hl-bg-place">Lothal dockyard</span> — <span class="hl-term">maritime trade hub</span> with a brick-lined basin for ships</li>`;
+    html += `<li><span class="hl-term hl-bg-term">Seals</span> used for trade and commercial purposes — to stamp goods and mark ownership</li>`;
+    html += `</ul>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-weight-scale text-cyan-400 text-xs"></i> Weight System</h3>`;
+    html += `<p class="content-text">
+      The Harappans used a <span class="hl-term hl-bg-term">binary weight system</span> with <span class="hl-term">cubical chert stones</span>. The weights followed the series: <span class="hl-num">1, 2, 4, 8, 16, 32, 64, 160, 320, 640, 1600, 3200, 6400, 12800</span>. This shows <span class="hl-term">remarkable standardization</span> across the civilization.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-scroll text-cyan-400 text-xs"></i> Mesopotamian References — Meluhha</h3>`;
+    html += `<p class="content-text">
+      <span class="hl-term">Mesopotamian texts</span> mention a place called <span class="hl-term hl-bg-term">Meluhha</span> — widely believed to be the <span class="hl-term">Harappan region</span>. They refer to trade with Meluhha, including goods like <span class="hl-term">carnelian, lapis lazuli, timber, and ivory</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">binary weight system</span> (1, 2, 4, 8...), <span class="hl-term">Meluhha</span> (Harappan region in Mesopotamian texts), <span class="hl-place">Lothal dockyard</span>, and <span class="hl-term">trade with Mesopotamia/Oman/Bahrain</span> are key UPSC topics. The <span class="hl-term">cubical chert weights</span> show remarkable standardization.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 10. SOCIETY =====
+    html += `<section id="society">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-users text-amber-400"></i> 10. Society</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term">Highly standardized material culture</span> across the civilization suggests <span class="hl-term">strong social integration</span></li>`;
+    html += `<li><span class="hl-term hl-bg-term">Contrast between citadel and lower town</span> suggests existence of <span class="hl-term">social hierarchy</span></li>`;
+    html += `<li><span class="hl-term">Ornaments</span> of <span class="hl-term">gold, silver, copper, bronze, semi-precious stones</span> — worn by both women and men</li>`;
+    html += `<li><span class="hl-event hl-bg-event">No palaces or monumental tombs</span> — unusual for an urban civilization; no clear evidence of kingship or monarchy</li>`;
+    html += `<li><span class="hl-event">No single ruler identified</span> — possibly <span class="hl-term">multiple rulers</span> or a <span class="hl-term">merchant oligarchy</span></li>`;
+    html += `<li><span class="hl-event">No large temples or clear priest-kings</span> — unlike Mesopotamia and Egypt</li>`;
+    html += `<li><span class="hl-term">Pashupati Seal</span> — figure surrounded by animals, interpreted by some as <span class="hl-term">proto-Shiva</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">absence of palaces, temples, and monumental tombs</span> in Harappan society is a <span class="hl-term hl-bg-term">key distinguishing feature</span> from other ancient civilizations. This has led to debates about the <span class="hl-term">nature of Harappan political authority</span> — <span class="hl-term">merchant oligarchy</span> or <span class="hl-term">multiple rulers</span> theory.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 11. RELIGION =====
+    html += `<section id="religion">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-place-of-worship text-amber-400"></i> 11. Religion</h2>`;
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li><span class="hl-term hl-bg-term">Mother Goddess</span> figurines (terracotta) — associated with <span class="hl-term">fertility cult</span></li>`;
+    html += `<li><span class="hl-term hl-bg-term">Pashupati Seal</span> — a horned deity surrounded by <span class="hl-term">elephant, tiger, rhino, buffalo, deer</span>; interpreted as <span class="hl-term">proto-Shiva</span> (<span class="hl-ruler">John Marshall</span> first proposed this interpretation)</li>`;
+    html += `<li><span class="hl-term">Worship of trees</span> (pipal), <span class="hl-term">animals, birds, sun</span></li>`;
+    html += `<li><span class="hl-arch">Fire altars</span> at <span class="hl-place">Kalibangan</span> and <span class="hl-place">Lothal</span> — suggesting ritual fire worship</li>`;
+    html += `<li><span class="hl-event">No large temples</span> or elaborate religious structures — unlike contemporary civilizations</li>`;
+    html += `<li><span class="hl-term">Burial practices</span>: <span class="hl-term">extended burial</span> (full body laid straight), <span class="hl-term">pot burial</span> (in large urns), <span class="hl-term">urn burial</span> (cremated remains); <span class="hl-term">grave goods</span> (pottery, ornaments) were placed with the dead</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content"><span class="hl-term">Mother Goddess figurines</span> and the <span class="hl-term">Pashupati Seal</span> (proto-Shiva) are the two most important religious artefacts. The <span class="hl-term">absence of large temples</span> is notable. <span class="hl-term">Fire altars at Kalibangan</span> and <span class="hl-term">tree/animal worship</span> are key features.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 12. SCRIPT =====
+    html += `<section id="script">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-pen-fancy text-amber-400"></i> 12. Harappan Script</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<p class="content-text">
+      The <span class="hl-term hl-bg-term">Harappan script remains UNDECIPHERED</span> — one of the great unsolved puzzles of archaeology. It is found on <span class="hl-term">seals, copper tablets, pottery, and the signboard at Dholavira</span>.
+    </p>`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li>Written <span class="hl-term">right to left</span></li>`;
+    html += `<li>Contains <span class="hl-num">~400 signs</span> — classified as <span class="hl-term">logo-syllabic or pictographic</span></li>`;
+    html += `<li><span class="hl-term hl-bg-event">Not related to Brahmi</span> — it is a separate, independent script</li>`;
+    html += `<li>The longest inscription — <span class="hl-num">17 signs</span> on a seal</li>`;
+    html += `<li>The <span class="hl-term">Dholavira signboard</span> — <span class="hl-num">10 large signs</span> inlaid with white gypsum, possibly the earliest public signboard in the world</li>`;
+    html += `<li>Many <span class="hl-term">attempts at decipherment</span> have been made (by Indian and foreign scholars) — all <span class="hl-event">unsuccessful so far</span></li>`;
+    html += `<li>Proposed languages: <span class="hl-term">Munda, Dravidian, Sanskrit</span> — none proven</li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term hl-bg-term">undeciphered Harappan script</span> is a unique feature — <span class="hl-num">~400 signs</span>, written <span class="hl-term">right to left</span>, <span class="hl-term">unrelated to Brahmi</span>. The <span class="hl-term">Dholavira signboard</span> is a unique find. The fact that it remains <span class="hl-event hl-bg-event">undeciphered</span> despite decades of scholarly effort is frequently tested.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 13. HARAPPAN POTTERY =====
+    html += `<section id="pottery">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-jar text-amber-400"></i> 13. Harappan Pottery</h2>`;
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">`;
+
+    html += `<ul class="bullet-list">`;
+    html += `<li>Predominantly <span class="hl-term hl-bg-term">Red ware with black designs</span> (Red and Black Ware)</li>`;
+    html += `<li>Designs include: <span class="hl-term">trees, birds, animals, fish, geometrical patterns</span></li>`;
+    html += `<li><span class="hl-term">Potter's wheel</span> was used — showing advanced ceramic technology</li>`;
+    html += `<li>Pottery was <span class="hl-term">uniform in style</span> across the civilization — another sign of standardization</li>`;
+    html += `<li>Types: <span class="hl-term">storage jars, cooking vessels, dishes, bowls, goblets</span></li>`;
+    html += `</ul>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">Harappan pottery is characterized by <span class="hl-term">Red ware with black painted designs</span>. The use of the <span class="hl-term">potter's wheel</span> and the <span class="hl-term">uniformity of style</span> across the vast area of the civilization are key points.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 14. DECLINE =====
+    html += `<section id="decline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line-down text-amber-400"></i> 14. Decline of the Harappan Civilization (c. 1900-1300 BCE)</h2>`;
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">`;
+
+    html += `<p class="content-text">
+      The decline was <span class="hl-term hl-bg-term">not sudden but gradual</span> — a process of <span class="hl-event">de-urbanization</span>. Cities were <span class="hl-event">abandoned</span>, <span class="hl-event">trade stopped</span>, <span class="hl-event">writing disappeared</span>, and the population moved to <span class="hl-term">rural settlements</span>.
+    </p>`;
+
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-list text-cyan-400 text-xs"></i> Theories of Decline</h3>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Theory</th><th>Details</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-term hl-bg-term">Climatic change</span></td><td><span class="hl-term">Drying up of rivers</span> (Ghaggar-Hakra) due to changes in monsoon patterns — <span class="hl-term hl-bg-event">most accepted theory today</span></td></tr>`;
+    html += `<tr><td><span class="hl-term">Deforestation / ecological degradation</span></td><td>Over-exploitation of resources — deforestation for brick-making & agriculture led to environmental collapse</td></tr>`;
+    html += `<tr><td><span class="hl-term">Floods</span></td><td>Repeated flooding of the Indus river — silt deposits indicate multiple floods at Mohenjodaro</td></tr>`;
+    html += `<tr><td><span class="hl-term">Tectonic movements / earthquakes</span></td><td>Earthquakes may have altered river courses and caused flooding</td></tr>`;
+    html += `<tr><td><span class="hl-term">Change in river course (Indus)</span></td><td>The Indus river shifted course, disrupting agriculture and trade</td></tr>`;
+    html += `<tr><td><span class="hl-term">Epidemic / disease</span></td><td>Possible outbreak of malaria or other diseases in stagnant water after floods</td></tr>`;
+    html += `<tr><td><span class="hl-term hl-bg-event">Aryan Invasion Theory</span></td><td><span class="hl-event hl-bg-event">DISCREDITED today</span> — no evidence of large-scale violence, invasion, or destruction by Aryans</td></tr>`;
+    html += `</tbody></table></div>`;
+
+    html += `<p class="content-text mt-3">
+      <span class="hl-event">No evidence of large-scale violence or invasion</span> has been found. The <span class="hl-term">Late Harappan phase</span> was characterized by <span class="hl-term">ruralization, less urbanism, and a spread eastward and southward</span> into the <span class="hl-place">Ganga-Yamuna doab</span> and <span class="hl-place">Gujarat</span>.
+    </p>`;
+
+    html += `<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-star"></i> UPSC Key Point</div><div class="fact-box-content">The <span class="hl-term">climatic change theory</span> (drying up of Ghaggar-Hakra) is the <span class="hl-term hl-bg-term">most widely accepted explanation</span> for the Harappan decline. The <span class="hl-event hl-bg-event">Aryan Invasion Theory is DISCREDITED</span> — this is a <span class="hl-term">very important UPSC point</span>. The decline was <span class="hl-term">gradual, not sudden</span> — a process of de-urbanization.</div></div>`;
+    html += `</div></section>`;
+
+    // ===== 15. COMPLETE TIMELINE =====
+    html += `<section id="timeline">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-timeline text-indigo-400"></i> 15. Complete Timeline</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">`;
+
+    const timelineData = [
+      { year: "7000 BCE", event: "Early farming communities at Mehrgarh (Balochistan) — predecessors of the Harappan culture", y: true },
+      { year: "6000-2600 BCE", event: "Early Harappan phase — formative period, early agriculture, domestication, regional trade", y: true },
+      { year: "2600-1900 BCE", event: "Mature Harappan phase — URBAN PEAK: planned cities, standardised weights, seals, extensive trade, writing", y: true },
+      { year: "1900-1300 BCE", event: "Late Harappan phase — gradual decline, de-urbanization, eastward migration", y: true },
+      { year: "1850s", event: "Harappa mound noticed during railway construction — bricks used for ballast", y: true },
+      { year: "1921", event: "Daya Ram Sahni excavates Harappa — official discovery of the civilization", y: true },
+      { year: "1922", event: "Rakhal Das Banerjee discovers Mohenjodaro", y: true },
+      { year: "1924", event: "John Marshall announces the discovery of a new civilization to the world", y: true },
+      { year: "1946", event: "R.E.M. Wheeler excavates Harappa — establishes chronological sequence", y: true },
+      { year: "1986", event: "UNESCO World Heritage status for some Harappan sites (Mohenjodaro etc.)", y: true }
+    ];
+
+    timelineData.forEach(t => {
+      html += `<div class="timeline-item">`;
+      html += `<span class="timeline-year">${t.year}</span>`;
+      let badges = '';
+      if (t.y) badges += ' <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-star mr-0.5"></i>Key Event</span>';
+      html += `<span class="text-xs text-slate-400" style="display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:6px;">${badges}</span>`;
+      html += `<p class="text-xs sm:text-sm text-slate-300 mt-0.5">${t.event}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== 16. UPSC KEY FACTS AT A GLANCE =====
+    html += `<section id="upsc-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> 16. UPSC Key Facts — At a Glance</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20">`;
+
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+
+    // Card 1: Major Sites & Features
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-amber-500/20">`;
+    html += `<h4 class="text-sm font-bold text-amber-400 mb-2"><i class="fa-solid fa-city mr-1"></i> Major Sites & Their Features</h4>`;
+    html += `<div class="table-wrap"><table><thead><tr><th>Site</th><th>Key Feature</th></tr></thead><tbody>`;
+    html += `<tr><td><span class="hl-place">Harappa</span></td><td>First discovered; granaries, citadel & lower town</td></tr>`;
+    html += `<tr><td><span class="hl-place">Mohenjodaro</span></td><td>Great Bath, Bearded Priest, Dancing Girl, Great Granary</td></tr>`;
+    html += `<tr><td><span class="hl-place">Dholavira</span></td><td>Water management, reservoirs, signboard, stadium</td></tr>`;
+    html += `<tr><td><span class="hl-place">Lothal</span></td><td>Dockyard, bead-making factory, measurement system</td></tr>`;
+    html += `<tr><td><span class="hl-place">Kalibangan</span></td><td>Ploughed field, fire altars, earthquake evidence</td></tr>`;
+    html += `<tr><td><span class="hl-place">Rakhigarhi</span></td><td>Largest Indian site; DNA studies</td></tr>`;
+    html += `<tr><td><span class="hl-place">Chanhudaro</span></td><td>Only city without citadel; bead-making centre</td></tr>`;
+    html += `<tr><td><span class="hl-place">Shortughai</span></td><td>Canal irrigation; lapis lazuli trade</td></tr>`;
+    html += `<tr><td><span class="hl-place">Banawali</span></td><td>Terracotta plough model</td></tr>`;
+    html += `<tr><td><span class="hl-place">Surkotada</span></td><td>Horse bones (debated)</td></tr>`;
+    html += `<tr><td><span class="hl-place">Sutkagendor</span></td><td>Makran coast; trade route</td></tr>`;
+    html += `</tbody></table></div></div>`;
+
+    // Card 2: Town Planning & Architecture
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-indigo-500/20">`;
+    html += `<h4 class="text-sm font-bold text-indigo-400 mb-2"><i class="fa-solid fa-building-columns mr-1"></i> Town Planning & Architecture</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-indigo-300">Grid pattern:</span> Streets at right angles</li>`;
+    html += `<li><span class="text-indigo-300">Two parts:</span> Citadel (west) + Lower Town (east)</li>`;
+    html += `<li><span class="text-indigo-300">Bricks:</span> Baked, uniform ratio <span class="hl-num">1:2:4</span></li>`;
+    html += `<li><span class="text-indigo-300">Drainage:</span> Covered drains, inspection holes, brick-lined</li>`;
+    html += `<li><span class="text-indigo-300">Great Bath:</span> <span class="hl-num">11.88 x 7.01 x 2.43m</span>, bitumen waterproofing</li>`;
+    html += `<li><span class="text-indigo-300">Wells:</span> ~700 wells at Mohenjodaro</li>`;
+    html += `</ul></div>`;
+
+    // Card 3: Economy, Trade & Crafts
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-emerald-500/20">`;
+    html += `<h4 class="text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-sack-dollar mr-1"></i> Economy, Trade & Crafts</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Crops:</span> Wheat, barley, lentils, chickpea, sesame; rice (rare)</li>`;
+    html += `<li><span class="text-emerald-300">Plough:</span> Ploughed field at Kalibangan; terracotta models</li>`;
+    html += `<li><span class="text-emerald-300">Crafts:</span> Bronze, steatite seals, bead-making, shell, faience, ivory</li>`;
+    html += `<li><span class="text-emerald-300">Trade:</span> Mesopotamia, Oman, Bahrain (Dilmun), Iran, Afghanistan</li>`;
+    html += `<li><span class="text-emerald-300">Weights:</span> Binary system (1,2,4,8...); cubical chert stones</li>`;
+    html += `<li><span class="text-emerald-300">Meluhha:</span> Mesopotamian name for Harappan region</li>`;
+    html += `<li><span class="text-emerald-300">Dancing Girl:</span> Bronze figurine (Mohenjodaro)</li>`;
+    html += `</ul></div>`;
+
+    // Card 4: Society & Religion
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-purple-500/20">`;
+    html += `<h4 class="text-sm font-bold text-purple-400 mb-2"><i class="fa-solid fa-users mr-1"></i> Society & Religion</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-purple-300">No palaces/tombs:</span> No clear king or monarchy</li>`;
+    html += `<li><span class="text-purple-300">Social hierarchy:</span> Citadel vs lower town distinction</li>`;
+    html += `<li><span class="text-purple-300">Mother Goddess:</span> Fertility cult; terracotta figurines</li>`;
+    html += `<li><span class="text-purple-300">Pashupati Seal:</span> Proto-Shiva; surrounded by animals</li>`;
+    html += `<li><span class="text-purple-300">Fire altars:</span> Kalibangan, Lothal</li>`;
+    html += `<li><span class="text-purple-300">Burials:</span> Extended, pot burial, urn burial; grave goods</li>`;
+    html += `<li><span class="text-purple-300">No large temples:</span> Unlike Mesopotamia/Egypt</li>`;
+    html += `</ul></div>`;
+
+    // Card 5: Script & Seals
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-pink-500/20">`;
+    html += `<h4 class="text-sm font-bold text-pink-400 mb-2"><i class="fa-solid fa-pen-fancy mr-1"></i> Script & Seals</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-pink-300">Status:</span> <span class="hl-event">UNDECIPHERED</span> — one of the great puzzles of archaeology</li>`;
+    html += `<li><span class="text-pink-300">Direction:</span> Written right to left</li>`;
+    html += `<li><span class="text-pink-300">Signs:</span> ~400 logo-syllabic/pictographic signs</li>`;
+    html += `<li><span class="text-pink-300">Unrelated to Brahmi:</span> Separate independent script</li>`;
+    html += `<li><span class="text-pink-300">Seals:</span> Steatite, animal motifs, used for trade</li>`;
+    html += `<li><span class="text-pink-300">Dholavira signboard:</span> 10 large signs in gypsum</li>`;
+    html += `</ul></div>`;
+
+    // Card 6: Decline Theories
+    html += `<div class="bg-black/30 rounded-xl p-3 border border-red-500/20">`;
+    html += `<h4 class="text-sm font-bold text-red-400 mb-2"><i class="fa-solid fa-chart-line-down mr-1"></i> Decline Theories</h4>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-red-300">Climatic change:</span> <span class="hl-term">MOST ACCEPTED</span> — drying of Ghaggar-Hakra</li>`;
+    html += `<li><span class="text-red-300">Deforestation:</span> Ecological degradation</li>`;
+    html += `<li><span class="text-red-300">Floods:</span> Repeated Indus flooding (Mohenjodaro)</li>`;
+    html += `<li><span class="text-red-300">Tectonic:</span> Earthquakes altered river courses</li>`;
+    html += `<li><span class="text-red-300">River course change:</span> Indus shifted course</li>`;
+    html += `<li><span class="text-red-300">Epidemic:</span> Disease outbreak theory</li>`;
+    html += `<li><span class="text-red-300">Aryan Invasion:</span> <span class="hl-event">DISCREDITED</span> — no evidence of violence</li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for UPSC Prelims</div><div class="fact-box-content">`;
+    html += `The <span class="hl-dynasty hl-bg-dynasty">Harappan Civilization</span> (2600-1900 BCE Mature Phase): <span class="hl-place">Mohenjodaro</span> — Great Bath (<span class="hl-num">11.88x7.01x2.43m</span>), Bearded Priest, Dancing Girl (bronze). <span class="hl-place">Dholavira</span> — water reservoirs, signboard. <span class="hl-place">Lothal</span> — dockyard. <span class="hl-place">Kalibangan</span> — ploughed field. <span class="hl-place">Rakhigarhi</span> — largest Indian site. <span class="hl-place">Chanhudaro</span> — no citadel. <span class="hl-term">Town planning</span>: grid pattern, citadel+lower town, 1:2:4 brick ratio, covered drains. <span class="hl-term">Economy</span>: wheat, barley; binary weights (1,2,4,8...); <span class="hl-term">Meluhha</span> in Mesopotamian texts. <span class="hl-term">Society</span>: no palaces/tombs/king; Mother Goddess; Pashupati Seal (proto-Shiva). <span class="hl-term">Script</span>: <span class="hl-event">UNDECIPHERED</span>, right to left, ~400 signs. <span class="hl-term">Decline</span>: <span class="hl-term">climatic change</span> (drying of Ghaggar-Hakra); <span class="hl-event">Aryan Invasion Theory DISCREDITED</span>. Discoverers: <span class="hl-ruler">Daya Ram Sahni</span> (Harappa 1921), <span class="hl-ruler">Rakhal Das Banerjee</span> (Mohenjodaro 1922), <span class="hl-ruler">John Marshall</span> (announced 1924). </div></div>`;
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> ${DATA.last_updated.split('-')[0]} NCERT History — Indus Valley Civilization (Harappan) UPSC Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Based on NCERT Class 6 (OLD) Ch 3, Class 6 (NEW) Ch 6, Class 12 Theme 1 — "Bricks, Beads and Bones: The Harappan Civilisation"</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

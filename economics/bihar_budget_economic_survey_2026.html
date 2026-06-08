@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Budget 2026–27 & Economic Survey 2025–26 — BPSC/UPSC Comprehensive Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f1a;
+    }
+    .whitespace-keep { white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+    @media (max-width: 640px) {
+      .mobile-stack { flex-direction: column !important; }
+      .mobile-full { width: 100% !important; }
+      .mobile-text-sm { font-size: 0.75rem !important; }
+      .mobile-p-2 { padding: 0.5rem !important; }
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+    .gradient-top {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+
+    .hl-bg-dynasty { background: rgba(251, 191, 36, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96, 165, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167, 139, 250, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52, 211, 153, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251, 146, 60, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45, 212, 191, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-place { background: rgba(163, 227, 53, 0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-num { background: rgba(192, 132, 252, 0.15); padding: 0 4px; border-radius: 3px; }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .section-heading { font-size: 1rem; }
+    }
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .subsection-heading { font-size: 0.9rem; }
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 640px) {
+      .content-text { font-size: 0.8rem; line-height: 1.6; }
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .bullet-list li { font-size: 0.78rem; }
+    }
+    .bullet-list li::before {
+      content: '\f111';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      font-size: 0.4rem;
+      color: #6366f1;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #6366f1;
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+    .timeline-year {
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .timeline-year { font-size: 0.78rem; }
+    }
+
+    .fact-box {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    .fact-box-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .fact-box-content {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .fact-box-content { font-size: 0.75rem; }
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 640px) {
+      .table-wrap table { font-size: 0.72rem; }
+    }
+    .table-wrap th {
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(99,102,241,0.3);
+      font-weight: 600;
+    }
+    .table-wrap td {
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #94a3b8;
+    }
+    .table-wrap tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .ca-badge {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ===== HEADER =====
+    html += `
+      <div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-file-invoice-dollar text-2xl sm:text-3xl text-amber-400"></i>
+              <h1 class="text-xl sm:text-3xl font-bold text-white">Bihar Budget 2026–27 & Economic Survey 2025–26 — UPSC/BPSC Comprehensive Notes</h1>
+            </div>
+            <p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">
+              <i class="fa-solid fa-indian-rupee-sign text-rose-400"></i> \u20b93,47,589.76 Cr Budget | 14.9% GSDP Growth | Fiscal Deficit 2.99% | Revenue Surplus \u20b91,143 Cr
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              <i class="fa-regular fa-calendar mr-1"></i>Budget Presented: <span class="hl-date">3 Feb 2026</span> | Economic Survey: <span class="hl-date">2 Feb 2026</span> | FM: <span class="hl-ruler">Bijendra Prasad Yadav</span>
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">
+            <i class="fa-regular fa-clock"></i>
+            <span>Budget Session 2026</span>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>BPSC Focus</span>
+          <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>
+          <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Saat Nischay-3</span>
+          <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-xs border border-emerald-500/20"><i class="fa-solid fa-landmark mr-1"></i>Bihar Budget 2026-27</span>
+        </div>
+      </div>`;
+
+    // ===== TABLE OF CONTENTS =====
+    html += `
+      <div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">
+        <h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list text-indigo-400"></i> Table of Contents
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">
+          <a href="#part-a" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-chart-line text-amber-400 mr-1"></i> Part A: Economic Survey 2025-26</a>
+          <a href="#overview" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-list-check text-green-400 mr-1"></i> 1. Macroeconomy Overview</a>
+          <a href="#sectoral" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-chart-pie text-cyan-400 mr-1"></i> 2. Sectoral Composition</a>
+          <a href="#state-finance" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 3. State Finance</a>
+          <a href="#agriculture" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 4. Agriculture</a>
+          <a href="#industry" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 5. Industry & Enterprises</a>
+          <a href="#labour" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 6. Labour & Employment</a>
+          <a href="#infra" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 7. Infrastructure</a>
+          <a href="#power" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 8. Power Sector</a>
+          <a href="#egovernance" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 9. E-Governance</a>
+          <a href="#rural" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 10. Rural Development</a>
+          <a href="#urban" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 11. Urban Development</a>
+          <a href="#humandev" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 12. Human Development</a>
+          <a href="#child" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 13. Child Development</a>
+          <a href="#environment" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 14. Environment & Climate</a>
+          <a href="#part-b" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-coins text-yellow-400 mr-1"></i> Part B: Budget 2026-27</a>
+          <a href="#budget-glance" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 1. Budget at a Glance</a>
+          <a href="#revenue" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 2. Revenue Structure</a>
+          <a href="#tax" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 3. Tax Collection</a>
+          <a href="#expenditure" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 4. Expenditure</a>
+          <a href="#committed" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 5. Committed Expenditure</a>
+          <a href="#dept-alloc" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 6. Department-wise Allocations</a>
+          <a href="#policy-highlights" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 7. Policy Highlights</a>
+          <a href="#ratios" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"> 8. Key Budget Ratios</a>
+          <a href="#quick-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-file-pen text-yellow-400 mr-1"></i> Quick Facts Cards</a>
+          <a href="#mcqs" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition"><i class="fa-solid fa-question-circle text-lime-400 mr-1"></i> Practice MCQs (20)</a>
+        </div>
+      </div>`;
+
+    // ========================================================================
+    // PART A: BIHAR ECONOMIC SURVEY 2025-26
+    // ========================================================================
+    html += `<section id="part-a">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-chart-line text-amber-400"></i> Part A: Bihar Economic Survey 2025–26</h2>`;
+    html += `<div class="mb-4 fact-box border-amber-500/30"><div class="fact-box-title"><i class="fa-solid fa-circle-info text-amber-400"></i> Key Info</div><div class="fact-box-content">Presented on <span class="hl-date">2 February 2026</span> by Finance Minister <span class="hl-ruler">Bijendra Prasad Yadav</span>. 20th Economic Survey of Bihar. Covers <span class="hl-num">2024-25</span> actuals with projections.</div></div>`;
+
+    // ---- 1. Overview ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20" id="overview">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-chart-simple text-amber-400"></i> 1. Overview — Macroeconomy</h3>`;
+    html += `<p class="content-text">Bihar's economy continues to outpace national growth. Key macroeconomic indicators from the <span class="hl-num hl-bg-num">20th Economic Survey</span>:</p>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Indicator</th><th>Value (2024-25)</th><th>Notes</th></tr>
+      <tr><td>GSDP (Current)</td><td>\u20b9<span class="hl-num">9,91,997</span> cr</td><td><span class="hl-num hl-bg-num">13.1%</span> growth</td></tr>
+      <tr><td>GSDP (Constant 2011-12)</td><td>\u20b9<span class="hl-num">5,31,372</span> cr</td><td><span class="hl-num hl-bg-num">8.6%</span> growth > India's <span class="hl-num">6.5%</span></td></tr>
+      <tr><td>NSDP (Current)</td><td>\u20b9<span class="hl-num">8,99,020</span> cr</td><td>Net State Domestic Product</td></tr>
+      <tr><td>NSDP (Constant)</td><td>\u20b9<span class="hl-num">4,71,322</span> cr</td><td>Constant prices</td></tr>
+      <tr><td>Per Capita Income (Current)</td><td>\u20b9<span class="hl-num">76,490</span></td><td>Current prices</td></tr>
+      <tr><td>Per Capita Income (Constant)</td><td>\u20b9<span class="hl-num">40,973</span></td><td>Constant prices</td></tr>
+      <tr><td>Per Capita NSDP (Constant)</td><td>\u20b9<span class="hl-num">36,342</span></td><td>Only <span class="hl-num">31.7%</span> of all-India average</td></tr>
+    </table></div>`;
+    html += `<p class="content-text mt-2"><strong>Top 3 Districts by PCI:</strong> <span class="hl-place hl-bg-place">Patna</span>, <span class="hl-place hl-bg-place">Begusarai</span>, <span class="hl-place hl-bg-place">Munger</span>. <strong>Lowest 3:</strong> <span class="hl-place hl-bg-place">Sheohar</span>, <span class="hl-place hl-bg-place">Araria</span>, <span class="hl-place hl-bg-place">Sitamarhi</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 2. Sectoral Composition ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20" id="sectoral">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-chart-pie text-green-400"></i> 2. Sectoral Composition (2024-25 at Current Prices)</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Sector</th><th>Share of GSDP</th><th>Growth Rate</th></tr>
+      <tr><td>Tertiary (Services)</td><td><span class="hl-num">54.8%</span></td><td><span class="hl-num">13.5%</span></td></tr>
+      <tr><td>Secondary (Manufacturing)</td><td><span class="hl-num">26.8%</span></td><td><span class="hl-num">15.5%</span></td></tr>
+      <tr><td>Primary (Agriculture)</td><td><span class="hl-num">18.3%</span></td><td><span class="hl-num">9.6%</span></td></tr>
+    </table></div>`;
+    html += `<p class="content-text"><span class="hl-term">Employment Distribution:</span> Primary <span class="hl-num">54%</span>, Secondary <span class="hl-num">24%</span>, Tertiary <span class="hl-num">22%</span>. <span class="hl-term">Gross Fixed Capital Formation</span> doubled from \u20b9<span class="hl-num">17,416</span> cr to \u20b9<span class="hl-num">34,905</span> cr in <span class="hl-num">5</span> years.</p>`;
+    html += `<div class="fact-box border-green-500/30"><div class="fact-box-title"><i class="fa-solid fa-lightbulb text-green-400"></i> Key Insight</div><div class="fact-box-content">Services dominate GSDP but employment is still agriculture-heavy (<span class="hl-num">54%</span>). Manufacturing growing fastest at <span class="hl-num">15.5%</span> — indicates structural shift underway.</div></div>`;
+    html += `</div>`;
+
+    // ---- 3. State Finance ----
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20" id="state-finance">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-file-invoice text-blue-400"></i> 3. State Finance 2024-25 (Actuals)</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Parameter</th><th>Amount (\u20b9 cr)</th><th>% of GSDP</th></tr>
+      <tr><td>Total Revenue Receipts</td><td><span class="hl-num">2,18,658</span></td><td><span class="hl-num">22.0%</span></td></tr>
+      <tr><td>Capital Receipts</td><td><span class="hl-num">66,165</span></td><td><span class="hl-num">6.7%</span></td></tr>
+      <tr><td>Total Expenditure</td><td><span class="hl-num">2,81,939</span></td><td><span class="hl-num">28.4%</span></td></tr>
+      <tr><td>Revenue Expenditure</td><td><span class="hl-num">2,19,015</span></td><td><span class="hl-num">77.7%</span> of total</td></tr>
+      <tr><td>Capital Expenditure</td><td><span class="hl-num">62,924</span></td><td><span class="hl-num">22.3%</span> of total</td></tr>
+      <tr><td>Total Borrowings</td><td><span class="hl-num">66,049</span></td><td><span class="hl-num">6.7%</span></td></tr>
+      <tr><td>Debt Outstanding</td><td><span class="hl-num">3,74,134</span></td><td><span class="hl-num">37.7%</span></td></tr>
+      <tr><td>Gross Fiscal Deficit</td><td><span class="hl-num">41,223</span></td><td><span class="hl-num">4.2%</span></td></tr>
+      <tr><td>Primary Deficit</td><td><span class="hl-num">21,544</span></td><td><span class="hl-num">2.2%</span></td></tr>
+      <tr><td>Revenue Deficit</td><td><span class="hl-num">357</span></td><td>Marginal</td></tr>
+    </table></div>`;
+    html += `</div>`;
+
+    // ---- 4. Agriculture ----
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20" id="agriculture">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-seedling text-emerald-400"></i> 4. Agriculture Sector</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Gross Sown Area: <span class="hl-num">8,207.27</span> thousand ha | Net Sown Area: <span class="hl-num">5,411.96</span> thousand ha</li>
+      <li>Cropping Intensity: <span class="hl-num">1.52</span> | Cropping Pattern: Foodgrains <span class="hl-num">95.2%</span>, Cereals <span class="hl-num">89.2%</span>, Pulses <span class="hl-num">6.0%</span></li>
+      <li>Milk production: <span class="hl-num">+4.2%</span> | Egg production: <span class="hl-num">+10.0%</span> | Fish production: <span class="hl-num">+9.9%</span></li>
+      <li>Total fish production: <span class="hl-num">960</span> thousand tonnes — <span class="hl-place hl-bg-place">Madhubani</span> leading producer</li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Schemes:</span> <span class="hl-policy hl-bg-policy">Mukhyamantri Samekit Chaur Vikas Yojana</span>, <span class="hl-policy hl-bg-policy">River Ranching Programme</span>, <span class="hl-policy hl-bg-policy">Jaivik Kheti Protsahan Yojana</span>, <span class="hl-policy hl-bg-policy">Jaivik Corridor Yojana</span>, <span class="hl-policy hl-bg-policy">PKVY</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 5. Industry ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20" id="industry">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-industry text-yellow-400"></i> 5. Enterprises & Industry</h3>`;
+    html += `<ul class="bullet-list">
+      <li><span class="hl-term">Sugar:</span> <span class="hl-place hl-bg-place">Riga</span> Sugar Mill reopened <span class="hl-date">2024-25</span></li>
+      <li><span class="hl-term">Dairy:</span> Avg daily milk procurement <span class="hl-num">2,252.28</span> thousand kg</li>
+      <li><span class="hl-term">Textile:</span> <span class="hl-policy hl-bg-policy">Bihar Industrial Investment Promotion Policy (Textile & Leather Policy, 2022)</span></li>
+      <li><span class="hl-term">Tourism:</span> <span class="hl-place hl-bg-place">Takht Sri Harimandir Ji</span>, <span class="hl-place hl-bg-place">Matsyagandha Lake (Saharsa)</span>, <span class="hl-place hl-bg-place">Luv-Kush Eco Tourism Park (Valmikinagar)</span></li>
+      <li><span class="hl-term">Eco-tourism</span> outlay: \u20b9<span class="hl-num">100</span> cr; <span class="hl-num">3rd</span> biological park at <span class="hl-place">Raniganj, Araria</span></li>
+    </ul>`;
+    html += `</div>`;
+
+    // ---- 6. Labour & Employment ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20" id="labour">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-briefcase text-rose-400"></i> 6. Labour & Employment</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Indicator</th><th>Rural</th><th>Urban</th></tr>
+      <tr><td>Male LFPR</td><td><span class="hl-num">76.8%</span></td><td><span class="hl-num">67.8%</span></td></tr>
+      <tr><td>Female LFPR</td><td colspan="2"><span class="hl-num hl-bg-num">11.2%</span> lower than all-India average</td></tr>
+      <tr><td>Male Unemployment</td><td><span class="hl-num">3.3%</span></td><td><span class="hl-num">6.9%</span></td></tr>
+      <tr><td>Female Unemployment</td><td><span class="hl-num">0.9%</span></td><td><span class="hl-num">9.1%</span></td></tr>
+    </table></div>`;
+    html += `<div class="fact-box border-rose-500/30"><div class="fact-box-title"><i class="fa-solid fa-lightbulb text-rose-400"></i> Key Insight</div><div class="fact-box-content">Female LFPR significantly below national average — a structural challenge. Urban female unemployment (<span class="hl-num">9.1%</span>) is notably high.</div></div>`;
+    html += `</div>`;
+
+    // ---- 7. Infrastructure ----
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-cyan-500/20" id="infra">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-road text-cyan-400"></i> 7. Physical Infrastructure</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Bihar shares <span class="hl-num">5.5%</span> of India's total road network</li>
+      <li><span class="hl-term">6-lane Bihar New Ganga Bridge:</span> \u20b9<span class="hl-num">4,988</span> cr (<span class="hl-term">ADB</span> support)</li>
+      <li>Road transport sector growth: <span class="hl-num">13.4%</span> annually</li>
+      <li>Railways: <span class="hl-num">5.4%</span> of India's rail network</li>
+      <li>Air transport growth: <span class="hl-num">20%</span></li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Schemes:</span> <span class="hl-policy hl-bg-policy">PM e-Bus Sewa</span>, <span class="hl-policy hl-bg-policy">Mukhyamantri Gram Parivahan Yojana (MMGPY)</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 8. Power ----
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20" id="power">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-bolt text-yellow-400"></i> 8. Power Sector</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Per capita energy consumption: <span class="hl-num">374</span> kWh</li>
+      <li><span class="hl-term">NBPDCL & SBPDCL</span> won <span class="hl-num">13</span> Innovation & Impact Award at <span class="hl-num">19th</span> India Energy Summit</li>
+      <li><span class="hl-term">BSPTCL</span> awarded A+ certificate from PFC consecutively <span class="hl-num">5</span> years (<span class="hl-date">2020-2025</span>)</li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Schemes:</span> <span class="hl-policy hl-bg-policy">Floating Solar Power Plant</span>, <span class="hl-policy hl-bg-policy">Solar Water Pumps</span>, <span class="hl-policy hl-bg-policy">Mukhyamantri Solar Street Light Scheme</span>, <span class="hl-policy hl-bg-policy">Smart Metering</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 9. E-Governance ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20" id="egovernance">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-laptop-code text-purple-400"></i> 9. E-Governance</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Tele-density: <span class="hl-num">57.23%</span> | Internet density: <span class="hl-num">43.10%</span></li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Initiatives:</span> <span class="hl-policy hl-bg-policy">CCTNS</span>, <span class="hl-policy hl-bg-policy">CFMS</span>, <span class="hl-policy hl-bg-policy">Cyber Cell</span>, <span class="hl-policy hl-bg-policy">e-Challan</span>, <span class="hl-policy hl-bg-policy">Bihar AI Mission</span>, <span class="hl-policy hl-bg-policy">BSDC 2.0</span>, <span class="hl-policy hl-bg-policy">BSWAN 3.0</span>, <span class="hl-policy hl-bg-policy">BAAF</span>, <span class="hl-policy hl-bg-policy">ERSS</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 10. Rural Development ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20" id="rural">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-house-chimney text-emerald-400"></i> 10. Rural Development</h3>`;
+    html += `<ul class="bullet-list">
+      <li>~<span class="hl-num">90%</span> population lives in rural areas</li>
+      <li><span class="hl-term">JEEVIKA (NRLM):</span> <span class="hl-num hl-bg-num">1.40 crore</span> families into <span class="hl-num hl-bg-num">11.03 lakh</span> SHGs</li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Initiatives:</span> <span class="hl-policy hl-bg-policy">Didi-Ki-Rasoi</span>, <span class="hl-policy hl-bg-policy">Pashu Sakhi</span>, <span class="hl-policy hl-bg-policy">One Stop Facility Centre</span>, <span class="hl-policy hl-bg-policy">Satat Jeevikoparjan Yojana</span>, <span class="hl-policy hl-bg-policy">Lohiya Swachh Bihar Abhiyan</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 11. Urban Development ----
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-sky-500/20" id="urban">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-city text-sky-400"></i> 11. Urban Development</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Population growth rate declined to <span class="hl-num">14.4%</span> (<span class="hl-date">2021-25</span>)</li>
+      <li>TFR to reach replacement level <span class="hl-num">2.1</span> by <span class="hl-date">2039</span></li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Initiatives:</span> <span class="hl-policy hl-bg-policy">Mukhyamantri Samagra Shahari Vikas Yojana</span>, <span class="hl-policy hl-bg-policy">Smart City Mission</span>, <span class="hl-policy hl-bg-policy">Patna Metro Rail Project</span>, <span class="hl-policy hl-bg-policy">Rainwater Harvesting</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 12. Human Development ----
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-pink-500/20" id="humandev">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-hand-holding-heart text-pink-400"></i> 12. Human Development</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Expenditure on women increased <span class="hl-num">3.45</span> times (<span class="hl-date">2018-19 to 2023-24</span>)</li>
+      <li>Life Expectancy: Male <span class="hl-num">68.9</span> yrs, Female <span class="hl-num">69.7</span> yrs</li>
+      <li>Literacy: <span class="hl-num">47%</span> (2001) \u2192 <span class="hl-num">61.8%</span> (2011) — <span class="hl-term">highest improvement among states</span></li>
+      <li><span class="hl-policy hl-bg-policy">Mukhyamantri Kanya Vivah Yojana:</span> \u20b9<span class="hl-num">5,000</span> to BPL girls marrying 18+</li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Schemes:</span> <span class="hl-policy hl-bg-policy">E-Shikshakosh</span>, <span class="hl-policy hl-bg-policy">PM Poshan</span>, <span class="hl-policy hl-bg-policy">BHAVYA</span>, <span class="hl-policy hl-bg-policy">JSY</span>, <span class="hl-policy hl-bg-policy">BSCCY</span>, <span class="hl-policy hl-bg-policy">NHM</span>, <span class="hl-policy hl-bg-policy">SSA</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 13. Child Development ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-orange-500/20" id="child">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-child text-orange-400"></i> 13. Child Development</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Indicator (NFHS-5)</th><th>Bihar</th></tr>
+      <tr><td>Stunting</td><td><span class="hl-num hl-bg-num">42.9%</span></td></tr>
+      <tr><td>Wasting</td><td><span class="hl-num hl-bg-num">22.9%</span></td></tr>
+      <tr><td>Underweight</td><td><span class="hl-num hl-bg-num">41%</span></td></tr>
+    </table></div>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Initiatives:</span> <span class="hl-policy hl-bg-policy">Anganwadi Services</span>, <span class="hl-policy hl-bg-policy">Poshan Pakhwada</span>, <span class="hl-policy hl-bg-policy">POSHAN Tracker</span>, <span class="hl-policy hl-bg-policy">Mission Vatsalya</span>.</p>`;
+    html += `</div>`;
+
+    // ---- 14. Environment & Climate ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-teal-500/20" id="environment">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-tree text-teal-400"></i> 14. Environment & Climate</h3>`;
+    html += `<ul class="bullet-list">
+      <li>Forestry sector avg annual growth: <span class="hl-num">10.6%</span></li>
+      <li>Forest cover increased by <span class="hl-num hl-bg-num">689</span> sq km in <span class="hl-num">12</span> years</li>
+    </ul>`;
+    html += `<p class="content-text mt-2"><span class="hl-term">Initiatives:</span> <span class="hl-policy hl-bg-policy">Hariyali Mission</span>, <span class="hl-policy hl-bg-policy">Bamboo Mission</span>, <span class="hl-policy hl-bg-policy">FMIS</span>, <span class="hl-policy hl-bg-policy">Bihar-VanMitra App</span>, <span class="hl-policy hl-bg-policy">e-Parivesh</span>, <span class="hl-policy hl-bg-policy">Vikramshila Gangetic Dolphin Sanctuary</span>.</p>`;
+    html += `<p class="content-text"><span class="hl-term">Disaster Management:</span> <span class="hl-policy hl-bg-policy">SDRF</span> established <span class="hl-date">2010</span>, <span class="hl-policy hl-bg-policy">Bihar Disaster Risk Reduction Road Map (2015-2030)</span>.</p>`;
+    html += `</div>`;
+    html += `</section>`;
+
+    // ========================================================================
+    // PART B: BIHAR BUDGET 2026-27
+    // ========================================================================
+    html += `<section id="part-b">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-coins text-yellow-400"></i> Part B: Bihar Budget 2026–27</h2>`;
+    html += `<div class="mb-4 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-circle-info text-yellow-400"></i> Key Info</div><div class="fact-box-content">Presented on <span class="hl-date">3 February 2026</span> by Finance Minister <span class="hl-ruler">Bijendra Prasad Yadav</span>. Total outlay \u20b9<span class="hl-num">3,47,589.76 cr</span> — largest in Bihar's history. Guided by <span class="hl-policy">Saat Nischay-3</span> roadmap.</div></div>`;
+
+    // ---- 1. Budget at a Glance ----
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-yellow-500/20" id="budget-glance">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-eye text-yellow-400"></i> 1. Budget at a Glance</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Parameter</th><th>Value</th></tr>
+      <tr><td>Total Budget</td><td>\u20b9<span class="hl-num hl-bg-num">3,47,589.76</span> cr — <span class="hl-term">largest in Bihar's history</span></td></tr>
+      <tr><td>Increase over FY 2025-26</td><td>~\u20b9<span class="hl-num">30,694</span> cr (<span class="hl-num">9.68%</span>)</td></tr>
+      <tr><td>GSDP Projection 2026-27</td><td>\u20b9<span class="hl-num">13.1</span> lakh cr (<span class="hl-num">15%</span> growth)</td></tr>
+      <tr><td>Revenue & Committed Expenditure</td><td>\u20b9<span class="hl-num">2,25,434</span> cr (~<span class="hl-num">65%</span>)</td></tr>
+      <tr><td>Capital Expenditure</td><td>\u20b9<span class="hl-num">63,455.84</span> cr (<span class="hl-num">18.26%</span> of total)</td></tr>
+      <tr><td>Scheme Expenditure</td><td>\u20b9<span class="hl-num">1,22,155</span> cr (~<span class="hl-num">35%</span>)</td></tr>
+      <tr><td>Revenue Surplus</td><td>\u20b9<span class="hl-num hl-bg-num">1,143.19</span> cr (<span class="hl-num">0.09%</span> of GSDP)</td></tr>
+      <tr><td>Fiscal Deficit</td><td>\u20b9<span class="hl-num hl-bg-num">39,111.80</span> cr (<span class="hl-num">2.99%</span> of GSDP) — <span class="hl-term">within FRBM limit</span></td></tr>
+      <tr><td>Outstanding Public Debt</td><td>\u20b9<span class="hl-num">3,88,554</span> cr (<span class="hl-num">29.68%</span> of GSDP)</td></tr>
+      <tr><td>Guiding Framework</td><td><span class="hl-policy">Saat Nischay-3</span>: double per capita income, create <span class="hl-num">1 cr</span> jobs</td></tr>
+    </table></div>`;
+    html += `<div class="fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must Remember</div><div class="fact-box-content">Budget size \u20b9<span class="hl-num">3,47,589.76</span> cr, Fiscal Deficit <span class="hl-num">2.99%</span>, Revenue Surplus \u20b9<span class="hl-num">1,143.19</span> cr, GSDP \u20b9<span class="hl-num">13.1</span> lakh cr</div></div>`;
+    html += `</div>`;
+
+    // ---- 2. Revenue Structure ----
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20" id="revenue">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-indian-rupee-sign text-green-400"></i> 2. Revenue Structure — Where the Rupee Comes From</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Source</th><th>Amount (\u20b9 cr)</th><th>% of Total</th></tr>
+      <tr><td>Share in Central Taxes</td><td><span class="hl-num hl-bg-num">1,58,178</span></td><td><span class="hl-num">45.49%</span></td></tr>
+      <tr><td>Central Grants</td><td><span class="hl-num">51,895</span></td><td><span class="hl-num">14.93%</span></td></tr>
+      <tr><td>State Own Tax Revenue</td><td>~\u20b9<span class="hl-num">65,800</span></td><td><span class="hl-num">18.92%</span></td></tr>
+      <tr><td>State Non-Tax Revenue</td><td>\u20b9<span class="hl-num">9,402</span></td><td><span class="hl-num">2.70%</span></td></tr>
+      <tr><td>Loans (Public Debt)</td><td>\u20b9<span class="hl-num">61,939</span></td><td><span class="hl-num">17.81%</span></td></tr>
+      <tr><td><strong>Total Own Revenue</strong></td><td><strong>~\u20b9<span class="hl-num">75,200</span></strong></td><td><strong><span class="hl-num">21.62%</span></strong></td></tr>
+    </table></div>`;
+    html += `<div class="fact-box border-green-500/30"><div class="fact-box-title"><i class="fa-solid fa-lightbulb text-green-400"></i> Key Insight</div><div class="fact-box-content">High central dependency (<span class="hl-num">~60%</span> from Centre) but own revenue improving: \u20b9<span class="hl-num">67,700</span> cr (2025-26) \u2192 \u20b9<span class="hl-num">75,200</span> cr (2026-27).</div></div>`;
+    html += `</div>`;
+
+    // ---- 3. Tax Collection Structure ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20" id="tax">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-receipt text-blue-400"></i> 3. Tax Collection Structure</h3>`;
+    html += `<ul class="bullet-list">
+      <li><span class="hl-term">Major sources:</span> GST (biggest), Excise (alcohol), Stamp Duty (property), Motor Vehicle Tax</li>
+      <li><span class="hl-term">Own Revenue growth:</span> \u20b9<span class="hl-num">67,700</span> cr (2025-26) \u2192 \u20b9<span class="hl-num">75,200</span> cr (<span class="hl-num hl-bg-num">+11.1%</span>)</li>
+    </ul>`;
+    html += `</div>`;
+
+    // ---- 4. Expenditure ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-rose-500/20" id="expenditure">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-arrow-right text-rose-400"></i> 4. Expenditure — Where the Rupee Goes</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Type</th><th>Amount (\u20b9 cr)</th></tr>
+      <tr><td>Revenue Expenditure</td><td><span class="hl-num">2,84,134</span></td></tr>
+      <tr><td>Capital Outlay</td><td><span class="hl-num">39,377</span></td></tr>
+    </table></div>`;
+    html += `</div>`;
+
+    // ---- 5. Committed Expenditure ----
+    html += `<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-orange-500/20" id="committed">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-lock text-orange-400"></i> 5. Committed Expenditure (<span class="hl-num">47%</span> of Revenue Receipts)</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Head</th><th>Amount (\u20b9 cr)</th><th>% of Rev Receipts</th></tr>
+      <tr><td>Salaries</td><td><span class="hl-num hl-bg-num">72,960</span></td><td><span class="hl-num">26%</span> — Education dept salaries alone \u20b9<span class="hl-num">36,658</span> cr</td></tr>
+      <tr><td>Pension</td><td><span class="hl-num">35,170</span></td><td><span class="hl-num">12%</span></td></tr>
+      <tr><td>Interest Payments</td><td><span class="hl-num">25,364</span></td><td><span class="hl-num">9%</span></td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>\u20b9<span class="hl-num hl-bg-num">1,33,494</span></strong></td><td><strong><span class="hl-num">47%</span></strong></td></tr>
+    </table></div>`;
+    html += `<div class="fact-box border-orange-500/30"><div class="fact-box-title"><i class="fa-solid fa-lightbulb text-orange-400"></i> Key Insight</div><div class="fact-box-content">Committed expenditure at <span class="hl-num">47%</span> of revenue receipts leaves limited fiscal space. Education dept alone accounts for \u20b9<span class="hl-num">36,658</span> cr in salaries.</div></div>`;
+    html += `</div>`;
+
+    // ---- 6. Department-wise Allocations ----
+    html += `<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20" id="dept-alloc">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-building-columns text-purple-400"></i> 6. Department-wise Allocations — <span class="hl-event">High Exam Weightage</span></h3>`;
+    html += `<p class="content-text">Sector-wise allocations (use these for exams):</p>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Department / Sector</th><th>Allocation (\u20b9 cr)</th></tr>
+      <tr><td><span class="hl-term">Education, Sports, Arts & Culture</span></td><td><span class="hl-num hl-bg-num">70,141</span> <span class="ca-badge bg-amber-500/20 text-amber-300">HIGHEST</span> (Samagra Shiksha \u20b9<span class="hl-num">12,107</span> cr)</td></tr>
+      <tr><td>Rural Development</td><td><span class="hl-num">30,387</span> (MGNREGS \u20b9<span class="hl-num">3,192</span>, VB-G-RAM-G \u20b9<span class="hl-num">1,890</span>)</td></tr>
+      <tr><td>Health</td><td><span class="hl-num">21,270</span></td></tr>
+      <tr><td>Energy</td><td><span class="hl-num">18,737</span></td></tr>
+      <tr><td>Roads (Total)</td><td><span class="hl-num">18,716</span></td></tr>
+      <tr><td>Urban Development & Housing</td><td><span class="hl-num">15,237</span></td></tr>
+      <tr><td>Rural Works</td><td><span class="hl-num">11,312</span></td></tr>
+      <tr><td>Panchayati Raj</td><td><span class="hl-num">10,996</span></td></tr>
+      <tr><td>Social Welfare</td><td><span class="hl-num">8,470</span></td></tr>
+      <tr><td>Road Construction</td><td><span class="hl-num">7,405</span></td></tr>
+      <tr><td>Water Resources</td><td>~\u20b9<span class="hl-num">4,800</span></td></tr>
+      <tr><td>Agriculture</td><td>~\u20b9<span class="hl-num">2,500</span></td></tr>
+    </table></div>`;
+    html += `<div class="fact-box border-purple-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-purple-400"></i> Exam Tip</div><div class="fact-box-content">BPSC Pathshala data gives slightly different department totals (e.g., Education Dept \u20b9<span class="hl-num">18,351</span> cr, Rural Dev \u20b9<span class="hl-num">22,392</span> cr) which are <span class="hl-term">"Department" allocations</span> vs the <span class="hl-term">"Sector" allocations</span> above. For exam, use the <span class="hl-event">sector allocations</span> (Education sector total \u20b9<span class="hl-num">70,141</span> cr etc.).</div></div>`;
+    html += `</div>`;
+
+    // ---- 7. Policy Highlights ----
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20" id="policy-highlights">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-bullhorn text-amber-400"></i> 7. Policy Highlights & New Initiatives</h3>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Saat Nishchay-3 (2025-2030):</span> <span class="hl-term">Double per capita income</span>, <span class="hl-num">1 cr</span> jobs, industrialization, new planned cities</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold"><span class="hl-policy hl-bg-policy">Jannayak Karpoori Thakur Kisan Samman Nidhi:</span></span> \u20b9<span class="hl-num hl-bg-num">3,000</span>/yr/farmer (in addition to PM-KISAN \u20b9<span class="hl-num">6,000</span>) — total \u20b9<span class="hl-num hl-bg-num">9,000</span>/yr</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold"><span class="hl-policy hl-bg-policy">Mukhyamantri Mahila Rojgar Yojana:</span></span> \u20b9<span class="hl-num">10,000</span> initial grant to <span class="hl-num hl-bg-num">1.56 cr</span> women; up to \u20b9<span class="hl-num">2 lakh</span> per enterprise</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Education:</span> <span class="hl-term">Model Schools</span> at every Panchayat</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Infrastructure:</span> <span class="hl-num">5</span> new expressways, CNG/electric buses, <span class="hl-num">2,000+</span> charging stations</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Industrial Corridor:</span> Phase-2 of <span class="hl-term">IMC Gaya</span> (Amritsar-Kolkata Industrial Corridor), defence corridor, pharma park, fintech city</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Sugar:</span> Revival of closed sugar mills</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Health:</span> PMCH bed expansion, new medical colleges</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Industrial Policy:</span> Attract investment up to \u20b9<span class="hl-num">50</span> cr in industrial sector</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Women SHG:</span> <span class="hl-num">1.56 cr</span> women SHG assistance</div>`;
+    html += `<div class="timeline-item"><span class="text-indigo-300 font-semibold">Social Welfare:</span> \u20b9<span class="hl-num">7,724</span> cr for women, children, elderly welfare</div>`;
+    html += `</div>`;
+
+    // ---- 8. Key Budget Ratios ----
+    html += `<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-cyan-500/20" id="ratios">`;
+    html += `<h3 class="subsection-heading"><i class="fa-solid fa-divide text-cyan-400"></i> 8. Key Budget Ratios</h3>`;
+    html += `<div class="table-wrap"><table>
+      <tr><th>Ratio</th><th>Value</th></tr>
+      <tr><td>CapEx / Total Budget</td><td><span class="hl-num">18.26%</span></td></tr>
+      <tr><td>Revenue Exp / Total Budget</td><td>~<span class="hl-num">82%</span></td></tr>
+      <tr><td>Revenue Surplus / GSDP</td><td><span class="hl-num">0.09%</span></td></tr>
+      <tr><td>Fiscal Deficit / GSDP</td><td><span class="hl-num hl-bg-num">2.99%</span></td></tr>
+      <tr><td>Debt / GSDP</td><td><span class="hl-num">29.68%</span></td></tr>
+      <tr><td>Scheme Exp / Total Budget</td><td><span class="hl-num">35%</span></td></tr>
+    </table></div>`;
+    html += `</div>`;
+    html += `</section>`;
+
+    // ========================================================================
+    // QUICK FACTS CARDS
+    // ========================================================================
+    html += `<section id="quick-facts">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-file-pen text-yellow-400"></i> Quick Facts Cards — At a Glance</h2>`;
+    html += `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">`;
+
+    // Card 1
+    html += `<div class="gradient-card-1 rounded-xl p-4 border border-indigo-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-coins text-2xl text-amber-400"></i><h4 class="text-sm font-bold text-white">Budget & GSDP</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-indigo-300">Budget Size:</span> \u20b9<span class="hl-num">3,47,589.76</span> cr</li>`;
+    html += `<li><span class="text-indigo-300">GSDP 2026-27:</span> \u20b9<span class="hl-num">13.1</span> lakh cr</li>`;
+    html += `<li><span class="text-indigo-300">GSDP Growth:</span> <span class="hl-num">15%</span> projected</li>`;
+    html += `<li><span class="text-indigo-300">Increase:</span> \u20b9<span class="hl-num">30,694</span> cr (<span class="hl-num">9.68%</span>)</li>`;
+    html += `</ul></div>`;
+
+    // Card 2
+    html += `<div class="gradient-card-2 rounded-xl p-4 border border-yellow-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-scale-balanced text-2xl text-yellow-400"></i><h4 class="text-sm font-bold text-white">Fiscal Health</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-yellow-300">Fiscal Deficit:</span> <span class="hl-num">2.99%</span> (\u20b9<span class="hl-num">39,112</span> cr)</li>`;
+    html += `<li><span class="text-yellow-300">Revenue Surplus:</span> \u20b9<span class="hl-num">1,143</span> cr</li>`;
+    html += `<li><span class="text-yellow-300">Debt/GSDP:</span> <span class="hl-num">29.68%</span></li>`;
+    html += `<li><span class="text-yellow-300">FRBM:</span> Within <span class="hl-num">3%</span> limit</li>`;
+    html += `</ul></div>`;
+
+    // Card 3
+    html += `<div class="gradient-card-3 rounded-xl p-4 border border-emerald-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-graduation-cap text-2xl text-emerald-400"></i><h4 class="text-sm font-bold text-white">Top Allocations</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-emerald-300">Education:</span> \u20b9<span class="hl-num">70,141</span> cr <span class="ca-badge bg-amber-500/20 text-amber-300">#1</span></li>`;
+    html += `<li><span class="text-emerald-300">Rural Dev:</span> \u20b9<span class="hl-num">30,387</span> cr</li>`;
+    html += `<li><span class="text-emerald-300">Health:</span> \u20b9<span class="hl-num">21,270</span> cr</li>`;
+    html += `<li><span class="text-emerald-300">Energy:</span> \u20b9<span class="hl-num">18,737</span> cr</li>`;
+    html += `</ul></div>`;
+
+    // Card 4
+    html += `<div class="gradient-card-4 rounded-xl p-4 border border-blue-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-chart-line text-2xl text-blue-400"></i><h4 class="text-sm font-bold text-white">Economic Survey</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-blue-300">GSDP 2024-25:</span> \u20b9<span class="hl-num">9.92</span> lakh cr</li>`;
+    html += `<li><span class="text-blue-300">Growth:</span> <span class="hl-num">14.9%</span> > India's <span class="hl-num">12%</span></li>`;
+    html += `<li><span class="text-blue-300">NSDP:</span> \u20b9<span class="hl-num">8,99,020</span> cr</li>`;
+    html += `<li><span class="text-blue-300">20th Edition</span></li>`;
+    html += `</ul></div>`;
+
+    // Card 5
+    html += `<div class="gradient-card-1 rounded-xl p-4 border border-pink-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-users text-2xl text-pink-400"></i><h4 class="text-sm font-bold text-white">Per Capita & Social</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-pink-300">PCI (Current):</span> \u20b9<span class="hl-num">76,490</span></li>`;
+    html += `<li><span class="text-pink-300">Literacy:</span> <span class="hl-num">61.8%</span> (2011)</li>`;
+    html += `<li><span class="text-pink-300">Life Exp:</span> M <span class="hl-num">68.9</span> / F <span class="hl-num">69.7</span> yrs</li>`;
+    html += `<li><span class="text-pink-300">PCI vs India:</span> Only <span class="hl-num">31.7%</span> of avg</li>`;
+    html += `</ul></div>`;
+
+    // Card 6
+    html += `<div class="gradient-card-2 rounded-xl p-4 border border-cyan-500/20 glow-card">`;
+    html += `<div class="flex items-center gap-2 mb-3"><i class="fa-solid fa-flag text-2xl text-cyan-400"></i><h4 class="text-sm font-bold text-white">Saat Nischay-3 Targets</h4></div>`;
+    html += `<ul class="text-xs text-slate-400 space-y-1.5" style="list-style:none;padding-left:0;">`;
+    html += `<li><span class="text-cyan-300">Period:</span> <span class="hl-date">2025-2030</span></li>`;
+    html += `<li><span class="text-cyan-300">Double PCI</span></li>`;
+    html += `<li><span class="text-cyan-300">Create</span> <span class="hl-num">1 cr</span> jobs</li>`;
+    html += `<li><span class="text-cyan-300">Industrialization</span></li>`;
+    html += `<li><span class="text-cyan-300">New planned cities</span></li>`;
+    html += `</ul></div>`;
+
+    html += `</div>`;
+
+    html += `<div class="mt-2 fact-box border-yellow-500/30"><div class="fact-box-title"><i class="fa-solid fa-star text-yellow-400"></i> Must-Know for BPSC/UPSC Prelims</div><div class="fact-box-content">`;
+    html += `<span class="hl-policy hl-bg-policy">Budget 2026-27</span>: \u20b9<span class="hl-num">3,47,589.76</span> cr. <span class="hl-policy hl-bg-policy">Saat Nischay-3</span>: double PCI, <span class="hl-num">1 cr</span> jobs. <span class="hl-policy hl-bg-policy">Karpoori Thakur Kisan Samman</span>: \u20b9<span class="hl-num">9,000</span>/yr total. <span class="hl-policy hl-bg-policy">Mahila Rojgar Yojana</span>: \u20b9<span class="hl-num">10,000</span> grant, <span class="hl-num">1.56 cr</span> women. Education sector: \u20b9<span class="hl-num">70,141</span> cr (highest). Fiscal Deficit: <span class="hl-num">2.99%</span> (within FRBM). GSDP growth: <span class="hl-num">8.6%</span> (constant) > India's <span class="hl-num">6.5%</span>. <span class="hl-term hl-bg-term">JEEVIKA</span>: <span class="hl-num">1.40 cr</span> families into <span class="hl-num">11.03 lakh</span> SHGs. Per Capita Income: \u20b9<span class="hl-num">76,490</span>. Literacy: <span class="hl-num">61.8%</span>. <span class="hl-term hl-bg-term">Committed Expenditure</span>: <span class="hl-num">47%</span> of revenue receipts (\u20b9<span class="hl-num">1,33,494</span> cr).</div></div>`;
+    html += `</section>`;
+
+    // ========================================================================
+    // PRACTICE MCQs
+    // ========================================================================
+    html += `<section id="mcqs">`;
+    html += `<h2 class="section-heading"><i class="fa-solid fa-question-circle text-lime-400"></i> Practice MCQs — 20 Questions with Answers</h2>`;
+    html += `<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-lime-500/20">`;
+
+    const mcqs = [
+      { q: "What is the total outlay of Bihar Budget 2026-27?", a: "\u20b9<span class='hl-num hl-bg-num'>3,47,589.76 crore</span>" },
+      { q: "What is Bihar's fiscal deficit as % of GSDP in Budget 2026-27?", a: "<span class='hl-num hl-bg-num'>2.99%</span> (\u20b9<span class='hl-num'>39,111.80</span> cr)" },
+      { q: "What is the revenue surplus in Bihar Budget 2026-27?", a: "\u20b9<span class='hl-num hl-bg-num'>1,143.19</span> crore" },
+      { q: "Which sector received the highest allocation in Budget 2026-27?", a: "<span class='hl-term'>Education, Sports, Arts & Culture</span> — \u20b9<span class='hl-num hl-bg-num'>70,141</span> crore" },
+      { q: "What was Bihar's GSDP growth rate at constant prices in 2024-25?", a: "<span class='hl-num hl-bg-num'>8.6%</span> (outpaced India's <span class='hl-num'>6.5%</span>)" },
+      { q: "What is Bihar's per capita income at current prices (2024-25)?", a: "\u20b9<span class='hl-num hl-bg-num'>76,490</span>" },
+      { q: "What is Bihar's NSDP at current prices (2024-25)?", a: "\u20b9<span class='hl-num hl-bg-num'>8,99,020</span> crore" },
+      { q: "Which sector contributed the highest share to Bihar's GSDP in 2024-25?", a: "<span class='hl-term'>Tertiary (Services)</span> — <span class='hl-num'>54.8%</span>" },
+      { q: "Under Saat Nishchay-3, how many new jobs are targeted by 2030?", a: "<span class='hl-num hl-bg-num'>1 crore</span> jobs" },
+      { q: "What is the total annual amount under Jannayak Karpoori Thakur Kisan Samman Nidhi (including PM-KISAN)?", a: "\u20b9<span class='hl-num hl-bg-num'>9,000</span>/year (State \u20b93,000 + Centre \u20b96,000)" },
+      { q: "What is the initial grant under Mukhyamantri Mahila Rojgar Yojana?", a: "\u20b9<span class='hl-num hl-bg-num'>10,000</span> initial grant to <span class='hl-num'>1.56</span> crore women" },
+      { q: "What percentage of revenue receipts is committed expenditure in Budget 2026-27?", a: "<span class='hl-num hl-bg-num'>47%</span> (\u20b9<span class='hl-num'>1,33,494</span> cr)" },
+      { q: "How many families are covered under JEEVIKA (NRLM) SHGs?", a: "<span class='hl-num hl-bg-num'>1.40 crore</span> families into <span class='hl-num'>11.03 lakh</span> SHGs" },
+      { q: "What was Bihar's literacy rate as per Census 2011?", a: "<span class='hl-num hl-bg-num'>61.8%</span> (highest improvement among states from <span class='hl-num'>47%</span> in 2001)" },
+      { q: "What is the life expectancy for males and females in Bihar?", a: "Male <span class='hl-num'>68.9</span> years, Female <span class='hl-num'>69.7</span> years" },
+      { q: "What is Bihar's cropping intensity?", a: "<span class='hl-num hl-bg-num'>1.52</span>" },
+      { q: "What is the female LFPR gap compared to the all-India average?", a: "<span class='hl-num hl-bg-num'>11.2%</span> lower than all-India average" },
+      { q: "What share of India's road network does Bihar have?", a: "<span class='hl-num hl-bg-num'>5.5%</span>" },
+      { q: "What is the per capita energy consumption in Bihar?", a: "<span class='hl-num hl-bg-num'>374</span> kWh" },
+      { q: "By how much has Bihar's forest cover increased in 12 years?", a: "<span class='hl-num hl-bg-num'>689</span> sq km" }
+    ];
+
+    mcqs.forEach((m, i) => {
+      html += `<div class="mb-3 p-3 rounded-lg ${i % 2 === 0 ? 'bg-black/30' : 'bg-indigo-900/10'} border border-gray-700/30">`;
+      html += `<p class="text-sm sm:text-base text-slate-200 font-medium"><span class="text-indigo-400 font-bold">Q${i+1}.</span> ${m.q}</p>`;
+      html += `<p class="text-xs sm:text-sm text-slate-400 mt-1"><span class="text-emerald-400 font-semibold">Ans:</span> ${m.a}</p>`;
+      html += `</div>`;
+    });
+
+    html += `</div></section>`;
+
+    // ===== FOOTER =====
+    html += `<div class="text-center py-4 sm:py-6 border-t border-gray-800 mt-4 sm:mt-6">
+      <p class="text-[10px] sm:text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> 2026 Bihar Budget & Economic Survey — BPSC/UPSC Comprehensive Notes
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Compiled from Bihar Budget 2026-27 documents, Economic Survey 2025-26, and official Bihar government releases. For competitive exam preparation only.</p>
+    </div>`;
+
+    app.innerHTML = html;
+  });
+</script>
+</body>
+</html>

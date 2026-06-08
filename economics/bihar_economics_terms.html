@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPSC Economics — 100+ Essential Economic Terms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0e1a;
+      color: #e0e6f0;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0e1a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+    .term-card {
+      background: linear-gradient(145deg, #131a2e, #0d1220);
+      border-radius: 1rem;
+      padding: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .term-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      border-radius: 4px 0 0 4px;
+      transition: height 0.3s ease;
+    }
+    .term-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.12);
+      border-color: rgba(99, 102, 241, 0.2);
+    }
+    .term-card:hover::before { height: 100%; }
+
+    .cat-micro::before { background: #60a5fa; }
+    .cat-micro { border-left: 4px solid #60a5fa; }
+    .cat-macro::before { background: #f59e0b; }
+    .cat-macro { border-left: 4px solid #f59e0b; }
+    .cat-banking::before { background: #10b981; }
+    .cat-banking { border-left: 4px solid #10b981; }
+    .cat-international::before { background: #8b5cf6; }
+    .cat-international { border-left: 4px solid #8b5cf6; }
+    .cat-public::before { background: #ec4899; }
+    .cat-public { border-left: 4px solid #ec4899; }
+    .cat-development::before { background: #14b8a6; }
+    .cat-development { border-left: 4px solid #14b8a6; }
+
+    .term-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin 0.3s ease;
+      opacity: 0;
+      margin-top: 0;
+    }
+    .term-card.active .term-details {
+      max-height: 2000px;
+      opacity: 1;
+      margin-top: 1rem;
+    }
+    .term-card.active .expand-icon {
+      transform: rotate(180deg);
+    }
+    .expand-icon {
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .info-box {
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+    .info-box.formula-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      color: #93c5fd;
+    }
+    .info-box.example-box {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: #6ee7b7;
+    }
+    .info-box.mnemonic-box {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: #fde68a;
+    }
+    .info-box.funfact-box {
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      color: #c4b5fd;
+    }
+
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 9999px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .cat-filter-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #94a3b8;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .cat-filter-btn:hover {
+      background: rgba(99,102,241,0.12);
+      border-color: rgba(99,102,241,0.3);
+      color: #e2e8f0;
+    }
+    .cat-filter-btn.active {
+      background: rgba(99,102,241,0.2);
+      border-color: #6366f1;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(99,102,241,0.15);
+    }
+
+    .search-input {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 9999px;
+      padding: 0.65rem 1.25rem 0.65rem 2.75rem;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    .search-input:focus {
+      border-color: #6366f1;
+      background: rgba(99,102,241,0.06);
+      box-shadow: 0 0 25px rgba(99,102,241,0.08);
+    }
+    .search-input::placeholder { color: #475569; }
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gradient-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+
+    .stats-number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    @media (max-width: 640px) {
+      .term-card { padding: 1rem; }
+      .info-box { font-size: 0.75rem; padding: 0.6rem 0.75rem; }
+      .cat-filter-btn { font-size: 0.7rem; padding: 0.35rem 0.7rem; }
+      .search-input { font-size: 0.82rem; padding: 0.55rem 1rem 0.55rem 2.4rem; }
+      .stats-number { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+<div id="app" class="max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-8"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    let html = '';
+
+    // ======================= DATA =======================
+    const terms = [
+      // ===== MICROECONOMICS =====
+      {
+        id: 1, term: 'Demand', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Quantity of a good or service that consumers are willing and able to purchase at various prices during a given period.',
+        formula: 'D = f(P, Y, T, Ps, Pc, E) — Demand is a function of Price, Income, Tastes, Prices of Substitutes, Prices of Complements, and Expectations.',
+        example: 'When smartphone prices drop during Diwali sales, demand increases significantly as more people can afford them.',
+        mnemonic: 'D = Desire + Ability to Pay. Without both, it\'s just a wish!',
+        funfact: 'The word "demand" comes from Latin "demandare" meaning "to entrust" — but in economics, it\'s all about willingness & ability!'
+      },
+      {
+        id: 2, term: 'Law of Demand', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Other things being equal, as the price of a good increases, quantity demanded decreases, and vice versa — an inverse relationship.',
+        formula: 'P ↑ → Qd ↓  |  P ↓ → Qd ↑  (ceteris paribus)',
+        example: 'If the price of samosas rises from \u20b910 to \u20b915, you will likely buy fewer samosas per visit.',
+        mnemonic: 'Law of Demand = Price up, Demand down. Think: "P高高的, D低低的" (Price high, Demand low).',
+        funfact: 'The Law of Demand was popularized by Alfred Marshall in 1890 — but Ibn Khaldun discussed it in the 14th century!'
+      },
+      {
+        id: 3, term: 'Supply', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Quantity of a good or service that producers are willing and able to offer for sale at various prices during a given period.',
+        formula: 'S = f(P, C, T, N, G) — Supply depends on Price, Cost of inputs, Technology, Number of firms, and Government policy.',
+        example: 'A wheat farmer supplies more wheat when market prices rise because higher prices mean higher profits.',
+        mnemonic: 'S = Producers willing to SELL at different prices. More price = More supply!',
+        funfact: 'Supply curves always slope UPWARD — unlike demand, producers love higher prices!'
+      },
+      {
+        id: 4, term: 'Law of Supply', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Other things being equal, as the price of a good increases, quantity supplied increases — a direct relationship.',
+        formula: 'P ↑ → Qs ↑  |  P ↓ → Qs ↓  (ceteris paribus)',
+        example: 'When gold prices hit \u20b97,500/gram, jewellers ramp up production and recycling of old gold.',
+        mnemonic: 'Law of Supply = Price up, Supply up. Producers are happy when prices are high!',
+        funfact: 'The supply curve can occasionally bend backwards (backward-bending supply curve for labor).'
+      },
+      {
+        id: 5, term: 'Equilibrium Price', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The price at which quantity demanded equals quantity supplied — where the demand and supply curves intersect — also called market-clearing price.',
+        formula: 'Qd = Qs at equilibrium price P*',
+        example: 'If ₹50/kg is the price where buyers want exactly 1000 kg of rice and farmers supply exactly 1000 kg, ₹50 is the equilibrium price.',
+        mnemonic: 'Equilibrium = Equal Demand & Supply. "EQ" = Equal!',
+        funfact: 'At equilibrium price, there is neither a shortage (excess demand) nor a surplus (excess supply). Perfect balance!'
+      },
+      {
+        id: 6, term: 'Elasticity of Demand', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Measures how responsive quantity demanded is to a change in price. If demand changes a lot when price changes, demand is elastic.',
+        formula: 'Ed = %ΔQd / %ΔP  |  Ed > 1 = Elastic, Ed < 1 = Inelastic, Ed = 1 = Unit Elastic',
+        example: 'Demand for luxury cars is elastic — a 10% price rise can cause a 20% drop in sales. Demand for salt is inelastic.',
+        mnemonic: 'Elastic = "Ela" — stretches easily like a rubber band. Inelastic = rigid, doesn\'t stretch!',
+        funfact: 'Addictive goods like cigarettes have very inelastic demand — even huge price hikes barely reduce consumption.'
+      },
+      {
+        id: 7, term: 'Elasticity of Supply', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Measures how responsive quantity supplied is to a change in price. Producers can increase supply quickly if supply is elastic.',
+        formula: 'Es = %ΔQs / %ΔP  |  Es > 1 = Elastic Supply, Es < 1 = Inelastic Supply',
+        example: 'Supply of street food is elastic (can quickly make more), but supply of agricultural land is perfectly inelastic.',
+        mnemonic: 'Elastic Supply = "Easy to increase". Think: manufacturing = elastic, mining = inelastic.',
+        funfact: 'Time period matters greatly — supply is more elastic in the long run than in the short run (Marshall\'s period analysis).'
+      },
+      {
+        id: 8, term: 'Consumer Surplus', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The difference between what a consumer is willing to pay and what they actually pay. The "extra satisfaction" received for free.',
+        formula: 'CS = Willingness to Pay — Actual Price Paid  |  Area below demand curve and above price',
+        example: 'You\'d pay ₹100 for a pizza but get it for ₹80 — your consumer surplus is ₹20 of happiness!',
+        mnemonic: 'Consumer Surplus = "Bachat" (savings) — you got more than you paid for!',
+        funfact: 'Consumer surplus is highest in competitive markets where prices are driven down to marginal cost.'
+      },
+      {
+        id: 9, term: 'Producer Surplus', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The difference between what a producer receives and the minimum price they would accept. Extra revenue above cost.',
+        formula: 'PS = Actual Price Received — Minimum Willingness to Sell  |  Area above supply curve and below price',
+        example: 'A farmer would sell wheat at ₹2,000/quintal minimum but gets ₹2,500 — surplus of ₹500/quintal.',
+        mnemonic: 'Producer Surplus = "Labh" (profit) — seller got more than expected!',
+        funfact: 'Total surplus (CS + PS) measures the overall welfare created by a market — the "invisible hand" at work!'
+      },
+      {
+        id: 10, term: 'Marginal Utility', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The additional satisfaction a consumer gets from consuming one more unit of a good or service.',
+        formula: 'MU = ΔTotal Utility / ΔQuantity  |  MU = TUₙ — TUₙ₋₁',
+        example: 'Your 1st slice of pizza gives immense joy (high MU), but the 5th slice gives very little extra satisfaction.',
+        mnemonic: 'Marginal = "Extra". MU = Extra happiness from one more unit. First slice = heaven, sixth slice = regret!',
+        funfact: 'Marginal Utility can even become negative — eating that 7th pizza slice when full!'
+      },
+      {
+        id: 11, term: 'Diminishing Marginal Utility', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'As a consumer consumes more units of a good, the additional satisfaction from each extra unit decreases. The first gives the most joy.',
+        formula: 'MU₁ > MU₂ > MU₃ > ... > MUn  |  Each successive unit gives less satisfaction',
+        example: 'First sip of cold drink on a hot day = bliss. Third glass = meh. Fourth = unnecessary.',
+        mnemonic: 'Diminishing = "Ghategi" (decreases). Each extra unit = less happiness. Think: "first bite best bite"!',
+        funfact: 'This law is also called "Gossen\'s First Law" — discovered by Hermann Heinrich Gossen in 1854.'
+      },
+      {
+        id: 12, term: 'Indifference Curve', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'A curve showing combinations of two goods that give a consumer equal satisfaction. The consumer is "indifferent" between them.',
+        formula: 'IC: U(x, y) = constant  |  Slope = MRSxy = MUx/MUy',
+        example: 'You are equally happy with either 4 apples + 2 bananas or 2 apples + 5 bananas — both points lie on the same IC.',
+        mnemonic: 'Indifference = "Koi fark nahi padta" — all combinations give same happiness!',
+        funfact: 'Indifference curves never intersect (transitivity) and are convex to origin (diminishing MRS).'
+      },
+      {
+        id: 13, term: 'Budget Line', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Shows all combinations of two goods a consumer can buy given their income and the prices of the goods. The spending constraint.',
+        formula: 'Px·X + Py·Y ≤ M  |  Slope = —Px/Py  |  X-intercept = M/Px, Y-intercept = M/Py',
+        example: 'With ₹100, apples at ₹10 each and bananas at ₹5 each, you can buy max 10 apples or 20 bananas or any combination on the line.',
+        mnemonic: 'Budget Line = "Seema Rekha" — marks what you can afford. Beyond the line = too expensive!',
+        funfact: 'When income changes, the budget line shifts parallel. When price changes, it rotates — changing the slope.'
+      },
+      {
+        id: 14, term: 'Production Function', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Shows the relationship between inputs (land, labor, capital) and the maximum output that can be produced.',
+        formula: 'Q = f(L, K, N, E)  |  Q = A·K^α·L^β (Cobb-Douglas)  |  Where α + β = 1 for constant returns',
+        example: 'A bakery: 5 workers + 2 ovens + 100 kg flour = 500 loaves of bread per day.',
+        mnemonic: 'Production Function = "Input → Output" machine. What you put in determines what you get out!',
+        funfact: 'The Cobb-Douglas production function was developed by Charles Cobb (mathematician) and Paul Douglas (economist).'
+      },
+      {
+        id: 15, term: 'Returns to Scale', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'How output changes when ALL inputs are increased proportionally in the long run.',
+        formula: 'If all inputs ↑ by λ%: Output ↑ by = λ% → Constant Returns | > λ% → Increasing Returns | < λ% → Decreasing Returns',
+        example: 'Doubling all inputs (labor, capital, materials) → more than double output? That\'s increasing returns to scale!',
+        mnemonic: 'Returns to Scale = Sab inputs badhao, kya hota hai? Increasing = double inputs, triple output!',
+        funfact: 'Increasing returns to scale lead to natural monopolies (like power utilities).'
+      },
+      {
+        id: 16, term: 'Economies of Scale', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Cost advantages that firms obtain due to larger scale of operation. Average cost falls as output increases.',
+        formula: 'LRAC ↓ as Q ↑  |  Due to: specialization, bulk buying, technical efficiencies, financial economies',
+        example: 'Amazon builds massive warehouses and negotiates huge discounts from suppliers — lower avg cost than small retailers.',
+        mnemonic: 'Economies of Scale = "Jitna bada, utna sasta" — bigger = cheaper per unit!',
+        funfact: 'The minimum efficient scale (MES) is the output level where LRAC is minimized.'
+      },
+      {
+        id: 17, term: 'Diseconomies of Scale', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'When a firm becomes too large, average costs start rising due to management inefficiencies, communication problems, and coordination difficulties.',
+        formula: 'LRAC ↑ as Q ↑ beyond optimal scale  |  Causes: bureaucracy, loss of control, worker alienation',
+        example: 'A giant corporation with 100,000+ employees may suffer from slow decision-making and conflicting departments.',
+        mnemonic: 'Diseconomies = "Zyada bada = problem" — too big to manage efficiently!',
+        funfact: 'The optimal firm size balances economies and diseconomies of scale to minimize LRAC.'
+      },
+      {
+        id: 18, term: 'Fixed Cost', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Costs that do NOT change with the level of output. Incurred even if production is zero. Short-run concept.',
+        formula: 'FC = Constant  |  TFC = r·K (rent on capital)  |  AFC = TFC/Q (falls as Q rises)',
+        example: 'Rent of ₹50,000/month for factory, insurance premium, annual license fee — same regardless of production.',
+        mnemonic: 'Fixed Cost = "Fixed = Pakka kharcha" — pay even if you produce zero!',
+        funfact: 'In the long run, ALL costs become variable — there are no fixed costs in the long run.'
+      },
+      {
+        id: 19, term: 'Variable Cost', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Costs that change directly with the level of output. Zero when output is zero; increases as production increases.',
+        formula: 'VC = f(Q)  |  TVC = w·L + m·M (wages + materials)  |  AVC = TVC/Q',
+        example: 'Raw materials, electricity bills, wages of daily-wage workers — more production = higher cost.',
+        mnemonic: 'Variable = "Badalta rehta hai" — changes with production level!',
+        funfact: 'The shape of the variable cost curve reflects the law of diminishing returns.'
+      },
+      {
+        id: 20, term: 'Marginal Cost', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The additional cost of producing ONE more unit of output. The most important cost concept for production decisions.',
+        formula: 'MC = ΔTC / ΔQ  |  MC = TCₙ — TCₙ₋₁  |  MC = ΔTVC / ΔQ (since ΔFC = 0)',
+        example: 'If total cost of 100 units is ₹5,000 and 101 units cost ₹5,045, MC = ₹45.',
+        mnemonic: 'Marginal Cost = "Ek unit extra ka kharcha" — should you produce that extra unit? MC tells you!',
+        funfact: 'The MC curve always intersects the AVC and ATC curves at their minimum points.'
+      },
+      {
+        id: 21, term: 'Average Cost', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Total cost divided by the quantity of output. The cost per unit of production.',
+        formula: 'ATC = TC / Q  |  ATC = AFC + AVC  |  U-shaped in short run due to diminishing returns',
+        example: 'If total cost for 500 shirts is ₹2,50,000, average cost = ₹500 per shirt.',
+        mnemonic: 'Average Cost = "Prati Unit Kharcha" — cost per unit. U-shaped like a smile!',
+        funfact: 'The difference between price and average cost determines profit margin.'
+      },
+      {
+        id: 22, term: 'Total Revenue', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The total income a firm receives from selling its goods or services. Price × Quantity.',
+        formula: 'TR = P × Q  |  TR = ∫MR·dQ  |  TR = AR × Q',
+        example: 'If a bakery sells 200 cakes at ₹500 each, Total Revenue = ₹1,00,000.',
+        mnemonic: 'Total Revenue = "Total Aamdani" — price × quantity, simple!',
+        funfact: 'Under perfect competition, TR is a straight line through origin (price constant). Under monopoly, it\'s an inverted U.'
+      },
+      {
+        id: 23, term: 'Marginal Revenue', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The additional revenue from selling ONE more unit of output. Critical for profit maximization.',
+        formula: 'MR = ΔTR / ΔQ  |  MR = TRₙ — TRₙ₋₁  |  MR = P(1 — 1/|Ed|)',
+        example: 'If TR from 10 units is ₹1,000 and from 11 units is ₹1,080, MR = ₹80.',
+        mnemonic: 'Marginal Revenue = "Ek unit aur bechne se kitni aamdani badhi?"',
+        funfact: 'Profit maximization occurs where MR = MC — the golden rule of economics!'
+      },
+      {
+        id: 24, term: 'Break-even Point', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'The level of output where total revenue equals total cost — no profit, no loss. The point where business becomes viable.',
+        formula: 'TR = TC  |  Break-even Q = Fixed Cost / (Price — AVC)  |  Also: P = ATC',
+        example: 'If FC = ₹1,00,000, price = ₹50, AVC = ₹30 → BEP = 1,00,000/20 = 5,000 units.',
+        mnemonic: 'Break-even = "Na labh na hani" — zero profit, zero loss. The survival point!',
+        funfact: 'Operating above break-even = profit; below = loss. Businesses MUST know their BEP!'
+      },
+      {
+        id: 25, term: 'Perfect Competition', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'A market structure with many buyers and sellers, identical products, perfect information, and free entry/exit. Firms are price takers.',
+        formula: 'P = AR = MR = MC = minimum ATC  |  Zero economic profit in long run  |  P = MC (efficient)',
+        example: 'A wheat farmer in a mandi — thousands of farmers selling identical wheat. No one can influence price.',
+        mnemonic: 'Perfect Competition = "Perfect Market" — many sellers, same product, no control over price!',
+        funfact: 'Perfect competition is a theoretical ideal — no real market fully meets all conditions, but agriculture comes closest.'
+      },
+      {
+        id: 26, term: 'Monopoly', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'A market structure with a SINGLE seller of a unique product with no close substitutes. The firm is a price maker with high barriers to entry.',
+        formula: 'P > MR = MC  |  P > ATC (positive profits)  |  MR = P(1 — 1/|Ed|)',
+        example: 'Indian Railways — the sole provider of railway transport across India. No competition on most routes.',
+        mnemonic: 'Monopoly = "Mono = ONE seller" — sole king of the market!',
+        funfact: 'Monopolies create deadweight loss — social welfare loss because price is above marginal cost.'
+      },
+      {
+        id: 27, term: 'Oligopoly', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'A market dominated by a FEW large firms with significant barriers to entry. Firms are interdependent — actions of one affect others.',
+        formula: 'Concentration Ratio CR₄ = Sum of market shares of top 4 firms  |  CR₄ > 60% = Oligopoly',
+        example: 'Indian telecom: Jio, Airtel, VI — just 3 players controlling the entire market. One price change triggers all others.',
+        mnemonic: 'Oligopoly = "Oligo = FEW" — kuch hi bade players, sab ek doosre ki nikal dekh rahe!',
+        funfact: 'Game theory (Prisoner\'s Dilemma) is used to analyze oligopoly behavior — cartels like OPEC are classic examples.'
+      },
+      {
+        id: 28, term: 'Monopolistic Competition', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'A market with many firms selling differentiated products. Each firm has some pricing power due to product differentiation.',
+        formula: 'P > MR = MC (like monopoly)  |  Zero economic profit in long run (like competition)  |  P > min ATC (excess capacity)',
+        example: 'Restaurants in a city — many options, each offers different cuisine/ambience. Each can set its own prices to some extent.',
+        mnemonic: 'Monopolistic Competition = "Different hokar bhi compete" — product alag, lekin competition bhi hai!',
+        funfact: 'Monopolistic competition leads to "excess capacity" — firms produce below their efficient scale.'
+      },
+      {
+        id: 29, term: 'Price Discrimination', cat: 'Microeconomics', catClass: 'micro',
+        definition: 'Charging different prices to different consumers for the SAME product, based on their willingness to pay, NOT on cost differences.',
+        formula: '1st Degree: P = individual WTP  |  2nd Degree: P varies with quantity  |  3rd Degree: P varies by segment',
+        example: 'Movie tickets: ₹100 for students, ₹250 for adults — same movie, different prices based on ability to pay.',
+        mnemonic: 'Price Discrimination = "Alag-alag daam" — same product, different prices for different people!',
+        funfact: 'Arbitrage (reselling) destroys price discrimination — that\'s why airlines restrict name changes on tickets.'
+      },
+
+      // ===== MACROECONOMICS =====
+      {
+        id: 30, term: 'GDP', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Gross Domestic Product — the total market value of ALL final goods and services produced within a country\'s borders in a given period (usually a year).',
+        formula: 'GDP = C + I + G + (X — M)  |  Expenditure Approach: Consumption + Investment + Govt Spending + Net Exports',
+        example: 'India\'s GDP in 2024-25 was approximately ₹322 lakh crore — the total value of everything produced in India.',
+        mnemonic: 'GDP = "Ghar ka Production" — jo desh ke ANDAR banta hai, woh GDP!',
+        funfact: 'Simon Kuznets developed GDP in 1934 — but he warned it\'s a poor measure of welfare!'
+      },
+      {
+        id: 31, term: 'GNP', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Gross National Product — total market value of all final goods and services produced by the NORMALLY RESIDENT of a country in a given period, regardless of location.',
+        formula: 'GNP = GDP + NFIA  |  NFIA = Factor income from abroad — Factor income paid abroad',
+        example: 'An Indian engineer working in Google USA contributes to India\'s GNP (not GDP). A Toyota factory in India contributes to India\'s GDP (not GNP).',
+        mnemonic: 'GNP = "Ghar ke National People" — desh ke log jo bhi kamaen, duniya mein kahin bhi, woh GNP!',
+        funfact: 'For most countries, GDP ≈ GNP. But for India, GDP > GNP because of foreign companies\' profits sent abroad.'
+      },
+      {
+        id: 32, term: 'NDP', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Net Domestic Product — GDP minus depreciation (consumption of fixed capital). Shows the Net value added by production after accounting for wear and tear.',
+        formula: 'NDP = GDP — Depreciation  |  Depreciation = capital consumed during production',
+        example: 'If a factory\'s machines lose ₹10 lakh in value during production, NDP = GDP — ₹10 lakh.',
+        mnemonic: 'NDP = "Net Domestic = GDP minus ghisawat" (depreciation). Net = after wear & tear!',
+        funfact: 'NDP is a better measure of sustainable income — high GDP growth with high depreciation isn\'t real progress.'
+      },
+      {
+        id: 33, term: 'NNP', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Net National Product — GNP minus depreciation. Also called National Income at Market Price. The ultimate measure of national income.',
+        formula: 'NNP = GNP — Depreciation  |  NNP = NDP + NFIA  |  NNP at FC = National Income',
+        example: 'If India\'s GNP is ₹320 lakh cr and depreciation is ₹40 lakh cr, NNP = ₹280 lakh cr.',
+        mnemonic: 'NNP = "Net National = GNP minus depreciation" — the REAL income of the nation!',
+        funfact: 'NNP at Factor Cost = National Income — the most comprehensive measure of a nation\'s earnings.'
+      },
+      {
+        id: 34, term: 'GVA', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Gross Value Added — the value of output minus the value of intermediate consumption. Measures the contribution of each sector to the economy.',
+        formula: 'GVA = GDP — Product Taxes + Product Subsidies  |  GVA = Output — Intermediate Consumption',
+        example: 'If a baker buys ₹200 of flour and sells bread for ₹500, the GVA of the bakery = ₹300.',
+        mnemonic: 'GVA = "Genuine Value Addition" — kitna value add kiya, starting material se lekar final product tak!',
+        funfact: 'India shifted to GVA as the primary growth metric in 2015 (instead of GDP). GVA better reflects sectoral performance.'
+      },
+      {
+        id: 35, term: 'GDP Deflator', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'A price index that measures the average price level of ALL goods and services included in GDP. Used to convert nominal GDP to real GDP.',
+        formula: 'GDP Deflator = (Nominal GDP / Real GDP) × 100  |  Real GDP = (Nominal GDP / Deflator) × 100',
+        example: 'If Nominal GDP in 2025 = ₹300 lakh cr and Real GDP = ₹250 lakh cr, Deflator = (300/250)×100 = 120.',
+        mnemonic: 'GDP Deflator = "GDP ka price level" — nominal ko real mein convert karta hai!',
+        funfact: 'Unlike CPI, GDP deflator includes ALL goods (capital goods too), not just consumer goods.'
+      },
+      {
+        id: 36, term: 'CPI', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Consumer Price Index — measures the average change in prices paid by consumers for a basket of goods and services over time. The main inflation gauge.',
+        formula: 'CPI = (Cost of basket in current year / Cost of basket in base year) × 100  |  Inflation Rate = ΔCPI/CPI_base',
+        example: 'If the price of a typical monthly grocery basket goes from ₹5,000 to ₹5,500, CPI inflation = (5500-5000)/5000 = 10%.',
+        mnemonic: 'CPI = "Common People ka Inflation" — aam aadmi ki jeb par kitna bhara pad raha hai!',
+        funfact: 'India uses FOUR CPIs: CPI-IW (industrial workers), CPI-AL (agricultural labourers), CPI-RL (rural labourers), and CPI-C (combined).'
+      },
+      {
+        id: 37, term: 'WPI', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Wholesale Price Index — measures the average change in prices of goods at the WHOLESALE level (bulk transactions between businesses).',
+        formula: 'WPI = (Current wholesale price / Base year wholesale price) × 100  |  Base year currently 2011-12',
+        example: 'If steel price at wholesale level goes up by 15%, WPI reflects this before CPI does.',
+        mnemonic: 'WPI = "Wholesale Price Index" — factory gate aur wholesale market ke bhav!',
+        funfact: 'India\'s WPI has 697 items (primary articles, fuel & power, manufactured products). Services are NOT included!'
+      },
+      {
+        id: 38, term: 'Inflation', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'A sustained increase in the general price level of goods and services over a period, reducing the purchasing power of money.',
+        formula: 'Inflation Rate = (CPI_t — CPI_t₋₁) / CPI_t₋₁ × 100  |  π = ΔP/P',
+        example: 'If your ₹100 could buy 5 kg of onions last year but only 4 kg now, that\'s 20% inflation in onions!',
+        mnemonic: 'Inflation = "Mehngai" — paise ki value girti hai, cheezein mahangi hoti hain!',
+        funfact: 'Hyperinflation in Zimbabwe (2008) reached 79.6 billion % — a loaf of bread cost ₹50 billion Zimbabwe dollars!'
+      },
+      {
+        id: 39, term: 'Deflation', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'A sustained DECREASE in the general price level. Opposite of inflation. Can lead to reduced spending and economic slowdown.',
+        formula: 'Deflation Rate = negative inflation  |  π < 0  |  P_t < P_t₋₁',
+        example: 'Japan experienced deflation in the 1990s — prices fell, people waited for even lower prices, spending collapsed.',
+        mnemonic: 'Deflation = "Sasta ho raha hai lekin kharidari nahi" — prices drop but economy suffers!',
+        funfact: 'Deflation is often more dangerous than inflation — it can trigger a deflationary spiral (Japan\'s "Lost Decade").'
+      },
+      {
+        id: 40, term: 'Stagflation', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'A painful combination of STAGnation (slow/no growth + high unemployment) + inflation (rising prices). Most feared economic condition.',
+        formula: 'Stagflation = Low GDP growth + High Inflation + High Unemployment  |  Violates Phillips Curve',
+        example: '1970s oil crisis — oil prices quadrupled, causing both high inflation AND economic recession worldwide.',
+        mnemonic: 'Stagflation = "Stagnation + Inflation" = Bura haal — na rozgar, na control on prices!',
+        funfact: 'Stagflation was thought impossible until the 1970s — it broke the traditional Phillips Curve relationship.'
+      },
+      {
+        id: 41, term: 'Phillips Curve', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Shows an inverse relationship between inflation and unemployment — lower unemployment comes with higher inflation, and vice versa.',
+        formula: 'π = f(1/u)  |  Short-run: π ↑ → u ↓  |  Long-run: vertical at NAIRU (natural rate)',
+        example: 'During a boom: demand ↑ → unemployment ↓ → wages ↑ → prices ↑ (inflation rises).',
+        mnemonic: 'Phillips Curve = "Inflation aur Unemployment ki shaadi" — ek kam to doosra zyada!',
+        funfact: 'A.W. Phillips discovered this relationship in 1958 using UK data from 1861-1957. It broke down in the 1970s stagflation.'
+      },
+      {
+        id: 42, term: 'Business Cycle', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The recurring pattern of economic expansion (boom) and contraction (recession) around the long-term growth trend.',
+        formula: 'Four phases: Expansion → Peak → Contraction (Recession) → Trough → Recovery → ...  |  Amplitude & duration vary',
+        example: 'India\'s economy: High growth 2003-08 (boom), slowed 2009-13, recovered 2014-19, COVID crash 2020, V-shaped recovery 2021-24.',
+        mnemonic: 'Business Cycle = "Uthna aur girna" — economy ka utaar-chadhav, like a wave!',
+        funfact: 'The National Bureau of Economic Research (NBER) officially dates US business cycles — they even track "growth cycles".'
+      },
+      {
+        id: 43, term: 'Aggregate Demand', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Total spending in an economy at a given price level. Sum of all demand for goods and services in a period.',
+        formula: 'AD = C + I + G + (X — M)  |  AD curve slopes DOWNWARD: P ↓ → AD ↑',
+        example: 'When RBI cuts repo rate, borrowing becomes cheaper → more consumption (C↑) and investment (I↑) → AD shifts right.',
+        mnemonic: 'AD = "Kul Mang" — poore desh ki total demand. C + I + G + (X-M)!',
+        funfact: 'AD curve slopes downward due to three effects: Pigou (wealth), Keynes (interest rate), and Mundell-Fleming (exchange rate).'
+      },
+      {
+        id: 44, term: 'Aggregate Supply', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Total quantity of goods and services that firms in an economy are willing and able to produce at a given price level.',
+        formula: 'AS = Y = f(L, K, T, N)  |  Short-run AS: upward sloping (sticky wages)  |  Long-run AS: vertical at full employment',
+        example: 'In the short run, if prices rise, firms produce more (SRAS ↑). In the long run, output is fixed at potential GDP.',
+        mnemonic: 'AS = "Kul Utpadan" — poore desh ki total supply. Short run = up, Long run = vertical!',
+        funfact: 'The LRAS curve is vertical at the natural rate of output — determined by resources and technology, NOT prices.'
+      },
+      {
+        id: 45, term: 'Fiscal Policy', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Government\'s use of taxation and spending to influence the economy. Managed by the Ministry of Finance.',
+        formula: 'Fiscal Policy = Government Revenue (Taxes + Non-tax) + Government Expenditure  |  ΔG or ΔT to manage economy',
+        example: 'In 2020, India announced ₹20 lakh cr Atmanirbhar package (↑G, fiscal expansion) to counter COVID recession.',
+        mnemonic: 'Fiscal Policy = "Sarkar ka khazana" — tax aur kharch se economy control karna!',
+        funfact: 'Fiscal policy has two types: Expansionary (↑G, ↓T during recession) and Contractionary (↓G, ↑T during boom).'
+      },
+      {
+        id: 46, term: 'Monetary Policy', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Central Bank\'s (RBI) management of money supply and interest rates to control inflation and stabilize the economy.',
+        formula: 'Monetary tools: Repo Rate, CRR, SLR, OMO, Bank Rate  |  M = money supply  |  r = interest rate',
+        example: 'RBI raised repo rate by 250 bps from May 2022 to Feb 2023 to control inflation — making loans costlier, reducing demand.',
+        mnemonic: 'Monetary Policy = "RBI ka control" — paise ki supply aur interest rates ka khel!',
+        funfact: 'The Monetary Policy Committee (MPC) has 6 members (3 from RBI + 3 external) — they vote on repo rate every 2 months.'
+      },
+      {
+        id: 47, term: 'Repo Rate', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The rate at which RBI lends money to commercial banks for short-term needs (usually overnight) against government securities.',
+        formula: 'Banks borrow from RBI at Repo Rate  |  Repo Rate ↑ → Banks borrow less → Money supply ↓ → Inflation ↓',
+        example: 'If Repo Rate = 6.5%, banks pay 6.5% interest to borrow from RBI. Higher repo = costlier loans for you!',
+        mnemonic: 'Repo = "Rate at which RBI Repo-s money to banks" — think: "RBI ka loan rate"!',
+        funfact: 'Repo is short for "Repurchase Agreement" — banks sell securities to RBI with a promise to buy them back.'
+      },
+      {
+        id: 48, term: 'Reverse Repo Rate', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The rate at which RBI borrows money from commercial banks. Banks earn interest on excess funds parked with RBI.',
+        formula: 'Reverse Repo = Repo Rate — 0.25% to 0.50%  |  Reverse Repo ↑ → Banks park more with RBI → Money supply ↓',
+        example: 'If Reverse Repo Rate = 3.35%, banks get 3.35% interest for keeping extra money with RBI.',
+        mnemonic: 'Reverse Repo = "Ulti Repo" — ab RBI banks se udhaar leta hai! Banks earn interest.',
+        funfact: 'The gap between Repo and Reverse Repo (the LAF corridor) was reduced from 1% to 0.50% in 2022.'
+      },
+      {
+        id: 49, term: 'CRR', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Cash Reserve Ratio — the percentage of banks\' total deposits (NDTL) that must be kept as cash with RBI. Banks earn NO interest on this.',
+        formula: 'CRR = (Cash with RBI / NDTL) × 100  |  Current CRR = 4.5%  |  CRR ↑ → Money supply ↓',
+        example: 'If a bank has ₹10,000 cr deposits and CRR = 4.5%, it must keep ₹450 cr with RBI — cannot lend this money.',
+        mnemonic: 'CRR = "Cash Reserves Rakhni hain RBI ke paas" — zero interest!',
+        funfact: 'CRR is the most powerful but blunt instrument. RBI reduced CRR to 0% in 2020 during COVID to inject liquidity!'
+      },
+      {
+        id: 50, term: 'SLR', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Statutory Liquidity Ratio — the percentage of deposits that banks must keep in the form of approved securities (gold, government bonds).',
+        formula: 'SLR = (Approved securities held / NDTL) × 100  |  Current SLR = 18%  |  Banks DO earn interest on SLR',
+        example: 'Bank with ₹10,000 cr deposits must invest ₹1,800 cr in government bonds or gold under SLR.',
+        mnemonic: 'SLR = "Securities Likho aur Rakhlo" — securities mein rakhna hai, RBI ke paas nahi!',
+        funfact: 'SLR was as high as 38.5% in the 1990s — it\'s been gradually reduced to free bank funds for lending.'
+      },
+      {
+        id: 51, term: 'MSF', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Marginal Standing Facility — a special window for banks to borrow overnight from RBI at a higher rate (Repo + 0.25%) when they exhaust borrowing under LAF.',
+        formula: 'MSF Rate = Repo Rate + 0.25%  |  Max borrowing: 3% of NDTL  |  Emergency borrowing option',
+        example: 'If a bank falls short of CRR by ₹100 cr, it can borrow under MSF at 6.75% (if repo = 6.50%).',
+        mnemonic: 'MSF = "Muskil mein StanDing Facility" — emergency RBI loan for desperate banks!',
+        funfact: 'MSF was introduced in 2011-12 monetary policy reform. Banks can borrow without any collateral (except penal rate).'
+      },
+      {
+        id: 52, term: 'Bank Rate', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The long-term lending rate at which RBI lends to commercial banks (without any repurchase agreement). It penalizes banks for failing SLR/CRR.',
+        formula: 'Bank Rate ≡ MSF Rate (since 2015)  |  Bank Rate = Repo Rate + 0.25%  |  Used for penal interest',
+        example: 'If a bank fails to maintain SLR, RBI penalizes at Bank Rate (say 6.75% if repo = 6.50%).',
+        mnemonic: 'Bank Rate = "Saza ka rate" — punishment rate for banks who miss SLR/CRR targets!',
+        funfact: 'Since 2015, Bank Rate has been aligned with MSF Rate and penal interest is charged at this rate.'
+      },
+      {
+        id: 53, term: 'Open Market Operations', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'RBI\'s buying or selling of government securities in the open market to expand or contract the money supply.',
+        formula: 'OMO: RBI buys G-secs → Money supply ↑  |  RBI sells G-secs → Money supply ↓ (absorbs liquidity)',
+        example: 'In 2020, RBI bought ₹1.5 lakh cr of government bonds (OMO purchases) to inject liquidity into the system.',
+        mnemonic: 'OMO = "Open Market Operation" — RBI market mein jaa kar securities kharidta/bechta hai!',
+        funfact: 'RBI conducted "Operation Twist" in 2019 — simultaneously buying long-term bonds and selling short-term bonds.'
+      },
+      {
+        id: 54, term: 'Money Supply', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Total stock of money in circulation in the economy at a given time. Includes currency with public and demand/term deposits.',
+        formula: 'M1 = Currency + Demand Deposits + Other Deposits with RBI  |  M3 = M1 + Time Deposits (broad money)',
+        example: 'India\'s M3 (broad money) in 2025 was about ₹250 lakh crore — the total money in the system.',
+        mnemonic: 'Money Supply = "Paise ki total supply" — M1 = ready cash, M3 = sab kuch!',
+        funfact: 'India measures money supply in FOUR measures: M0 (Reserve Money), M1 (Narrow), M2, M3 (Broad).'
+      },
+      {
+        id: 55, term: 'Quantity Theory of Money', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Money supply × Velocity of money = Price level × Output. Changes in money supply directly affect the price level in the long run.',
+        formula: 'MV = PT  |  M = Money Supply, V = Velocity, P = Price Level, T = Transactions/Output\nFisher Equation: MV = PY',
+        example: 'If money supply doubles but output is unchanged, prices must double (100% inflation) — as per the theory.',
+        mnemonic: 'Fisher: MV = PY — "Money × Velocity = Price × Output" — simple equation, huge implications!',
+        funfact: 'Irving Fisher developed this in 1911. Though criticized by Keynes, it remains the foundation of monetarism (Milton Friedman).'
+      },
+      {
+        id: 56, term: 'Fiscal Deficit', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The difference between the government\'s total expenditure and its total revenue (excluding borrowings). Shows the borrowing requirement.',
+        formula: 'Fiscal Deficit = Total Expenditure — Total Revenue (excluding borrowings)  |  FD = Borrowings needed',
+        example: 'In Budget 2026-27, Bihar\'s fiscal deficit = ₹39,112 cr (2.99% of GSDP) — the money the state needs to borrow.',
+        mnemonic: 'Fiscal Deficit = "Kharcha zyada, income kam" — jitna udhaar lena pade!',
+        funfact: 'FRBM Act mandates fiscal deficit below 3% of GDP. India breached this during COVID (9.5% in 2020-21).'
+      },
+      {
+        id: 57, term: 'Revenue Deficit', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'The excess of revenue expenditure over revenue receipts. Indicates the government cannot meet its DAY-TO-DAY expenses from its regular income.',
+        formula: 'Revenue Deficit = Revenue Expenditure — Revenue Receipts  |  RD = Consumption gap',
+        example: 'If govt earns ₹100 cr in taxes but spends ₹120 cr on salaries and interest, Revenue Deficit = ₹20 cr.',
+        mnemonic: 'Revenue Deficit = "Kharcha zyada, bachat zero" — roz ka kharcha nahi nikal raha!',
+        funfact: 'Revenue deficit implies the government is DISSAVING — borrowing to pay for current consumption, not investment.'
+      },
+      {
+        id: 58, term: 'Primary Deficit', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'Fiscal deficit minus interest payments. Shows the government\'s borrowing need excluding past debt obligations.',
+        formula: 'Primary Deficit = Fiscal Deficit — Net Interest Payments  |  PD = FD — Interest',
+        example: 'If FD = ₹39,112 cr and interest payments = ₹25,364 cr, Primary Deficit = ₹13,748 cr.',
+        mnemonic: 'Primary Deficit = "Fiscal Deficit minus Interest" — asli deficit kitna hai, interest hata ke dekho!',
+        funfact: 'If Primary Deficit is negative (Primary Surplus), it means the government is earning more than needed — a good sign!'
+      },
+      {
+        id: 59, term: 'Multiplier Effect', cat: 'Macroeconomics', catClass: 'macro',
+        definition: 'When an initial injection of spending (investment, government expenditure) leads to a MORE THAN PROPORTIONAL increase in total income/output.',
+        formula: 'k = ΔY / ΔI = 1 / (1 — MPC)  |  MPC = Marginal Propensity to Consume  |  Higher MPC = Higher Multiplier',
+        example: 'Government spends ₹10,000 cr on roads. Workers spend 80% → shops earn, shopkeepers spend → total GDP may increase by ₹50,000 cr!',
+        mnemonic: 'Multiplier = "Guna" effect — ₹1 ka injection ₹5 ka output de sakta hai!',
+        funfact: 'Keynes\' student Richard Kahn first developed the multiplier concept in 1931. It\'s the core of Keynesian economics.'
+      },
+
+      // ===== BANKING & FINANCE =====
+      {
+        id: 60, term: 'Commercial Bank', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'A financial institution that accepts deposits from the public and lends money for profit. The backbone of the banking system.',
+        formula: 'Banks: Accept deposits (liabilities) → Give loans (assets) | Profit = Interest earned — Interest paid — Operating costs',
+        example: 'SBI, HDFC Bank, PNB — you deposit salary, they give home loans. Simple business model!',
+        mnemonic: 'Commercial Bank = "Public ka paisa, public ko hi loan" — deposit se lending tak ka business!',
+        funfact: 'The oldest commercial bank in India is SBI (est. 1806 as Bank of Calcutta). The world\'s oldest is Banca Monte dei Paschi di Siena (1472).'
+      },
+      {
+        id: 61, term: 'Central Bank', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'The apex monetary authority that regulates the banking system, manages currency, controls money supply, and ensures financial stability.',
+        formula: 'Functions: Monetary Authority → Regulator → Banker to Govt → Banker to Banks → Currency Issuer → Controller of Credit',
+        example: 'RBI — the "Banker of all Banks" and "Lender of Last Resort". Sets repo rate, prints currency, regulates banks.',
+        mnemonic: 'Central Bank = "Sab Banks ka Boss" — RBI sabka control, sabka leader!',
+        funfact: 'RBI was established on April 1, 1935 (under RBI Act 1934). Nationalized in 1949.'
+      },
+      {
+        id: 62, term: 'Credit Creation', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'The ability of commercial banks to create money through the process of lending. Banks "create" credit by lending out deposits multiple times.',
+        formula: 'Total Credit Created = Initial Deposit × (1/CRR)  |  Credit Multiplier = 1/CRR',
+        example: 'You deposit ₹100, CRR = 10% → Bank keeps ₹10, lends ₹90 → That ₹90 is deposited → Bank keeps ₹9, lends ₹81... Eventually total money = ₹1000!',
+        mnemonic: 'Credit Creation = "Paisa se paisa" — banks multiply money by lending your deposits again and again!',
+        funfact: 'Credit creation is why banks are called "engines of economic growth" — they create money from thin air!'
+      },
+      {
+        id: 63, term: 'Money Multiplier', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'The ratio of total money supply (M3) to the monetary base (M0/Reserve Money). Shows how many times banks "multiply" the base money.',
+        formula: 'Money Multiplier = M3 / M0 = 1 / CRR  |  Higher CRR → Lower Multiplier  |  India\'s MM ≈ 5-6',
+        example: 'If RBI injects ₹1,00,000 cr (M0↑) and CRR = 4%, total money supply can increase by up to ₹25,00,000 cr.',
+        mnemonic: 'Money Multiplier = "Paise ka multiplication" — ek rupee reserve se ₹5-6 bana leta hai banking system!',
+        funfact: 'India\'s money multiplier was ~6 in 2024 but varies — it was lower (~4.5) during COVID due to excess cash holding.'
+      },
+      {
+        id: 64, term: 'NPA', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Non-Performing Asset — a loan or advance where the borrower has stopped making interest or principal payments for 90+ days. A "bad loan."',
+        formula: 'NPA Ratio = Gross NPA / Total Advances  |  Substandard (≤12 months), Doubtful (>12 months), Loss assets',
+        example: 'If you take a home loan and don\'t pay EMIs for 3+ months, your loan becomes an NPA for the bank.',
+        mnemonic: 'NPA = "Non Performing Asset" — loan jo perform nahi kar raha, i.e., "Double Payment Avoided" (joke)!',
+        funfact: 'India\'s GNPA ratio peaked at 11.2% in 2018 (twin balance sheet crisis) but fell to ~2.7% by 2024.'
+      },
+      {
+        id: 65, term: 'Basel Norms', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'International banking regulations developed by the Basel Committee on Banking Supervision (BCBS) to ensure financial stability and adequate capital.',
+        formula: 'Capital Adequacy Ratio (CAR) = Tier 1 Capital + Tier 2 Capital / Risk-Weighted Assets  |  Basel III: CAR ≥ 11.5%',
+        example: 'Indian banks must maintain CAR of 11.5% — for every ₹100 of risky loans, bank must have ₹11.50 of their own capital.',
+        mnemonic: 'Basel = "Bank Safety Rules" — Basel I, II, III — safety standards for banks worldwide!',
+        funfact: 'Named after Basel, Switzerland (BCBS headquarters). Basel III was introduced after the 2008 global financial crisis.'
+      },
+      {
+        id: 66, term: 'MCLR', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Marginal Cost of Funds Based Lending Rate — the minimum interest rate below which banks cannot lend (except for some categories).',
+        formula: 'MCLR = Marginal Cost of Funds + Negative Carry + Operating Costs + Tenor Premium  |  Reset annually or semi-annually',
+        example: 'If SBI\'s 1-year MCLR is 8.5%, your home loan interest will be MCLR + spread (say 8.9% total).',
+        mnemonic: 'MCLR = "Minimum rate, bank cannot lend below this" — bank ka minimum rate!',
+        funfact: 'MCLR replaced the earlier Base Rate system in 2016. From 2019, RBI introduced EBLR (External benchmark like Repo Rate).'
+      },
+      {
+        id: 67, term: 'NBFC', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Non-Banking Financial Company — a company registered under Companies Act that provides banking-like services (loans, investments) but cannot accept demand deposits.',
+        formula: 'NBFC ≠ Bank | Cannot: accept savings/current deposits, issue cheques, provide deposit insurance | Can: lend, invest, lease',
+        example: 'Bajaj Finance, HDFC (before merger), Mahindra Finance — give loans without being a full bank.',
+        mnemonic: 'NBFC = "Bank jaisa, bank nahi" — like bank but no cheque book or savings account!',
+        funfact: 'India has over 10,000 NBFCs. The IL&FS crisis (2018) was the biggest NBFC failure, triggering a credit crunch.'
+      },
+      {
+        id: 68, term: 'Microfinance', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Provision of small loans (micro-credit) and other financial services to low-income individuals, especially women in rural areas, who lack access to formal banking.',
+        formula: 'Loan size: typically ₹10,000 — ₹2,00,000  |  Interest: 18-24%  |  Group lending model (SHGs)',
+        example: 'JEEVIKA: Bihar\'s SHG movement — 1.40 cr women in 11 lakh SHGs, receiving micro-loans for small businesses.',
+        mnemonic: 'Microfinance = "Gareebon ka bank" — chhoti loans, badi umeedein!',
+        funfact: 'Muhammad Yunus (Grameen Bank, Bangladesh) won the Nobel Peace Prize in 2006 for microfinance revolution.'
+      },
+      {
+        id: 69, term: 'Priority Sector Lending', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Mandatory lending to priority sectors designated by RBI — agriculture, MSMEs, education, housing, renewable energy, weaker sections.',
+        formula: 'Total PSL Target = 40% of ANBC (Adjusted Net Bank Credit)  |  Agriculture: 18% | MSME: 7.5% | Weaker Sections: 10%',
+        example: 'A bank with ₹1,00,000 cr loans must lend at least ₹40,000 cr to priority sectors — farmers, small businesses, etc.',
+        mnemonic: 'PSL = "Priority Sector Lending" — bank ko kuch % govt-approved sectors mein dena hi hoga!',
+        funfact: 'Foreign banks with 20+ branches also have PSL targets (40%). RBI strictly monitors compliance through quarterly reporting.'
+      },
+      {
+        id: 70, term: 'Financial Inclusion', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Ensuring access to affordable financial services (bank accounts, insurance, credit) to all individuals and businesses, especially excluded populations.',
+        formula: 'PMJDY: Jan Dhan accounts — 50+ cr accounts | Mission: "Each household one bank account" | Insurance + Pension bundled',
+        example: 'PM Jan Dhan Yojana (2014) — opened 50+ crore bank accounts for the unbanked, giving zero-balance accounts with insurance.',
+        mnemonic: 'Financial Inclusion = "Sabka bank account" — gareeb se lekar ameer tak, sabko banking!',
+        funfact: 'India\'s Jan Dhan Yojana is the world\'s largest financial inclusion program — Guinness World Record holder!'
+      },
+      {
+        id: 71, term: 'Digital Banking', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'Banking services delivered through digital channels (mobile apps, internet, UPI) without physical branch visits.',
+        formula: 'Digital Banking = Mobile Banking + Internet Banking + UPI + Digital Wallets + NEFT/RTGS/IMPS',
+        example: 'PayTM payments, Google Pay, NetBanking, PhonePe — instant transfers, bill payments, loans — all from your phone!',
+        mnemonic: 'Digital Banking = "Anguli ki uchhal" — phone mein hi bank! UPI = payment revolution!',
+        funfact: 'India\'s UPI processed over ₹200 lakh crore in 2024-25 — more than the entire GDP! 10+ billion transactions/month.'
+      },
+      {
+        id: 72, term: 'Cheque', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'A written order from an account holder to their bank to pay a specified amount to a named person or entity.',
+        formula: 'Types: Bearer Cheque (payable to person holding) | Order Cheque (payable to named) | Crossed Cheque (bank transfer only)',
+        example: 'You write a cheque for ₹50,000 to your landlord — the bank pays ₹50,000 from your account to the landlord\'s account.',
+        mnemonic: 'Cheque = "Aadesh patra" — bank ko likh kar aadesh: ye paisa do!',
+        funfact: 'The Negotiable Instruments Act, 1881 governs cheques in India. Cheque bounce is a criminal offense (Sec 138, NI Act).'
+      },
+      {
+        id: 73, term: 'Demand Draft', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'A pre-paid instrument issued by a bank to a person, directing another branch to pay the specified amount to the named person. Safer than a cheque.',
+        formula: 'DD = You pay bank → Bank issues DD → Receiver encashes at any branch of same bank | No risk of bounce (pre-paid)',
+        example: 'For university admission fee of ₹2,00,000, you get a DD from SBI — payment is guaranteed, no bounce risk.',
+        mnemonic: 'Demand Draft = "Pehle paisa do, phir draft lo" — prepaid instrument, no bounce!',
+        funfact: 'Unlike cheques, DDs cannot be stopped once issued (except in cases of fraud/loss). Max validity: 3 months.'
+      },
+      {
+        id: 74, term: 'Letter of Credit', cat: 'Banking & Finance', catClass: 'banking',
+        definition: 'A bank guarantee that a buyer\'s payment to a seller will be received on time and for the correct amount. Facilitates international trade.',
+        formula: 'LC = Bank promises seller: "We will pay if buyer doesn\'t" | Reduces risk in trade | Irrevocable LC most common',
+        example: 'An Indian importer buying machinery from Germany — buyer\'s bank issues LC: German seller ships goods, bank guarantees payment.',
+        mnemonic: 'LC = "Letter of Credit" = bank ka bachan — "Seller ko paisa milega hi milega!"',
+        funfact: 'LCs are governed by Uniform Customs and Practice (UCP 600) by the International Chamber of Commerce (ICC).'
+      },
+
+      // ===== INTERNATIONAL ECONOMICS =====
+      {
+        id: 75, term: 'Balance of Trade', cat: 'International Economics', catClass: 'international',
+        definition: 'The difference between a country\'s EXPORTS and IMPORTS of GOODS (visible trade) in a given period.',
+        formula: 'BOT = Value of Exports of Goods — Value of Imports of Goods  |  Surplus (Exports > Imports) vs Deficit',
+        example: 'If India exports ₹10,000 cr of goods and imports ₹15,000 cr, BOT = —₹5,000 cr (Trade Deficit).',
+        mnemonic: 'BOT = "Sirf maal ka hisaab" — goods ka export minus import, services nahi!',
+        funfact: 'India has had a persistent trade deficit since the 1980s — mainly due to oil and gold imports.'
+      },
+      {
+        id: 76, term: 'Balance of Payments', cat: 'International Economics', catClass: 'international',
+        definition: 'A comprehensive record of ALL economic transactions between residents of a country and the rest of the world in a period.',
+        formula: 'BoP = Current Account + Capital Account + Financial Account + Errors & Omissions  |  BoP always balances!',
+        example: 'If you buy an iPhone from Apple USA, it\'s recorded in India\'s BoP (import in current account, debit in capital account).',
+        mnemonic: 'BoP = "Pura hisaab" — current + capital account. Always balances (double-entry)!',
+        funfact: 'BoP always balances due to double-entry bookkeeping — a current account deficit must be financed by a capital account surplus.'
+      },
+      {
+        id: 77, term: 'Current Account', cat: 'International Economics', catClass: 'international',
+        definition: 'Records trade in goods (visible), services (invisible), income (profits, dividends), and unilateral transfers (remittances, aid).',
+        formula: 'Current Account = BOT + Services + Income + Transfers  |  CAD = Deficit (imports > exports + remittances)',
+        example: 'An NRI in USA sends ₹50,000 to family in India — recorded as credit in current account (remittances).',
+        mnemonic: 'Current Account = "Roj ka business" — daily transactions: goods, services, remittances!',
+        funfact: 'India\'s current account deficit (CAD) was ~1-2% of GDP in 2024 — largely financed by FDI and FPI inflows.'
+      },
+      {
+        id: 78, term: 'Capital Account', cat: 'International Economics', catClass: 'international',
+        definition: 'Records capital transfers (debt forgiveness, migrants\' transfers) and acquisition/disposal of non-produced, non-financial assets.',
+        formula: 'Capital Account = Capital Transfers + Acquisition/Disposal of Non-Produced Assets  |  Smaller than Financial Account',
+        example: 'When a migrant worker moves from India to Canada permanently, their assets transferred are recorded in capital account.',
+        mnemonic: 'Capital Account = "Ek baar ka transfer" — debt relief, migrants ka samaan, patents!',
+        funfact: 'In practice, most financial flows are recorded in the "Financial Account" but older texts merge it with Capital Account.'
+      },
+      {
+        id: 79, term: 'Comparative Advantage', cat: 'International Economics', catClass: 'international',
+        definition: 'The ability of a country to produce a good at a LOWER OPPORTUNITY COST than another country. The basis for beneficial trade.',
+        formula: 'Country A has CA in X if: OC_A(X) < OC_B(X)  |  Even if A is better at BOTH, both gain from specialization!',
+        example: 'India has CA in IT services, Bangladesh in textiles — even if India could grow cotton cheaper, specializing in IT and trading benefits both.',
+        mnemonic: 'Comparative Advantage = "Kam opportunity cost" — I\'m not the best, but I\'m better RELATIVELY!',
+        funfact: 'David Ricardo (1817) developed this theory using England (cloth) vs Portugal (wine) — even when Portugal was better at both!'
+      },
+      {
+        id: 80, term: 'Absolute Advantage', cat: 'International Economics', catClass: 'international',
+        definition: 'The ability of a country to produce a good using FEWER RESOURCES (less labor, capital) than another country.',
+        formula: 'Country A has AA if: Labor_A(good) < Labor_B(good)  |  Adam Smith\'s theory: produce what you\'re best at',
+        example: 'China can make smartphones cheaper than most countries — it has absolute advantage in electronics manufacturing.',
+        mnemonic: 'Absolute Advantage = "Sabse sasta producer" — you use FEWEST resources to make that thing!',
+        funfact: 'Adam Smith proposed absolute advantage in "Wealth of Nations" (1776). But comparative advantage (Ricardo) is more realistic.'
+      },
+      {
+        id: 81, term: 'Terms of Trade', cat: 'International Economics', catClass: 'international',
+        definition: 'The ratio of a country\'s export prices to its import prices. Shows how many imports a country can get for one unit of exports.',
+        formula: 'ToT = (Export Price Index / Import Price Index) × 100  |  ToT ↑ = favorable (can buy more imports)',
+        example: 'If India\'s export prices rise 10% while import prices rise 5%, ToT = (110/105) × 100 = 104.7 — improving!',
+        mnemonic: 'Terms of Trade = "Export ki keemat vs Import ki keemat" — kitne imports milte hain 1 export ke badle!',
+        funfact: 'A worsening ToT (imports costlier, exports cheaper) is a major problem for developing countries — the Prebisch-Singer hypothesis.'
+      },
+      {
+        id: 82, term: 'Tariff', cat: 'International Economics', catClass: 'international',
+        definition: 'A TAX imposed on imported goods. Used to protect domestic industries from foreign competition and raise government revenue.',
+        formula: 'Tariff Revenue = Tariff Rate × Value of Imports  |  Ad Valorem (% of value)  |  Specific (fixed ₹ per unit)',
+        example: 'India imposes 100% tariff on imported luxury cars — a ₹50 lakh imported car may cost ₹1 crore after tariff.',
+        mnemonic: 'Tariff = "Import par tax" — desi industry bachao, foreign ko mahanga karo!',
+        funfact: 'The Smoot-Hawley Tariff Act (1930, USA) raised tariffs by 40% — worsened the Great Depression by collapsing global trade.'
+      },
+      {
+        id: 83, term: 'Quota', cat: 'International Economics', catClass: 'international',
+        definition: 'A physical LIMIT on the quantity of a good that can be imported or exported in a given period. A non-tariff barrier.',
+        formula: 'Quota: Max quantity = Q_max  |  Unlike tariff (which raises price via tax), quota directly restricts quantity',
+        example: 'India restricts import of milk powder to protect dairy farmers — only X metric tons allowed per year.',
+        mnemonic: 'Quota = "Kitna aayega fix" — quantity limit, isse zyada allowed nahi!',
+        funfact: 'Quotas are worse than tariffs economically — they create "quota rents" (extra profit for import license holders) without govt revenue.'
+      },
+      {
+        id: 84, term: 'Dumping', cat: 'International Economics', catClass: 'international',
+        definition: 'Exporting goods at a price LOWER than the domestic price (or below cost of production) to capture foreign markets or eliminate competition.',
+        formula: 'Dumping Margin = Normal Value — Export Price  |  Antidumping duty = duty to offset the dumping margin',
+        example: 'Country A sells steel domestically at ₹50/kg but exports to Country B at ₹30/kg — that\'s dumping to capture B\'s market.',
+        mnemonic: 'Dumping = "Sasta maal foreign mein bechna" — apne se sasta, loss par bhi!',
+        funfact: 'WTO allows Anti-Dumping Duties to counter dumping. India is one of the most active users of anti-dumping measures.'
+      },
+      {
+        id: 85, term: 'Exchange Rate', cat: 'International Economics', catClass: 'international',
+        definition: 'The price of one currency in terms of another currency. How many rupees for 1 US dollar?',
+        formula: 'Exchange Rate (₹/USD)  |  Floating: market determined  |  Fixed: pegged  |  Managed Float: RBI intervenes',
+        example: 'If 1 USD = ₹83, then ₹1 = 1/83 = 0.012 USD. You need ₹83 to buy $1.',
+        mnemonic: 'Exchange Rate = "Currency ka bhav" — ek dollar kitne rupay mein milega!',
+        funfact: 'Exchange rates are determined by supply and demand for currencies. RBI intervenes to prevent excessive volatility (managed float).'
+      },
+      {
+        id: 86, term: 'Depreciation', cat: 'International Economics', catClass: 'international',
+        definition: 'A FALL in the value of a currency in a FLOATING exchange rate system due to market forces. Dollar becomes more expensive in rupee terms.',
+        formula: '₹ Depreciation: ₹83 → ₹85 per USD (₹ weakens)  |  Market-driven, NOT government action',
+        example: 'If USD/INR moves from 83 to 85, the rupee has DEPRECIATED by about 2.4%. Imported goods become costlier.',
+        mnemonic: 'Depreciation = "Rupee weak" — market ke karan value girti hai!',
+        funfact: 'Rupee depreciation helps exporters (their goods become cheaper abroad) but hurts importers and foreign travelers.'
+      },
+      {
+        id: 87, term: 'Appreciation', cat: 'International Economics', catClass: 'international',
+        definition: 'A RISE in the value of a currency in a FLOATING exchange rate system. Dollar becomes cheaper in rupee terms.',
+        formula: '₹ Appreciation: ₹83 → ₹80 per USD (₹ strengthens)  |  Market-driven: more demand for ₹, less for $',
+        example: 'If USD/INR falls from 83 to 80, rupee has APPRECIATED. Imported iPhones become cheaper!',
+        mnemonic: 'Appreciation = "Rupee strong" — dollar sasta ho gaya, sab kuch import sasta!',
+        funfact: 'Appreciation hurts exporters (exports become expensive abroad) — China historically kept Yuan undervalued to protect exports.'
+      },
+      {
+        id: 88, term: 'Devaluation', cat: 'International Economics', catClass: 'international',
+        definition: 'An official REDUCTION in the value of a currency by the government/central bank in a FIXED exchange rate system.',
+        formula: 'Devaluation: Govt deliberately lowers currency value  |  In floating system, same effect is called "depreciation"',
+        example: 'China\'s 2015 devaluation of Yuan — People\'s Bank of China announced 2% lower value to boost exports.',
+        mnemonic: 'Devaluation = "Sarkar ne deliberately sasta kiya" — fixed rate system mein value girana!',
+        funfact: 'India devalued the rupee thrice: 1949 (with pound sterling), 1966 (30% devaluation), and 1991 (20% during BoP crisis).'
+      },
+      {
+        id: 89, term: 'Revaluation', cat: 'International Economics', catClass: 'international',
+        definition: 'An official INCREASE in the value of a currency by the government/central bank in a FIXED exchange rate system.',
+        formula: 'Revaluation: Govt deliberately raises currency value  |  Opposite of devaluation  |  Rare — countries usually avoid this',
+        example: 'Germany revalued Deutsche Mark in 1961 and 1969 under the Bretton Woods system.',
+        mnemonic: 'Revaluation = "Sarkar ne mehnga kiya" — fixed rate mein currency ki value badhai!',
+        funfact: 'Revaluation hurts exports and encourages imports — countries rarely do it unless forced by trading partners or to fight inflation.'
+      },
+      {
+        id: 90, term: 'PPP', cat: 'International Economics', catClass: 'international',
+        definition: 'Purchasing Power Parity — the exchange rate that equalizes the purchasing power of two currencies. The "Big Mac Index" concept.',
+        formula: 'PPP Exchange Rate = P1/P2 (price of same basket in two countries)  |  E = P₹ / P$',
+        example: 'A Big Mac costs ₹200 in India and $5 in US → PPP rate = 200/5 = ₹40/$ — but actual rate is ₹83/$. Rupee is UNDERVALUED by ~50%!',
+        mnemonic: 'PPP = "Same cheez ka same price" — ek burger India aur US mein same keemat honi chahiye!',
+        funfact: 'The Economist\'s "Big Mac Index" uses McDonald\'s burgers to compare PPP across countries. India\'s rupee is consistently undervalued.'
+      },
+      {
+        id: 91, term: 'SDR', cat: 'International Economics', catClass: 'international',
+        definition: 'Special Drawing Rights — an international reserve asset created by the IMF to supplement member countries\' official reserves.',
+        formula: 'SDR Basket (value): USD 43.38% + EUR 29.31% + CNY 12.28% + JPY 7.59% + GBP 7.44%  |  Interest rate = weighted avg',
+        example: 'In 2021, IMF allocated $650 billion in SDRs to help countries recover from COVID — India got about $17 billion worth.',
+        mnemonic: 'SDR = "IMF ka virtual paisa" — international emergency fund for member countries!',
+        funfact: 'SDRs are not a currency — they are a "potential claim" on IMF member currencies. Only 5 currencies are in the basket.'
+      },
+      {
+        id: 92, term: 'FDI', cat: 'International Economics', catClass: 'international',
+        definition: 'Foreign Direct Investment — investment by a foreign entity to establish a LONG-TERM business interest in another country. "Real" investment.',
+        formula: 'FDI: >10% equity stake = direct investment | Greenfield (new facility) vs Brownfield (merger/acquisition) | Stable, long-term',
+        example: 'Google setting up an office in Bengaluru — FDI. Toyota building a factory in India — FDI.',
+        mnemonic: 'FDI = "Factory Daalo India mein" — long-term investment, physical presence, jobs!',
+        funfact: 'India received record FDI of $85 billion in 2021-22. Top sources: Singapore, USA, Mauritius. Top sectors: services, computer, telecom.'
+      },
+      {
+        id: 93, term: 'FPI', cat: 'International Economics', catClass: 'international',
+        definition: 'Foreign Portfolio Investment — investment in financial assets (stocks, bonds) without control or management of the entity. "Hot money."',
+        formula: 'FPI: <10% equity stake = portfolio | Highly liquid | Can leave quickly ("hot money") | More volatile than FDI',
+        example: 'A US mutual fund buying Reliance shares — FPI. A UK pension fund investing in Indian government bonds — FPI.',
+        mnemonic: 'FPI = "Paise Portfolio mein" — shares kharide, koi factory nahi! Quick entry, quick exit!',
+        funfact: 'FPI is called "hot money" because it can flee quickly in a crisis — causing stock market crashes. FPI outflows during COVID hit $16 billion.'
+      },
+      {
+        id: 94, term: 'Trade Deficit', cat: 'International Economics', catClass: 'international',
+        definition: 'The amount by which the value of a country\'s imports of goods EXCEEDS the value of its exports. Imports > Exports.',
+        formula: 'Trade Deficit = Imports — Exports (goods)  |  CAD = Trade Deficit + Services Deficit/Surplus + Remittances',
+        example: 'India\'s trade deficit in 2024-25 was ~$250 billion — we imported much more than we exported (mainly oil, gold, electronics).',
+        mnemonic: 'Trade Deficit = "Bahut import, kam export" — hum zyada le rahe, kam de rahe!',
+        funfact: 'Trade deficit isn\'t always bad — if financed by productive FDI, it builds future export capacity. US has run trade deficits for decades.'
+      },
+
+      // ===== PUBLIC FINANCE =====
+      {
+        id: 95, term: 'Direct Tax', cat: 'Public Finance', catClass: 'public',
+        definition: 'A tax paid DIRECTLY by the person or entity on whom it is imposed. The burden CANNOT be shifted to someone else.',
+        formula: 'Direct Tax = Income Tax + Corporate Tax + Wealth Tax + Gift Tax  |  Progressive: higher income = higher %',
+        example: 'When you earn ₹12 lakh/year, you pay income tax directly to the government. You can\'t pass this tax to anyone.',
+        mnemonic: 'Direct Tax = "Seedha tax" — jo aap khud dete ho, kisi aur par nahi daal sakte!',
+        funfact: 'Direct taxes accounted for ~55% of India\'s total tax revenue in 2024-25. Corporate tax is the biggest component.'
+      },
+      {
+        id: 96, term: 'Indirect Tax', cat: 'Public Finance', catClass: 'public',
+        definition: 'A tax imposed on goods/services where the burden can be SHIFTED from the person who pays the tax to the final consumer.',
+        formula: 'Indirect Tax = GST + Customs + Excise + VAT (prev)  |  Included in price — consumer bears the burden',
+        example: 'You buy a ₹100 pizza — ₹18 is GST. You pay it as part of the price. The restaurant collects and deposits it.',
+        mnemonic: 'Indirect Tax = "Chhupa hua tax" — price mein chhipa hota hai, aap dete ho lekin pata bhi nahi!',
+        funfact: 'Indirect taxes are REGRESSIVE — the poor pay the same GST rate on essentials as the rich.'
+      },
+      {
+        id: 97, term: 'GST', cat: 'Public Finance', catClass: 'public',
+        definition: 'Goods and Services Tax — a comprehensive, multi-stage, destination-based consumption tax on the supply of goods and services. "One Nation, One Tax."',
+        formula: 'GST = CGST (Central) + SGST (State) + IGST (Inter-state)  |  Slabs: 0%, 5%, 12%, 18%, 28%',
+        example: 'You buy a smartphone for ₹20,000 + 18% GST → you pay ₹3,600 tax. ₹1,800 goes to Centre (CGST), ₹1,800 to State (SGST).',
+        mnemonic: 'GST = "Good & Simple Tax" — One Nation, One Tax! No more tax-on-tax!',
+        funfact: 'GST was launched on July 1, 2017 — India\'s biggest tax reform. It subsumed 17+ indirect taxes into one unified system.'
+      },
+      {
+        id: 98, term: 'Progressive Tax', cat: 'Public Finance', catClass: 'public',
+        definition: 'A tax system where the tax RATE increases as the taxpayer\'s income increases. Based on "ability to pay" principle.',
+        formula: 'Income Tax Slabs: 0-3L → 0% | 3-6L → 5% | 6-9L → 10% | 9-12L → 15% | 12-15L → 20% | 15L+ → 30%',
+        example: 'Someone earning ₹12 lakh pays ~15% average tax; someone earning ₹5 lakh pays ~2% — rich pay higher %.',
+        mnemonic: 'Progressive Tax = "Jitna kamao, utna tax" — zyada income = zyada tax %! Fair system!',
+        funfact: 'The highest marginal income tax rate in India was 97.5% (1970s!). Today it\'s 30% (plus 4% cess = 39%).'
+      },
+      {
+        id: 99, term: 'Regressive Tax', cat: 'Public Finance', catClass: 'public',
+        definition: 'A tax system where the tax RATE DECREASES as income increases — the poor pay a HIGHER percentage of their income in tax.',
+        formula: 'Regressive Tax = GST — poor spend ~90% of income (all taxed), rich spend ~30% (rest saved/invested)',
+        example: 'GST on bread: rich person earning ₹1 cr pays ₹18 on same ₹100 bread = 0.0018% of income. Poor person earning ₹15,000 pays same ₹18 = 0.12% of income!',
+        mnemonic: 'Regressive = "Gareeb par zyada bhaar" — same tax, different burden!',
+        funfact: 'Indirect taxes are inherently regressive. That\'s why essential goods (food) are 0% GST — to reduce burden on poor.'
+      },
+      {
+        id: 100, term: 'Subsidy', cat: 'Public Finance', catClass: 'public',
+        definition: 'Government financial assistance to individuals or businesses to reduce the cost of essential goods/services, encourage production, or achieve social goals.',
+        formula: 'Subsidy = Cost of providing — Price charged to consumer  |  Explicit (budgeted) vs Implicit (hidden)',
+        example: 'Government gives LPG cylinders at ₹903 instead of actual cost ₹1,200 — the ₹297 is the subsidy per cylinder.',
+        mnemonic: 'Subsidy = "Sasta karne wala" — government product sasta kar deti hai, baki khud bharti hai!',
+        funfact: 'India\'s top subsidies: Food (≈₹2 lakh cr), Fertilizer (≈₹1.5 lakh cr), Fuel (≈₹1 lakh cr) — total ~₹4.5 lakh cr annually.'
+      },
+      {
+        id: 101, term: 'Transfer Payment', cat: 'Public Finance', catClass: 'public',
+        definition: 'Government payments to individuals WITHOUT any exchange of goods or services. Redistribution of income — NOT a payment for production.',
+        formula: 'Transfer Payments = Pensions + Welfare Benefits + Unemployment Allowance + Scholarships  |  NOT counted in GDP',
+        example: 'Old Age Pension ₹1,000/month, PM-KISAN ₹6,000/year to farmers, scholarship to students — you get money for NOTHING in return.',
+        mnemonic: 'Transfer Payment = "Free ka paisa" — sarkar deti hai, kuch lena nahi padta!',
+        funfact: 'Transfer payments are EXCLUDED from GDP because they don\'t represent production. They\'re counted in Personal Income though.'
+      },
+      {
+        id: 102, term: 'Crowding Out Effect', cat: 'Public Finance', catClass: 'public',
+        definition: 'When government BORROWING (fiscal deficit) leads to higher interest rates, which REDUCES private investment. Govt "crowds out" private sector.',
+        formula: 'Govt Borrowing ↑ → Demand for Loanable Funds ↑ → Interest Rate ↑ → Private Investment ↓  |  Crowding Out + Multiplier Effect',
+        example: 'If government borrows ₹15 lakh cr to fund deficit, banks raise lending rates, and businesses borrow less for expansion.',
+        mnemonic: 'Crowding Out = "Sarkar ne jagah gher li" — government sab paisa le li, private ko kuch nahi bacha!',
+        funfact: 'During COVID, crowding out was minimal because RBI printed money (monetization) — but it risks inflation.'
+      },
+      {
+        id: 103, term: 'Laffer Curve', cat: 'Public Finance', catClass: 'public',
+        definition: 'Shows the relationship between tax RATES and TAX REVENUE. There is an optimal tax rate — beyond which higher rates DECREASE revenue.',
+        formula: 'Tax Revenue = Tax Rate × Tax Base  |  At t=0% and t=100%, revenue = 0  |  Optimal rate t* maximizes revenue',
+        example: 'If tax rate is 80%, people will work less, evade more — total revenue may be LESS than at 40% rate.',
+        mnemonic: 'Laffer Curve = "Zyada tax = kam revenue" — itna zyada mat lo ki log hi bhag jayein!',
+        funfact: 'Arthur Laffer drew this on a napkin in 1974. It became the basis for Reagan\'s tax cuts (1981). The exact t* is debated.'
+      },
+      {
+        id: 104, term: 'Public Debt', cat: 'Public Finance', catClass: 'public',
+        definition: 'Total amount of money that the government OWES to lenders (domestic + foreign). Accumulated through past fiscal deficits.',
+        formula: 'Public Debt = Internal Debt + External Debt  |  Debt/GSDP ratio = key indicator of sustainability  |  Bihar debt: 29.68%',
+        example: 'India\'s public debt = ~₹155 lakh cr (~57% of GDP). Government pays interest of ~₹9 lakh cr/year on this debt.',
+        mnemonic: 'Public Debt = "Sarkar ka karza" — jo udhaar pe desh chal raha hai!',
+        funfact: 'FRBM Act targets 60% debt/GDP for Centre and 20% for states. Japan has the highest: ~260% of GDP!'
+      },
+
+      // ===== DEVELOPMENT ECONOMICS =====
+      {
+        id: 105, term: 'HDI', cat: 'Development Economics', catClass: 'development',
+        definition: 'Human Development Index — a composite index measuring average achievement in three dimensions: health, education, and standard of living.',
+        formula: 'HDI = (Health Index × Education Index × Income Index)^1/3  |  Each dimension normalized to 0-1 scale',
+        example: 'India\'s HDI in 2022 was 0.644 (Medium category), rank 134/193. Highest: Switzerland (0.967).',
+        mnemonic: 'HDI = "Insani Taraqqi Index" — sehat, padhai, paisa — teeno ka average!',
+        funfact: 'HDI was developed by Mahbub ul Haq (Pakistani economist) and Amartya Sen in 1990. It moved focus from income to human well-being.'
+      },
+      {
+        id: 106, term: 'Gini Coefficient', cat: 'Development Economics', catClass: 'development',
+        definition: 'A measure of statistical dispersion representing INCOME or WEALTH INEQUALITY within a nation. 0 = perfect equality, 1 = perfect inequality.',
+        formula: 'Gini = A / (A + B)  |  0 = everyone has same income  |  1 = one person has all income  |  India: ~0.35-0.40',
+        example: 'South Africa has Gini of ~0.63 (very unequal), Sweden ~0.25 (very equal). India ~0.35 (moderate inequality).',
+        mnemonic: 'Gini Coefficient = "Amir vs Gareeb gap" — 0 = sab barabar, 1 = sab ek ke paas!',
+        funfact: 'Corrado Gini (Italian statistician) developed this in 1912. It\'s derived from the Lorenz Curve.'
+      },
+      {
+        id: 107, term: 'Lorenz Curve', cat: 'Development Economics', catClass: 'development',
+        definition: 'A graphical representation of income/wealth DISTRIBUTION. Shows the cumulative share of income held by cumulative share of population.',
+        formula: '45° line = perfect equality | Actual curve = Lorenz Curve  |  Further from 45° = greater inequality  |  Gini = area between curves',
+        example: 'If bottom 50% of population earns only 20% of income, the Lorenz Curve dips far below the 45° line.',
+        mnemonic: 'Lorenz Curve = "Inequality ka graph" — 45° line se jitna door, utni inequality!',
+        funfact: 'Max O. Lorenz developed this in 1905 (age 28!). It\'s used not just for income but also for health and education inequality.'
+      },
+      {
+        id: 108, term: 'Poverty Line', cat: 'Development Economics', catClass: 'development',
+        definition: 'The minimum level of income/consumption deemed necessary to achieve an adequate standard of living. Below this = poverty.',
+        formula: 'India: Tendulkar Committee (₹33/day urban, ₹27/day rural in 2011) | World Bank: $2.15/day (extreme poverty, 2017 PPP)',
+        example: 'A family of 5 with total monthly income ₹4,000 — per person ₹800/month or ₹27/day — below poverty line.',
+        mnemonic: 'Poverty Line = "Gareebi ki rekha" — isse neeche = gareeb, iske upar = theek!',
+        funfact: 'The World Bank\'s international poverty line was $1/day in 1990, now $2.15/day. India lifted 415 million people out of poverty (2005-2021).'
+      },
+      {
+        id: 109, term: 'Inclusive Growth', cat: 'Development Economics', catClass: 'development',
+        definition: 'Economic growth that benefits ALL sections of society — reducing poverty, inequality, and providing equal opportunities.',
+        formula: 'IG = GDP Growth + Reduced Inequality + Poverty Reduction + Employment Generation + Social Security  |  "Sabka Saath, Sabka Vikas"',
+        example: 'Bihar\'s Saat Nischay-3: aims to double per capita income and create 1 cr jobs — inclusive growth agenda!',
+        mnemonic: 'Inclusive Growth = "Sabka Vikas" — growth jisme har kisi ko fayda mile, sirf amiron ko nahi!',
+        funfact: 'The 12th Five Year Plan (2012-17) of India was titled "Faster, More Inclusive and Sustainable Growth."'
+      },
+      {
+        id: 110, term: 'Sustainable Development', cat: 'Development Economics', catClass: 'development',
+        definition: 'Development that meets the needs of the PRESENT without compromising the ability of FUTURE generations to meet their own needs.',
+        formula: 'Sustainable Dev = Economic Growth + Social Equity + Environmental Protection  |  Triple Bottom Line: People, Planet, Profit',
+        example: 'Solar energy adoption — gives you power today, doesn\'t harm the environment for your children.',
+        mnemonic: 'Sustainable = "Aaj bhi aur kal bhi" — aaj ka vikas, kal ki nasl ko bhi bachao!',
+        funfact: 'The term was popularized by the Brundtland Commission (1987) report "Our Common Future." UN Sustainable Development Goals (SDGs) have 17 targets.'
+      },
+      {
+        id: 111, term: 'Green GDP', cat: 'Development Economics', catClass: 'development',
+        definition: 'GDP adjusted for environmental costs — subtracting the value of environmental degradation and resource depletion from traditional GDP.',
+        formula: 'Green GDP = Traditional GDP — Cost of Environmental Degradation — Cost of Resource Depletion',
+        example: 'A factory produces ₹100 cr output but causes ₹30 cr in pollution damage. Green GDP contribution = ₹70 cr.',
+        mnemonic: 'Green GDP = "Hara GDP" — paryavaran ka nuksan ghatao, asli progress dekho!',
+        funfact: 'China was the first major country to test Green GDP in 2004. India\'s Ministry of Statistics has developed a framework but not yet officially adopted it.'
+      },
+      {
+        id: 112, term: 'Human Capital', cat: 'Development Economics', catClass: 'development',
+        definition: 'The stock of knowledge, skills, habits, and health that people invest in and accumulate over their lives, making them productive.',
+        formula: 'Human Capital = Education + Skills + Health + Training  |  Investment in HC: spending on schooling, healthcare, training',
+        example: 'A software engineer who learned coding (education) and stays healthy (fitness) has high human capital — earns more, contributes more.',
+        mnemonic: 'Human Capital = "Insaan ka skill stock" — education + health + training = productivity!',
+        funfact: 'Gary Becker (Nobel 1992) pioneered Human Capital theory. World Bank\'s Human Capital Index ranks India 116th (low HCI).'
+      },
+      {
+        id: 113, term: 'Gender Development Index', cat: 'Development Economics', catClass: 'development',
+        definition: 'A gender-disaggregated version of HDI — shows the ratio of female HDI to male HDI. Measures gender gaps in health, education, and income.',
+        formula: 'GDI = Female HDI / Male HDI  |  GDI < 1 = gender inequality favoring males  |  GDI = 1 = perfect gender equality',
+        example: 'India\'s GDI in 2022 was 0.867 (female HDI=0.595, male HDI=0.686). Means women have 13% lower HDI than men.',
+        mnemonic: 'GDI = "Ladkiyon ka HDI vs ladkon ka HDI" — kitna gender gap hai development mein!',
+        funfact: 'The GDI was introduced in UNDP\'s 1995 Human Development Report. India ranks low due to gender gaps in labor force participation and income.'
+      },
+      {
+        id: 114, term: 'Multidimensional Poverty Index', cat: 'Development Economics', catClass: 'development',
+        definition: 'A measure of poverty that goes beyond income — captures DEPRIVATIONS across health, education, and living standards simultaneously.',
+        formula: 'MPI = Headcount Ratio × Intensity of Deprivation  |  10 indicators across 3 dimensions: Health, Education, Standard of Living',
+        example: 'A family living in a kutcha house with no toilet, no electricity, and malnourished children — poor on multiple dimensions.',
+        mnemonic: 'MPI = "Multi-dimensional Poverty" — sirf paisa nahi, balki health, education, housing sab dekho!',
+        funfact: 'India halved its MPI in just 5 years (2015-2021) — 13.5 crore people moved out of multidimensional poverty! Developed by OPHI & UNDP.'
+      }
+    ];
+
+    // ======================= UI =======================
+    const categories = ['All', 'Microeconomics', 'Macroeconomics', 'Banking & Finance', 'International Economics', 'Public Finance', 'Development Economics'];
+
+    html += `<div class="gradient-header rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">`;
+    html += `<div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">`;
+    html += `<div><div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">`;
+    html += `<i class="fa-solid fa-book-open text-2xl sm:text-3xl text-amber-400"></i>`;
+    html += `<h1 class="text-xl sm:text-3xl font-bold text-white">100+ Essential Economics Terms for BPSC/UPSC</h1></div>`;
+    html += `<p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">`;
+    html += `<i class="fa-solid fa-graduation-cap text-rose-400"></i> Comprehensive Glossary with Definitions, Formulas, Mnemonics & Examples</p></div>`;
+    html += `<div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">`;
+    html += `<i class="fa-regular fa-clock"></i><span>${terms.length} Terms · 6 Categories</span></div></div>`;
+    html += `<div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">`;
+    html += `<span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 text-xs border border-blue-500/20"><i class="fa-solid fa-chart-line mr-1"></i>Microeconomics (29)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-chart-pie mr-1"></i>Macroeconomics (30)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-xs border border-emerald-500/20"><i class="fa-solid fa-building-columns mr-1"></i>Banking & Finance (15)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 text-xs border border-purple-500/20"><i class="fa-solid fa-globe mr-1"></i>International (20)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 text-xs border border-pink-500/20"><i class="fa-solid fa-landmark mr-1"></i>Public Finance (10)</span>`;
+    html += `<span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-300 text-xs border border-teal-500/20"><i class="fa-solid fa-seedling mr-1"></i>Development (10)</span></div></div>`;
+
+    // ===== Stats Bar =====
+    html += `<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">`;
+    html += `<div class="bg-gradient-to-br from-[#131a2e] to-[#0d1220] rounded-xl p-3 sm:p-4 border border-blue-500/10 text-center"><div class="stats-number">${terms.length}</div><div class="text-xs text-gray-400 mt-1">Total Terms</div></div>`;
+    html += `<div class="bg-gradient-to-br from-[#131a2e] to-[#0d1220] rounded-xl p-3 sm:p-4 border border-amber-500/10 text-center"><div class="stats-number">6</div><div class="text-xs text-gray-400 mt-1">Categories</div></div>`;
+    html += `<div class="bg-gradient-to-br from-[#131a2e] to-[#0d1220] rounded-xl p-3 sm:p-4 border border-emerald-500/10 text-center"><div class="stats-number">100%</div><div class="text-xs text-gray-400 mt-1">Free / BPSC Focused</div></div>`;
+    html += `<div class="bg-gradient-to-br from-[#131a2e] to-[#0d1220] rounded-xl p-3 sm:p-4 border border-purple-500/10 text-center"><div class="stats-number">🏆</div><div class="text-xs text-gray-400 mt-1">Mnemonic Inside!</div></div></div>`;
+
+    // ===== Search & Filters =====
+    html += `<div class="mb-6 space-y-4">`;
+    html += `<div class="relative max-w-xl mx-auto sm:mx-0">`;
+    html += `<i class="fa-solid fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-500 text-sm"></i>`;
+    html += `<input type="text" id="search-input" class="search-input" placeholder="Search any term..." autocomplete="off">`;
+    html += `</div>`;
+    html += `<div class="flex flex-wrap gap-2" id="filter-buttons">`;
+    categories.forEach((cat, i) => {
+      html += `<button class="cat-filter-btn ${i === 0 ? 'active' : ''}" data-cat="${cat}">${cat}</button>`;
+    });
+    html += `</div></div>`;
+
+    // ===== Terms Grid =====
+    html += `<div id="terms-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">`;
+
+    terms.forEach((t, idx) => {
+      const catColors = {
+        'Microeconomics': 'text-blue-300 bg-blue-500/15 border-blue-500/25',
+        'Macroeconomics': 'text-amber-300 bg-amber-500/15 border-amber-500/25',
+        'Banking & Finance': 'text-emerald-300 bg-emerald-500/15 border-emerald-500/25',
+        'International Economics': 'text-purple-300 bg-purple-500/15 border-purple-500/25',
+        'Public Finance': 'text-pink-300 bg-pink-500/15 border-pink-500/25',
+        'Development Economics': 'text-teal-300 bg-teal-500/15 border-teal-500/25'
+      };
+      const termColors = {
+        'Microeconomics': 'text-blue-300',
+        'Macroeconomics': 'text-amber-300',
+        'Banking & Finance': 'text-emerald-300',
+        'International Economics': 'text-purple-300',
+        'Public Finance': 'text-pink-300',
+        'Development Economics': 'text-teal-300'
+      };
+
+      html += `<div class="term-card cat-${t.catClass} scroll-reveal" data-category="${t.cat}" data-term="${t.term.toLowerCase()}">`;
+      html += `<div class="flex items-start justify-between gap-3">`;
+      html += `<div class="flex-1 min-w-0">`;
+      html += `<div class="flex items-center gap-2 flex-wrap">`;
+      html += `<span class="font-bold text-base sm:text-lg ${termColors[t.cat]}">${t.term}</span>`;
+      html += `<span class="category-badge ${catColors[t.cat]} border"><i class="fa-solid fa-tag text-[0.5rem]"></i>${t.cat}</span>`;
+      html += `</div>`;
+      html += `<p class="text-gray-400 text-sm mt-1 leading-relaxed">${t.definition}</p>`;
+      html += `</div>`;
+      html += `<div class="flex-shrink-0 mt-1">`;
+      html += `<i class="fa-solid fa-chevron-down expand-icon text-gray-500 text-sm"></i>`;
+      html += `</div></div>`;
+
+      // ===== Expandable Details =====
+      html += `<div class="term-details">`;
+      html += `<div class="border-t border-gray-700/30 pt-3 space-y-3">`;
+
+      // Formula
+      html += `<div class="info-box formula-box"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-square-root-variable text-blue-400 text-xs"></i><span class="font-semibold text-blue-300 text-xs uppercase tracking-wider">Formula</span></div><div>${t.formula}</div></div>`;
+
+      // Real-world Example
+      html += `<div class="info-box example-box"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-lightbulb text-emerald-400 text-xs"></i><span class="font-semibold text-emerald-300 text-xs uppercase tracking-wider">Real-World Example</span></div><div>${t.example}</div></div>`;
+
+      // Mnemonic
+      html += `<div class="info-box mnemonic-box"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-brain text-amber-400 text-xs"></i><span class="font-semibold text-amber-300 text-xs uppercase tracking-wider">Memory Tip / Mnemonic</span></div><div>${t.mnemonic}</div></div>`;
+
+      // Fun Fact
+      html += `<div class="info-box funfact-box"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-star text-purple-400 text-xs"></i><span class="font-semibold text-purple-300 text-xs uppercase tracking-wider">Fun Fact / Stimulation Tip</span></div><div>${t.funfact}</div></div>`;
+
+      html += `</div></div>`;
+      html += `</div>`;
+    });
+
+    html += `</div>`; // end terms-container
+
+    // ===== Footer =====
+    html += `<div class="text-center py-6 border-t border-gray-800 mt-8">
+      <p class="text-xs text-gray-600">
+        <i class="fa-regular fa-copyright mr-1"></i> 2026 BPSC Economics Terms — 100+ Essential Concepts with Mnemonics
+      </p>
+      <p class="text-[10px] text-gray-700 mt-1">Compiled for Bihar Public Service Commission (BPSC) and UPSC competitive exam preparation. Learn smart with mnemonics!</p>
+    </div>`;
+
+    app.innerHTML = html;
+
+    // ======================= INTERACTIVITY =======================
+
+    // Expand/Collapse
+    document.querySelectorAll('.term-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        // Don't toggle if user selected text
+        if (window.getSelection().toString().length > 0) return;
+        card.classList.toggle('active');
+      });
+    });
+
+    // Search Filter
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase().trim();
+      const activeCat = document.querySelector('.cat-filter-btn.active').dataset.cat;
+      document.querySelectorAll('.term-card').forEach(card => {
+        const term = card.dataset.term;
+        const cat = card.dataset.category;
+        const matchesSearch = term.includes(q);
+        const matchesCat = activeCat === 'All' || cat === activeCat;
+        if (matchesSearch && matchesCat) {
+          card.style.display = '';
+          setTimeout(() => { card.style.opacity = '1'; }, 10);
+        } else {
+          card.style.opacity = '0';
+          setTimeout(() => { card.style.display = 'none'; }, 300);
+        }
+      });
+    });
+
+    // Category Filter
+    document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        // Trigger search
+        const event = new Event('input');
+        searchInput.dispatchEvent(event);
+      });
+    });
+
+    // Intersection Observer for scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+  });
+</script>
+</body>
+</html>

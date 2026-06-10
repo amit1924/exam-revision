@@ -1,0 +1,403 @@
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0b0f1a; }
+    @media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+    .gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); }
+    .gradient-card-2 { background: linear-gradient(145deg, #1c1917, #0f172a); }
+    .gradient-card-3 { background: linear-gradient(145deg, #0f1a1f, #0f172a); }
+    .gradient-card-4 { background: linear-gradient(145deg, #1a0f1f, #0f172a); }
+    .hl-dynasty { color: #fbbf24; font-weight: 600; }
+    .hl-ruler { color: #60a5fa; font-weight: 600; }
+    .hl-date { color: #a78bfa; font-weight: 500; }
+    .hl-policy { color: #34d399; font-weight: 600; }
+    .hl-event { color: #fb923c; font-weight: 600; }
+    .hl-term { color: #2dd4bf; font-weight: 600; }
+    .hl-battle { color: #ef4444; font-weight: 600; }
+    .hl-place { color: #a3e635; font-weight: 500; }
+    .hl-num { color: #c084fc; font-weight: 600; }
+    .hl-bg-dynasty { background: rgba(251,191,36,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-ruler { background: rgba(96,165,250,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-date { background: rgba(167,139,250,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-policy { background: rgba(52,211,153,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-event { background: rgba(251,146,60,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-term { background: rgba(45,212,191,0.15); padding: 0 4px; border-radius: 3px; }
+    .hl-bg-battle { background: rgba(239,68,68,0.15); padding: 0 4px; border-radius: 3px; }
+    .section-heading { font-size: 1.25rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+    @media (max-width: 640px) { .section-heading { font-size: 1rem; } }
+    .subsection-heading { font-size: 1.05rem; font-weight: 600; color: #e2e8f0; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; margin-top: 1rem; }
+    .content-text { font-size: 0.9rem; line-height: 1.75; color: #cbd5e1; margin-bottom: 0.5rem; }
+    @media (max-width: 640px) { .content-text { font-size: 0.8rem; line-height: 1.6; } }
+    .bullet-list { list-style: none; padding-left: 1rem; }
+    .bullet-list li { position: relative; padding-left: 1.25rem; margin-bottom: 0.35rem; font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
+    .bullet-list li::before { content: '\f111'; font-family: 'Font Awesome 6 Free'; font-weight: 400; position: absolute; left: 0; top: 0.35rem; font-size: 0.4rem; color: #6366f1; }
+    .timeline-item { border-left: 2px solid #6366f1; padding-left: 1rem; margin-bottom: 0.75rem; position: relative; }
+    .timeline-item::before { content: ''; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: #818cf8; }
+    .timeline-year { color: #a78bfa; font-weight: 700; font-size: 0.85rem; }
+    .fact-box { background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08)); border: 1px solid rgba(99,102,241,0.2); border-radius: 0.75rem; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+    .fact-box-title { font-size: 0.8rem; font-weight: 600; color: #818cf8; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.5rem; }
+    .fact-box-content { font-size: 0.82rem; color: #94a3b8; line-height: 1.6; }
+    .table-wrap { overflow-x: auto; margin: 0.75rem 0; }
+    .table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .table-wrap th { background: rgba(99,102,241,0.15); color: #a5b4fc; padding: 0.5rem 0.75rem; text-align: left; border-bottom: 1px solid rgba(99,102,241,0.3); font-weight: 600; }
+    .table-wrap td { padding: 0.4rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+<div id="app" class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8"></div>
+<script>
+const DATA = {
+  title: "British India (1900-1947): Nationalism, Freedom Struggle & Partition",
+  location: "NCERT Class 8-12 History Complete Compilation",
+  last_updated: "2026-06-10"
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  let h = '';
+
+  // HEADER
+  h += '<div class="gradient-top rounded-2xl p-4 sm:p-8 mb-6 border border-indigo-500/20 text-center sm:text-left">';
+  h += '<div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-3">';
+  h += '<div><div class="flex items-center gap-3 mb-2 justify-center sm:justify-start">';
+  h += '<i class="fa-solid fa-flag text-2xl sm:text-3xl text-orange-400"></i>';
+  h += '<h1 class="text-xl sm:text-3xl font-bold text-white">' + DATA.title + '</h1></div>';
+  h += '<p class="text-indigo-300 text-sm flex items-center gap-2 justify-center sm:justify-start">';
+  h += '<i class="fa-solid fa-book text-rose-400"></i> ' + DATA.location + '</p>';
+  h += '<p class="text-gray-500 text-xs mt-1"><i class="fa-regular fa-calendar mr-1"></i>Updated: ' + DATA.last_updated + '</p></div>';
+  h += '<div class="flex items-center gap-2 text-xs text-gray-400 bg-black/30 px-4 py-2 rounded-xl border border-gray-700/50 whitespace-nowrap">';
+  h += '<i class="fa-regular fa-clock"></i><span>47 Years (1900-1947)</span></div></div>';
+  h += '<div class="mt-3 flex flex-wrap gap-2 justify-center sm:justify-start">';
+  h += '<span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 text-xs border border-indigo-500/20"><i class="fa-solid fa-check-circle text-emerald-400 mr-1"></i>NCERT Based</span>';
+  h += '<span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs border border-amber-500/20"><i class="fa-solid fa-star mr-1"></i>UPSC Level</span>';
+  h += '<span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-300 text-xs border border-rose-500/20"><i class="fa-solid fa-flag mr-1"></i>Zero to Advance</span>';
+  h += '</div></div>';
+  h += '<div class="mb-6 gradient-card-1 rounded-xl p-4 border border-gray-700/30">';
+  h += '<h2 class="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2"><i class="fa-solid fa-list text-indigo-400"></i> Table of Contents</h2>';
+  h += '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 text-xs sm:text-sm">';
+  h += '<a href="#part1" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">1. India in 1900: The Colonial State</a>';
+  h += '<a href="#part2" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">2. Partition of Bengal & Swadeshi (1905-1908)</a>';
+  h += '<a href="#part3" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">3. Rise of Extremism & Surat Split (1907)</a>';
+  h += '<a href="#part4" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">4. Muslim League (1906) & Morley-Minto (1909)</a>';
+  h += '<a href="#part5" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">5. Revolutionary Phase I (1907-1917)</a>';
+  h += '<a href="#part6" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">6. Home Rule & Lucknow Pact (1916)</a>';
+  h += '<a href="#part7" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">7. Gandhi\'s Early Satyagrahas (1917-1918)</a>';
+  h += '<a href="#part8" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">8. Rowlatt Act & Jallianwala Bagh (1919)</a>';
+  h += '<a href="#part9" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">9. Khilafat & Non-Cooperation (1920-1922)</a>';
+  h += '<a href="#part10" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">10. Swaraj Party & Revolutionary Phase II</a>';
+  h += '<a href="#part11" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">11. Simon Commission & Nehru Report (1928)</a>';
+  h += '<a href="#part12" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">12. Civil Disobedience & Dandi March (1930)</a>';
+  h += '<a href="#part13" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">13. Round Table Conferences & Poona Pact</a>';
+  h += '<a href="#part14" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">14. Government of India Act 1935 & Prov. Elections</a>';
+  h += '<a href="#part15" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">15. WWII, August Offer & Cripps Mission (1940-42)</a>';
+  h += '<a href="#part16" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">16. Quit India Movement (1942)</a>';
+  h += '<a href="#part17" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">17. INA & Subhas Chandra Bose (1942-45)</a>';
+  h += '<a href="#part18" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">18. Bengal Famine (1943)</a>';
+  h += '<a href="#part19" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">19. Wavell Plan & Simla Conference (1945)</a>';
+  h += '<a href="#part20" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">20. INA Trials & Navy Mutiny (1945-46)</a>';
+  h += '<a href="#part21" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">21. Cabinet Mission & Interim Govt (1946)</a>';
+  h += '<a href="#part22" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">22. Partition & Independence (1947)</a>';
+  h += '<a href="#part23" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">23. Integration of Princely States</a>';
+  h += '<a href="#timeline" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">24. Complete Timeline (1900-1947)</a>';
+  h += '<a href="#viceroys" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">25. Viceroys of India (1900-1947)</a>';
+  h += '<a href="#acts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">26. British Constitutional Acts (1858-1947)</a>';
+  h += '<a href="#upsc-facts" class="text-indigo-300 hover:text-indigo-200 hover:bg-indigo-500/10 rounded-lg p-2 transition">27. UPSC Key Facts at a Glance</a>';
+  h += '</div></div>';
+
+  // PART 1: INDIA IN 1900
+  h += '<section id="part1">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-landmark text-amber-400"></i> 1. India in 1900: The Colonial State</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-gray-700/30">';
+  h += '<p class="content-text">By <span class="hl-date">1900</span>, the British Empire in India was at its zenith. India was the <span class="hl-term hl-bg-term">"Jewel in the Crown"</span> of the British Empire. Queen Victoria had been proclaimed <span class="hl-term">Empress of India</span> in <span class="hl-date">1877</span>. The <span class="hl-event">Government of India Act 1858</span> had transferred power from the East India Company to the British Crown. India was ruled directly through a <span class="hl-term">Viceroy</span> who was the representative of the British monarch.</p>';
+  h += '<h3 class="subsection-heading"><i class="fa-solid fa-building-columns text-cyan-400 text-xs"></i> Administrative Structure</h3>';
+  h += '<ul class="bullet-list"><li><span class="hl-term">Secretary of State for India</span> - British Cabinet member in London, assisted by 15-member Council of India.</li><li><span class="hl-term">Viceroy & Governor-General</span> - head of Indian administration, governed from Calcutta (shifted to Delhi in 1911).</li><li><span class="hl-term">Executive Council</span> - Viceroy + 6 members (no Indian member until 1909 when Satyendra Prasanna Sinha was appointed as Law Member).</li><li><span class="hl-term">Imperial Legislative Council</span> - advisory body, could not control finances or question executive.</li><li><span class="hl-term">Provinces</span> - Madras, Bombay, Bengal, UP, Punjab, Central Provinces, etc., each with a Governor.</li><li><span class="hl-term">Princely States</span> - about 565 states ruled by Indian princes under British paramountcy.</li></ul>';
+  h += '<h3 class="subsection-heading"><i class="fa-solid fa-scale-balanced text-cyan-400 text-xs"></i> Economic Condition</h3>';
+  h += '<p class="content-text">India\'s economy was structured to serve British interests. <span class="hl-term hl-bg-term">Drain of Wealth</span> theory (Dadabhai Naoroji): India\'s wealth was being drained to Britain through home charges, salaries, pensions, and profits. India was a supplier of raw materials (cotton, jute, indigo, tea, opium) and a market for British manufactured goods. <span class="hl-event">Deindustrialisation</span> destroyed traditional handicrafts. Famines were frequent - the Great Famine of 1876-78 killed 5-10 million, the Famine of 1896-97 killed 4-5 million.</p>';
+  h += '<h3 class="subsection-heading"><i class="fa-solid fa-people-group text-cyan-400 text-xs"></i> Society & Education</h3>';
+  h += '<p class="content-text">English-educated middle class emerged - lawyers, doctors, journalists, civil servants. They were influenced by Western ideas of liberty, equality, democracy, nationalism. Social reform movements: Brahmo Samaj, Arya Samaj, Ramakrishna Mission, Theosophical Society. Lord Macaulay\'s Minute (1835) established English as the medium of higher education. Universities were established in Calcutta, Bombay, Madras (1857). The Ilbert Bill controversy (1883) exposed racial attitudes of the British.</p>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The <span class="hl-term">Indian National Congress</span> was founded in <span class="hl-date">December 1885</span> at Bombay by <span class="hl-ruler">A.O. Hume</span>, a retired British civil servant. 72 delegates attended the first session. W.C. Bonnerji was the first President. The early Congress was <span class="hl-term hl-bg-term">"moderate"</span> in approach - it believed in constitutional methods, prayers and petitions, and had faith in British justice and fair play.</div></div>';
+  h += '</div></section>';
+
+  // PART 2: PARTITION OF BENGAL
+  h += '<section id="part2">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-cut text-amber-400"></i> 2. Partition of Bengal (1905) & Swadeshi Movement</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<h3 class="subsection-heading"><i class="fa-solid fa-circle-exclamation text-red-400 text-xs"></i> The Partition (16 October 1905)</h3>';
+  h += '<p class="content-text"><span class="hl-ruler hl-bg-ruler">Viceroy Lord Curzon</span> announced the partition of Bengal on <span class="hl-date">16 October 1905</span>. Bengal was the largest province of British India, covering Bengal, Bihar, and parts of Orissa and Assam. The British officially argued "administrative convenience" but the real motive was <span class="hl-event hl-bg-event">to divide and rule</span> - to curtail the growing influence of Bengali politicians and split the Bengali people along religious lines. East Bengal & Assam (Muslim-majority) and West Bengal (Hindu-majority) were created.</p>';
+  h += '<h3 class="subsection-heading"><i class="fa-solid fa-fire text-red-400 text-xs"></i> Swadeshi & Boycott Movement (1905-1908)</h3>';
+  h += '<p class="content-text">The Swadeshi Movement was launched to oppose British rule and promote indigenous industry. It involved boycott of British goods, promotion of swadeshi goods, national education, and mass mobilization. Leaders: <span class="hl-ruler">Bal Gangadhar Tilak</span>, <span class="hl-ruler">Bipin Chandra Pal</span>, <span class="hl-ruler">Lala Lajpat Rai</span> (the <span class="hl-term">Lal-Bal-Pal</span> trio), <span class="hl-ruler">Aurobindo Ghosh</span>, <span class="hl-ruler">Surendranath Banerjee</span>.</p>';
+  h += '<p class="content-text">Tilak gave the slogan: <span class="hl-term">"Swaraj is my birthright and I shall have it!"</span> The movement saw the first use of mass boycott as a political weapon. It spread beyond Bengal to Maharashtra, Punjab, and Madras. The song <span class="hl-term">"Vande Mataram"</span> (Bankim Chandra Chattopadhyay) became the rallying cry.</p>';
+  h += '</div></section>';
+
+  // PART 3: EXTREMISM & SURAT SPLIT
+  h += '<section id="part3">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-people-arrows text-amber-400"></i> 3. Rise of Extremism & Surat Split (1907)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">By the 1890s, leaders like <span class="hl-ruler">Bal Gangadhar Tilak</span>, <span class="hl-ruler">Bipin Chandra Pal</span>, and <span class="hl-ruler">Lala Lajpat Rai</span> (<span class="hl-term hl-bg-term">Lal-Bal-Pal</span>) criticized the Moderates for their "politics of prayers" and demanded direct action, mass mobilization, and swaraj. At the <span class="hl-date">Surat session (December 1907)</span>, the Congress split - the Moderates wanted to expel Tilak, while the Extremists wanted to extend Swadeshi beyond Bengal. Violent clashes broke out and the session was dissolved.</p>';
+  h += '<p class="content-text">The <span class="hl-event hl-bg-event">Surat Split (1907)</span> weakened the national movement temporarily. The British government launched a crackdown - Tilak was arrested in 1908 and deported to Mandalay (Burma) for 6 years. B.C. Pal and Aurobindo Ghosh retired from active politics. The two wings reunited only in <span class="hl-date">1915</span> at the Bombay session.</p>';
+  h += '</div></section>';
+
+  // PART 4: MUSLIM LEAGUE & MORLEY-MINTO
+  h += '<section id="part4">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-handshake text-amber-400"></i> 4. Muslim League (1906) & Morley-Minto Reforms (1909)</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">';
+  h += '<p class="content-text">The <span class="hl-term hl-bg-term">All India Muslim League</span> was founded on <span class="hl-date">30 December 1906</span> at Dacca. It was formed by Muslim landlords, nawabs, and professionals led by <span class="hl-ruler">Nawab Salimullah of Dacca</span>, <span class="hl-ruler">Aga Khan</span> (first president), and others. The League supported the partition of Bengal and demanded separate electorates for Muslims.</p>';
+  h += '<p class="content-text"><span class="hl-term hl-bg-event">Morley-Minto Reforms (Indian Councils Act 1909)</span> introduced separate electorates for Muslims for the first time. It also increased council sizes, allowed members to move resolutions and ask questions, and appointed <span class="hl-ruler">Satyendra Prasanna Sinha</span> as the first Indian member of Viceroy\'s Executive Council. This was a historic step in institutionalizing communalism.</p>';
+  h += '</div></section>';
+
+  // PART 5: REVOLUTIONARY PHASE I
+  h += '<section id="part5">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-bomb text-amber-400"></i> 5. Revolutionary Movement Phase I (1907-1917)</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">Disillusioned with constitutional methods, young radicals believed that armed struggle alone could liberate India. Revolutionary societies: Anushilan Samiti (Calcutta), Jugantar (Calcutta - Alipore Bomb Conspiracy 1908), India House (London - Shyamji Krishnavarma), Abhinav Bharat (Maharashtra - V.D. Savarkar), Ghadar Party (USA/Canada). Major events: Khudiram Bose hanged (1908), Madan Lal Dhingra assassinates Curzon Wyllie (1909), Delhi-Lahore Conspiracy (1912), Ghadar Conspiracy (1915).</p>';
+  h += '</div></section>';
+
+  // PART 6: HOME RULE & LUCKNOW PACT
+  h += '<section id="part6">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-house text-amber-400"></i> 6. Home Rule Movement & Lucknow Pact (1916)</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">';
+  h += '<p class="content-text"><span class="hl-event hl-bg-event">World War I (1914-1918)</span>: India contributed 1.3 million soldiers. The war caused economic hardship, forced recruitment, and political awakening. Two Home Rule Leagues were established in 1916: <span class="hl-ruler">Bal Gangadhar Tilak</span> (Pune, April 1916) and <span class="hl-ruler">Annie Besant</span> (Madras, September 1916). The movement demanded self-government within the British Empire.</p>';
+  h += '<p class="content-text"><span class="hl-event hl-bg-event">Lucknow Pact (December 1916)</span>: Two historic events - Congress reunification (Moderates + Extremists) and Congress-Muslim League pact. Congress accepted separate electorates for Muslims; Muslim League supported self-government. It was a high point of Hindu-Muslim unity.</p>';
+  h += '</div></section>';
+
+  // PART 7: GANDHI'S EARLY SATYAGRAHAS
+  h += '<section id="part7">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-spa text-amber-400"></i> 7. Gandhi\'s Early Satyagrahas (1917-1918)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-emerald-500/20">';
+  h += '<p class="content-text"><span class="hl-ruler hl-bg-ruler">Mahatma Gandhi</span> returned to India from South Africa on 9 January 1915. He first experimented with Satyagraha at: (1) <span class="hl-date">1917</span> - <span class="hl-event hl-bg-event">Champaran Satyagraha (Bihar)</span> for indigo plantation workers; (2) <span class="hl-date">1918</span> - <span class="hl-event hl-bg-event">Kheda Satyagraha (Gujarat)</span> against land revenue collection during crop failure; (3) <span class="hl-date">1918</span> - <span class="hl-event hl-bg-event">Ahmedabad Mill Strike</span> for better wages (first use of fasting).</p>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">Gandhi\'s <span class="hl-term">Hind Swaraj (1909)</span> outlined his philosophy: British rule was established with Indian cooperation; if Indians refused to cooperate, British rule would collapse. This became the basis of the Non-Cooperation Movement.</div></div>';
+  h += '</div></section>';
+
+  // PART 8: ROWLATT ACT & JALLIANWALA BAGH
+  h += '<section id="part8">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-skull text-amber-400"></i> 8. Rowlatt Act (1919) & Jallianwala Bagh Massacre</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">The <span class="hl-term">Rowlatt Act (March 1919)</span> gave the government draconian powers - arrest without trial for 2 years, search without warrant, suspend habeas corpus. Gandhi called for a nationwide hartal on 6 April 1919. On <span class="hl-date hl-bg-date">13 April 1919</span>, <span class="hl-event hl-bg-event">Jallianwala Bagh Massacre</span> occurred in Amritsar. <span class="hl-ruler hl-bg-ruler">General Reginald Dyer</span> ordered troops to fire on an unarmed crowd, killing 379+ (official) or 1000+ (Indian estimates). Tagore returned his knighthood in protest.</p>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-info"></i> NCERT Key Concept</div><div class="fact-box-content">The Jallianwala Bagh massacre shattered any remaining faith in British justice. It was a turning point - Gandhi decided to launch a mass non-cooperation movement.</div></div>';
+  h += '</div></section>';
+
+  // PART 9: KHILAFAT & NON-COOPERATION
+  h += '<section id="part9">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-hands text-amber-400"></i> 9. Khilafat & Non-Cooperation Movement (1920-1922)</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<p class="content-text">After WWI, the Ottoman Empire was dismembered. Indian Muslims (Ali brothers) formed the <span class="hl-term">Khilafat Committee (March 1919)</span> to defend the Caliph. Gandhi saw this as an opportunity for Hindu-Muslim unity. At the Nagpur session (Dec 1920), Congress launched the <span class="hl-event hl-bg-event">Non-Cooperation Movement</span> with a programme of surrendering titles, boycotting councils/courts/schools, and promoting swadeshi.</p>';
+  h += '<p class="content-text">The movement was unprecedented in scale - students left schools, lawyers gave up practice, foreign cloth imports fell by half. On <span class="hl-date">5 February 1922</span>, at <span class="hl-place">Chauri Chaura (Gorakhpur, UP)</span>, a violent clash killed 22 policemen. Gandhi <span class="hl-event hl-bg-event">withdrew the movement</span> on 12 February 1922, staying true to non-violence. He was arrested on 10 March 1922 and sentenced to 6 years.</p>';
+  h += '</div></section>';
+
+  // PART 10: SWARAJ PARTY & REVOLUTIONARY PHASE II
+  h += '<section id="part10">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-building text-amber-400"></i> 10. Swaraj Party & Revolutionary Phase II</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">';
+  h += '<p class="content-text">After NCM withdrawal, <span class="hl-ruler">C.R. Das</span> and <span class="hl-ruler">Motilal Nehru</span> formed the <span class="hl-term hl-bg-event">Swaraj Party (March 1923)</span> to enter legislatures and obstruct the government. Major revolutionary events of the 1920s: <span class="hl-event">Kakori Train Conspiracy (1925)</span> by HRA (Ram Prasad Bismil, Ashfaqulla Khan); <span class="hl-event">HSRA (1928)</span> formed by Bhagat Singh, Sukhdev, Chandrashekhar Azad; <span class="hl-event">Saunders assassination (Dec 1928)</span> to avenge Lala Lajpat Rai\'s death; <span class="hl-event">Central Assembly Bomb (8 Apr 1929)</span> by Bhagat Singh & Dutt; <span class="hl-event">Chittagong Armoury Raid (1930)</span> by Surya Sen (Masterda). <span class="hl-ruler hl-bg-ruler">Bhagat Singh, Rajguru, Sukhdev</span> were hanged on <span class="hl-date">23 March 1931</span> (Shaheed Diwas).</p>';
+  h += '</div></section>';
+
+  // PART 11: SIMON COMMISSION & NEHRU REPORT
+  h += '<section id="part11">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-chalkboard text-amber-400"></i> 11. Simon Commission (1928) & Nehru Report (1928)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20">';
+  h += '<p class="content-text">The <span class="hl-term">Simon Commission (1927)</span> had 7 British members - no Indian. It was met with <span class="hl-term hl-bg-event">"Simon Go Back"</span> protests across India. At Lahore, <span class="hl-ruler">Lala Lajpat Rai</span> died from lathi blows (17 Nov 1928). The <span class="hl-term">Nehru Report (Aug 1928)</span> by Motilal Nehru demanded Dominion Status, joint electorates, and fundamental rights. It was rejected by the Muslim League, and <span class="hl-ruler">Jinnah</span> proposed <span class="hl-term">Fourteen Points (March 1929)</span> demanding separate electorates.</p>';
+  h += '<p class="content-text">At the <span class="hl-date">Lahore Session (Dec 1929)</span> presided by <span class="hl-ruler">Jawaharlal Nehru</span>, Congress passed the <span class="hl-term hl-bg-event">"Purna Swaraj" (Complete Independence)</span> resolution. <span class="hl-date">26 January 1930</span> was celebrated as the first Independence Day.</p>';
+  h += '</div></section>';
+
+  // PART 12: CIVIL DISOBEDIENCE & DANDI MARCH
+  h += '<section id="part12">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-person-walking text-amber-400"></i> 12. Civil Disobedience Movement & Dandi March (1930)</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<p class="content-text">Gandhi chose the salt tax as the issue. On <span class="hl-date">12 March 1930</span>, he started the <span class="hl-event hl-bg-event">Dandi March</span> from Sabarmati Ashram with 78 volunteers, walking 240 miles in 24 days. On <span class="hl-date">6 April 1930</span>, he broke the salt law at Dandi. This triggered mass civil disobedience - salt law violations, boycott of foreign cloth, refusal of land revenue. About 100,000 people were arrested.</p>';
+  h += '<p class="content-text"><span class="hl-event">Gandhi-Irwin Pact (5 March 1931)</span>: Civil Disobedience was called off, political prisoners released, and Congress agreed to attend the Second Round Table Conference. The Pact was criticized as Bhagat Singh and others were not released.</p>';
+  h += '</div></section>';
+
+  // PART 13: ROUND TABLE CONFERENCES & POONA PACT
+  h += '<section id="part13">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-comments text-amber-400"></i> 13. Round Table Conferences & Poona Pact (1930-1932)</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20">';
+  h += '<p class="content-text"><span class="hl-event">First RTC (1930-31)</span>: Congress boycotted. <span class="hl-event">Second RTC (1931)</span>: Gandhi attended; failed on separate electorates issue. <span class="hl-event">Third RTC (1932)</span>: Congress boycotted. The <span class="hl-term hl-bg-event">Communal Award (16 Aug 1932)</span> by Ramsay MacDonald granted separate electorates for Dalits. Gandhi began a "fast unto death" on 20 Sep 1932 in Yerwada Jail. The <span class="hl-term hl-bg-event">Poona Pact (24 Sep 1932)</span> between Gandhi and <span class="hl-ruler">Dr. B.R. Ambedkar</span> replaced separate electorates with reserved seats (148 seats for Dalits in provincial legislatures).</p>';
+  h += '</div></section>';
+
+  // PART 14: GOVERNMENT OF INDIA ACT 1935
+  h += '<section id="part14">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-file-lines text-amber-400"></i> 14. Government of India Act 1935 & Provincial Elections</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-green-500/20">';
+  h += '<p class="content-text">The <span class="hl-term hl-bg-event">Government of India Act 1935</span> (321 sections, 10 schedules) proposed an All-India Federation (never implemented), introduced Provincial Autonomy (diarchy abolished in provinces), bicameral legislature at centre, Federal Court, RBI, and separate electorates. <span class="hl-date">Provincial elections (1937)</span>: Congress won in 8 of 11 provinces and formed ministries. The Muslim League performed poorly. Congress ministries resigned in Oct-Nov 1939 when Britain declared India a belligerent in WWII without consulting Indians. Jinnah celebrated 22 Dec 1939 as "Deliverance Day".</p>';
+  h += '</div></section>';
+
+  // PART 15: AUGUST OFFER & CRIPPS MISSION
+  h += '<section id="part15">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-truck-plane text-amber-400"></i> 15. WWII, August Offer (1940) & Cripps Mission (1942)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text"><span class="hl-event">August Offer (8 Aug 1940)</span>: Viceroy Linlithgow offered Dominion Status after the war, but Congress rejected it. <span class="hl-event">Individual Satyagraha (1940-41)</span>: Selected individuals offered non-violent protest; 25,000 arrested. <span class="hl-event">Cripps Mission (Mar 1942)</span>: Sir Stafford Cripps offered a Constituent Assembly after the war, but provinces could opt out - effectively recognizing the right of partition. Both Congress and Muslim League rejected it. Gandhi called it a "post-dated cheque on a failing bank".</p>';
+  h += '</div></section>';
+
+  // PART 16: QUIT INDIA MOVEMENT
+  h += '<section id="part16">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-right-from-bracket text-amber-400"></i> 16. Quit India Movement (August 1942)</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">The <span class="hl-event hl-bg-event">Quit India Movement (Bharat Chhodo Andolan)</span> was the final mass movement. The AICC passed the resolution on <span class="hl-date">8 August 1942</span> at Bombay. Gandhi gave the call <span class="hl-term">"Do or Die" (Karo Ya Maro)</span>. On <span class="hl-date">9 August 1942</span> (before dawn), all Congress leaders were arrested. Without leadership, the movement became spontaneous and decentralized - mass protests, strikes, destruction of government property. Parallel governments were established in Ballia, Tamluk, Satara. Over 100,000 arrested, 2,500+ killed, 10,000+ injured. By 1944, the British suppressed it, but it convinced Britain they could no longer rule India.</p>';
+  h += '</div></section>';
+
+  // PART 17: INA & SUBHAS CHANDRA BOSE
+  h += '<section id="part17">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-military text-amber-400"></i> 17. Indian National Army & Subhas Chandra Bose (1942-45)</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<p class="content-text"><span class="hl-ruler hl-bg-ruler">Subhas Chandra Bose (Netaji)</span> was Congress President (1938, 1939). He escaped India and reached Singapore in July 1943 to lead the <span class="hl-term">Indian National Army (Azad Hind Fauj)</span>. He formed the <span class="hl-term hl-bg-event">Provisional Government of Free India (21 Oct 1943)</span> in Singapore, recognized by 9 countries. The INA had 40,000-50,000 soldiers including the Rani Jhansi Regiment (women\'s unit). Slogans: "Delhi Chalo!", "Jai Hind", "Tum Mujhe Khoon Do, Main Tumhe Azadi Dunga". INA fought in the Burma campaign (1944). Bose died in a plane crash at Taipei on 18 August 1945.</p>';
+  h += '</div></section>';
+
+  // PART 18: BENGAL FAMINE
+  h += '<section id="part18">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-skull-crossbones text-amber-400"></i> 18. Bengal Famine (1943)</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">An estimated <span class="hl-num">2.1 to 3 million</span> people died in the Bengal Famine of 1943. Causes: British "denial policy" (removing rice and boats from coastal areas), continued export of food grains, war-time inflation, hoarding, and the British government\'s indifferent response (Churchill diverted food supplies). The famine exposed the callousness of British rule.</p>';
+  h += '</div></section>';
+
+  // PART 19: WAVELL PLAN & SIMLA CONFERENCE
+  h += '<section id="part19">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-handshake text-amber-400"></i> 19. Wavell Plan & Simla Conference (1945)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">';
+  h += '<p class="content-text"><span class="hl-term">Wavell Plan (June 1945)</span>: proposed reconstitution of Viceroy\'s Executive Council with all Indian members except Viceroy and C-in-C, and communal parity. The <span class="hl-event">Simla Conference (June-July 1945)</span> failed because Jinnah insisted the Muslim League was the sole representative of Indian Muslims and demanded all Muslim seats. This failure convinced Jinnah that only Pakistan could protect Muslim interests.</p>';
+  h += '</div></section>';
+
+  // PART 20: INA TRIALS & NAVY MUTINY
+  h += '<section id="part20">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-gavel text-amber-400"></i> 20. INA Trials (1945-46) & Royal Indian Navy Mutiny (1946)</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-red-500/20">';
+  h += '<p class="content-text">The British put three INA officers (Shah Nawaz Khan, Prem Sahgal, Gurbaksh Singh Dhillon) on trial at Red Fort (Nov 1945). Nationwide protests erupted - "Lal Qila Chalo" became a rallying cry. The <span class="hl-event">Royal Indian Navy Mutiny (18-23 Feb 1946)</span> at Bombay spread to 78 ships and 20,000 ratings, who hoisted the tricolor. These events revealed that the loyalty of the armed forces could no longer be taken for granted.</p>';
+  h += '</div></section>';
+
+  // PART 21: CABINET MISSION
+  h += '<section id="part21">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-users-between-lines text-amber-400"></i> 21. Cabinet Mission (1946) & Interim Government</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20">';
+  h += '<p class="content-text">The <span class="hl-term hl-bg-event">Cabinet Mission (March 1946)</span> consisted of Pethick-Lawrence, Cripps, and Alexander. It rejected Pakistan, proposed a federal union with weak centre (defence, foreign affairs, communications only), and grouped provinces into three sections (A, B, C). Congress accepted but rejected compulsory grouping; Muslim League accepted but withdrew after Nehru\'s statement. An <span class="hl-term">Interim Government</span> was formed on 2 Sep 1946 under Nehru. Jinnah called <span class="hl-event hl-bg-event">Direct Action Day (16 Aug 1946)</span> leading to the Great Calcutta Killing (4,000+ dead). Violence spread to Noakhali, Bihar, and Punjab.</p>';
+  h += '</div></section>';
+
+  // PART 22: PARTITION & INDEPENDENCE
+  h += '<section id="part22">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-flag-checkered text-amber-400"></i> 22. Partition & Independence (1947)</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<p class="content-text">Attlee announced (20 Feb 1947) British withdrawal by June 1948. <span class="hl-ruler">Lord Mountbatten</span> became last Viceroy. The <span class="hl-event">Mountbatten Plan (3 June 1947)</span> proposed partition into India and Pakistan. The <span class="hl-event">Indian Independence Act (18 July 1947)</span> created two dominions. India became independent at <span class="hl-date hl-bg-event">midnight, 14-15 August 1947</span>. Nehru delivered the "Tryst with Destiny" speech. The partition caused the largest mass migration in history (15 million displaced) and 1-2 million deaths. <span class="hl-ruler">Gandhi</span> was assassinated on 30 January 1948 by Nathuram Godse.</p>';
+  h += '</div></section>';
+
+  // PART 23: INTEGRATION OF PRINCELY STATES
+  h += '<section id="part23">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 23. Integration of Princely States (1947-1949)</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-purple-500/20">';
+  h += '<p class="content-text"><span class="hl-ruler hl-bg-ruler">Sardar Vallabhbhai Patel</span> and <span class="hl-ruler">V.P. Menon</span> integrated 565 princely states into India through Instruments of Accession. Three problem cases: <span class="hl-term">Hyderabad</span> (Police Action/Operation Polo, Sep 1948), <span class="hl-term">Junagadh</span> (plebiscite, 1948), and <span class="hl-term">Kashmir</span> (Maharaja Hari Singh signed Instrument of Accession on 26 Oct 1947 after Pakistani tribal invasion).</p>';
+  h += '</div></section>';
+
+  // PART 24: TIMELINE
+  h += '<section id="timeline">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-timeline text-amber-400"></i> 24. Complete Timeline (1900-1947)</h2>';
+  h += '<div class="gradient-card-4 rounded-xl p-4 sm:p-5 mb-4 border border-indigo-500/20">';
+  h += '<div class="grid grid-cols-1 md:grid-cols-2 gap-2">';
+  h += '<div class="timeline-item"><span class="timeline-year">1900</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">India under Viceroy Lord Curzon.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1905 (16 Oct)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Partition of Bengal by Lord Curzon.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1905-1908</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Swadeshi & Boycott Movement.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1906 (30 Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">All India Muslim League founded at Dacca.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1907 (Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Surat Split - Congress divided into Moderates and Extremists.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1908</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Alipore Bomb Conspiracy; Khudiram Bose hanged.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1909</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Morley-Minto Reforms - separate electorates for Muslims.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1911</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Delhi Durbar; capital shifted from Calcutta to Delhi.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1914-1918</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">World War I. India contributes 1.3 million soldiers.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1915 (Jan)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Mahatma Gandhi returns to India from South Africa.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1915 (Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Congress reunites (Moderates + Extremists).</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1916</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Home Rule Movement (Tilak & Annie Besant); Lucknow Pact.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1917</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Champaran Satyagraha - Gandhi\'s first Satyagraha in India.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1918</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Kheda Satyagraha & Ahmedabad Mill Strike.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1919 (Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Rowlatt Act passed.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1919 (13 Apr)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Jallianwala Bagh Massacre (Amritsar).</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1919 (Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Government of India Act 1919 (Montagu-Chelmsford Reforms).</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1920 (Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Nagpur session; Congress approves Non-Cooperation Movement.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1921 (Jan)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Non-Cooperation & Khilafat Movement launched.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1922 (5 Feb)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Chauri Chaura incident - 22 policemen killed.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1922 (12 Feb)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Gandhi withdraws Non-Cooperation Movement.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1923 (Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Swaraj Party founded by C.R. Das and Motilal Nehru.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1925 (9 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Kakori Train Conspiracy by HRA.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1927 (Nov)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Simon Commission appointed (all British, no Indians).</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1928 (Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Nehru Report submitted.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1928 (17 Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Saunders assassinated by Bhagat Singh & Rajguru.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1929 (8 Apr)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Bhagat Singh & Dutt throw bombs in Central Assembly.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1929 (Dec)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Lahore session; Purna Swaraj (complete independence) declared.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1930 (26 Jan)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">First Independence Day celebrated across India.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1930 (12 Mar-6 Apr)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Dandi March - Salt Satyagraha begins Civil Disobedience.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1931 (5 Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Gandhi-Irwin Pact signed.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1931 (23 Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Bhagat Singh, Rajguru, Sukhdev executed.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1932 (16 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Communal Award announced by Ramsay MacDonald.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1932 (24 Sep)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Poona Pact signed between Gandhi and Ambedkar.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1935 (Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Government of India Act 1935 passed.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1937 (Jan-Feb)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Provincial elections; Congress wins in 8 provinces.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1939 (Sep)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">World War II begins.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1939 (Oct-Nov)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Congress ministries resign.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1940 (Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Lahore Resolution (Pakistan Resolution) by Muslim League.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1940 (8 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">August Offer (Dominion Status promise).</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1942 (Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Cripps Mission arrives; fails.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1942 (8 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Quit India Resolution passed by AICC.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1942 (9 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Gandhi and all Congress leaders arrested.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1943</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Bengal Famine - 2-3 million die.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1943 (Jul)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Subhas Chandra Bose takes command of INA in Singapore.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1945 (Jun-Jul)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Simla Conference (Wavell Plan) - fails.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1945 (Nov)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">INA trials begin at Red Fort, Delhi.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1946 (18-23 Feb)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Royal Indian Navy Mutiny in Bombay.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1946 (Mar)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Cabinet Mission arrives in India.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1946 (16 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Direct Action Day - Great Calcutta Killing.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1946 (2 Sep)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Interim Government formed under Nehru.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1947 (3 Jun)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Mountbatten Plan for partition announced.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1947 (14-15 Aug)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">India and Pakistan become independent dominions.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1948 (30 Jan)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">Mahatma Gandhi assassinated.</div></div>';
+  h += '<div class="timeline-item"><span class="timeline-year">1950 (26 Jan)</span><div class="text-gray-400 text-xs sm:text-sm mt-0.5">India becomes a Republic.</div></div>';
+  h += '</div></div></section>';
+  // PART 25: VICEROYS
+  h += '<section id="viceroys">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-crown text-amber-400"></i> 25. Viceroys of India (1900-1947)</h2>';
+  h += '<div class="gradient-card-1 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<div class="table-wrap"><table><tr><th>Viceroy</th><th>Tenure</th><th>Key Events</th></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Curzon</span></td><td>1899-1905</td><td>Partition of Bengal (1905); Ancient Monuments Act; Universities Commission; NWFP created.</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Minto</span></td><td>1905-1910</td><td>Muslim League founded (1906); Surat Split (1907); Morley-Minto Reforms (1909); Alipore Bomb Case.</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Hardinge</span></td><td>1910-1916</td><td>Capital shifted to Delhi (1911); Delhi Durbar (1911); Home Rule Movement started; Delhi Conspiracy (1912).</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Chelmsford</span></td><td>1916-1921</td><td>Lucknow Pact (1916); Rowlatt Act (1919); Jallianwala Bagh (1919); Montagu-Chelmsford Reforms (1919); Khilafat agitation.</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Reading</span></td><td>1921-1926</td><td>Non-Cooperation Movement; Chauri Chaura (1922); Swaraj Party formed (1923); Kakori Conspiracy (1925).</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Irwin</span></td><td>1926-1931</td><td>Simon Commission (1928); Nehru Report (1928); Lahore Purna Swaraj (1929); Dandi March (1930); Gandhi-Irwin Pact (1931).</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Willingdon</span></td><td>1931-1936</td><td>Second & Third RTC; Communal Award (1932); Poona Pact (1932); GOI Act 1935; Civil Disobedience resumed.</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Linlithgow</span></td><td>1936-1943</td><td>Provincial elections (1937); Congress ministries; WWII begins (1939); August Offer (1940); Cripps Mission (1942); Quit India (1942); Bengal Famine (1943).</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Wavell</span></td><td>1943-1947</td><td>Bengal Famine relief; Wavell Plan & Simla Conference (1945); INA trials (1945-46); Cabinet Mission (1946); Interim Govt (1946); Direct Action Day.</td></tr>';
+  h += '<tr><td><span class=\"hl-ruler\">Lord Mountbatten</span></td><td>1947 (Mar-Aug)</td><td>Last Viceroy; Mountbatten Plan (3 June 1947); Indian Independence Act; Partition; First Governor-General of free India.</td></tr>';
+  h += '</table></div></div></section>';
+  // PART 26: CONSTITUTIONAL ACTS
+  h += '<section id="acts">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-file-lines text-amber-400"></i> 26. British Constitutional Acts (1858-1947)</h2>';
+  h += '<div class="gradient-card-2 rounded-xl p-4 sm:p-5 mb-4 border border-blue-500/20">';
+  h += '<div class="table-wrap"><table><tr><th>Act</th><th>Year</th><th>Key Provisions</th></tr>';
+  h += '<tr><td><span class=\"hl-term\">Govt of India Act</span></td><td>1858</td><td>Abolished EIC; transferred power to Crown; Governor-General became Viceroy; Secretary of State for India created.</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Indian Councils Act</span></td><td>1861</td><td>First Indian nomination to Legislative Council; Portfolio system introduced; Ordinance power for Viceroy.</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Indian Councils Act</span></td><td>1892</td><td>Increased council membership; members could ask questions and discuss budget (but not vote).</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Indian Councils Act (Morley-Minto)</span></td><td>1909</td><td>Separate electorates for Muslims; increased council sizes; Indian in Viceroy\'s Executive Council.</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Govt of India Act (Montagu-Chelmsford)</span></td><td>1919</td><td>Dyarchy in provinces; direct elections (limited franchise); bicameralism at centre; Simon Commission provision.</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Govt of India Act</span></td><td>1935</td><td>Provincial Autonomy; All-India Federation (not implemented); 3 Lists; Federal Court; RBI; separate electorates extended.</td></tr>';
+  h += '<tr><td><span class=\"hl-term\">Indian Independence Act</span></td><td>1947</td><td>Partition into India & Pakistan; two dominions; abolished Viceroy & Secretary of State; Constituent Assemblies as legislatures.</td></tr>';
+  h += '</table></div></div></section>';
+  // PART 27: UPSC KEY FACTS
+  h += '<section id="upsc-facts">';
+  h += '<h2 class="section-heading"><i class="fa-solid fa-star text-amber-400"></i> 27. UPSC Key Facts at a Glance</h2>';
+  h += '<div class="gradient-card-3 rounded-xl p-4 sm:p-5 mb-4 border border-amber-500/20">';
+  h += '<div class="grid grid-cols-1 md:grid-cols-2 gap-3">';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> First Governor-General of India</div><div class="fact-box-content">Warren Hastings (under EIC, 1774)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> First Viceroy of India</div><div class="fact-box-content">Lord Canning (1858-1862)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Last Viceroy of India</div><div class="fact-box-content">Lord Mountbatten (1947)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> First Indian in Viceroy\'s Council</div><div class="fact-box-content">Satyendra Prasanna Sinha (1909)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> First Governor-General of Free India</div><div class="fact-box-content">Lord Mountbatten (Aug 1947 - June 1948); then C. Rajagopalachari</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> British PM at Independence</div><div class="fact-box-content">Clement Attlee (Labour Party)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Partition - Mass Migration</div><div class="fact-box-content">15 million displaced; 1-2 million killed</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Princely States Integrated</div><div class="fact-box-content">565 states by Sardar Patel & V.P. Menon (1947-49)</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> INA Strength</div><div class="fact-box-content">40,000-50,000 soldiers under Subhas Chandra Bose</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Quit India Arrests</div><div class="fact-box-content">Over 100,000 arrested; 2,500+ killed</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Salt March Distance</div><div class="fact-box-content">240 miles (385 km) from Sabarmati to Dandi, 24 days, 78 volunteers</div></div>';
+  h += '<div class="fact-box"><div class="fact-box-title"><i class="fa-solid fa-circle-check"></i> Direct Action Day Casualties</div><div class="fact-box-content">Over 4,000 killed in Calcutta (16 Aug 1946)</div></div>';
+  h += '</div></div></section>';
+
+  // FINAL: SET INNERHTML
+  app.innerHTML = h;
+});
+
+</script>
+</body>
+</html>

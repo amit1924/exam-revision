@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force, Pressure & Gravitation | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+    
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+    
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+    
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+    
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-rocket text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Force, Pressure &amp; Gravitation</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Science · Class 7 to 10 · Comprehensive Notes for BPSC/UPSC</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-rocket text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Force</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Net Force</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Pressure</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Fluids</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Atmospheric</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Buoyancy</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Gravitation</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Free Fall</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Mass vs Weight</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Kepler's Laws</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Comparisons</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. Mnemonics</a>
+        <a href="#sec13" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">13. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Force -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-hand-fist text-amber-400 text-sm"></i> 1. Force – Definition, Effects &amp; Types</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Force</span> is a push or a pull that changes or tends to change the state of rest or of uniform motion of an object. In simple terms — anything that makes an object move, stop, speed up, slow down, change direction, or change shape is a force.</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-up-down text-amber-400 text-xs mr-2"></i>Effects of Force</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Change in state of motion:</span> A stationary ball starts moving when kicked; a moving bicycle stops when brakes are applied.</li>
+        <li><span class="hl-term">Change in speed:</span> Pedalling a bicycle increases speed; friction with the ground slows it down.</li>
+        <li><span class="hl-term">Change in direction:</span> A footballer kicks a moving ball to change its path; Earth's gravity bends the Moon's orbit.</li>
+        <li><span class="hl-term">Change in shape/size:</span> Squeezing a sponge changes its shape; hammering a hot iron flattens it.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-sitemap text-amber-400 text-xs mr-2"></i>Types of Forces</div>
+      <p class="text-sm text-gray-300 font-semibold mb-1">A) Contact Forces (force acts through physical contact)</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Muscular Force:</span> Force applied by muscles of humans/animals. E.g., lifting a bucket, pulling a cart, chewing food.</li>
+        <li><span class="hl-term">Frictional Force:</span> Force that opposes relative motion between two surfaces in contact. E.g., rubbing hands together, walking, brake pads on bicycle wheel.</li>
+        <li><span class="hl-term">Mechanical Force:</span> Force applied by machines, tools, or engines. E.g., a crane lifting steel beams, a hammer driving a nail.</li>
+        <li><span class="hl-term">Normal Force (N):</span> The supporting force exerted by a surface perpendicular to the object resting on it. E.g., a book on a table — the table pushes upward with normal force equal to the book's weight.</li>
+        <li><span class="hl-term">Tension Force (T):</span> The force transmitted through a string, rope, cable, or wire when pulled by forces acting from opposite ends. E.g., a tug-of-war rope, a hanging lamp from the ceiling.</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">B) Non-Contact Forces (force acts without physical contact — action at a distance)</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Gravitational Force:</span> The attractive force between any two objects with mass. E.g., Earth pulls everything towards its centre; the Sun holds planets in orbit.</li>
+        <li><span class="hl-term">Magnetic Force:</span> The force exerted by a magnet on ferromagnetic materials (iron, nickel, cobalt) or other magnets. E.g., magnet attracting iron pins; compass needle aligning with Earth's magnetic field.</li>
+        <li><span class="hl-term">Electrostatic Force:</span> The force between charged particles. Like charges repel; unlike charges attract. E.g., rubbing a plastic comb on hair attracts paper bits; lightning discharge between clouds.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Force is like a <span class="hl-term">remote control</span>. Muscular force is like pressing a button with your finger (contact). Gravitational force is like a remote that works from across the room (non-contact). Magnetic force is like a remote that only works with certain devices (specific materials).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Net Force & Balanced/Unbalanced -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-scale-balanced text-amber-400 text-sm"></i> 2. Net Force, Balanced &amp; Unbalanced Forces</h2>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Net Force</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Net force</span> is the <span class="hl-event">vector sum</span> of all forces acting on an object. If two people push a box in the same direction with 10 N each, net force = 20 N. If they push in opposite directions, net force = 0 N (they cancel).</p>
+
+      <div class="subsection-heading"><i class="fas fa-equals text-amber-400 text-xs mr-2"></i>Balanced vs Unbalanced Forces</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Balanced Forces</th><th>Unbalanced Forces</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Equal magnitude, opposite direction — net force = <span class="hl-num">0</span></td><td>Unequal magnitude or not opposite — net force ≠ <span class="hl-num">0</span></td></tr>
+            <tr><td>Effect on object</td><td>No change in motion (object at rest stays at rest; moving object continues moving at same speed)</td><td>Change in motion (speed up, slow down, or change direction)</td></tr>
+            <tr><td>Example 1 – Tug of War</td><td>Both teams pull equally — rope doesn't move</td><td>One team pulls harder — rope moves towards them</td></tr>
+            <tr><td>Example 2 – Pushing a Box</td><td>Two people push from opposite sides with equal force — box stays still</td><td>One person pushes from left, no one from right — box moves left</td></tr>
+            <tr><td>Example 3 – Car</td><td>Car moving at constant speed — engine force = friction + air drag</td><td>Car accelerating — engine force &gt; friction + drag</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Balanced forces are like <span class="hl-term">two teams in a tug of war pulling equally</span> — no one moves. Unbalanced forces are like one team suddenly pulling harder — the rope (and the other team) moves in that direction. In daily life, balanced forces keep a book stationary on a table (gravity down = normal force up).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Newton's Second Law &amp; Net Force</div>
+      <p class="text-sm text-gray-400 mb-2">Newton's Second Law connects net force, mass, and acceleration:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">F<sub>net</sub> = m × a</div>
+      <p class="text-sm text-gray-400">Where F<sub>net</sub> = net force (N), m = mass (kg), a = acceleration (m/s²). SI unit of force is <span class="hl-term">Newton (N)</span>. 1 N = 1 kg·m/s².</p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Pressure -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-compress text-amber-400 text-sm"></i> 3. Pressure – Definition, Units &amp; Daily Examples</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Pressure</span> is the force acting perpendicularly (thrust) per unit area.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">P = F / A</div>
+      <p class="text-sm text-gray-400 mb-2">Where P = Pressure, F = Force (thrust), A = Area on which force acts.</p>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Units of Pressure</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">SI unit:</span> Pascal (Pa). 1 Pa = 1 N/m².</li>
+        <li><span class="hl-term">Other units:</span> atm (atmosphere), bar, torr, mm of Hg.</li>
+        <li>1 atm = <span class="hl-num">101,325 Pa</span> = 1.01325 bar = 760 mm of Hg.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-amber-400 text-xs mr-2"></i>Daily Life Examples (with simple analogies)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Why a knife cuts:</span> A sharp blade has a very small area, producing high pressure even with moderate force. Analogy: <span class="hl-event">Pressure = distributing weight</span> — wearing a heavy backpack feels lighter with wide straps than thin ones because force spreads over more area.</li>
+        <li><span class="hl-term">School bag straps:</span> Wide straps spread the force over a larger shoulder area → less pressure → more comfortable. Thin straps dig into shoulders because force is concentrated on a small area → high pressure.</li>
+        <li><span class="hl-term">Nails have pointed tips:</span> Small area → high pressure → easily penetrates wood. The flat head spreads the hammer force over a larger area to avoid damaging the surface.</li>
+        <li><span class="hl-term">Tractors have wide tyres:</span> Large area → low pressure → don't sink into soft mud. Similarly, snowshoes prevent sinking into snow by spreading weight over a large area.</li>
+        <li><span class="hl-term">Building foundations:</span> Wide base spreads the building's weight → reduces pressure on the ground → prevents sinking.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Pressure = <span class="hl-term">"The concentration of push"</span>. It's like the difference between poking someone with a finger (small area, high pressure) versus pushing them with a whole open hand (large area, low pressure). Same force, but very different results!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Pressure in Fluids -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-water text-amber-400 text-sm"></i> 4. Pressure in Fluids &amp; Pascal's Law</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Liquid Pressure</div>
+      <p class="text-sm text-gray-400 mb-2">Fluids (liquids and gases) also exert pressure. <span class="hl-term">Liquid pressure</span> increases with depth and density.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Depends on depth:</span> Pressure increases as you go deeper. That's why dams are thicker at the bottom — to withstand higher water pressure.</li>
+        <li><span class="hl-term">Depends on density:</span> Denser fluids exert more pressure at the same depth. Mercury (density 13.6 g/cm³) exerts much higher pressure than water at the same depth.</li>
+        <li><span class="hl-term">Acts equally in all directions:</span> At any given depth, liquid pressure acts perpendicular to all surfaces.</li>
+        <li>Formula: P = h × ρ × g (h = depth, ρ = density of fluid, g = acceleration due to gravity).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Pascal's Law</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Pascal's Law</span> (Blaise Pascal, 1653): Pressure applied to an enclosed fluid is transmitted <span class="hl-event">undiminished</span> to every portion of the fluid and the walls of the containing vessel.</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">Applications of Pascal's Law</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Hydraulic Lift (Car jack):</span> A small force applied on a small-area piston creates pressure that is transmitted through the fluid to a large-area piston, multiplying the force. F<sub>out</sub> = (A<sub>out</sub> / A<sub>in</sub>) × F<sub>in</sub>. This is the principle of <span class="hl-event">hydraulic multiplication</span>.</li>
+        <li><span class="hl-term">Hydraulic Brakes (in cars/bikes):</span> When you press the brake pedal, force is transmitted through brake fluid to the brake pads, which press against the wheels to slow them down.</li>
+        <li><span class="hl-term">Hydraulic Press:</span> Used in industry to compress materials (like shaping metal sheets, compressing cotton bales).</li>
+        <li><span class="hl-term">Syringes and droppers:</span> Pushing the plunger increases pressure on the fluid, forcing it out through the narrow needle.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Pascal's law is like <span class="hl-term">a crowd at a concert</span> — when someone at the front pushes, the push is transmitted through the whole crowd equally. Or like squeezing a toothpaste tube — pressure is transmitted throughout the paste, forcing it out of the nozzle.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Atmospheric Pressure -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-wind text-amber-400 text-sm"></i> 5. Atmospheric Pressure</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>What is Atmospheric Pressure?</div>
+      <p class="text-sm text-gray-400 mb-3">The layer of air (atmosphere) surrounding Earth has weight. This weight exerts pressure on everything on Earth's surface — this is called <span class="hl-term">atmospheric pressure</span>.</p>
+
+      <ul class="bullet-list text-sm">
+        <li>At sea level, atmospheric pressure is about <span class="hl-num">101,325 Pa</span> (1 atm).</li>
+        <li>We don't feel it because our body fluids exert equal pressure from inside.</li>
+        <li>Atmospheric pressure <span class="hl-event">decreases with altitude</span> (thinner air above).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Classic Demonstrations</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Magdeburg Hemispheres (1654):</span> Otto von Guericke pumped air out of two joined hemispheres. Two teams of horses could not pull them apart because the outside atmospheric pressure held them together. When air was let back in, they fell apart easily!</li>
+        <li><span class="hl-term">Drinking Straw:</span> When you suck air out of a straw, the pressure inside decreases. The higher atmospheric pressure on the liquid surface pushes the drink up into your mouth.</li>
+        <li><span class="hl-term">Syringe:</span> Pulling the plunger creates low pressure inside; atmospheric pressure pushes liquid into the barrel.</li>
+        <li><span class="hl-term">Candle in Water:</span> A burning candle in a dish of water is covered with a glass. As the candle consumes oxygen and the air cools, pressure inside drops — water rises into the glass.</li>
+        <li><span class="hl-term">Rubber Sucker (Suction Hook):</span> Pressing the sucker pushes air out. The higher atmospheric pressure outside holds it firmly against the wall.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-gear text-amber-400 text-xs mr-2"></i>Applications</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Barometer:</span> Instrument to measure atmospheric pressure. A mercury barometer uses a column of mercury whose height changes with pressure.</li>
+        <li><span class="hl-term">Weather Forecasting:</span> Rapid drop in atmospheric pressure indicates a storm or cyclone. High pressure generally means clear weather.</li>
+        <li><span class="hl-term">Altitude measurement:</span> Aeroplanes use altimeters (barometers calibrated for altitude). As altitude increases, atmospheric pressure decreases.</li>
+        <li><span class="hl-term">Working of pumps:</span> Water pumps, hand pumps, and vacuum pumps all utilise atmospheric pressure.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> We live at the bottom of an <span class="hl-term">ocean of air</span>. Just as water pressure increases with depth in the ocean, atmospheric pressure is maximum at sea level (the "bottom" of our air ocean) and decreases as we go up mountains.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Buoyancy & Archimedes' Principle -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-ship text-amber-400 text-sm"></i> 6. Buoyancy &amp; Archimedes' Principle</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Buoyancy</div>
+      <p class="text-sm text-gray-400 mb-3">When an object is placed in a fluid, the fluid exerts an upward force called <span class="hl-term">buoyant force</span> or <span class="hl-term">upthrust</span>. This is why some objects float and others sink.</p>
+
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Direction of buoyant force:</span> Always upward (opposite to gravity).</li>
+        <li><span class="hl-term">Magnitude:</span> Depends on the volume of fluid displaced by the object.</li>
+        <li>An object floats if its <span class="hl-event">density is less</span> than the fluid's density. It sinks if its density is greater.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-star text-amber-400 text-xs mr-2"></i>Archimedes' Principle</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Archimedes' Principle:</span> When an object is partially or fully immersed in a fluid, it experiences an upward buoyant force equal to the <span class="hl-event">weight of the fluid displaced</span> by the object.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">Buoyant Force (F<sub>b</sub>) = Weight of displaced fluid = ρ<sub>fluid</sub> × V<sub>displaced</sub> × g</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Why Ships Float (A Classic Puzzle):</p>
+      <p class="text-sm text-gray-400 mb-3">A ship made of steel (density ~7800 kg/m³) floats because of its <span class="hl-term">shape</span>. The hollow hull displaces a large volume of water. As long as the <span class="hl-event">weight of water displaced</span> equals the ship's total weight, it floats. This is why a steel ship floats but a steel nail sinks — the nail displaces too little water.</p>
+
+      <div class="subsection-heading"><i class="fas fa-chart-bar text-amber-400 text-xs mr-2"></i>Relative Density</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Relative Density (R.D.)</span> or Specific Gravity is the ratio of the density of a substance to the density of water (at 4°C).</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">R.D. = Density of substance / Density of water</div>
+      <ul class="bullet-list text-sm">
+        <li>R.D. &gt; 1 → substance sinks in water (e.g., iron R.D. = 7.8).</li>
+        <li>R.D. &lt; 1 → substance floats on water (e.g., ice R.D. = 0.9, wood R.D. ≈ 0.8).</li>
+        <li>R.D. = 1 → substance just submerges (neutral buoyancy).</li>
+        <li>Relative density has <span class="hl-event">no units</span> (it's a ratio).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Story:</span> Archimedes discovered this principle while taking a bath! He noticed water overflowing as he got in and realised the <span class="hl-term">volume of water displaced equals his body's volume</span>. He reportedly ran naked through the streets shouting "Eureka!" (I found it!). He used this to detect if the king's crown was made of pure gold or adulterated with silver.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Gravitation -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-globe text-amber-400 text-sm"></i> 7. Gravitation – Universal Law of Gravitation</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Newton's Universal Law of Gravitation</div>
+      <p class="text-sm text-gray-400 mb-2">Every object in the universe attracts every other object with a force that is:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Directly proportional</span> to the product of their masses (m₁ × m₂).</li>
+        <li><span class="hl-term">Inversely proportional</span> to the square of the distance between their centres (r²).</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">F = G × (m₁ × m₂) / r²</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Where:</p>
+      <ul class="bullet-list text-sm">
+        <li>F = Gravitational force between two objects (N).</li>
+        <li>m₁, m₂ = masses of the two objects (kg).</li>
+        <li>r = distance between their centres (m).</li>
+        <li><span class="hl-term">G = Universal Gravitational Constant</span> = 6.67 × 10⁻¹¹ N·m²/kg².</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-star text-amber-400 text-xs mr-2"></i>Importance of Gravitation</div>
+      <ul class="bullet-list text-sm">
+        <li>Holds planets in orbit around the Sun.</li>
+        <li>Holds the Moon in orbit around Earth (causes tides).</li>
+        <li>Keeps our atmosphere from escaping into space.</li>
+        <li>Responsible for the formation of stars, galaxies, and the universe itself.</li>
+        <li>Objects fall to the ground because of Earth's gravitational pull.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Cavendish Experiment (1798)</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Henry Cavendish</span> measured the value of G using a <span class="hl-event">torsion balance</span>. He suspended a rod with two small lead balls and brought large lead balls near them. The tiny gravitational attraction between the balls twisted the fibre. By measuring the twist, he calculated G. This is known as <span class="hl-term">"weighing the Earth"</span> because knowing G allowed calculating Earth's mass (5.97 × 10²⁴ kg).</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Gravitational force is like <span class="hl-term">a weak but universal friendship</span> — every object has some attraction to every other object, but you only notice it when the masses are huge (like Earth and Sun). Between two people, the gravitational force is about the same as the weight of a single skin cell!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Free Fall & Acceleration due to gravity -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrow-down text-amber-400 text-sm"></i> 8. Free Fall &amp; Acceleration Due to Gravity (g)</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Free Fall</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Free fall</span> is the motion of an object under the sole influence of gravity (no air resistance). In free fall, all objects accelerate towards Earth at the same rate, regardless of their mass. This was famously demonstrated by <span class="hl-event">Galileo's Leaning Tower of Pisa experiment</span> (or more precisely, using inclined planes).</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Acceleration Due to Gravity (g)</div>
+      <p class="text-sm text-gray-400 mb-2">The acceleration produced in a freely falling body due to Earth's gravitational pull is called <span class="hl-term">acceleration due to gravity</span>, denoted by <span class="hl-event">g</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">g = G × M / R²</div>
+      <p class="text-sm text-gray-400 mb-3">Where M = mass of Earth (6 × 10²⁴ kg), R = radius of Earth (6.4 × 10⁶ m). Substituting: g ≈ <span class="hl-num">9.8 m/s²</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-moon text-amber-400 text-xs mr-2"></i>Value of g on Different Celestial Bodies</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Celestial Body</th><th>Mass (relative to Earth)</th><th>Radius (relative to Earth)</th><th>g (m/s²)</th></tr></thead>
+          <tbody>
+            <tr><td>Earth</td><td>1</td><td>1</td><td><span class="hl-num">9.8</span></td></tr>
+            <tr><td>Moon</td><td>0.012</td><td>0.27</td><td><span class="hl-num">1.62</span></td></tr>
+            <tr><td>Mars</td><td>0.107</td><td>0.53</td><td><span class="hl-num">3.7</span></td></tr>
+            <tr><td>Jupiter</td><td>318</td><td>11.2</td><td><span class="hl-num">24.8</span></td></tr>
+            <tr><td>Sun</td><td>333,000</td><td>109</td><td><span class="hl-num">274</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-chart-line text-amber-400 text-xs mr-2"></i>Variation of g</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">With Altitude (height above Earth):</span> g decreases as we go higher. g<sub>h</sub> = g × (R/(R+h))². At the top of Mount Everest (~8.8 km), g is about 0.3% less.</li>
+        <li><span class="hl-term">With Depth (inside Earth):</span> g decreases linearly as we go deeper. At the centre of Earth, g = <span class="hl-num">0</span>.</li>
+        <li><span class="hl-term">With Latitude:</span> g is maximum at the poles (9.83 m/s²) and minimum at the equator (9.78 m/s²). This is due to Earth's rotation and its oblate shape (bulging at equator).</li>
+        <li><span class="hl-term">With Rotation of Earth:</span> Earth's rotation slightly reduces g at the equator due to centrifugal force. If Earth stopped spinning, g at equator would increase by about 0.34%.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of g as <span class="hl-term">"Earth's gravitational grip"</span>. On Earth, the grip tightens (g = 9.8). On the Moon, Earth's grip is weaker (g = 1.62) — that's why astronauts feel light and bounce around. If you jump on the Moon, you go about 6 times higher than on Earth!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Mass vs Weight -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-weight-scale text-amber-400 text-sm"></i> 9. Mass vs Weight – Key Differences</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definitions</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Mass</span> is the amount of matter in an object. It is a <span class="hl-event">scalar</span> quantity.</p>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Weight</span> is the gravitational force exerted on an object. It is a <span class="hl-event">vector</span> quantity (direction: towards the centre of Earth).</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">W = m × g</div>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Comparison: Mass vs Weight</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Mass</th><th>Weight</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Amount of matter in an object</td><td>Force of gravity on the object</td></tr>
+            <tr><td>SI Unit</td><td>kilogram (kg)</td><td>Newton (N)</td></tr>
+            <tr><td>Nature</td><td>Scalar (magnitude only)</td><td>Vector (magnitude + direction)</td></tr>
+            <tr><td>Depends on</td><td>Number of atoms (intrinsic)</td><td>Mass × local g (extrinsic)</td></tr>
+            <tr><td>Constancy</td><td><span class="hl-ruler">Constant everywhere</span></td><td><span class="hl-event">Varies with location</span></td></tr>
+            <tr><td>On Earth's surface</td><td>Same</td><td>9.8 × mass</td></tr>
+            <tr><td>On Moon</td><td>Same as on Earth</td><td>1/6 of Earth weight</td></tr>
+            <tr><td>In deep space</td><td>Same</td><td>Nearly zero (weightless)</td></tr>
+            <tr><td>Measuring instrument</td><td>Beam balance, pan balance</td><td>Spring balance, weighing scale</td></tr>
+            <tr><td>Can be zero?</td><td>Never (unless all matter removed)</td><td>Yes (in free fall / deep space)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-globe text-amber-400 text-xs mr-2"></i>Weight on Different Planets</div>
+      <p class="text-sm text-gray-400 mb-3">Your mass stays the same everywhere. But your weight changes because g changes. A person with mass 60 kg (weight on Earth = 588 N) would weigh:</p>
+      <ul class="bullet-list text-sm">
+        <li>On <span class="hl-term">Moon</span>: ~97 N (about 1/6 of Earth weight).</li>
+        <li>On <span class="hl-term">Mars</span>: ~222 N (about 0.38 of Earth weight).</li>
+        <li>On <span class="hl-term">Jupiter</span>: ~1488 N (about 2.5 times Earth weight).</li>
+        <li>On <span class="hl-term">Sun</span>: ~16,440 N (about 28 times Earth weight — you'd be crushed!).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-rocket text-amber-400 text-xs mr-2"></i>Weightlessness</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Weightlessness</span> is the sensation of having no weight. It occurs when an object is in <span class="hl-event">free fall</span> — the only force acting is gravity. Astronauts in the International Space Station (ISS) experience weightlessness not because there is no gravity (g there is about 90% of Earth's surface value), but because they are in <span class="hl-term">continuous free fall</span> towards Earth, moving sideways so fast that they keep missing it (orbital motion).</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Your mass is like <span class="hl-term">the number of groceries you bought</span> — it doesn't change. Your weight is like <span class="hl-term">how heavy the bag feels</span> — it depends on where you carry it (on Earth, on the Moon, or in space). The groceries (mass) are the same, but the feeling (weight) changes with gravity!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Kepler's Laws of Planetary Motion -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-solar-system text-amber-400 text-sm"></i> 10. Kepler's Laws of Planetary Motion</h2>
+
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Johannes Kepler</span> (1571–1630) formulated three laws of planetary motion based on the precise astronomical observations of <span class="hl-event">Tycho Brahe</span>. These laws describe how planets move around the Sun.</p>
+
+      <div class="subsection-heading"><i class="fas fa-1 text-amber-400 text-xs mr-1"></i> First Law – Law of Ellipses</div>
+      <p class="text-sm text-gray-400 mb-3">Each planet moves around the Sun in an <span class="hl-term">elliptical orbit</span>, with the Sun at one of the two foci.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="text-gray-300 font-semibold">Simple explanation:</span> The orbit is like a flattened circle (oval), not a perfect circle. The Sun is not at the centre but slightly off to one side.</p>
+
+      <div class="subsection-heading"><i class="fas fa-2 text-amber-400 text-xs mr-1"></i> Second Law – Law of Equal Areas</div>
+      <p class="text-sm text-gray-400 mb-3">A line joining a planet and the Sun sweeps out <span class="hl-term">equal areas</span> in <span class="hl-term">equal intervals of time</span>.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="text-gray-300 font-semibold">Simple explanation:</span> Planets move faster when they are closer to the Sun (perihelion) and slower when farther away (aphelion). It's like a skater spinning — arms in (closer to axis) = faster, arms out (farther) = slower.</p>
+
+      <div class="subsection-heading"><i class="fas fa-3 text-amber-400 text-xs mr-1"></i> Third Law – Law of Periods</div>
+      <p class="text-sm text-gray-400 mb-2">The square of the orbital period (T²) of a planet is directly proportional to the cube of the semi-major axis (r³) of its orbit.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">T² ∝ r³ &nbsp;&nbsp;or&nbsp;&nbsp; T² / r³ = constant</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="text-gray-300 font-semibold">Simple explanation:</span> Planets farther from the Sun take much longer to complete one orbit. Mercury (closest) takes just 88 days; Neptune (farthest) takes 165 years!</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Memory Aid:</span> Kepler's Laws in 3 words: <span class="hl-term">SHAPE</span> (elliptical orbits), <span class="hl-term">SPEED</span> (faster when closer), <span class="hl-term">SCALE</span> (farther planets take longer). The three S's!
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic:</span> "Kepler Cried: <span class="hl-event">"EAS!"</span>" — E = Elliptical orbits (Law 1), A = Areas equal (Law 2), S = Square-cube relationship (Law 3). Or: <span class="hl-event">"Every Astronomer's Secret"</span> — Ellipse, Area, Square-cube.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 11. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Contact vs Non-Contact Forces</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Contact Force</th><th>Non-Contact Force</th></tr></thead>
+          <tbody>
+            <tr><td>Physical contact required?</td><td><span class="hl-event">Yes</span></td><td><span class="hl-date">No</span></td></tr>
+            <tr><td>Examples</td><td>Muscular, Friction, Tension, Normal, Mechanical</td><td>Gravitational, Magnetic, Electrostatic</td></tr>
+            <tr><td>Range</td><td>Only at point of contact</td><td>Acts over distance (infinite range for gravity)</td></tr>
+            <tr><td>Medium needed</td><td>Requires surfaces to touch</td><td>Works in vacuum (e.g., Sun's gravity through space)</td></tr>
+            <tr><td>Strength</td><td>Varies (can be very strong)</td><td>Gravity is weakest; electrostatic/magnetic can be strong</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Mass vs Weight</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Mass</th><th>Weight</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Amount of matter</td><td>Force due to gravity</td></tr>
+            <tr><td>SI Unit</td><td>kg</td><td>N</td></tr>
+            <tr><td>Scalar/Vector</td><td>Scalar</td><td>Vector</td></tr>
+            <tr><td>Changes with location?</td><td><span class="hl-ruler">No (constant)</span></td><td><span class="hl-event">Yes (varies)</span></td></tr>
+            <tr><td>Measured by</td><td>Beam balance</td><td>Spring balance</td></tr>
+            <tr><td>Formula</td><td>—</td><td>W = m × g</td></tr>
+            <tr><td>Can be zero?</td><td>No</td><td>Yes (free fall/space)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Gravitational Force (F) vs Acceleration due to Gravity (g)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Gravitational Force (F)</th><th>Acceleration due to Gravity (g)</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Force of attraction between two masses</td><td>Acceleration of a body under gravity</td></tr>
+            <tr><td>Formula</td><td>F = G·m₁·m₂ / r²</td><td>g = G·M / R²</td></tr>
+            <tr><td>Depends on</td><td>Both masses and distance</td><td>Only Earth's mass and radius (at surface)</td></tr>
+            <tr><td>SI Unit</td><td>N (Newton)</td><td>m/s²</td></tr>
+            <tr><td>Value on Earth</td><td>Varies with objects</td><td><span class="hl-num">9.8 m/s²</span> (constant)</td></tr>
+            <tr><td>Direction</td><td>Attractive along line joining centres</td><td>Towards Earth's centre</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Sinking vs Floating</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Object Sinks</th><th>Object Floats</th></tr></thead>
+          <tbody>
+            <tr><td>Condition</td><td>Object density &gt; fluid density</td><td>Object density &lt; fluid density</td></tr>
+            <tr><td>Buoyant force vs Weight</td><td>Buoyant force &lt; Weight</td><td>Buoyant force = Weight (floating) or &gt; (rising)</td></tr>
+            <tr><td>Relative Density</td><td>R.D. &gt; 1</td><td>R.D. &lt; 1</td></tr>
+            <tr><td>Examples in water</td><td>Iron nail, stone, glass marble</td><td>Wood, ice, oil, plastic bottle (empty)</td></tr>
+            <tr><td>Can it be made to float?</td><td>Yes, by changing shape (ship) or adding air (life jacket)</td><td>Yes, naturally floats</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Mnemonics & Memory Tricks -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 12. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Types of Forces</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Contact Forces:</span> <span class="hl-event">"My Fingers Never Touch Metal"</span> = <span class="hl-term">M</span>uscular, <span class="hl-term">F</span>riction, <span class="hl-term">N</span>ormal, <span class="hl-term">T</span>ension, <span class="hl-term">M</span>echanical. All five require physical contact to act.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Non-Contact Forces:</span> <span class="hl-event">"GME"</span> = <span class="hl-term">G</span>ravitational, <span class="hl-term">M</span>agnetic, <span class="hl-term">E</span>lectrostatic. Think of these as the three "action-at-a-distance" forces. They work even in a vacuum!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Pressure Formula</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">P = F/A:</span> <span class="hl-event">"Pressure = Force over Area"</span> — think <span class="hl-term">"Push per Area"</span>. More force = more pressure. More area = less pressure. <span class="hl-event">"Small tip, big push"</span> = high pressure (nails, needles, knives).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Kepler's Laws</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Kepler's 3 Laws:</span> <span class="hl-event">"Every Astronomer's Secret"</span> — <span class="hl-term">E</span>llipse (Law 1: orbits are elliptical), <span class="hl-term">A</span>rea (Law 2: equal areas in equal time), <span class="hl-term">S</span>quare-cube (Law 3: T² ∝ r³). Or simply: <span class="hl-event">"Shape, Speed, Scale."</span>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Universal Gravitation</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Gravitational Force Formula: F = G·m₁·m₂ / r²</span> — <span class="hl-event">"Gee, two masses (m₁m₂) are attracted, but distance (r²) pulls them apart!"</span> Remember: G is a <span class="hl-term">tiny number</span> (6.67 × 10⁻¹¹) — gravity is the weakest fundamental force, which is why we don't feel attracted to nearby objects.
+      </div>
+
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 13: Practice Questions (15 MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec13" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 13. Practice Questions – 15 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. The SI unit of pressure is:</div>
+        <div class="mcq-opt">A) Newton</div>
+        <div class="mcq-opt">B) Pascal</div>
+        <div class="mcq-opt">C) Joule</div>
+        <div class="mcq-opt">D) Watt</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Pascal (Pa) — 1 Pa = 1 N/m².</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. Which of the following is a non-contact force?</div>
+        <div class="mcq-opt">A) Frictional force</div>
+        <div class="mcq-opt">B) Muscular force</div>
+        <div class="mcq-opt">C) Gravitational force</div>
+        <div class="mcq-opt">D) Tension force</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Gravitational force — it acts without physical contact.</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. What is the value of acceleration due to gravity (g) on Earth's surface?</div>
+        <div class="mcq-opt">A) 9.8 m/s</div>
+        <div class="mcq-opt">B) 9.8 m/s²</div>
+        <div class="mcq-opt">C) 6.67 × 10⁻¹¹ N·m²/kg²</div>
+        <div class="mcq-opt">D) 10 N</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 9.8 m/s².</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. Pascal's law is used in which of the following?</div>
+        <div class="mcq-opt">A) Hydraulic lift</div>
+        <div class="mcq-opt">B) Drinking straw</div>
+        <div class="mcq-opt">C) Barometer</div>
+        <div class="mcq-opt">D) Thermometer</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Hydraulic lift — Pascal's law states that pressure applied to an enclosed fluid is transmitted undiminished throughout the fluid.</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. A sharp knife cuts better than a blunt knife because:</div>
+        <div class="mcq-opt">A) Sharp knife has more area</div>
+        <div class="mcq-opt">B) Sharp knife has less area → more pressure</div>
+        <div class="mcq-opt">C) Sharp knife has more mass</div>
+        <div class="mcq-opt">D) Blunt knife is heavier</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) A sharp knife has a smaller cutting area, producing higher pressure for the same applied force (P = F/A).</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. According to Archimedes' principle, the buoyant force on an object is equal to:</div>
+        <div class="mcq-opt">A) Weight of the object</div>
+        <div class="mcq-opt">B) Weight of fluid displaced</div>
+        <div class="mcq-opt">C) Volume of the object</div>
+        <div class="mcq-opt">D) Density of the fluid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Weight of the fluid displaced by the object.</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. The weight of an object on the Moon is about _____ of its weight on Earth.</div>
+        <div class="mcq-opt">A) 1/2</div>
+        <div class="mcq-opt">B) 1/4</div>
+        <div class="mcq-opt">C) 1/6</div>
+        <div class="mcq-opt">D) 1/10</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 1/6 (Moon's g = 1.62 m/s² ≈ 1/6 of Earth's 9.8 m/s²).</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. Kepler's first law states that planets move in:</div>
+        <div class="mcq-opt">A) Circular orbits with Sun at centre</div>
+        <div class="mcq-opt">B) Elliptical orbits with Sun at one focus</div>
+        <div class="mcq-opt">C) Parabolic orbits</div>
+        <div class="mcq-opt">D) Random paths</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Elliptical orbits with the Sun at one focus of the ellipse.</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. Which of the following forces opposes motion between two surfaces in contact?</div>
+        <div class="mcq-opt">A) Gravitational force</div>
+        <div class="mcq-opt">B) Magnetic force</div>
+        <div class="mcq-opt">C) Frictional force</div>
+        <div class="mcq-opt">D) Normal force</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Frictional force — it always opposes relative motion.</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. Who measured the value of the universal gravitational constant G?</div>
+        <div class="mcq-opt">A) Isaac Newton</div>
+        <div class="mcq-opt">B) Galileo Galilei</div>
+        <div class="mcq-opt">C) Henry Cavendish</div>
+        <div class="mcq-opt">D) Johannes Kepler</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Henry Cavendish (1798) using a torsion balance experiment.</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. The value of atmospheric pressure at sea level is about:</div>
+        <div class="mcq-opt">A) 10⁵ Pa</div>
+        <div class="mcq-opt">B) 10³ Pa</div>
+        <div class="mcq-opt">C) 10² Pa</div>
+        <div class="mcq-opt">D) 10⁷ Pa</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Approximately 1.01 × 10⁵ Pa (101,325 Pa = 1 atm).</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. Two balls, one of iron and one of wood, are dropped from the same height in vacuum. Which reaches the ground first?</div>
+        <div class="mcq-opt">A) Iron ball</div>
+        <div class="mcq-opt">B) Wooden ball</div>
+        <div class="mcq-opt">C) Both reach together</div>
+        <div class="mcq-opt">D) Depends on size</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Both reach together — in free fall (vacuum), all objects accelerate at the same rate (g = 9.8 m/s²), regardless of mass.</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. If the distance between two objects is doubled, the gravitational force between them becomes:</div>
+        <div class="mcq-opt">A) Double</div>
+        <div class="mcq-opt">B) Half</div>
+        <div class="mcq-opt">C) One-fourth</div>
+        <div class="mcq-opt">D) Four times</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) One-fourth (F ∝ 1/r², so doubling r reduces force by 2² = 4 times).</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. What happens to the value of g as we go deep inside the Earth?</div>
+        <div class="mcq-opt">A) Increases</div>
+        <div class="mcq-opt">B) Decreases</div>
+        <div class="mcq-opt">C) Remains same</div>
+        <div class="mcq-opt">D) First increases then decreases</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Decreases linearly with depth. At Earth's centre, g = 0.</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. An iron ship floats on water while an iron nail sinks because:</div>
+        <div class="mcq-opt">A) Ship is heavier than nail</div>
+        <div class="mcq-opt">B) Ship displaces more water (greater buoyant force)</div>
+        <div class="mcq-opt">C) Nail is more dense than water</div>
+        <div class="mcq-opt">D) Ship is made of stronger iron</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) The hollow shape of the ship displaces a large volume of water, generating a buoyant force equal to the ship's weight. The nail displaces too little water to overcome its weight.</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-rocket text-amber-400/50 mr-2"></i>
+      Force, Pressure &amp; Gravitation · NCERT Physics Notes · Class 7–10
+      <br>Compiled for BPSC/UPSC revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

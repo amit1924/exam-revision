@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cell Division: Mitosis & Meiosis — Simple NCERT Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(99,102,241,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#6366f1; }
+.bullet-list-2 { list-style: none; padding-left: 0.5rem; }
+.bullet-list-2 li { position: relative; padding-left: 1.25rem; margin-bottom: 0.25rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.6; }
+.bullet-list-2 li::before { content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 0.3rem; font-size: 0.45rem; color: #818cf8; }
+.fact-box { background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.08)); border:1px solid rgba(99,102,241,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#818cf8; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.analogy-box { background:linear-gradient(135deg, rgba(34,211,238,0.08), rgba(6,182,212,0.08)); border:1px solid rgba(34,211,238,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.analogy-title { font-size:0.8rem; font-weight:600; color:#22d3ee; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.analogy-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.disease-box { background:linear-gradient(135deg, rgba(239,68,68,0.08), rgba(251,146,60,0.08)); border:1px solid rgba(239,68,68,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.disease-title { font-size:0.8rem; font-weight:600; color:#fb923c; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(99,102,241,0.15); color:#a5b4fc; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(99,102,241,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(99,102,241,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(99,102,241,0.1); border:1px solid rgba(99,102,241,0.2); font-size:0.82rem; color:#818cf8; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+.teacher-tip { background:linear-gradient(135deg, rgba(251,191,36,0.1), rgba(245,158,11,0.05)); border-left:4px solid #fbbf24; border-radius:0 0.75rem 0.75rem 0; padding:0.75rem 1rem; margin:0.75rem 0; }
+.teacher-tip-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.teacher-tip-content { font-size:0.85rem; color:#e2e8f0; line-height:1.7; }
+</style></head>
+<body><div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-indigo-500/20 text-center">
+  <i class="fa-solid fa-diagram-project text-4xl sm:text-5xl text-blue-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Cell Division: Mitosis & Meiosis</h1>
+  <p class="text-indigo-300 text-sm mt-1"><i class="fa-solid fa-chalkboard-user text-amber-400 mr-1"></i> NCERT Science · Class 6-10 · Simple Explanation</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-cyan-900/40 text-cyan-300 border border-cyan-500/30"><i class="fa-solid fa-microscope mr-1"></i>Cell Biology</span>
+    <span class="cat-badge bg-amber-900/40 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-graduation-cap mr-1"></i>Made Easy</span>
+  </div>
+</div>
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2"><i class="fa-solid fa-list text-blue-400"></i><span class="text-white font-semibold text-sm">Topics</span></div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()"><i id="hamburger-icon" class="fas fa-bars text-blue-400"></i></button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Why Cells Divide?</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Key Terms</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Cell Cycle</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Mitosis — Step by Step</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Meiosis — Step by Step</a>
+    <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Mitosis vs Meiosis</a>
+    <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Why It Matters</a>
+    <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">MCQs</a>
+  </div>
+</div>
+
+<!-- SEC 1: WHY CELLS DIVIDE -->
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-question-circle text-blue-400"></i> 1. Why Do Cells Divide? (The Big Picture)</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher's Simple Explanation</div>
+<div class="teacher-tip-content">Think of your body like a <span class="hl-term">building</span>. Buildings need <span class="hl-term">bricks (cells)</span>. When the building grows, you need <span class="hl-term">more bricks</span>. When bricks get damaged, you <span class="hl-term">replace them</span>. That's exactly what cell division does — it makes <span class="hl-term">new cells</span>!</div>
+</div>
+
+<p class="content-text">Your body has <span class="hl-num hl-bg-num">~37 trillion (37,000,000,000,000)</span> cells. Every day, billions of cells die and need to be replaced. Cell division is how your body makes new cells. There are <span class="hl-term">two types</span> of cell division:</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-4">
+    <div class="text-center"><i class="fa-solid fa-copy text-3xl text-blue-400 mb-2"></i></div>
+    <h3 class="text-center font-bold text-blue-300 mb-2">Mitosis — "Copy & Divide"</h3>
+    <p class="text-xs text-gray-400 text-center">For growth, repair, replacing old cells</p>
+    <p class="text-xs text-gray-500 text-center mt-1">Result: <span class="text-green-400">2 identical cells</span></p>
+  </div>
+  <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-4">
+    <div class="text-center"><i class="fa-solid fa-dna text-3xl text-purple-400 mb-2"></i></div>
+    <h3 class="text-center font-bold text-purple-300 mb-2">Meiosis — "Mix & Split"</h3>
+    <p class="text-xs text-gray-400 text-center">For making eggs & sperm (reproduction)</p>
+    <p class="text-xs text-gray-500 text-center mt-1">Result: <span class="text-green-400">4 unique cells</span> (half DNA)</p>
+  </div>
+</div>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-lightbulb"></i> Simple Analogy — Photocopy vs Recipe</div>
+<div class="analogy-content">
+  <span class="hl-term">Mitosis</span> = <span class="text-blue-400">Photocopy machine</span>. You put in 1 paper, you get 2 <span class="text-blue-400">exact copies</span>. Same content, same number of pages. <span class="text-gray-500">(2 identical daughter cells)</span><br>
+  <span class="hl-term">Meiosis</span> = <span class="text-purple-400">Cutting a recipe in half</span>. You have a full recipe book. To share with a friend, you give them <span class="text-purple-400">half the ingredients</span>. When you both later combine, you get the <span class="text-purple-400">full recipe back</span>. <span class="text-gray-500">(4 unique cells with half DNA each)</span>
+</div>
+</div>
+</section>
+
+<!-- SEC 2: KEY TERMS -->
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-book text-blue-400"></i> 2. Key Terms — Must Know Before We Start</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher Says</div>
+<div class="teacher-tip-content">Before learning the dance steps (phases), let's learn the <span class="hl-term">dancers and props</span>. These terms will keep coming up, so understand them well!</div>
+</div>
+
+<div class="table-wrap">
+<table><thead><tr><th>Term</th><th>Meaning</th><th>Simple Analogy</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Chromosomes</span></td><td>Tightly packed DNA strands that carry genes. Humans have <span class="hl-num">46</span> chromosomes (23 pairs).</td><td>Like <span class="text-cyan-400">books in a library</span> — each chromosome is a book of instructions</td></tr>
+<tr><td><span class="hl-term">Chromatin</span></td><td>Unwound, loose DNA in the nucleus (like a tangled thread)</td><td>Like <span class="text-cyan-400">spaghetti noodles</span> loose in the kitchen</td></tr>
+<tr><td><span class="hl-term">Sister Chromatids</span></td><td>Two identical copies of a chromosome connected at the centromere (X shape)</td><td>Like <span class="text-cyan-400">twin siblings holding hands</span></td></tr>
+<tr><td><span class="hl-term">Centromere</span></td><td>The "waist" where sister chromatids are joined</td><td>Like <span class="text-cyan-400">the knot in a Venn diagram</span></td></tr>
+<tr><td><span class="hl-term">Centrosome</span></td><td>Organelle that organizes spindle fibers (like a traffic controller)</td><td>Like <span class="text-cyan-400">the director of a play</span></td></tr>
+<tr><td><span class="hl-term">Spindle fibers</span></td><td>Protein threads that pull chromosomes apart</td><td>Like <span class="text-cyan-400">ropes pulling a float in a parade</span></td></tr>
+<tr><td><span class="hl-term">Nuclear membrane</span></td><td>Covering around the nucleus (like a protective bubble)</td><td>Like <span class="text-cyan-400">the wall around a castle</span></td></tr>
+<tr><td><span class="hl-term">Cytokinesis</span></td><td>Division of cytoplasm — the cell physically splits into two</td><td>Like <span class="text-cyan-400">cutting a cake into two pieces</span></td></tr>
+<tr><td><span class="hl-term">Diploid (2n)</span></td><td>Two sets of chromosomes (one from each parent). Humans: <span class="hl-num">46</span> (2 × 23)</td><td>Like having <span class="text-cyan-400">a pair of shoes</span> — left + right</td></tr>
+<tr><td><span class="hl-term">Haploid (n)</span></td><td>One set of chromosomes. Human eggs/sperm: <span class="hl-num">23</span></td><td>Like having <span class="text-cyan-400">just one shoe</span></td></tr>
+</tbody></table>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Important: Chromosome Numbers</div>
+<div class="teacher-tip-content">Your body cells have <span class="hl-num hl-bg-num">46 chromosomes (23 pairs)</span>. You got 23 from your mom's egg and 23 from your dad's sperm. So your cells are <span class="hl-term">diploid (2n = 46)</span>. But eggs and sperm are <span class="hl-term">haploid (n = 23)</span> — that's what meiosis makes!</div>
+</div>
+</section>
+
+<!-- SEC 3: CELL CYCLE -->
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-clock text-blue-400"></i> 3. The Cell Cycle — The Life of a Cell</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher Says</div>
+<div class="teacher-tip-content">Just like you have a <span class="hl-term">daily routine</span> (wake up, eat, work, sleep), a cell has a <span class="hl-term">life cycle</span> too! Most of its life is spent preparing to divide.</div>
+</div>
+
+<p class="content-text">The cell cycle has <span class="hl-num">two main phases</span>:</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Phase</th><th>What Happens?</th><th>Duration</th><th>Analogy</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Interphase</span> (90% of time)</td><td>Cell grows, copies its DNA, prepares to divide</td><td>~20+ hours</td><td><span class="text-cyan-400">"Study & Prepare"</span> — like studying before an exam</td></tr>
+<tr><td><span class="hl-term">M Phase (Mitosis)</span></td><td>Cell actually divides — nucleus splits then cytoplasm splits</td><td>~1 hour</td><td><span class="text-cyan-400">"Exam Time"</span> — actually writing the exam</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsubsection-heading">Interphase — The "Preparation" Stage (3 Parts)</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">G1 Phase (Gap 1)</span> — "Growth Phase". Cell grows bigger, makes more proteins, organelles increase. <span class="text-gray-500">Analogy: Packing your bags for a trip</span></li>
+<li><span class="hl-term hl-bg-term">S Phase (Synthesis)</span> — "Copying Phase". DNA is replicated (copied). Each chromosome goes from 1 strand → 2 identical sister chromatids. <span class="hl-num">46 chromosomes → 46 chromosomes (but now each has 2 chromatids)</span>. <span class="text-gray-500">Analogy: Photocopying all your notes</span></li>
+<li><span class="hl-term hl-bg-term">G2 Phase (Gap 2)</span> — "Final Preparation". Cell checks for DNA errors, makes spindle proteins, gets ready for mitosis. <span class="text-gray-500">Analogy: Checking everything before you leave</span></li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> Memory Trick: IPMAT</div>
+<div class="fact-box-content">The cell cycle phases in order: <span class="hl-term">I</span>nterphase → <span class="hl-term">P</span>rophase → <span class="hl-term">M</span>etaphase → <span class="hl-term">A</span>naphase → <span class="hl-term">T</span>elophase<br>Remember: <span class="text-white">"I Play Music All Time"</span> or <span class="text-white">"IPMAT"</span></div>
+</div>
+</section>
+
+<!-- SEC 4: MITOSIS DETAILED -->
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-copy text-blue-400"></i> 4. Mitosis — The "Copy & Divide" Dance (Step by Step)</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher's Promise</div>
+<div class="teacher-tip-content">Mitosis has <span class="hl-num">4 phases</span> (P-M-A-T). I'll explain each with a simple story. After this, you'll be able to <span class="hl-term">visualize</span> what happens — no need to memorize blindly!</div>
+</div>
+
+<p class="content-text"><span class="hl-term hl-bg-term">Goal of Mitosis</span>: Make <span class="hl-num">2 identical daughter cells</span> from 1 parent cell. Each daughter cell has the <span class="hl-term">same number of chromosomes</span> as the parent (<span class="hl-num">46 in humans</span>).</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-people-arrows"></i> The Dance Story — A Couple Dividing Their House</div>
+<div class="analogy-content">
+Imagine a couple living in a house with <span class="hl-term">46 items</span>. They want to <span class="hl-term">divide the house</span> into two identical apartments so each person gets one. They must:<br>
+1. Make copies of everything (S phase)<br>
+2. Line up the copies in the middle (Metaphase)<br>
+3. Pull the copies apart (Anaphase)<br>
+4. Build walls to make two separate apartments (Telophase)<br>
+5. Cut the house in two (Cytokinesis)<br>
+Result: <span class="text-green-400">Two apartments, each with 46 items — exactly like the original!</span>
+</div>
+</div>
+
+<div class="subsection-heading text-blue-300">Phase 1: Prophase — "Prepare & Pack"</div>
+<ul class="bullet-list">
+<li>Chromatin (loose DNA) <span class="hl-term hl-bg-term">condenses</span> into visible <span class="hl-term">chromosomes</span> (X-shaped — each has 2 sister chromatids)</li>
+<li><span class="hl-term">Nuclear membrane</span> starts breaking down (disappears) — like removing the wall around a castle</li>
+<li><span class="hl-term">Centrosomes</span> move to opposite ends (poles) of the cell</li>
+<li><span class="hl-term">Spindle fibers</span> begin to form — like ropes extending from each pole</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Visualize Prophase</div>
+<div class="teacher-tip-content">Imagine a <span class="hl-term">ball of tangled yarn (chromatin)</span> turning into <span class="hl-term">neatly folded socks (chromosomes)</span>. The sock drawer (nucleus) breaks open, and two robots (centrosomes) go to opposite ends of the room, throwing ropes (spindle fibers) toward the center.</div>
+</div>
+
+<div class="subsection-heading text-blue-300">Phase 2: Metaphase — "Middle & Line Up"</div>
+<ul class="bullet-list">
+<li>Chromosomes <span class="hl-term hl-bg-term">line up</span> at the <span class="hl-term">metaphase plate</span> (equator/middle of the cell)</li>
+<li>Each chromosome's <span class="hl-term">centromere</span> attaches to spindle fibers from <span class="hl-term">both poles</span></li>
+<li>This is like <span class="text-cyan-400">all the students standing in a line in the middle of the room</span></li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Visualize Metaphase</div>
+<div class="teacher-tip-content">All <span class="hl-num">46</span> chromosomes (now looking like X's) line up in a <span class="hl-term">single row</span> at the center. Each is held by ropes from both sides — like a tug-of-war where <span class="hl-term">nobody is pulling yet</span>. They're perfectly aligned.</div>
+</div>
+
+<div class="subsection-heading text-blue-300">Phase 3: Anaphase — "Apart & Pull"</div>
+<ul class="bullet-list">
+<li>The <span class="hl-term hl-bg-term">centromere splits</span> — sister chromatids <span class="hl-term">separate</span></li>
+<li>Spindle fibers <span class="hl-term hl-bg-term">shorten</span> and pull chromatids to <span class="hl-term">opposite poles</span></li>
+<li>Each chromatid is now called a <span class="hl-term">daughter chromosome</span></li>
+<li>Cell starts to <span class="hl-term">elongate (stretch out)</span></li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Visualize Anaphase</div>
+<div class="teacher-tip-content">The X-shaped chromosomes <span class="hl-term">split at the waist</span> into two I-shaped chromosomes. The ropes pull them apart — <span class="hl-num">46 chromatids</span> go to the left side, <span class="hl-num">46</span> go to the right side. Like breaking a line of hand-holding pairs.</div>
+</div>
+
+<div class="subsection-heading text-blue-300">Phase 4: Telophase — "Two New Nuclei"</div>
+<ul class="bullet-list">
+<li>Chromosomes reach the poles and <span class="hl-term hl-bg-term">decondense</span> back into <span class="hl-term">chromatin</span> (loose threads again)</li>
+<li><span class="hl-term">Nuclear membranes</span> reform around each set — <span class="hl-num">2 nuclei</span> now in one cell!</li>
+<li>Spindle fibers <span class="hl-term">disappear</span></li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Visualize Telophase</div>
+<div class="teacher-tip-content">The neat socks (chromosomes) turn back into <span class="hl-term">tangled yarn</span> (chromatin). Two new castle walls (nuclear membranes) build around each group. Now you have <span class="hl-term">one cell with TWO nuclei</span> — like a double-yolk egg!</div>
+</div>
+
+<div class="subsection-heading text-blue-300">Cytokinesis — "The Final Split"</div>
+<ul class="bullet-list">
+<li>This is NOT part of mitosis — it happens <span class="hl-term">after</span> telophase</li>
+<li><span class="hl-term hl-bg-term">Animal cells</span>: A <span class="hl-term">cleavage furrow</span> pinches the cell in two (like a string cutting through play-dough)</li>
+<li><span class="hl-term">Plant cells</span>: A <span class="hl-term">cell plate</span> forms in the middle and becomes a new cell wall</li>
+<li>Result: <span class="hl-num hl-bg-num">2 identical daughter cells</span>, each with <span class="hl-num">46 chromosomes</span>, same as the parent!</li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Mitosis Phases Mnemonic: <span class="text-white">"PMAT" — Please Make A Table</span></div>
+<div class="mnemonic-content"><span class="hl-term">P</span>rophase — Prepare (chromosomes condense, nuclear envelope breaks)<br><span class="hl-term">M</span>etaphase — Middle (chromosomes line up in middle)<br><span class="hl-term">A</span>naphase — Apart (sister chromatids pull apart)<br><span class="hl-term">T</span>elophase — Two nuclei (two new nuclei form)</div>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> One Parent → Two Identical Daughters</div>
+<div class="fact-box-content"><span class="hl-term">Mitosis summary</span>: 1 cell (2n=46) → DNA copied in S phase → P-M-A-T → Cytokinesis → <span class="hl-num hl-bg-num">2 cells (2n=46 each)</span>. Both are <span class="hl-term">genetically identical</span> to parent. Used for: <span class="hl-term">Growth</span> (baby→adult), <span class="hl-term">Repair</span> (healing wounds), <span class="hl-term">Replacement</span> (new skin cells every ~28 days)</div>
+</div>
+</section>
+
+<!-- SEC 5: MEIOSIS DETAILED -->
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-dna text-blue-400"></i> 5. Meiosis — The "Mix & Split" Dance (Step by Step)</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher Says — Why Meiosis is Different</div>
+<div class="teacher-tip-content">Remember, <span class="hl-term">mitosis</span> is for body growth (making identical cells). <span class="hl-term">Meiosis</span> is for <span class="hl-term">making eggs and sperm</span>. If eggs/sperm had 46 chromosomes, the baby would have <span class="hl-num">92</span>! So meiosis <span class="hl-term hl-bg-event">cuts chromosome number in half</span> — from 46 to 23. That's the BIG IDEA.</div>
+</div>
+
+<p class="content-text"><span class="hl-term hl-bg-term">Goal of Meiosis</span>: Make <span class="hl-num">4 unique daughter cells</span> (gametes — eggs or sperm), each with <span class="hl-term">half the chromosome number</span> (<span class="hl-num">23 in humans</span>). Also <span class="hl-term">mixes up genes</span> so each child is unique.</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-people-arrows"></i> The Story — Making 4 Unique Kids</div>
+<div class="analogy-content">
+A couple wants to have children. Each child should get:<br>
+- <span class="hl-term">Half</span> the parent's stuff (23 from mom, 23 from dad → 46 total)<br>
+- Each child should be <span class="hl-term">different</span> (not identical!)<br>
+Meiosis does this in <span class="hl-term">two rounds</span>:<br>
+<span class="text-purple-400">Round 1 (Meiosis I)</span>: Separates homologous pairs (mom's vs dad's chromosomes) → 2 cells with 23 chromosomes each (but still double-stranded)<br>
+<span class="text-blue-400">Round 2 (Meiosis II)</span>: Separates sister chromatids → 4 cells with 23 single chromosomes each<br>
+Result: <span class="text-green-400">4 unique eggs/sperm</span>, each with 23 chromosomes!</div>
+</div>
+
+<p class="content-text">Meiosis has <span class="hl-num">2 rounds</span> of division: <span class="hl-term hl-bg-term">Meiosis I</span> (reduction division — cuts chromosome number from 46→23) and <span class="hl-term hl-bg-term">Meiosis II</span> (similar to mitosis — separates chromatids).</p>
+
+<div class="subsection-heading text-purple-400">Meiosis I — "Reduction Division" (46 → 23)</div>
+
+<div class="subsubsection-heading">Prophase I — "Pairing & Crossing Over" (Very Important!)</div>
+<ul class="bullet-list">
+<li>Chromosomes condense (like mitosis)</li>
+<li><span class="hl-term hl-bg-term">Homologous chromosomes</span> (one from mom, one from dad — a PAIR) come together — this is called <span class="hl-term">synapsis</span></li>
+<li>Each pair forms a <span class="hl-term">tetrad</span> (4 chromatids grouped together — "tetra" = 4)</li>
+<li><span class="hl-term hl-bg-event">Crossing Over</span> — The chromatids exchange pieces! Mom's chromosome swaps a segment with dad's chromosome. This <span class="hl-term hl-bg-event">mixes up genes</span> — why siblings are different!</li>
+<li>Nuclear membrane breaks, spindle fibers form</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Visualize Crossing Over</div>
+<div class="teacher-tip-content">Imagine holding <span class="hl-term">two differently colored ropes</span> (one red = mom, one blue = dad). Now <span class="hl-term">cut a piece</span> from the red rope and <span class="hl-term">exchange it</span> with a piece from the blue rope. Now each rope has <span class="hl-term">both colors</span>! That's crossing over — it creates <span class="hl-term">new combinations</span> of genes.</div>
+</div>
+
+<div class="subsubsection-heading">Metaphase I — "Line Up in Pairs"</div>
+<ul class="bullet-list">
+<li>Homologous <span class="hl-term hl-bg-term">pairs (tetrads)</span> line up at the metaphase plate</li>
+<li>MOM's chromosome from a pair faces one pole, DAD's faces the other pole</li>
+<li>Which side mom/dad chromosomes go is <span class="hl-term hl-bg-term">random</span> — this is called <span class="hl-term">independent assortment</span>. More mixing!</li>
+</ul>
+
+<div class="subsubsection-heading">Anaphase I — "Homologs Separate"</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">Homologous chromosomes separate</span> and move to opposite poles</li>
+<li>But <span class="hl-term">sister chromatids stay together</span> (unlike mitosis!)</li>
+<li>Each pole now has <span class="hl-num">23 chromosomes</span> (each still made of 2 chromatids)</li>
+</ul>
+
+<div class="subsubsection-heading">Telophase I & Cytokinesis</div>
+<ul class="bullet-list">
+<li>Chromosomes arrive at poles (may decondense slightly)</li>
+<li>Nuclear membranes may reform</li>
+<li>Cell divides → <span class="hl-num hl-bg-num">2 haploid (n=23) cells</span>, each with 23 chromosomes (2 chromatids each)</li>
+<li><span class="hl-term">Interkinesis</span> — a short rest between Meiosis I and II (NO DNA replication!)</li>
+</ul>
+
+<div class="subsection-heading text-blue-400">Meiosis II — "Equational Division" (23 → 23, but 4 cells)</div>
+<p class="content-text">Meiosis II is <span class="hl-term">exactly like mitosis</span> but starting with 23 (not 46) chromosomes. Both cells from Meiosis I go through this simultaneously.</div>
+
+<ul class="bullet-list">
+<li><span class="hl-term">Prophase II</span> — Chromosomes condense, nuclear membrane breaks, spindle forms</li>
+<li><span class="hl-term">Metaphase II</span> — Chromosomes (still X-shaped) line up in the middle (not in pairs — just single file)</li>
+<li><span class="hl-term">Anaphase II</span> — <span class="hl-term hl-bg-term">Centromeres split</span> — sister chromatids separate and go to opposite poles</li>
+<li><span class="hl-term">Telophase II</span> — Chromosomes arrive, nuclear membrane reforms</li>
+<li><span class="hl-term">Cytokinesis</span> — Each of the 2 cells divides → <span class="hl-num hl-bg-num">4 haploid cells total</span></li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Meiosis Mnemonic: <span class="text-white">"My Elephants Make Awesome Music, I Teach I Teach"</span></div>
+<div class="mnemonic-content"><span class="hl-term">M</span>eiosis I: <span class="hl-term">P</span>rophase I (crossing over) → <span class="hl-term">M</span>etaphase I (pairs line up) → <span class="hl-term">A</span>naphase I (homologs separate) → <span class="hl-term">T</span>elophase I → <span class="hl-term">I</span>nterkinesis (rest)<br><span class="hl-term">M</span>eiosis II: <span class="hl-term">P</span>rophase II → <span class="hl-term">M</span>etaphase II → <span class="hl-term">A</span>naphase II → <span class="hl-term">T</span>elophase II</div>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> Where Does Meiosis Happen?</div>
+<div class="fact-box-content"><span class="hl-term">In males</span>: Testes → <span class="hl-term">Spermatogenesis</span> (makes <span class="hl-num">4 sperm</span> from 1 cell). All 4 sperm are functional.<br><span class="hl-term">In females</span>: Ovaries → <span class="hl-term">Oogenesis</span> (makes <span class="hl-num">1 egg</span> + 3 polar bodies). The cytoplasm is unevenly divided — the egg gets almost everything, 3 tiny polar bodies degenerate.</div>
+</div>
+</section>
+
+<!-- SEC 6: COMPARISON -->
+<section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-scale-balanced text-blue-400"></i> 6. Mitosis vs Meiosis — Side by Side Comparison</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> This is the MOST important table for exams</div>
+<div class="teacher-tip-content">Many exam questions ask you to <span class="hl-term">compare</span> mitosis and meiosis. Memorize this table — it's your best friend!</div>
+</div>
+
+<div class="table-wrap">
+<table><thead><tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Purpose</span></td><td>Growth, repair, replacement of body cells</td><td>Production of gametes (eggs & sperm) for sexual reproduction</td></tr>
+<tr><td><span class="hl-term">Where it occurs</span></td><td>All body cells (skin, liver, bone, etc.)</td><td>Only in reproductive organs (testes & ovaries)</td></tr>
+<tr><td><span class="hl-term">Number of divisions</span></td><td><span class="hl-num">1</span> round (PMAT → Cytokinesis)</td><td><span class="hl-num">2</span> rounds (Meiosis I + Meiosis II)</td></tr>
+<tr><td><span class="hl-term">Number of daughter cells</span></td><td><span class="hl-num">2</span></td><td><span class="hl-num">4</span></td></tr>
+<tr><td><span class="hl-term">Chromosome number</span></td><td>Same as parent (<span class="hl-num">2n → 2n</span>). Humans: 46→46</td><td>Half of parent (<span class="hl-num">2n → n</span>). Humans: 46→23</td></tr>
+<tr><td><span class="hl-term">DNA content change</span></td><td>Stays the same (diploid → diploid)</td><td>Reduced by half (diploid → haploid)</td></tr>
+<tr><td><span class="hl-term">Genetic variation</span></td><td><span class="hl-event">None</span> — daughter cells are <span class="hl-term">identical</span> to parent and each other (clones)</td><td><span class="hl-event">High</span> — due to <span class="hl-term">crossing over (Prophase I)</span> + <span class="hl-term">independent assortment (Metaphase I)</span></td></tr>
+<tr><td><span class="hl-term">Chromosome pairing</span></td><td>No pairing (homologous chromosomes don't come together)</td><td><span class="hl-term">YES</span> — homologous chromosomes pair up (synapsis) in Prophase I → form tetrads</td></tr>
+<tr><td><span class="hl-term">Crossing over</span></td><td><span class="hl-event">Never happens</span></td><td><span class="hl-event">Happens</span> in Prophase I — chromatids exchange segments</td></tr>
+<tr><td><span class="hl-term">Centromere splitting</span></td><td><span class="hl-term">Yes</span> — in Anaphase</td><td>Anaphase I: <span class="hl-term">NO</span> (homologs separate, chromatids stay together)<br>Anaphase II: <span class="hl-term">YES</span> (sister chromatids separate)</td></tr>
+<tr><td><span class="hl-term">Duration</span></td><td>Short (~1 hour)</td><td>Longer (days to years — eggs wait in Prophase I until ovulation!)</td></tr>
+<tr><td><span class="hl-term">Role in life</span></td><td>Asexual reproduction (in single-celled organisms), body growth, wound healing, cell replacement</td><td>Sexual reproduction — ensures offspring have the right chromosome number + genetic diversity</td></tr>
+<tr><td><span class="hl-term">Example in humans</span></td><td>Skin cell dividing to heal a cut; bone marrow making new blood cells; baby growing taller</td><td>Sperm production in testes (4 sperm per division); Egg production in ovaries (1 egg + 3 polar bodies)</td></tr>
+</tbody></table>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> Key Exam Point: Why Do We Need Both?</div>
+<div class="fact-box-content"><span class="hl-term">Mitosis</span> keeps you alive right now (growing, healing, replacing cells). <span class="hl-term">Meiosis</span> ensures the species continues (making eggs/sperm with half DNA so fertilization gives the right number). Without meiosis, each generation would <span class="hl-term">double</span> the chromosome number!</div>
+</div>
+</section>
+
+<!-- SEC 7: WHY IT MATTERS -->
+<section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-heart-pulse text-blue-400"></i> 7. Why Cell Division Matters in Real Life</h2>
+
+<div class="subsubsection-heading">When Mitosis Goes Wrong → Cancer</div>
+<ul class="bullet-list">
+<li>Normally, cells divide in a <span class="hl-term">controlled</span> way (they know when to stop)</li>
+<li><span class="hl-event hl-bg-event">Cancer</span> = cells divide <span class="hl-term">uncontrollably</span>. They don't listen to "stop" signals</li>
+<li>Tumor = a mass of cells dividing out of control. <span class="hl-term">Benign</span> (stays in one place) vs <span class="hl-term">Malignant</span> (spreads to other body parts = metastasis)</li>
+<li>Cancer treatments: <span class="hl-term">Chemotherapy</span> (drugs that kill rapidly dividing cells), <span class="hl-term">Radiotherapy</span> (radiation damages DNA of cancer cells)</li>
+<li>Chemotherapy affects <span class="hl-term">all</span> rapidly dividing cells — that's why it causes hair loss (hair follicles divide fast), mouth sores, low blood counts</li>
+</ul>
+
+<div class="subsubsection-heading">When Meiosis Goes Wrong → Genetic Disorders</div>
+<ul class="bullet-list">
+<li><span class="hl-event hl-bg-event">Non-disjunction</span> — chromosomes fail to separate properly in Anaphase I or II</li>
+<li>Result: One gamete gets an <span class="hl-term">extra chromosome</span> (24), another gets <span class="hl-term">one less</span> (22)</li>
+<li><span class="hl-event">Down Syndrome (Trisomy 21)</span> — extra copy of chromosome 21. Caused by non-disjunction. Features: intellectual disability, characteristic facial features, heart defects. Risk increases with <span class="hl-term">mother's age</span></li>
+<li><span class="hl-event">Turner Syndrome (XO)</span> — female with only one X chromosome (45, X). Short stature, webbed neck, infertility</li>
+<li><span class="hl-event">Klinefelter Syndrome (XXY)</span> — male with extra X (47, XXY). Tall stature, infertility, reduced testosterone</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Quick Recap — The 3 Key Points</div>
+<div class="teacher-tip-content">
+  <span class="hl-num">1.</span> <span class="hl-term">Mitosis</span> → 2 identical cells → growth & repair → <span class="text-blue-400">"Copy"</span><br>
+  <span class="hl-num">2.</span> <span class="hl-term">Meiosis</span> → 4 unique cells (half DNA) → eggs/sperm → <span class="text-purple-400">"Mix & Split"</span><br>
+  <span class="hl-num">3.</span> <span class="hl-term">Crossing over</span> + <span class="hl-term">Independent assortment</span> = Why you're different from your siblings!
+</div>
+</div>
+</section>
+
+<!-- SEC 8: MCQs -->
+<section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-question-circle text-blue-400"></i> 8. Practice MCQs</h2>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">1. How many chromosomes do human body cells have?</div><div class="mcq-opt">A) 23</div><div class="mcq-opt">B) 46</div><div class="mcq-opt">C) 92</div><div class="mcq-opt">D) 12</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) 46 chromosomes (23 pairs). Human eggs & sperm have 23.</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">2. In which phase do chromosomes line up at the middle of the cell?</div><div class="mcq-opt">A) Prophase</div><div class="mcq-opt">B) Metaphase</div><div class="mcq-opt">C) Anaphase</div><div class="mcq-opt">D) Telophase</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Metaphase — "M" for Middle</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">3. Sister chromatids separate during which phase?</div><div class="mcq-opt">A) Prophase of mitosis</div><div class="mcq-opt">B) Anaphase of mitosis</div><div class="mcq-opt">C) Metaphase I of meiosis</div><div class="mcq-opt">D) Prophase I of meiosis</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Anaphase of mitosis (centromeres split, chromatids pulled apart)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">4. Crossing over occurs in:</div><div class="mcq-opt">A) Mitosis — Prophase</div><div class="mcq-opt">B) Meiosis — Prophase I</div><div class="mcq-opt">C) Meiosis — Prophase II</div><div class="mcq-opt">D) Interphase</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Prophase I of meiosis — homologous chromosomes exchange genetic material</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">5. How many daughter cells are produced at the end of mitosis?</div><div class="mcq-opt">A) 1</div><div class="mcq-opt">B) 2</div><div class="mcq-opt">C) 4</div><div class="mcq-opt">D) 8</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) 2 identical daughter cells</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">6. What is the chromosome number in human sperm or egg?</div><div class="mcq-opt">A) 46</div><div class="mcq-opt">B) 23</div><div class="mcq-opt">C) 92</div><div class="mcq-opt">D) 12</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) 23 (haploid) — it combines with the other parent's 23 to make 46 in the baby</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">7. Which type of cell division produces FOUR genetically DIFFERENT cells?</div><div class="mcq-opt">A) Mitosis</div><div class="mcq-opt">B) Meiosis</div><div class="mcq-opt">C) Both</div><div class="mcq-opt">D) Neither</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Meiosis — 4 haploid cells, each unique due to crossing over & independent assortment</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">8. DNA replication happens during which phase of the cell cycle?</div><div class="mcq-opt">A) G1 phase</div><div class="mcq-opt">B) S phase</div><div class="mcq-opt">C) G2 phase</div><div class="mcq-opt">D) M phase</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) S phase (Synthesis) — DNA is copied, chromosomes become 2 chromatids each</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">9. Homologous chromosomes separate during:</div><div class="mcq-opt">A) Anaphase of mitosis</div><div class="mcq-opt">B) Anaphase I of meiosis</div><div class="mcq-opt">C) Anaphase II of meiosis</div><div class="mcq-opt">D) Telophase</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Anaphase I of meiosis — homologous pairs (mom & dad) separate, reducing chromosome number</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">10. Down Syndrome is caused by:</div><div class="mcq-opt">A) Missing chromosome 21</div><div class="mcq-opt">B) Extra copy of chromosome 21</div><div class="mcq-opt">C) Missing chromosome 18</div><div class="mcq-opt">D) Extra chromosome X</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Trisomy 21 — extra copy of chromosome 21; caused by non-disjunction during meiosis</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">11. In which phase of mitosis does the nuclear membrane break down?</div><div class="mcq-opt">A) Prophase</div><div class="mcq-opt">B) Metaphase</div><div class="mcq-opt">C) Anaphase</div><div class="mcq-opt">D) Telophase</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: A) Prophase — nuclear membrane disappears, chromosomes condense</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">12. A human liver cell has 46 chromosomes. After mitosis, each daughter cell will have:</div><div class="mcq-opt">A) 23</div><div class="mcq-opt">B) 46</div><div class="mcq-opt">C) 92</div><div class="mcq-opt">D) 12</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) 46 — mitosis produces identical cells with the same chromosome number as parent</div></div>
+</section>
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6"><i class="fa-solid fa-microscope text-blue-400/50 mr-2"></i>Cell Biology · NCERT Science Notes · Class 6-10<br>Made simple for revision · Click MCQs to reveal answers</div></div>
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.1 });
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+function toggleAns(el) { const ans = el.querySelector(".mcq-ans"); if (ans) ans.classList.toggle("show"); }
+function toggleMenu() { const m = document.getElementById("nav-menu"); const i = document.getElementById("hamburger-icon"); m.classList.toggle("hidden"); i.classList.toggle("fa-bars"); i.classList.toggle("fa-times"); }
+</script>
+</body>
+</html>

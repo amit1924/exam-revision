@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+
+    /* HIGHLIGHTERS - BPSC EXAM FOCUSED */
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-bolt text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Electricity</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Physics · Class 6 to 10 · Comprehensive Notes</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-bolt text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Charge</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Conductors</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Current</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Circuits</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Ohm's Law</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Resistance</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Heating Effect</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Commercial</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Safety</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Tables</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Mnemonics</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Electric Charge -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-circle-plus text-amber-400 text-sm"></i> 1. Electric Charge</h2>
+      <p class="text-sm text-gray-400 mb-3">Electric charge is a fundamental property of matter. Think of it like a <span class="hl-term">currency</span> — every particle either has a positive (+) or negative (-) charge.</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-up-down text-amber-400 text-xs mr-2"></i>Types of Charge</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-event">Positive Charge (+)</span> – Carried by <span class="hl-term">protons</span>. Like having extra money you can give away.</li>
+        <li><span class="hl-ruler">Negative Charge (−)</span> – Carried by <span class="hl-term">electrons</span>. Like being in debt (attracted to positive).</li>
+        <li><span class="hl-term">Neutral</span> – Equal number of protons and electrons. Balanced — no net charge.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Properties of Charge</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-event">Like charges repel</span> (++) or (−−) → Push each other away. Think of two north poles of magnets.</li>
+        <li><span class="hl-ruler">Unlike charges attract</span> (+−) → Pull toward each other. Like north and south poles.</li>
+        <li><span class="hl-term">Quantization of Charge</span>: Charge on any body is always an <span class="hl-num">integer multiple</span> of the charge on an electron (e = 1.6 × 10⁻¹⁹ C). You cannot have 0.5 times e — charge comes in <span class="hl-event">packets</span>!</li>
+        <li><span class="hl-term">Conservation of Charge</span>: Charge can neither be created nor destroyed — it just <span class="hl-place">transfers</span> from one body to another. Total charge in an isolated system is always constant.</li>
+        <li><span class="hl-term">SI Unit</span>: <span class="hl-num">Coulomb (C)</span>. 1 C = charge of 6.25 × 10¹⁸ electrons.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Charge on Common Particles</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Particle</th><th>Symbol</th><th>Charge</th><th>Value (Coulombs)</th></tr></thead>
+          <tbody>
+            <tr><td>Electron</td><td>e⁻</td><td><span class="hl-ruler">Negative (−)</span></td><td>−1.6 × 10⁻¹⁹ C</td></tr>
+            <tr><td>Proton</td><td>p⁺</td><td><span class="hl-event">Positive (+)</span></td><td>+1.6 × 10⁻¹⁹ C</td></tr>
+            <tr><td>Neutron</td><td>n⁰</td><td><span class="hl-date">Neutral (0)</span></td><td>0 C</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of charges as <span class="hl-term">magnetic poles</span>. North-North repel (like charges), North-South attract (unlike). The stronger the charge, the stronger the push or pull — just like bigger magnets!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Conductors & Insulators -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-plug text-amber-400 text-sm"></i> 2. Conductors &amp; Insulators</h2>
+      <p class="text-sm text-gray-400 mb-3">Based on how easily <span class="hl-term">electric charge</span> flows through them, materials are divided into conductors, insulators, and semiconductors.</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definitions</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Conductor</span> – A material that allows electric charge to flow through it easily. Why? Because it has <span class="hl-event">free electrons</span> that can move. E.g., all metals (copper, aluminium, silver, gold), graphite, human body.</li>
+        <li><span class="hl-term">Insulator</span> – A material that does NOT allow electric charge to flow easily. Electrons are <span class="hl-ruler">tightly bound</span> to atoms. E.g., rubber, plastic, wood, glass, dry air, paper.</li>
+        <li><span class="hl-term">Semiconductor</span> – Conductivity is <span class="hl-place">between</span> conductors and insulators. Conductivity increases with temperature. E.g., silicon (Si), germanium (Ge).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Comparison: Conductor vs Insulator vs Semiconductor</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Conductor</th><th>Insulator</th><th>Semiconductor</th></tr></thead>
+          <tbody>
+            <tr><td>Free electrons</td><td><span class="hl-num">Large number</span></td><td>Almost none</td><td>Few (increases with temp)</td></tr>
+            <tr><td>Resistivity</td><td>Very low (10⁻⁸ to 10⁻⁶ Ω·m)</td><td>Very high (10¹² to 10¹⁸ Ω·m)</td><td>Intermediate (10⁻⁶ to 10⁴ Ω·m)</td></tr>
+            <tr><td>Examples</td><td>Cu, Al, Ag, Au, Fe, Graphite</td><td>Rubber, Plastic, Wood, Glass</td><td>Si, Ge</td></tr>
+            <tr><td>Temperature effect</td><td>Resistance <span class="hl-event">increases</span> with temp</td><td>Resistance <span class="hl-place">decreases</span> with temp</td><td>Resistance <span class="hl-ruler">decreases</span> with temp</td></tr>
+            <tr><td>Uses</td><td>Wires, cables, circuit connections</td><td>Wire coating, plugs, switches</td><td>Transistors, diodes, chips</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-hammer text-amber-400 text-xs mr-2"></i>Why Do Metals Conduct?</div>
+      <p class="text-sm text-gray-400 mb-3">Metals have a <span class="hl-term">sea of free electrons</span> — outermost electrons are loosely held and can drift through the metal lattice. When you apply a voltage, these electrons drift in one direction → electric current!</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Examples of Conductors &amp; Insulators in Daily Life</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Material</th><th>Conductor?</th><th>Why?</th></tr></thead>
+          <tbody>
+            <tr><td>Copper wire inside cable</td><td>Copper (Cu)</td><td><span class="hl-date">Yes</span></td><td>Free electrons move easily</td></tr>
+            <tr><td>Plastic coating on wire</td><td>PVC / Rubber</td><td><span class="hl-event">No (Insulator)</span></td><td>Tightly bound electrons</td></tr>
+            <tr><td>Iron pan handle</td><td>Iron covered with plastic</td><td><span class="hl-event">No (Insulator)</span></td><td>Plastic prevents shock</td></tr>
+            <tr><td>Graphite in pencil</td><td>Carbon (Graphite)</td><td><span class="hl-date">Yes</span></td><td>Delocalised electrons</td></tr>
+            <tr><td>Human body</td><td>Water + Salts</td><td><span class="hl-date">Yes</span></td><td>Contains electrolytes</td></tr>
+            <tr><td>Glass rod</td><td>Glass</td><td><span class="hl-event">No (Insulator)</span></td><td>No free electrons</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Conductors are like a <span class="hl-term">wide open highway</span> — cars (electrons) can zoom freely. Insulators are like a <span class="hl-term">road full of barriers</span> — no movement possible. Semiconductors are like a <span class="hl-place">toll road</span> — some cars pass, and traffic increases when tolls are lowered (temperature increased).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Electric Current -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-water text-amber-400 text-sm"></i> 3. Electric Current</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Electric Current</span> is the <span class="hl-event">rate of flow of electric charge</span> through a conductor. In simple words: how many electrons pass a point in one second.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">I = Q / t</div>
+      <p class="text-sm text-gray-400 mb-3">Where: <span class="hl-term">I</span> = Current (Amperes), <span class="hl-term">Q</span> = Charge (Coulombs), <span class="hl-term">t</span> = Time (seconds).</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>SI Units</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>SI Unit</th><th>Symbol</th><th>Measured by</th></tr></thead>
+          <tbody>
+            <tr><td>Current</td><td>Ampere</td><td>A</td><td><span class="hl-term">Ammeter</span> (in series)</td></tr>
+            <tr><td>Charge</td><td>Coulomb</td><td>C</td><td>—</td></tr>
+            <tr><td>Time</td><td>Second</td><td>s</td><td>Stopwatch</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>Direction of Current</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Conventional Current</span>: Flows from <span class="hl-event">Positive (+) → Negative (−)</span> terminal. This is the older convention (Benjamin Franklin's guess).</li>
+        <li><span class="hl-term">Electron Flow</span>: Actually, <span class="hl-ruler">electrons flow from Negative (−) → Positive (+)</span>. Real direction is opposite to conventional current!</li>
+        <li><span class="hl-term">Exam Tip</span>: In circuit diagrams, always show <span class="hl-place">conventional current</span> direction (+ to −). Unless asked specifically about electron flow.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Conventional vs Electron Flow</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Conventional Current</th><th>Electron Flow</th></tr></thead>
+          <tbody>
+            <tr><td>Direction</td><td><span class="hl-event">+ to −</span></td><td><span class="hl-ruler">− to +</span></td></tr>
+            <tr><td>Who proposed?</td><td>Benjamin Franklin</td><td>Modern science</td></tr>
+            <tr><td>Used in</td><td>All circuit analysis, textbooks</td><td>Physics theory, semiconductor physics</td></tr>
+            <tr><td>Particle</td><td>Positive charge flow (hypothetical)</td><td>Electron drift (actual)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy — Electricity is like Water in Pipes:</span> <span class="hl-term">Voltage</span> = water <span class="hl-event">pressure</span> (pump force), <span class="hl-term">Current</span> = <span class="hl-ruler">flow rate</span> (litres per second), <span class="hl-term">Resistance</span> = pipe <span class="hl-place">narrowness</span> (how hard it is for water to pass). A battery is like a pump pushing water around a closed loop!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Electric Circuit -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-circle-nodes text-amber-400 text-sm"></i> 4. Electric Circuit</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3">An <span class="hl-term">electric circuit</span> is a <span class="hl-event">closed conducting path</span> through which electric current flows. Components are connected to form a complete loop.</p>
+
+      <div class="subsection-heading"><i class="fas fa-gears text-amber-400 text-xs mr-2"></i>Components of a Circuit</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Component</th><th>Symbol</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td>Cell / Battery</td><td>—| |— (long = +, short = −)</td><td>Provides <span class="hl-event">potential difference</span> (voltage) — pushes charges</td></tr>
+            <tr><td>Bulb / Lamp</td><td>⭘ (circle with cross)</td><td>Converts electrical energy → light + heat</td></tr>
+            <tr><td>Switch (open)</td><td>—∘/—</td><td>Breaks the circuit → <span class="hl-event">no current</span> flows</td></tr>
+            <tr><td>Switch (closed)</td><td>—∘—</td><td>Completes the circuit → <span class="hl-date">current</span> flows</td></tr>
+            <tr><td>Wire</td><td>— (straight line)</td><td>Provides conducting path for current</td></tr>
+            <tr><td>Resistor</td><td>—∧∧∧—</td><td>Opposes current; converts electrical energy → heat</td></tr>
+            <tr><td>Ammeter</td><td>A (in circle)</td><td>Measures <span class="hl-ruler">current</span> — connected in <span class="hl-term">series</span></td></tr>
+            <tr><td>Voltmeter</td><td>V (in circle)</td><td>Measures <span class="hl-ruler">voltage</span> — connected in <span class="hl-term">parallel</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-circle-check text-amber-400 text-xs mr-2"></i>Open vs Closed Circuit</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Open Circuit</th><th>Closed Circuit</th></tr></thead>
+          <tbody>
+            <tr><td>Switch</td><td>Open (OFF)</td><td>Closed (ON)</td></tr>
+            <tr><td>Current flow</td><td><span class="hl-event">No current</span> (I = 0)</td><td><span class="hl-date">Current flows</span></td></tr>
+            <tr><td>Bulb</td><td>Does not glow</td><td>Glows</td></tr>
+            <tr><td>Path</td><td>Broken / incomplete</td><td>Complete loop</td></tr>
+            <tr><td>Analogy</td><td>Dam closed — no water flow</td><td>Dam open — water rushes through</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-train text-amber-400 text-xs mr-2"></i>Analogy — Series vs Parallel</div>
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> <span class="hl-term">Series circuit</span> is like a <span class="hl-event">train</span> — if one coach detaches, the whole train stops. <span class="hl-term">Parallel circuit</span> is like multiple <span class="hl-ruler">lanes on a highway</span> — one lane can close, others still work.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Ohm's Law -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-scale-balanced text-amber-400 text-sm"></i> 5. Ohm's Law</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Statement</div>
+      <p class="text-sm text-gray-400 mb-3">At a <span class="hl-term">constant temperature</span>, the <span class="hl-event">potential difference (V)</span> across a conductor is directly proportional to the <span class="hl-ruler">current (I)</span> flowing through it.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">V ∝ I&nbsp;&nbsp;⇒&nbsp;&nbsp;V = I × R</div>
+      <p class="text-sm text-gray-400 mb-3">Where: <span class="hl-term">V</span> = Voltage / Potential Difference (Volts), <span class="hl-term">I</span> = Current (Amperes), <span class="hl-term">R</span> = Resistance (Ohms, Ω).</p>
+
+      <div class="subsection-heading"><i class="fas fa-water text-amber-400 text-xs mr-2"></i>Water Pipe Analogy</div>
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Teacher's Analogy:</span> Imagine a water pipe system. <span class="hl-term">Voltage (V)</span> = <span class="hl-event">Water pressure</span> (how hard the pump pushes). <span class="hl-term">Current (I)</span> = <span class="hl-ruler">Flow of water</span> (litres per minute). <span class="hl-term">Resistance (R)</span> = <span class="hl-place">Narrowness of pipe</span> (a thin pipe resists flow). Ohm's Law says: More pressure (V) → More flow (I), IF the pipe width (R) stays the same. If you make the pipe narrower (increase R), flow (I) decreases for the same pressure.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-chart-line text-amber-400 text-xs mr-2"></i>V-I Graph (Ohmic Conductor)</div>
+      <p class="text-sm text-gray-400 mb-3">For an <span class="hl-term">ohmic conductor</span> (obeys Ohm's law), the V-I graph is a <span class="hl-event">straight line through the origin</span>. The slope of this line = <span class="hl-num">Resistance (R)</span>. Higher slope = higher resistance.</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Ohmic vs Non-Ohmic Conductors</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Ohmic (Obeys Ohm's Law)</th><th>Non-Ohmic (Does NOT obey)</th></tr></thead>
+          <tbody>
+            <tr><td>V-I Graph</td><td><span class="hl-date">Straight line through origin</span></td><td><span class="hl-event">Curved / Non-linear</span></td></tr>
+            <tr><td>Resistance</td><td>Constant (at fixed temp)</td><td>Changes with V or I</td></tr>
+            <tr><td>Examples</td><td>Copper wire, Nichrome, Carbon resistor</td><td>Bulb filament, Diode, LED, Thermistor</td></tr>
+            <tr><td>Reason</td><td>Temperature stays constant</td><td>Heating changes resistance</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Experimental Setup to Verify Ohm's Law</div>
+      <ul class="bullet-list text-sm">
+        <li>Connect a <span class="hl-term">resistor (R)</span>, an <span class="hl-ruler">ammeter (A)</span> in series, and a <span class="hl-date">voltmeter (V)</span> in parallel across the resistor.</li>
+        <li>Vary the voltage using a <span class="hl-term">variable battery</span> (or rheostat).</li>
+        <li>Record <span class="hl-event">V</span> and <span class="hl-event">I</span> for each setting.</li>
+        <li>Plot V on Y-axis, I on X-axis → should get a straight line.</li>
+        <li>Slope = V/I = R (constant).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Numerical Example</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Q:</span> A 12 V battery is connected to a 4 Ω resistor. Find the current flowing. <span class="hl-term">Ans:</span> I = V/R = 12/4 = <span class="hl-num">3 A</span>.</p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Resistance -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-road text-amber-400 text-sm"></i> 6. Resistance</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Factors Affecting Resistance</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Resistance</span> is the opposition to the flow of current. Four factors determine it:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Factor</th><th>Effect on Resistance</th><th>Analogy</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Length (L)</span></td><td><span class="hl-event">R ∝ L</span> — Longer wire → more resistance</td><td>Longer pipe → harder for water to flow</td></tr>
+            <tr><td><span class="hl-term">Cross-sectional Area (A)</span></td><td><span class="hl-ruler">R ∝ 1/A</span> — Thicker wire → less resistance</td><td>Wider pipe → more water flows easily</td></tr>
+            <tr><td><span class="hl-term">Material (ρ)</span></td><td>Different materials resist differently</td><td>Copper pipe vs rusty iron pipe</td></tr>
+            <tr><td><span class="hl-term">Temperature (T)</span></td><td>For metals: <span class="hl-event">R increases with T</span>. For semiconductors: <span class="hl-ruler">R decreases with T</span>.</td><td>Atoms vibrate more → block electrons</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-square-root-variable text-amber-400 text-xs mr-2"></i>Resistivity Formula</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">R = ρ × (L / A)</div>
+      <p class="text-sm text-gray-400 mb-3">Where: <span class="hl-term">ρ</span> (rho) = Resistivity of the material (Ω·m). It is a <span class="hl-event">constant</span> for a given material at a given temperature. L = Length (m), A = Area (m²).</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Resistivity of Common Materials (at 20°C)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Material</th><th>Type</th><th>Resistivity ρ (Ω·m)</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td>Silver</td><td>Conductor</td><td>1.59 × 10⁻⁸</td><td>Best conductor — but expensive</td></tr>
+            <tr><td>Copper</td><td>Conductor</td><td>1.68 × 10⁻⁸</td><td>House wiring, electric cables</td></tr>
+            <tr><td>Aluminium</td><td>Conductor</td><td>2.65 × 10⁻⁸</td><td>Power transmission lines</td></tr>
+            <tr><td>Tungsten</td><td>Conductor</td><td>5.60 × 10⁻⁸</td><td>Bulb filaments (high melting point)</td></tr>
+            <tr><td>Nichrome</td><td>Alloy</td><td>100 × 10⁻⁸</td><td>Heating elements (geyser, toaster)</td></tr>
+            <tr><td>Silicon</td><td>Semiconductor</td><td>~640</td><td>Microchips, solar cells</td></tr>
+            <tr><td>Glass</td><td>Insulator</td><td>~10¹⁰ – 10¹⁴</td><td>Insulators in power lines</td></tr>
+            <tr><td>Rubber</td><td>Insulator</td><td>~10¹³</td><td>Wire coating, gloves</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Series vs Parallel Combination of Resistors</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Series:</span> Resistors end-to-end. Same current through each. Total resistance increases.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">R<sub>eq</sub> = R₁ + R₂ + R₃ + ... (for series)</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Parallel:</span> Resistors side-by-side. Same voltage across each. Total resistance decreases.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">1/R<sub>eq</sub> = 1/R₁ + 1/R₂ + 1/R₃ + ... (for parallel)</div>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Comparison: Series vs Parallel</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Series Circuit</th><th>Parallel Circuit</th></tr></thead>
+          <tbody>
+            <tr><td>Current</td><td><span class="hl-term">Same</span> through all components</td><td><span class="hl-place">Divided</span> among branches</td></tr>
+            <tr><td>Voltage</td><td><span class="hl-event">Divided</span> across components</td><td><span class="hl-term">Same</span> across all branches</td></tr>
+            <tr><td>Total Resistance</td><td>R₁ + R₂ + R₃ (increases)</td><td>Less than smallest R (decreases)</td></tr>
+            <tr><td>If one bulb fails</td><td><span class="hl-event">All go out</span> (circuit breaks)</td><td><span class="hl-date">Others stay on</span></td></tr>
+            <tr><td>Example</td><td>Old Christmas lights (string)</td><td>Home lighting (each room)</td></tr>
+            <tr><td>Analogy</td><td><span class="hl-event">Train coaches</span> — one detaches, all stop</td><td><span class="hl-ruler">Highway lanes</span> — one closed, others work</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Numerical Examples</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Series:</span> Three resistors of 2 Ω, 3 Ω, 5 Ω in series → R<sub>eq</sub> = 2 + 3 + 5 = <span class="hl-num">10 Ω</span>.</p>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Parallel:</span> Two resistors of 6 Ω and 3 Ω in parallel → 1/R<sub>eq</sub> = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 → R<sub>eq</sub> = <span class="hl-num">2 Ω</span>.</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Memory Tip:</span> <span class="hl-event">"Series = Same current, Sum of resistances"</span>. <span class="hl-ruler">"Parallel = Potential same, Reciprocal sum"</span>. Or: Series makes resistance <span class="hl-event">bigger</span> (adding), Parallel makes it <span class="hl-date">smaller</span> (more paths for current).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Heating Effect of Current -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-fire text-amber-400 text-sm"></i> 7. Heating Effect of Current</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Joule's Law of Heating</div>
+      <p class="text-sm text-gray-400 mb-3">When current flows through a resistor, electrical energy is converted into <span class="hl-event">heat energy</span>. The amount of heat produced is given by:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">H = I² × R × t&nbsp;&nbsp;(Joule's Law)</div>
+      <p class="text-sm text-gray-400 mb-3">Where: <span class="hl-term">H</span> = Heat produced (Joules), <span class="hl-term">I</span> = Current (A), <span class="hl-term">R</span> = Resistance (Ω), <span class="hl-term">t</span> = Time (s).</p>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>Why H = I²Rt? (Derivation)</div>
+      <p class="text-sm text-gray-400 mb-3">Work done by battery = V × Q = V × I × t. Using V = IR → W = (IR) × I × t = I²Rt. This work appears as heat! So <span class="hl-term">H = I²Rt</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Applications of Heating Effect</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Appliance</th><th>Heating Element</th><th>Why that material?</th></tr></thead>
+          <tbody>
+            <tr><td>Electric Iron</td><td>Nichrome coil</td><td>High resistivity, high melting point, does not oxidize easily</td></tr>
+            <tr><td>Electric Heater / Geyser</td><td>Nichrome wire</td><td>Same as above — produces controlled heat</td></tr>
+            <tr><td>Electric Bulb</td><td>Tungsten filament</td><td>Very high melting point (3422°C), glows white-hot</td></tr>
+            <tr><td>Electric Fuse</td><td>Thin wire of low melting point (Pb-Sn alloy)</td><td>Melts and breaks circuit when current exceeds safe limit</td></tr>
+            <tr><td>Electric Toaster</td><td>Nichrome wire</td><td>Even heating, long life</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-bolt text-amber-400 text-xs mr-2"></i>Electric Power</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Electric Power</span> is the rate at which electrical energy is consumed or produced.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">P = V × I = I² × R = V² / R</div>
+      <p class="text-sm text-gray-400 mb-3">SI Unit: <span class="hl-term">Watt (W)</span>. 1 Watt = 1 Joule/second = 1 Volt × 1 Ampere.</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Power Rating of Common Appliances</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Appliance</th><th>Typical Power</th><th>Energy used in 1 hour</th></tr></thead>
+          <tbody>
+            <tr><td>LED Bulb</td><td>10 W</td><td>0.01 kWh</td></tr>
+            <tr><td>CFL Bulb</td><td>20 W</td><td>0.02 kWh</td></tr>
+            <tr><td>Incandescent Bulb</td><td>60 W</td><td>0.06 kWh</td></tr>
+            <tr><td>Fan</td><td>60 – 75 W</td><td>0.06 – 0.075 kWh</td></tr>
+            <tr><td>Refrigerator</td><td>150 – 300 W</td><td>0.15 – 0.30 kWh</td></tr>
+            <tr><td>Air Conditioner (1.5 ton)</td><td>1500 – 2000 W</td><td>1.5 – 2.0 kWh</td></tr>
+            <tr><td>Electric Iron</td><td>750 – 1000 W</td><td>0.75 – 1.0 kWh</td></tr>
+            <tr><td>Water Heater (Geyser)</td><td>2000 – 3000 W</td><td>2.0 – 3.0 kWh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Power is like the <span class="hl-term">speed of a car</span>. Voltage is the <span class="hl-event">fuel</span>, current is how far you go. Power = how fast you consume fuel. A high-power appliance (like AC) is like a <span class="hl-ruler">sports car</span> that drinks fuel fast, whereas a low-power LED bulb is like a <span class="hl-date">scooter</span> sipping fuel slowly.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Commercial Unit of Energy -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-money-bill text-amber-400 text-sm"></i> 8. Commercial Unit — kWh &amp; Electricity Bill</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3">The SI unit of energy is <span class="hl-term">Joule (J)</span>. But 1 Joule is very small. For commercial use, we use <span class="hl-term">kilowatt-hour (kWh)</span> — the energy consumed by a 1 kW appliance in 1 hour.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">1 kWh = 1 kW × 1 h = 1000 W × 3600 s = 3.6 × 10⁶ J</div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Formula for Electricity Bill</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">Energy (kWh) = Power (kW) × Time (h)</div>
+      <div class="text-sm text-gray-400 mb-3">Electricity Bill = Total Units (kWh) × Rate per Unit</div>
+
+      <div class="subsection-heading"><i class="fas fa-pen text-amber-400 text-xs mr-2"></i>Numerical Example</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Problem:</span> A house uses 5 LED bulbs (10 W each) for 6 hours/day, a fan (75 W) for 10 hours/day, and a refrigerator (200 W) for 12 hours/day. Calculate the monthly bill (30 days) if rate is ₹6.50 per kWh.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Solution:</span></p>
+      <ul class="bullet-list text-sm">
+        <li>Bulbs: 5 × 10 W × 6 h = 300 Wh = 0.3 kWh/day</li>
+        <li>Fan: 75 W × 10 h = 750 Wh = 0.75 kWh/day</li>
+        <li>Fridge: 200 W × 12 h = 2400 Wh = 2.4 kWh/day</li>
+        <li>Total per day = 0.3 + 0.75 + 2.4 = <span class="hl-num">3.45 kWh</span></li>
+        <li>Total per month = 3.45 × 30 = <span class="hl-num">103.5 kWh</span> (units)</li>
+        <li>Bill = 103.5 × 6.50 = <span class="hl-event">₹672.75</span></li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Unit Conversions</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Convert</th><th>Operation</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>kW → W</td><td>Multiply by 1000</td><td>1.5 kW = 1500 W</td></tr>
+            <tr><td>W → kW</td><td>Divide by 1000</td><td>200 W = 0.2 kW</td></tr>
+            <tr><td>Hours → seconds</td><td>Multiply by 3600</td><td>1 h = 3600 s</td></tr>
+            <tr><td>kWh → Joules</td><td>Multiply by 3.6 × 10⁶</td><td>1 kWh = 3.6 × 10⁶ J</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> 1 <span class="hl-term">unit</span> of electricity in your bill = <span class="hl-num">1 kWh</span>. So if your bill says "200 units consumed", it means 200 kWh of energy was used.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Electric Fuse & Safety -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-shield-halved text-amber-400 text-sm"></i> 9. Electric Fuse &amp; Safety</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Electric Fuse</div>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">fuse</span> is a <span class="hl-event">safety device</span> that protects circuits from <span class="hl-ruler">overloading</span> and <span class="hl-ruler">short-circuit</span>. It contains a thin wire of low melting point (tin-lead alloy) that melts and breaks the circuit when current exceeds a safe limit.</p>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Fuse Ratings &amp; Applications</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Fuse Rating</th><th>Used For</th><th>Appliance Power</th></tr></thead>
+          <tbody>
+            <tr><td>5 A</td><td>Lighting circuits (bulbs, fans, TV)</td><td>Up to ~1100 W</td></tr>
+            <tr><td>10 A</td><td>Small appliances (iron, toaster)</td><td>~1100 – 2200 W</td></tr>
+            <tr><td>15 A</td><td>Heavy appliances (AC, geyser)</td><td>~2200 – 3300 W</td></tr>
+            <tr><td>30 A</td><td>Main line (whole house)</td><td>Up to ~6600 W</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Fuse vs MCB</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Fuse</th><th>MCB (Miniature Circuit Breaker)</th></tr></thead>
+          <tbody>
+            <tr><td>Operation</td><td>Wire <span class="hl-event">melts</span> to break circuit</td><td>Switch <span class="hl-date">trips</span> (electromagnetic)</td></tr>
+            <tr><td>Reusability</td><td>One-time use (must replace)</td><td><span class="hl-ruler">Reusable</span> (just flip switch back on)</td></tr>
+            <tr><td>Response time</td><td>Slow (melting takes time)</td><td><span class="hl-date">Fast</span> (immediate trip)</td></tr>
+            <tr><td>Cost</td><td>Cheap</td><td>More expensive</td></tr>
+            <tr><td>Modern use</td><td>Old buildings, low-cost devices</td><td><span class="hl-place">New buildings, recommended</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-earth-asia text-amber-400 text-xs mr-2"></i>Earthing</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Earthing</span> (grounding) connects the metal body of appliances to the <span class="hl-event">Earth</span> through a thick copper wire. If a live wire touches the metal body, current flows directly to the ground instead of through the user. This <span class="hl-ruler">prevents electric shock</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-triangle-exclamation text-amber-400 text-xs mr-2"></i>Safety Precautions</div>
+      <ul class="bullet-list text-sm">
+        <li>Never touch electrical appliances with <span class="hl-event">wet hands</span> — water conducts electricity.</li>
+        <li>Always use <span class="hl-term">three-pin plugs</span> with proper earthing.</li>
+        <li>Do not overload a single socket (too many appliances = too much current = fire risk).</li>
+        <li>Switch off the <span class="hl-ruler">main switch</span> before replacing a fuse or repairing.</li>
+        <li>Use <span class="hl-term">fuse</span> or <span class="hl-term">MCB</span> of correct rating for each circuit.</li>
+        <li>Keep electrical wires away from <span class="hl-place">water sources</span> and <span class="hl-place">children</span>.</li>
+        <li>In case of electric fire, never use <span class="hl-event">water</span> — use <span class="hl-term">fire extinguisher (CO₂ type)</span> or sand.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-bolt text-amber-400 text-xs mr-2"></i>Overloading &amp; Short Circuit</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Condition</th><th>What happens</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Overloading</span></td><td>Too many appliances draw more current than the wire can handle</td><td>Wires overheat → <span class="hl-event">fire risk</span></td></tr>
+            <tr><td><span class="hl-term">Short Circuit</span></td><td>Live wire touches neutral wire directly (low resistance path)</td><td>Huge current flows → <span class="hl-event">sparks, fire</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> A fuse is like a <span class="hl-term">pressure relief valve</span> in a water pipe. If pressure gets too high, the valve bursts and releases water — protecting the pipe. Similarly, if current gets too high, the fuse wire melts and breaks the circuit — protecting your appliances!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 10. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Voltage, Current, Resistance — Key Differences</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Voltage (V)</th><th>Current (I)</th><th>Resistance (R)</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Energy per unit charge</td><td>Rate of flow of charge</td><td>Opposition to current</td></tr>
+            <tr><td>Symbol</td><td>V</td><td>I</td><td>R</td></tr>
+            <tr><td>Unit</td><td>Volt (V)</td><td>Ampere (A)</td><td>Ohm (Ω)</td></tr>
+            <tr><td>Measuring device</td><td>Voltmeter</td><td>Ammeter</td><td>Ohmmeter / Multimeter</td></tr>
+            <tr><td>Connection</td><td><span class="hl-event">Parallel</span> (across component)</td><td><span class="hl-date">Series</span> (in line with component)</td><td>—</td></tr>
+            <tr><td>Water analogy</td><td><span class="hl-ruler">Pressure</span> (pump force)</td><td><span class="hl-place">Flow rate</span> (litres/s)</td><td><span class="hl-term">Pipe narrowness</span></td></tr>
+            <tr><td>Formula relation</td><td>V = IR</td><td>I = V/R</td><td>R = V/I</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Series vs Parallel Circuits</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Series</th><th>Parallel</th></tr></thead>
+          <tbody>
+            <tr><td>Current</td><td><span class="hl-event">Same</span> everywhere</td><td><span class="hl-ruler">Divided</span> among branches</td></tr>
+            <tr><td>Voltage</td><td><span class="hl-event">Divided</span> across each resistor</td><td><span class="hl-date">Same</span> across each branch</td></tr>
+            <tr><td>Total Resistance</td><td>R₁ + R₂ + R₃ (bigger)</td><td>&lt; smallest R (smaller)</td></tr>
+            <tr><td>Brightness of bulbs</td><td>Less bright (voltage divided)</td><td>Full brightness (full voltage)</td></tr>
+            <tr><td>If one bulb fuses</td><td><span class="hl-event">All go out</span></td><td><span class="hl-date">Others stay on</span></td></tr>
+            <tr><td>Wiring used in</td><td>Festival lights (string)</td><td><span class="hl-place">Home wiring</span></td></tr>
+            <tr><td>Switch control</td><td>Single switch controls all</td><td>Each device has own switch</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Conductors, Insulators &amp; Semiconductors</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Conductor</th><th>Insulator</th><th>Semiconductor</th></tr></thead>
+          <tbody>
+            <tr><td>Free electrons</td><td>Many</td><td>Almost none</td><td>Few</td></tr>
+            <tr><td>Band gap</td><td>Zero / overlapping</td><td>Large (&gt; 3 eV)</td><td>Small (~1 eV)</td></tr>
+            <tr><td>Resistivity (Ω·m)</td><td>10⁻⁸ to 10⁻⁶</td><td>10¹² to 10¹⁸</td><td>10⁻⁶ to 10⁴</td></tr>
+            <tr><td>Temp effect on R</td><td>R <span class="hl-event">increases</span> with T</td><td>R <span class="hl-place">decreases</span> with T</td><td>R <span class="hl-ruler">decreases</span> with T</td></tr>
+            <tr><td>Example</td><td>Copper, Silver, Aluminium</td><td>Rubber, Glass, Wood</td><td>Silicon, Germanium</td></tr>
+            <tr><td>Use</td><td>Wires, cables</td><td>Insulation, safety gear</td><td>Chips, transistors, solar cells</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Fuse vs MCB</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Fuse</th><th>MCB</th></tr></thead>
+          <tbody>
+            <tr><td>Working</td><td>Wire melts</td><td>Switch trips</td></tr>
+            <tr><td>Reusable</td><td>No (replace needed)</td><td>Yes (reset)</td></tr>
+            <tr><td>Cost</td><td>Cheap</td><td>Expensive</td></tr>
+            <tr><td>Speed</td><td>Slower</td><td>Faster</td></tr>
+            <tr><td>Sensitivity</td><td>Low</td><td>High</td></tr>
+            <tr><td>Modern preference</td><td>Old homes</td><td>New homes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Ohmic vs Non-Ohmic Conductors</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Ohmic</th><th>Non-Ohmic</th></tr></thead>
+          <tbody>
+            <tr><td>Obey's Ohm's Law?</td><td><span class="hl-date">Yes</span></td><td><span class="hl-event">No</span></td></tr>
+            <tr><td>V-I graph</td><td>Straight line through origin</td><td>Curved</td></tr>
+            <tr><td>Resistance</td><td>Constant</td><td>Changes with V/I</td></tr>
+            <tr><td>Example</td><td>Resistor, Copper wire</td><td>Bulb filament, Diode, LED</td></tr>
+            <tr><td>Cause of non-linearity</td><td>—</td><td>Heating changes R</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Conventional vs Electron Flow</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Conventional Current</th><th>Electron Flow</th></tr></thead>
+          <tbody>
+            <tr><td>Direction</td><td><span class="hl-event">+ to −</span></td><td><span class="hl-ruler">− to +</span></td></tr>
+            <tr><td>Used in</td><td>Circuit diagrams, textbooks</td><td>Physics, semiconductor theory</td></tr>
+            <tr><td>Historical</td><td>Benjamin Franklin (1700s)</td><td>Discovered after electron (1897)</td></tr>
+            <tr><td>In analysis</td><td>Easier to use (positive flow)</td><td>Matches real particle movement</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Mnemonics -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 11. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Ohm's Law Triangle</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">The V = IR Triangle:</span> Cover the quantity you want to find. <span class="hl-event">"VIR"</span> — V on top, I and R below. V = I × R (top = product of bottom two). I = V/R (cover I → V over R). R = V/I (cover R → V over I). Or remember: <span class="hl-event">"Very Important Rule"</span> = V = I × R.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Resistance Factors</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Factors of Resistance:</span> <span class="hl-event">"L MAT"</span> = <span class="hl-term">L</span>ength, <span class="hl-term">M</span>aterial, <span class="hl-term">A</span>rea (cross-sectional), <span class="hl-term">T</span>emperature. Or: <span class="hl-event">"R = ρ L/A"</span> — think <span class="hl-event">"Rho L over A"</span> for the formula.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Series vs Parallel</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Series vs Parallel:</span> <span class="hl-event">"Series = S"</span> → Same current, Sum of resistances, all Stop if one fails. <span class="hl-event">"Parallel = P"</span> → Potential same (voltage), Paths divided, each works independently. Or use: <span class="hl-event">"S-S-S"</span> = Series = Same current (I) = Sum of R.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Power Formulas</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Three Power Formulas:</span> <span class="hl-event">"P = VI"</span> (basic), <span class="hl-event">"P = I²R"</span> (heating), <span class="hl-event">"P = V²/R"</span> (substitute I = V/R). Trick: <span class="hl-event">"Papa VI loves I²R from V²/R"</span> — silly but works!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Colour Code of Resistors</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Resistor Colour Code (BBROYGBVGW):</span> <span class="hl-event">"B B ROY of Great Britain has a Very Good Wife"</span> = Black (0), Brown (1), Red (2), Orange (3), Yellow (4), Green (5), Blue (6), Violet (7), Grey (8), White (9).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Practice Questions (15+ MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 12. Practice Questions — 20 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. The SI unit of electric charge is:</div>
+        <div class="mcq-opt">A) Ampere</div>
+        <div class="mcq-opt">B) Volt</div>
+        <div class="mcq-opt">C) Coulomb</div>
+        <div class="mcq-opt">D) Ohm</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Coulomb</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. Which of the following is a conductor of electricity?</div>
+        <div class="mcq-opt">A) Rubber</div>
+        <div class="mcq-opt">B) Wood</div>
+        <div class="mcq-opt">C) Copper</div>
+        <div class="mcq-opt">D) Plastic</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Copper</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. The correct formula for electric current is:</div>
+        <div class="mcq-opt">A) I = Q × t</div>
+        <div class="mcq-opt">B) I = Q / t</div>
+        <div class="mcq-opt">C) I = t / Q</div>
+        <div class="mcq-opt">D) I = V / R</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) I = Q / t</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. Conventional current flows from:</div>
+        <div class="mcq-opt">A) Negative to Positive</div>
+        <div class="mcq-opt">B) Positive to Negative</div>
+        <div class="mcq-opt">C) Both directions equally</div>
+        <div class="mcq-opt">D) None of the above</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Positive to Negative</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. Ohm's Law states that:</div>
+        <div class="mcq-opt">A) V = I / R</div>
+        <div class="mcq-opt">B) V = I × R</div>
+        <div class="mcq-opt">C) R = V × I</div>
+        <div class="mcq-opt">D) I = V × R</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) V = I × R</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. If the length of a wire is doubled, its resistance becomes:</div>
+        <div class="mcq-opt">A) Half</div>
+        <div class="mcq-opt">B) Double</div>
+        <div class="mcq-opt">C) Same</div>
+        <div class="mcq-opt">D) Four times</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Double (R ∝ L)</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. Which material is commonly used as the heating element in electric irons?</div>
+        <div class="mcq-opt">A) Copper</div>
+        <div class="mcq-opt">B) Aluminium</div>
+        <div class="mcq-opt">C) Nichrome</div>
+        <div class="mcq-opt">D) Silver</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Nichrome</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. A bulb uses 60 W power at 220 V. The current drawn is:</div>
+        <div class="mcq-opt">A) 0.27 A</div>
+        <div class="mcq-opt">B) 3.67 A</div>
+        <div class="mcq-opt">C) 0.5 A</div>
+        <div class="mcq-opt">D) 1.2 A</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 0.27 A (I = P/V = 60/220 = 0.27 A)</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. 1 kWh is equal to:</div>
+        <div class="mcq-opt">A) 3.6 × 10⁶ J</div>
+        <div class="mcq-opt">B) 3.6 × 10³ J</div>
+        <div class="mcq-opt">C) 360 J</div>
+        <div class="mcq-opt">D) 36 × 10⁶ J</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 3.6 × 10⁶ J</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. The device used to measure electric current is:</div>
+        <div class="mcq-opt">A) Voltmeter</div>
+        <div class="mcq-opt">B) Ammeter</div>
+        <div class="mcq-opt">C) Galvanometer</div>
+        <div class="mcq-opt">D) Multimeter</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Ammeter</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. Three resistors 2 Ω, 3 Ω, and 5 Ω are connected in series. Total resistance is:</div>
+        <div class="mcq-opt">A) 10 Ω</div>
+        <div class="mcq-opt">B) 8 Ω</div>
+        <div class="mcq-opt">C) 1.2 Ω</div>
+        <div class="mcq-opt">D) 6 Ω</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 10 Ω (2 + 3 + 5 = 10 Ω)</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. Two resistors of 6 Ω each are in parallel. The equivalent resistance is:</div>
+        <div class="mcq-opt">A) 12 Ω</div>
+        <div class="mcq-opt">B) 6 Ω</div>
+        <div class="mcq-opt">C) 3 Ω</div>
+        <div class="mcq-opt">D) 1 Ω</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 3 Ω (1/R = 1/6 + 1/6 = 2/6 → R = 3 Ω)</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. The heating effect of current is used in:</div>
+        <div class="mcq-opt">A) Electric fan</div>
+        <div class="mcq-opt">B) Electric iron</div>
+        <div class="mcq-opt">C) Refrigerator</div>
+        <div class="mcq-opt">D) Washing machine</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Electric iron</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. The charge on an electron is:</div>
+        <div class="mcq-opt">A) +1.6 × 10⁻¹⁹ C</div>
+        <div class="mcq-opt">B) −1.6 × 10⁻¹⁹ C</div>
+        <div class="mcq-opt">C) +1 C</div>
+        <div class="mcq-opt">D) 0 C</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) −1.6 × 10⁻¹⁹ C</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. Which of the following is a safety device that melts to break a circuit?</div>
+        <div class="mcq-opt">A) MCB</div>
+        <div class="mcq-opt">B) Fuse</div>
+        <div class="mcq-opt">C) Switch</div>
+        <div class="mcq-opt">D) Ammeter</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Fuse</div>
+      </div>
+
+      <!-- MCQ 16 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">16. In a parallel circuit, if one bulb fuses:</div>
+        <div class="mcq-opt">A) All bulbs go out</div>
+        <div class="mcq-opt">B) Other bulbs stay on</div>
+        <div class="mcq-opt">C) Current becomes zero</div>
+        <div class="mcq-opt">D) Voltage increases</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Other bulbs stay on (parallel = independent paths)</div>
+      </div>
+
+      <!-- MCQ 17 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">17. The resistance of a conductor increases with temperature because:</div>
+        <div class="mcq-opt">A) Electrons move faster</div>
+        <div class="mcq-opt">B) Atoms vibrate more, hindering electron flow</div>
+        <div class="mcq-opt">C) Wire expands</div>
+        <div class="mcq-opt">D) Voltage increases</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Atoms vibrate more → more collisions with electrons</div>
+      </div>
+
+      <!-- MCQ 18 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">18. The SI unit of resistivity is:</div>
+        <div class="mcq-opt">A) Ohm (Ω)</div>
+        <div class="mcq-opt">B) Ohm-meter (Ω·m)</div>
+        <div class="mcq-opt">C) Ohm/meter</div>
+        <div class="mcq-opt">D) Siemens</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Ohm-meter (Ω·m)</div>
+      </div>
+
+      <!-- MCQ 19 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">19. Earthing is done to:</div>
+        <div class="mcq-opt">A) Save electricity</div>
+        <div class="mcq-opt">B) Prevent electric shock</div>
+        <div class="mcq-opt">C) Increase voltage</div>
+        <div class="mcq-opt">D) Reduce current</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Prevent electric shock (current flows to ground)</div>
+      </div>
+
+      <!-- MCQ 20 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">20. A 2 kW electric heater is used for 5 hours daily. Energy consumed in kWh per day is:</div>
+        <div class="mcq-opt">A) 2 kWh</div>
+        <div class="mcq-opt">B) 5 kWh</div>
+        <div class="mcq-opt">C) 10 kWh</div>
+        <div class="mcq-opt">D) 20 kWh</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 10 kWh (Energy = Power × Time = 2 kW × 5 h = 10 kWh)</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-bolt text-amber-400/50 mr-2"></i>
+      Electricity · NCERT Physics Notes · Class 6–10
+      <br>Compiled for revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Toggle MCQ answers
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    // Hamburger menu
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

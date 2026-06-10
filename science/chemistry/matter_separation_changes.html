@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matter, Separation & Changes | NCERT Science Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(16,185,129,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#10b981; }
+.bullet-list-2 { list-style: none; padding-left: 0.5rem; }
+.bullet-list-2 li { position: relative; padding-left: 1.25rem; margin-bottom: 0.25rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.6; }
+.bullet-list-2 li::before { content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 0.3rem; font-size: 0.45rem; color: #34d399; }
+.fact-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.analogy-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.analogy-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.analogy-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(16,185,129,0.15); color:#6ee7b7; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(16,185,129,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(16,185,129,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.2); font-size:0.82rem; color:#6ee7b7; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+.teacher-tip { background:linear-gradient(135deg, rgba(16,185,129,0.1), rgba(5,150,105,0.05)); border-left:4px solid #34d399; border-radius:0 0.75rem 0.75rem 0; padding:0.75rem 1rem; margin:0.75rem 0; }
+.teacher-tip-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.teacher-tip-content { font-size:0.85rem; color:#e2e8f0; line-height:1.7; }
+</style></head>
+<body><div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-amber-500/20 text-center">
+  <i class="fa-solid fa-atom text-4xl sm:text-5xl text-amber-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Matter, Separation Techniques &amp; Changes</h1>
+  <p class="text-amber-300 text-sm mt-1"><i class="fa-solid fa-chalkboard-user text-amber-400 mr-1"></i> NCERT Science · Class 6 to 10 · Comprehensive Notes</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-amber-900/40 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-atom mr-1"></i>Matter</span>
+    <span class="cat-badge bg-emerald-900/40 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-star mr-1"></i>Exam Ready</span>
+  </div>
+</div>
+
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2"><i class="fa-solid fa-atom text-amber-400"></i><span class="text-white font-semibold text-sm">Topics</span></div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()"><i id="hamburger-icon" class="fas fa-bars text-amber-400"></i></button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">1. Basics of Matter</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">2. Physical & Chemical Changes</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">3. Separation Techniques</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">4. Solutions & Mixtures</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">5. MCQs</a>
+  </div>
+</div>
+
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fas fa-atom text-amber-400"></i> 1. Basics of Matter – What is Everything Made Of?</h2>
+<p class="content-text"><span class="hl-term">Matter</span> is anything that has <span class="hl-event">mass</span> and <span class="hl-place">occupies space</span> (volume). Everything around you — air, water, your book, the food you eat — is matter. Ancient Indian philosophers (like <span class="hl-term">Maharishi Kanada</span>, ~600 BCE) proposed that matter is made of tiny indivisible particles called <em>paramanu</em>. John Dalton (1808) later gave the <span class="hl-term">Atomic Theory</span> — all matter is made of atoms.</p>
+
+<div class="subsection-heading"><i class="fas fa-cubes text-amber-400 text-xs mr-2"></i>Three States of Matter</div>
+<p class="content-text"><strong>Analogy:</strong> Particles in solids are like <span class="hl-term">students in a classroom</span> — tightly packed, can only vibrate. In liquids, like <span class="hl-term">students in a hallway</span> — can move around but stay close. In gases, like <span class="hl-term">students in a playground</span> — free to move anywhere!</p>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Solid</th><th>Liquid</th><th>Gas</th></tr></thead>
+<tbody>
+<tr><td>Shape</td><td><span class="hl-term">Fixed</span></td><td>No fixed shape (takes container shape)</td><td>No fixed shape (fills entire container)</td></tr>
+<tr><td>Volume</td><td><span class="hl-term">Fixed</span></td><td><span class="hl-date">Fixed</span></td><td>No fixed volume (expands to fill)</td></tr>
+<tr><td>Compressibility</td><td>Very low (negligible)</td><td>Low (slightly compressible)</td><td><span class="hl-event">High</span> (easily compressed)</td></tr>
+<tr><td>Density</td><td><span class="hl-num">High</span></td><td>Moderate</td><td><span class="hl-ruler">Very low</span></td></tr>
+<tr><td>Arrangement of particles</td><td>Tightly packed, orderly</td><td>Loosely packed, disorderly</td><td>Far apart, random motion</td></tr>
+<tr><td>Intermolecular forces</td><td>Very strong</td><td>Moderate</td><td>Very weak</td></tr>
+<tr><td>Kinetic energy</td><td>Low (vibrational only)</td><td>Medium</td><td><span class="hl-event">Very high</span></td></tr>
+<tr><td>Examples</td><td>Iron, wood, ice, stone</td><td>Water, milk, oil, juice</td><td>Air, oxygen, steam, CO₂</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-arrows-spin text-amber-400 text-xs mr-2"></i>Interconversion of States</div>
+<p class="content-text">Matter can change from one state to another by changing <span class="hl-term">temperature</span> or <span class="hl-term">pressure</span>.</p>
+<div class="table-wrap">
+<table><thead><tr><th>Process</th><th>Change</th><th>Direction of Heat</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Melting</span> (Fusion)</td><td>Solid → Liquid</td><td><span class="hl-event">Absorbs heat</span></td><td>Ice melts to water at 0°C</td></tr>
+<tr><td><span class="hl-term">Freezing</span> (Solidification)</td><td>Liquid → Solid</td><td><span class="hl-ruler">Releases heat</span></td><td>Water freezes to ice at 0°C</td></tr>
+<tr><td><span class="hl-term">Boiling</span> (Vaporization)</td><td>Liquid → Gas</td><td><span class="hl-event">Absorbs heat</span></td><td>Water boils to steam at 100°C</td></tr>
+<tr><td><span class="hl-term">Evaporation</span></td><td>Liquid → Gas (at surface)</td><td><span class="hl-event">Absorbs heat</span></td><td>Puddles drying, clothes drying</td></tr>
+<tr><td><span class="hl-term">Condensation</span></td><td>Gas → Liquid</td><td><span class="hl-ruler">Releases heat</span></td><td>Steam on cold glass, clouds forming</td></tr>
+<tr><td><span class="hl-term">Sublimation</span></td><td>Solid → Gas (directly)</td><td><span class="hl-event">Absorbs heat</span></td><td>Camphor, naphthalene, dry ice, iodine</td></tr>
+<tr><td><span class="hl-term">Deposition</span></td><td>Gas → Solid (directly)</td><td><span class="hl-ruler">Releases heat</span></td><td>Frost formation, iodine vapour to crystals</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-temperature-high text-amber-400 text-xs mr-2"></i>Effect of Temperature &amp; Pressure</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Temperature ↑</span> → particles gain kinetic energy → overcome interparticle forces → solid melts → liquid boils → gas.</li>
+<li><span class="hl-term">Pressure ↑</span> → particles are forced closer → gas condenses to liquid, liquid freezes to solid. Example: LPG (Liquefied Petroleum Gas) is stored under high pressure as liquid, becomes gas when released.</li>
+<li><span class="hl-term">Dry ice</span> is solid CO₂ that sublimes directly to gas at -78°C. Used in cooling and stage effects.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-wind text-amber-400 text-xs mr-2"></i>Diffusion – Particles Moving Around</div>
+<p class="content-text"><span class="hl-term">Diffusion</span> is the spontaneous mixing of particles of two substances. It happens due to the <span class="hl-event">constant motion of particles</span> and the <span class="hl-date">empty spaces between them</span>.</p>
+<div class="table-wrap">
+<table><thead><tr><th>State</th><th>Example</th><th>Explanation</th></tr></thead>
+<tbody>
+<tr><td>Gas-Gas</td><td>Perfume sprayed in one corner of a room — smell spreads everywhere</td><td>Gas particles move very fast and fill the room quickly</td></tr>
+<tr><td>Gas-Liquid</td><td>O₂ and CO₂ dissolve in water (fish breathe dissolved oxygen)</td><td>Gas particles diffuse into liquid surface</td></tr>
+<tr><td>Liquid-Liquid</td><td>Ink drop in water — colour spreads evenly</td><td>Liquid particles intermingle slowly</td></tr>
+<tr><td>Solid-Solid</td><td>Copper and gold discs kept pressed for years — particles diffuse into each other</td><td>Very slow but possible over long time</td></tr>
+<tr><td>Solid-Liquid</td><td>Salt dissolving in water, sugar in tea</td><td>Solid particles separate and mix with liquid</td></tr>
+</tbody></table>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-user text-emerald-400 mr-1"></i> Teacher Says:</div>
+<div class="teacher-tip-content">Diffusion is faster in gases (because particles are far apart), slower in liquids, and extremely slow in solids. Why? Think about the hallway vs playground analogy — more space = easier to move!</div>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Matter is Composed of Particles — Evidence</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Ancient Indian view:</span> Maharishi Kanada (6th century BCE) proposed <em>paramanu</em> (atoms) as indestructible particles of matter. He also proposed <em>dvyanuka</em> (molecules).</li>
+<li><span class="hl-term">Dalton's Atomic Theory (1808):</span> All matter is made of atoms. Atoms are indivisible. Atoms of same element are identical.</li>
+<li><span class="hl-term">Experimental evidence:</span> When KMnO₄ crystals are dissolved in water, a few crystals colour a large volume — proving particles are tiny and have spaces between them.</li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400 mr-1"></i> Mnemonic:</div>
+<div class="mnemonic-content">State Change Memory Trick: "S-L-G = Melting & Evaporation (heat goes IN, temperature rises). G-L-S = Condensation & Freezing (heat comes OUT, temperature drops)." Remember: <span class="hl-event">"S-L-G = Shoes Let Go (gain energy)"</span>.</div>
+</div>
+</section>
+
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fas fa-arrows-rotate text-amber-400"></i> 2. Physical &amp; Chemical Changes</h2>
+
+<div class="subsection-heading"><i class="fas fa-recycle text-amber-400 text-xs mr-2"></i>Physical Change</div>
+<p class="content-text"><strong>Analogy:</strong> Physical change is like <span class="hl-term">rearranging furniture</span> in a room — same room (same substance), different layout (different form).</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Definition:</span> A change where the <span class="hl-event">chemical composition</span> of the substance remains the same. Only physical properties (shape, size, state, colour) change.</li>
+<li><span class="hl-term">Characteristics:</span> Usually <span class="hl-date">reversible</span>, no new substance formed, no change in mass, minor energy change.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Melting of ice (solid water → liquid water — same H₂O)
+<br>— Boiling/evaporation of water (liquid → vapour — still H₂O)
+<br>— Dissolving sugar in water (sugar crystals disappear but sugar is still sugar)
+<br>— Cutting paper, cutting cloth, breaking glass, chopping wood
+<br>— Crushing a can, folding a paper, mixing salt and pepper
+<br>— Magnetizing an iron nail</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-fire text-amber-400 text-xs mr-2"></i>Chemical Change</div>
+<p class="content-text"><strong>Analogy:</strong> Chemical change is like <span class="hl-term">baking a cake</span> — once baked, you cannot get back the raw eggs and flour separately. Something entirely new is formed!</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Definition:</span> A change where <span class="hl-event">new substances</span> with different chemical compositions are formed. Old bonds break, new bonds form.</li>
+<li><span class="hl-term">Characteristics:</span> Usually <span class="hl-num">irreversible</span>, new substance formed, energy change (heat/light), mass remains same (law of conservation).</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Rusting of iron (Fe + O₂ → Fe₂O₃·xH₂O — reddish-brown rust)
+<br>— Burning of wood/paper (produces ash, CO₂, H₂O — cannot get wood back)
+<br>— Cooking food (raw egg → boiled egg — irreversible)
+<br>— Digestion of food (enzymes break down food into new substances)
+<br>— Photosynthesis (CO₂ + H₂O → C₆H₁₂O₆ + O₂, with sunlight)
+<br>— Ripening of fruits, souring of milk, fermentation
+<br>— Burning of LPG/CNG — combustion reaction</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Physical vs Chemical Change — Comparison Table</div>
+<div class="table-wrap">
+<table><thead><tr><th>Feature</th><th>Physical Change</th><th>Chemical Change</th></tr></thead>
+<tbody>
+<tr><td>New substance formed?</td><td><span class="hl-ruler">No</span></td><td><span class="hl-event">Yes</span></td></tr>
+<tr><td>Reversibility</td><td><span class="hl-date">Usually reversible</span></td><td><span class="hl-num">Usually irreversible</span></td></tr>
+<tr><td>Chemical composition</td><td><span class="hl-ruler">Unchanged</span></td><td><span class="hl-event">Changes completely</span></td></tr>
+<tr><td>Energy change</td><td>Minor (if any)</td><td><span class="hl-num">Significant</span> (heat/light/sound)</td></tr>
+<tr><td>Mass change</td><td>Mass unchanged</td><td>Mass conserved (Law of Conservation)</td></tr>
+<tr><td>Bond breaking/forming</td><td>No bonds broken/formed</td><td>Old bonds broken, new bonds formed</td></tr>
+<tr><td>Rate of change</td><td>Usually instant/physical</td><td>May be slow (rusting) or fast (burning)</td></tr>
+<tr><td>Detection</td><td>Visible change in shape/size/state</td><td>Heat, light, gas, colour change, precipitate</td></tr>
+<tr><td>Examples</td><td>Melting, freezing, cutting, dissolving, crushing</td><td>Rusting, burning, cooking, digestion, fermentation</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-exclamation-triangle text-amber-400 text-xs mr-2"></i>Signs of a Chemical Change</div>
+<div class="table-wrap">
+<table><thead><tr><th>Sign</th><th>What Happens</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-event">Colour change</span></td><td>Substance changes colour</td><td>Iron rusts (grey → reddish-brown); apple turns brown after cutting</td></tr>
+<tr><td><span class="hl-date">Gas evolution</span></td><td>Bubbles or gas released</td><td>Vinegar + baking soda → CO₂ bubbles; yeast fermentation</td></tr>
+<tr><td><span class="hl-num">Heat / Light</span></td><td>Temperature rises or flame appears</td><td>Burning wood, candle wax burning, LPG combustion</td></tr>
+<tr><td><span class="hl-place">Precipitate formation</span></td><td>Solid forms from solution</td><td>Lime water + CO₂ → milky CaCO₃ precipitate</td></tr>
+<tr><td><span class="hl-policy">Change in smell</span></td><td>New odour produced</td><td>Rotten eggs (H₂S); fermentation smell</td></tr>
+<tr><td><span class="hl-term">Sound produced</span></td><td>Explosion or crackling</td><td>Firecrackers bursting</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-rust text-red-400 text-xs mr-2"></i>Rusting — Why Iron Rusts</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Rusting:</span> Iron reacts with oxygen and moisture to form hydrated iron(III) oxide — Fe₂O₃·xH₂O (rust). Condition: <span class="hl-event">Oxygen + Water</span> both needed.</li>
+<li>4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O (rust is reddish-brown, flaky, porous — allows more rusting).</li>
+<li><span class="hl-term">Corrosion:</span> General term for deterioration of metals by reaction with environment. Rusting is corrosion of iron. Aluminium corrodes to form Al₂O₃ (protective layer — does not flake). Silver tarnishes (black Ag₂S). Copper turns green (CuCO₃·Cu(OH)₂ — patina).</li>
+<li><span class="hl-term">Prevention of rusting:</span> Painting, oiling/greasing, galvanizing (coating with zinc), chrome plating, alloying (stainless steel = Fe + Cr + Ni).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-gem text-cyan-400 text-xs mr-2"></i>Crystallization</div>
+<p class="content-text"><span class="hl-term">Crystallization</span> is a <span class="hl-date">physical change</span> where a solid forms from a solution as crystals. It is a purification technique — pure crystals of a substance are obtained from its impure solution.</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Process:</span> Make a saturated solution → filter → cool slowly → crystals form.</li>
+<li><span class="hl-term">Example:</span> Obtaining pure copper sulphate (CuSO₄·5H₂O) blue crystals from an impure sample. Also, alum (fitkari) crystals.</li>
+<li>Crystallization is different from evaporation — evaporation removes water completely; crystallization allows slow formation of pure crystals, leaving impurities in solution.</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-user text-emerald-400 mr-1"></i> Teacher Says:</div>
+<div class="teacher-tip-content">Remember this trick — <span class="hl-event">"Physical = Same stuff, different form. Chemical = Different stuff altogether!"</span> Cutting an apple is physical. The apple turning brown after some time is chemical (oxidation).</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400 mr-1"></i> Mnemonic:</div>
+<div class="mnemonic-content">Mnemonic — Signs of Chemical Change: <span class="hl-event">"C-G-H-P-S-S"</span> = Colour change, Gas evolution, Heat/Light, Precipitate, Smell, Sound. Think <span class="hl-event">"Cats Generally Have Purple Socks Sometimes"</span>.</div>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-fire-burner text-amber-400 text-xs mr-2"></i>Real-Life Examples Explained</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Why does iron rust?</span> Iron reacts with atmospheric oxygen in the presence of water/moisture. Fe → Fe²⁺ → Fe³⁺ → hydrated Fe₂O₃ (rust). This is a chemical change — new substance forms and the iron weakens. Rust is porous, so it does not protect the inner metal (unlike aluminium oxide which forms a protective layer).</li>
+<li><span class="hl-term">Burning vs Evaporation:</span> Burning is chemical (wood → ash + CO₂ + H₂O — irreversible). Evaporation is physical (water → water vapour — reversible by condensation).</li>
+<li><span class="hl-term">Crystallization:</span> When a hot saturated solution of copper sulphate is cooled, blue CuSO₄·5H₂O crystals form. This is a physical change — the copper sulphate is still copper sulphate, just in crystalline form. Impurities remain in the solution.</li>
+</ul>
+</section>
+
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fas fa-filter text-amber-400"></i> 3. Separation of Substances — 15 Techniques</h2>
+<p class="content-text">We separate mixtures because individual components have different uses. Each technique uses a <span class="hl-term">difference in physical properties</span> (size, density, boiling point, solubility, magnetic property, etc.)</p>
+
+<div class="subsection-heading"><i class="fas fa-1 text-amber-400 text-xs mr-2"></i>1. Handpicking</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">colour, shape, or size</span> of components — visible to the naked eye.</li>
+<li><span class="hl-term">Method:</span> Simply pick out the unwanted component by hand.</li>
+<li><span class="hl-term">Examples:</span> Removing stones from rice/wheat, removing rotten potatoes/chillies, picking out coloured lentils from plain ones.</li>
+<li><strong>Diagram:</strong> A pile of rice with a few stones scattered — a hand reaching to pick a stone out.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-2 text-amber-400 text-xs mr-2"></i>2. Threshing</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">bonding strength</span> between grain and stalk.</li>
+<li><span class="hl-term">Method:</span> Beating the harvested crop to separate grains from stalks. Traditionally done by bullocks trampling or manual beating; modern threshing machines.</li>
+<li><span class="hl-term">Examples:</span> Separating wheat/rice grains from their stalks.</li>
+<li><strong>Diagram:</strong> A bundle of wheat stalks being beaten against a wooden block — grains falling off.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-3 text-amber-400 text-xs mr-2"></i>3. Winnowing</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">weight/density</span> — lighter husk particles are carried away by wind, heavier grains fall down.</li>
+<li><span class="hl-term">Method:</span> Drop the mixture from a height in a gentle breeze/air stream. Heavier grains fall straight, lighter husk blows away.</li>
+<li><span class="hl-term">Examples:</span> Separating husk from grain after threshing; separating lighter chaff from heavier rice.</li>
+<li><strong>Diagram:</strong> A farmer holding a winnowing basket (soup) at height, tossing the mixture — husk blows sideways, grains fall in a pile below.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-4 text-amber-400 text-xs mr-2"></i>4. Sieving</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">particle size</span>. A sieve has holes of a specific size — smaller particles pass through, larger particles are retained.</li>
+<li><span class="hl-term">Method:</span> Pour mixture onto a sieve and shake. Fine particles pass through the holes; larger ones stay on top.</li>
+<li><span class="hl-term">Examples:</span> Removing stones/bran from sand at construction site; separating flour from impurities (bran) in kitchen; separating gravel from sand.</li>
+<li><strong>Diagram:</strong> A circular sieve with wooden rim — sand falling through holes, pebbles retained on the mesh.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-5 text-amber-400 text-xs mr-2"></i>5. Sedimentation &amp; Decantation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">density</span> and <span class="hl-event">solubility</span>. Heavier insoluble solids settle at the bottom (sedimentation); the clear liquid above is poured out (decantation).</li>
+<li><span class="hl-term">Method:</span> Leave the mixture undisturbed → heavy particles settle as sediment → carefully pour out the supernatant liquid.</li>
+<li><span class="hl-term">Examples:</span> Cleaning muddy water (mud settles at bottom, pour clear water); settling of rice wash water; separating sand from water.</li>
+<li><strong>Diagram:</strong> A beaker with muddy water — mud layer at bottom (sediment), clear water above, being poured into another beaker.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-6 text-amber-400 text-xs mr-2"></i>6. Filtration</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">particle size</span> relative to filter medium pores. Insoluble solid particles are too large to pass through filter paper pores; liquid (filtrate) passes through.</li>
+<li><span class="hl-term">Method:</span> Fold filter paper, place in funnel, pour mixture. Solid residue remains on filter paper; clear filtrate collects below.</li>
+<li><span class="hl-term">Key terms:</span> <span class="hl-event">Residue</span> = the solid left on filter paper. <span class="hl-event">Filtrate</span> = the clear liquid that passes through.</li>
+<li><span class="hl-term">Examples:</span> Making tea (strain out tea leaves); water purification at home (candle filter); separating chalk powder from water; separating sand from salt solution.</li>
+<li><strong>Diagram:</strong> A conical flask with a funnel on top — filter paper cone inside funnel — mixture being poured — solid (residue) on paper, clear filtrate in flask below.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-7 text-amber-400 text-xs mr-2"></i>7. Evaporation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">volatility/boiling point</span>. The liquid (solvent) evaporates on heating, leaving behind the dissolved solid (solute).</li>
+<li><span class="hl-term">Method:</span> Heat the solution in a shallow dish. Liquid turns to vapour and escapes; solid remains in the dish.</li>
+<li><span class="hl-term">Examples:</span> Obtaining common salt from sea water (sea water in salt pans → sun evaporates water → salt left behind); obtaining sugar from sugar cane juice.</li>
+<li><strong>Diagram:</strong> A shallow pan over a flame — water boiling and evaporating — salt crystals left in the pan.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-8 text-amber-400 text-xs mr-2"></i>8. Condensation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Gas/vapour <span class="hl-event">cools and changes to liquid</span> on a cold surface.</li>
+<li><span class="hl-term">Method:</span> Vapour is collected and cooled to convert back to liquid.</li>
+<li><span class="hl-term">Examples:</span> Water droplets on a cold glass of water (atmospheric moisture condenses); collecting distilled water from steam; cloud formation (water vapour in air → tiny water droplets).</li>
+<li><strong>Diagram:</strong> A boiling flask with steam going through a cold tube — water droplets forming on the cold surface and dripping into a collection beaker.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-9 text-amber-400 text-xs mr-2"></i>9. Distillation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">boiling points</span>. The liquid with lower boiling point evaporates first, then condenses back to liquid — separating it from dissolved solids or other liquids.</li>
+<li><span class="hl-term">Method:</span> Solution is heated in a distillation flask → vapour rises → passes through condenser (cold water circulation) → condenses → collected as pure liquid (distillate).</li>
+<li><span class="hl-term">Examples:</span> Obtaining pure (distilled) water from salt water/sea water; separating acetone and water; purifying alcohol; obtaining essential oils.</li>
+<li><strong>Diagram:</strong> Distillation flask on a heat source — thermometer at the top — Liebig condenser (cold water jacket) — distillate collecting in a beaker. Salt remains in the flask.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-10 text-amber-400 text-xs mr-2"></i>10. Fractional Distillation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">boiling points</span> of miscible liquids (close BPs). A fractionating column provides multiple condensation-evaporation cycles, separating the mixture into fractions.</li>
+<li><span class="hl-term">Method:</span> Heat in a fractionating column — vapours of lower BP rise higher, condense at different levels, and are collected separately.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— <strong>Petroleum refining:</strong> Crude oil heated → separated into petrol (gasoline), kerosene, diesel, lubricating oil, bitumen, etc. (different boiling ranges).
+<br>— <strong>Air separation:</strong> Liquid air is fractionally distilled to get O₂ (b.p. -183°C), N₂ (b.p. -196°C), Ar, etc.</li>
+<li><strong>Diagram:</strong> A tall fractionating column with trays — crude oil heated at bottom — different fractions collected at different heights (top = gases/petrol, bottom = asphalt/bitumen).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-11 text-amber-400 text-xs mr-2"></i>11. Separating Funnel</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">density</span> of <span class="hl-term">immiscible liquids</span> (liquids that do not mix). The denser liquid settles at the bottom, the lighter floats on top.</li>
+<li><span class="hl-term">Method:</span> Pour mixture into a separating funnel → let it settle → open the stopcock → drain the lower layer first → collect the upper layer separately.</li>
+<li><span class="hl-term">Examples:</span> Separating oil and water; separating kerosene and water; separating petrol and water; separating mercury and water.</li>
+<li><strong>Diagram:</strong> A pear-shaped glass funnel with a stopcock at the bottom — oil layer (top, yellow) and water layer (bottom, clear) — water being drained out.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-12 text-amber-400 text-xs mr-2"></i>12. Chromatography</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">solubility</span> and <span class="hl-event">adsorption</span> rates of different components in a mixture.</li>
+<li><strong>Analogy:</strong> <span class="hl-term">Like a race!</span> Different pigments run at different speeds on the paper (stationary phase) because they have different solubilities in the solvent (mobile phase). So they separate out.</li>
+<li><span class="hl-term">Method:</span> A spot of the mixture is placed on chromatography paper (or filter paper). The paper is dipped in a solvent. The solvent rises by capillary action, carrying the components at different speeds — forming separate spots at different heights.</li>
+<li><span class="hl-term">Rf value:</span> (Distance moved by component) ÷ (Distance moved by solvent) — unique for each substance in a given solvent.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Separating different coloured pigments in ink (black ink = mixture of many colours)
+<br>— Separating chlorophyll pigments (chlorophyll-a, chlorophyll-b, xanthophyll, carotene)
+<br>— Forensic analysis of inks, food colourings (detecting adulteration)
+<br>— Blood alcohol testing, drug testing</li>
+<li><strong>Diagram:</strong> A glass jar with solvent at bottom — a strip of filter paper hanging — a spot of ink near the bottom — after rising, multiple coloured spots appear at different heights on the paper.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-13 text-amber-400 text-xs mr-2"></i>13. Centrifugation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> Difference in <span class="hl-event">density</span>. When a mixture is spun rapidly (centrifugal force), denser particles move outward and settle at the bottom; lighter particles stay at the top.</li>
+<li><span class="hl-term">Method:</span> The mixture is placed in tubes inside a centrifuge machine → spun at high speed → components separate by density.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Separating cream from milk (lighter cream rises to top when milk is churned/centrifuged)
+<br>— Separating blood components (RBCs settle at bottom, plasma at top)
+<br>— Urine analysis in medical labs
+<br>— Drying salad leaves in a salad spinner
+<br>— Washing machines — spin cycle removes water from clothes</li>
+<li><strong>Diagram:</strong> A centrifuge machine with tubes arranged radially — tubes before spinning (mixed) and after spinning (separated layers).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-14 text-amber-400 text-xs mr-2"></i>14. Magnetic Separation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> If one component is <span class="hl-event">magnetic</span> and the other is not. A magnet attracts the magnetic component.</li>
+<li><span class="hl-term">Method:</span> Pass a magnet over the mixture. The magnetic material sticks to the magnet; the non-magnetic material is left behind.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Separating iron filings from sand/sulphur powder
+<br>— Recycling industry — removing iron/steel from waste
+<br>— Separating iron ore from waste rock in mining
+<br>— Removing iron nails/screws from construction waste</li>
+<li><strong>Diagram:</strong> A mixture of iron filings and sand — a bar magnet being passed over — iron filings sticking to the magnet, sand left behind.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-15 text-amber-400 text-xs mr-2"></i>15. Sublimation</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Principle:</span> One component <span class="hl-event">sublimes</span> (changes directly from solid to vapour on heating) while the other does not. The vapour is then cooled (deposition) to get pure solid back.</li>
+<li><span class="hl-term">Method:</span> Heat the mixture in a china dish covered with an inverted funnel. Cotton plug in funnel stem. Sublimable substance turns to vapour → deposits on cool inner surface of funnel as pure crystals.</li>
+<li><span class="hl-term">Examples:</span>
+<br>— Camphor + sand mixture (camphor sublimes, collects as crystals; sand remains)
+<br>— Iodine + common salt (iodine sublimes, salt remains)
+<br>— Ammonium chloride + salt (ammonium chloride sublimes)
+<br>— Naphthalene (mothballs) from mixtures</li>
+<li><strong>Diagram:</strong> A china dish on a tripod stand — mixture in dish — inverted funnel over it with cotton plug at neck — heating — sublimed substance depositing on cool funnel walls.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Master Comparison Table — All 15 Methods</div>
+<div class="table-wrap">
+<table><thead><tr><th>#</th><th>Method</th><th>Principle (Property Used)</th><th>Example</th><th>Type of Mixture</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Handpicking</td><td>Size / Colour / Shape</td><td>Stones from rice</td><td>Solid-Solid</td></tr>
+<tr><td>2</td><td>Threshing</td><td>Bonding strength</td><td>Grains from stalks</td><td>Solid-Solid</td></tr>
+<tr><td>3</td><td>Winnowing</td><td>Weight / Density</td><td>Husk from grain</td><td>Solid-Solid</td></tr>
+<tr><td>4</td><td>Sieving</td><td>Particle size</td><td>Sand from gravel</td><td>Solid-Solid</td></tr>
+<tr><td>5</td><td>Sedimentation &amp; Decantation</td><td>Density / Solubility</td><td>Muddy water</td><td>Solid-Liquid</td></tr>
+<tr><td>6</td><td>Filtration</td><td>Particle size (filter pores)</td><td>Tea leaves from tea</td><td>Solid-Liquid</td></tr>
+<tr><td>7</td><td>Evaporation</td><td>Volatility / Boiling point</td><td>Salt from sea water</td><td>Solid-Liquid (dissolved)</td></tr>
+<tr><td>8</td><td>Condensation</td><td>Boiling point (cooling)</td><td>Steam to water</td><td>Gas-Liquid</td></tr>
+<tr><td>9</td><td>Distillation</td><td>Boiling point difference</td><td>Pure water from salt water</td><td>Solid-Liquid / Liquid-Liquid</td></tr>
+<tr><td>10</td><td>Fractional Distillation</td><td>Boiling point (multiple fractions)</td><td>Crude oil refining</td><td>Liquid-Liquid (miscible)</td></tr>
+<tr><td>11</td><td>Separating Funnel</td><td>Density (immiscible liquids)</td><td>Oil and water</td><td>Liquid-Liquid (immiscible)</td></tr>
+<tr><td>12</td><td>Chromatography</td><td>Solubility / Adsorption</td><td>Ink pigments</td><td>Solid-Solid / Solid-Liquid</td></tr>
+<tr><td>13</td><td>Centrifugation</td><td>Density (centrifugal force)</td><td>Cream from milk</td><td>Solid-Liquid / Liquid-Liquid</td></tr>
+<tr><td>14</td><td>Magnetic Separation</td><td>Magnetic property</td><td>Iron from waste</td><td>Solid-Solid</td></tr>
+<tr><td>15</td><td>Sublimation</td><td>Sublimation property</td><td>Camphor from sand</td><td>Solid-Solid</td></tr>
+</tbody></table>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-user text-emerald-400 mr-1"></i> Teacher Says:</div>
+<div class="teacher-tip-content">For BPSC/UPSC exams, remember: <span class="hl-event">Handpicking → Threshing → Winnowing</span> is the SEQUENCE for processing grains after harvest! First pick out big stones, then thresh to separate grain from stalks, then winnow to remove the husk.</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400 mr-1"></i> Mnemonic:</div>
+<div class="mnemonic-content">Mnemonic — 3 Similar Techniques: <span class="hl-event">"FED — Filter, Evaporate, Distill"</span>. Filter separates insoluble solid from liquid. Evaporate separates dissolved solid from liquid. Distill separates dissolved solid AND recovers the liquid too!</div>
+</div>
+</section>
+
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fas fa-flask text-amber-400"></i> 4. Solutions &amp; Mixtures</h2>
+
+<div class="subsection-heading"><i class="fas fa-circle-dot text-amber-400 text-xs mr-2"></i>Pure Substances vs Mixtures</div>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Pure Substance</th><th>Mixture</th></tr></thead>
+<tbody>
+<tr><td>Composition</td><td>Only one kind of particle (atoms or molecules)</td><td>Two or more pure substances mixed together</td></tr>
+<tr><td>Separability</td><td>Cannot be separated by physical methods</td><td>Can be separated by physical methods</td></tr>
+<tr><td>Examples</td><td>Elements (Fe, O₂, S) &amp; Compounds (H₂O, NaCl, CO₂)</td><td>Air, sea water, soil, milk, alloy (brass)</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-circle-divide text-amber-400 text-xs mr-2"></i>Homogeneous vs Heterogeneous Mixtures</div>
+<div class="table-wrap">
+<table><thead><tr><th>Feature</th><th>Homogeneous Mixture</th><th>Heterogeneous Mixture</th></tr></thead>
+<tbody>
+<tr><td>Appearance</td><td>Uniform throughout — same composition everywhere</td><td>Non-uniform — different components visible separately</td></tr>
+<tr><td>Visibility</td><td>Components not visible separately</td><td>Components visible (e.g., sand in water, oil droplets)</td></tr>
+<tr><td>Examples</td><td>Solution of sugar in water, air, brass (alloy), soda water, vinegar</td><td>Muddy water, oil &amp; water, salad, granite rock, pizza</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-percent text-amber-400 text-xs mr-2"></i>Solutions — Key Terms &amp; Types</div>
+<p class="content-text">A <span class="hl-term">solution</span> is a <span class="hl-event">homogeneous mixture</span> of two or more substances. <span class="hl-term">Solute</span> = the substance that dissolves (minor component). <span class="hl-term">Solvent</span> = the substance that does the dissolving (major component).</p>
+<div class="table-wrap">
+<table><thead><tr><th>Solute</th><th>Solvent</th><th>Type</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Solid</td><td>Liquid</td><td>Solid in Liquid</td><td>Salt in water, sugar in tea</td></tr>
+<tr><td>Liquid</td><td>Liquid</td><td>Liquid in Liquid</td><td>Alcohol in water (miscible)</td></tr>
+<tr><td>Gas</td><td>Liquid</td><td>Gas in Liquid</td><td>Soda water (CO₂ in water), O₂ in water</td></tr>
+<tr><td>Solid</td><td>Solid</td><td>Solid in Solid (Alloy)</td><td>Brass (Zn in Cu), Steel (C in Fe)</td></tr>
+<tr><td>Gas</td><td>Gas</td><td>Gas in Gas</td><td>Air (O₂, N₂, CO₂ etc.)</td></tr>
+<tr><td>Liquid</td><td>Gas</td><td>Liquid in Gas</td><td>Water vapour in air (humidity)</td></tr>
+<tr><td>Solid</td><td>Gas</td><td>Solid in Gas</td><td>Smoke (dust/carbon particles in air)</td></tr>
+<tr><td>Liquid</td><td>Solid</td><td>Liquid in Solid</td><td>Amalgam (mercury in silver/gold), water in wood</td></tr>
+<tr><td>Gas</td><td>Solid</td><td>Gas in Solid</td><td>H₂ gas in palladium metal</td></tr>
+</tbody></table>
+</div>
+<p class="content-text"><span class="hl-term">Aqueous solution:</span> A solution where <span class="hl-ruler">water</span> is the solvent. Most common in nature and chemistry!</p>
+
+<div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Concentration of a Solution</div>
+<p class="content-text"><span class="hl-term">Concentration</span> tells us how much solute is present in a given amount of solution.</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Mass by mass percentage (% w/w):</span> (Mass of solute ÷ Mass of solution) × 100
+<br>Example: 10g salt in 100g solution = 10% w/w salt solution.</li>
+<li><span class="hl-term">Mass by volume percentage (% w/v):</span> (Mass of solute in g ÷ Volume of solution in mL) × 100
+<br>Example: 5g sugar in 100mL solution = 5% w/v sugar solution.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fas fa-layer-group text-amber-400 text-xs mr-2"></i>Saturated, Unsaturated &amp; Supersaturated Solutions</div>
+<div class="table-wrap">
+<table><thead><tr><th>Type</th><th>Definition</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Unsaturated</span></td><td>Can dissolve more solute at a given temperature</td><td>A spoon of sugar in cold tea — it all dissolves, you can add more</td></tr>
+<tr><td><span class="hl-term">Saturated</span></td><td>Cannot dissolve any more solute at that temperature</td><td>Keep adding sugar to water — at some point, sugar stops dissolving and settles at bottom</td></tr>
+<tr><td><span class="hl-term">Supersaturated</span></td><td>Contains more solute than normally possible at that temp (prepared by heating, then cooling carefully)</td><td>Hot water dissolves more sugar; if cooled slowly without disturbance, extra sugar remains dissolved — but a tiny crystal will trigger sudden crystallization</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fas fa-chart-line text-amber-400 text-xs mr-2"></i>Solubility — Factors Affecting</div>
+<p class="content-text"><span class="hl-term">Solubility</span> = Maximum amount of solute that can dissolve in 100g of solvent at a given temperature to form a saturated solution.</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Temperature:</span>
+<br>— Solids in liquids: Solubility <span class="hl-event">increases</span> with temperature (e.g., more sugar dissolves in hot tea than cold).
+<br>— Gases in liquids: Solubility <span class="hl-num">decreases</span> with temperature (e.g., cold drinks lose fizz when warm — CO₂ escapes).</li>
+<li><span class="hl-term">Pressure:</span>
+<br>— Gases in liquids: Solubility <span class="hl-event">increases</span> with pressure (Henry's Law). Example: Cold drinks are bottled under high pressure to dissolve more CO₂; scuba divers get decompression sickness ("the bends") due to N₂ bubbles forming when pressure reduces.</li>
+<li><span class="hl-term">Nature of solute and solvent:</span> "Like dissolves like" — polar solutes (salt, sugar) dissolve in polar solvents (water); non-polar solutes (oil, grease) dissolve in non-polar solvents (petrol, kerosene).</li>
+</ul>
+<p class="content-text"><span class="hl-term">Solubility curve:</span> A graph showing how solubility changes with temperature. Different substances have different curves — useful for separating mixtures by crystallization.</p>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-user text-emerald-400 mr-1"></i> Teacher Says:</div>
+<div class="teacher-tip-content">"Like dissolves like" — think of it like friends: <span class="hl-term">Polar (water) friends mix with polar friends, non-polar (oil) friends stick with non-polar friends.</span> That's why oil and water never become friends — they form separate layers!</div>
+</div>
+</section>
+
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400"></i> 5. Practice Questions — 30 MCQs</h2>
+<p class="content-text mb-4">Click any question to reveal the answer.</p>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">1. Which of the following is a chemical change?</div><div class="mcq-opt">1. Melting of ice</div><div class="mcq-opt">2. Rusting of iron</div><div class="mcq-opt">3. Cutting of wood</div><div class="mcq-opt">4. Dissolving sugar in water</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Rusting of iron (new substance Fe₂O₃·xH₂O formed)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">2. The process of changing solid directly into gas is called:</div><div class="mcq-opt">1. Evaporation</div><div class="mcq-opt">2. Condensation</div><div class="mcq-opt">3. Sublimation</div><div class="mcq-opt">4. Deposition</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Sublimation</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">3. Which method is used to separate cream from milk?</div><div class="mcq-opt">1. Filtration</div><div class="mcq-opt">2. Centrifugation</div><div class="mcq-opt">3. Distillation</div><div class="mcq-opt">4. Separating funnel</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Centrifugation</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">4. In chromatography, the substance used as the stationary phase is usually:</div><div class="mcq-opt">1. Water</div><div class="mcq-opt">2. Filter paper</div><div class="mcq-opt">3. Alcohol</div><div class="mcq-opt">4. Ink</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Filter paper (or chromatography paper)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">5. Which property difference is used in a separating funnel?</div><div class="mcq-opt">1. Boiling point</div><div class="mcq-opt">2. Density</div><div class="mcq-opt">3. Solubility</div><div class="mcq-opt">4. Particle size</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Density (immiscible liquids of different densities)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">6. Which of the following is a physical change?</div><div class="mcq-opt">1. Burning of wood</div><div class="mcq-opt">2. Cooking of food</div><div class="mcq-opt">3. Boiling of water</div><div class="mcq-opt">4. Digestion of food</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Boiling of water (water changes state but remains H₂O)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">7. The solubility of solids in liquids generally:</div><div class="mcq-opt">1. Decreases with temperature</div><div class="mcq-opt">2. Increases with temperature</div><div class="mcq-opt">3. Remains constant</div><div class="mcq-opt">4. Is not affected by temperature</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Increases with temperature</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">8. Which technique would you use to separate a mixture of alcohol and water?</div><div class="mcq-opt">1. Fractional distillation</div><div class="mcq-opt">2. Separating funnel</div><div class="mcq-opt">3. Evaporation</div><div class="mcq-opt">4. Centrifugation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 1. Fractional distillation (they have close boiling points and are miscible)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">9. The residue left on the filter paper during filtration is:</div><div class="mcq-opt">1. Filtrate</div><div class="mcq-opt">2. Solvent</div><div class="mcq-opt">3. Residue</div><div class="mcq-opt">4. Solution</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Residue (the solid that does not pass through filter paper)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">10. Dry ice (solid CO₂) on exposure to air undergoes:</div><div class="mcq-opt">1. Melting</div><div class="mcq-opt">2. Evaporation</div><div class="mcq-opt">3. Sublimation</div><div class="mcq-opt">4. Condensation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Sublimation (solid → gas directly at -78°C)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">11. Which of the following is a sign of a chemical change?</div><div class="mcq-opt">1. Change of state</div><div class="mcq-opt">2. Change in shape</div><div class="mcq-opt">3. Evolution of gas</div><div class="mcq-opt">4. Change in size</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Evolution of gas (bubbles indicate a new substance formed)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">12. Crude oil is separated into different fractions by:</div><div class="mcq-opt">1. Simple distillation</div><div class="mcq-opt">2. Fractional distillation</div><div class="mcq-opt">3. Chromatography</div><div class="mcq-opt">4. Centrifugation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Fractional distillation (separates based on different boiling points)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">13. A mixture of camphor and sand can be separated by:</div><div class="mcq-opt">1. Filtration</div><div class="mcq-opt">2. Sublimation</div><div class="mcq-opt">3. Evaporation</div><div class="mcq-opt">4. Magnetic separation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Sublimation (camphor sublimes, sand remains)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">14. The particles in which state of matter have the highest kinetic energy?</div><div class="mcq-opt">1. Solid</div><div class="mcq-opt">2. Liquid</div><div class="mcq-opt">3. Gas</div><div class="mcq-opt">4. All have equal energy</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Gas (particles move freely at high speed)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">15. Which method would you use to separate iron filings from sulphur powder?</div><div class="mcq-opt">1. Filtration</div><div class="mcq-opt">2. Sublimation</div><div class="mcq-opt">3. Magnetic separation</div><div class="mcq-opt">4. Handpicking</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Magnetic separation (iron is magnetic, sulphur is not)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">16. What happens to the solubility of a gas in a liquid when temperature increases?</div><div class="mcq-opt">1. Increases</div><div class="mcq-opt">2. Decreases</div><div class="mcq-opt">3. Remains same</div><div class="mcq-opt">4. First increases then decreases</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Decreases (e.g., cold drinks lose fizz when warm)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">17. Which of the following is NOT a pure substance?</div><div class="mcq-opt">1. Water (H₂O)</div><div class="mcq-opt">2. Carbon dioxide (CO₂)</div><div class="mcq-opt">3. Air</div><div class="mcq-opt">4. Sodium chloride (NaCl)</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Air (it is a mixture of N₂, O₂, CO₂, Ar, etc.)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">18. The process of separating grains from the stalks after harvesting is called:</div><div class="mcq-opt">1. Winnowing</div><div class="mcq-opt">2. Threshing</div><div class="mcq-opt">3. Sieving</div><div class="mcq-opt">4. Handpicking</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Threshing</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">19. Which of the following states of matter is most compressible?</div><div class="mcq-opt">1. Solid</div><div class="mcq-opt">2. Liquid</div><div class="mcq-opt">3. Gas</div><div class="mcq-opt">4. All equally compressible</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Gas (large empty spaces between particles allow compression)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">20. To obtain pure water from a saltwater solution, you would use:</div><div class="mcq-opt">1. Filtration</div><div class="mcq-opt">2. Evaporation</div><div class="mcq-opt">3. Distillation</div><div class="mcq-opt">4. Centrifugation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Distillation (evaporate water and condense it — salt remains behind)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">21. The process of deposition refers to:</div><div class="mcq-opt">1. Gas → Liquid</div><div class="mcq-opt">2. Liquid → Solid</div><div class="mcq-opt">3. Gas → Solid</div><div class="mcq-opt">4. Solid → Gas</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Gas → Solid (e.g., frost formation, iodine vapour to crystals)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">22. Which of the following statements is TRUE about diffusion?</div><div class="mcq-opt">1. Fastest in solids</div><div class="mcq-opt">2. Fastest in gases</div><div class="mcq-opt">3. Fastest in liquids</div><div class="mcq-opt">4. Same speed in all states</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Fastest in gases (large interparticle spaces allow free movement)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">23. A solution of salt in water is an example of:</div><div class="mcq-opt">1. Heterogeneous mixture</div><div class="mcq-opt">2. Homogeneous mixture</div><div class="mcq-opt">3. Suspension</div><div class="mcq-opt">4. Colloid</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Homogeneous mixture (uniform composition throughout)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">24. Which of the following is used to separate a mixture of two immiscible liquids?</div><div class="mcq-opt">1. Fractional distillation</div><div class="mcq-opt">2. Separating funnel</div><div class="mcq-opt">3. Chromatography</div><div class="mcq-opt">4. Evaporation</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Separating funnel (uses density difference)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">25. Galvanization is a method of preventing rust by coating iron with:</div><div class="mcq-opt">1. Copper</div><div class="mcq-opt">2. Zinc</div><div class="mcq-opt">3. Aluminium</div><div class="mcq-opt">4. Tin</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Zinc (zinc layer protects iron from corrosion)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">26. In a salt solution, what is the solvent?</div><div class="mcq-opt">1. Salt</div><div class="mcq-opt">2. Water</div><div class="mcq-opt">3. Both salt and water</div><div class="mcq-opt">4. Neither</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Water (the substance present in larger amount that dissolves the solute)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">27. The Rf value in chromatography is calculated as:</div><div class="mcq-opt">1. Distance by solute ÷ Distance by solvent</div><div class="mcq-opt">2. Distance by solvent ÷ Distance by solute</div><div class="mcq-opt">3. Distance by solute × Distance by solvent</div><div class="mcq-opt">4. Height of paper ÷ Width of paper</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 1. Distance moved by solute ÷ Distance moved by solvent</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">28. Burning of LPG in a gas stove is a:</div><div class="mcq-opt">1. Physical change</div><div class="mcq-opt">2. Chemical change</div><div class="mcq-opt">3. Reversible change</div><div class="mcq-opt">4. Both physical and chemical</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 2. Chemical change (LPG + O₂ → CO₂ + H₂O + heat — new substances formed)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">29. Which of these mixtures can be separated by winnowing?</div><div class="mcq-opt">1. Salt and water</div><div class="mcq-opt">2. Rice and stones</div><div class="mcq-opt">3. Husk and grain</div><div class="mcq-opt">4. Ink and water</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 3. Husk and grain (lighter husk blown away by wind, heavier grain falls down)</div></div>
+
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">30. The intermolecular force of attraction is strongest in:</div><div class="mcq-opt">1. Solids</div><div class="mcq-opt">2. Liquids</div><div class="mcq-opt">3. Gases</div><div class="mcq-opt">4. Same in all states</div><div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: 1. Solids (particles are tightly packed with strong forces holding them)</div></div>
+
+</section>
+
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6"><i class="fa-solid fa-atom text-amber-400/50 mr-2"></i>Matter, Separation Techniques &amp; Physical/Chemical Changes · NCERT Science Notes · Class 6–10<br>Compiled for BPSC/UPSC revision · Click MCQs to reveal answers</div>
+
+</div>
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.1 });
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+function toggleAns(el) { const ans = el.querySelector(".mcq-ans"); if (ans) ans.classList.toggle("show"); }
+function toggleMenu() { const m = document.getElementById("nav-menu"); const i = document.getElementById("hamburger-icon"); m.classList.toggle("hidden"); i.classList.toggle("fa-bars"); i.classList.toggle("fa-times"); }
+</script>
+</body>
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light — Reflection & Refraction | NCERT Science Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+    
+    /* HIGHLIGHTERS - BPSC EXAM FOCUSED */
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+    
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+    
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+    
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-lightbulb text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Light — Reflection &amp; Refraction</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Science · Class 6 to 10 · Comprehensive Notes</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-lightbulb text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Nature of Light</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Reflection</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Mirrors</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Mirror Formula</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Uses of Mirrors</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Refraction</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Snell's Law</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Lenses</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Lens Formula</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Dispersion</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Human Eye</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. Comparisons</a>
+        <a href="#sec13" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">13. Mnemonics</a>
+        <a href="#sec14" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">14. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Nature of Light -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-sun text-amber-400 text-sm"></i> 1. Nature of Light</h2>
+      <p class="text-sm text-gray-400 mb-3">Light is a form of <span class="hl-term">energy</span> that enables us to see. It travels in straight lines (<span class="hl-term">rectilinear propagation</span>) and behaves both as a <span class="hl-ruler">wave</span> and as a <span class="hl-date">particle</span> — this is called <span class="hl-policy">wave-particle duality</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-wave-square text-amber-400 text-xs mr-2"></i>Wave vs Particle Nature</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Wave Theory (Huygens)</th><th>Particle Theory (Newton)</th></tr></thead>
+          <tbody>
+            <tr><td>Proposed by</td><td>Christiaan Huygens (1678)</td><td>Isaac Newton (1704)</td></tr>
+            <tr><td>Light is</td><td>Electromagnetic wave</td><td>Stream of particles (corpuscles)</td></tr>
+            <tr><td>Explains</td><td>Refraction, diffraction, interference</td><td>Reflection, rectilinear propagation</td></tr>
+            <tr><td>Speed in medium</td><td>Decreases in denser medium</td><td>Increases in denser medium (later proven wrong)</td></tr>
+            <tr><td>Accepted by</td><td>Modern physics (dual nature)</td><td>Historical, partially correct</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-gauge-high text-amber-400 text-xs mr-2"></i>Speed of Light</div>
+      <ul class="bullet-list text-sm">
+        <li>Speed of light in <span class="hl-term">vacuum</span> = <span class="hl-num">3 × 10⁸ m/s</span> (≈ 3,00,000 km/s) — the fastest speed in the universe.</li>
+        <li>Symbol: <span class="hl-term">c</span> (from Latin <em>celeritas</em> = speed). Nothing can travel faster than light.</li>
+        <li>Light takes <span class="hl-num">8.3 minutes</span> to travel from the Sun to Earth.</li>
+        <li>Speed decreases when light enters a medium (glass, water, diamond).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-sliders text-amber-400 text-xs mr-2"></i>Electromagnetic Spectrum</div>
+      <p class="text-sm text-gray-400 mb-2">Light is part of the <span class="hl-term">electromagnetic spectrum</span>. Visible light is only a tiny portion between infrared and ultraviolet.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Wavelength Range</th><th>Source / Use</th></tr></thead>
+          <tbody>
+            <tr><td>Radio waves</td><td>&gt; 1 mm</td><td>Communication, radio, TV</td></tr>
+            <tr><td>Microwaves</td><td>1 mm – 1 m</td><td>Radar, microwave ovens</td></tr>
+            <tr><td>Infrared (IR)</td><td>700 nm – 1 mm</td><td>Heat, remote controls</td></tr>
+            <tr><td><span class="hl-term">Visible Light</span></td><td><span class="hl-num">400 nm – 700 nm</span></td><td>Human vision, photosynthesis</td></tr>
+            <tr><td>Ultraviolet (UV)</td><td>10 nm – 400 nm</td><td>Sterilisation, suntan</td></tr>
+            <tr><td>X-rays</td><td>0.01 nm – 10 nm</td><td>Medical imaging, security</td></tr>
+            <tr><td>Gamma rays</td><td>&lt; 0.01 nm</td><td>Cancer treatment, nuclear</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic for EM Spectrum (Increasing frequency):</span> <span class="hl-event">"Rabbits Mate In Very Unusual eXpensive Gardens"</span> — Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-rainbow text-amber-400 text-xs mr-2"></i>Visible Spectrum — VIBGYOR</div>
+      <p class="text-sm text-gray-400 mb-2">White light is composed of <span class="hl-num">7 colours</span>. In order of increasing wavelength (decreasing frequency):</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-policy">V</span> — Violet (400 nm) | <span class="hl-event">I</span> — Indigo | <span class="hl-ruler">B</span> — Blue | <span class="hl-date">G</span> — Green | <span class="hl-place">Y</span> — Yellow | <span class="hl-event">O</span> — Orange | <span class="hl-ruler">R</span> — Red (700 nm)</li>
+        <li><span class="hl-term">Trick to remember:</span> "<span class="hl-event">VIBGYOR</span>" — Violet, Indigo, Blue, Green, Yellow, Orange, Red.</li>
+        <li>Red has the <span class="hl-event">longest</span> wavelength and <span class="hl-ruler">lowest</span> frequency. Violet has the <span class="hl-ruler">shortest</span> wavelength and <span class="hl-event">highest</span> frequency.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of light waves like ocean waves. Violet is like tiny, rapid ripples (short λ, high frequency). Red is like big, slow swells (long λ, low frequency). Both travel at the same speed — just like different-sized waves move at the same speed across the ocean.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Reflection of Light -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrow-turn-down text-amber-400 text-sm"></i> 2. Reflection of Light</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Reflection</span> is the bouncing back of light when it strikes a surface. The surface that reflects is called a <span class="hl-term">mirror</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-gavel text-amber-400 text-xs mr-2"></i>Laws of Reflection</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-event">First Law:</span> The incident ray, the reflected ray, and the normal at the point of incidence all lie in <span class="hl-ruler">the same plane</span>.</li>
+        <li><span class="hl-event">Second Law:</span> The angle of incidence (<span class="hl-num">∠i</span>) is always equal to the angle of reflection (<span class="hl-num">∠r</span>). <span class="hl-term">∠i = ∠r</span></li>
+        <li><span class="hl-term">Normal:</span> An imaginary line drawn perpendicular to the reflecting surface at the point of incidence.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Regular vs Diffuse Reflection</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Regular (Specular) Reflection</th><th>Diffuse (Irregular) Reflection</th></tr></thead>
+          <tbody>
+            <tr><td>Surface</td><td>Smooth, polished (mirror, still water)</td><td>Rough, uneven (paper, wall, road)</td></tr>
+            <tr><td>Image formed</td><td>Clear, sharp image</td><td>No image formed</td></tr>
+            <tr><td>Reflected rays</td><td>Parallel to each other</td><td>Scattered in different directions</td></tr>
+            <tr><td>Example</td><td>Looking in a mirror</td><td>Seeing a book under a lamp</td></tr>
+            <tr><td>Laws followed?</td><td>Yes</td><td>Yes — each ray obeys laws individually</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Important:</span> Even in diffuse reflection, each individual ray obeys the laws of reflection (∠i = ∠r). The rays scatter only because the surface normals point in different directions.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Mirrors -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrow-right-to-bracket text-amber-400 text-sm"></i> 3. Mirrors — Plane &amp; Spherical</h2>
+
+      <div class="subsection-heading"><i class="fas fa-square text-amber-400 text-xs mr-2"></i>Plane Mirror</div>
+      <p class="text-sm text-gray-400 mb-2">A flat, smooth surface that reflects light regularly. The image formed by a plane mirror has these characteristics:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Virtual</span> — cannot be obtained on a screen.</li>
+        <li><span class="hl-term">Erect</span> — same orientation as the object.</li>
+        <li><span class="hl-term">Same size</span> — magnification = 1.</li>
+        <li><span class="hl-term">Lateral inversion</span> — left appears right and vice versa (e.g., ambulance writing).</li>
+        <li><span class="hl-term">Distance</span> — image distance = object distance behind the mirror.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Spherical Mirrors — Concave &amp; Convex</div>
+      <p class="text-sm text-gray-400 mb-2">Spherical mirrors are mirrors curved like a sphere. They are of two types:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-event">Concave mirror</span> — curved inward like the <span class="hl-term">inside of a spoon</span>. Converging mirror (focuses light).</li>
+        <li><span class="hl-event">Convex mirror</span> — curved outward like the <span class="hl-term">back of a spoon</span>. Diverging mirror (spreads light).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-tag text-amber-400 text-xs mr-2"></i>Important Terms</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Term</th><th>Symbol</th><th>Definition</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Pole</span></td><td>P</td><td>Centre point of the mirror surface</td></tr>
+            <tr><td><span class="hl-term">Centre of Curvature</span></td><td>C</td><td>Centre of the sphere of which the mirror is a part</td></tr>
+            <tr><td><span class="hl-term">Focus (Focal Point)</span></td><td>F</td><td>Point where parallel rays converge (concave) or appear to diverge from (convex)</td></tr>
+            <tr><td><span class="hl-term">Focal Length</span></td><td>f</td><td>Distance from pole to focus (f = R/2)</td></tr>
+            <tr><td><span class="hl-term">Radius of Curvature</span></td><td>R</td><td>Distance from pole to centre of curvature (R = 2f)</td></tr>
+            <tr><td><span class="hl-term">Aperture</span></td><td>—</td><td>Diameter of the reflecting surface of the mirror</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Relationship: R = 2f</div>
+      <p class="text-sm text-gray-400 mb-2">For spherical mirrors: <span class="hl-num">R = 2f</span> where <span class="hl-term">R</span> = radius of curvature, <span class="hl-term">f</span> = focal length.</p>
+      <ul class="bullet-list text-sm">
+        <li>For concave mirror, f is <span class="hl-event">negative</span> (by sign convention).</li>
+        <li>For convex mirror, f is <span class="hl-date">positive</span> (by sign convention).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-pen-ruler text-amber-400 text-xs mr-2"></i>Ray Diagrams — Concave Mirror</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 1:</span> A ray parallel to the principal axis passes through the focus (F) after reflection.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 2:</span> A ray passing through the focus (F) becomes parallel to the principal axis after reflection.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 3:</span> A ray passing through the centre of curvature (C) is reflected back along the same path.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Object Position</th><th>Image Position</th><th>Nature</th><th>Size</th><th>Use Example</th></tr></thead>
+          <tbody>
+            <tr><td>Beyond C</td><td>Between F and C</td><td>Real, inverted</td><td>Diminished</td><td>Camera</td></tr>
+            <tr><td>At C</td><td>At C</td><td>Real, inverted</td><td>Same size</td><td>—</td></tr>
+            <tr><td>Between C and F</td><td>Beyond C</td><td>Real, inverted</td><td>Magnified</td><td>Projector</td></tr>
+            <tr><td>At F</td><td>At infinity</td><td>Highly enlarged</td><td>—</td><td>Headlight, torch</td></tr>
+            <tr><td>Between F and P</td><td>Behind mirror</td><td>Virtual, erect</td><td>Magnified</td><td>Shaving mirror, dentist</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-pen-ruler text-amber-400 text-xs mr-2"></i>Ray Diagrams — Convex Mirror</div>
+      <ul class="bullet-list text-sm">
+        <li>A ray parallel to principal axis appears to diverge from the focus (F) behind the mirror.</li>
+        <li>A ray directed towards the centre of curvature (C) is reflected back along the same path.</li>
+        <li><span class="hl-term">Image always:</span> Virtual, erect, diminished, and formed between F and P (behind the mirror).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Concave mirror is like a <span class="hl-event">magnifying glass for light</span> — it collects and focuses. Convex mirror is like a <span class="hl-ruler">wide-angle security camera</span> — it spreads the view to show more area.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Mirror Formula -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-square-root-variable text-amber-400 text-sm"></i> 4. Mirror Formula &amp; Magnification</h2>
+
+      <div class="subsection-heading"><i class="fas fa-equals text-amber-400 text-xs mr-2"></i>Mirror Formula</div>
+      <p class="text-sm text-gray-400 mb-2">The mirror formula relates <span class="hl-term">focal length (f)</span>, <span class="hl-term">image distance (v)</span>, and <span class="hl-term">object distance (u)</span>:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">1/f = 1/v + 1/u</div>
+
+      <div class="subsection-heading"><i class="fas fa-expand text-amber-400 text-xs mr-2"></i>Magnification (m)</div>
+      <p class="text-sm text-gray-400 mb-2">Magnification tells us how big or small the image is compared to the object:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">m = height of image (hᵢ) / height of object (hₒ) = -v / u</div>
+      <ul class="bullet-list text-sm">
+        <li>If <span class="hl-num">m &gt; 1</span> → image is magnified (larger).</li>
+        <li>If <span class="hl-num">m &lt; 1</span> → image is diminished (smaller).</li>
+        <li>If <span class="hl-date">m is positive</span> → image is erect (virtual).</li>
+        <li>If <span class="hl-event">m is negative</span> → image is inverted (real).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-list-ol text-amber-400 text-xs mr-2"></i>Sign Convention (Cartesian)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>Concave Mirror</th><th>Convex Mirror</th></tr></thead>
+          <tbody>
+            <tr><td>Focal length (f)</td><td><span class="hl-event">Negative (-)</span></td><td><span class="hl-date">Positive (+)</span></td></tr>
+            <tr><td>Object distance (u)</td><td><span class="hl-event">Always negative (-)</span></td><td><span class="hl-event">Always negative (-)</span></td></tr>
+            <tr><td>Image distance (v)</td><td>Negative (real) / Positive (virtual)</td><td><span class="hl-date">Positive (+)</span> (always virtual)</td></tr>
+            <tr><td>Object height (hₒ)</td><td>Always positive (+)</td><td>Always positive (+)</td></tr>
+            <tr><td>Image height (hᵢ)</td><td>Negative (inverted) / Positive (erect)</td><td>Positive (+)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Numerical Problems — Examples</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Example 1:</p>
+      <p class="text-sm text-gray-400 mb-2">An object is placed 30 cm in front of a concave mirror of focal length 15 cm. Find the position and nature of the image.</p>
+      <p class="text-sm text-cyan-300 mb-2">Solution: u = -30 cm, f = -15 cm. Using 1/f = 1/v + 1/u → 1/v = 1/f - 1/u = -1/15 + 1/30 = -1/30 → v = -30 cm. m = -v/u = -(-30)/(-30) = -1. Image is real, inverted, same size, at C.</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">Example 2:</p>
+      <p class="text-sm text-gray-400 mb-2">A 2 cm tall object is placed 10 cm in front of a convex mirror of focal length 15 cm. Find the image position and size.</p>
+      <p class="text-sm text-cyan-300 mb-2">Solution: u = -10 cm, f = +15 cm. 1/v = 1/f - 1/u = 1/15 + 1/10 = 5/30 = 1/6 → v = +6 cm. m = -v/u = -6/(-10) = +0.6. hᵢ = m × hₒ = 0.6 × 2 = 1.2 cm. Image is virtual, erect, diminished (1.2 cm).</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Exam Tip:</span> In sign convention, remember: <span class="hl-event">u is always negative</span> (object is always on the left side). f is negative for concave, positive for convex. v is negative for <em>real</em> images (concave), positive for <em>virtual</em> images.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Uses of Mirrors -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-wrench text-amber-400 text-sm"></i> 5. Uses of Mirrors</h2>
+
+      <div class="subsection-heading"><i class="fas fa-circle-minus text-amber-400 text-xs mr-2"></i>Uses of Concave Mirrors</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Use</th><th>How It Works</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Torch / Headlight</span></td><td>Bulb is placed at focus (F). Light rays become parallel after reflection — gives a strong, focused beam.</td></tr>
+            <tr><td><span class="hl-term">Dentist's mirror</span></td><td>To see magnified, erect image of teeth (held between F and P).</td></tr>
+            <tr><td><span class="hl-term">Shaving mirror</span></td><td>Magnified, erect image of face (face placed between F and P).</td></tr>
+            <tr><td><span class="hl-term">Solar cooker / furnace</span></td><td>Sunlight is concentrated at the focus — produces intense heat for cooking.</td></tr>
+            <tr><td><span class="hl-term">Reflecting telescope</span></td><td>Large concave mirror collects and focuses light from distant stars.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-circle-plus text-amber-400 text-xs mr-2"></i>Uses of Convex Mirrors</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Use</th><th>How It Works</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Rear-view mirror (vehicles)</span></td><td>Gives a wider field of view — always shows erect, diminished image. "Objects in mirror are closer than they appear."</td></tr>
+            <tr><td><span class="hl-term">Shop security mirror</span></td><td>Convex mirror at corners shows a large area — helps shopkeepers see customers.</td></tr>
+            <tr><td><span class="hl-term">Street light reflectors</span></td><td>Spread light over a wide area (diverging effect).</td></tr>
+            <tr><td><span class="hl-term">CCTV dome mirrors</span></td><td>Wide-angle surveillance view.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-square text-amber-400 text-xs mr-2"></i>Uses of Plane Mirrors</div>
+      <ul class="bullet-list text-sm">
+        <li>Looking glasses (dressing tables, bathrooms).</li>
+        <li><span class="hl-term">Periscopes</span> in submarines — used with prisms to see above water.</li>
+        <li><span class="hl-term">Kaleidoscopes</span> — multiple reflections create colourful patterns.</li>
+        <li><span class="hl-term">Solar cookers</span> (reflect sunlight into the cooker).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Concave mirror = <span class="hl-event">concentrator</span> (like a magnifying glass focusing sunlight to burn paper). Convex mirror = <span class="hl-ruler">spreader</span> (like a wide-angle lens showing a bigger scene).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Refraction of Light -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-water text-amber-400 text-sm"></i> 6. Refraction of Light</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Refraction</span> is the bending of light when it passes from one transparent medium to another. This happens because <span class="hl-ruler">the speed of light changes</span> when moving from one medium to another.</p>
+
+      <div class="subsection-heading"><i class="fas fa-question text-amber-400 text-xs mr-2"></i>Why Does Refraction Happen?</div>
+      <ul class="bullet-list text-sm">
+        <li>When light moves from a rarer to a denser medium, its speed <span class="hl-event">decreases</span>, and it bends <span class="hl-ruler">towards the normal</span>.</li>
+        <li>When light moves from a denser to a rarer medium, its speed <span class="hl-date">increases</span>, and it bends <span class="hl-ruler">away from the normal</span>.</li>
+        <li>If light hits the boundary at <span class="hl-num">90°</span> (normal incidence), <span class="hl-term">no bending</span> occurs, but speed still changes.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy — Car in Mud:</span> Refraction is like a car moving from a road (rare medium) into mud (dense medium). One wheel hits the mud first and slows down, causing the car to turn. When the car exits the mud back onto the road, the wheel that gets out first speeds up, turning the car the other way!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>Examples of Refraction in Daily Life</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Pencil in water</span> — appears bent or broken at the water surface.</li>
+        <li><span class="hl-term">Pool looks shallower</span> — the bottom appears raised because light bends as it leaves water.</li>
+        <li><span class="hl-term">Fish in water</span> — appears closer to the surface than it actually is (spearing a fish is tricky!).</li>
+        <li><span class="hl-term">Twinkling of stars</span> — starlight refracts through different layers of atmosphere.</li>
+        <li><span class="hl-term">Lens formation</span> — glasses, microscopes, telescopes all use refraction.</li>
+      </ul>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Laws of Refraction & Snell's Law -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-scale-balanced text-amber-400 text-sm"></i> 7. Laws of Refraction &amp; Snell's Law</h2>
+
+      <div class="subsection-heading"><i class="fas fa-gavel text-amber-400 text-xs mr-2"></i>Laws of Refraction</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-event">First Law:</span> The incident ray, the refracted ray, and the normal at the point of incidence all lie in <span class="hl-ruler">the same plane</span>.</li>
+        <li><span class="hl-event">Second Law (Snell's Law):</span> The ratio of the sine of angle of incidence to the sine of angle of refraction is constant for a given pair of media.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-square-root-variable text-amber-400 text-xs mr-2"></i>Snell's Law Formula</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">n₁ sin i = n₂ sin r  &nbsp;or&nbsp;  sin i / sin r = n₂ / n₁ = ¹n₂ (refractive index of medium 2 w.r.t. medium 1)</div>
+      <p class="text-sm text-gray-400 mb-2">Where <span class="hl-term">n₁</span> = refractive index of first medium, <span class="hl-term">n₂</span> = refractive index of second medium, <span class="hl-term">i</span> = angle of incidence, <span class="hl-term">r</span> = angle of refraction.</p>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Refractive Index</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Absolute refractive index (n)</span> of a medium is the ratio of speed of light in vacuum (c) to speed of light in that medium (v):</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">n = c / v</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Relative refractive index</span> = n₂ / n₁ (medium 2 with respect to medium 1).</p>
+
+      <div class="subsection-heading"><i class="fas fa-list-ol text-amber-400 text-xs mr-2"></i>Refractive Indices of Common Substances</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Medium</th><th>Refractive Index</th><th>Speed of Light (×10⁸ m/s)</th></tr></thead>
+          <tbody>
+            <tr><td>Vacuum</td><td><span class="hl-num">1.000</span></td><td>3.00</td></tr>
+            <tr><td>Air</td><td><span class="hl-num">1.0003</span> (~1)</td><td>2.997</td></tr>
+            <tr><td>Ice</td><td><span class="hl-num">1.31</span></td><td>2.29</td></tr>
+            <tr><td>Water</td><td><span class="hl-num">1.33</span></td><td>2.25</td></tr>
+            <tr><td>Kerosene</td><td><span class="hl-num">1.44</span></td><td>2.08</td></tr>
+            <tr><td>Crown glass</td><td><span class="hl-num">1.52</span></td><td>1.97</td></tr>
+            <tr><td>Flint glass</td><td><span class="hl-num">1.62</span></td><td>1.85</td></tr>
+            <tr><td>Ruby</td><td><span class="hl-num">1.77</span></td><td>1.69</td></tr>
+            <tr><td><span class="hl-event">Diamond</span></td><td><span class="hl-num">2.42</span></td><td>1.24</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-up-wide-short text-amber-400 text-xs mr-2"></i>Optically Denser vs Rarer</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Optically Rarer Medium</th><th>Optically Denser Medium</th></tr></thead>
+          <tbody>
+            <tr><td>Refractive index</td><td>Lower (n small)</td><td>Higher (n large)</td></tr>
+            <tr><td>Speed of light</td><td>Higher (faster)</td><td>Lower (slower)</td></tr>
+            <tr><td>Light bends</td><td>Away from normal (when entering from denser)</td><td>Towards normal (when entering from rarer)</td></tr>
+            <tr><td>Example</td><td>Air (n=1), Vacuum</td><td>Glass (n=1.52), Diamond (n=2.42)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Optically denser medium is like <span class="hl-event">thick traffic</span> — light slows down. Rarer medium is like <span class="hl-date">open highway</span> — light speeds up. The higher the refractive index, the more the light slows down and bends.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Lenses -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-circle-dot text-amber-400 text-sm"></i> 8. Lenses — Convex &amp; Concave</h2>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">lens</span> is a transparent material (usually glass) with two curved surfaces that refracts light to form images.</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Types of Lenses</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Convex (Converging) Lens</th><th>Concave (Diverging) Lens</th></tr></thead>
+          <tbody>
+            <tr><td>Shape</td><td>Thicker in middle, thinner at edges</td><td>Thinner in middle, thicker at edges</td></tr>
+            <tr><td>Light effect</td><td><span class="hl-event">Converges</span> (brings together) light rays</td><td><span class="hl-ruler">Diverges</span> (spreads apart) light rays</td></tr>
+            <tr><td>Focus</td><td><span class="hl-term">Real focus</span> (rays actually meet)</td><td><span class="hl-term">Virtual focus</span> (rays appear to diverge from)</td></tr>
+            <tr><td>Focal length (f)</td><td><span class="hl-event">Positive (+)</span></td><td><span class="hl-date">Negative (-)</span></td></tr>
+            <tr><td>Image types</td><td>Real or virtual, depending on object distance</td><td>Always virtual, erect, diminished</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-tag text-amber-400 text-xs mr-2"></i>Important Terms for Lenses</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Optic Centre (O)</span> — Central point of the lens. Light passes through undeviated.</li>
+        <li><span class="hl-term">Principal Focus (F)</span> — Point where parallel rays converge (convex) or appear to diverge from (concave).</li>
+        <li><span class="hl-term">Focal Length (f)</span> — Distance between optic centre and principal focus.</li>
+        <li>Each lens has <span class="hl-num">two foci</span> — one on each side (F₁ and F₂).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-pen-ruler text-amber-400 text-xs mr-2"></i>Ray Diagrams — Convex Lens</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 1:</span> A ray parallel to principal axis passes through focus (F₂) after refraction.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 2:</span> A ray passing through focus (F₁) becomes parallel to principal axis after refraction.</p>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Rule 3:</span> A ray passing through optic centre (O) goes straight without deviation.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Object Position</th><th>Image Position</th><th>Nature</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td>Beyond 2F₁</td><td>Between F₂ and 2F₂</td><td>Real, inverted, diminished</td><td>Camera (film)</td></tr>
+            <tr><td>At 2F₁</td><td>At 2F₂</td><td>Real, inverted, same size</td><td>—</td></tr>
+            <tr><td>Between F₁ and 2F₁</td><td>Beyond 2F₂</td><td>Real, inverted, magnified</td><td>Projector, cinema</td></tr>
+            <tr><td>At F₁</td><td>At infinity</td><td>Highly enlarged</td><td>Spotlight, torch</td></tr>
+            <tr><td>Between F₁ and O</td><td>Same side as object</td><td>Virtual, erect, magnified</td><td>Magnifying glass (simple microscope)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-pen-ruler text-amber-400 text-xs mr-2"></i>Ray Diagrams — Concave Lens</div>
+      <ul class="bullet-list text-sm">
+        <li>A ray parallel to principal axis appears to diverge from the focus (F) on the same side.</li>
+        <li>A ray directed towards the focus on the other side becomes parallel after refraction.</li>
+        <li>A ray through optic centre passes straight through.</li>
+        <li><span class="hl-term">Image always:</span> Virtual, erect, diminished, between O and F (on the same side as the object).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Convex lens is like a <span class="hl-event">magnifying glass</span> — it brings light together and can burn paper. Concave lens is like wearing <span class="hl-ruler">myopia glasses</span> — it spreads light out and reduces image size.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Lens Formula & Power -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-square-root-variable text-amber-400 text-sm"></i> 9. Lens Formula &amp; Power of Lens</h2>
+
+      <div class="subsection-heading"><i class="fas fa-equals text-amber-400 text-xs mr-2"></i>Lens Formula</div>
+      <p class="text-sm text-gray-400 mb-2">The lens formula is similar to the mirror formula, but with a <span class="hl-event">minus sign</span> for the image distance term:</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">1/f = 1/v - 1/u</div>
+      <p class="text-sm text-gray-400 mb-2">Where <span class="hl-term">f</span> = focal length, <span class="hl-term">v</span> = image distance, <span class="hl-term">u</span> = object distance.</p>
+
+      <div class="subsection-heading"><i class="fas fa-expand text-amber-400 text-xs mr-2"></i>Magnification (Lens)</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">m = hᵢ / hₒ = v / u</div>
+      <ul class="bullet-list text-sm">
+        <li>Note: For lenses, <span class="hl-term">m = v/u</span> (NOT -v/u as in mirrors).</li>
+        <li>m is <span class="hl-date">positive</span> for virtual (erect) images, <span class="hl-event">negative</span> for real (inverted) images.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-signal text-amber-400 text-xs mr-2"></i>Power of Lens</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Power of a lens</span> is the ability to converge or diverge light. It is the reciprocal of focal length (in metres):</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">P = 1 / f (in metres)</div>
+      <ul class="bullet-list text-sm">
+        <li>Unit: <span class="hl-term">Dioptre (D)</span>.</li>
+        <li><span class="hl-event">Convex lens:</span> Power is positive (P &gt; 0).</li>
+        <li><span class="hl-ruler">Concave lens:</span> Power is negative (P &lt; 0).</li>
+        <li>Higher power = shorter focal length = stronger bending of light.</li>
+        <li>Example: A lens with f = +50 cm = 0.5 m → P = 1/0.5 = <span class="hl-num">+2 D</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-list-ol text-amber-400 text-xs mr-2"></i>Sign Convention for Lenses</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>Convex Lens</th><th>Concave Lens</th></tr></thead>
+          <tbody>
+            <tr><td>Focal length (f)</td><td><span class="hl-event">Positive (+)</span></td><td><span class="hl-date">Negative (-)</span></td></tr>
+            <tr><td>Object distance (u)</td><td><span class="hl-num">Negative (-)</span></td><td><span class="hl-num">Negative (-)</span></td></tr>
+            <tr><td>Image distance (v)</td><td>Positive (real) / Negative (virtual)</td><td><span class="hl-policy">Negative (-)</span> (always virtual)</td></tr>
+            <tr><td>Power (P)</td><td><span class="hl-event">Positive (+)</span></td><td><span class="hl-date">Negative (-)</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">Numerical Example:</p>
+      <p class="text-sm text-gray-400 mb-2">A 5 cm tall object is placed 20 cm from a convex lens of focal length 10 cm. Find image position, size, and nature.</p>
+      <p class="text-sm text-cyan-300 mb-2">Solution: u = -20 cm, f = +10 cm. 1/v = 1/f + 1/u = 1/10 + 1/(-20) = 1/10 - 1/20 = 1/20 → v = +20 cm. m = v/u = 20/(-20) = -1. hᵢ = -1 × 5 = -5 cm. Image is real, inverted, same size (5 cm), at 2F₂.</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Notice:</span> Mirror formula is 1/f = 1/v + 1/u. Lens formula is 1/f = 1/v - 1/u. The minus is the only difference! For lenses, u is always negative, so 1/v - 1/(-|u|) = 1/v + 1/|u| — this is why the lens formula effectively becomes 1/f = 1/v + 1/|u|.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Dispersion of Light -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-rainbow text-amber-400 text-sm"></i> 10. Dispersion of Light</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Dispersion — What &amp; How?</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Dispersion</span> is the splitting of white light into its constituent colours when it passes through a prism. This happens because <span class="hl-ruler">different colours have different wavelengths</span> and bend by different amounts.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Colour</th><th>Wavelength</th><th>Bending in Prism</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-policy">Violet</span></td><td>Shortest (~400 nm)</td><td>Bends the <span class="hl-event">most</span> (deviated maximum)</td></tr>
+            <tr><td><span class="hl-ruler">Red</span></td><td>Longest (~700 nm)</td><td>Bends the <span class="hl-date">least</span> (deviated minimum)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-triangle text-amber-400 text-xs mr-2"></i>Prism</div>
+      <ul class="bullet-list text-sm">
+        <li>A <span class="hl-term">prism</span> is a transparent object with triangular cross-section — two triangular bases and three rectangular faces.</li>
+        <li>When white light enters a prism, it refracts (bends) twice — once at entry and once at exit.</li>
+        <li>Since violet bends more than red, the colours spread out into a <span class="hl-term">spectrum</span> (VIBGYOR).</li>
+        <li>The <span class="hl-term">angle of deviation</span> is different for each colour.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-cloud-sun-rain text-amber-400 text-xs mr-2"></i>Rainbow Formation</div>
+      <ul class="bullet-list text-sm">
+        <li>A <span class="hl-term">rainbow</span> is a natural spectrum of sunlight formed by <span class="hl-ruler">dispersion + total internal reflection</span> in water droplets.</li>
+        <li>Sunlight enters a raindrop → refracts (dispersion) → reflects from the back of the drop → refracts again as it exits.</li>
+        <li>We see the rainbow as a circular arc of VIBGYOR colours.</li>
+        <li>Rainbow is always seen with the <span class="hl-date">Sun behind us</span> and rain in front.</li>
+        <li><span class="hl-term">Secondary rainbow</span> has reversed colour order (red inside, violet outside) due to two internal reflections.</li>
+      </ul>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic for Colour Order (Increasing λ):</span> <span class="hl-event">"Violet Is In Blue, Green, Yellow, Orange, Red"</span> — V I B G Y O R. Or remember the name: <span class="hl-term">VIBGYOR</span>.
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Memory Aid:</span> <span class="hl-event">Violet bends most</span> (highest frequency, shortest wavelength). <span class="hl-ruler">Red bends least</span> (lowest frequency, longest wavelength). Think: Violet = Very bendy, Red = Relaxed bend.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Human Eye -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-eye text-amber-400 text-sm"></i> 11. Human Eye — Structure &amp; Defects</h2>
+
+      <div class="subsection-heading"><i class="fas fa-puzzle-piece text-amber-400 text-xs mr-2"></i>Structure of the Human Eye</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Part</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Cornea</span></td><td>Transparent front covering; does most of the refraction (about 2/3 of total power).</td></tr>
+            <tr><td><span class="hl-term">Iris</span></td><td>Coloured part that controls the amount of light entering the eye.</td></tr>
+            <tr><td><span class="hl-term">Pupil</span></td><td>Opening in the iris that expands/dilates to control light entry.</td></tr>
+            <tr><td><span class="hl-term">Crystalline Lens</span></td><td>Biconvex lens behind the cornea; changes shape for focusing (accommodation).</td></tr>
+            <tr><td><span class="hl-term">Ciliary Muscles</span></td><td>Muscles that change the lens shape (contract → lens thickens for near objects; relax → lens thins for far objects).</td></tr>
+            <tr><td><span class="hl-term">Retina</span></td><td>Light-sensitive screen at the back of the eye; contains rods and cones.</td></tr>
+            <tr><td><span class="hl-term">Optic Nerve</span></td><td>Carries electrical signals from retina to the brain.</td></tr>
+            <tr><td><span class="hl-term">Blind Spot</span></td><td>Point where optic nerve leaves the eye — no light-sensitive cells here.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sliders text-amber-400 text-xs mr-2"></i>Accommodation</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Accommodation</span> is the ability of the eye lens to adjust its focal length to see objects at different distances. The <span class="hl-ruler">ciliary muscles</span> change the curvature of the lens: for near objects, muscles contract → lens becomes thicker (shorter f). For far objects, muscles relax → lens becomes thinner (longer f).</p>
+
+      <div class="subsection-heading"><i class="fas fa-exclamation-triangle text-amber-400 text-xs mr-2"></i>Defects of the Eye &amp; Correction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Defect</th><th>Cause</th><th>Where Image Forms</th><th>Correction Lens</th><th>Lens Type</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-event">Myopia</span> (Near-sightedness)</td><td>Eyeball too long OR lens too powerful</td><td>In front of retina (far objects blurry)</td><td>Concave lens (diverging)</td><td><span class="hl-date">Negative power</span></td></tr>
+            <tr><td><span class="hl-ruler">Hypermetropia</span> (Far-sightedness)</td><td>Eyeball too short OR lens too weak</td><td>Behind retina (near objects blurry)</td><td>Convex lens (converging)</td><td><span class="hl-event">Positive power</span></td></tr>
+            <tr><td><span class="hl-policy">Presbyopia</span></td><td>Age-related weakening of ciliary muscles</td><td>Difficulty in reading at normal distance</td><td>Bifocal lens (upper: convex for far, lower: concave for near)</td><td>Combination</td></tr>
+            <tr><td><span class="hl-place">Cataract</span></td><td>Clouding of the eye lens (due to age/disease)</td><td>Blurred or opaque vision</td><td>Surgery — replace cloudy lens with artificial intraocular lens (IOL)</td><td>Surgical</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-gauge text-amber-400 text-xs mr-2"></i>Near Point, Far Point &amp; Range of Vision</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Near point</span> (least distance of distinct vision) = <span class="hl-num">25 cm</span> for a normal eye.</li>
+        <li><span class="hl-term">Far point</span> = <span class="hl-num">Infinity</span> for a normal eye.</li>
+        <li><span class="hl-term">Range of vision</span> = 25 cm to infinity for a normal eye.</li>
+        <li>Persistence of vision: An image stays on the retina for about <span class="hl-num">1/16th of a second</span> — this is how we see movies as continuous motion.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> The eye is like a <span class="hl-event">camera</span>. Cornea = camera lens cover, Iris = aperture (f-stop), Pupil = aperture opening, Lens = focusing ring, Retina = film/sensor. Accommodation = auto-focus. Myopia = camera that can't focus on far objects. Hypermetropia = camera that can't focus on nearby objects.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Myopia vs Hypermetropia — Quick Comparison</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Myopia</th><th>Hypermetropia</th></tr></thead>
+          <tbody>
+            <tr><td>Common name</td><td>Near-sightedness</td><td>Far-sightedness</td></tr>
+            <tr><td>What is blurry?</td><td>Distant objects</td><td>Nearby objects</td></tr>
+            <tr><td>Eyeball shape</td><td>Too long (elongated)</td><td>Too short (flattened)</td></tr>
+            <tr><td>Image falls</td><td>In front of retina</td><td>Behind retina</td></tr>
+            <tr><td>Corrective lens</td><td>Concave (diverging)</td><td>Convex (converging)</td></tr>
+            <tr><td>Lens symbol</td><td>Minus power (-D)</td><td>Plus power (+D)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Comparison Tables (5 tables) -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 12. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Table 1: Plane Mirror vs Concave Mirror vs Convex Mirror</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Plane Mirror</th><th>Concave Mirror</th><th>Convex Mirror</th></tr></thead>
+          <tbody>
+            <tr><td>Shape</td><td>Flat</td><td>Curved inward</td><td>Curved outward</td></tr>
+            <tr><td>Nature of image</td><td>Virtual, erect</td><td>Real or virtual (depends on u)</td><td>Always virtual, erect</td></tr>
+            <tr><td>Image size</td><td>Same as object</td><td>Same / Magnified / Diminished</td><td>Always diminished</td></tr>
+            <tr><td>Focal length (f)</td><td>Infinite (no focus)</td><td>Negative (real focus)</td><td>Positive (virtual focus)</td></tr>
+            <tr><td>Field of view</td><td>Limited (same as eye)</td><td>Limited (depends on curvature)</td><td>Wide (very useful for vehicles)</td></tr>
+            <tr><td>Lateral inversion</td><td>Yes</td><td>No (real image)</td><td>No (virtual image)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Table 2: Concave Lens vs Convex Lens</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Concave Lens (Diverging)</th><th>Convex Lens (Converging)</th></tr></thead>
+          <tbody>
+            <tr><td>Shape</td><td>Thinner in middle, thicker at edges</td><td>Thicker in middle, thinner at edges</td></tr>
+            <tr><td>Light behaviour</td><td>Spreads light out (diverges)</td><td>Brings light together (converges)</td></tr>
+            <tr><td>Focal length</td><td>Negative (-f)</td><td>Positive (+f)</td></tr>
+            <tr><td>Power</td><td>Negative (-P)</td><td>Positive (+P)</td></tr>
+            <tr><td>Image type</td><td>Always virtual, erect, diminished</td><td>Real or virtual (depends on u)</td></tr>
+            <tr><td>Use</td><td>Myopia glasses, peephole</td><td>Magnifying glass, camera, projector</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Table 3: Real Image vs Virtual Image</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Real Image</th><th>Virtual Image</th></tr></thead>
+          <tbody>
+            <tr><td>Rays actually meet?</td><td>Yes (actual intersection)</td><td>No (appear to diverge from point)</td></tr>
+            <tr><td>Can be obtained on screen?</td><td><span class="hl-date">Yes</span></td><td><span class="hl-event">No</span></td></tr>
+            <tr><td>Nature</td><td>Always inverted</td><td>Always erect</td></tr>
+            <tr><td>Formed by</td><td>Concave mirror, convex lens</td><td>Plane mirror, convex mirror, concave lens</td></tr>
+            <tr><td>Magnification sign</td><td>Negative (m &lt; 0)</td><td>Positive (m &gt; 0)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Table 4: Myopia vs Hypermetropia vs Presbyopia</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Myopia</th><th>Hypermetropia</th><th>Presbyopia</th></tr></thead>
+          <tbody>
+            <tr><td>Common name</td><td>Near-sightedness</td><td>Far-sightedness</td><td>Old-age vision</td></tr>
+            <tr><td>Cause</td><td>Long eyeball / Strong lens</td><td>Short eyeball / Weak lens</td><td>Age: weak ciliary muscles</td></tr>
+            <tr><td>Blurry objects</td><td>Far away</td><td>Nearby</td><td>Both near &amp; far (generally near)</td></tr>
+            <tr><td>Image on retina</td><td>In front</td><td>Behind</td><td>Behind (near objects)</td></tr>
+            <tr><td>Corrective lens</td><td>Concave (diverging)</td><td>Convex (converging)</td><td>Bifocal (convex + concave)</td></tr>
+            <tr><td>Power sign</td><td>Negative (-)</td><td>Positive (+)</td><td>Upper + / Lower -</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Table 5: Reflection vs Refraction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Reflection</th><th>Refraction</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Light bounces back from surface</td><td>Light bends when entering new medium</td></tr>
+            <tr><td>Speed of light</td><td>Unchanged (same medium)</td><td>Changes (different medium)</td></tr>
+            <tr><td>Angle relationship</td><td>∠i = ∠r</td><td>sin i / sin r = constant (Snell's law)</td></tr>
+            <tr><td>Medium change</td><td>Not required (same surface)</td><td>Required (different media)</td></tr>
+            <tr><td>Examples</td><td>Mirror image, periscope</td><td>Lens, prism, pencil in water</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 13: Mnemonics (3 boxes) -->
+    <!-- ============================================================ -->
+    <section id="sec13" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 13. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">EM Spectrum Order (Increasing Frequency):</span>
+        <span class="hl-event">"Rabbits Mate In Very Unusual eXpensive Gardens"</span>
+        <br>R = Radio, M = Microwave, I = Infrared, V = Visible, U = Ultraviolet, X = X-ray, G = Gamma.
+        <br>Or: <span class="hl-event">"Ricky Martin Is Very Unhappy eXcept on Good days"</span>.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Concave vs Convex — Spoon Trick:</span>
+        Hold a spoon: the <span class="hl-event">inside (hollow) = Concave</span> (C = Cave = Hollow). The <span class="hl-ruler">outside (back) = Convex</span> (X = eXpand = Bulging). Concave focuses like a funnel. Convex spreads like a dome.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Myopia vs Hypermetropia:</span>
+        <span class="hl-event">"Myopia = Minus power"</span> (M→M: Myopia→Minus/Concave). <span class="hl-ruler">"Hypermetropia = Plus power"</span> (H→P: Hyper→Plus/Convex).
+        <br><span class="hl-event">"Myopia = See near (M = near)"</span> — can't see far. <span class="hl-ruler">"Hypermetropia = See far (H = far)"</span> — can't see near.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 14: Practice Questions (15 MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec14" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 14. Practice Questions — 15 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. The speed of light in vacuum is:</div>
+        <div class="mcq-opt">A) 3 × 10⁶ m/s</div>
+        <div class="mcq-opt">B) 3 × 10⁸ m/s</div>
+        <div class="mcq-opt">C) 3 × 10¹⁰ m/s</div>
+        <div class="mcq-opt">D) 3 × 10⁴ m/s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 3 × 10⁸ m/s</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. According to the laws of reflection, the angle of incidence is:</div>
+        <div class="mcq-opt">A) Half the angle of reflection</div>
+        <div class="mcq-opt">B) Equal to the angle of reflection</div>
+        <div class="mcq-opt">C) Twice the angle of reflection</div>
+        <div class="mcq-opt">D) Not related to the angle of reflection</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Equal to the angle of reflection (∠i = ∠r)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. Which mirror is used as a rear-view mirror in vehicles?</div>
+        <div class="mcq-opt">A) Plane mirror</div>
+        <div class="mcq-opt">B) Concave mirror</div>
+        <div class="mcq-opt">C) Convex mirror</div>
+        <div class="mcq-opt">D) Any spherical mirror</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Convex mirror (gives wider field of view with erect, diminished image)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. The focal length (f) of a spherical mirror is related to its radius of curvature (R) by:</div>
+        <div class="mcq-opt">A) f = R</div>
+        <div class="mcq-opt">B) f = 2R</div>
+        <div class="mcq-opt">C) f = R/2</div>
+        <div class="mcq-opt">D) f = R²</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) f = R/2</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. A concave mirror is used as a shaving mirror because it gives:</div>
+        <div class="mcq-opt">A) Real, inverted, diminished image</div>
+        <div class="mcq-opt">B) Virtual, erect, magnified image</div>
+        <div class="mcq-opt">C) Virtual, erect, same size image</div>
+        <div class="mcq-opt">D) Real, inverted, magnified image</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Virtual, erect, magnified image (object placed between F and P)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. When light passes from air to glass, its speed:</div>
+        <div class="mcq-opt">A) Increases</div>
+        <div class="mcq-opt">B) Decreases</div>
+        <div class="mcq-opt">C) Remains the same</div>
+        <div class="mcq-opt">D) Becomes zero</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Decreases (glass is optically denser than air)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. According to Snell's Law, n₁ sin i = n₂ sin r. If n₂ &gt; n₁, then:</div>
+        <div class="mcq-opt">A) i &gt; r (light bends towards normal)</div>
+        <div class="mcq-opt">B) i &lt; r (light bends away from normal)</div>
+        <div class="mcq-opt">C) i = r</div>
+        <div class="mcq-opt">D) sin i = 0</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) i &gt; r (light bends towards the normal in denser medium)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. Which lens is used to correct myopia (near-sightedness)?</div>
+        <div class="mcq-opt">A) Convex lens</div>
+        <div class="mcq-opt">B) Concave lens</div>
+        <div class="mcq-opt">C) Cylindrical lens</div>
+        <div class="mcq-opt">D) Bifocal lens</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Concave lens (diverging lens with negative power)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. The refractive index of diamond is 2.42. This means light travels in diamond:</div>
+        <div class="mcq-opt">A) Faster than in vacuum</div>
+        <div class="mcq-opt">B) About 2.42 times slower than in vacuum</div>
+        <div class="mcq-opt">C) At the same speed as in air</div>
+        <div class="mcq-opt">D) Only in straight lines</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) About 2.42 times slower (n = c/v, so v = c/n = 3×10⁸/2.42 = 1.24×10⁸ m/s)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. The splitting of white light into its constituent colours is called:</div>
+        <div class="mcq-opt">A) Reflection</div>
+        <div class="mcq-opt">B) Refraction</div>
+        <div class="mcq-opt">C) Dispersion</div>
+        <div class="mcq-opt">D) Diffraction</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Dispersion (e.g., rainbow formation, prism spectrum)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. The least distance of distinct vision for a normal human eye is:</div>
+        <div class="mcq-opt">A) 10 cm</div>
+        <div class="mcq-opt">B) 25 cm</div>
+        <div class="mcq-opt">C) 50 cm</div>
+        <div class="mcq-opt">D) 100 cm</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 25 cm (also called the near point)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. A convex lens has a focal length of 50 cm. Its power is:</div>
+        <div class="mcq-opt">A) +2 D</div>
+        <div class="mcq-opt">B) -2 D</div>
+        <div class="mcq-opt">C) +0.5 D</div>
+        <div class="mcq-opt">D) -0.5 D</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) +2 D (P = 1/f in metres = 1/0.5 = +2 D)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. Which of the following mirrors forms a virtual image for all positions of the object?</div>
+        <div class="mcq-opt">A) Plane mirror only</div>
+        <div class="mcq-opt">B) Concave mirror only</div>
+        <div class="mcq-opt">C) Convex mirror only</div>
+        <div class="mcq-opt">D) Both plane and convex mirrors</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Both plane and convex mirrors always form virtual, erect images</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. The phenomenon of light that causes a pencil to appear bent when partially dipped in water is:</div>
+        <div class="mcq-opt">A) Reflection</div>
+        <div class="mcq-opt">B) Refraction</div>
+        <div class="mcq-opt">C) Dispersion</div>
+        <div class="mcq-opt">D) Total internal reflection</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Refraction (light bends as it travels from water to air)</div>
+      </div>
+
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. Which colour of light bends the most when passing through a prism?</div>
+        <div class="mcq-opt">A) Red</div>
+        <div class="mcq-opt">B) Yellow</div>
+        <div class="mcq-opt">C) Green</div>
+        <div class="mcq-opt">D) Violet</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Violet (shortest wavelength → maximum deviation)</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-lightbulb text-amber-400/50 mr-2"></i>
+      Light — Reflection &amp; Refraction · NCERT Science Notes · Class 6–10
+      <br>Compiled for revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

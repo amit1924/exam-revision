@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Nervous System — NCERT Class 6-10 Science Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(99,102,241,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+/* MULTI-COLOR HIGHLIGHT SYSTEM */
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+/* BACKGROUND HIGHLIGHTS */
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#6366f1; }
+.fact-box { background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.08)); border:1px solid rgba(99,102,241,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#818cf8; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.disease-box { background:linear-gradient(135deg, rgba(239,68,68,0.08), rgba(251,146,60,0.08)); border:1px solid rgba(239,68,68,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.disease-title { font-size:0.8rem; font-weight:600; color:#fb923c; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(99,102,241,0.15); color:#a5b4fc; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(99,102,241,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(99,102,241,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(99,102,241,0.1); border:1px solid rgba(99,102,241,0.2); font-size:0.82rem; color:#818cf8; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+</style></head>
+<body><div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-emerald-500/20 text-center">
+  <i class="fa-solid fa-brain text-4xl sm:text-5xl text-emerald-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Human Nervous System</h1>
+  <p class="text-indigo-300 text-sm mt-1"><i class="fa-solid fa-book text-rose-400 mr-1"></i> NCERT Science · Class 6-10 · Control & Coordination</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-emerald-900/40 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-brain mr-1"></i>Nervous System</span>
+    <span class="cat-badge bg-indigo-900/40 text-indigo-300 border border-indigo-500/30"><i class="fa-solid fa-star mr-1"></i>Exam Ready</span>
+  </div>
+</div>
+
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2"><i class="fa-solid fa-list text-emerald-400"></i><span class="text-white font-semibold text-sm">Contents</span></div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()"><i id="hamburger-icon" class="fas fa-bars text-emerald-400"></i></button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">1. Overview</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">2. Neuron</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">3. CNS: Brain</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">4. Spinal Cord</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">5. PNS</a>
+    <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">6. Reflex Arc</a>
+    <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">7. Sense Organs</a>
+    <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">8. Neurotransmitters</a>
+    <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">9. Disorders</a>
+    <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-emerald-900/30 hover:text-emerald-400">10. MCQs</a>
+  </div>
+</div>
+
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-sitemap text-emerald-400"></i> 1. Overview — Nervous System</h2>
+<p class="content-text">The <span class="hl-term hl-bg-term">nervous system</span> controls and coordinates all body activities. It detects stimuli (changes in environment) and produces responses.</p>
+<ul class="bullet-list">
+<li>Two main divisions: <span class="hl-term">Central Nervous System (CNS)</span> — Brain + Spinal Cord | <span class="hl-term">Peripheral Nervous System (PNS)</span> — Cranial nerves + Spinal nerves</li>
+<li>PNS divided into: <span class="hl-term">Somatic nervous system</span> (voluntary — control skeletal muscles) | <span class="hl-term">Autonomic nervous system</span> (involuntary — controls organs/glands)</li>
+<li>Autonomic further: <span class="hl-term">Sympathetic</span> (fight or flight) | <span class="hl-term">Parasympathetic</span> (rest and digest)</li>
+</ul>
+<div class="table-wrap">
+<table><thead><tr><th>Division</th><th>Function</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">CNS</span></td><td>Processing center, integration</td><td>Brain thinks, spinal cord relays</td></tr>
+<tr><td><span class="hl-term">PNS — Somatic</span></td><td>Voluntary movement</td><td>Lifting hand</td></tr>
+<tr><td><span class="hl-term">PNS — Sympathetic</span></td><td>Emergency response</td><td>↑ Heart rate, dilated pupil</td></tr>
+<tr><td><span class="hl-term">PNS — Parasympathetic</span></td><td>Normal body maintenance</td><td>↓ Heart rate, digestion</td></tr>
+</tbody></table>
+</div>
+</section>
+
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-bolt text-emerald-400"></i> 2. Neuron — Structure & Function</h2>
+<p class="content-text">The <span class="hl-term hl-bg-term">neuron</span> is the structural and functional unit of the nervous system. It is specialized for <span class="hl-policy hl-bg-policy">conducting nerve impulses</span>.</p>
+<ul class="bullet-list">
+<li><span class="hl-arch hl-bg-arch">Cell body (Soma)</span> — contains nucleus, Nissl granules, neurofibrils. Also called <span class="hl-term">perikaryon</span></li>
+<li><span class="hl-arch hl-bg-arch">Dendrites</span> — short, highly branched; <span class="hl-policy">receive signals</span> from other neurons/receptors</li>
+<li><span class="hl-arch hl-bg-arch">Axon</span> — single, long; <span class="hl-policy">carries impulse away</span> from cell body. Ends at <span class="hl-term">synaptic knobs (boutons)</span></li>
+<li><span class="hl-term">Myelin sheath</span> — insulating layer; made by <span class="hl-term">Schwann cells</span> (PNS) or <span class="hl-term">Oligodendrocytes</span> (CNS)</li>
+<li><span class="hl-term hl-bg-term">Nodes of Ranvier</span> — gaps in myelin; <span class="hl-policy">saltatory conduction</span> (impulse jumps → faster transmission)</li>
+</ul>
+
+<div class="subsubsection-heading">Types of Neurons</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Sensory (afferent)</span> — carry impulses from receptors → CNS</li>
+<li><span class="hl-term">Motor (efferent)</span> — carry impulses from CNS → effectors (muscles, glands)</li>
+<li><span class="hl-term">Interneurons (association)</span> — connect sensory & motor neurons within CNS (most numerous)</li>
+</ul>
+
+<div class="subsubsection-heading">Nerve Impulse Transmission</div>
+<ul class="bullet-list">
+<li>Resting membrane potential: <span class="hl-num hl-bg-num">-70 mV</span> (inside negative relative to outside — Na⁺ outside, K⁺ inside)</li>
+<li><span class="hl-term">Na⁺/K⁺ pump</span> maintains gradient: 3 Na⁺ out, 2 K⁺ in (active transport, uses ATP)</li>
+<li><span class="hl-term hl-bg-event">Depolarization</span>: Stimulus opens Na⁺ channels → Na⁺ rushes in → potential becomes +<span class="hl-num">40 mV</span> (action potential)</li>
+<li><span class="hl-term hl-bg-event">Repolarization</span>: K⁺ channels open → K⁺ rushes out → returns to -<span class="hl-num">70 mV</span></li>
+<li><span class="hl-term">Refractory period</span> — brief period after impulse when neuron cannot fire again</li>
+<li>Speed: <span class="hl-num">1-120 m/s</span> (myelinated = faster, unmyelinated = slower)</li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Mnemonic: <span class="text-white">"RIP — Resting -70, Inside negative, Polarized"</span></div>
+<div class="mnemonic-content"><span class="hl-term">R</span>esting <span class="hl-term">-70</span> | <span class="hl-term">D</span>epolarization = Na⁺ in | <span class="hl-term">R</span>epolarization = K⁺ out | <span class="hl-term">H</span>yperpolarization = more negative</div>
+</div>
+</section>
+
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-brain text-emerald-400"></i> 3. Brain — The Control Center</h2>
+<p class="content-text">The brain is protected by <span class="hl-term">cranium (skull)</span> and <span class="hl-num">3</span> layers of <span class="hl-term">meninges</span> (dura mater, arachnoid mater, pia mater). Cerebrospinal fluid (CSF) cushions the brain.</p>
+
+<div class="subsubsection-heading">Forebrain (Prosencephalon)</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">Cerebrum</span> — largest part (<span class="hl-num">80%</span> of brain). Divided into <span class="hl-num">2</span> hemispheres (left & right) connected by <span class="hl-term">corpus callosum</span></li>
+<li>Outer layer: <span class="hl-term">Cerebral cortex</span> (grey matter — cell bodies); inner: white matter (axons)</li>
+<li>Lobes: <span class="hl-term">Frontal</span> (thinking, planning, personality), <span class="hl-term">Parietal</span> (sensory processing), <span class="hl-term">Temporal</span> (hearing, memory), <span class="hl-term">Occipital</span> (vision)</li>
+<li><span class="hl-term">Thalamus</span> — relay station for sensory information</li>
+<li><span class="hl-term">Hypothalamus</span> — controls body temperature, hunger, thirst, sleep, circadian rhythm, pituitary gland</li>
+</ul>
+
+<div class="subsubsection-heading">Midbrain (Mesencephalon)</div>
+<ul class="bullet-list">
+<li>Connects forebrain to hindbrain; contains <span class="hl-term">corpora quadrigemina</span> (visual & auditory reflexes)</li>
+</ul>
+
+<div class="subsubsection-heading">Hindbrain (Rhombencephalon)</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">Cerebellum</span> — <span class="hl-policy">Balance, posture, coordination of voluntary movements</span>. Second largest part</li>
+<li><span class="hl-term hl-bg-term">Pons</span> — connects cerebellum to medulla; controls breathing</li>
+<li><span class="hl-term hl-bg-term">Medulla Oblongata</span> — <span class="hl-policy hl-bg-policy">Vital centers: breathing, heart rate, blood pressure, vomiting, coughing, sneezing</span></li>
+</ul>
+
+<div class="table-wrap">
+<table><thead><tr><th>Part</th><th>Location</th><th>Main Function</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Cerebrum</span></td><td>Forebrain</td><td>Thinking, memory, voluntary actions</td></tr>
+<tr><td><span class="hl-term">Cerebellum</span></td><td>Hindbrain</td><td>Balance, coordination</td></tr>
+<tr><td><span class="hl-term">Medulla</span></td><td>Hindbrain</td><td>Vital involuntary functions</td></tr>
+<tr><td><span class="hl-term">Hypothalamus</span></td><td>Forebrain</td><td>Homeostasis (temp, hunger, thirst)</td></tr>
+<tr><td><span class="hl-term">Thalamus</span></td><td>Forebrain</td><td>Sensory relay station</td></tr>
+</tbody></table>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Brain Mnemonic: <span class="text-white">"F M H — Forebrain (thinking), Midbrain (reflexes), Hindbrain (vital)"</span></div>
+<div class="mnemonic-content">Remember: <span class="hl-term">Cerebrum</span> = <span class="hl-arch">"CEO"</span> (highest functions) | <span class="hl-term">Cerebellum</span> = <span class="hl-arch">"Balancer"</span> | <span class="hl-term">Medulla</span> = <span class="hl-arch">"Life Support"</span> (breathing, heart rate)</div>
+</div>
+</section>
+
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-arrow-down text-emerald-400"></i> 4. Spinal Cord</h2>
+<ul class="bullet-list">
+<li>Long, cylindrical structure: ~<span class="hl-num">42-45 cm</span> (adult); extends from <span class="hl-place">medulla to L1-L2 vertebra</span></li>
+<li>Protected by <span class="hl-term">vertebral column</span> + meninges + CSF</li>
+<li>Contains <span class="hl-term">grey matter</span> (H-shaped, center — cell bodies) surrounded by <span class="hl-term">white matter</span> (axons)</li>
+<li><span class="hl-num">31</span> pairs of spinal nerves: <span class="hl-num">8</span> cervical, <span class="hl-num">12</span> thoracic, <span class="hl-num">5</span> lumbar, <span class="hl-num">5</span> sacral, <span class="hl-num">1</span> coccygeal</li>
+<li>Functions: <span class="hl-policy hl-bg-policy">Conducts impulses between brain & body; center for reflex actions</span></li>
+</ul>
+</section>
+
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-network-wired text-emerald-400"></i> 5. Peripheral Nervous System</h2>
+<ul class="bullet-list">
+<li><span class="hl-term">Cranial nerves</span> — <span class="hl-num hl-bg-num">12 pairs</span> from brain (I-XII). Eg: Optic (II — vision), Vagus (X — visceral organs)</li>
+<li><span class="hl-term">Spinal nerves</span> — <span class="hl-num">31 pairs</span> from spinal cord</li>
+<li><span class="hl-term">Autonomic Nervous System</span> (involuntary):
+  <ul class="bullet-list-2">
+    <li><span class="hl-term hl-bg-event">Sympathetic</span> — "Fight or Flight": ↑ HR, ↑ BP, dilated pupil, bronchodilation, ↓ digestion. Neurotransmitter: <span class="hl-arch">Noradrenaline</span></li>
+    <li><span class="hl-term hl-bg-event">Parasympathetic</span> — "Rest and Digest": ↓ HR, ↓ BP, constricted pupil, ↑ digestion. Neurotransmitter: <span class="hl-arch">Acetylcholine</span></li>
+  </ul>
+</li>
+</ul>
+</section>
+
+<section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-arrow-turns-down text-emerald-400"></i> 6. Reflex Arc</h2>
+<p class="content-text"><span class="hl-term hl-bg-term">Reflex action</span> is a rapid, automatic, involuntary response to a stimulus. It occurs via the <span class="hl-term hl-bg-term">reflex arc</span> — the neural pathway.</p>
+<ul class="bullet-list">
+<li>Pathway: <span class="hl-term">Stimulus → Receptor → Sensory neuron → Spinal cord (interneuron) → Motor neuron → Effector (muscle/gland) → Response</span></li>
+<li>Examples: <span class="hl-event">Knee jerk (patellar reflex)</span>, <span class="hl-event">Withdrawing hand from hot object</span>, <span class="hl-event">Blinking</span></li>
+<li>Advantage: <span class="hl-policy hl-bg-policy">Fast response — doesn't wait for brain to process (saves time, prevents injury)</span></li>
+<li><span class="hl-term">Reflexes</span>: Simple (monosynaptic — knee jerk) vs Complex (polysynaptic — withdrawal)</li>
+</ul>
+</section>
+
+<section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-eye text-emerald-400"></i> 7. Sense Organs</h2>
+
+<div class="subsubsection-heading">Eye — Vision</div>
+<ul class="bullet-list">
+<li>Wall layers: <span class="hl-term">Sclera</span> (white outer) → <span class="hl-term">Choroid</span> (blood vessels) → <span class="hl-term">Retina</span> (photoreceptors — rods & cones)</li>
+<li>Rods: <span class="hl-term">Scotopic vision</span> (dim light, black & white) — pigment: <span class="hl-term">Rhodopsin</span></li>
+<li>Cones: <span class="hl-term">Photopic vision</span> (bright light, color) — pigment: <span class="hl-term">Photopsin</span> (3 types for red, green, blue)</li>
+<li><span class="hl-term">Cornea</span> — transparent front → <span class="hl-term">Iris</span> (colored, controls pupil size) → <span class="hl-term">Lens</span> → <span class="hl-term">Retina</span></li>
+<li><span class="hl-term hl-bg-place">Fovea centralis</span> — highest concentration of cones (sharpest vision)</li>
+<li><span class="hl-term hl-bg-event">Blind spot</span> — where optic nerve leaves retina (no photoreceptors)</li>
+<li><span class="hl-event hl-bg-event">Myopia</span> (near-sighted) — eyeball too long → image falls in front of retina; corrected by <span class="hl-term">concave lens</span></li>
+<li><span class="hl-event hl-bg-event">Hypermetropia</span> (far-sighted) — eyeball too short → image falls behind retina; corrected by <span class="hl-term">convex lens</span></li>
+<li><span class="hl-event">Cataract</span> — lens becomes opaque (cloudy) → vision loss; treated by lens replacement surgery</li>
+</ul>
+
+<div class="subsubsection-heading">Ear — Hearing & Balance</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Outer ear</span> — Pinna + Ear canal → collects sound</li>
+<li><span class="hl-term">Middle ear</span> — Tympanic membrane (eardrum) → 3 ossicles: <span class="hl-term">Malleus (hammer), Incus (anvil), Stapes (stirrup)</span> — amplify vibrations</li>
+<li><span class="hl-term">Inner ear</span> — Cochlea (hearing — hair cells convert vibrations to nerve impulses) + Vestibular apparatus (balance — semicircular canals)</li>
+<li><span class="hl-event hl-bg-event">Eustachian tube</span> — connects middle ear to pharynx; equalizes pressure</li>
+</ul>
+
+<div class="subsubsection-heading">Nose — Smell</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Olfactory epithelium</span> on roof of nasal cavity → contains <span class="hl-term">olfactory receptor cells</span> for smell</li>
+<li>Signals go to <span class="hl-term">olfactory bulb</span> → brain</li>
+</ul>
+
+<div class="subsubsection-heading">Tongue — Taste</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Taste buds</span> on papillae of tongue — ~<span class="hl-num">10,000</span> taste buds</li>
+<li>Five basic tastes: <span class="hl-term">Sweet</span> (sugar), <span class="hl-term">Sour</span> (acid), <span class="hl-term">Salty</span> (NaCl), <span class="hl-term">Bitter</span> (alkaloids), <span class="hl-term">Umami</span> (savory — glutamate)</li>
+</ul>
+
+<div class="subsubsection-heading">Skin — Touch</div>
+<ul class="bullet-list">
+<li>Receptors in skin: <span class="hl-term">Meissner's corpuscles</span> (light touch), <span class="hl-term">Pacinian corpuscles</span> (deep pressure), <span class="hl-term">Thermoreceptors</span> (temperature), <span class="hl-term">Nociceptors</span> (pain)</li>
+</ul>
+</section>
+
+<section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-comment-dots text-emerald-400"></i> 8. Neurotransmitters & Synapses</h2>
+<ul class="bullet-list">
+<li><span class="hl-term">Synapse</span> — junction between two neurons where signals are transmitted</li>
+<li>Types: <span class="hl-term">Electrical synapse</span> (direct, fast, rare in humans) | <span class="hl-term">Chemical synapse</span> (common, slower, uses neurotransmitters)</li>
+<li>Process: Impulse arrives at <span class="hl-term">synaptic knob</span> → Ca²⁺ influx → vesicles release <span class="hl-arch">neurotransmitter</span> into <span class="hl-term">synaptic cleft</span> → binds to receptors on <span class="hl-term">postsynaptic membrane</span> → new impulse generated</li>
+</ul>
+<div class="table-wrap">
+<table><thead><tr><th>Neurotransmitter</th><th>Location</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Acetylcholine (ACh)</span></td><td>Neuromuscular junction, PNS</td><td>Muscle contraction</td></tr>
+<tr><td><span class="hl-term">Noradrenaline</span></td><td>Sympathetic nervous system</td><td>Fight or flight response</td></tr>
+<tr><td><span class="hl-term">Dopamine</span></td><td>Brain (midbrain)</td><td>Reward, pleasure, movement</td></tr>
+<tr><td><span class="hl-term">Serotonin</span></td><td>Brain (raphe nuclei)</td><td>Mood, sleep, appetite</td></tr>
+<tr><td><span class="hl-term">GABA</span></td><td>Brain</td><td>Inhibitory (calming)</td></tr>
+<tr><td><span class="hl-term">Glutamate</span></td><td>Brain</td><td>Excitatory (learning, memory)</td></tr>
+</tbody></table>
+</div>
+</section>
+
+<section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-heart-crack text-emerald-400"></i> 9. Nervous System Disorders</h2>
+<div class="table-wrap">
+<table><thead><tr><th>Disorder</th><th>Cause</th><th>Symptoms</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-event hl-bg-event">Parkinson's Disease</span></td><td>Dopamine deficiency (substantia nigra degenerates)</td><td>Tremor, stiffness, slow movement</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Alzheimer's</span></td><td>Acetylcholine deficiency, amyloid plaques</td><td>Memory loss, confusion, dementia</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Epilepsy</span></td><td>Abnormal electrical activity in brain</td><td>Seizures, convulsions</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Multiple Sclerosis</span></td><td>Autoimmune destruction of myelin (CNS)</td><td>Weakness, vision loss, coordination problems</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Paralysis</span></td><td>Spinal cord injury → nerve damage</td><td>Loss of movement/sensation below injury</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Migraine</span></td><td>Vascular/neurological</td><td>Severe headache, nausea, sensitivity to light</td></tr>
+<tr><td><span class="hl-event hl-bg-event">Depression</span></td><td>Serotonin/noradrenaline imbalance</td><td>Low mood, loss of interest, fatigue</td></tr>
+</tbody></table>
+</div>
+</section>
+
+<section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-question-circle text-emerald-400"></i> 10. Practice MCQs</h2>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">1. The largest part of the brain is:</div><div class="mcq-opt">A) Cerebellum</div><div class="mcq-opt">B) Medulla</div><div class="mcq-opt">C) Cerebrum</div><div class="mcq-opt">D) Pons</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Cerebrum — 80% of brain, controls voluntary actions, thought, memory</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">2. Resting membrane potential of neuron is:</div><div class="mcq-opt">A) +40 mV</div><div class="mcq-opt">B) -70 mV</div><div class="mcq-opt">C) -90 mV</div><div class="mcq-opt">D) 0 mV</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) -70 mV (inside negative, outside positive)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">3. Which part of the brain controls balance & coordination?</div><div class="mcq-opt">A) Cerebrum</div><div class="mcq-opt">B) Cerebellum</div><div class="mcq-opt">C) Medulla</div><div class="mcq-opt">D) Thalamus</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Cerebellum — coordinates voluntary movements and maintains posture</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">4. The reflex arc does NOT involve:</div><div class="mcq-opt">A) Sensory neuron</div><div class="mcq-opt">B) Motor neuron</div><div class="mcq-opt">C) Brain</div><div class="mcq-opt">D) Effector</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Brain — reflexes are processed in spinal cord for faster response</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">5. Myopia is corrected by which lens?</div><div class="mcq-opt">A) Convex</div><div class="mcq-opt">B) Concave</div><div class="mcq-opt">C) Bifocal</div><div class="mcq-opt">D) Cylindrical</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Concave lens (near-sightedness — eyeball too long)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">6. Which neurotransmitter is involved in muscle contraction?</div><div class="mcq-opt">A) Dopamine</div><div class="mcq-opt">B) Acetylcholine</div><div class="mcq-opt">C) Serotonin</div><div class="mcq-opt">D) GABA</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Acetylcholine (ACh) — at neuromuscular junction</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">7. How many pairs of cranial nerves are there?</div><div class="mcq-opt">A) 8</div><div class="mcq-opt">B) 10</div><div class="mcq-opt">C) 12</div><div class="mcq-opt">D) 31</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) 12 pairs (31 pairs of spinal nerves)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">8. The vital centers for heart rate and breathing are in:</div><div class="mcq-opt">A) Cerebrum</div><div class="mcq-opt">B) Cerebellum</div><div class="mcq-opt">C) Medulla oblongata</div><div class="mcq-opt">D) Hypothalamus</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Medulla oblongata — controls breathing, heart rate, blood pressure</div></div>
+</section>
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6"><i class="fa-solid fa-heart-pulse text-rose-400/50 mr-2"></i>Human Physiology · NCERT Science Notes · Class 6-10<br>Compiled for revision · Click MCQs to reveal answers</div></div>
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.1 });
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+function toggleAns(el) { const ans = el.querySelector(".mcq-ans"); if (ans) ans.classList.toggle("show"); }
+function toggleMenu() { const m = document.getElementById("nav-menu"); const i = document.getElementById("hamburger-icon"); m.classList.toggle("hidden"); i.classList.toggle("fa-bars"); i.classList.toggle("fa-times"); }
+</script>
+</body>
+</html>

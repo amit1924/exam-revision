@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+    
+    /* HIGHLIGHTERS - BPSC EXAM FOCUSED */
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+    
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+    
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+    
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-volume-high text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Sound</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Physics · Class 8 to 10 · Comprehensive Notes</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-volume-high text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Production</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Propagation</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Characteristics</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Speed</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Loudness &amp; Pitch</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Infrasound &amp; Ultrasound</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Echo &amp; Reverberation</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. SONAR</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Human Ear</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Noise Pollution</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Comparisons</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. Mnemonics</a>
+        <a href="#sec13" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">13. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Production of Sound -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-wand-magic-sparkles text-amber-400 text-sm"></i> 1. Production of Sound</h2>
+      <p class="text-sm text-gray-400 mb-3">Sound is produced by <span class="hl-term">vibrations</span> — the back-and-forth motion of an object. Think of a guitar string: when you pluck it, it vibrates and you hear a sound. No vibration = no sound.</p>
+
+      <div class="subsection-heading"><i class="fas fa-microchip text-amber-400 text-xs mr-2"></i>Vibration: The Source of All Sound</div>
+      <ul class="bullet-list text-sm">
+        <li>Every sound originates from a <span class="hl-term">vibrating object</span>. When the object moves to-and-fro, it disturbs the surrounding air particles.</li>
+        <li>If you touch your throat while speaking, you can feel the <span class="hl-event">vocal cords</span> vibrating. That vibration is what produces your voice.</li>
+        <li>A <span class="hl-term">tuning fork</span> has two prongs (tines) that vibrate when struck. The vibration is visible if you dip the prongs in water — you'll see ripples!</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-person text-amber-400 text-xs mr-2"></i>How Vocal Cords Work</div>
+      <p class="text-sm text-gray-400 mb-3">In our <span class="hl-term">larynx</span> (voice box), two bands of tissue called <span class="hl-event">vocal cords</span> are stretched across the windpipe. When we speak, air from the lungs rushes past these cords, making them <span class="hl-term">vibrate</span>. The vibration produces sound waves. Men have longer, thicker cords → deeper voice. Women have shorter, thinner cords → higher voice.</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Your vocal cords are like rubber bands stretched across a box. Pluck a thick rubber band — you get a low sound. Pluck a thin one — you get a high sound. Same with your vocal cords!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-guitar text-amber-400 text-xs mr-2"></i>How Musical Instruments Produce Sound</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>How Sound is Produced</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">String Instruments</span></td><td>Strings vibrate when plucked, struck, or bowed</td><td>Guitar, sitar, violin, veena, sarod</td></tr>
+            <tr><td><span class="hl-term">Wind Instruments</span></td><td>Air column vibrates inside the tube</td><td>Flute, trumpet, shehnai, clarinet, bugle</td></tr>
+            <tr><td><span class="hl-term">Percussion Instruments</span></td><td>Membrane or body vibrates when struck</td><td>Drum, tabla, dholak, mridangam, cymbals</td></tr>
+            <tr><td><span class="hl-term">Brass Instruments</span></td><td>Player's lips vibrate in the mouthpiece</td><td>Trumpet, trombone, tuba, French horn</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> A vibrating object produces sound, but the object itself does NOT move from its place — only the energy travels. Like a <span class="hl-term">pendulum</span>: it swings but stays in one location.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Propagation of Sound -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-water text-amber-400 text-sm"></i> 2. Propagation of Sound</h2>
+      <p class="text-sm text-gray-400 mb-3">Sound waves are like <span class="hl-term">ripples in a pond</span> — the disturbance travels outward but the water itself stays put. Sound needs a <span class="hl-event">medium</span> (solid, liquid, or gas) to travel. It <span class="hl-num">cannot travel through vacuum</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-ban text-amber-400 text-xs mr-2"></i>Sound Needs a Medium</div>
+      <ul class="bullet-list text-sm">
+        <li>Sound is a <span class="hl-term">mechanical wave</span> — it needs particles to pass along the energy.</li>
+        <li>In a <span class="hl-ruler">vacuum</span> (empty space with no particles), sound cannot travel. This is why in space, no one can hear you scream!</li>
+        <li><span class="hl-event">Bell Jar Experiment:</span> Place an electric bell inside a glass jar. Evacuate the air with a vacuum pump. The sound of the bell <span class="hl-num">fades away</span> as the air is removed. When air is let back in, the sound returns.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Sound needs a medium just like a <span class="hl-term">train needs tracks</span>. Without tracks, the train cannot move. Without particles (solid/liquid/gas), sound cannot travel. Simple!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-chart-bar text-amber-400 text-xs mr-2"></i>Longitudinal Waves: Compression &amp; Rarefaction</div>
+      <p class="text-sm text-gray-400 mb-3">Sound waves in air are <span class="hl-term">longitudinal waves</span> — the particles vibrate <span class="hl-event">parallel</span> to the direction of wave travel. Think of a <span class="hl-term">slinky</span> pushed and pulled along its length.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Compression (C):</span> Region where particles are <span class="hl-event">pushed together</span> (high pressure, high density). Represented by crests in graphs.</li>
+        <li><span class="hl-term">Rarefaction (R):</span> Region where particles are <span class="hl-date">spread apart</span> (low pressure, low density). Represented by troughs in graphs.</li>
+        <li>One full wave = one <span class="hl-num">Compression + one Rarefaction</span>.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Imagine a <span class="hl-term">train of dominoes</span>. When you push the first domino, it falls and knocks the next, and so on — the <em>push</em> travels forward, but each domino stays roughly where it is. That's exactly how sound propagates: the <em>energy</em> moves forward but the air particles just vibrate back and forth.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>Speed in Different Media</div>
+      <p class="text-sm text-gray-400 mb-2">Sound travels fastest in solids, slower in liquids, and slowest in gases. Why? Because particles are <span class="hl-term">packed more tightly</span> in solids, so the energy transfer is quicker.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Medium</th><th>Speed (approx. m/s)</th><th>Why?</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-ruler">Solids</span> (e.g., Steel)</td><td><span class="hl-num">~5000 – 6000 m/s</span></td><td>Particles tightly packed, energy transfers fast</td></tr>
+            <tr><td><span class="hl-place">Liquids</span> (e.g., Water)</td><td><span class="hl-num">~1400 – 1500 m/s</span></td><td>Particles moderately close</td></tr>
+            <tr><td><span class="hl-event">Gases</span> (e.g., Air at 20°C)</td><td><span class="hl-num">~343 m/s</span></td><td>Particles far apart, slowest transfer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Characteristics of Sound -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-wave-square text-amber-400 text-sm"></i> 3. Characteristics of Sound</h2>
+      <p class="text-sm text-gray-400 mb-3">Sound is described by five key quantities. Think of them as the <span class="hl-term">"ID card"</span> of a sound wave — they tell you everything about it.</p>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Key Terms</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>Symbol</th><th>Definition</th><th>Unit</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Amplitude</span></td><td>A</td><td>Maximum displacement of a vibrating particle from its mean position</td><td>metre (m)</td></tr>
+            <tr><td><span class="hl-term">Frequency</span></td><td>f</td><td>Number of complete oscillations per second</td><td>Hertz (Hz)</td></tr>
+            <tr><td><span class="hl-term">Time Period</span></td><td>T</td><td>Time taken to complete one oscillation (T = 1/f)</td><td>second (s)</td></tr>
+            <tr><td><span class="hl-term">Wavelength</span></td><td>λ (lambda)</td><td>Distance between two consecutive compressions (or rarefactions)</td><td>metre (m)</td></tr>
+            <tr><td><span class="hl-term">Velocity</span></td><td>v</td><td>Speed at which the wave travels through the medium</td><td>m/s</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-equals text-amber-400 text-xs mr-2"></i>The Wave Equation: v = fλ</div>
+      <p class="text-sm text-gray-400 mb-3">The velocity of a sound wave is the product of its <span class="hl-term">frequency</span> and <span class="hl-term">wavelength</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">v = f × λ</div>
+      <ul class="bullet-list text-sm">
+        <li>v = velocity of sound in the medium (m/s)</li>
+        <li>f = frequency (Hz)</li>
+        <li>λ = wavelength (m)</li>
+        <li>Also: f = 1/T, where T = time period</li>
+      </ul>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-event">Example:</span> A tuning fork of 256 Hz produces a sound wave of wavelength 1.34 m in air. What is the speed? v = 256 × 1.34 = 343 m/s.</p>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy — Amplitude:</span> Amplitude is like <span class="hl-term">how hard you hit a drum</span>. Hit it softly → small amplitude → quiet sound. Hit it hard → large amplitude → loud sound. Simple!
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy — Frequency:</span> Frequency is like <span class="hl-term">the speed of a train's wheel clicks</span>. Slow clicks = low frequency = deep sound. Fast clicks = high frequency = shrill sound.
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy — Wavelength:</span> Wavelength is like the <span class="hl-term">distance between two consecutive waves in a rope</span>. If you shake a rope slowly, the loops (wavelength) are long. Shake fast — short loops!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Speed of Sound -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-gauge-high text-amber-400 text-sm"></i> 4. Speed of Sound</h2>
+
+      <div class="subsection-heading"><i class="fas fa-microchip text-amber-400 text-xs mr-2"></i>Speed in Different Media</div>
+      <p class="text-sm text-gray-400 mb-3">General rule: <span class="hl-event">Solid &gt; Liquid &gt; Gas</span>. Sound travels fastest in solids because molecules are tightly packed and can transfer energy quickly.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Material</th><th>Speed (m/s)</th><th>Category</th></tr></thead>
+          <tbody>
+            <tr><td>Steel</td><td><span class="hl-num">~5200</span></td><td><span class="hl-ruler">Solid</span></td></tr>
+            <tr><td>Glass</td><td><span class="hl-num">~4500</span></td><td><span class="hl-ruler">Solid</span></td></tr>
+            <tr><td>Aluminium</td><td><span class="hl-num">~5100</span></td><td><span class="hl-ruler">Solid</span></td></tr>
+            <tr><td>Sea Water</td><td><span class="hl-num">~1531</span></td><td><span class="hl-place">Liquid</span></td></tr>
+            <tr><td>Fresh Water</td><td><span class="hl-num">~1498</span></td><td><span class="hl-place">Liquid</span></td></tr>
+            <tr><td>Air (0°C)</td><td><span class="hl-num">~330</span></td><td><span class="hl-event">Gas</span></td></tr>
+            <tr><td>Air (20°C)</td><td><span class="hl-num">~343</span></td><td><span class="hl-event">Gas</span></td></tr>
+            <tr><td>Hydrogen (gas)</td><td><span class="hl-num">~1284</span></td><td><span class="hl-event">Gas</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-temperature-half text-amber-400 text-xs mr-2"></i>Factors Affecting Speed of Sound</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Temperature:</span> Speed increases with temperature. In air, speed increases by about <span class="hl-num">0.6 m/s per °C</span>. So sound travels faster on a hot day than a cold day. v ∝ √T (T = absolute temperature).</li>
+        <li><span class="hl-term">Pressure:</span> At a given temperature, speed of sound in a gas is <span class="hl-date">independent of pressure</span> (for ideal gases).</li>
+        <li><span class="hl-term">Humidity:</span> Speed <span class="hl-event">increases with humidity</span>. Moist air is less dense than dry air, so sound travels faster in humid air. This is why sound carries better during the rainy season.</li>
+        <li><span class="hl-term">Density of Medium:</span> For gases, speed is inversely proportional to √(density). Lighter gases (like hydrogen) transmit sound faster than heavier gases.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Exam Tip:</span> Speed of sound in air at <span class="hl-num">20°C</span> = <span class="hl-term">343 m/s</span> (or roughly <span class="hl-term">330 m/s at 0°C</span>). This is the standard value asked in almost every competitive exam. Remember it!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-bolt text-amber-400 text-xs mr-2"></i>Lightning &amp; Thunder</div>
+      <p class="text-sm text-gray-400 mb-3">You see lightning <span class="hl-event">before</span> you hear thunder because <span class="hl-term">light travels much faster (~3 × 10⁸ m/s)</span> than sound (~343 m/s). Count the seconds between flash and thunder: divide by 3 to get the distance in kilometres.</p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Loudness, Pitch & Quality -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-music text-amber-400 text-sm"></i> 5. Loudness, Pitch &amp; Quality</h2>
+      <p class="text-sm text-gray-400 mb-3">Three properties that let us <span class="hl-term">distinguish</span> one sound from another. Even if two sounds have the same pitch and loudness, we can tell them apart by <span class="hl-event">quality (timbre)</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-volume-high text-amber-400 text-xs mr-2"></i>Loudness</div>
+      <ul class="bullet-list text-sm">
+        <li>Depends on <span class="hl-term">amplitude</span> of vibration. Greater amplitude → louder sound.</li>
+        <li>Measured in <span class="hl-num">decibels (dB)</span>. The faintest sound humans can hear is 0 dB.</li>
+        <li><span class="hl-event">Loudness ≠</span> Intensity. Loudness is a <span class="hl-term">subjective</span> sensation; intensity is the physical energy carried by the wave.</li>
+        <li>Normal conversation: <span class="hl-num">~60 dB</span>. Whisper: <span class="hl-num">~20 dB</span>. Jet engine: <span class="hl-num">~140 dB</span> (painful!).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Loudness is like <span class="hl-term">turning up the volume on a speaker</span>. The music doesn't change — it just gets louder. Amplitude is what the volume knob controls.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-up-wide-short text-amber-400 text-xs mr-2"></i>Pitch</div>
+      <ul class="bullet-list text-sm">
+        <li>Depends on <span class="hl-term">frequency</span>. Higher frequency → higher pitch (shrill sound). Lower frequency → lower pitch (flat/deep sound).</li>
+        <li>Examples: A <span class="hl-event">mosquito's buzz</span> is high-pitched (high frequency). A <span class="hl-place">lion's roar</span> is low-pitched (low frequency).</li>
+        <li>A woman's voice is generally <span class="hl-term">higher pitched</span> than a man's because her vocal cords are shorter and vibrate faster.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-sliders text-amber-400 text-xs mr-2"></i>Quality (Timbre)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Timbre</span> (pronounced "tam-ber") is the quality that distinguishes two sounds of the same pitch and loudness.</li>
+        <li>Example: The same note played on a <span class="hl-event">flute</span> and a <span class="hl-event">violin</span> sound different because of different <span class="hl-term">overtones</span> (additional frequencies) produced.</li>
+        <li>Timbre depends on the <span class="hl-num">waveform shape</span> — different instruments produce different wave patterns even for the same frequency.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Loudness vs Pitch — Quick Comparison</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Depends On</th><th>Unit</th><th>High value means</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Loudness</span></td><td>Amplitude</td><td>decibel (dB)</td><td>Louder sound</td></tr>
+            <tr><td><span class="hl-term">Pitch</span></td><td>Frequency</td><td>Hertz (Hz)</td><td>Shrill sound</td></tr>
+            <tr><td><span class="hl-term">Quality</span></td><td>Waveform / Overtones</td><td>—</td><td>Unique sound signature</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Infrasound & Ultrasound -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-ear-listen text-amber-400 text-sm"></i> 6. Infrasound &amp; Ultrasound</h2>
+      <p class="text-sm text-gray-400 mb-3">The human ear can hear frequencies between <span class="hl-num">20 Hz and 20,000 Hz (20 kHz)</span>. Sounds outside this range are either too low (infrasound) or too high (ultrasound) for us to hear.</p>
+
+      <div class="subsection-heading"><i class="fas fa-wave-low text-amber-400 text-xs mr-2"></i>Frequency Spectrum</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Category</th><th>Frequency Range</th><th>Who can hear?</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-date">Infrasound</span></td><td>&lt; 20 Hz</td><td>Elephants, whales, rhinoceroses, pigeons (used for long-distance communication)</td></tr>
+            <tr><td><span class="hl-place">Audible sound</span></td><td>20 Hz – 20,000 Hz</td><td>Humans</td></tr>
+            <tr><td><span class="hl-event">Ultrasound</span></td><td>&gt; 20,000 Hz (20 kHz)</td><td>Dogs, bats, dolphins, cats, mice</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-syringe text-amber-400 text-xs mr-2"></i>Applications of Ultrasound</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Medical Imaging (Sonography):</span> Ultrasound waves are sent into the body; reflected echoes create images of internal organs. Safe (no radiation), used for pregnancy scans, detecting tumours, gallstones.</li>
+        <li><span class="hl-term">Breaking Kidney Stones:</span> High-intensity ultrasound waves (lithotripsy) focus on kidney stones and shatter them into tiny pieces that pass out naturally.</li>
+        <li><span class="hl-term">Cleaning:</span> Ultrasonic cleaners use high-frequency waves to remove dirt from delicate items like jewellery, watches, and surgical instruments. The waves create tiny bubbles that explode (cavitation) and scrub surfaces.</li>
+        <li><span class="hl-term">Welding &amp; Cutting:</span> Ultrasonic vibrations are used to weld plastics and metals without heat. Also used for cutting food products and medical devices.</li>
+        <li><span class="hl-term">SONAR:</span> Used for underwater navigation, depth measurement, and detecting submarines (covered in Section 8).</li>
+        <li><span class="hl-term">Echo-location in Animals:</span> Bats and dolphins use ultrasound to <span class="hl-term">echolocate</span>. They emit high-frequency clicks and listen to the echoes to "see" their surroundings.</li>
+        <li><span class="hl-term">Industrial Testing:</span> Ultrasound detects cracks and defects in metal structures (non-destructive testing or NDT).</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Interesting Fact:</span> <span class="hl-term">Bats</span> are not blind — they can see, but they rely mostly on <span class="hl-event">echolocation</span> using ultrasound (20 kHz to 200 kHz). A bat can detect an insect as thin as a human hair in total darkness! Dolphins use similar echolocation with frequencies up to 150 kHz.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Echo & Reverberation -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrows-spin text-amber-400 text-sm"></i> 7. Echo &amp; Reverberation</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Echo</div>
+      <p class="text-sm text-gray-400 mb-3">An <span class="hl-term">echo</span> is the repetition of sound caused by the <span class="hl-event">reflection of sound waves</span> from a hard surface (wall, mountain, building). You shout "Hello!" toward a hill → after a short delay, you hear "Hello!" again.</p>
+      <ul class="bullet-list text-sm">
+        <li>Our brain can distinguish two sounds if they reach the ear at least <span class="hl-num">0.1 seconds</span> apart (persistence of hearing).</li>
+        <li>Therefore, for an echo to be heard distinctly, the reflecting surface must be at least <span class="hl-num">17 metres</span> away (at room temperature).</li>
+        <li><span class="hl-term">Minimum distance formula:</span> d = (v × t) / 2 = (343 × 0.1) / 2 = <span class="hl-num">17.15 m</span>.</li>
+        <li>If the distance is less than 17 m, the reflected sound mixes with the original sound → <span class="hl-place">reverberation</span>.</li>
+      </ul>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic for Echo:</span> <span class="hl-event">"17 m for 0.1 s"</span> — The minimum distance for a clear echo is <span class="hl-num">17 metres</span> because sound takes <span class="hl-num">0.1 seconds</span> for the round trip. 17 metres → 1-7 → "Echo" starts with 'E' which is the 5th letter, but 17 is the age when you start shouting at walls! (Okay, just remember <span class="hl-event">17 m</span>!)
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Echo Calculation</div>
+      <p class="text-sm text-gray-400 mb-3">The total distance travelled by sound = 2 × distance to obstacle.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">Distance = (Speed × Time) / 2</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-event">Example:</span> A man shouts toward a cliff and hears the echo after 2 seconds. Speed of sound = 343 m/s. Distance to cliff = (343 × 2) / 2 = 343 m.</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Reverberation</div>
+      <ul class="bullet-list text-sm">
+        <li>When the reflecting surface is less than 17 m away, the reflected sound arrives within 0.1 s and <span class="hl-term">mixes with the original sound</span>, creating a prolonged or rolling effect called <span class="hl-event">reverberation</span>.</li>
+        <li>Example: In an empty room, your voice sounds "boomy" or echoing. The same room with carpets, curtains, and furniture sounds dead/dry — because soft materials <span class="hl-term">absorb</span> sound.</li>
+        <li><span class="hl-term">Reverberation time (RT60):</span> The time taken for sound to decay by 60 dB after the source stops. Optimal RT for a lecture hall is ~0.8–1.2 seconds. For a concert hall, ~1.5–2.5 seconds.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-building text-amber-400 text-xs mr-2"></i>Applications in Sound Halls &amp; Auditoriums</div>
+      <ul class="bullet-list text-sm">
+        <li>Sound halls are designed with <span class="hl-term">curved surfaces</span> to distribute sound evenly.</li>
+        <li><span class="hl-term">Sound boards</span> (like in a conch shell) are placed behind speakers to reflect sound forward without spreading.</li>
+        <li>Walls and ceilings may have <span class="hl-term">sound-absorbing materials</span> (acoustic foam, drapes, carpets) to prevent excessive reverberation.</li>
+        <li>Large auditoriums use <span class="hl-event">multiple speakers</span> placed at different locations to ensure everyone hears clearly.</li>
+        <li>Stethoscopes use the principle of <span class="hl-term">multiple reflections</span> of sound to amplify body sounds.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Did you know?</span> <span class="hl-term">Whales</span> use echo to communicate over hundreds of kilometres underwater. Sound travels faster and farther in water than in air. The <span class="hl-event">blue whale's</span> call can be heard by another whale 800 km away!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: SONAR -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-ship text-amber-400 text-sm"></i> 8. SONAR</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>What is SONAR?</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">SONAR</span> = <span class="hl-event">So</span>und <span class="hl-event">Na</span>vigation <span class="hl-event">R</span>anging. It is a technique that uses <span class="hl-term">ultrasound waves</span> to detect objects underwater. Think of it as <span class="hl-term">echolocation for ships</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-gears text-amber-400 text-xs mr-2"></i>Principle</div>
+      <p class="text-sm text-gray-400 mb-3">SONAR works on the principle of <span class="hl-term">echo</span> (sound reflection). A device called a <span class="hl-event">transducer</span> (or transceiver) is mounted on the ship's hull. It performs two functions:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Transmitter:</span> Sends a beam of ultrasound waves into the water.</li>
+        <li><span class="hl-term">Receiver:</span> Detects the reflected echo from objects (seabed, submarine, fish school, etc.).</li>
+        <li>The <span class="hl-num">time interval (t)</span> between sending and receiving is measured.</li>
+        <li>Distance = (v × t) / 2, where v = speed of sound in water (~1531 m/s).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-map text-amber-400 text-xs mr-2"></i>Applications of SONAR</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Depth Measurement:</span> Ships use SONAR to measure the depth of the ocean (echo sounding).</li>
+        <li><span class="hl-term">Detecting Submarines:</span> Military uses SONAR for detecting enemy submarines and underwater mines.</li>
+        <li><span class="hl-term">Fishing:</span> Fishermen use SONAR to locate schools of fish.</li>
+        <li><span class="hl-term">Seafloor Mapping:</span> SONAR helps create detailed maps of the ocean floor (bathymetry).</li>
+        <li><span class="hl-term">Underwater Communication:</span> SONAR is used for communication between submarines and ships.</li>
+        <li><span class="hl-term">Search &amp; Rescue:</span> Locating sunken ships, aircraft wreckage, and underwater debris.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Interesting:</span> <span class="hl-term">Dolphins</span> are nature's SONAR experts. They can tell the difference between a metal coin and a plastic button from 15 metres away using underwater echolocation! The <span class="hl-event">military</span> studies dolphin sonar to improve their technology.
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic for SONAR formula:</span> <span class="hl-event">"S = UT / 2"</span> — Sound distance = (Ultra Time) / 2. Or just remember: the sound goes <span class="hl-term">down and back</span>, so divide by 2.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Human Ear -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-ear text-amber-400 text-sm"></i> 9. Human Ear – Structure &amp; Hearing</h2>
+      <p class="text-sm text-gray-400 mb-3">The human ear is a <span class="hl-term">remarkable organ</span> that converts sound vibrations into electrical signals that the brain can understand. It works in three stages: <span class="hl-event">collection → amplification → transduction</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-diagram-project text-amber-400 text-xs mr-2"></i>Structure of the Ear</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Part</th><th>Division</th><th>Components</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="3"><span class="hl-term">Outer Ear</span></td><td>Pinna (auricle)</td><td>Fleshy outer part</td><td>Collects sound waves and funnels them into ear canal</td></tr>
+            <tr><td>Ear canal</td><td>~2.5 cm long tube</td><td>Channels sound to eardrum; has wax to trap dust</td></tr>
+            <tr><td>Eardrum</td><td>Tympanic membrane</td><td>Thin membrane that vibrates when sound hits it</td></tr>
+            <tr><td rowspan="3"><span class="hl-event">Middle Ear</span></td><td>Hammer (malleus)</td><td>First small bone</td><td>Transmits vibrations from eardrum to anvil</td></tr>
+            <tr><td>Anvil (incus)</td><td>Second small bone</td><td>Transmits vibrations to stirrup</td></tr>
+            <tr><td>Stirrup (stapes)</td><td>Third small bone (smallest bone in body)</td><td>Transmits vibrations to oval window of inner ear</td></tr>
+            <tr><td rowspan="3"><span class="hl-place">Inner Ear</span></td><td>Cochlea</td><td>Snail-shaped, fluid-filled</td><td>Converts mechanical vibrations into electrical signals</td></tr>
+            <tr><td>Auditory nerve</td><td>Bundle of nerves</td><td>Carries electrical signals to the brain</td></tr>
+            <tr><td>Semicircular canals</td><td>Three fluid-filled loops</td><td>Help maintain balance (not hearing)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>How We Hear — Step by Step</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-num">1.</span> <span class="hl-term">Pinna</span> collects sound waves from the environment.</li>
+        <li><span class="hl-num">2.</span> Sound travels through the <span class="hl-term">ear canal</span> and strikes the <span class="hl-term">eardrum</span>, making it vibrate.</li>
+        <li><span class="hl-num">3.</span> The three bones (hammer, anvil, stirrup) <span class="hl-term">amplify</span> the vibrations and pass them to the <span class="hl-term">oval window</span> of the cochlea.</li>
+        <li><span class="hl-num">4.</span> Fluid inside the <span class="hl-term">cochlea</span> ripples like a wave, bending tiny <span class="hl-term">hair cells</span> (cilia) inside.</li>
+        <li><span class="hl-num">5.</span> Hair cells convert mechanical motion into <span class="hl-term">electrical signals</span> (nerve impulses).</li>
+        <li><span class="hl-num">6.</span> The <span class="hl-term">auditory nerve</span> carries these signals to the brain, which interprets them as sound.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> The ear is like a <span class="hl-term">reverse speaker</span>. A speaker converts electrical signals into sound (vibrating cone). The ear does the opposite: it converts sound vibrations into electrical signals that the brain understands.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Range of Hearing</div>
+      <ul class="bullet-list text-sm">
+        <li>Humans: <span class="hl-num">20 Hz – 20,000 Hz (20 kHz)</span></li>
+        <li>Children can hear up to <span class="hl-num">~20 kHz</span>; as we age, the upper limit decreases (presbycusis) — older adults may only hear up to <span class="hl-num">12–15 kHz</span>.</li>
+        <li>Dogs: <span class="hl-num">~40 Hz – 60 kHz</span> (can hear dog whistles that humans cannot)</li>
+        <li>Cats: <span class="hl-num">~45 Hz – 85 kHz</span></li>
+        <li>Bats: <span class="hl-num">~2 kHz – 200 kHz</span></li>
+        <li>Dolphins: <span class="hl-num">~20 Hz – 150 kHz</span></li>
+        <li>Elephants: <span class="hl-num">~5 Hz – 12 kHz</span> (can hear infrasound)</li>
+      </ul>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic for Ear Bones (order):</span> <span class="hl-event">"HAM"</span> — <span class="hl-term">H</span>ammer → <span class="hl-term">A</span>nvil → <span class="hl-term">M</span> (Stirrup — think M for "Malleus, Incus, Stapes"). Or: <span class="hl-event">"HAS"</span> — H = Hammer, A = Anvil, S = Stirrup.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Noise Pollution -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-triangle-exclamation text-amber-400 text-sm"></i> 10. Noise Pollution</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Noise pollution</span> is unwanted or excessive sound that can harm human health and the environment. Any sound above <span class="hl-num">85 dB</span> is considered harmful if exposed for prolonged periods.</p>
+
+      <div class="subsection-heading"><i class="fas fa-bullhorn text-amber-400 text-xs mr-2"></i>Sources of Noise Pollution</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Transportation:</span> Vehicles (cars, trucks, buses, motorcycles), trains, aircraft, ships — especially near airports and highways.</li>
+        <li><span class="hl-term">Industrial:</span> Factory machinery, generators, construction equipment (drills, jackhammers, bulldozers).</li>
+        <li><span class="hl-term">Social/Religious:</span> Loudspeakers at weddings, temples, festivals, political rallies.</li>
+        <li><span class="hl-term">Domestic:</span> Television, music systems, kitchen appliances (mixer, blender), vacuum cleaners, air conditioners.</li>
+        <li><span class="hl-term">Agricultural:</span> Tractors, threshers, irrigation pumps.</li>
+        <li><span class="hl-term">Defence:</span> Explosions, gunfire, military aircraft (sonic booms).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-heart-pulse text-red-400 text-xs mr-2"></i>Health Effects of Noise Pollution</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Effect</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-event">Hearing Loss</span></td><td>Prolonged exposure to &gt;85 dB damages hair cells in the cochlea. This is irreversible — once hair cells die, they do not regenerate.</td></tr>
+            <tr><td><span class="hl-event">Hypertension</span></td><td>Constant noise raises blood pressure and heart rate due to stress response.</td></tr>
+            <tr><td><span class="hl-event">Sleep Disturbance</span></td><td>Noise interferes with sleep quality, leading to fatigue and irritability.</td></tr>
+            <tr><td><span class="hl-event">Tinnitus</span></td><td>Ringing/buzzing sound in the ears — a common result of noise-induced hearing damage.</td></tr>
+            <tr><td><span class="hl-event">Reduced Concentration</span></td><td>Noise impairs cognitive performance, especially in children (affects learning).</td></tr>
+            <tr><td><span class="hl-event">Cardiovascular Issues</span></td><td>Chronic noise exposure is linked to increased risk of heart attacks and strokes.</td></tr>
+            <tr><td><span class="hl-event">Mental Health</span></td><td>Anxiety, depression, and irritability are common in high-noise areas.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-shield text-amber-400 text-xs mr-2"></i>Measures to Control Noise Pollution</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">At Source:</span> Silencers on vehicles and machinery, regular maintenance, use of electric engines instead of diesel, soundproof enclosures for factories.</li>
+        <li><span class="hl-term">Along the Path:</span> Planting trees (green belts), sound barriers along highways (walls, berms), distance zoning (factories away from residential areas).</li>
+        <li><span class="hl-term">At the Receiver:</span> Earplugs, earmuffs, noise-cancelling headphones. Workers in noisy industries must wear hearing protection.</li>
+        <li><span class="hl-term">Legal Measures:</span> Noise Pollution (Regulation &amp; Control) Rules, 2000 in India. Limits set for different zones (see table below).</li>
+        <li><span class="hl-term">Social Measures:</span> Restricting use of loudspeakers (10 PM – 6 AM), firecracker regulations, public awareness campaigns.</li>
+        <li><span class="hl-term">Design Solutions:</span> Sound-absorbing building materials (acoustic tiles, carpets, double-glazed windows).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-scale-balanced text-amber-400 text-xs mr-2"></i>Permissible Noise Limits in India (CPCB Standards)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Zone</th><th>Day (6 AM – 10 PM)</th><th>Night (10 PM – 6 AM)</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-date">Silence Zone</span> (near schools, hospitals, courts)</td><td><span class="hl-num">50 dB</span></td><td><span class="hl-num">40 dB</span></td></tr>
+            <tr><td><span class="hl-place">Residential Area</span></td><td><span class="hl-num">55 dB</span></td><td><span class="hl-num">45 dB</span></td></tr>
+            <tr><td><span class="hl-policy">Commercial Area</span></td><td><span class="hl-num">65 dB</span></td><td><span class="hl-num">55 dB</span></td></tr>
+            <tr><td><span class="hl-event">Industrial Area</span></td><td><span class="hl-num">75 dB</span></td><td><span class="hl-num">70 dB</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Exam Tip:</span> In competitive exams, remember the <span class="hl-term">four noise zones</span> and their limits: <span class="hl-event">Silence (50/40) → Residential (55/45) → Commercial (65/55) → Industrial (75/70)</span>. The night limit is always <span class="hl-num">10 dB less</span> than the day limit.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 11. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Sound vs Light Waves</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Sound Waves</th><th>Light Waves</th></tr></thead>
+          <tbody>
+            <tr><td>Nature</td><td><span class="hl-term">Longitudinal</span> (mechanical)</td><td><span class="hl-term">Transverse</span> (electromagnetic)</td></tr>
+            <tr><td>Medium needed</td><td><span class="hl-event">Yes</span> — needs solid/liquid/gas</td><td><span class="hl-event">No</span> — can travel through vacuum</td></tr>
+            <tr><td>Speed in vacuum</td><td><span class="hl-num">0 m/s</span> (cannot travel)</td><td><span class="hl-num">3 × 10⁸ m/s</span></td></tr>
+            <tr><td>Speed in air</td><td><span class="hl-num">~343 m/s</span></td><td><span class="hl-num">~3 × 10⁸ m/s</span></td></tr>
+            <tr><td>Fastest in</td><td><span class="hl-ruler">Solids</span></td><td><span class="hl-ruler">Vacuum</span></td></tr>
+            <tr><td>Examples</td><td>Speech, music, thunder</td><td>Visible light, radio, X-rays</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Loudness vs Pitch vs Quality</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Loudness</th><th>Pitch</th><th>Quality (Timbre)</th></tr></thead>
+          <tbody>
+            <tr><td>Depends on</td><td><span class="hl-event">Amplitude</span></td><td><span class="hl-event">Frequency</span></td><td><span class="hl-event">Waveform shape</span></td></tr>
+            <tr><td>Unit</td><td>decibel (dB)</td><td>Hertz (Hz)</td><td>No specific unit</td></tr>
+            <tr><td>High value means</td><td>Louder sound</td><td>Shrill sound</td><td>Richer texture</td></tr>
+            <tr><td>Low value means</td><td>Soft sound</td><td>Deep/flat sound</td><td>Simple/plain sound</td></tr>
+            <tr><td>Analogy</td><td>Volume knob</td><td>Speed of wheel clicks</td><td>Same song, different singer</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Compression vs Rarefaction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Compression (C)</th><th>Rarefaction (R)</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Region where particles are close together</td><td>Region where particles are spread apart</td></tr>
+            <tr><td>Pressure</td><td><span class="hl-event">High pressure</span></td><td><span class="hl-date">Low pressure</span></td></tr>
+            <tr><td>Density</td><td><span class="hl-event">High density</span></td><td><span class="hl-date">Low density</span></td></tr>
+            <tr><td>Graph representation</td><td><span class="hl-event">Crest (top)</span></td><td><span class="hl-date">Trough (bottom)</span></td></tr>
+            <tr><td>Analogy</td><td>Pushing slinky coils together</td><td>Pulling slinky coils apart</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Infrasound vs Ultrasound</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Infrasound</th><th>Ultrasound</th></tr></thead>
+          <tbody>
+            <tr><td>Frequency</td><td><span class="hl-num">&lt; 20 Hz</span></td><td><span class="hl-num">&gt; 20,000 Hz</span></td></tr>
+            <tr><td>Human hearing</td><td><span class="hl-event">Cannot hear</span> (too low)</td><td><span class="hl-event">Cannot hear</span> (too high)</td></tr>
+            <tr><td>Produced by</td><td>Earthquakes, volcanoes, elephants, whales</td><td>Bats, dolphins, SONAR, medical devices</td></tr>
+            <tr><td>Applications</td><td>Earthquake early warning, monitoring volcanoes</td><td>Medical imaging, cleaning, SONAR, NDT</td></tr>
+            <tr><td>Wavelength</td><td>Very long (&gt; 17 m)</td><td>Very short (&lt; 1.7 cm in air)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Mnemonics & Memory Tricks -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 12. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Ear Bones (Order)</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Hammer → Anvil → Stirrup:</span> <span class="hl-event">"HAS"</span> — H = Hammer, A = Anvil, S = Stirrup. Or think: <span class="hl-event">"HAtS"</span> — sounds like "hats". Or use the scientific names: <span class="hl-event">MIS</span> (Malleus, Incus, Stapes) = "MIS" leads to "miss".
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Speed Order in Media</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Solid &gt; Liquid &gt; Gas:</span> <span class="hl-event">"SLG"</span> — <span class="hl-ruler">S</span>olid (fastest), <span class="hl-place">L</span>iquid (medium), <span class="hl-event">G</span>as (slowest). Trick: <span class="hl-event">"Saints Love God"</span> — Saints (Solid) Love (Liquid) God (Gas) — Saints always reach first (fastest)!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Echo Minimum Distance</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">17 metres for a clear echo:</span> <span class="hl-event">"17 = 0.1 × 343 / 2"</span> — Sound travels 34.3 m in 0.1 sec, half is 17.15 m. Trick: <span class="hl-event">"Age 17 = Echo Age"</span> — teenagers shout and hear echoes!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Human Hearing Range</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">20 Hz – 20,000 Hz (20 kHz):</span> <span class="hl-event">"20/20 vision for hearing"</span> — just like 20/20 vision is perfect, <span class="hl-num">20 Hz to 20 kHz</span> is the perfect hearing range. Easy to remember: <span class="hl-event">two 20's</span> — 20 and 20,000!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Wave Formula v = fλ</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">v = fλ (velocity = frequency × wavelength):</span> <span class="hl-event">"Very Fast Lambdas"</span> — V = Velocity, F = Frequency, λ = Lambda (wavelength). Or: <span class="hl-event">"Violet Flowers Look"</span> — V for velocity, F for frequency, L for lambda.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 13: Practice Questions – 40 MCQs -->
+    <!-- ============================================================ -->
+    <section id="sec13" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 13. Practice Questions – 40 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. Sound is produced by:</div>
+        <div class="mcq-opt">A) Friction</div>
+        <div class="mcq-opt">B) Vibration</div>
+        <div class="mcq-opt">C) Heat</div>
+        <div class="mcq-opt">D) Light</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Vibration</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. Which of the following media does sound travel fastest in?</div>
+        <div class="mcq-opt">A) Air</div>
+        <div class="mcq-opt">B) Water</div>
+        <div class="mcq-opt">C) Steel</div>
+        <div class="mcq-opt">D) Vacuum</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Steel (solids transmit sound fastest)</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. Sound waves in air are:</div>
+        <div class="mcq-opt">A) Transverse waves</div>
+        <div class="mcq-opt">B) Longitudinal waves</div>
+        <div class="mcq-opt">C) Electromagnetic waves</div>
+        <div class="mcq-opt">D) Radio waves</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Longitudinal waves</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. The region of high pressure in a sound wave is called:</div>
+        <div class="mcq-opt">A) Rarefaction</div>
+        <div class="mcq-opt">B) Amplitude</div>
+        <div class="mcq-opt">C) Compression</div>
+        <div class="mcq-opt">D) Wavelength</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Compression</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. The SI unit of frequency is:</div>
+        <div class="mcq-opt">A) Decibel</div>
+        <div class="mcq-opt">B) Metre</div>
+        <div class="mcq-opt">C) Hertz</div>
+        <div class="mcq-opt">D) Second</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Hertz (Hz)</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. The speed of sound in air at 20°C is approximately:</div>
+        <div class="mcq-opt">A) 330 m/s</div>
+        <div class="mcq-opt">B) 343 m/s</div>
+        <div class="mcq-opt">C) 500 m/s</div>
+        <div class="mcq-opt">D) 1500 m/s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 343 m/s</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. Loudness of a sound depends on:</div>
+        <div class="mcq-opt">A) Frequency</div>
+        <div class="mcq-opt">B) Amplitude</div>
+        <div class="mcq-opt">C) Wavelength</div>
+        <div class="mcq-opt">D) Velocity</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Amplitude</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. Pitch of a sound depends on:</div>
+        <div class="mcq-opt">A) Amplitude</div>
+        <div class="mcq-opt">B) Frequency</div>
+        <div class="mcq-opt">C) Velocity</div>
+        <div class="mcq-opt">D) Timbre</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Frequency</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. Loudness is measured in:</div>
+        <div class="mcq-opt">A) Hertz</div>
+        <div class="mcq-opt">B) Decibel</div>
+        <div class="mcq-opt">C) Metre</div>
+        <div class="mcq-opt">D) Watt</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Decibel (dB)</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. The human ear can hear frequencies in the range:</div>
+        <div class="mcq-opt">A) 5 Hz – 2000 Hz</div>
+        <div class="mcq-opt">B) 20 Hz – 20,000 Hz</div>
+        <div class="mcq-opt">C) 20 Hz – 2000 Hz</div>
+        <div class="mcq-opt">D) 200 Hz – 20,000 Hz</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 20 Hz – 20,000 Hz (20 kHz)</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. Sound cannot travel through:</div>
+        <div class="mcq-opt">A) Solid</div>
+        <div class="mcq-opt">B) Liquid</div>
+        <div class="mcq-opt">C) Gas</div>
+        <div class="mcq-opt">D) Vacuum</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Vacuum</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. Frequencies above 20,000 Hz are called:</div>
+        <div class="mcq-opt">A) Infrasound</div>
+        <div class="mcq-opt">B) Ultrasound</div>
+        <div class="mcq-opt">C) Supersonic</div>
+        <div class="mcq-opt">D) Subsonic</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Ultrasound</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. Bats use which type of sound for navigation?</div>
+        <div class="mcq-opt">A) Infrasound</div>
+        <div class="mcq-opt">B) Ultrasound</div>
+        <div class="mcq-opt">C) Audible sound</div>
+        <div class="mcq-opt">D) Radio waves</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Ultrasound (echolocation)</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. The minimum distance needed for a clear echo is:</div>
+        <div class="mcq-opt">A) 10 m</div>
+        <div class="mcq-opt">B) 17 m</div>
+        <div class="mcq-opt">C) 34 m</div>
+        <div class="mcq-opt">D) 50 m</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 17 m (at room temperature)</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. The persistence of hearing in the human ear is about:</div>
+        <div class="mcq-opt">A) 0.01 s</div>
+        <div class="mcq-opt">B) 0.1 s</div>
+        <div class="mcq-opt">C) 1 s</div>
+        <div class="mcq-opt">D) 0.5 s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 0.1 s</div>
+      </div>
+
+      <!-- MCQ 16 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">16. SONAR stands for:</div>
+        <div class="mcq-opt">A) Sound Navigation and Ranging</div>
+        <div class="mcq-opt">B) Sonic Navigation and Radar</div>
+        <div class="mcq-opt">C) Sound Neutralization and Ranging</div>
+        <div class="mcq-opt">D) Sonic Navigation and Ranging</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Sound Navigation and Ranging</div>
+      </div>
+
+      <!-- MCQ 17 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">17. The three small bones of the middle ear are:</div>
+        <div class="mcq-opt">A) Pinna, cochlea, nerve</div>
+        <div class="mcq-opt">B) Hammer, anvil, stirrup</div>
+        <div class="mcq-opt">C) Eardrum, hammer, nerve</div>
+        <div class="mcq-opt">D) Cochlea, canals, nerve</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Hammer, anvil, stirrup</div>
+      </div>
+
+      <!-- MCQ 18 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">18. The part of the ear that converts vibrations into electrical signals is:</div>
+        <div class="mcq-opt">A) Eardrum</div>
+        <div class="mcq-opt">B) Cochlea</div>
+        <div class="mcq-opt">C) Pinna</div>
+        <div class="mcq-opt">D) Stirrup</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Cochlea (contains hair cells that convert vibrations to nerve impulses)</div>
+      </div>
+
+      <!-- MCQ 19 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">19. Which of the following factors increases the speed of sound in air?</div>
+        <div class="mcq-opt">A) Decrease in temperature</div>
+        <div class="mcq-opt">B) Increase in temperature</div>
+        <div class="mcq-opt">C) Decrease in humidity</div>
+        <div class="mcq-opt">D) Increase in pressure</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Increase in temperature (speed ∝ √T)</div>
+      </div>
+
+      <!-- MCQ 20 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">20. The velocity of sound is maximum in:</div>
+        <div class="mcq-opt">A) Aluminium</div>
+        <div class="mcq-opt">B) Water</div>
+        <div class="mcq-opt">C) Air</div>
+        <div class="mcq-opt">D) Vacuum</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Aluminium (solid, sound travels fastest in solids)</div>
+      </div>
+
+      <!-- MCQ 21 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">21. The relationship between frequency (f) and time period (T) is:</div>
+        <div class="mcq-opt">A) f = T</div>
+        <div class="mcq-opt">B) f = 1/T</div>
+        <div class="mcq-opt">C) f = T²</div>
+        <div class="mcq-opt">D) f = √T</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) f = 1/T</div>
+      </div>
+
+      <!-- MCQ 22 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">22. A sound wave of wavelength 1.7 m has a frequency of 200 Hz. Its speed is:</div>
+        <div class="mcq-opt">A) 340 m/s</div>
+        <div class="mcq-opt">B) 170 m/s</div>
+        <div class="mcq-opt">C) 3.4 m/s</div>
+        <div class="mcq-opt">D) 2000 m/s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 340 m/s (v = fλ = 200 × 1.7 = 340 m/s)</div>
+      </div>
+
+      <!-- MCQ 23 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">23. Which of the following animals can hear infrasound?</div>
+        <div class="mcq-opt">A) Bat</div>
+        <div class="mcq-opt">B) Dolphin</div>
+        <div class="mcq-opt">C) Elephant</div>
+        <div class="mcq-opt">D) Cat</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Elephant (can hear frequencies below 20 Hz)</div>
+      </div>
+
+      <!-- MCQ 24 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">24. Excessive reverberation in an auditorium can be reduced by using:</div>
+        <div class="mcq-opt">A) Stone walls</div>
+        <div class="mcq-opt">B) Sound-absorbing materials</div>
+        <div class="mcq-opt">C) Metal sheets</div>
+        <div class="mcq-opt">D) Glass windows</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Sound-absorbing materials (acoustic foam, carpets, curtains)</div>
+      </div>
+
+      <!-- MCQ 25 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">25. Ultrasound is used in medical imaging because:</div>
+        <div class="mcq-opt">A) It is harmful</div>
+        <div class="mcq-opt">B) It has high frequency and can form images of soft tissues</div>
+        <div class="mcq-opt">C) It can pass through bones easily</div>
+        <div class="mcq-opt">D) It travels fast in air</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) It has high frequency and can form images of soft tissues safely</div>
+      </div>
+
+      <!-- MCQ 26 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">26. The permissible noise level in a residential area during the day is:</div>
+        <div class="mcq-opt">A) 45 dB</div>
+        <div class="mcq-opt">B) 55 dB</div>
+        <div class="mcq-opt">C) 65 dB</div>
+        <div class="mcq-opt">D) 75 dB</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 55 dB (Residential: Day 55 dB, Night 45 dB)</div>
+      </div>
+
+      <!-- MCQ 27 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">27. Which of the following is a percussion instrument?</div>
+        <div class="mcq-opt">A) Flute</div>
+        <div class="mcq-opt">B) Guitar</div>
+        <div class="mcq-opt">C) Tabla</div>
+        <div class="mcq-opt">D) Trumpet</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Tabla (percussion = struck instrument)</div>
+      </div>
+
+      <!-- MCQ 28 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">28. A sound wave has a time period of 0.01 s. Its frequency is:</div>
+        <div class="mcq-opt">A) 10 Hz</div>
+        <div class="mcq-opt">B) 100 Hz</div>
+        <div class="mcq-opt">C) 1000 Hz</div>
+        <div class="mcq-opt">D) 0.1 Hz</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 100 Hz (f = 1/T = 1/0.01 = 100 Hz)</div>
+      </div>
+
+      <!-- MCQ 29 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">29. Light travels faster than sound. This is why:</div>
+        <div class="mcq-opt">A) Thunder is heard before lightning is seen</div>
+        <div class="mcq-opt">B) Lightning is seen before thunder is heard</div>
+        <div class="mcq-opt">C) Both appear at the same time</div>
+        <div class="mcq-opt">D) Sound travels faster on a rainy day</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Lightning is seen before thunder is heard</div>
+      </div>
+
+      <!-- MCQ 30 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">30. The quality (timbre) of a sound depends on:</div>
+        <div class="mcq-opt">A) Amplitude</div>
+        <div class="mcq-opt">B) Frequency</div>
+        <div class="mcq-opt">C) Waveform shape</div>
+        <div class="mcq-opt">D) Velocity</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Waveform shape (overtones)</div>
+      </div>
+
+      <!-- MCQ 31 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">31. The wavelength of a 500 Hz sound wave in air (v = 340 m/s) is:</div>
+        <div class="mcq-opt">A) 0.68 m</div>
+        <div class="mcq-opt">B) 1.0 m</div>
+        <div class="mcq-opt">C) 1.36 m</div>
+        <div class="mcq-opt">D) 0.5 m</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 0.68 m (λ = v/f = 340/500 = 0.68 m)</div>
+      </div>
+
+      <!-- MCQ 32 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">32. A ship sends a SONAR pulse and receives the echo after 2 seconds. Speed of sound in water = 1500 m/s. The depth of the sea is:</div>
+        <div class="mcq-opt">A) 750 m</div>
+        <div class="mcq-opt">B) 1500 m</div>
+        <div class="mcq-opt">C) 3000 m</div>
+        <div class="mcq-opt">D) 6000 m</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 1500 m (d = vt/2 = 1500 × 2/2 = 1500 m)</div>
+      </div>
+
+      <!-- MCQ 33 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">33. The audible range of sound for humans is:</div>
+        <div class="mcq-opt">A) 20 Hz – 20 kHz</div>
+        <div class="mcq-opt">B) 20 Hz – 200 kHz</div>
+        <div class="mcq-opt">C) 2 Hz – 20 kHz</div>
+        <div class="mcq-opt">D) 200 Hz – 20 kHz</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 20 Hz – 20 kHz</div>
+      </div>
+
+      <!-- MCQ 34 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">34. Frequencies below 20 Hz are called:</div>
+        <div class="mcq-opt">A) Ultrasound</div>
+        <div class="mcq-opt">B) Infrasound</div>
+        <div class="mcq-opt">C) Supersonic</div>
+        <div class="mcq-opt">D) Hypersonic</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Infrasound</div>
+      </div>
+
+      <!-- MCQ 35 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">35. Sound travels in the form of:</div>
+        <div class="mcq-opt">A) Rays</div>
+        <div class="mcq-opt">B) Waves</div>
+        <div class="mcq-opt">C) Particles</div>
+        <div class="mcq-opt">D) Beams</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Waves (longitudinal mechanical waves)</div>
+      </div>
+
+      <!-- MCQ 36 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">36. Which of the following instruments works on the principle of multiple reflections of sound?</div>
+        <div class="mcq-opt">A) Telescope</div>
+        <div class="mcq-opt">B) Microscope</div>
+        <div class="mcq-opt">C) Stethoscope</div>
+        <div class="mcq-opt">D) Periscope</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Stethoscope</div>
+      </div>
+
+      <!-- MCQ 37 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">37. The decibel level of a normal conversation is about:</div>
+        <div class="mcq-opt">A) 20 dB</div>
+        <div class="mcq-opt">B) 40 dB</div>
+        <div class="mcq-opt">C) 60 dB</div>
+        <div class="mcq-opt">D) 80 dB</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 60 dB</div>
+      </div>
+
+      <!-- MCQ 38 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">38. Which part of the ear helps in maintaining balance?</div>
+        <div class="mcq-opt">A) Cochlea</div>
+        <div class="mcq-opt">B) Semicircular canals</div>
+        <div class="mcq-opt">C) Ear drum</div>
+        <div class="mcq-opt">D) Hammer</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Semicircular canals (three fluid-filled loops)</div>
+      </div>
+
+      <!-- MCQ 39 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">39. Sound travels faster on a humid day because:</div>
+        <div class="mcq-opt">A) Air density decreases</div>
+        <div class="mcq-opt">B) Air density increases</div>
+        <div class="mcq-opt">C) Temperature decreases</div>
+        <div class="mcq-opt">D) Pressure increases</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Air density decreases (moist air is less dense, so sound travels faster)</div>
+      </div>
+
+      <!-- MCQ 40 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">40. The technique used to break kidney stones using sound waves is called:</div>
+        <div class="mcq-opt">A) SONAR</div>
+        <div class="mcq-opt">B) Lithotripsy</div>
+        <div class="mcq-opt">C) Echocardiography</div>
+        <div class="mcq-opt">D) Angiography</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Lithotripsy (uses high-intensity ultrasound to shatter kidney stones)</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-volume-high text-amber-400/50 mr-2"></i>
+      Sound · NCERT Physics Notes · Class 8–10
+      <br>Compiled for revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

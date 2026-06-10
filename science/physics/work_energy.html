@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work & Energy | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+    
+    /* HIGHLIGHTERS - EXAM FOCUSED */
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+    
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+    
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+    
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-bolt text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Work &amp; Energy</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Physics · Class 9 to 10 · Comprehensive Notes for BPSC/UPSC</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-bolt text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Work</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Energy</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. KE</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. PE</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Conservation</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Power</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. kWh</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Machines</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Comparisons</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Mnemonics</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Work -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-dumbbell text-amber-400 text-sm"></i> 1. Work – The Scientific Definition</h2>
+      <p class="text-sm text-gray-400 mb-3">In everyday life, "work" means anything that requires effort. But in <span class="hl-term">physics</span>, work has a very specific meaning — and it's different from what you think!</p>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-2">Work is said to be done when a <span class="hl-term">force</span> applied on an object causes it to <span class="hl-event">move/displace</span> in the direction of the force.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">W = F × s × cosθ</div>
+      <p class="text-sm text-gray-400 mb-2">Where:
+        <br><span class="hl-term">W</span> = Work done (Joule)
+        <br><span class="hl-event">F</span> = Force applied (Newton)
+        <br><span class="hl-place">s</span> = Displacement (metre)
+        <br><span class="hl-date">θ</span> = Angle between force and displacement
+      </p>
+
+      <div class="subsection-heading"><i class="fas fa-check-circle text-green-400 text-xs mr-2"></i>When is Work Done?</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Force + Displacement in same direction:</span> Positive work. Example — pushing a box forward, pulling a drawer open. W = F × s (since cos 0° = 1)</li>
+        <li><span class="hl-event">Force opposite to displacement:</span> Negative work. Example — brakes stopping a car (force backwards, car moves forward). W = −F × s (since cos 180° = −1)</li>
+        <li><span class="hl-place">Force perpendicular to displacement:</span> Zero work. Example — carrying a bag while walking horizontally (force is upward, displacement is horizontal). cos 90° = 0 → W = 0</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-times-circle text-red-400 text-xs mr-2"></i>When is Work NOT Done? — Real Life vs Physics</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Holding a heavy bag while standing still:</span> Zero work in physics! You apply force upward, but there is <span class="hl-event">zero displacement</span>. No work done — even if you're sweating!</li>
+        <li><span class="hl-term">Walking with a suitcase:</span> Force is upward (holding it), displacement is horizontal (walking). Since force ⟂ displacement, <span class="hl-date">work done = 0</span>.</li>
+        <li><span class="hl-term">Pushing a wall:</span> The wall doesn't move (s = 0). Work = 0. You get tired because your muscles contract internally, but <span class="hl-event">physically, no work is done on the wall</span>.</li>
+        <li><span class="hl-term">A satellite orbiting Earth:</span> The gravitational force is towards Earth's centre, but displacement is tangential. <span class="hl-place">Work done by gravity = 0</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Special Cases of Work</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Angle θ</th><th>cos θ</th><th>Work Done</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>0°</td><td>1</td><td><span class="hl-date">Maximum positive</span></td><td>Pulling a cart forward</td></tr>
+            <tr><td>90°</td><td>0</td><td><span class="hl-term">Zero</span></td><td>Walking with a load on head</td></tr>
+            <tr><td>180°</td><td>−1</td><td><span class="hl-event">Maximum negative</span></td><td>Braking a moving vehicle</td></tr>
+            <tr><td>0° < θ < 90°</td><td>Positive</td><td>Positive</td><td>Pulling a suitcase at an angle</td></tr>
+            <tr><td>90° < θ < 180°</td><td>Negative</td><td>Negative</td><td>Lifting while lowering (gravity)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Units of Work</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">SI Unit:</span> Joule (J) — 1 J = 1 N × 1 m. One Joule is work done when a force of 1 N displaces an object by 1 m in its direction.</li>
+        <li><span class="hl-term">CGS Unit:</span> Erg — 1 erg = 1 dyne × 1 cm. 1 J = 10⁷ ergs.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Fun Analogy:</span> Work in physics is like paying for a taxi ride — you only pay for the distance you actually travel (displacement), not for how hard you sit in the seat! Holding a bag is like sitting in a parked taxi — zero fare, zero work!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Energy -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-battery-full text-amber-400 text-sm"></i> 2. Energy – The Ability to Do Work</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Energy</span> is defined as the <span class="hl-event">capacity to do work</span>. The more energy you have, the more work you can do. Energy is a scalar quantity.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">SI Unit:</span> Joule (J) — same as work. Energy and work share the same unit because energy is the ability to do work.</li>
+        <li><span class="hl-term">Larger Units:</span> Kilojoule (kJ) = 10³ J, Megajoule (MJ) = 10⁶ J</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>Different Forms of Energy</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Form of Energy</th><th>What is it?</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Kinetic Energy</span></td><td>Energy of motion</td><td>Moving car, flowing river, wind, thrown ball</td></tr>
+            <tr><td><span class="hl-event">Potential Energy</span></td><td>Stored energy due to position/shape</td><td>Water behind dam, stretched rubber band, book on shelf</td></tr>
+            <tr><td><span class="hl-policy">Thermal (Heat) Energy</span></td><td>Energy due to temperature / molecular motion</td><td>Hot tea, sun, burning fuel, friction</td></tr>
+            <tr><td><span class="hl-date">Chemical Energy</span></td><td>Energy stored in chemical bonds</td><td>Food, batteries, petrol, coal, wood</td></tr>
+            <tr><td><span class="hl-place">Electrical Energy</span></td><td>Energy of moving electrons</td><td>Lightning, household current, batteries</td></tr>
+            <tr><td><span class="hl-ruler">Nuclear Energy</span></td><td>Energy from splitting (fission) or joining (fusion) atoms</td><td>Atomic bomb, nuclear power plants, sun (fusion)</td></tr>
+            <tr><td><span class="hl-num">Light (Radiant) Energy</span></td><td>Energy carried by electromagnetic waves</td><td>Sunlight, laser, light bulb, X-rays</td></tr>
+            <tr><td><span class="hl-event">Sound Energy</span></td><td>Energy carried by sound waves (vibrations)</td><td>Music, speech, clapping, thunder</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> Energy can't be seen — but we know it exists by its <span class="hl-term">effects</span>! You can't see heat, but you feel it. You can't see wind energy, but you see leaves flying. Energy is like a ghost — invisible but you see its work!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Kinetic Energy -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-car text-amber-400 text-sm"></i> 3. Kinetic Energy – Energy of Motion</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Kinetic Energy (KE)</span> is the energy possessed by an object due to its <span class="hl-event">motion</span>. The word "kinetic" comes from Greek <em>kinesis</em> meaning motion.</p>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Formula</div>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">KE = ½ × m × v²</div>
+      <p class="text-sm text-gray-400 mb-2">Where:
+        <br><span class="hl-term">m</span> = mass of the object (kg)
+        <br><span class="hl-event">v</span> = velocity of the object (m/s)
+      </p>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-trend-up text-amber-400 text-xs mr-2"></i>Factors Affecting Kinetic Energy</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Mass (m):</span> KE ∝ m — double the mass, double the KE. A truck moving at 20 km/h has more KE than a bicycle at the same speed.</li>
+        <li><span class="hl-event">Velocity Squared (v²):</span> KE ∝ v² — this is the <span class="hl-num">most important factor!</span> If you double the speed, KE becomes <span class="hl-num">4 times</span>. Triple the speed → 9 times the KE!</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-road text-amber-400 text-xs mr-2"></i>Derivation of KE = ½mv²</div>
+      <p class="text-sm text-gray-400 mb-2">Consider an object of mass <span class="hl-term">m</span> initially at rest. A force <span class="hl-event">F</span> acts on it, causing displacement <span class="hl-place">s</span>, and it reaches velocity <span class="hl-date">v</span>.</p>
+      <div class="text-sm text-gray-400 mb-2 font-mono bg-gray-900/40 p-2 rounded space-y-1">
+        <div>Work done = F × s</div>
+        <div>Using Newton's 2nd law: F = m × a</div>
+        <div>Using v² = u² + 2as → (u=0) → v² = 2as → s = v² / 2a</div>
+        <div>So, Work = (m × a) × (v² / 2a) = ½ × m × v²</div>
+        <div class="text-cyan-300 font-bold">∴ KE = ½mv²</div>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-shield-halved text-amber-400 text-xs mr-2"></i>Real-Life Examples</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Cricket ball:</span> A fast bowler's ball has high KE — that's why it hits the bat hard. A slower ball has less KE — easier to play.</li>
+        <li><span class="hl-event">Car crash at high speed:</span> A car at 100 km/h has <span class="hl-num">4 times</span> the KE of the same car at 50 km/h. This is why speeding is so dangerous — damage at high speed is not double, it's <span class="hl-num">quadruple!</span></li>
+        <li><span class="hl-place">Bullet vs thrown stone:</span> A tiny bullet has enormous KE because of its extremely high velocity (v² factor dominates).</li>
+        <li><span class="hl-date">Wind energy:</span> Moving wind has KE — used by windmills to generate electricity.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Kinetic energy is like a moving cricket ball — the faster it goes, the harder it hits. And if you double the speed, the energy <span class="hl-num">QUADRUPLES</span> — that's why cars at high speed cause so much damage. A ball at 40 km/h has 4× the KE of the same ball at 20 km/h!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Potential Energy -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-box text-amber-400 text-sm"></i> 4. Potential Energy – Stored Energy</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Potential Energy (PE)</span> is the energy stored in an object due to its <span class="hl-event">position, shape, or configuration</span>. It is the "waiting" energy that can be converted to kinetic energy.</p>
+
+      <div class="subsection-heading"><i class="fas fa-mountain text-amber-400 text-xs mr-2"></i>Gravitational Potential Energy</div>
+      <p class="text-sm text-gray-400 mb-2">The energy stored in an object due to its <span class="hl-term">height above the ground</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">PE = m × g × h</div>
+      <p class="text-sm text-gray-400 mb-2">Where:
+        <br><span class="hl-term">m</span> = mass (kg)
+        <br><span class="hl-event">g</span> = acceleration due to gravity (9.8 m/s²)
+        <br><span class="hl-place">h</span> = height above reference point (m)
+      </p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Higher the height, more the PE:</span> A book on a high shelf has more PE than the same book on a low shelf. If it falls, it will hit harder.</li>
+        <li><span class="hl-event">Heavier object, more PE:</span> A 10 kg box at height 2 m has more PE than a 1 kg box at the same height.</li>
+        <li><span class="hl-place">Reference point matters:</span> PE is always measured relative to something. A bird on a tree has PE relative to ground, but zero PE relative to its own branch.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-link text-amber-400 text-xs mr-2"></i>Elastic Potential Energy</div>
+      <p class="text-sm text-gray-400 mb-2">Energy stored in objects when they are <span class="hl-term">stretched, compressed, or twisted</span>.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Spring:</span> When you compress a spring, you store elastic PE. Release it → PE converts to KE → the spring flies back.</li>
+        <li><span class="hl-event">Rubber band:</span> Stretch it — you've stored elastic PE. Let go — it zooms across the room (PE → KE).</li>
+        <li><span class="hl-place">Bow and arrow:</span> Pull the string back = store elastic PE in the bow. Release → PE → KE of the arrow.</li>
+        <li><span class="hl-date">Trampoline:</span> When you jump on it, the stretched material stores elastic PE, then bounces you up.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Comparison: Gravitational PE vs Elastic PE</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Gravitational PE</th><th>Elastic PE</th></tr></thead>
+          <tbody>
+            <tr><td>Cause</td><td>Height above ground</td><td>Deformation (stretch/compress)</td></tr>
+            <tr><td>Formula</td><td>PE = mgh</td><td>PE = ½kx² (spring)</td></tr>
+            <tr><td>Dependence</td><td>Mass, gravity, height</td><td>Spring constant (k), displacement (x)</td></tr>
+            <tr><td>Example</td><td>Water behind a dam</td><td>Stretched catapult</td></tr>
+            <tr><td>Restoring force</td><td>Gravity (always downward)</td><td>Spring force (towards mean position)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Potential energy is like a book on a shelf — it has stored energy that can fall. Higher shelf = more potential energy. It's like money in a bank — you're not spending it now, but you <span class="hl-term">can</span> use it later!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Law of Conservation of Energy -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-scale-balanced text-amber-400 text-sm"></i> 5. Law of Conservation of Energy</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>The Law</div>
+      <div class="text-sm text-gray-400 mb-3 p-3 bg-gray-900/40 rounded border border-amber-900/30">
+        <span class="text-amber-200 font-bold">"Energy can neither be created nor destroyed — it can only be <span class="hl-event">transformed</span> from one form to another."</span>
+      </div>
+      <p class="text-sm text-gray-400 mb-3">The <span class="hl-term">total energy</span> of an isolated system always remains constant. Energy just changes its form — like water changing from ice to liquid to steam, but the amount of water stays the same!</p>
+
+      <div class="subsection-heading"><i class="fas fa-roller-coaster text-amber-400 text-xs mr-2"></i>Example 1: Roller Coaster (Most Asked in Exams!)</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">At the top:</span> Maximum PE (highest point), minimum KE (moving slowly).</li>
+        <li><span class="hl-event">Coming down:</span> PE decreases → KE increases (speed increases). PE is being <span class="hl-date">converted</span> to KE!</li>
+        <li><span class="hl-place">At the bottom:</span> Minimum PE, Maximum KE (fastest speed).</li>
+        <li><span class="hl-date">Going up again:</span> KE decreases → PE increases again.</li>
+        <li><span class="hl-term">Key point:</span> Total Energy (PE + KE) remains <span class="hl-num">constant</span> (ignoring friction).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-clock-rotate text-amber-400 text-xs mr-2"></i>Example 2: Simple Pendulum</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">At extreme positions (highest):</span> PE = Maximum, KE = 0 (momentarily at rest).</li>
+        <li><span class="hl-event">At mean position (lowest):</span> PE = Minimum, KE = Maximum (fastest).</li>
+        <li><span class="hl-place">In between:</span> Some PE converts to KE and vice versa. Total energy = constant.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-circle-down text-amber-400 text-xs mr-2"></i>Example 3: Freely Falling Ball</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Position</th><th>PE (mgh)</th><th>KE (½mv²)</th><th>Total Energy</th></tr></thead>
+          <tbody>
+            <tr><td>At top (height h)</td><td><span class="hl-num">mgh (max)</span></td><td><span class="hl-term">0</span></td><td><span class="hl-date">mgh</span></td></tr>
+            <tr><td>At mid-point (h/2)</td><td><span class="hl-num">½mgh</span></td><td><span class="hl-num">½mgh</span></td><td><span class="hl-date">mgh</span></td></tr>
+            <tr><td>Just before ground (h≈0)</td><td><span class="hl-term">0</span></td><td><span class="hl-num">mgh (max)</span></td><td><span class="hl-date">mgh</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-rotate text-amber-400 text-xs mr-2"></i>More Energy Transformations in Daily Life</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Device / Situation</th><th>Energy Transformation</th></tr></thead>
+          <tbody>
+            <tr><td>Electric fan</td><td>Electrical → Kinetic + Sound + Heat</td></tr>
+            <tr><td>Light bulb</td><td>Electrical → Light + Heat</td></tr>
+            <tr><td>Car engine</td><td>Chemical (petrol) → Thermal → Kinetic (+ Heat + Sound)</td></tr>
+            <tr><td>Solar panel</td><td>Light → Electrical</td></tr>
+            <tr><td>Microphone</td><td>Sound → Electrical</td></tr>
+            <tr><td>Speaker</td><td>Electrical → Sound</td></tr>
+            <tr><td>Hydroelectric dam</td><td>PE of water → KE → Electrical</td></tr>
+            <tr><td>Photosynthesis</td><td>Light → Chemical (food)</td></tr>
+            <tr><td>Burning wood</td><td>Chemical → Thermal + Light</td></tr>
+            <tr><td>Nuclear reactor</td><td>Nuclear → Thermal → Kinetic → Electrical</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> Energy never goes "waste" — it just becomes less useful (usually as <span class="hl-term">heat</span>). This is why your phone gets hot — some electrical energy is "wasted" as heat, but it's still there, just in a different, less usable form!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Power -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-gauge-high text-amber-400 text-sm"></i> 6. Power – Rate of Doing Work</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Power</span> is defined as the <span class="hl-event">rate at which work is done</span> or the <span class="hl-place">rate of transfer of energy</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">P = W / t</div>
+      <p class="text-sm text-gray-400 mb-2">Where:
+        <br><span class="hl-term">P</span> = Power (Watt)
+        <br><span class="hl-event">W</span> = Work done (Joule)
+        <br><span class="hl-place">t</span> = Time taken (seconds)
+      </p>
+
+      <div class="subsection-heading"><i class="fas fa-ruler text-amber-400 text-xs mr-2"></i>Units of Power</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Unit</th><th>Full Form</th><th>Equivalent</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Watt (W)</span></td><td>SI unit of power</td><td>1 W = 1 J/s</td></tr>
+            <tr><td><span class="hl-event">Kilowatt (kW)</span></td><td>1000 Watts</td><td>1 kW = 10³ W</td></tr>
+            <tr><td><span class="hl-place">Megawatt (MW)</span></td><td>10,00,000 Watts</td><td>1 MW = 10⁶ W</td></tr>
+            <tr><td><span class="hl-date">Horsepower (hp)</span></td><td>Old unit (James Watt)</td><td>1 hp = 746 W</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-car text-amber-400 text-xs mr-2"></i>Power Comparison – Who is More Powerful?</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Device / Person</th><th>Power (approx)</th><th>Compare to...</th></tr></thead>
+          <tbody>
+            <tr><td>Human (resting)</td><td>~100 W</td><td>1 light bulb</td></tr>
+            <tr><td>Human (working hard)</td><td>~400–500 W</td><td>Small microwave</td></tr>
+            <tr><td>Horse</td><td>~746 W</td><td>1 hp (horsepower defined!)</td></tr>
+            <tr><td>Car engine</td><td>~50–200 kW</td><td>67–268 hp</td></tr>
+            <tr><td>Train engine</td><td>~5 MW</td><td>~6700 hp</td></tr>
+            <tr><td>Power plant</td><td>~500–2000 MW</td><td>Lakhs of homes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Numerical Examples</div>
+      <div class="text-sm text-gray-400 mb-3 p-3 bg-gray-900/40 rounded">
+        <span class="text-amber-200 font-medium">Example 1:</span> A person does 600 J of work in 30 seconds. What is their power?
+        <br><span class="text-cyan-300 font-mono">P = 600 / 30 = 20 W</span>
+      </div>
+      <div class="text-sm text-gray-400 mb-3 p-3 bg-gray-900/40 rounded">
+        <span class="text-amber-200 font-medium">Example 2:</span> A 100 W bulb is used for 10 hours. How much energy does it consume?
+        <br><span class="text-cyan-300 font-mono">Energy = Power × Time = 100 × (10 × 3600) = 3,600,000 J = 3.6 × 10⁶ J</span>
+      </div>
+      <div class="text-sm text-gray-400 mb-3 p-3 bg-gray-900/40 rounded">
+        <span class="text-amber-200 font-medium">Example 3:</span> A motor lifts a 200 kg load to a height of 10 m in 40 seconds. What is the power? (g = 10 m/s²)
+        <br><span class="text-cyan-300 font-mono">Work = mgh = 200 × 10 × 10 = 20,000 J. P = 20,000 / 40 = 500 W</span>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Power is like the speed of a car — not the distance you travel, but how <span class="hl-term">fast</span> you do it. Two cars might both cover 100 km, but the one that does it in 1 hour has more power than the one that takes 4 hours. Same work, less time = more power!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Commercial Unit of Energy (kWh) -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-file-invoice-dollar text-amber-400 text-sm"></i> 7. Commercial Unit of Energy – The kilowatt-hour (kWh)</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Why a New Unit?</div>
+      <p class="text-sm text-gray-400 mb-3">The Joule is too small for practical electricity billing. Imagine telling someone "Your electricity bill is 360,000,000 J" — confusing! So we use the <span class="hl-term">kilowatt-hour (kWh)</span> — also called <span class="hl-event">"Unit"</span> on your electricity bill.</p>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-2">1 kilowatt-hour (kWh) is the energy consumed when a device of <span class="hl-term">1 kW power</span> runs for <span class="hl-event">1 hour</span>.</p>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">1 kWh = 1 kW × 1 h = 1000 W × 3600 s = 3.6 × 10⁶ J</div>
+
+      <div class="subsection-heading"><i class="fas fa-file-lines text-amber-400 text-xs mr-2"></i>Reading Your Electricity Bill</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Appliance</th><th>Power Rating</th><th>Hours Used/Day</th><th>Energy per Day (kWh)</th></tr></thead>
+          <tbody>
+            <tr><td>LED Bulb</td><td>10 W = 0.01 kW</td><td>8 hours</td><td>0.08 kWh</td></tr>
+            <tr><td>Ceiling Fan</td><td>75 W = 0.075 kW</td><td>10 hours</td><td>0.75 kWh</td></tr>
+            <tr><td>Refrigerator</td><td>200 W = 0.2 kW</td><td>24 hours</td><td>4.8 kWh</td></tr>
+            <tr><td>Air Conditioner</td><td>1500 W = 1.5 kW</td><td>8 hours</td><td>12 kWh</td></tr>
+            <tr><td>Water Heater</td><td>2000 W = 2 kW</td><td>2 hours</td><td>4 kWh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right-arrow-left text-amber-400 text-xs mr-2"></i>Joule ↔ kWh Conversion</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>From</th><th>To</th><th>Multiply by</th></tr></thead>
+          <tbody>
+            <tr><td>kWh</td><td>Joule</td><td>3.6 × 10⁶</td></tr>
+            <tr><td>Joule</td><td>kWh</td><td>1 / (3.6 × 10⁶) ≈ 2.78 × 10⁻⁷</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Numerical – Electricity Bill Calculation</div>
+      <div class="text-sm text-gray-400 mb-3 p-3 bg-gray-900/40 rounded">
+        <span class="text-amber-200 font-medium">Example:</span> A household uses: 5 LED bulbs (10W each, 6 hrs/day), 2 fans (75W each, 10 hrs/day), 1 fridge (200W, 24 hrs/day). Find total energy per day and monthly bill at ₹6/unit.
+        <br><br><span class="text-cyan-300 font-mono">
+Bulbs: 5 × 0.01 × 6 = 0.3 kWh<br>
+Fans: 2 × 0.075 × 10 = 1.5 kWh<br>
+Fridge: 1 × 0.2 × 24 = 4.8 kWh<br>
+Total per day = 6.6 kWh<br>
+Monthly (30 days) = 198 kWh = 198 Units<br>
+Bill = 198 × 6 = ₹1,188
+        </span>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> When you see "unit" on your electricity bill, it means <span class="hl-term">kWh</span>. 1 Unit = 1 kWh = 3.6 × 10⁶ J. A 100 W bulb left on for 10 hours consumes 1 unit (100 × 10 = 1000 Wh = 1 kWh).
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Simple Machines -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-toolbox text-amber-400 text-sm"></i> 8. Simple Machines – Doing More with Less</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>What is a Simple Machine?</div>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">simple machine</span> is a device that helps us <span class="hl-event">multiply force</span> or change its <span class="hl-place">direction</span>. They make work easier — but remember, they don't reduce the total work!</p>
+
+      <div class="subsection-heading"><i class="fas fa-key text-amber-400 text-xs mr-2"></i>Key Terms</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Mechanical Advantage (MA):</span> MA = Load / Effort. It tells us how many times the machine multiplies our force. MA > 1 means you need less effort than the load.</li>
+        <li><span class="hl-event">Efficiency (η):</span> η = (Output Work / Input Work) × 100%. No machine is 100% efficient — some energy is always lost as heat due to friction.</li>
+        <li><span class="hl-place">Velocity Ratio (VR):</span> VR = Distance moved by effort / Distance moved by load. For an ideal machine (no friction), MA = VR.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Types of Simple Machines</div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">1. Lever — "Give me a lever and I can move the world" (Archimedes)</p>
+      <ul class="bullet-list text-sm">
+        <li>A rigid bar that rotates about a fixed point called <span class="hl-term">fulcrum</span>.</li>
+        <li><span class="hl-event">Principle:</span> Load × Load arm = Effort × Effort arm</li>
+        <li><span class="hl-place">Classes:</span> Class 1 (fulcrum in middle — seesaw, scissors), Class 2 (load in middle — wheelbarrow, nutcracker), Class 3 (effort in middle — tweezers, fishing rod)</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">2. Pulley — Lifting made easy</p>
+      <ul class="bullet-list text-sm">
+        <li>A wheel with a rope around it. <span class="hl-term">Fixed pulley</span> changes direction (pull down → lift up). <span class="hl-event">Movable pulley</span> multiplies force (MA = 2).</li>
+        <li>Block and tackle system: Multiple pulleys = high MA. Used in cranes, elevators.</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">3. Inclined Plane — The ramp that saves effort</p>
+      <ul class="bullet-list text-sm">
+        <li>A sloping surface. <span class="hl-term">MA = Length of ramp / Height of ramp</span>.</li>
+        <li>Longer the ramp, less effort needed — but you have to travel a longer distance!</li>
+        <li>Examples: Roads in hilly areas (zigzag roads reduce steepness), ramp for wheelchair, loading truck.</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">4. Wheel & Axle — Rolling is easier</p>
+      <ul class="bullet-list text-sm">
+        <li>A large wheel attached to a smaller axle. Both rotate together.</li>
+        <li><span class="hl-term">MA = Radius of wheel / Radius of axle</span>.</li>
+        <li>Examples: Steering wheel, door knob, screwdriver, water tap, bicycle pedals.</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">5. Screw — The spiral inclined plane</p>
+      <ul class="bullet-list text-sm">
+        <li>An inclined plane wrapped around a cylinder.</li>
+        <li><span class="hl-term">MA = 2πr / Pitch</span> (smaller pitch = more MA).</li>
+        <li>Examples: Jar lid, bolt, drill, corkscrew, car jack (screw jack).</li>
+      </ul>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1">6. Wedge — Splitting force</p>
+      <ul class="bullet-list text-sm">
+        <li>Two inclined planes back-to-back. It converts a force applied at the blunt end into a splitting force at the sharp end.</li>
+        <li>Examples: Knife, axe, nail, needle, chisel, tooth.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>Simple Machines Comparison Table</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Machine</th><th>Function</th><th>MA Formula</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td>Lever</td><td>Rotates about fulcrum</td><td>Effort arm / Load arm</td><td>Seesaw, scissors, crowbar</td></tr>
+            <tr><td>Pulley</td><td>Rope on wheel</td><td>Number of rope segments</td><td>Curtain, crane, flag pole</td></tr>
+            <tr><td>Inclined Plane</td><td>Sloping surface</td><td>Length / Height</td><td>Ramp, mountain road</td></tr>
+            <tr><td>Wheel & Axle</td><td>Wheel + rod</td><td>Wheel radius / Axle radius</td><td>Steering wheel, doorknob</td></tr>
+            <tr><td>Screw</td><td>Spiral wedge</td><td>2πr / Pitch</td><td>Bolt, jar lid, drill</td></tr>
+            <tr><td>Wedge</td><td>Two inclined planes</td><td>Length / Thickness</td><td>Knife, axe, nail</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Efficiency & Mechanical Advantage</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Concept</th><th>Formula</th><th>Explanation</th></tr></thead>
+          <tbody>
+            <tr><td>Mechanical Advantage</td><td>MA = Load / Effort</td><td>How much the machine multiplies your force</td></tr>
+            <tr><td>Velocity Ratio</td><td>VR = Effort dist / Load dist</td><td>How distance is traded for force</td></tr>
+            <tr><td>Efficiency</td><td>η = (MA / VR) × 100%</td><td>How much input work becomes useful output</td></tr>
+            <tr><td>Ideal Machine</td><td>MA = VR (η = 100%)</td><td>No friction — theoretical only!</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Golden Rule of Simple Machines:</span> What you gain in <span class="hl-term">force</span>, you lose in <span class="hl-event">distance</span>. A ramp lets you use less force, but you walk a longer path. A pulley reduces the lifting force, but you pull more rope. You <span class="hl-num">never</span> get something for nothing in physics!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 9. Comparison Tables – At a Glance</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Work vs Power vs Energy</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Work</th><th>Energy</th><th>Power</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Force × Displacement</td><td>Capacity to do work</td><td>Rate of doing work</td></tr>
+            <tr><td>Symbol</td><td>W</td><td>E</td><td>P</td></tr>
+            <tr><td>SI Unit</td><td>Joule (J)</td><td>Joule (J)</td><td>Watt (W) = J/s</td></tr>
+            <tr><td>Nature</td><td>Process quantity</td><td>State quantity</td><td>Rate quantity</td></tr>
+            <tr><td>Formula</td><td>F × s × cosθ</td><td>KE = ½mv², PE = mgh</td><td>W / t</td></tr>
+            <tr><td>Scalar/Vector</td><td><span class="hl-term">Scalar</span></td><td><span class="hl-term">Scalar</span></td><td><span class="hl-term">Scalar</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Kinetic Energy vs Potential Energy</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Kinetic Energy</th><th>Potential Energy</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Energy of motion</td><td>Stored energy due to position</td></tr>
+            <tr><td>Formula</td><td>½mv²</td><td>mgh (gravitational)</td></tr>
+            <tr><td>Depends on</td><td>Mass, velocity</td><td>Mass, height, g</td></tr>
+            <tr><td>Relationship</td><td>Increases with speed (v²)</td><td>Increases with height</td></tr>
+            <tr><td>Example</td><td>Moving car, wind, bullet</td><td>Book on shelf, water behind dam</td></tr>
+            <tr><td>Zero when</td><td>Object is at rest (v = 0)</td><td>Object at reference level (h = 0)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Positive Work vs Negative Work vs Zero Work</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Angle θ</th><th>cos θ</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-date">Positive Work</span></td><td>0° ≤ θ < 90°</td><td>> 0</td><td>Pushing a box forward; lifting a weight upward</td></tr>
+            <tr><td><span class="hl-event">Negative Work</span></td><td>90° < θ ≤ 180°</td><td>< 0</td><td>Brakes stopping a car; gravity when lifting up</td></tr>
+            <tr><td><span class="hl-term">Zero Work</span></td><td>θ = 90°</td><td>0</td><td>Walking with a load on head; satellite orbiting</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Energy Transformation in Different Devices</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Device</th><th>Input Energy</th><th>Output Energy (Useful)</th><th>Waste Energy</th></tr></thead>
+          <tbody>
+            <tr><td>Electric bulb</td><td>Electrical</td><td>Light</td><td>Heat</td></tr>
+            <tr><td>Electric motor</td><td>Electrical</td><td>Kinetic</td><td>Heat, Sound</td></tr>
+            <tr><td>Dynamo/generator</td><td>Kinetic</td><td>Electrical</td><td>Heat, Sound</td></tr>
+            <tr><td>Solar cell</td><td>Light</td><td>Electrical</td><td>Heat</td></tr>
+            <tr><td>Car engine</td><td>Chemical (fuel)</td><td>Kinetic</td><td>Heat, Sound, Pollution</td></tr>
+            <tr><td>Microphone</td><td>Sound</td><td>Electrical</td><td>Heat</td></tr>
+            <tr><td>Speaker</td><td>Electrical</td><td>Sound</td><td>Heat</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Joule vs kWh vs erg</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Unit</th><th>System</th><th>Value in Joules</th></tr></thead>
+          <tbody>
+            <tr><td>1 Joule</td><td>SI</td><td>1 J</td></tr>
+            <tr><td>1 erg</td><td>CGS</td><td>10⁻⁷ J</td></tr>
+            <tr><td>1 kWh</td><td>Commercial</td><td>3.6 × 10⁶ J</td></tr>
+            <tr><td>1 calorie</td><td>Older system</td><td>4.184 J</td></tr>
+            <tr><td>1 hp·h</td><td>Engineering</td><td>2.685 × 10⁶ J</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Mnemonics -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 10. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Kinetic Energy Formula</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">KE = ½mv²:</span> Think of a <span class="hl-event">"Half-MV"</span> (Half times Mass times Velocity squared). Picture "½" as a half-sandwich, "m" as a man, "v²" as a very fast vehicle. The <span class="hl-event">half</span> is the most forgotten part — don't forget the ½!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Forms of Energy</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">8 Forms of Energy:</span> <span class="hl-event">"M. K. P. T. C. E. N. L."</span> — My Kind Professor Teaches Chemistry Every Night Late.
+        <br><span class="text-sm text-gray-400">M = Mechanical, K = Kinetic, P = Potential, T = Thermal, C = Chemical, E = Electrical, N = Nuclear, L = Light</span>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Positive vs Negative Work</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Work Direction Trick:</span> <span class="hl-event">"SAME = Positive"</span> — when force and displacement are in the SAME direction, work is positive. <span class="hl-event">"OPPO = Negative"</span> — Opposite directions = negative work. <span class="hl-term">"RIGHT ANGLE = ZERO"</span> — perpendicular = zero work.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Simple Machines</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">6 Simple Machines:</span> <span class="hl-event">"L. P. I. W. S. W."</span> = Lever, Pulley, Inclined Plane, Wheel &amp; Axle, Screw, Wedge.
+        <br>Or remember: <span class="hl-event">"Lazy People Invented Wonderful Simple Widgets"</span> — because simple machines make work easier!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-sort text-amber-400 text-xs mr-2"></i>Law of Conservation of Energy</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"ECND"</span> — <span class="hl-event">Energy Can't be (C)reated Nor (D)estroyed</span>, only <span class="hl-event">"Transformed"</span>. Think of energy like LEGO blocks — you can rearrange them into different shapes (forms), but the total number of blocks stays the same!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Practice Questions (15 MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 11. Practice Questions – 15 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">What is the SI unit of work?</div>
+        <div class="mcq-opt">A) Watt</div>
+        <div class="mcq-opt">B) Newton</div>
+        <div class="mcq-opt">C) Joule</div>
+        <div class="mcq-opt">D) Pascal</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Joule (J)</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">In which of the following is work done equal to zero?</div>
+        <div class="mcq-opt">A) A box pushed along a floor</div>
+        <div class="mcq-opt">B) A weightlifter holding a barbell overhead</div>
+        <div class="mcq-opt">C) A ball falling freely</div>
+        <div class="mcq-opt">D) A car accelerating on a road</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Holding a barbell — force is applied but no displacement, so work = 0.</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">If the velocity of an object is doubled, its kinetic energy becomes:</div>
+        <div class="mcq-opt">A) Half</div>
+        <div class="mcq-opt">B) Double</div>
+        <div class="mcq-opt">C) Four times</div>
+        <div class="mcq-opt">D) Eight times</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Four times (KE ∝ v²)</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">The formula for gravitational potential energy is:</div>
+        <div class="mcq-opt">A) ½mv²</div>
+        <div class="mcq-opt">B) mgh</div>
+        <div class="mcq-opt">C) F × s</div>
+        <div class="mcq-opt">D) W / t</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) PE = mgh</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1 kWh is equal to how many Joules?</div>
+        <div class="mcq-opt">A) 3.6 × 10³ J</div>
+        <div class="mcq-opt">B) 3.6 × 10⁶ J</div>
+        <div class="mcq-opt">C) 3.6 × 10⁹ J</div>
+        <div class="mcq-opt">D) 3.6 × 10² J</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 1 kWh = 3.6 × 10⁶ J</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">A man pushes a wall but the wall does not move. The work done is:</div>
+        <div class="mcq-opt">A) Positive</div>
+        <div class="mcq-opt">B) Negative</div>
+        <div class="mcq-opt">C) Zero</div>
+        <div class="mcq-opt">D) Cannot be determined</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Zero — displacement s = 0, so W = F × 0 = 0</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">The SI unit of power is:</div>
+        <div class="mcq-opt">A) Joule</div>
+        <div class="mcq-opt">B) Watt</div>
+        <div class="mcq-opt">C) Newton</div>
+        <div class="mcq-opt">D) Horsepower</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Watt (W = J/s)</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">Which of the following has the highest kinetic energy?</div>
+        <div class="mcq-opt">A) A truck moving at 20 km/h</div>
+        <div class="mcq-opt">B) A car moving at 60 km/h</div>
+        <div class="mcq-opt">C) A bicycle moving at 20 km/h</div>
+        <div class="mcq-opt">D) A motorcycle at 40 km/h</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Car at 60 km/h — highest velocity × mass combination</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">What type of energy does a stretched rubber band possess?</div>
+        <div class="mcq-opt">A) Kinetic energy</div>
+        <div class="mcq-opt">B) Gravitational potential energy</div>
+        <div class="mcq-opt">C) Elastic potential energy</div>
+        <div class="mcq-opt">D) Thermal energy</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Elastic potential energy</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">According to the law of conservation of energy:</div>
+        <div class="mcq-opt">A) Energy can be created but not destroyed</div>
+        <div class="mcq-opt">B) Energy can be destroyed but not created</div>
+        <div class="mcq-opt">C) Energy can be neither created nor destroyed, only transformed</div>
+        <div class="mcq-opt">D) Energy is always lost as heat</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Energy can neither be created nor destroyed, only transformed</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">A 50 kg object is at a height of 10 m. What is its potential energy? (g = 10 m/s²)</div>
+        <div class="mcq-opt">A) 500 J</div>
+        <div class="mcq-opt">B) 5000 J</div>
+        <div class="mcq-opt">C) 50 J</div>
+        <div class="mcq-opt">D) 5 J</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) PE = mgh = 50 × 10 × 10 = 5000 J</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1 horsepower (hp) is equal to:</div>
+        <div class="mcq-opt">A) 1000 W</div>
+        <div class="mcq-opt">B) 746 W</div>
+        <div class="mcq-opt">C) 500 W</div>
+        <div class="mcq-opt">D) 100 W</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 1 hp = 746 W</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">Which simple machine is a screw?</div>
+        <div class="mcq-opt">A) A lever</div>
+        <div class="mcq-opt">B) An inclined plane wrapped around a cylinder</div>
+        <div class="mcq-opt">C) A wheel and axle</div>
+        <div class="mcq-opt">D) A wedge</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) A screw is an inclined plane wrapped around a cylinder</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">If the mass of a moving object is doubled, its kinetic energy becomes:</div>
+        <div class="mcq-opt">A) Half</div>
+        <div class="mcq-opt">B) Double</div>
+        <div class="mcq-opt">C) Four times</div>
+        <div class="mcq-opt">D) Unchanged</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Double (KE ∝ m)</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">A 60 W bulb is used for 5 hours. The energy consumed in kWh is:</div>
+        <div class="mcq-opt">A) 0.3 kWh</div>
+        <div class="mcq-opt">B) 3 kWh</div>
+        <div class="mcq-opt">C) 30 kWh</div>
+        <div class="mcq-opt">D) 300 kWh</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 60 W = 0.06 kW. Energy = 0.06 × 5 = 0.3 kWh</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-bolt text-amber-400/50 mr-2"></i>
+      Work &amp; Energy · NCERT Physics Notes · Class 9–10
+      <br>Compiled for BPSC/UPSC revision · Click MCQs to reveal answers
+      <br><span class="text-gray-600">— "Energy is neither created nor destroyed, but it sure can be converted into an exam score!"</span>
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

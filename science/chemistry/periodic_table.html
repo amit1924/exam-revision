@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periodic Classification of Elements | NCERT Science Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(16,185,129,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#10b981; }
+.bullet-list-2 { list-style: none; padding-left: 0.5rem; }
+.bullet-list-2 li { position: relative; padding-left: 1.25rem; margin-bottom: 0.25rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.6; }
+.bullet-list-2 li::before { content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 0.3rem; font-size: 0.45rem; color: #34d399; }
+.fact-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.analogy-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.analogy-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.analogy-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(16,185,129,0.15); color:#6ee7b7; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(16,185,129,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(16,185,129,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.2); font-size:0.82rem; color:#6ee7b7; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+.teacher-tip { background:linear-gradient(135deg, rgba(16,185,129,0.1), rgba(5,150,105,0.05)); border-left:4px solid #34d399; border-radius:0 0.75rem 0.75rem 0; padding:0.75rem 1rem; margin:0.75rem 0; }
+.teacher-tip-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.teacher-tip-content { font-size:0.85rem; color:#e2e8f0; line-height:1.7; }
+</style></head>
+<body><div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-amber-500/20 text-center">
+  <i class="fa-solid fa-table text-4xl sm:text-5xl text-amber-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Periodic Classification of Elements</h1>
+  <p class="text-amber-300 text-sm mt-1"><i class="fa-solid fa-chalkboard-user text-amber-400 mr-1"></i> NCERT Science · Class 6 to 10 · Comprehensive Notes</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-amber-900/40 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-flask mr-1"></i>Chemistry</span>
+    <span class="cat-badge bg-emerald-900/40 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-star mr-1"></i>Exam Ready</span>
+    <span class="cat-badge bg-indigo-900/40 text-indigo-300 border border-indigo-500/30"><i class="fa-solid fa-layer-group mr-1"></i>Periodic Table</span>
+  </div>
+</div>
+
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2"><i class="fa-solid fa-table text-amber-400"></i><span class="text-white font-semibold text-sm">Quick Navigation</span></div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()"><i id="hamburger-icon" class="fas fa-bars text-amber-400"></i></button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">1. Early Attempts</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">2. Mendeleev</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">3. Modern Table</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">4. Periodic Trends</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">5. Position</a>
+    <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">6. s/p/d/f Blocks</a>
+    <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">7. Families</a>
+    <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">8. Config &amp; Position</a>
+    <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">9. Comparisons</a>
+    <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">10. Mnemonics</a>
+    <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">11. MCQs</a>
+  </div>
+</div>
+
+<!-- SEC 1: EARLY ATTEMPTS -->
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-clock-rotate-left text-amber-400"></i> 1. Early Attempts at Classification</h2>
+<p class="content-text">Before the modern periodic table, scientists tried to organize elements based on their <span class="hl-term">atomic masses</span> and <span class="hl-term">similar properties</span>. Two major early attempts were Dobereiner's Triads and Newlands' Law of Octaves.</p>
+
+<div class="subsection-heading"><i class="fa-solid fa-people-group text-amber-400"></i>Dobereiner's Triads (1817 - Johann Wolfgang Dobereiner)</div>
+<p class="content-text">Dobereiner grouped elements into sets of three called <span class="hl-term">triads</span>. In each triad, the three elements had <span class="hl-event">similar chemical properties</span>, and the <span class="hl-num">atomic weight of the middle element</span> was approximately the <span class="hl-term">average</span> of the other two.</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy:</div>
+<div class="analogy-content">Think of Dobereiner's Triads like a family of three siblings - the middle child's height is roughly the average of the eldest and youngest. Similarly, the middle element's atomic weight was the average of its two companions!</div>
+</div>
+
+<div class="table-wrap">
+<table><thead><tr><th>Triad</th><th>Element 1</th><th>Element 2 (Middle)</th><th>Element 3</th><th>Avg of 1 &amp; 3</th><th>Actual At. Wt (Middle)</th></tr></thead>
+<tbody>
+<tr><td>Alkali metals</td><td>Li (6.94)</td><td><span class="hl-term">Na (22.99)</span></td><td>K (39.10)</td><td>23.02</td><td><span class="hl-date">22.99</span></td></tr>
+<tr><td>Alkaline earth metals</td><td>Ca (40.08)</td><td><span class="hl-term">Sr (87.62)</span></td><td>Ba (137.33)</td><td>88.70</td><td><span class="hl-date">87.62</span></td></tr>
+<tr><td>Halogens</td><td>Cl (35.45)</td><td><span class="hl-term">Br (79.90)</span></td><td>I (126.90)</td><td>81.17</td><td><span class="hl-date">79.90</span></td></tr>
+</tbody></table>
+</div>
+
+<p class="content-text"><span class="hl-event">Limitation:</span> Only a few elements could be grouped into triads. Many elements did not fit into such groups.</p>
+
+<div class="subsection-heading"><i class="fa-solid fa-music text-amber-400"></i>Newlands' Law of Octaves (1864 - John Newlands)</div>
+<p class="content-text">Newlands arranged elements in <span class="hl-term">increasing order of atomic masses</span> and noticed that <span class="hl-event">every 8th element</span> had properties similar to the first - just like musical notes (Sa Re Ga Ma Pa Dha Ni - the octave).</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy:</div>
+<div class="analogy-content">Newlands' Octaves are like musical notes - after 7 distinct notes, the 8th (Sa') sounds similar to the first (Sa). Similarly, after every 7 elements, the 8th element repeated properties of the 1st. But this worked only for the first 17 elements!</div>
+</div>
+
+<p class="content-text"><span class="hl-event">Limitations:</span></p>
+<ul class="bullet-list">
+<li>Law worked only up to <span class="hl-num">Calcium (Ca)</span>. After Ca, every 8th element did NOT have similar properties.</li>
+<li>Newlands assumed only 56 elements existed (no room for <span class="hl-term">noble gases</span> discovered later).</li>
+<li>He placed two elements in same slot (e.g., Co &amp; Ni) to force fit.</li>
+<li>Not accepted by the scientific community - laughed at for linking music to chemistry.</li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fas fa-lightbulb text-emerald-400"></i> Fact:</div>
+<div class="fact-box-content">Newlands called his arrangement the "Law of Octaves" because the pattern reminded him of the seven musical notes in an octave (do-re-mi-fa-so-la-ti). He was awarded the <span class="hl-term">Davy Medal</span> in 1887 for his work, though it was initially ridiculed.</div>
+</div>
+</section>
+
+<!-- SEC 2: MENDELEEV -->
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-flask text-amber-400"></i> 2. Mendeleev's Periodic Table (1869)</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-user text-amber-400"></i>Who was Mendeleev?</div>
+<p class="content-text"><span class="hl-term">Dmitri Ivanovich Mendeleev</span> (1834-1907), a Russian chemist, arranged all <span class="hl-num">63 known elements</span> in order of <span class="hl-term">increasing atomic mass</span>. His great genius was leaving <span class="hl-event">gaps for undiscovered elements</span>.</p>
+
+<div class="subsection-heading"><i class="fa-solid fa-scale-balanced text-amber-400"></i>Mendeleev's Periodic Law</div>
+<p class="content-text"><span class="hl-term">"The properties of elements are a periodic function of their atomic masses."</span></p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy - Housing Society:</div>
+<div class="analogy-content">Mendeleev's table was like a housing society with empty plots reserved for future buildings. He left gaps for undiscovered elements and even predicted what they would look like - their properties, densities, atomic masses, and compounds! He was like an architect who could describe a house before it was built.</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-list text-amber-400"></i>Key Features of Mendeleev's Table</div>
+<ul class="bullet-list">
+<li>Elements arranged in <span class="hl-term">increasing atomic mass</span>.</li>
+<li>Divided into <span class="hl-num">8 vertical groups</span> (I to VIII) and horizontal <span class="hl-num">periods</span>.</li>
+<li>Groups I-VII contain sub-groups <span class="hl-term">A &amp; B</span> (e.g., IA, IB). Group VIII had three elements in each row (transition metals).</li>
+<li>Left <span class="hl-event">gaps</span> for elements not yet discovered. Predicted properties of these elements with remarkable accuracy.</li>
+<li>Corrected atomic masses of some elements (e.g., changed Be from 14 to 9, In from 76 to 113).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-crystal-ball text-amber-400"></i>Predictions of Undiscovered Elements</div>
+<div class="table-wrap">
+<table><thead><tr><th>Predicted Name</th><th>Modern Name</th><th>Symbol</th><th>Predicted Properties</th><th>Actual Properties</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Eka-boron</span></td><td>Scandium</td><td>Sc</td><td>At. wt ~44, forms oxide Eb₂O₃</td><td>At. wt 44.96, Sc₂O₃</td></tr>
+<tr><td><span class="hl-term">Eka-aluminium</span></td><td>Gallium</td><td>Ga</td><td>At. wt ~68, low mp, density ~5.9</td><td>At. wt 69.7, mp 30°C, density 5.94</td></tr>
+<tr><td><span class="hl-term">Eka-silicon</span></td><td>Germanium</td><td>Ge</td><td>At. wt ~72, density ~5.5, forms GeO₂</td><td>At. wt 72.6, density 5.47, GeO₂</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-check-circle text-amber-400"></i>Achievements</div>
+<ul class="bullet-list">
+<li>First systematic classification that <span class="hl-term">accommodated all known elements</span>.</li>
+<li>Left gaps for undiscovered elements and <span class="hl-date">predicted their properties</span> correctly.</li>
+<li>Corrected atomic masses of several elements (Be, In, U).</li>
+<li>Could <span class="hl-event">explain periodicity</span> - elements with similar properties occurred at regular intervals.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-xmark-circle text-amber-400"></i>Limitations</div>
+<ul class="bullet-list">
+<li>Could not explain <span class="hl-term">isotopes</span> (same element, different masses - e.g., Cl-35 and Cl-37 would need different positions but are chemically identical).</li>
+<li>Some elements placed <span class="hl-event">wrong order</span> of atomic mass (e.g., Co - 58.93 placed before Ni - 58.69; Te - 127.60 before I - 126.90).</li>
+<li>Based on <span class="hl-term">atomic mass</span> - later replaced by atomic number.</li>
+<li>Position of <span class="hl-place">hydrogen</span> was ambiguous (could be in group I or VII).</li>
+<li>No place for <span class="hl-date">noble gases</span> (discovered later - added as Group 0).</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-teacher text-emerald-400"></i> Teacher's Tip:</div>
+<div class="teacher-tip-content">For exams: Mendeleev's main contribution = <span class="hl-term">leaving gaps</span> for undiscovered elements and <span class="hl-term">correcting atomic masses</span>. The biggest limitation = <span class="hl-event">isotopes problem</span> and <span class="hl-event">wrong order</span> (Co-Ni, Te-I). Mendeleev is called "Father of the Periodic Table".</div>
+</div>
+</section>
+
+<!-- SEC 3: MODERN TABLE -->
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-border-all text-amber-400"></i> 3. Modern Periodic Table</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-microscope text-amber-400"></i>Moseley's Contribution (1913)</div>
+<p class="content-text"><span class="hl-term">Henry Moseley</span> (British physicist) studied X-ray spectra of elements and discovered that <span class="hl-num">atomic number (Z)</span> - not atomic mass - is the fundamental property of elements. This resolved the anomalies in Mendeleev's table.</p>
+
+<div class="subsection-heading"><i class="fa-solid fa-scale-balanced text-amber-400"></i>Modern Periodic Law</div>
+<p class="content-text"><span class="hl-term">"The physical and chemical properties of elements are a periodic function of their atomic numbers."</span></p>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fas fa-lightbulb text-emerald-400"></i> Key Difference:</div>
+<div class="fact-box-content">Mendeleev: Periodic function of <span class="hl-event">atomic mass</span>. Modern: Periodic function of <span class="hl-date">atomic number</span>. This one change fixed the Co-Ni and Te-I reversal problem - because Co (Z=27) comes before Ni (Z=28) even though Co has higher atomic mass!</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-layer-group text-amber-400"></i>Structure of the Modern Periodic Table</div>
+<p class="content-text">The modern table has <span class="hl-num">18 groups</span> (vertical columns) and <span class="hl-num">7 periods</span> (horizontal rows).</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy - School:</div>
+<div class="analogy-content">The modern periodic table is like a school - same <span class="hl-term">group</span> = same class (same uniform/valence electrons). Same <span class="hl-term">period</span> = same grade (same number of shells/classrooms). Just like students in the same class wear the same uniform, elements in the same group have the same valence electrons!</div>
+</div>
+
+<p class="content-text" style="color:#e2e8f0;font-weight:600;margin-bottom:0.25rem">Groups (18 vertical columns):</p>
+<ul class="bullet-list">
+<li>Elements in same group have <span class="hl-term">same number of valence electrons</span>.</li>
+<li>They show <span class="hl-event">similar chemical properties</span>.</li>
+<li>Valence electrons: Group 1 = 1, Group 2 = 2, Group 13 = 3, Group 14 = 4, Group 15 = 5, Group 16 = 6, Group 17 = 7, Group 18 = 8 (except He = 2).</li>
+<li>Groups 3 to 12 are <span class="hl-term">transition metals</span> (d-block).</li>
+</ul>
+
+<p class="content-text" style="color:#e2e8f0;font-weight:600;margin-bottom:0.25rem">Periods (7 horizontal rows):</p>
+<ul class="bullet-list">
+<li>Elements in same period have <span class="hl-term">same number of electron shells</span>.</li>
+<li>Period 1: 2 elements (H, He) - 1 shell.</li>
+<li>Period 2: 8 elements (Li to Ne) - 2 shells.</li>
+<li>Period 3: 8 elements (Na to Ar) - 3 shells.</li>
+<li>Period 4: 18 elements (K to Kr) - 4 shells.</li>
+<li>Period 5: 18 elements (Rb to Xe) - 5 shells.</li>
+<li>Period 6: 32 elements (Cs to Rn) - 6 shells (includes lanthanoids).</li>
+<li>Period 7: 32 elements (Fr to Og) - 7 shells (includes actinoids).</li>
+</ul>
+
+<div class="table-wrap">
+<table><thead><tr><th>Period</th><th>Elements</th><th>Shells (n)</th><th>Max Electrons</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>H to He (2)</td><td>1</td><td>2</td></tr>
+<tr><td>2</td><td>Li to Ne (8)</td><td>2</td><td>8</td></tr>
+<tr><td>3</td><td>Na to Ar (8)</td><td>3</td><td>8</td></tr>
+<tr><td>4</td><td>K to Kr (18)</td><td>4</td><td>18</td></tr>
+<tr><td>5</td><td>Rb to Xe (18)</td><td>5</td><td>18</td></tr>
+<tr><td>6</td><td>Cs to Rn (32)</td><td>6</td><td>32</td></tr>
+<tr><td>7</td><td>Fr to Og (32)</td><td>7</td><td>32</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-cubes text-amber-400"></i>Classification into Blocks</div>
+<p class="content-text">Elements are classified into four blocks based on which orbital the last electron enters:</p>
+<ul class="bullet-list">
+<li><span class="hl-term">s-block</span> → Groups 1 &amp; 2 (alkali &amp; alkaline earth metals).</li>
+<li><span class="hl-term">p-block</span> → Groups 13 to 18 (metals, non-metals, metalloids, noble gases).</li>
+<li><span class="hl-term">d-block</span> → Groups 3 to 12 (transition metals).</li>
+<li><span class="hl-term">f-block</span> → Below main table (inner transition - lanthanoids &amp; actinoids).</li>
+</ul>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-teacher text-emerald-400"></i> Teacher's Tip:</div>
+<div class="teacher-tip-content">To find group from electronic configuration: If last electron is in s-orbital → group = number of valence electrons. If in p-orbital → group = 10 + valence electrons (for Groups 13-18). If in d-orbital → group = number of electrons in (n-1)d + ns. For f-block → group 3 (always).</div>
+</div>
+</section>
+
+<!-- SEC 4: PERIODIC TRENDS -->
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-chart-line text-amber-400"></i> 4. Periodic Trends</h2>
+<p class="content-text">Periodic trends are regular variations in properties of elements <span class="hl-term">across a period</span> (left to right) and <span class="hl-term">down a group</span> (top to bottom). These are crucial for BPSC/UPSC exams.</p>
+
+<div class="subsection-heading"><i class="fa-solid fa-electron text-amber-400"></i>Valence Electrons</div>
+<p class="content-text">Valence electrons are the electrons in the <span class="hl-event">outermost shell</span> of an atom. They determine the chemical properties and valency.</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Across a period</span>: Increases from 1 to 8 (e.g., Period 3: Na=1, Mg=2, Al=3, Si=4, P=5, S=6, Cl=7, Ar=8).</li>
+<li><span class="hl-term">Down a group</span>: Remains same (all alkali metals have 1 valence electron, all halogens have 7).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-circle text-amber-400"></i>Atomic Size (Atomic Radius)</div>
+<p class="content-text">Atomic radius is the distance from the nucleus to the outermost electron. It determines how <span class="hl-term">large</span> an atom is.</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy - Squeezing a Balloon:</div>
+<div class="analogy-content">Atomic size across a period is like squeezing a balloon - as you add more protons (positive charge), the electrons get pulled in tighter, making the atom smaller. Across a period, nuclear charge increases, pulling electrons closer → <span class="hl-event">size decreases</span>.</div>
+</div>
+
+<div class="table-wrap">
+<table><thead><tr><th>Trend</th><th>Across Period (→)</th><th>Down Group (↓)</th></tr></thead>
+<tbody>
+<tr><td>Atomic Size</td><td><span class="hl-event">Decreases</span></td><td><span class="hl-date">Increases</span></td>
+</tr>
+<tr><td>Reason</td><td>Nuclear charge increases, pulls electrons closer</td><td>New shells added</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-bolt text-amber-400"></i>Ionization Energy (IE)</div>
+<p class="content-text">Ionization energy is the <span class="hl-term">minimum energy required</span> to remove an electron from an isolated gaseous atom. Higher IE means the atom <span class="hl-event">holds its electrons tightly</span>.</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Analogy - Removing a Student:</div>
+<div class="analogy-content">Ionization energy is like how hard you need to pull to remove a student from class. If the atom is <span class="hl-term">large</span> (like a student sitting near the door), it's easy to remove an electron (low IE). If the atom is <span class="hl-term">small</span> (sitting in the middle, tightly held), it's hard (high IE).</div>
+</div>
+
+<div class="table-wrap">
+<table><thead><tr><th>Trend</th><th>Across Period (→)</th><th>Down Group (↓)</th></tr></thead>
+<tbody>
+<tr><td>Ionization Energy</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td>
+</tr>
+<tr><td>Reason</td><td>Smaller size, nucleus holds electrons tighter</td><td>Larger size, outer electrons farther from nucleus</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-magnet text-amber-400"></i>Electronegativity</div>
+<p class="content-text">Electronegativity is the <span class="hl-term">tendency of an atom to attract shared electrons</span> in a chemical bond. <span class="hl-term">Fluorine (F)</span> is the most electronegative element (4.0 on Pauling scale).</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Trend</th><th>Across Period (→)</th><th>Down Group (↓)</th></tr></thead>
+<tbody>
+<tr><td>Electronegativity</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td>
+</tr>
+<tr><td>Reason</td><td>Smaller size, higher nuclear charge attracts electrons</td><td>Larger size, electron cloud farther from nucleus</td></tr>
+</tbody></table>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fas fa-lightbulb text-emerald-400"></i> Fact:</div>
+<div class="fact-box-content"><span class="hl-term">Fluorine (F)</span> is the most electronegative element (4.0). <span class="hl-term">Caesium (Cs)</span> is the least electronegative (0.79). Noble gases have zero electronegativity (they don't form bonds). Among groups, electronegativity decreases down the group and increases across a period.</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-hammer text-amber-400"></i>Metallic Character</div>
+<p class="content-text">Metallic character refers to the tendency of an element to <span class="hl-term">lose electrons</span> and form positive ions (cations). Metals are good conductors of heat and electricity, are malleable and ductile.</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Trend</th><th>Across Period (→)</th><th>Down Group (↓)</th></tr></thead>
+<tbody>
+<tr><td>Metallic Character</td><td><span class="hl-event">Decreases</span></td><td><span class="hl-date">Increases</span></td>
+</tr>
+<tr><td>Reason</td><td>Increased IE makes losing electrons harder</td><td>Lower IE makes losing electrons easier</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-shield text-amber-400"></i>Non-Metallic Character</div>
+<p class="content-text">Non-metals tend to <span class="hl-term">gain electrons</span> (form negative ions). They are poor conductors, brittle, and have high electronegativity.</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Trend</th><th>Across Period (→)</th><th>Down Group (↓)</th></tr></thead>
+<tbody>
+<tr><td>Non-Metallic Character</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td>
+</tr>
+<tr><td>Reason</td><td>Higher electronegativity, tendency to gain e⁻</td><td>Lower electronegativity, tendency to lose e⁻</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-list-check text-amber-400"></i>Complete Summary of Periodic Trends</div>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Across Period (Left → Right)</th><th>Down Group (Top → Bottom)</th></tr></thead>
+<tbody>
+<tr><td>Atomic Size / Radius</td><td><span class="hl-event">Decreases</span></td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Ionization Energy</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td></tr>
+<tr><td>Electronegativity</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td></tr>
+<tr><td>Metallic Character</td><td><span class="hl-event">Decreases</span></td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Non-Metallic Character</td><td><span class="hl-date">Increases</span></td><td><span class="hl-event">Decreases</span></td></tr>
+<tr><td>Valence Electrons</td><td><span class="hl-date">Increases</span> (1 → 8)</td><td>Same (constant)</td></tr>
+<tr><td>Electron Gain Enthalpy</td><td>More negative (generally)</td><td>Less negative (generally)</td></tr>
+</tbody></table>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-teacher text-emerald-400"></i> Teacher's Tip:</div>
+<div class="teacher-tip-content">For BPSC/UPSC: Remember <span class="hl-event">"AIDE-MN"</span> trend across period - Atomic size decreases, IE increases, Density increases (generally), Electronegativity increases, Metallic character decreases, Non-metallic increases. Down group: opposite of all these except valence electrons (which stay same).</div>
+</div>
+</section>
+
+<!-- SEC 5: POSITION OF ELEMENTS -->
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-location-dot text-amber-400"></i> 5. Position of Elements - From Electronic Configuration</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-calculator text-amber-400"></i>How to Find Group &amp; Period</div>
+<p class="content-text">To find the position of an element in the periodic table, write its <span class="hl-term">electronic configuration</span>:</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Period</span> = Number of shells (highest n value).</li>
+<li><span class="hl-term">Group</span> = Number of valence electrons (for s-block and p-block).</li>
+<li>For s-block (Groups 1-2): Group = number of valence electrons.</li>
+<li>For p-block (Groups 13-18): Group = 10 + valence electrons.</li>
+<li>For d-block (Groups 3-12): Group = ns + (n-1)d electrons.</li>
+</ul>
+
+<div class="table-wrap">
+<table><thead><tr><th>Element</th><th>Electronic Config.</th><th>Period</th><th>Group</th></tr></thead>
+<tbody>
+<tr><td>Lithium (Li)</td><td>2, 1</td><td>2 (2 shells)</td><td>1 (1 valence e⁻)</td></tr>
+<tr><td><span class="hl-term">Sodium (Na)</span></td><td>2, 8, 1</td><td>3 (3 shells)</td><td>1 (1 valence e⁻)</td></tr>
+<tr><td>Magnesium (Mg)</td><td>2, 8, 2</td><td>3</td><td>2</td></tr>
+<tr><td>Aluminium (Al)</td><td>2, 8, 3</td><td>3</td><td>13 (10+3)</td></tr>
+<tr><td>Silicon (Si)</td><td>2, 8, 4</td><td>3</td><td>14 (10+4)</td></tr>
+<tr><td>Phosphorus (P)</td><td>2, 8, 5</td><td>3</td><td>15 (10+5)</td></tr>
+<tr><td>Sulphur (S)</td><td>2, 8, 6</td><td>3</td><td>16 (10+6)</td></tr>
+<tr><td><span class="hl-term">Chlorine (Cl)</span></td><td>2, 8, 7</td><td>3 (3 shells)</td><td>17 (10+7)</td></tr>
+<tr><td>Argon (Ar)</td><td>2, 8, 8</td><td>3</td><td>18 (noble gas)</td></tr>
+<tr><td>Potassium (K)</td><td>2, 8, 8, 1</td><td>4</td><td>1</td></tr>
+<tr><td>Calcium (Ca)</td><td>2, 8, 8, 2</td><td>4</td><td>2</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrow-trend-up text-amber-400"></i>Valency Trends</div>
+<p class="content-text"><span class="hl-term">Valency</span> is the combining capacity of an element - the number of electrons lost, gained, or shared to achieve a stable noble gas configuration (8 electrons in outermost shell).</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Group</th><th>Valence e⁻</th><th>Valency</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>1 (IA)</td><td>1</td><td><span class="hl-date">+1</span></td><td>Na → Na⁺</td></tr>
+<tr><td>2 (IIA)</td><td>2</td><td><span class="hl-date">+2</span></td><td>Mg → Mg²⁺</td></tr>
+<tr><td>13 (IIIA)</td><td>3</td><td><span class="hl-date">+3</span></td><td>Al → Al³⁺</td></tr>
+<tr><td>14 (IVA)</td><td>4</td><td><span class="hl-term">+4 (or -4)</span></td><td>C (shares 4 electrons)</td></tr>
+<tr><td>15 (VA)</td><td>5</td><td><span class="hl-event">-3</span></td><td>N → N³⁻</td></tr>
+<tr><td>16 (VIA)</td><td>6</td><td><span class="hl-event">-2</span></td><td>O → O²⁻</td></tr>
+<tr><td>17 (VIIA)</td><td>7</td><td><span class="hl-event">-1</span></td><td>Cl → Cl⁻</td></tr>
+<tr><td>18 (0)</td><td>8 (He=2)</td><td><span class="hl-term">0</span></td><td>Ne (no reaction)</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-star text-amber-400"></i>Special Families of Elements</div>
+<div class="table-wrap">
+<table><thead><tr><th>Family</th><th>Group</th><th>Valence e⁻</th><th>Charge</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Alkali Metals</span></td><td>1</td><td>1</td><td>+1</td><td>Li, Na, K, Rb, Cs, Fr</td></tr>
+<tr><td><span class="hl-term">Alkaline Earth Metals</span></td><td>2</td><td>2</td><td>+2</td><td>Be, Mg, Ca, Sr, Ba, Ra</td></tr>
+<tr><td><span class="hl-term">Halogens</span></td><td>17</td><td>7</td><td>-1</td><td>F, Cl, Br, I, At</td></tr>
+<tr><td><span class="hl-term">Noble Gases</span></td><td>18</td><td>8 (He=2)</td><td>0</td><td>He, Ne, Ar, Kr, Xe, Rn</td></tr>
+</tbody></table>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Mnemonic - Group &amp; Period:</div>
+<div class="mnemonic-content"><span class="hl-event">"Period = Shells, Group = Valence"</span>. Write the electronic configuration first. Count the number of shells = period. Count valence electrons = group (add 10 for Groups 13-18). For Na (2,8,1): 3 shells → Period 3. 1 valence e⁻ → Group 1. For Cl (2,8,7): 3 shells → Period 3. 7 valence e⁻ → Group 17 (10+7).</div>
+</div>
+</section>
+
+<!-- SEC 6: BLOCKS -->
+<section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-cube text-amber-400"></i> 6. Classification into s, p, d, f Blocks</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-fill-drip text-amber-400"></i>s-Block Elements</div>
+<p class="content-text"><span class="hl-term">Groups 1 &amp; 2</span>. The last electron enters the <span class="hl-term">s-orbital</span> of the outermost shell.</p>
+<ul class="bullet-list">
+<li>Group 1 = <span class="hl-term">Alkali metals</span> (Li, Na, K, Rb, Cs, Fr) - 1 valence e⁻, highly reactive, +1 charge.</li>
+<li>Group 2 = <span class="hl-term">Alkaline earth metals</span> (Be, Mg, Ca, Sr, Ba, Ra) - 2 valence e⁻, +2 charge.</li>
+<li>Soft metals, low melting points, good conductors of electricity.</li>
+<li>Reactivity increases <span class="hl-event">down the group</span> (Francium is most reactive).</li>
+<li>They form <span class="hl-date">ionic compounds</span> and are strong reducing agents.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-cloud text-amber-400"></i>p-Block Elements</div>
+<p class="content-text"><span class="hl-term">Groups 13 to 18</span>. The last electron enters the <span class="hl-term">p-orbital</span> of the outermost shell.</p>
+<ul class="bullet-list">
+<li>Includes <span class="hl-term">metals</span> (Al, Ga, In, Tl, Pb, Bi), <span class="hl-term">non-metals</span> (C, N, O, P, S, Se, halogens), <span class="hl-term">metalloids</span> (B, Si, Ge, As, Sb, Te), and <span class="hl-term">noble gases</span> (He, Ne, Ar, Kr, Xe, Rn).</li>
+<li>Valence electrons: Group 13 = 3, 14 = 4, 15 = 5, 16 = 6, 17 = 7, 18 = 8 (except He = 2).</li>
+<li>Most diverse block - contains elements with very different properties.</li>
+<li>Noble gases (Group 18) are <span class="hl-term">chemically inert</span> (stable octet).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-diamond text-amber-400"></i>d-Block Elements (Transition Metals)</div>
+<p class="content-text"><span class="hl-term">Groups 3 to 12</span>. The last electron enters the <span class="hl-term">d-orbital</span> of the penultimate (n-1) shell.</p>
+<ul class="bullet-list">
+<li>All are <span class="hl-term">metals</span> - hard, high melting points, good conductors.</li>
+<li><span class="hl-event">Variable oxidation states</span> (e.g., Fe²⁺ and Fe³⁺; Mn²⁺, Mn³⁺, Mn⁴⁺, Mn⁶⁺, Mn⁷⁺).</li>
+<li>Form <span class="hl-term">coloured compounds</span> (e.g., CuSO₄ is blue, FeSO₄ is green, KMnO₄ is purple).</li>
+<li>Used as <span class="hl-term">catalysts</span> (e.g., Fe in Haber process, Pt/Pd in catalytic converters).</li>
+<li>Exhibit <span class="hl-term">paramagnetism</span> (attracted by magnetic field due to unpaired electrons).</li>
+<li>Known for forming <span class="hl-term">complex compounds</span> (coordination compounds).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-ribbon text-amber-400"></i>f-Block Elements (Inner Transition Metals)</div>
+<p class="content-text">The last electron enters the <span class="hl-term">f-orbital</span> of the anti-penultimate (n-2) shell. These are placed <span class="hl-event">below</span> the main table.</p>
+<ul class="bullet-list">
+<li><span class="hl-term">Lanthanoids</span> (Ce to Lu, Z=58-71): Also called rare earth elements. Similar properties. Used in lasers, magnets, phosphors.</li>
+<li><span class="hl-term">Actinoids</span> (Th to Lr, Z=90-103): All are <span class="hl-event">radioactive</span>. Used in nuclear energy (U, Pu).</li>
+<li>All are <span class="hl-term">metals</span> with high melting points.</li>
+<li>Show <span class="hl-date">variable oxidation states</span> (especially actinoids).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-table-list text-amber-400"></i>Master Table - Blocks Overview</div>
+<div class="table-wrap">
+<table><thead><tr><th>Block</th><th>Groups</th><th>Orbital</th><th>Types of Elements</th><th>Properties</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">s-block</span></td><td>1, 2</td><td>s</td><td>Alkali &amp; Alkaline earth metals</td><td>Highly reactive, metals, form +1/+2 ions</td></tr>
+<tr><td><span class="hl-term">p-block</span></td><td>13 to 18</td><td>p</td><td>Metals, non-metals, metalloids, noble gases</td><td>Most diverse - all types of elements</td></tr>
+<tr><td><span class="hl-term">d-block</span></td><td>3 to 12</td><td>d</td><td>Transition metals</td><td>Variable oxidation states, coloured compounds, catalysts</td></tr>
+<tr><td><span class="hl-term">f-block</span></td><td>Inner (below)</td><td>f</td><td>Lanthanoids &amp; Actinoids</td><td>Radioactive (actinoids), similar properties within series</td></tr>
+</tbody></table>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fas fa-lightbulb text-emerald-400"></i> Fact:</div>
+<div class="fact-box-content">The <span class="hl-term">d-block</span> contains 40 elements (3d, 4d, 5d series). The <span class="hl-term">f-block</span> contains 28 elements (14 lanthanoids + 14 actinoids). The longest period (6) has 32 elements and includes the lanthanoids placed below the table.</div>
+</div>
+</section>
+
+<!-- SEC 7: FAMILIES -->
+<section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-people-arrows text-amber-400"></i> 7. Important Families of Elements</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-star text-amber-400"></i>Alkali Metals (Group 1)</div>
+<p class="content-text"><span class="hl-term">Li, Na, K, Rb, Cs, Fr</span> - These are called alkali metals because they form <span class="hl-term">alkalis</span> (water-soluble bases) when they react with water.</p>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Trend Down Group</th><th>Explanation</th></tr></thead>
+<tbody>
+<tr><td>Atomic size</td><td><span class="hl-date">Increases</span></td><td>More shells added</td></tr>
+<tr><td>Melting point</td><td><span class="hl-event">Decreases</span></td><td>Weaker metallic bonds</td></tr>
+<tr><td>Density</td><td><span class="hl-date">Increases</span></td><td>Heavier atoms</td></tr>
+<tr><td>Reactivity</td><td><span class="hl-date">Increases</span></td><td>Easier to lose 1 valence e⁻</td></tr>
+<tr><td>Ionization energy</td><td><span class="hl-event">Decreases</span></td><td>Electron farther from nucleus</td></tr>
+<tr><td>Ion formed</td><td>M⁺ (+1)</td><td>Lose 1 electron</td></tr>
+</tbody></table>
+</div>
+<ul class="bullet-list">
+<li>They are <span class="hl-term">soft metals</span> (can be cut with a knife).</li>
+<li>Highly reactive - react with water to produce H₂ gas + metal hydroxide (alkali).</li>
+<li>Store under <span class="hl-term">kerosene oil</span> to prevent reaction with air/moisture.</li>
+<li>Li is least reactive, Fr is most reactive (but Fr is radioactive and rare).</li>
+<li>Flame colour: Li (crimson red), Na (golden yellow), K (pale violet), Rb (red-violet).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-star text-amber-400"></i>Alkaline Earth Metals (Group 2)</div>
+<p class="content-text"><span class="hl-term">Be, Mg, Ca, Sr, Ba, Ra</span> - Called "alkaline earth" because their oxides are alkaline and found in the earth's crust.</p>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Trend Down Group</th></tr></thead>
+<tbody>
+<tr><td>Atomic size</td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Reactivity</td><td><span class="hl-date">Increases</span> (Be is least reactive)</td></tr>
+<tr><td>Ionization energy</td><td><span class="hl-event">Decreases</span></td></tr>
+<tr><td>Melting point</td><td>Higher than Group 1, decreases down group</td></tr>
+<tr><td>Ion formed</td><td>M²⁺ (+2)</td></tr>
+<tr><td>Solubility of hydroxides</td><td><span class="hl-date">Increases</span> down group</td></tr>
+</tbody></table>
+</div>
+<ul class="bullet-list">
+<li>Harder and denser than alkali metals.</li>
+<li><span class="hl-term">Be</span> does not react with water; <span class="hl-term">Mg</span> reacts with hot water; <span class="hl-term">Ca, Sr, Ba</span> react with cold water.</li>
+<li>Ca is essential for bones and teeth (as Ca₅(PO₄)₃OH - hydroxyapatite).</li>
+<li>Mg is used in fireworks (burns with brilliant white light).</li>
+<li>Radium (Ra) is radioactive.</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-star text-amber-400"></i>Halogens (Group 17)</div>
+<p class="content-text"><span class="hl-term">F, Cl, Br, I, At</span> - "Halogen" means <span class="hl-term">salt-producer</span> (Greek: hals = salt, gen = produce). They react with metals to form salts.</p>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Trend Down Group</th></tr></thead>
+<tbody>
+<tr><td>Atomic size</td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Electronegativity</td><td><span class="hl-event">Decreases</span> (F is highest)</td></tr>
+<tr><td>Melting &amp; Boiling point</td><td><span class="hl-date">Increases</span> (F₂, Cl₂ = gas; Br₂ = liquid; I₂ = solid)</td></tr>
+<tr><td>Reactivity</td><td><span class="hl-event">Decreases</span> (F₂ is most reactive)</td></tr>
+<tr><td>Ion formed</td><td>X⁻ (-1 charge)</td></tr>
+<tr><td>Oxidizing power</td><td><span class="hl-event">Decreases</span> (F₂ is strongest oxidant)</td></tr>
+</tbody></table>
+</div>
+<ul class="bullet-list">
+<li>Non-metals, exist as <span class="hl-term">diatomic molecules</span> (F₂, Cl₂, Br₂, I₂).</li>
+<li><span class="hl-term">Fluorine (F₂)</span> is pale yellow gas - most reactive element known!</li>
+<li><span class="hl-term">Chlorine (Cl₂)</span> is greenish-yellow gas - used as disinfectant, bleaching agent.</li>
+<li><span class="hl-term">Bromine (Br₂)</span> is reddish-brown liquid - only liquid non-metal.</li>
+<li><span class="hl-term">Iodine (I₂)</span> is violet-black solid - sublimes to violet vapour.</li>
+<li>Displacement: A more reactive halogen <span class="hl-event">displaces</span> a less reactive one from its salt (e.g., Cl₂ + 2KBr → 2KCl + Br₂).</li>
+</ul>
+
+<div class="subsection-heading"><i class="fa-solid fa-star text-amber-400"></i>Noble Gases (Group 18)</div>
+<p class="content-text"><span class="hl-term">He, Ne, Ar, Kr, Xe, Rn</span> - Called "noble" or "inert" gases because they are <span class="hl-term">chemically unreactive</span>.</p>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Trend Down Group</th></tr></thead>
+<tbody>
+<tr><td>Atomic size</td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Boiling point</td><td><span class="hl-date">Increases</span> (He boils at -269°C!)</td></tr>
+<tr><td>Solubility in water</td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Density</td><td><span class="hl-date">Increases</span></td></tr>
+<tr><td>Chemical reactivity</td><td>Virtually zero (inert)</td></tr>
+</tbody></table>
+</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Helium (He)</span> - 2 electrons (K shell full). Used in balloons (lighter than air), MRI cooling.</li>
+<li><span class="hl-term">Neon (Ne)</span> - Used in neon signs (glows reddish-orange).</li>
+<li><span class="hl-term">Argon (Ar)</span> - Most abundant noble gas in air (0.93%). Used as inert atmosphere in welding.</li>
+<li><span class="hl-term">Krypton (Kr)</span> - Used in high-performance light bulbs.</li>
+<li><span class="hl-term">Xenon (Xe)</span> - Can form compounds (XeF₂, XeF₄) with F₂. Used in flash lamps.</li>
+<li><span class="hl-term">Radon (Rn)</span> - Radioactive. Found in soil and rocks.</li>
+<li>All have <span class="hl-event">stable octet</span> (8 valence electrons) except He (2).</li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fas fa-lightbulb text-emerald-400"></i> Fact - Displacement Reaction:</div>
+<div class="fact-box-content">Among halogens, a more reactive halogen displaces a less reactive one. The order of reactivity: <span class="hl-term">F₂ &gt; Cl₂ &gt; Br₂ &gt; I₂</span>. So Cl₂ can displace Br⁻ and I⁻ from their salts, but F₂ can displace all others!</div>
+</div>
+</section>
+
+<!-- SEC 8: CONFIG & POSITION -->
+<section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-calculator text-amber-400"></i> 8. Electronic Configuration &amp; Finding Position</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-pen text-amber-400"></i>How to Write Electronic Configuration</div>
+<p class="content-text">Electrons fill orbitals in order of <span class="hl-term">increasing energy</span> following the <span class="hl-term">Aufbau principle</span>, <span class="hl-term">Pauli's exclusion principle</span>, and <span class="hl-term">Hund's rule</span>.</p>
+<p class="content-text">For NCERT Class 6-10 level, use the <span class="hl-term">2, 8, 18, 32...</span> distribution: 1st shell (K) = 2, 2nd (L) = 8, 3rd (M) = 18, 4th (N) = 32.</p>
+
+<div class="table-wrap">
+<table><thead><tr><th>Element</th><th>Atomic No.</th><th>Electronic Config.</th><th>Period</th><th>Group</th><th>Block</th></tr></thead>
+<tbody>
+<tr><td>Hydrogen (H)</td><td>1</td><td>1</td><td>1</td><td>1</td><td>s</td></tr>
+<tr><td>Helium (He)</td><td>2</td><td>2</td><td>1</td><td>18</td><td>s</td></tr>
+<tr><td>Lithium (Li)</td><td>3</td><td>2, 1</td><td>2</td><td>1</td><td>s</td></tr>
+<tr><td>Carbon (C)</td><td>6</td><td>2, 4</td><td>2</td><td>14</td><td>p</td></tr>
+<tr><td>Nitrogen (N)</td><td>7</td><td>2, 5</td><td>2</td><td>15</td><td>p</td></tr>
+<tr><td>Oxygen (O)</td><td>8</td><td>2, 6</td><td>2</td><td>16</td><td>p</td></tr>
+<tr><td>Neon (Ne)</td><td>10</td><td>2, 8</td><td>2</td><td>18</td><td>p</td></tr>
+<tr><td><span class="hl-term">Sodium (Na)</span></td><td>11</td><td>2, 8, 1</td><td>3</td><td>1</td><td>s</td></tr>
+<tr><td>Magnesium (Mg)</td><td>12</td><td>2, 8, 2</td><td>3</td><td>2</td><td>s</td></tr>
+<tr><td><span class="hl-term">Chlorine (Cl)</span></td><td>17</td><td>2, 8, 7</td><td>3</td><td>17</td><td>p</td></tr>
+<tr><td>Argon (Ar)</td><td>18</td><td>2, 8, 8</td><td>3</td><td>18</td><td>p</td></tr>
+<tr><td>Potassium (K)</td><td>19</td><td>2, 8, 8, 1</td><td>4</td><td>1</td><td>s</td></tr>
+<tr><td>Calcium (Ca)</td><td>20</td><td>2, 8, 8, 2</td><td>4</td><td>2</td><td>s</td></tr>
+<tr><td>Iron (Fe)</td><td>26</td><td>2, 8, 14, 2</td><td>4</td><td>8</td><td>d</td></tr>
+<tr><td>Zinc (Zn)</td><td>30</td><td>2, 8, 18, 2</td><td>4</td><td>12</td><td>d</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-road text-amber-400"></i>Step-by-Step Method to Find Position</div>
+<p class="content-text"><span class="hl-term">Step 1:</span> Write electronic configuration (2, 8, 18...).<br>
+<span class="hl-term">Step 2:</span> Count number of shells → that is the <span class="hl-date">Period</span>.<br>
+<span class="hl-term">Step 3:</span> Count valence electrons (outermost shell electrons).<br>
+<span class="hl-term">Step 4:</span> If valence e⁻ = 1 or 2 → Group = valence e⁻ (s-block).<br>
+<span class="hl-term">Step 5:</span> If valence e⁻ = 3 to 8 → Group = 10 + valence e⁻ (p-block, Groups 13-18).<br>
+<span class="hl-term">Step 6:</span> If element is in d-block → Group = (n-1)d + ns electrons.</p>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Example - Na:</div>
+<div class="analogy-content">Na (Z=11): Config = 2, 8, 1. 3 shells → <span class="hl-date">Period 3</span>. 1 valence electron → <span class="hl-term">Group 1</span>. It's in the s-block, an alkali metal.</div>
+</div>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fas fa-lightbulb text-emerald-400"></i> Example - Cl:</div>
+<div class="analogy-content">Cl (Z=17): Config = 2, 8, 7. 3 shells → <span class="hl-date">Period 3</span>. 7 valence electrons → <span class="hl-date">Group = 10 + 7 = 17</span>. It's in the p-block, a halogen.</div>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fas fa-chalkboard-teacher text-emerald-400"></i> Teacher's Tip:</div>
+<div class="teacher-tip-content">For BPSC/UPSC exam: Remember the <span class="hl-term">special cases</span>: Hydrogen (unique - placed in Group 1 but has properties of both 1 and 17). Helium (Group 18 despite 2 electrons in s-orbital). Also note that <span class="hl-term">group number = number of valence electrons</span> only works for s-block; for p-block it's <span class="hl-term">10 + valence electrons</span>.</div>
+</div>
+</section>
+
+<!-- SEC 9: COMPARISONS -->
+<section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-table text-amber-400"></i> 9. Comparison Tables</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrows-left-right text-amber-400"></i>Mendeleev vs Modern Periodic Table</div>
+<div class="table-wrap">
+<table><thead><tr><th>Feature</th><th>Mendeleev's Table</th><th>Modern Periodic Table</th></tr></thead>
+<tbody>
+<tr><td>Basis of arrangement</td><td><span class="hl-term">Atomic mass</span></td><td><span class="hl-date">Atomic number</span></td></tr>
+<tr><td>Law</td><td>Properties = periodic function of atomic mass</td><td>Properties = periodic function of atomic number</td></tr>
+<tr><td>Groups</td><td>8 groups (I-VIII with A &amp; B sub-groups)</td><td>18 groups (numbered 1-18)</td></tr>
+<tr><td>Periods</td><td>Horizontal rows (some incomplete)</td><td>7 complete periods</td></tr>
+<tr><td>Undiscovered elements</td><td><span class="hl-event">Gaps left</span> (predicted properties)</td><td>Now all gaps filled</td></tr>
+<tr><td>Problem with isotopes</td><td>Yes - could not explain</td><td><span class="hl-date">No problem</span> - same atomic number</td></tr>
+<tr><td>Order anomaly</td><td>Co-Ni, Te-I reversed</td><td><span class="hl-date">Resolved</span> (by atomic number)</td></tr>
+<tr><td>Noble gases</td><td>No place (added later as Group 0)</td><td><span class="hl-date">Group 18</span> (integrated)</td></tr>
+<tr><td>Position of H</td><td>Ambiguous (Group I or VII)</td><td>Still debated (usually Group 1)</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrows-left-right text-amber-400"></i>Alkali Metals vs Alkaline Earth Metals</div>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Alkali Metals (Group 1)</th><th>Alkaline Earth Metals (Group 2)</th></tr></thead>
+<tbody>
+<tr><td>Valence electrons</td><td>1</td><td>2</td></tr>
+<tr><td>Ion charge</td><td>+1</td><td>+2</td></tr>
+<tr><td>Reactivity</td><td><span class="hl-event">More reactive</span></td><td>Less reactive</td></tr>
+<tr><td>Hardness</td><td>Soft (can cut with knife)</td><td>Harder</td></tr>
+<tr><td>Density</td><td>Lower</td><td>Higher</td></tr>
+<tr><td>Melting point</td><td>Low (decreases down group)</td><td>Higher (decreases down group)</td></tr>
+<tr><td>Reaction with water</td><td>Vigorous (produces alkali + H₂)</td><td>Less vigorous (except Be)</td></tr>
+<tr><td>Examples</td><td>Li, Na, K, Rb, Cs, Fr</td><td>Be, Mg, Ca, Sr, Ba, Ra</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrows-left-right text-amber-400"></i>Metals vs Non-Metals</div>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>Metals</th><th>Non-Metals</th></tr></thead>
+<tbody>
+<tr><td>Physical state (room temp)</td><td>Solid (except Hg = liquid)</td><td>Solid, liquid (Br₂), or gas</td></tr>
+<tr><td>Lustre</td><td>Shiny (metallic lustre)</td><td>Dull (except diamond, I₂)</td></tr>
+<tr><td>Conductivity</td><td>Good conductors of heat &amp; electricity</td><td>Poor conductors (except graphite)</td></tr>
+<tr><td>Malleability</td><td>Malleable &amp; ductile</td><td>Brittle (break on hammering)</td></tr>
+<tr><td>Melting point</td><td>Generally high</td><td>Generally low</td></tr>
+<tr><td>Ion formation</td><td>Lose electrons → cations (+ve)</td><td>Gain electrons → anions (-ve)</td></tr>
+<tr><td>Nature of oxides</td><td>Basic (or amphoteric)</td><td>Acidic (or neutral)</td></tr>
+<tr><td>Position in periodic table</td><td>Left side (s-block, d-block, f-block)</td><td>Right side (p-block)</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrows-left-right text-amber-400"></i>s, p, d, f Blocks - Key Differences</div>
+<div class="table-wrap">
+<table><thead><tr><th>Property</th><th>s-block</th><th>p-block</th><th>d-block</th><th>f-block</th></tr></thead>
+<tbody>
+<tr><td>Orbital filled</td><td>s</td><td>p</td><td>d</td><td>f</td></tr>
+<tr><td>Groups</td><td>1, 2</td><td>13-18</td><td>3-12</td><td>Below (inner)</td></tr>
+<tr><td>Valence e⁻</td><td>1-2</td><td>3-8</td><td>Variable</td><td>Variable</td></tr>
+<tr><td>Nature</td><td>Metals (reactive)</td><td>Mixed (metal, non-metal, metalloid)</td><td>Metals (transition)</td><td>Metals (inner transition)</td></tr>
+<tr><td>Oxidation states</td><td>Fixed (+1, +2)</td><td>Variable</td><td><span class="hl-event">Variable</span></td><td>Variable</td></tr>
+<tr><td>Coloured compounds</td><td>No (white/crystals)</td><td>Some</td><td><span class="hl-event">Yes</span></td><td>Yes (lanthanoids)</td></tr>
+<tr><td>Catalytic property</td><td>No</td><td>Some</td><td><span class="hl-event">Excellent</span></td><td>Some</td></tr>
+</tbody></table>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-arrows-left-right text-amber-400"></i>Periodic Trends - Complete Comparison</div>
+<div class="table-wrap">
+<table><thead><tr><th>Element Pair</th><th>Who has larger atomic size?</th><th>Who has higher IE?</th><th>Who has higher EN?</th></tr></thead>
+<tbody>
+<tr><td>Na vs Mg</td><td><span class="hl-term">Na</span> (left in period)</td><td><span class="hl-date">Mg</span> (right in period)</td><td><span class="hl-date">Mg</span></td></tr>
+<tr><td>Na vs K</td><td><span class="hl-term">K</span> (down group)</td><td><span class="hl-date">Na</span> (up group)</td><td><span class="hl-date">Na</span></td></tr>
+<tr><td>F vs Cl</td><td><span class="hl-term">Cl</span> (down group)</td><td><span class="hl-date">F</span> (up group)</td><td><span class="hl-date">F</span> (most EN)</td></tr>
+<tr><td>N vs O</td><td><span class="hl-term">N</span> (left in period)</td><td><span class="hl-date">O</span> (right in period)</td><td><span class="hl-date">O</span></td></tr>
+<tr><td>Al vs Si</td><td><span class="hl-term">Al</span> (left in period)</td><td><span class="hl-date">Si</span> (right)</td><td><span class="hl-date">Si</span></td></tr>
+<tr><td>Li vs Cs</td><td><span class="hl-term">Cs</span> (furthest down)</td><td><span class="hl-date">Li</span> (top of group)</td><td><span class="hl-date">Li</span> (top)</td></tr>
+</tbody></table>
+</div>
+</section>
+
+<!-- SEC 10: MNEMONICS -->
+<section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-brain text-amber-400"></i> 10. Mnemonics &amp; Memory Tricks</h2>
+
+<div class="subsection-heading"><i class="fa-solid fa-lightbulb text-yellow-300"></i>Periodic Trends Mnemonics</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Across a Period (L→R):</div>
+<div class="mnemonic-content"><span class="hl-event">"ADIME"</span> - Atomic size <span class="hl-event">Decreases</span>, Ionization energy <span class="hl-date">Increases</span>, Metallic character <span class="hl-event">decreases</span>, Electronegativity <span class="hl-date">increases</span>. OR "<span class="hl-event">DIMEN</span>" = Decreases, Increases, Metallic down, EN up, Non-metallic up.</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Down a Group (T→B):</div>
+<div class="mnemonic-content"><span class="hl-event">"SIR MADE"</span> - Size <span class="hl-date">Increases</span>, Ionization energy <span class="hl-event">Reduces</span>, Metallic character <span class="hl-date">increases</span>, Atomic radius <span class="hl-date">increases</span>, Density <span class="hl-date">increases</span>, Electronegativity <span class="hl-event">decreases</span>.</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-sort text-amber-400"></i>Alkali Metals (Group 1) in Order</div>
+
+<div class="mnemonic-box">
+<div class="mnemotion-title"><i class="fas fa-brain text-amber-400"></i> Li Na K Rb Cs Fr:</div>
+<div class="mnemonic-content"><span class="hl-event">"Little Naughty Kids Rub Cathy's Face"</span> or <span class="hl-event">"Lazy Naughty Kids Rub Cats Fur"</span> - Li, Na, K, Rb, Cs, Fr (top to bottom).</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-sort text-amber-400"></i>Alkaline Earth Metals (Group 2) in Order</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Be Mg Ca Sr Ba Ra:</div>
+<div class="mnemonic-content"><span class="hl-event">"Beta Mange Car Sir Bahut Rada"</span> or <span class="hl-event">"Baba Mange Car Sardi Mein"</span> - Be, Mg, Ca, Sr, Ba, Ra (top to bottom).</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-sort text-amber-400"></i>Halogens (Group 17) in Order</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> F Cl Br I At:</div>
+<div class="mnemonic-content"><span class="hl-event">"Foolish Clowns Break Into A Train"</span> or <span class="hl-event">"Father Climbed Bricks In Attic"</span> - F, Cl, Br, I, At (top to bottom).</div>
+</div>
+
+<div class="subsection-heading"><i class="fa-solid fa-sort text-amber-400"></i>First 20 Elements / MCQ Favorite</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Periodic Table First 20 Elements:</div>
+<div class="mnemonic-content"><span class="hl-event">"H He Li Be B</span> - Harry Helped Little Betty Brown<br>
+<span class="hl-event">C N O F Ne</span> - Cry Not Over Fun Nights<br>
+<span class="hl-event">Na Mg Al Si P</span> - Naughty Maggie Always Sits Properly<br>
+<span class="hl-event">S Cl Ar K Ca</span> - Saturday Class Arises, Kids Calmly."</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> Reactivity Series of Halogens:</div>
+<div class="mnemonic-content"><span class="hl-event">"FCI"</span> (read as "Fizzy See") - F₂ &gt; Cl₂ &gt; I₂. But full order: <span class="hl-event">F &gt; Cl &gt; Br &gt; I</span>. Trick: <span class="hl-event">"Fat Cats Bite Insects"</span> = F, Cl, Br, I (most to least reactive).</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fas fa-brain text-amber-400"></i> d-Block Elements (First Series):</div>
+<div class="mnemonic-content"><span class="hl-event">"Sc Ti V Cr Mn Fe Co Ni Cu Zn"</span>. Trick: <span class="hl-event">"Scandium Titanium Vanadium Chromium Manganese Iron Cobalt Nickel Copper Zinc"</span> - or simply: <span class="hl-event">"Scooter TiVi Car Mein FeCoNiCuZinc Hai"</span>.</div>
+</div>
+</section>
+
+<!-- SEC 11: MCQs -->
+<section id="sec11" class="gradient-card-1 glow-card mb-6">
+<h2 class="section-heading"><i class="fa-solid fa-pen-to-square text-amber-400"></i> 11. Practice Questions — 40 MCQs</h2>
+<p class="content-text">Click any question box to reveal the answer.</p>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">1. Who proposed the Law of Octaves for classification of elements?</div>
+  <div class="mcq-opt">A) Dobereiner</div>
+  <div class="mcq-opt">B) Newlands</div>
+  <div class="mcq-opt">C) Mendeleev</div>
+  <div class="mcq-opt">D) Moseley</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) John Newlands (1864)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">2. In Dobereiner's triads, the atomic weight of the middle element is:</div>
+  <div class="mcq-opt">A) Equal to the first</div>
+  <div class="mcq-opt">B) Equal to the last</div>
+  <div class="mcq-opt">C) Average of the other two</div>
+  <div class="mcq-opt">D) Sum of the other two</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Average of the other two</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">3. Which of the following is a Dobereiner's triad?</div>
+  <div class="mcq-opt">A) Li, Na, K</div>
+  <div class="mcq-opt">B) H, Li, Na</div>
+  <div class="mcq-opt">C) C, N, O</div>
+  <div class="mcq-opt">D) Fe, Co, Ni</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Li, Na, K (all alkali metals)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">4. Newlands' Law of Octaves worked up to which element?</div>
+  <div class="mcq-opt">A) Sodium</div>
+  <div class="mcq-opt">B) Potassium</div>
+  <div class="mcq-opt">C) Calcium</div>
+  <div class="mcq-opt">D) Aluminium</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Calcium (Ca)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">5. Mendeleev's periodic table was based on:</div>
+  <div class="mcq-opt">A) Atomic number</div>
+  <div class="mcq-opt">B) Atomic mass</div>
+  <div class="mcq-opt">C) Valence electrons</div>
+  <div class="mcq-opt">D) Atomic volume</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Atomic mass</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">6. Which element did Mendeleev predict as 'Eka-aluminium'?</div>
+  <div class="mcq-opt">A) Scandium</div>
+  <div class="mcq-opt">B) Gallium</div>
+  <div class="mcq-opt">C) Germanium</div>
+  <div class="mcq-opt">D) Technetium</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Gallium (Ga)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">7. The modern periodic law is based on:</div>
+  <div class="mcq-opt">A) Atomic mass</div>
+  <div class="mcq-opt">B) Atomic number</div>
+  <div class="mcq-opt">C) Atomic radius</div>
+  <div class="mcq-opt">D) Density</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Atomic number (proposed by Moseley)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">8. Who discovered that atomic number is the fundamental property of elements?</div>
+  <div class="mcq-opt">A) Mendeleev</div>
+  <div class="mcq-opt">B) Newlands</div>
+  <div class="mcq-opt">C) Moseley</div>
+  <div class="mcq-opt">D) Dobereiner</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Henry Moseley (1913)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">9. How many groups are there in the modern periodic table?</div>
+  <div class="mcq-opt">A) 8</div>
+  <div class="mcq-opt">B) 16</div>
+  <div class="mcq-opt">C) 18</div>
+  <div class="mcq-opt">D) 7</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 18 groups</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">10. How many periods are there in the modern periodic table?</div>
+  <div class="mcq-opt">A) 5</div>
+  <div class="mcq-opt">B) 6</div>
+  <div class="mcq-opt">C) 7</div>
+  <div class="mcq-opt">D) 8</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 7 periods</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">11. Atomic size decreases across a period because:</div>
+  <div class="mcq-opt">A) Number of shells decreases</div>
+  <div class="mcq-opt">B) Nuclear charge increases, pulling electrons closer</div>
+  <div class="mcq-opt">C) Electrons repel each other</div>
+  <div class="mcq-opt">D) Atoms become lighter</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Nuclear charge increases, pulling electrons closer</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">12. Which element has the highest electronegativity?</div>
+  <div class="mcq-opt">A) Chlorine</div>
+  <div class="mcq-opt">B) Oxygen</div>
+  <div class="mcq-opt">C) Fluorine</div>
+  <div class="mcq-opt">D) Nitrogen</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Fluorine (F) — Pauling scale 4.0</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">13. Down a group, ionization energy generally:</div>
+  <div class="mcq-opt">A) Increases</div>
+  <div class="mcq-opt">B) Decreases</div>
+  <div class="mcq-opt">C) Remains same</div>
+  <div class="mcq-opt">D) First increases then decreases</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Decreases (electrons are farther from nucleus)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">14. Sodium (Na) belongs to which period and group?</div>
+  <div class="mcq-opt">A) Period 2, Group 1</div>
+  <div class="mcq-opt">B) Period 3, Group 1</div>
+  <div class="mcq-opt">C) Period 3, Group 2</div>
+  <div class="mcq-opt">D) Period 2, Group 2</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Period 3, Group 1 (config: 2,8,1)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">15. Chlorine (Cl) belongs to which group?</div>
+  <div class="mcq-opt">A) Group 7</div>
+  <div class="mcq-opt">B) Group 15</div>
+  <div class="mcq-opt">C) Group 17</div>
+  <div class="mcq-opt">D) Group 18</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Group 17 (config: 2,8,7 → 10+7=17)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">16. Which of the following is NOT a halogen?</div>
+  <div class="mcq-opt">A) Fluorine</div>
+  <div class="mcq-opt">B) Chlorine</div>
+  <div class="mcq-opt">C) Bromine</div>
+  <div class="mcq-opt">D) Sulphur</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Sulphur (Group 16, not 17)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">17. Noble gases are placed in which group?</div>
+  <div class="mcq-opt">A) Group 17</div>
+  <div class="mcq-opt">B) Group 16</div>
+  <div class="mcq-opt">C) Group 18</div>
+  <div class="mcq-opt">D) Group 15</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Group 18</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">18. Which group contains the alkali metals?</div>
+  <div class="mcq-opt">A) Group 2</div>
+  <div class="mcq-opt">B) Group 1</div>
+  <div class="mcq-opt">C) Group 17</div>
+  <div class="mcq-opt">D) Group 18</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Group 1</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">19. Transition elements belong to which block?</div>
+  <div class="mcq-opt">A) s-block</div>
+  <div class="mcq-opt">B) p-block</div>
+  <div class="mcq-opt">C) d-block</div>
+  <div class="mcq-opt">D) f-block</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) d-block (Groups 3-12)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">20. Which element is placed at the top of Group 17 (Halogens)?</div>
+  <div class="mcq-opt">A) Chlorine</div>
+  <div class="mcq-opt">B) Fluorine</div>
+  <div class="mcq-opt">C) Bromine</div>
+  <div class="mcq-opt">D) Iodine</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Fluorine (F)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">21. The most reactive metal among alkali metals is:</div>
+  <div class="mcq-opt">A) Li</div>
+  <div class="mcq-opt">B) Na</div>
+  <div class="mcq-opt">C) K</div>
+  <div class="mcq-opt">D) Fr</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Francium (Fr) — reactivity increases down group</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">22. Which of the following elements has the largest atomic radius?</div>
+  <div class="mcq-opt">A) Li</div>
+  <div class="mcq-opt">B) Na</div>
+  <div class="mcq-opt">C) K</div>
+  <div class="mcq-opt">D) Rb</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Rb (Rubidium — largest down the group)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">23. Which property increases across a period?</div>
+  <div class="mcq-opt">A) Atomic size</div>
+  <div class="mcq-opt">B) Metallic character</div>
+  <div class="mcq-opt">C) Electronegativity</div>
+  <div class="mcq-opt">D) Atomic radius</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Electronegativity increases across a period</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">24. Which of the following is a Dobereiner's triad?</div>
+  <div class="mcq-opt">A) Fe, Co, Ni</div>
+  <div class="mcq-opt">B) Cl, Br, I</div>
+  <div class="mcq-opt">C) N, P, As</div>
+  <div class="mcq-opt">D) O, S, Se</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Cl, Br, I (halogens — a valid triad)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">25. Eka-silicon predicted by Mendeleev is now known as:</div>
+  <div class="mcq-opt">A) Gallium</div>
+  <div class="mcq-opt">B) Scandium</div>
+  <div class="mcq-opt">C) Germanium</div>
+  <div class="mcq-opt">D) Technetium</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Germanium (Ge)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">26. The element having electronic configuration 2,8,8,2 belongs to:</div>
+  <div class="mcq-opt">A) Group 2, Period 4</div>
+  <div class="mcq-opt">B) Group 4, Period 2</div>
+  <div class="mcq-opt">C) Group 2, Period 3</div>
+  <div class="mcq-opt">D) Group 8, Period 4</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Group 2, Period 4 (Calcium)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">27. Alkali metals are stored under:</div>
+  <div class="mcq-opt">A) Water</div>
+  <div class="mcq-opt">B) Alcohol</div>
+  <div class="mcq-opt">C) Kerosene oil</div>
+  <div class="mcq-opt">D) Glycerin</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Kerosene oil (prevents reaction with air/moisture)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">28. Which halogen is a liquid at room temperature?</div>
+  <div class="mcq-opt">A) Chlorine</div>
+  <div class="mcq-opt">B) Bromine</div>
+  <div class="mcq-opt">C) Iodine</div>
+  <div class="mcq-opt">D) Fluorine</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Bromine (Br₂ — reddish-brown liquid)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">29. Which gas is used in neon signs?</div>
+  <div class="mcq-opt">A) Helium</div>
+  <div class="mcq-opt">B) Neon</div>
+  <div class="mcq-opt">C) Argon</div>
+  <div class="mcq-opt">D) Krypton</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Neon (glows reddish-orange)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">30. The correct order of reactivity among halogens is:</div>
+  <div class="mcq-opt">A) F₂ &lt; Cl₂ &lt; Br₂ &lt; I₂</div>
+  <div class="mcq-opt">B) F₂ &gt; Cl₂ &gt; Br₂ &gt; I₂</div>
+  <div class="mcq-opt">C) F₂ = Cl₂ = Br₂ = I₂</div>
+  <div class="mcq-opt">D) I₂ &gt; Br₂ &gt; Cl₂ &gt; F₂</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) F₂ &gt; Cl₂ &gt; Br₂ &gt; I₂</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">31. Lanthanoids and Actinoids belong to which block?</div>
+  <div class="mcq-opt">A) s-block</div>
+  <div class="mcq-opt">B) p-block</div>
+  <div class="mcq-opt">C) d-block</div>
+  <div class="mcq-opt">D) f-block</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) f-block (inner transition elements)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">32. Which of the following elements is a metalloid?</div>
+  <div class="mcq-opt">A) Carbon</div>
+  <div class="mcq-opt">B) Silicon</div>
+  <div class="mcq-opt">C) Sulphur</div>
+  <div class="mcq-opt">D) Aluminium</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Silicon (Si — p-block metalloid)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">33. The element with atomic number 20 has how many shells?</div>
+  <div class="mcq-opt">A) 2</div>
+  <div class="mcq-opt">B) 3</div>
+  <div class="mcq-opt">C) 4</div>
+  <div class="mcq-opt">D) 5</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 4 (Ca: 2,8,8,2 — 4 shells = Period 4)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">34. Which of the following pairs violates Mendeleev's original order?</div>
+  <div class="mcq-opt">A) Na &amp; K</div>
+  <div class="mcq-opt">B) Co &amp; Ni</div>
+  <div class="mcq-opt">C) Li &amp; Na</div>
+  <div class="mcq-opt">D) F &amp; Cl</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Co (58.93) placed before Ni (58.69) despite higher atomic mass</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">35. Which of these is a characteristic of d-block elements?</div>
+  <div class="mcq-opt">A) Fixed oxidation state</div>
+  <div class="mcq-opt">B) Variable oxidation states</div>
+  <div class="mcq-opt">C) Always gases</div>
+  <div class="mcq-opt">D) Low melting points</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Variable oxidation states (e.g., Fe²⁺ and Fe³⁺)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">36. Helium (He) is placed in Group 18 despite having:</div>
+  <div class="mcq-opt">A) 8 valence electrons</div>
+  <div class="mcq-opt">B) 2 valence electrons</div>
+  <div class="mcq-opt">C) 1 valence electron</div>
+  <div class="mcq-opt">D) 6 valence electrons</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 2 valence electrons (K shell is full — stable like noble gases)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">37. Which of the following gases is used as an inert atmosphere in welding?</div>
+  <div class="mcq-opt">A) Neon</div>
+  <div class="mcq-opt">B) Argon</div>
+  <div class="mcq-opt">C) Helium</div>
+  <div class="mcq-opt">D) Krypton</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Argon (most abundant noble gas in air)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">38. The valency of an element in Group 16 is:</div>
+  <div class="mcq-opt">A) +1</div>
+  <div class="mcq-opt">B) +2</div>
+  <div class="mcq-opt">C) -2</div>
+  <div class="mcq-opt">D) -1</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) -2 (needs 2 electrons to complete octet)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">39. Which of the following is NOT a limitation of Mendeleev's periodic table?</div>
+  <div class="mcq-opt">A) Wrong order of some elements</div>
+  <div class="mcq-opt">B) No place for noble gases</div>
+  <div class="mcq-opt">C) Left gaps for undiscovered elements</div>
+  <div class="mcq-opt">D) Could not explain isotopes</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Left gaps for undiscovered elements (this was a strength, not a limitation!)</div>
+</div>
+
+<div class="mcq-block" onclick="toggleAns(this)">
+  <div class="mcq-q">40. Which trend is correct across a period (left to right)?</div>
+  <div class="mcq-opt">A) Atomic radius increases</div>
+  <div class="mcq-opt">B) Ionization energy decreases</div>
+  <div class="mcq-opt">C) Non-metallic character increases</div>
+  <div class="mcq-opt">D) Metallic character increases</div>
+  <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Non-metallic character increases across a period</div>
+</div>
+
+</section>
+
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6"><i class="fa-solid fa-table text-amber-400/50 mr-2"></i>Periodic Classification of Elements · NCERT Science Notes · Class 6-10<br>Compiled for BPSC/UPSC revision · Click MCQs to reveal answers</div></div>
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.1 });
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+function toggleAns(el) { const ans = el.querySelector(".mcq-ans"); if (ans) ans.classList.toggle("show"); }
+function toggleMenu() { const m = document.getElementById("nav-menu"); const i = document.getElementById("hamburger-icon"); m.classList.toggle("hidden"); i.classList.toggle("fa-bars"); i.classList.toggle("fa-times"); }
+</script>
+</body>
+</html>

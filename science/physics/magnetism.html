@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnetism &amp; Magnetic Effects of Electric Current | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-magnet text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Magnetism &amp; Magnetic Effects of Electric Current</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Science · Class 6 to 10 · Comprehensive Notes for BPSC / UPSC</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-magnet text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Magnets</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Magnetic Field</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. Current &amp; Field</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Electromagnet</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Force on Conductor</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Electric Motor</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. EMI</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Generator</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. Domestic Circuits</a>
+        <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">10. Comparisons</a>
+        <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">11. Mnemonics</a>
+        <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">12. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Magnets -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-magnet text-amber-400 text-sm"></i> 1. Magnets – Types, Properties &amp; Materials</h2>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">magnet</span> is an object that produces a <span class="hl-term">magnetic field</span> and attracts materials like iron, nickel, and cobalt. The word "magnet" comes from the region <span class="hl-place">Magnesia</span> in ancient Greece where natural magnets (lodestones) were first found.</p>
+
+      <div class="subsection-heading"><i class="fas fa-diagram-group text-amber-400 text-xs mr-2"></i>Types of Magnets</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Source / Method</th><th>Examples</th><th>Strength</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Natural Magnets</span></td><td>Found in nature – iron ore (Fe₃O₄) called <em>lodestone</em> or <em>magnetite</em></td><td>Lodestone (Magnetite)</td><td>Weak (permanent)</td></tr>
+            <tr><td><span class="hl-term">Artificial Permanent Magnets</span></td><td>Man-made by magnetising steel/iron alloys</td><td>Bar magnet, horseshoe magnet, U-shaped magnet, ring magnet</td><td>Moderate to strong</td></tr>
+            <tr><td><span class="hl-term">Temporary Magnets</span></td><td>Materials that behave as magnets only when in contact with a permanent magnet</td><td>Soft iron core, paper clips, iron nails</td><td>Temporary (lose magnetism)</td></tr>
+            <tr><td><span class="hl-term">Electromagnets</span></td><td>Coil of wire carrying electric current around a soft iron core</td><td>Solenoid with iron core, lifting magnets</td><td>Very strong (adjustable)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-list-check text-amber-400 text-xs mr-2"></i>Basic Properties of Magnets</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Attracts magnetic materials</span> – iron, nickel, cobalt, and some alloys like steel. Non-magnetic materials like wood, plastic, glass, and paper are NOT attracted.</li>
+        <li><span class="hl-term">Two Poles – North &amp; South</span> – Every magnet has two poles. The end that points towards the geographic North is called the <span class="hl-event">North Pole (N)</span>; the other end is the <span class="hl-ruler">South Pole (S)</span>.</li>
+        <li><span class="hl-term">Like poles repel, unlike poles attract</span> – N–N and S–S repel; N–S attract. This is the <span class="hl-event">fundamental law of magnetism</span>.</li>
+        <li><span class="hl-term">Poles exist in pairs</span> – You cannot isolate a single pole. If you cut a bar magnet into two, each piece becomes a complete magnet with its own N and S poles.</li>
+        <li><span class="hl-term">Directive property</span> – A freely suspended magnet always aligns itself in the N–S direction (used in compasses).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-table-cells text-amber-400 text-xs mr-2"></i>Magnetic Materials – Classification</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Category</th><th>Definition</th><th>Examples</th><th>Behaviour in Magnetic Field</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Ferromagnetic</span></td><td>Strongly attracted to magnets; can be permanently magnetised</td><td>Iron (Fe), Nickel (Ni), Cobalt (Co), Steel, Alnico</td><td>Strongly attracted; become magnets themselves</td></tr>
+            <tr><td><span class="hl-term">Paramagnetic</span></td><td>Weakly attracted to magnets; cannot be permanently magnetised</td><td>Aluminium (Al), Platinum (Pt), Manganese (Mn), Oxygen (liquid)</td><td>Weakly attracted; lose magnetism when field removed</td></tr>
+            <tr><td><span class="hl-term">Diamagnetic</span></td><td>Weakly repelled by magnets</td><td>Bismuth (Bi), Copper (Cu), Water, Gold (Au), Silver (Ag), Wood</td><td>Weakly repelled; induced magnetism opposes field</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of ferromagnetic materials like <em>loyal fans</em> — they strongly follow the magnet's lead and become fans themselves. Paramagnetic materials are like <em>shy fans</em> — they follow weakly. Diamagnetic materials are like <em>rebels</em> — they push away from the magnet!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Magnetic Field -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-circle-nodes text-amber-400 text-sm"></i> 2. Magnetic Field – Lines, Patterns &amp; Earth's Magnetism</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3">The <span class="hl-term">magnetic field</span> is the region around a magnet (or a current-carrying conductor) where another magnet or magnetic material experiences a <span class="hl-event">force</span>. It is represented by <span class="hl-term">magnetic field lines</span> (also called lines of force).</p>
+
+      <div class="subsection-heading"><i class="fas fa-chart-line text-amber-400 text-xs mr-2"></i>Properties of Magnetic Field Lines</div>
+      <ul class="bullet-list text-sm">
+        <li>Magnetic field lines are <span class="hl-term">closed continuous curves</span>. Outside the magnet, they go from <span class="hl-event">North to South</span>. Inside the magnet, they go from <span class="hl-ruler">South to North</span>.</li>
+        <li>They <span class="hl-term">never intersect</span> each other. If they did, at the point of intersection the compass needle would point in two directions — impossible!</li>
+        <li>The <span class="hl-term">closeness of lines</span> indicates field strength. Dense lines = strong field (near poles). Sparse lines = weak field.</li>
+        <li>The <span class="hl-term">direction</span> of the field at any point is the direction in which a <span class="hl-place">North pole</span> would move if placed there.</li>
+        <li>Field lines are <span class="hl-term">crowded at the poles</span> and spread out as they move away, showing that the magnetic field is strongest near the poles.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Magnetic field lines are like the <em>paths ants follow around their colony</em> — they form closed loops from N to S outside the magnet and S to N inside, just like ants leaving from one entrance and returning through another.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-earth-americas text-amber-400 text-xs mr-2"></i>Earth's Magnetism</div>
+      <p class="text-sm text-gray-400 mb-3">The Earth itself behaves like a <span class="hl-term">giant bar magnet</span> with its magnetic field extending far into space. This is why a compass needle always points North.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Magnetic North Pole</span> is near the <span class="hl-place">geographic South Pole</span>. Wait – confusing? Here's the key: The geographic North Pole of Earth acts as the <span class="hl-event">magnetic South pole</span> (because the North pole of a compass needle is attracted to it).</li>
+        <li><span class="hl-term">Magnetic Declination</span> – The angle between the geographic meridian (true north) and the magnetic meridian (direction of compass needle). This varies with location.</li>
+        <li><span class="hl-term">Magnetic Inclination (Dip)</span> – The angle that the Earth's magnetic field makes with the horizontal plane. At the magnetic equator, dip = 0°. At magnetic poles, dip = 90°.</li>
+      </ul>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Term</th><th>Definition</th><th>Key Point for Exams</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Declination</span></td><td>Angle between true geographic north and magnetic north</td><td>Different at different places on Earth</td></tr>
+            <tr><td><span class="hl-term">Inclination (Dip)</span></td><td>Angle between Earth's magnetic field and horizontal surface</td><td>0° at equator, 90° at poles</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Magnetic Field Due to Current -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-bolt text-amber-400 text-sm"></i> 3. Magnetic Field Due to Electric Current</h2>
+
+      <div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Oersted's Experiment (1820)</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Hans Christian Oersted</span> discovered that a <span class="hl-event">current-carrying wire</span> deflects a nearby compass needle. This was the first evidence linking <span class="hl-term">electricity</span> and <span class="hl-term">magnetism</span>.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Setup:</span> A wire is placed parallel to a compass needle. When current flows, the needle <span class="hl-event">deflects</span>.</li>
+        <li><span class="hl-term">Conclusion:</span> Electric current produces a <span class="hl-ruler">magnetic field</span> around it.</li>
+        <li>The direction of deflection depends on the <span class="hl-term">direction of current</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Magnetic Field of a Straight Current-Carrying Conductor</div>
+      <p class="text-sm text-gray-400 mb-2">The magnetic field lines around a straight wire are <span class="hl-term">concentric circles</span> with the wire at the centre. The strength of the field depends on:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Current (I)</span> – Higher current → stronger field (directly proportional).</li>
+        <li><span class="hl-term">Distance (r)</span> – Farther from wire → weaker field (inversely proportional).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-hand-peace text-amber-400 text-xs mr-2"></i>Right-Hand Thumb Rule (Maxwell's Corkscrew Rule)</div>
+      <p class="text-sm text-gray-400 mb-3">Imagine holding the <span class="hl-term">current-carrying wire</span> in your <span class="hl-event">right hand</span> with your <span class="hl-ruler">thumb pointing in the direction of current</span>. Then your <span class="hl-ruler">curled fingers</span> show the <span class="hl-term">direction of magnetic field lines</span>.</p>
+
+      <div class="subsection-heading"><i class="fas fa-circle text-amber-400 text-xs mr-2"></i>Magnetic Field of a Circular Loop</div>
+      <ul class="bullet-list text-sm">
+        <li>When current flows through a <span class="hl-term">circular loop</span>, the magnetic field lines are concentrated at the <span class="hl-event">centre of the loop</span>.</li>
+        <li>The field at the centre is <span class="hl-term">perpendicular to the plane of the loop</span>.</li>
+        <li>Strength depends on: <span class="hl-term">Number of turns (N)</span>, <span class="hl-term">Current (I)</span>, <span class="hl-term">Radius (r)</span>. More turns → stronger field. Larger radius → weaker field.</li>
+        <li>The field can be increased by: using <span class="hl-ruler">more turns</span>, using <span class="hl-ruler">larger current</span>, or <span class="hl-ruler">reducing radius</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-up-wide-short text-amber-400 text-xs mr-2"></i>Solenoid</div>
+      <p class="text-sm text-gray-400 mb-3">A <span class="hl-term">solenoid</span> is a long coil of wire with many turns, shaped like a <span class="hl-event">cylindrical helix</span>. When current flows through it, it behaves like a <span class="hl-term">bar magnet</span> with a North Pole at one end and a South Pole at the other.</p>
+      <ul class="bullet-list text-sm">
+        <li>The magnetic field inside a solenoid is <span class="hl-term">uniform and parallel</span> (like a bar magnet's internal field).</li>
+        <li>Outside the solenoid, the field pattern is <span class="hl-term">similar to that of a bar magnet</span>.</li>
+        <li>Uses: <span class="hl-term">Electromagnets</span>, <span class="hl-term">doorbells</span>, <span class="hl-term">MRI machines</span>, <span class="hl-term">switches and relays</span>.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> A solenoid is like a <em>slinky toy with electricity</em> — each turn is like a tiny circular loop, and together they combine to produce a strong uniform field, just like many small fans blowing in the same direction create a strong wind.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Electromagnet -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-industry text-amber-400 text-sm"></i> 4. Electromagnet – Construction, Working &amp; Uses</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>What is an Electromagnet?</div>
+      <p class="text-sm text-gray-400 mb-3">An <span class="hl-term">electromagnet</span> is a <span class="hl-event">temporary magnet</span> made by passing electric current through a coil of wire wrapped around a <span class="hl-term">soft iron core</span>. It behaves as a magnet only when current flows through it.</p>
+
+      <div class="subsection-heading"><i class="fas fa-gear text-amber-400 text-xs mr-2"></i>Construction</div>
+      <ul class="bullet-list text-sm">
+        <li>Take a <span class="hl-term">soft iron rod</span> (the core).</li>
+        <li>Wind a <span class="hl-term">coil of insulated copper wire</span> around it (many turns).</li>
+        <li>Connect the ends of the wire to a <span class="hl-term">battery</span> through a <span class="hl-term">switch</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-play text-amber-400 text-xs mr-2"></i>Working</div>
+      <p class="text-sm text-gray-400 mb-3">When current flows through the coil, a <span class="hl-term">magnetic field</span> is produced. The soft iron core becomes <span class="hl-event">strongly magnetised</span>. When the current is switched off, the core <span class="hl-term">loses its magnetism</span> almost completely because soft iron has <span class="hl-ruler">low retentivity</span> (does not retain magnetism).</p>
+
+      <div class="subsection-heading"><i class="fas fa-wrench text-amber-400 text-xs mr-2"></i>Uses of Electromagnets</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Application</th><th>How Electromagnet is Used</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Electric Cranes</span></td><td>Lift heavy iron/steel scrap in junkyards — switch on to pick up, switch off to drop</td></tr>
+            <tr><td><span class="hl-term">MRI Machines</span></td><td>Powerful electromagnets create strong magnetic fields for medical imaging</td></tr>
+            <tr><td><span class="hl-term">Speakers &amp; Earphones</span></td><td>Electromagnet vibrates a diaphragm to produce sound</td></tr>
+            <tr><td><span class="hl-term">Electric Doorbells</span></td><td>Electromagnet pulls an iron striker to hit the bell</td></tr>
+            <tr><td><span class="hl-term">Electric Motors &amp; Generators</span></td><td>Electromagnets are the core components</td></tr>
+            <tr><td><span class="hl-term">Relays &amp; Switches</span></td><td>Used in circuits to switch on/off heavy loads with small currents</td></tr>
+            <tr><td><span class="hl-term">Maglev Trains</span></td><td>Electromagnets lift and propel trains using magnetic levitation</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Electromagnet vs Permanent Magnet</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Electromagnet</th><th>Permanent Magnet</th></tr></thead>
+          <tbody>
+            <tr><td>Magnetism source</td><td><span class="hl-ruler">Electric current</span></td><td><span class="hl-date">Inherent (material property)</span></td></tr>
+            <tr><td>Strength</td><td>Can be made <span class="hl-num">very strong</span> (adjustable by current)</td><td>Fixed (moderate strength)</td></tr>
+            <tr><td>On/Off control</td><td>Can be <span class="hl-event">switched on/off</span></td><td>Always magnetic</td></tr>
+            <tr><td>Polarity reversal</td><td>Can be reversed by <span class="hl-ruler">reversing current</span></td><td>Cannot be reversed</td></tr>
+            <tr><td>Core material</td><td><span class="hl-place">Soft iron</span> (low retentivity)</td><td><span class="hl-event">Steel / Alnico</span> (high retentivity)</td></tr>
+            <tr><td>Power required</td><td>Needs continuous <span class="hl-num">electricity</span></td><td>No power needed</td></tr>
+            <tr><td>Uses</td><td>Cranes, motors, generators, MRI, doorbells</td><td>Compasses, fridge magnets, speakers, toys</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Force on Current-Carrying Conductor -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-hand-fist text-amber-400 text-sm"></i> 5. Force on a Current-Carrying Conductor in a Magnetic Field</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Motor Effect</div>
+      <p class="text-sm text-gray-400 mb-3">When a <span class="hl-term">current-carrying conductor</span> is placed in a <span class="hl-term">magnetic field</span>, it experiences a <span class="hl-event">force</span>. This is called the <span class="hl-term">motor effect</span> — because this is the principle behind electric motors.</p>
+
+      <div class="subsection-heading"><i class="fas fa-hand text-amber-400 text-xs mr-2"></i>Fleming's Left-Hand Rule (Motor Rule)</div>
+      <p class="text-sm text-gray-400 mb-3">Hold your <span class="hl-term">left hand</span> so that the <span class="hl-ruler">thumb</span>, <span class="hl-date">forefinger (index finger)</span>, and <span class="hl-event">middle finger</span> are perpendicular to each other:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-ruler">Forefinger</span> – points in the direction of the <span class="hl-ruler">Magnetic Field</span> (N → S).</li>
+        <li><span class="hl-date">Middle finger</span> – points in the direction of the <span class="hl-date">Current</span> (positive to negative).</li>
+        <li><span class="hl-event">Thumb</span> – points in the direction of <span class="hl-event">Force or Motion</span> (thrust).</li>
+      </ul>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Mnemonic: "FBI"</span> – <span class="hl-ruler">F</span>orefinger = <span class="hl-ruler">Field</span>, <span class="hl-event">T</span>humb = <span class="hl-event">Thrust (Force)</span>, Middle finger = Current. Or "Left hand = Motor rule" for remembering which hand to use.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Factors Affecting the Force</div>
+      <p class="text-sm text-gray-400 mb-2">The magnitude of force depends on:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Magnetic Field Strength (B)</span> – Stronger field → larger force.</li>
+        <li><span class="hl-term">Current (I)</span> – Larger current → larger force.</li>
+        <li><span class="hl-term">Length of Conductor (L) inside the field</span> – Longer conductor → larger force.</li>
+        <li><span class="hl-term">Angle between conductor and field (θ)</span> – Maximum force when conductor is <span class="hl-ruler">perpendicular</span> to field (θ = 90°); zero when parallel (θ = 0°).</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">F = B × I × L × sin θ</div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Imagine pushing a <em>shopping cart</em> — if you push from the side (perpendicular), it moves easily. If you push from the front (parallel), it does nothing! Similarly, the force on a conductor is maximum when it's perpendicular to the magnetic field.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Electric Motor -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-fan text-amber-400 text-sm"></i> 6. Electric Motor – Principle, Construction &amp; Working</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Principle</div>
+      <p class="text-sm text-gray-400 mb-3">An <span class="hl-term">electric motor</span> works on the principle that a <span class="hl-event">current-carrying coil</span> placed in a <span class="hl-term">magnetic field</span> experiences a <span class="hl-ruler">torque (rotational force)</span> and rotates. This is based on the <span class="hl-term">motor effect</span> (Fleming's Left-Hand Rule).</p>
+
+      <div class="subsection-heading"><i class="fas fa-gear text-amber-400 text-xs mr-2"></i>Construction of a Simple DC Motor</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Part</th><th>Material</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Armature (Coil)</span></td><td>Rectangular coil of <span class="hl-event">insulated copper wire</span> wound on a soft iron core</td><td>Rotates when current flows; the core concentrates the magnetic field</td></tr>
+            <tr><td><span class="hl-term">Magnet</span></td><td><span class="hl-ruler">Permanent magnet</span> or <span class="hl-ruler">electromagnet</span> (horseshoe shape often)</td><td>Provides the magnetic field in which the coil rotates</td></tr>
+            <tr><td><span class="hl-term">Split Rings (Commutator)</span></td><td>Two halves of a <span class="hl-place">copper ring</span>, split and insulated from each other</td><td>Reverses the direction of current in the coil every half-turn so the coil keeps rotating in the same direction</td></tr>
+            <tr><td><span class="hl-term">Brushes</span></td><td><span class="hl-date">Carbon rods</span> that press against the split rings</td><td>Conduct current from the battery to the split rings</td></tr>
+            <tr><td><span class="hl-term">Battery / Power Supply</span></td><td>DC source</td><td>Provides the electric current</td></tr>
+            <tr><td><span class="hl-term">Axle</span></td><td>Metal rod</td><td>Transmits rotation from armature to outside load</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-play text-amber-400 text-xs mr-2"></i>Working of a DC Motor</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Step 1:</span> Current enters the coil through brush → split ring → flows through armature.</li>
+        <li><span class="hl-term">Step 2:</span> The two sides of the coil experience <span class="hl-event">opposite forces</span> (due to Fleming's LHR — current directions are opposite on the two sides).</li>
+        <li><span class="hl-term">Step 3:</span> This creates a <span class="hl-term">couple (torque)</span> that rotates the coil.</li>
+        <li><span class="hl-term">Step 4:</span> After half a rotation, the <span class="hl-term">split ring (commutator)</span> swaps the contacts, reversing the current direction in the coil.</li>
+        <li><span class="hl-term">Step 5:</span> This ensures the coil continues to rotate in the <span class="hl-ruler">same direction</span> (instead of oscillating back and forth).</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>AC Motor vs DC Motor</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>DC Motor</th><th>AC Motor</th></tr></thead>
+          <tbody>
+            <tr><td>Power Source</td><td><span class="hl-ruler">Direct Current</span> (battery)</td><td><span class="hl-event">Alternating Current</span> (mains)</td></tr>
+            <tr><td>Commutator</td><td><span class="hl-term">Split rings</span> (2 halves)</td><td>No commutator; uses <span class="hl-place">slip rings</span></td></tr>
+            <tr><td>Speed Control</td><td>Easy (adjust voltage)</td><td>Harder (requires frequency control)</td></tr>
+            <tr><td>Starting Torque</td><td>High</td><td>Low</td></tr>
+            <tr><td>Applications</td><td>Electric vehicles, toys, fans, drills</td><td>Industrial machines, pumps, compressors, household fans</td></tr>
+            <tr><td>Maintenance</td><td>Higher (brush wear)</td><td>Lower (brushless)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>Applications of Electric Motors</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Household:</span> Ceiling fans, mixers, washing machines, vacuum cleaners, refrigerators, AC units.</li>
+        <li><span class="hl-term">Transport:</span> Electric vehicles (EVs), trains, trams, elevators.</li>
+        <li><span class="hl-term">Industry:</span> Pumps, conveyor belts, cranes, drills, lathe machines.</li>
+        <li><span class="hl-term">Small devices:</span> Toys, electric razors, computer fans, hard disk drives.</li>
+      </ul>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Electromagnetic Induction -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-wave text-amber-400 text-sm"></i> 7. Electromagnetic Induction – Faraday's Experiments</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Electromagnetic Induction (EMI)</span> is the process of generating an <span class="hl-event">electric current</span> in a conductor by changing the <span class="hl-term">magnetic field</span> around it. This is the <span class="hl-ruler">opposite of the motor effect</span> — here motion produces electricity instead of electricity producing motion.</p>
+
+      <div class="subsection-heading"><i class="fas fa-flask text-amber-400 text-xs mr-2"></i>Faraday's Experiments (1831)</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Michael Faraday</span> conducted a series of experiments showing that a changing magnetic field induces current in a nearby conductor.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Experiment 1:</span> A coil connected to a galvanometer. When a bar magnet is <span class="hl-event">moved towards or away</span> from the coil, the galvanometer deflects — showing induced current.</li>
+        <li><span class="hl-term">Experiment 2:</span> When the magnet is <span class="hl-ruler">stationary</span> inside the coil, no current flows (galvanometer shows zero). Current flows <span class="hl-term">only when the magnet moves</span>.</li>
+        <li><span class="hl-term">Experiment 3:</span> <span class="hl-date">Faster motion</span> → larger deflection. <span class="hl-ruler">Stronger magnet</span> → larger deflection. <span class="hl-place">More turns</span> in coil → larger deflection.</li>
+        <li><span class="hl-term">Experiment 4:</span> Reversing the magnet's direction reverses the <span class="hl-event">direction of induced current</span>.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Electromagnetic induction is like a <em>dance</em> — when you move a magnet near a coil, the coil "feels" it and produces current, just like a dancer responding to their partner's movement. When the partner stops moving, the dance stops. Faster movement = more energetic response!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-hand text-amber-400 text-xs mr-2"></i>Fleming's Right-Hand Rule (Generator Rule)</div>
+      <p class="text-sm text-gray-400 mb-3">Hold your <span class="hl-term">right hand</span> so that the <span class="hl-ruler">thumb</span>, <span class="hl-date">forefinger</span>, and <span class="hl-event">middle finger</span> are perpendicular to each other:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-ruler">Forefinger</span> – points in the direction of the <span class="hl-ruler">Magnetic Field</span>.</li>
+        <li><span class="hl-event">Thumb</span> – points in the direction of <span class="hl-event">Motion</span> of the conductor.</li>
+        <li><span class="hl-date">Middle finger</span> – points in the direction of <span class="hl-date">Induced Current</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-weight-scale text-amber-400 text-xs mr-2"></i>Factors Affecting Induced EMF / Current</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Speed of motion</span> – Faster relative motion → larger induced EMF.</li>
+        <li><span class="hl-term">Strength of magnet</span> – Stronger magnet → larger induced EMF.</li>
+        <li><span class="hl-term">Number of turns (N)</span> – More turns → larger induced EMF.</li>
+        <li><span class="hl-term">Area of the coil (A)</span> – Larger area → larger induced EMF.</li>
+        <li><span class="hl-term">Rate of change of magnetic flux</span> – This is the key! Faster change in flux → larger induced EMF.</li>
+      </ul>
+      <div class="text-sm text-cyan-300 mb-3 font-mono bg-gray-900/50 p-2 rounded">Induced EMF (ε) = –N × (ΔΦ / Δt) &nbsp;(Faraday's Law with Lenz's Law sign)</div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Electric Generator -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-bolt text-amber-400 text-sm"></i> 8. Electric Generator – AC Generator &amp; DC Generator</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Principle</div>
+      <p class="text-sm text-gray-400 mb-3">An <span class="hl-term">electric generator</span> works on the principle of <span class="hl-event">electromagnetic induction</span>. When a coil is rotated in a magnetic field, the <span class="hl-term">magnetic flux</span> linked with the coil changes, which <span class="hl-ruler">induces an EMF</span> (and hence current) in the coil.</p>
+
+      <div class="subsection-heading"><i class="fas fa-gear text-amber-400 text-xs mr-2"></i>AC Generator (Alternator) – Construction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Part</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Field Magnet</span></td><td>Usually an <span class="hl-event">electromagnet</span> that produces a strong magnetic field</td></tr>
+            <tr><td><span class="hl-term">Armature (Coil)</span></td><td>Rectangular coil of <span class="hl-ruler">insulated copper wire</span> that is rotated in the magnetic field</td></tr>
+            <tr><td><span class="hl-term">Slip Rings</span></td><td><span class="hl-date">Two complete rings</span> — each end of the coil is connected to one ring. The rings rotate with the coil.</td></tr>
+            <tr><td><span class="hl-term">Brushes</span></td><td>Carbon brushes press against the slip rings to <span class="hl-place">collect the induced current</span> and send it to the external circuit</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-play text-amber-400 text-xs mr-2"></i>AC Generator – Working</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Step 1:</span> Coil is rotated in the magnetic field (by external mechanical energy — steam, water, wind, etc.).</li>
+        <li><span class="hl-term">Step 2:</span> As the coil rotates, the magnetic flux through it changes continuously, inducing an <span class="hl-event">alternating EMF</span>.</li>
+        <li><span class="hl-term">Step 3:</span> In one full rotation, the current direction reverses <span class="hl-ruler">twice</span> (hence the name <span class="hl-term">alternating current</span>).</li>
+        <li><span class="hl-term">Step 4:</span> The slip rings ensure that the external circuit always receives current flowing in the same relative direction at each terminal — wait, no! The slip rings actually <span class="hl-event">maintain the alternating nature</span> of the current.</li>
+        <li><span class="hl-term">Key:</span> With <span class="hl-term">slip rings</span>, the output is <span class="hl-event">AC</span>. With <span class="hl-term">split rings (commutator)</span>, the output is <span class="hl-ruler">DC</span>.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>AC Generator vs DC Generator</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>AC Generator (Alternator)</th><th>DC Generator (Dynamo)</th></tr></thead>
+          <tbody>
+            <tr><td>Output current</td><td><span class="hl-event">Alternating</span> (changes direction periodically)</td><td><span class="hl-ruler">Direct</span> (flows in one direction)</td></tr>
+            <tr><td>Ring type</td><td><span class="hl-term">Slip rings</span> (two complete rings)</td><td><span class="hl-term">Split rings (Commutator)</span></td></tr>
+            <tr><td>Direction reversal</td><td>Current reverses every <span class="hl-num">half-turn</span></td><td>Commutator reverses coil connections to produce <span class="hl-date">unidirectional current</span></td></tr>
+            <tr><td>Brushes</td><td>Press against slip rings</td><td>Press against commutator</td></tr>
+            <tr><td>Efficiency</td><td>Higher (no sparking at brushes)</td><td>Lower (sparking at commutator)</td></tr>
+            <tr><td>Maintenance</td><td>Lower</td><td>Higher (brush/commutator wear)</td></tr>
+            <tr><td>Applications</td><td>Power plants (thermal, hydro, nuclear, wind), most grid electricity</td><td>Battery charging, electroplating, DC applications, old cars</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of a generator as a <em>bicycle dynamo</em> — when you pedal (rotate the coil), you generate electricity for the headlight. Stop pedalling, the light goes out! In power plants, steam or water does the "pedalling".
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Domestic Electric Circuits -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-house-chimney text-amber-400 text-sm"></i> 9. Domestic Electric Circuits &amp; Safety</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Household Wiring – Three Wires</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Wire</th><th>Colour Code (India)</th><th>Potential / Function</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-event">Live Wire</span> (Phase)</td><td><span class="hl-event">Red or Brown</span></td><td>Carries current from the supply at <span class="hl-num">220V</span> (in India). Dangerous to touch!</td></tr>
+            <tr><td><span class="hl-ruler">Neutral Wire</span></td><td><span class="hl-ruler">Black or Blue</span></td><td>Completes the circuit. At <span class="hl-date">zero potential</span> (connected to ground at the substation).</td></tr>
+            <tr><td><span class="hl-place">Earth Wire</span> (Ground)</td><td><span class="hl-place">Green or Yellow/Green</span></td><td><span class="hl-term">Safety wire</span> – connected to the ground through a metal plate buried in the earth. Provides a low-resistance path for leakage current.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-diagram-project text-amber-400 text-xs mr-2"></i>Parallel Circuits in Homes</div>
+      <p class="text-sm text-gray-400 mb-3">All electrical appliances in a house are connected in <span class="hl-term">parallel</span> across the live and neutral wires. Why parallel is used:</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Independent operation</span> – Each appliance works independently. Switching off one doesn't affect others.</li>
+        <li><span class="hl-term">Same voltage</span> – All appliances get the same voltage (220V in India), so they work at their designed power.</li>
+        <li><span class="hl-term">Individual control</span> – Each appliance can have its own switch.</li>
+        <li><span class="hl-term">Current division</span> – Total current = sum of individual currents, allowing each appliance to draw what it needs.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-shield text-amber-400 text-xs mr-2"></i>Safety Devices: Fuse &amp; MCB</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Device</th><th>Construction</th><th>Working</th><th>Resettable?</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Fuse</span></td><td>Thin wire made of <span class="hl-event">tin-lead alloy</span> or <span class="hl-event">copper</span> with low melting point, housed in a cartridge</td><td>When current exceeds safe limit, the fuse wire <span class="hl-num">melts and breaks</span> the circuit. "Sacrificial" device.</td><td><span class="hl-event">No</span> (must be replaced)</td></tr>
+            <tr><td><span class="hl-term">MCB</span> (Miniature Circuit Breaker)</td><td>Electromagnetic switch with a bimetallic strip</td><td>Detects overload or short circuit and <span class="hl-ruler">trips automatically</span> to break the circuit</td><td><span class="hl-date">Yes</span> (just flip back on)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-plug text-amber-400 text-xs mr-2"></i>Three-Pin Plug &amp; Earthing</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Three pins:</span> Live (right, smaller), Neutral (left, smaller), Earth (top, larger and thicker). The earth pin is longer so it makes contact first when plugging in.</li>
+        <li><span class="hl-term">Earthing:</span> If an appliance's metal body becomes live due to a fault (e.g., loose wire touching the metal case), current flows through the earth wire to the ground instead of through the user. This <span class="hl-event">prevents electric shock</span>.</li>
+        <li><span class="hl-term">Importance:</span> All appliances with metal bodies (refrigerators, washing machines, iron boxes) MUST be earthed.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-triangle-exclamation text-amber-400 text-xs mr-2"></i>Electrical Safety Tips</div>
+      <ul class="bullet-list text-sm">
+        <li>Never touch electrical appliances with <span class="hl-term">wet hands</span> — water conducts electricity.</li>
+        <li>Always use <span class="hl-term">three-pin plugs</span> with earth connection for heavy appliances.</li>
+        <li>Do not overload a single socket — too many appliances drawing high current can overheat the wiring.</li>
+        <li>Use <span class="hl-term">fuses/MCBs</span> of proper rating — too high rating won't protect; too low rating will trip unnecessarily.</li>
+        <li>In case of fire, <span class="hl-event">never use water</span> on electrical fires — use sand or CO₂ extinguisher.</li>
+        <li>Always <span class="hl-term">switch off the main supply</span> before repairing any electrical appliance.</li>
+      </ul>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 10. Comparison Tables – Summary for Exams</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Fleming's Left-Hand Rule vs Right-Hand Rule</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Aspect</th><th>Left-Hand Rule (Motor)</th><th>Right-Hand Rule (Generator)</th></tr></thead>
+          <tbody>
+            <tr><td>Used for</td><td><span class="hl-event">Electric Motor</span> (current → motion)</td><td><span class="hl-ruler">Electric Generator</span> (motion → current)</td></tr>
+            <tr><td>Thumb</td><td><span class="hl-event">Force / Thrust (Motion)</span></td><td><span class="hl-event">Motion of conductor</span></td></tr>
+            <tr><td>Forefinger</td><td><span class="hl-ruler">Magnetic Field</span></td><td><span class="hl-ruler">Magnetic Field</span></td></tr>
+            <tr><td>Middle finger</td><td><span class="hl-date">Current</span></td><td><span class="hl-date">Induced Current</span></td></tr>
+            <tr><td>Energy conversion</td><td><span class="hl-num">Electrical → Mechanical</span></td><td><span class="hl-date">Mechanical → Electrical</span></td></tr>
+            <tr><td>Mnemonic</td><td>"Left = Motor" (both 4 letters)</td><td>"Right = Generator" (both 7 letters)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Motor vs Generator</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Electric Motor</th><th>Electric Generator</th></tr></thead>
+          <tbody>
+            <tr><td>Input</td><td><span class="hl-ruler">Electrical Energy</span></td><td><span class="hl-date">Mechanical Energy</span></td></tr>
+            <tr><td>Output</td><td><span class="hl-date">Mechanical Energy</span> (rotation)</td><td><span class="hl-ruler">Electrical Energy</span></td></tr>
+            <tr><td>Principle</td><td>Motor effect (LHR) – <span class="hl-event">Force on current-carrying conductor in magnetic field</span></td><td>EM Induction (RHR) – <span class="hl-event">Changing flux induces EMF</span></td></tr>
+            <tr><td>Energy conversion</td><td>Electricity → Motion</td><td>Motion → Electricity</td></tr>
+            <tr><td>Commutator</td><td>Split ring (for DC motor)</td><td>Split ring (DC gen) / Slip ring (AC gen)</td></tr>
+            <tr><td>Hand rule</td><td><span class="hl-event">Left Hand</span></td><td><span class="hl-ruler">Right Hand</span></td></tr>
+            <tr><td>Examples</td><td>Fan, drill, blender, EV</td><td>Power plant alternator, bicycle dynamo</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Electromagnet vs Permanent Magnet</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Electromagnet</th><th>Permanent Magnet</th></tr></thead>
+          <tbody>
+            <tr><td>Magnetism source</td><td><span class="hl-ruler">Electric current</span></td><td><span class="hl-date">Inherent property</span></td></tr>
+            <tr><td>Strength</td><td>Adjustable (can be very strong)</td><td>Fixed</td></tr>
+            <tr><td>On/Off</td><td>Can be switched on/off</td><td>Always on</td></tr>
+            <tr><td>Polarity</td><td>Reversible (reverse current)</td><td>Fixed</td></tr>
+            <tr><td>Core</td><td>Soft iron (low retentivity)</td><td>Steel / alloy (high retentivity)</td></tr>
+            <tr><td>Power needed</td><td>Continuous electricity</td><td>None</td></tr>
+            <tr><td>Uses</td><td>Cranes, MRI, doorbells, motors, generators</td><td>Compass, fridge magnet, speakers, toys</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Magnetic Materials – Ferro, Para &amp; Diamagnetic</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Ferromagnetic</th><th>Paramagnetic</th><th>Diamagnetic</th></tr></thead>
+          <tbody>
+            <tr><td>Behaviour</td><td><span class="hl-event">Strongly attracted</span></td><td><span class="hl-date">Weakly attracted</span></td><td><span class="hl-ruler">Weakly repelled</span></td></tr>
+            <tr><td>Permanent magnet?</td><td>Yes (can become permanent)</td><td>No</td><td>No</td></tr>
+            <tr><td>Examples</td><td>Fe, Ni, Co, Steel</td><td>Al, Pt, Mn, O₂</td><td>Cu, Bi, Ag, Au, Water</td></tr>
+            <tr><td>Susceptibility (χ)</td><td><span class="hl-num">Large positive</span></td><td><span class="hl-date">Small positive</span></td><td><span class="hl-ruler">Small negative</span></td></tr>
+            <tr><td>Uses</td><td>Magnets, transformers</td><td>MRI contrast agents</td><td>Levitation experiments</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Slip Rings vs Split Rings (Commutator)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Slip Rings</th><th>Split Rings (Commutator)</th></tr></thead>
+          <tbody>
+            <tr><td>Shape</td><td><span class="hl-date">Two complete rings</span></td><td><span class="hl-event">Two half-rings (split)</span></td></tr>
+            <tr><td>Used in</td><td><span class="hl-ruler">AC Generator</span> and <span class="hl-ruler">AC Motor</span></td><td><span class="hl-place">DC Generator</span> and <span class="hl-place">DC Motor</span></td></tr>
+            <tr><td>Output</td><td><span class="hl-event">Alternating Current (AC)</span></td><td><span class="hl-ruler">Direct Current (DC)</span></td></tr>
+            <tr><td>Function</td><td>Maintains connection while rotating; <span class="hl-term">preserves AC nature</span></td><td>Reverses coil connections every half-turn; <span class="hl-term">converts AC to DC</span></td></tr>
+            <tr><td>Connection</td><td>Each end of coil connected to ONE ring</td><td>Each end of coil connected to ONE half-ring</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 11: Mnemonics -->
+    <!-- ============================================================ -->
+    <section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 11. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Fleming's Hand Rules</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Fleming's Rules:</span> <span class="hl-event">"Left = Motor, Right = Generator"</span>. Count letters: <span class="hl-event">Left</span> has 4 letters, <span class="hl-event">Motor</span> has 5 — but both start with M-ish sounds. Better: <span class="hl-event">"LMR"</span> = Left = Motor. <span class="hl-event">"RIG"</span> = Right = Generator (RIG sounds like "rig up" electricity).
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">FBI for Left Hand (Motor):</span> <span class="hl-ruler">F</span>orefinger = <span class="hl-ruler">Field</span>, <span class="hl-event">T</span>humb = <span class="hl-event">Thrust</span>, <span class="hl-date">M</span>iddle = <span class="hl-date">Current</span>. Or use "<span class="hl-event">Fleming's Left Hand = Force</span>" — the thumb gives the direction of Force (motion).
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Magnetic Materials:</span> <span class="hl-event">"Ferro = Fe"</span> (Iron loves magnets). <span class="hl-event">"Para = Pt, Al"</span> (Platinum and Aluminium are slightly attracted). <span class="hl-event">"Diama = Cu, Bi"</span> (Copper and Bismuth are repelled by magnets). Trick: <span class="hl-event">"F-P-D"</span> sounds like "F-P-D" → "Firmly attracted, Partially attracted, Distantly repelled".
+      </div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Earth's Magnetism:</span> The geographic North Pole is <span class="hl-event">actually the magnetic South pole</span>. Trick: <span class="hl-event">"Opposites attract"</span> — the North pole of your compass (which is a North pole) is attracted to the South pole of Earth's magnet. So Earth's magnetic South is near the geographic North.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Right-Hand Thumb Rule</div>
+
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">Right-Hand Thumb Rule:</span> <span class="hl-event">"Thumb = Current, Curled fingers = Field"</span>. Think of a <span class="hl-ruler">corkscrew</span> — as you turn the corkscrew (current direction), it goes into the cork (field direction). "Right hand for a straight wire".
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 12: Practice Questions (15 MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 12. Practice Questions – 15 MCQs for BPSC / UPSC</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. Who discovered the connection between electricity and magnetism?</div>
+        <div class="mcq-opt">A) Michael Faraday</div>
+        <div class="mcq-opt">B) Hans Christian Oersted</div>
+        <div class="mcq-opt">C) James Clerk Maxwell</div>
+        <div class="mcq-opt">D) Andre-Marie Ampere</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Hans Christian Oersted (1820) – observed that a current-carrying wire deflects a compass needle.</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. The magnetic field inside a solenoid is:</div>
+        <div class="mcq-opt">A) Zero</div>
+        <div class="mcq-opt">B) Non-uniform</div>
+        <div class="mcq-opt">C) Uniform and parallel</div>
+        <div class="mcq-opt">D) Radial</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Uniform and parallel (the field lines inside a solenoid are parallel and equally spaced).</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. Fleming's Left-Hand Rule is used to find the direction of:</div>
+        <div class="mcq-opt">A) Induced current in a generator</div>
+        <div class="mcq-opt">B) Force on a current-carrying conductor in a magnetic field</div>
+        <div class="mcq-opt">C) Magnetic field around a straight wire</div>
+        <div class="mcq-opt">D) Magnetic field of a solenoid</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Force (motion) on a current-carrying conductor – used for motors.</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. In a DC motor, the commutator is made of:</div>
+        <div class="mcq-opt">A) Slip rings</div>
+        <div class="mcq-opt">B) Split rings</div>
+        <div class="mcq-opt">C) Carbon brushes</div>
+        <div class="mcq-opt">D) Soft iron core</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Split rings (the commutator reverses current direction every half-turn).</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. Which of the following is NOT a ferromagnetic material?</div>
+        <div class="mcq-opt">A) Iron</div>
+        <div class="mcq-opt">B) Cobalt</div>
+        <div class="mcq-opt">C) Aluminium</div>
+        <div class="mcq-opt">D) Nickel</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Aluminium – it is paramagnetic, not ferromagnetic. Fe, Ni, Co are ferromagnetic.</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. The angle between Earth's magnetic field and the horizontal is called:</div>
+        <div class="mcq-opt">A) Declination</div>
+        <div class="mcq-opt">B) Inclination (Dip)</div>
+        <div class="mcq-opt">C) Latitude</div>
+        <div class="mcq-opt">D) Azimuth</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Inclination (Dip) – 0° at magnetic equator, 90° at magnetic poles.</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. An electric generator converts:</div>
+        <div class="mcq-opt">A) Electrical energy to mechanical energy</div>
+        <div class="mcq-opt">B) Mechanical energy to electrical energy</div>
+        <div class="mcq-opt">C) Chemical energy to electrical energy</div>
+        <div class="mcq-opt">D) Heat energy to electrical energy</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Mechanical → Electrical (based on electromagnetic induction).</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. Which part of an AC generator ensures that the output current is alternating?</div>
+        <div class="mcq-opt">A) Split rings</div>
+        <div class="mcq-opt">B) Slip rings</div>
+        <div class="mcq-opt">C) Brushes</div>
+        <div class="mcq-opt">D) Armature</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Slip rings – they maintain the alternating nature of the induced current.</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. The earth wire in domestic circuits is coloured:</div>
+        <div class="mcq-opt">A) Red</div>
+        <div class="mcq-opt">B) Black</div>
+        <div class="mcq-opt">C) Green</div>
+        <div class="mcq-opt">D) Blue</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Green (or yellow/green) – earth wire for safety.</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. Which of the following devices uses an electromagnet?</div>
+        <div class="mcq-opt">A) Compass</div>
+        <div class="mcq-opt">B) Refrigerator magnet</div>
+        <div class="mcq-opt">C) Electric doorbell</div>
+        <div class="mcq-opt">D) Bar magnet</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Electric doorbell – an electromagnet pulls the striker to hit the bell.</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. The force on a current-carrying conductor placed in a magnetic field is maximum when the angle between the conductor and the field is:</div>
+        <div class="mcq-opt">A) 0°</div>
+        <div class="mcq-opt">B) 45°</div>
+        <div class="mcq-opt">C) 60°</div>
+        <div class="mcq-opt">D) 90°</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) 90° (perpendicular) – F = BIL sinθ, max when sinθ = 1, θ = 90°.</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. The SI unit of magnetic field strength is:</div>
+        <div class="mcq-opt">A) Weber</div>
+        <div class="mcq-opt">B) Tesla</div>
+        <div class="mcq-opt">C) Gauss</div>
+        <div class="mcq-opt">D) Henry</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Tesla (T). 1 T = 10⁴ Gauss. Named after Nikola Tesla.</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. Which rule is used to determine the direction of induced current in a generator?</div>
+        <div class="mcq-opt">A) Fleming's Left-Hand Rule</div>
+        <div class="mcq-opt">B) Fleming's Right-Hand Rule</div>
+        <div class="mcq-opt">C) Right-Hand Thumb Rule</div>
+        <div class="mcq-opt">D) Left-Hand Thumb Rule</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Fleming's Right-Hand Rule – used for generators (motion → induced current).</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. In domestic wiring, appliances are connected in:</div>
+        <div class="mcq-opt">A) Series</div>
+        <div class="mcq-opt">B) Parallel</div>
+        <div class="mcq-opt">C) Series-parallel combination</div>
+        <div class="mcq-opt">D) Depends on the appliance</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Parallel – so each appliance gets the same voltage and works independently.</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. A fuse wire should have:</div>
+        <div class="mcq-opt">A) High melting point and high resistance</div>
+        <div class="mcq-opt">B) Low melting point and low resistance</div>
+        <div class="mcq-opt">C) Low melting point and high resistance</div>
+        <div class="mcq-opt">D) High melting point and low resistance</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Low melting point and high resistance – so it heats up quickly and melts when excess current flows.</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-magnet text-amber-400/50 mr-2"></i>
+      Magnetism &amp; Magnetic Effects of Electric Current · NCERT Physics Notes · Class 6–10
+      <br>Compiled for BPSC / UPSC revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

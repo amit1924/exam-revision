@@ -8,11 +8,7 @@
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    body {
-      background: #0a0e1a;
-      color: #e0e6f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    body { background: #0a0e1a; color: #e0e6f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     .nav-link { transition: all 0.2s; }
     .nav-link:hover { color: #60a5fa; }
     .card {
@@ -31,11 +27,22 @@
     .badge-economics { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
     .badge-geography { background: linear-gradient(135deg, #06b6d4, #0891b2); }
     .badge-science { background: linear-gradient(135deg, #6366f1, #4f46e5); }
-    .gradient-bar {
-      height: 4px;
-      border-radius: 2px;
-      margin-bottom: 16px;
+    .badge-biology { background: linear-gradient(135deg, #22c55e, #16a34a); }
+    .badge-chemistry { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .badge-physics { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    .gradient-bar { height: 4px; border-radius: 2px; margin-bottom: 16px; }
+    .sub-header {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      padding: 6px 16px 4px;
+      color: #6b7280;
+      font-weight: 600;
+      text-transform: uppercase;
+      pointer-events: none;
     }
+    .dropdown-scroll { max-height: 80vh; overflow-y: auto; }
+    .dropdown-scroll::-webkit-scrollbar { width: 4px; }
+    .dropdown-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
   </style>
 </head>
 <body>
@@ -52,15 +59,19 @@
       <div id="main-nav-menu" class="hidden md:flex flex-wrap items-center gap-1 md:gap-4 text-sm">
         <div class="relative group">
           <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-landmark mr-1"></i>History <i class="fas fa-chevron-down text-xs ml-1"></i></button>
-          <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="history/indus_valley_civilization_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-archway w-5 text-yellow-400"></i> Indus Valley</a>
-            <a href="history/mauryan_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-crown w-5 text-yellow-400"></i> Mauryan Empire</a>
-            <a href="history/delhi_sultanate_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-mosque w-5 text-yellow-400"></i> Delhi Sultanate</a>
-            <a href="history/mughal_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-taj-mahal w-5 text-yellow-400"></i> Mughal Empire</a>
-            <a href="history/later_mughals_1857.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-hourglass-end w-5 text-yellow-400"></i> Later Mughals & 1857</a>
-            <a href="history/maratha_empire_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-horse-head w-5 text-yellow-400"></i> Maratha Empire</a>
-            <a href="history/deccan_empires_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-fort-awesome w-5 text-yellow-400"></i> Deccan Empires</a>
-            <a href="history/european_powers_upsc_notes.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-ship w-5 text-yellow-400"></i> European Powers</a>
+          <div class="absolute top-full left-0 mt-1 w-64 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 dropdown-scroll">
+            <div class="sub-header"><i class="fas fa-hourglass-start mr-1 text-yellow-600"></i>Ancient India</div>
+            <a href="history/ancient/indus_valley_civilization_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-archway w-4 text-yellow-400"></i> Indus Valley</a>
+            <a href="history/ancient/mauryan_empire_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-crown w-4 text-yellow-400"></i> Mauryan Empire</a>
+            <div class="sub-header"><i class="fas fa-chess-king mr-1 text-orange-600"></i>Medieval India</div>
+            <a href="history/medieval/delhi_sultanate_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-mosque w-4 text-yellow-400"></i> Delhi Sultanate</a>
+            <a href="history/medieval/mughal_empire_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-taj-mahal w-4 text-yellow-400"></i> Mughal Empire</a>
+            <a href="history/medieval/later_mughals_1857.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-hourglass-end w-4 text-yellow-400"></i> Later Mughals &amp; 1857</a>
+            <a href="history/medieval/maratha_empire_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-horse-head w-4 text-yellow-400"></i> Maratha Empire</a>
+            <a href="history/medieval/deccan_empires_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-fort-awesome w-4 text-yellow-400"></i> Deccan Empires</a>
+            <div class="sub-header"><i class="fas fa-flag mr-1 text-blue-500"></i>Modern India</div>
+            <a href="history/modern/european_powers_upsc_notes.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm"><i class="fas fa-ship w-4 text-yellow-400"></i> European Powers</a>
+            <a href="history/modern/british_india_1900_1947.html" class="block pl-8 pr-4 py-2 hover:bg-gray-800 text-sm rounded-b-xl"><i class="fas fa-flag w-4 text-orange-400"></i> British India (1900-1947)</a>
           </div>
         </div>
         <div class="relative group">
@@ -81,10 +92,33 @@
         </div>
         <div class="relative group">
           <button class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-dna mr-1"></i>Science <i class="fas fa-chevron-down text-xs ml-1"></i></button>
-          <div class="absolute top-full left-0 mt-1 w-56 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="science/acids_bases_salts.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-t-xl"><i class="fas fa-flask w-5 text-amber-400"></i> Acids, Bases &amp; Salts</a>
-            <a href="science/plant_kingdom.html" class="block px-4 py-2.5 hover:bg-gray-800"><i class="fas fa-seedling w-5 text-emerald-400"></i> Plant Kingdom</a>
-            <a href="science/animal_kingdom.html" class="block px-4 py-2.5 hover:bg-gray-800 rounded-b-xl"><i class="fas fa-paw w-5 text-indigo-400"></i> Animal Kingdom</a>
+          <div class="absolute top-full left-0 mt-1 w-72 bg-[#111827] border border-gray-700 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 dropdown-scroll">
+            <div class="sub-header"><i class="fas fa-leaf mr-1 text-green-600"></i>Biology</div>
+            <a href="science/biology/plant_kingdom.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-seedling w-4 text-emerald-400"></i> Plant Kingdom</a>
+            <a href="science/biology/animal_kingdom.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-paw w-4 text-indigo-400"></i> Animal Kingdom</a>
+            <a href="science/biology/human_cell_tissues.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-microscope w-4 text-blue-400"></i> Cell &amp; Tissues</a>
+            <a href="science/biology/cell_division_mitosis_meiosis.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-diagram-project w-4 text-cyan-400"></i> Cell Division (Mitosis &amp; Meiosis)</a>
+            <a href="science/biology/human_digestive.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-utensils w-4 text-orange-400"></i> Digestive System</a>
+            <a href="science/biology/human_respiratory.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-lungs w-4 text-cyan-400"></i> Respiratory System</a>
+            <a href="science/biology/human_circulatory.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-heart w-4 text-red-400"></i> Circulatory System</a>
+            <a href="science/biology/human_excretory.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-filter w-4 text-amber-400"></i> Excretory System</a>
+            <a href="science/biology/human_nervous.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-brain w-4 text-pink-400"></i> Nervous System</a>
+            <a href="science/biology/human_endocrine_repro.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-dna w-4 text-purple-400"></i> Endocrine &amp; Reproduction</a>
+            <a href="science/biology/human_skeletal_muscular.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-bone w-4 text-stone-400"></i> Skeletal &amp; Muscular</a>
+            <a href="science/biology/human_immunity_health.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-shield-halved w-4 text-green-400"></i> Immunity &amp; Health</a>
+            <div class="sub-header"><i class="fas fa-flask mr-1 text-amber-600"></i>Chemistry</div>
+            <a href="science/chemistry/acids_bases_salts.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-vial w-4 text-amber-400"></i> Acids, Bases &amp; Salts</a>
+            <a href="science/chemistry/matter_separation_changes.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-cube w-4 text-amber-400"></i> Matter, Separation &amp; Changes</a>
+            <a href="science/chemistry/metals_nonmetals.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-hammer w-4 text-amber-400"></i> Metals &amp; Non-Metals</a>
+            <a href="science/chemistry/periodic_table.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-table w-4 text-amber-400"></i> Periodic Table</a>
+            <div class="sub-header"><i class="fas fa-atom mr-1 text-red-600"></i>Physics</div>
+            <a href="science/physics/motion.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-arrows-spin w-4 text-red-400"></i> Motion &amp; Laws of Motion</a>
+            <a href="science/physics/force.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-hand-fist w-4 text-red-400"></i> Force, Pressure &amp; Gravitation</a>
+            <a href="science/physics/work_energy.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-bolt w-4 text-red-400"></i> Work &amp; Energy</a>
+            <a href="science/physics/light.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-sun w-4 text-red-400"></i> Light — Reflection &amp; Refraction</a>
+            <a href="science/physics/sound.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-volume-high w-4 text-red-400"></i> Sound</a>
+            <a href="science/physics/electricity.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm"><i class="fas fa-bolt w-4 text-red-400"></i> Electricity</a>
+            <a href="science/physics/magnetism.html" class="block pl-8 pr-4 py-1.5 hover:bg-gray-800 text-sm rounded-b-xl"><i class="fas fa-magnet w-4 text-red-400"></i> Magnetism &amp; Magnetic Effects</a>
           </div>
         </div>
         <a href="geography/bihar_geography.html" class="nav-link px-3 py-2 rounded-lg hover:bg-gray-800"><i class="fas fa-mountain mr-1"></i>Geography</a>
@@ -93,26 +127,53 @@
     <!-- Mobile menu dropdown -->
     <div id="main-mobile-menu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-1 text-sm">
       <div class="font-semibold text-yellow-400 px-3 py-1"><i class="fas fa-landmark mr-2"></i>History</div>
-      <a href="history/indus_valley_civilization_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Indus Valley</a>
-      <a href="history/mauryan_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Mauryan Empire</a>
-      <a href="history/delhi_sultanate_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Delhi Sultanate</a>
-      <a href="history/mughal_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Mughal Empire</a>
-      <a href="history/later_mughals_1857.html" class="block px-6 py-1.5 hover:text-yellow-400">Later Mughals & 1857</a>
-      <a href="history/maratha_empire_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Maratha Empire</a>
-      <a href="history/deccan_empires_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">Deccan Empires</a>
-      <a href="history/european_powers_upsc_notes.html" class="block px-6 py-1.5 hover:text-yellow-400">European Powers</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-hourglass-start mr-1"></i>Ancient India</div>
+      <a href="history/ancient/indus_valley_civilization_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Indus Valley</a>
+      <a href="history/ancient/mauryan_empire_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Mauryan Empire</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-chess-king mr-1"></i>Medieval India</div>
+      <a href="history/medieval/delhi_sultanate_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Delhi Sultanate</a>
+      <a href="history/medieval/mughal_empire_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Mughal Empire</a>
+      <a href="history/medieval/later_mughals_1857.html" class="block pl-10 py-1 hover:text-yellow-400">Later Mughals &amp; 1857</a>
+      <a href="history/medieval/maratha_empire_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Maratha Empire</a>
+      <a href="history/medieval/deccan_empires_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">Deccan Empires</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-flag mr-1"></i>Modern India</div>
+      <a href="history/modern/european_powers_upsc_notes.html" class="block pl-10 py-1 hover:text-yellow-400">European Powers</a>
+      <a href="history/modern/british_india_1900_1947.html" class="block pl-10 py-1 hover:text-yellow-400">British India (1900-1947)</a>
       <div class="font-semibold text-green-400 px-3 py-1 mt-2"><i class="fas fa-newspaper mr-2"></i>Current Affairs</div>
       <a href="current-affairs/bihar_current_affairs_january_2026.html" class="block px-6 py-1.5 hover:text-green-400">January 2026</a>
       <a href="current-affairs/bihar_current_affairs_february_2026.html" class="block px-6 py-1.5 hover:text-green-400">February 2026</a>
       <a href="current-affairs/bihar_current_affairs_march_2026.html" class="block px-6 py-1.5 hover:text-green-400">March 2026</a>
       <a href="current-affairs/bihar_current_affairs_april_2026.html" class="block px-6 py-1.5 hover:text-green-400">April 2026</a>
       <div class="font-semibold text-purple-400 px-3 py-1 mt-2"><i class="fas fa-chart-pie mr-2"></i>Economics</div>
-      <a href="economics/bihar_budget_economic_survey_2026.html" class="block px-6 py-1.5 hover:text-purple-400">Budget & Survey 2026</a>
+      <a href="economics/bihar_budget_economic_survey_2026.html" class="block px-6 py-1.5 hover:text-purple-400">Budget &amp; Survey 2026</a>
       <a href="economics/bihar_economics_terms.html" class="block px-6 py-1.5 hover:text-purple-400">100+ Economic Terms</a>
       <div class="font-semibold text-indigo-400 px-3 py-1 mt-2"><i class="fas fa-dna mr-2"></i>Science</div>
-      <a href="science/acids_bases_salts.html" class="block px-6 py-1.5 hover:text-indigo-400">Acids, Bases &amp; Salts</a>
-      <a href="science/plant_kingdom.html" class="block px-6 py-1.5 hover:text-indigo-400">Plant Kingdom</a>
-      <a href="science/animal_kingdom.html" class="block px-6 py-1.5 hover:text-indigo-400">Animal Kingdom</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-leaf mr-1"></i>Biology</div>
+      <a href="science/biology/plant_kingdom.html" class="block pl-10 py-1 hover:text-indigo-400">Plant Kingdom</a>
+      <a href="science/biology/animal_kingdom.html" class="block pl-10 py-1 hover:text-indigo-400">Animal Kingdom</a>
+      <a href="science/biology/human_cell_tissues.html" class="block pl-10 py-1 hover:text-indigo-400">Cell &amp; Tissues</a>
+      <a href="science/biology/cell_division_mitosis_meiosis.html" class="block pl-10 py-1 hover:text-indigo-400">Cell Division (Mitosis &amp; Meiosis)</a>
+      <a href="science/biology/human_digestive.html" class="block pl-10 py-1 hover:text-indigo-400">Digestive System</a>
+      <a href="science/biology/human_respiratory.html" class="block pl-10 py-1 hover:text-indigo-400">Respiratory System</a>
+      <a href="science/biology/human_circulatory.html" class="block pl-10 py-1 hover:text-indigo-400">Circulatory System</a>
+      <a href="science/biology/human_excretory.html" class="block pl-10 py-1 hover:text-indigo-400">Excretory System</a>
+      <a href="science/biology/human_nervous.html" class="block pl-10 py-1 hover:text-indigo-400">Nervous System</a>
+      <a href="science/biology/human_endocrine_repro.html" class="block pl-10 py-1 hover:text-indigo-400">Endocrine &amp; Reproduction</a>
+      <a href="science/biology/human_skeletal_muscular.html" class="block pl-10 py-1 hover:text-indigo-400">Skeletal &amp; Muscular</a>
+      <a href="science/biology/human_immunity_health.html" class="block pl-10 py-1 hover:text-indigo-400">Immunity &amp; Health</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-flask mr-1"></i>Chemistry</div>
+      <a href="science/chemistry/acids_bases_salts.html" class="block pl-10 py-1 hover:text-indigo-400">Acids, Bases &amp; Salts</a>
+      <a href="science/chemistry/matter_separation_changes.html" class="block pl-10 py-1 hover:text-indigo-400">Matter, Separation &amp; Changes</a>
+      <a href="science/chemistry/metals_nonmetals.html" class="block pl-10 py-1 hover:text-indigo-400">Metals &amp; Non-Metals</a>
+      <a href="science/chemistry/periodic_table.html" class="block pl-10 py-1 hover:text-indigo-400">Periodic Table</a>
+      <div class="text-xs text-gray-500 px-6 py-1"><i class="fas fa-atom mr-1"></i>Physics</div>
+      <a href="science/physics/motion.html" class="block pl-10 py-1 hover:text-indigo-400">Motion &amp; Laws of Motion</a>
+      <a href="science/physics/force.html" class="block pl-10 py-1 hover:text-indigo-400">Force, Pressure &amp; Gravitation</a>
+      <a href="science/physics/work_energy.html" class="block pl-10 py-1 hover:text-indigo-400">Work &amp; Energy</a>
+      <a href="science/physics/light.html" class="block pl-10 py-1 hover:text-indigo-400">Light — Reflection &amp; Refraction</a>
+      <a href="science/physics/sound.html" class="block pl-10 py-1 hover:text-indigo-400">Sound</a>
+      <a href="science/physics/electricity.html" class="block pl-10 py-1 hover:text-indigo-400">Electricity</a>
+      <a href="science/physics/magnetism.html" class="block pl-10 py-1 hover:text-indigo-400">Magnetism &amp; Magnetic Effects</a>
       <div class="font-semibold text-cyan-400 px-3 py-1 mt-2"><i class="fas fa-mountain mr-2"></i>Geography</div>
       <a href="geography/bihar_geography.html" class="block px-6 py-1.5 hover:text-cyan-400">Bihar Geography</a>
     </div>
@@ -133,33 +194,45 @@
       <i class="fas fa-graduation-cap mr-3"></i>BPSC / UPSC Study Notes
     </h1>
     <p class="text-gray-400 text-lg mb-2">Comprehensive notes on History, Current Affairs, Economics, Science &amp; Geography</p>
-    <p class="text-gray-500 text-sm">18 files — Dark themed · NCERT-based · District-wise · MCQ included</p>
+    <p class="text-gray-500 text-sm">40 files — Dark themed · NCERT-based · District-wise · MCQ included</p>
   </div>
 
   <!-- Stats -->
   <div class="max-w-5xl mx-auto px-4 mb-12">
-    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
-      <div class="card"><div class="text-3xl font-bold text-yellow-400">8</div><div class="text-gray-400 text-sm">History Topics</div></div>
-      <div class="card"><div class="text-3xl font-bold text-green-400">4</div><div class="text-gray-400 text-sm">Monthly CA Files</div></div>
-      <div class="card"><div class="text-3xl font-bold text-purple-400">2</div><div class="text-gray-400 text-sm">Economics Files</div></div>
-      <div class="card"><div class="text-3xl font-bold text-indigo-400">3</div><div class="text-gray-400 text-sm">Science Notes</div></div>
+    <div class="grid grid-cols-2 md:grid-cols-7 gap-4 text-center">
+      <div class="card"><div class="text-3xl font-bold text-yellow-400">9</div><div class="text-gray-400 text-sm">History</div></div>
+      <div class="card"><div class="text-3xl font-bold text-green-400">4</div><div class="text-gray-400 text-sm">Current Affairs</div></div>
+      <div class="card"><div class="text-3xl font-bold text-purple-400">2</div><div class="text-gray-400 text-sm">Economics</div></div>
+      <div class="card"><div class="text-3xl font-bold text-emerald-400">13</div><div class="text-gray-400 text-sm">Biology</div></div>
+      <div class="card"><div class="text-3xl font-bold text-amber-400">4</div><div class="text-gray-400 text-sm">Chemistry</div></div>
+      <div class="card"><div class="text-3xl font-bold text-red-400">7</div><div class="text-gray-400 text-sm">Physics</div></div>
       <div class="card"><div class="text-3xl font-bold text-cyan-400">1</div><div class="text-gray-400 text-sm">Geography</div></div>
-      <div class="card"><div class="text-3xl font-bold text-pink-400">114</div><div class="text-gray-400 text-sm">Economic Terms</div></div>
     </div>
   </div>
 
   <!-- History Section -->
   <div class="max-w-7xl mx-auto px-4 mb-12">
     <h2 class="text-2xl font-bold text-yellow-400 mb-6 flex items-center"><span class="badge-history text-white text-xs px-3 py-1 rounded-full mr-3">HISTORY</span> Indian &amp; Bihar History</h2>
+
+    <h3 class="text-lg font-semibold text-yellow-500 mb-4 flex items-center"><i class="fas fa-hourglass-start mr-2"></i>Ancient India <span class="text-xs text-gray-500 ml-2">2 topics</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <a href="history/ancient/indus_valley_civilization_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-archway text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Indus Valley Civilization</h3><p class="text-sm text-gray-400">NCERT Class 6–12 compilation. Towns, economy, society, religion, decline.</p></a>
+      <a href="history/ancient/mauryan_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-crown text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mauryan Empire</h3><p class="text-sm text-gray-400">Chandragupta to Ashoka. Administration, art, economy, Kalinga war, pillars.</p></a>
+    </div>
+
+    <h3 class="text-lg font-semibold text-orange-400 mb-4 flex items-center"><i class="fas fa-chess-king mr-2"></i>Medieval India <span class="text-xs text-gray-500 ml-2">5 topics</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <a href="history/medieval/delhi_sultanate_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-mosque text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Delhi Sultanate</h3><p class="text-sm text-gray-400">Slave to Lodi dynasty. Five dynasties, administration, architecture, invasions.</p></a>
+      <a href="history/medieval/mughal_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-taj-mahal text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mughal Empire</h3><p class="text-sm text-gray-400">Babur to Aurangzeb. Mansabdari, architecture, economy, religious policy, decline.</p></a>
+      <a href="history/medieval/later_mughals_1857.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-hourglass-end text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Later Mughals &amp; 1857</h3><p class="text-sm text-gray-400">Decline, regional states, British expansion, Revolt of 1857 causes &amp; events.</p></a>
+      <a href="history/medieval/maratha_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-horse-head text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Maratha Empire</h3><p class="text-sm text-gray-400">Shivaji to Panipat. Administration, military, confederacy, Anglo-Maratha wars.</p></a>
+      <a href="history/medieval/deccan_empires_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-fort-awesome text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Deccan Empires</h3><p class="text-sm text-gray-400">Bahmani, Vijayanagara, Deccan Sultanates. Administration, architecture, conflicts.</p></a>
+    </div>
+
+    <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><i class="fas fa-flag mr-2"></i>Modern India <span class="text-xs text-gray-500 ml-2">2 topics</span></h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="history/indus_valley_civilization_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-archway text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Indus Valley Civilization</h3><p class="text-sm text-gray-400">NCERT Class 6–12 compilation. Towns, economy, society, religion, decline.</p></a>
-      <a href="history/mauryan_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-crown text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mauryan Empire</h3><p class="text-sm text-gray-400">Chandragupta to Ashoka. Administration, art, economy, Kalinga war, pillars.</p></a>
-      <a href="history/delhi_sultanate_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-mosque text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Delhi Sultanate</h3><p class="text-sm text-gray-400">Slave to Lodi dynasty. Five dynasties, administration, architecture, invasions.</p></a>
-      <a href="history/mughal_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-taj-mahal text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Mughal Empire</h3><p class="text-sm text-gray-400">Babur to Aurangzeb. Mansabdari, architecture, economy, religious policy, decline.</p></a>
-      <a href="history/later_mughals_1857.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-hourglass-end text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Later Mughals &amp; 1857</h3><p class="text-sm text-gray-400">Decline, regional states, British expansion, Revolt of 1857 causes &amp; events.</p></a>
-      <a href="history/maratha_empire_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-horse-head text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Maratha Empire</h3><p class="text-sm text-gray-400">Shivaji to Panipat. Administration, military, confederacy, Anglo-Maratha wars.</p></a>
-      <a href="history/deccan_empires_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-fort-awesome text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Deccan Empires</h3><p class="text-sm text-gray-400">Bahmani, Vijayanagara, Deccan Sultanates. Administration, architecture, conflicts.</p></a>
-      <a href="history/european_powers_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-ship text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">European Powers</h3><p class="text-sm text-gray-400">Portuguese, Dutch, English, French. Carnatic wars, Battle of Plassey, Buxar.</p></a>
+      <a href="history/modern/european_powers_upsc_notes.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-ship text-2xl text-yellow-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">European Powers</h3><p class="text-sm text-gray-400">Portuguese, Dutch, English, French. Carnatic wars, Battle of Plassey, Buxar.</p></a>
+      <a href="history/modern/british_india_1900_1947.html" class="card block"><div class="gradient-bar bg-yellow-500/50"></div><i class="fas fa-flag text-2xl text-orange-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">British India (1900-1947)</h3><p class="text-sm text-gray-400">Complete freedom struggle: Swadeshi to Partition. All events, acts, viceroys, timeline, UPSC facts.</p></a>
     </div>
   </div>
 
@@ -186,10 +259,41 @@
   <!-- Science Section -->
   <div class="max-w-7xl mx-auto px-4 mb-12">
     <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center"><span class="badge-science text-white text-xs px-3 py-1 rounded-full mr-3">SCIENCE</span> NCERT Science (Class 6–12)</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <a href="science/acids_bases_salts.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-flask text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Acids, Bases &amp; Salts</h3><p class="text-sm text-gray-400">NCERT Class 6–10. Indicators, pH scale, neutralization, common salts (NaCl, NaOH, CaOCl2, NaHCO3, Na2CO3, POP), water of crystallization, 60 MCQs. 1,469 lines.</p></a>
-      <a href="science/plant_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-seedling text-2xl text-emerald-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Plant Kingdom</h3><p class="text-sm text-gray-400">Complete classification: Algae (Green/Red/Brown), Bryophytes, Pteridophytes, Gymnosperms, Angiosperms. Monocots vs Dicots, life cycles, 45 MCQs. 1,547 lines.</p></a>
-      <a href="science/animal_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-paw text-2xl text-indigo-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Animal Kingdom</h3><p class="text-sm text-gray-400">11 phyla with all examples: Porifera to Chordata. 7 vertebrate classes, comparison tables, 47 MCQs, mnemonics. 1,931 lines.</p></a>
+
+    <h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><i class="fas fa-leaf mr-2"></i>Biology <span class="text-xs text-gray-500 ml-2">13 topics</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <a href="science/biology/plant_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-seedling text-2xl text-emerald-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Plant Kingdom</h3><p class="text-sm text-gray-400">Complete classification: Algae (Green/Red/Brown), Bryophytes, Pteridophytes, Gymnosperms, Angiosperms. Monocots vs Dicots, life cycles, 45 MCQs. 1,547 lines.</p></a>
+      <a href="science/biology/plant_anatomy.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-tree text-2xl text-emerald-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Plant Anatomy</h3><p class="text-sm text-gray-400">Root, stem, leaf, flower structure. Photosynthesis, transpiration, plant tissues, reproduction, seed dispersal. 12 MCQs. Teacher-style!</p></a>
+      <a href="science/biology/animal_kingdom.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-paw text-2xl text-indigo-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Animal Kingdom</h3><p class="text-sm text-gray-400">11 phyla with all examples: Porifera to Chordata. 7 vertebrate classes, comparison tables, 47 MCQs, mnemonics. 1,931 lines.</p></a>
+      <a href="science/biology/human_cell_tissues.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-microscope text-2xl text-blue-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Cell &amp; Tissues</h3><p class="text-sm text-gray-400">Cell structure, organelles, tissue types, cell division (mitosis &amp; meiosis). NCERT Class 6-10 compilation.</p></a>
+      <a href="science/biology/cell_division_mitosis_meiosis.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-diagram-project text-2xl text-cyan-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Cell Division (Mitosis &amp; Meiosis)</h3><p class="text-sm text-gray-400">Simple step-by-step explanation. PMAT phases, crossing over, independent assortment, cancer &amp; genetic disorders. 12 MCQs. Made easy!</p></a>
+      <a href="science/biology/human_digestive.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-utensils text-2xl text-orange-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Digestive System</h3><p class="text-sm text-gray-400">Nutrition, vitamins, minerals, digestive organs, enzymes, absorption, disorders.</p></a>
+      <a href="science/biology/human_respiratory.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-lungs text-2xl text-cyan-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Respiratory System</h3><p class="text-sm text-gray-400">Breathing mechanism, gas exchange, cellular respiration, lung volumes, disorders.</p></a>
+      <a href="science/biology/human_circulatory.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-heart text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Circulatory System</h3><p class="text-sm text-gray-400">Blood components, heart structure, cardiac cycle, blood vessels, lymphatic system.</p></a>
+      <a href="science/biology/human_excretory.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-filter text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Excretory System</h3><p class="text-sm text-gray-400">Kidney structure, nephron, urine formation, dialysis, osmoregulation, disorders.</p></a>
+      <a href="science/biology/human_nervous.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-brain text-2xl text-pink-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Nervous System</h3><p class="text-sm text-gray-400">Neuron, brain parts, spinal cord, reflex arc, sense organs, neurotransmitters.</p></a>
+      <a href="science/biology/human_endocrine_repro.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-dna text-2xl text-purple-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Endocrine &amp; Reproduction</h3><p class="text-sm text-gray-400">Endocrine glands, hormones, male/female reproduction, menstrual cycle, adolescence.</p></a>
+      <a href="science/biology/human_skeletal_muscular.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-bone text-2xl text-stone-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Skeletal &amp; Muscular</h3><p class="text-sm text-gray-400">206 bones, joints classification, muscle types, contraction mechanism, disorders.</p></a>
+      <a href="science/biology/human_immunity_health.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-shield-halved text-2xl text-green-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Immunity &amp; Health</h3><p class="text-sm text-gray-400">Infectious diseases, immune system, hygiene, substance abuse, vaccination.</p></a>
+    </div>
+
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><i class="fas fa-flask mr-2"></i>Chemistry <span class="text-xs text-gray-500 ml-2">4 topics</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <a href="science/chemistry/acids_bases_salts.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-vial text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Acids, Bases &amp; Salts</h3><p class="text-sm text-gray-400">NCERT Class 6–10. Indicators, pH scale, neutralization, common salts (NaCl, NaOH, CaOCl2, NaHCO3, Na2CO3, POP), water of crystallization, 60 MCQs. 1,469 lines.</p></a>
+      <a href="science/chemistry/matter_separation_changes.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-cube text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Matter, Separation &amp; Changes</h3><p class="text-sm text-gray-400">States of matter, interconversion, physical vs chemical changes, 15 separation techniques, solutions &amp; mixtures, 30 MCQs. NCERT Class 6-10. 896 lines.</p></a>
+      <a href="science/chemistry/metals_nonmetals.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-hammer text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Metals &amp; Non-Metals</h3><p class="text-sm text-gray-400">Physical/chemical properties, reactivity series, extraction (blast furnace), corrosion, alloys, non-metals daily use, 30 MCQs. NCERT Class 6-10. 702 lines.</p></a>
+      <a href="science/chemistry/periodic_table.html" class="card block"><div class="gradient-bar bg-indigo-500/50"></div><i class="fas fa-table text-2xl text-amber-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Periodic Table</h3><p class="text-sm text-gray-400">Dobereiner, Mendeleev, Modern Periodic Table, trends (atomic size, IE, EN), blocks (s/p/d/f), families, electronic config, 40 MCQs. NCERT Class 6-10. 884 lines.</p></a>
+    </div>
+
+    <h3 class="text-lg font-semibold text-red-400 mb-4 flex items-center"><i class="fas fa-atom mr-2"></i>Physics <span class="text-xs text-gray-500 ml-2">7 topics</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <a href="science/physics/motion.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-arrows-spin text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Motion &amp; Laws of Motion</h3><p class="text-sm text-gray-400">Distance vs displacement, speed, velocity, acceleration, equations of motion, Newton's 3 laws, friction types, conservation of momentum.</p></a>
+      <a href="science/physics/force.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-hand-fist text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Force, Pressure &amp; Gravitation</h3><p class="text-sm text-gray-400">Types of forces, pressure &amp; buoyancy, Archimedes' principle, gravitation, free fall, mass vs weight, Kepler's laws.</p></a>
+      <a href="science/physics/work_energy.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-bolt text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Work &amp; Energy</h3><p class="text-sm text-gray-400">Work formula, kinetic &amp; potential energy, conservation of energy, power, commercial units (kWh), simple machines.</p></a>
+      <a href="science/physics/light.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-sun text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Light — Reflection &amp; Refraction</h3><p class="text-sm text-gray-400">Reflection, mirrors &amp; lenses, mirror/lens formula, Snell's law, refractive index, dispersion, human eye &amp; defects.</p></a>
+      <a href="science/physics/sound.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-volume-high text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Sound</h3><p class="text-sm text-gray-400">Production &amp; propagation, characteristics, speed of sound, ultrasound, echo, SONAR, human ear, noise pollution.</p></a>
+      <a href="science/physics/electricity.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-bolt text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Electricity</h3><p class="text-sm text-gray-400">Charge, current, Ohm's law, resistance (series/parallel), heating effect, electric power, kWh, fuse &amp; safety.</p></a>
+      <a href="science/physics/magnetism.html" class="card block"><div class="gradient-bar bg-red-500/50"></div><i class="fas fa-magnet text-2xl text-red-400 mb-3 block"></i><h3 class="text-lg font-semibold mb-2">Magnetism &amp; Magnetic Effects</h3><p class="text-sm text-gray-400">Magnets, magnetic field, electromagnet, motor effect, electromagnetic induction, generator, AC/DC, domestic circuits.</p></a>
     </div>
   </div>
 
@@ -204,7 +308,7 @@
   <!-- Footer -->
   <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
     <p><i class="fas fa-map-pin mr-1"></i> /home/amit/Desktop/ncert/history/</p>
-    <p class="mt-1">18 files · Dark themed · Tailwind CSS · Font Awesome</p>
+    <p class="mt-1">40 files · History (Ancient 2 · Medieval 5 · Modern 2) · Science (Biology 13 · Chemistry 4 · Physics 7) · Dark themed · Tailwind CSS · Font Awesome</p>
   </footer>
 
 </body>

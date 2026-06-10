@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion & Laws of Motion | NCERT Physics Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background: #0a0e1a; color: #e0e6f0; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; }
+    .gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; margin-bottom: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    .glow-card:hover { box-shadow: 0 0 25px rgba(251,191,36,0.25); transform: translateY(-3px); transition: all 0.3s ease; }
+    .section-heading { font-size:1.4rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem; border-top:1px solid rgba(255,255,255,0.05); padding-top:1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .subsection-heading { font-size:1.2rem; font-weight:700; color:#f8fafc; margin-bottom:0.85rem; margin-top:1.2rem; text-transform: uppercase; letter-spacing: 0.025em; }
+
+    /* HIGHLIGHTERS - BPSC EXAM FOCUSED */
+    .hl-ruler { color: #1e3a8a; background: #bfdbfe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #3b82f6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-date { color: #064e3b; background: #a7f3d0; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #10b981; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-policy { color: #4c1d95; background: #ddd6fe; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #8b5cf6; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-event { color: #7c2d12; background: #fed7aa; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #f97316; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-num { color: #7f1d1d; background: #fecaca; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #ef4444; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-place { color: #164e63; background: #a5f3fc; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #06b6d4; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .hl-term { color: #000; background: #fde047; font-weight: 800; padding: 2px 6px; border-radius: 4px; border-bottom: 2px solid #d97706; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+
+    .bullet-list { list-style:none; padding-left:0.5rem; margin-bottom: 1rem; }
+    .bullet-list li { position:relative; padding-left:2rem; margin-bottom:0.75rem; font-size:1rem; color:#e2e8f0; background: rgba(255,255,255,0.03); padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 8px; padding-right: 0.5rem; border-left: 3px solid rgba(255,255,255,0.1); }
+    .bullet-list li:hover { background: rgba(255,255,255,0.06); border-left-color: #34d399; }
+    .bullet-list li::before { content:'\f058'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0.6rem; top:0.8rem; font-size:0.9rem; color:#34d399; }
+
+    .table-wrap { overflow-x:auto; margin:1.2rem 0; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+    .table-wrap th { background:linear-gradient(to right, rgba(251,191,36,0.15), rgba(245,158,11,0.15)); color:#fde68a; padding:0.85rem 1rem; text-align:left; border-bottom:2px solid rgba(251,191,36,0.4); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .table-wrap td { padding:0.75rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#e2e8f0; }
+    .table-wrap tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.08); }
+
+    .mcq-block { background:linear-gradient(145deg, #1f2937, #111827); border:1px solid rgba(99,102,241,0.3); border-radius:1rem; padding:1.25rem; margin-bottom:1.25rem; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: transform 0.2s; }
+    .mcq-block:hover { transform: translateY(-2px); border-color: rgba(99,102,241,0.6); box-shadow: 0 6px 12px rgba(99,102,241,0.2); }
+    .mcq-q { font-size:1.1rem; color:#f8fafc; font-weight:800; margin-bottom:0.75rem; display:flex; gap: 0.5rem; line-height: 1.5; }
+    .mcq-q::before { content: 'Q.'; color: #818cf8; }
+    .mcq-opt { font-size:1rem; color:#cbd5e1; padding:0.5rem 0.6rem; border-radius: 0.5rem; transition: background 0.2s; border: 1px solid transparent; }
+    .mcq-opt:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #fff; }
+    .mcq-ans { display:none; margin-top:1rem; padding:0.85rem; border-radius:0.75rem; background:linear-gradient(to right, rgba(16,185,129,0.15), rgba(5,150,105,0.15)); border-left: 4px solid #10b981; font-size:1rem; color:#34d399; font-weight: 700; }
+    .mcq-ans.show { display:block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+
+    .fact-box { background:linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.12)); border:1px solid rgba(251,191,36,0.4); border-left: 6px solid #f59e0b; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #fef3c7; line-height: 1.6; }
+    .mnemonic-box { background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(124,58,237,0.12)); border:1px solid rgba(139,92,246,0.4); border-left: 6px solid #8b5cf6; border-radius:0.75rem; padding:1.2rem; margin:1.2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1rem; color: #ede9fe; line-height: 1.6; }
+
+    .sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.98); backdrop-filter:blur(12px); border-bottom: 2px solid rgba(251,191,36,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+
+    @media (max-width: 640px) {
+      body { font-size: 16px; line-height: 1.8; }
+      .gradient-card-1 { padding: 16px; border-radius: 10px; margin-bottom: 1.25rem; }
+      .section-heading { font-size: 1.3rem; margin-bottom: 1rem; }
+      .subsection-heading { font-size: 1.15rem; }
+      .table-wrap th, .table-wrap td { padding: 0.6rem; font-size: 0.9rem; }
+      .bullet-list li { font-size: 0.95rem; padding-left: 1.8rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .bullet-list li::before { left: 0.5rem; font-size: 0.85rem; top: 0.9rem; }
+      .hl-term, .hl-ruler, .hl-date, .hl-policy, .hl-event, .hl-num, .hl-place { padding: 3px 6px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6 fade-in visible">
+      <i class="fas fa-rocket text-5xl text-amber-400 mb-3"></i>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Motion &amp; Laws of Motion</h1>
+      <p class="text-gray-400 text-sm mt-1">NCERT Physics · Class 7 to 11 · Comprehensive Notes for BPSC / UPSC</p>
+    </div>
+
+    <!-- Sticky TOC -->
+    <div class="sticky-toc border-b border-gray-800 mb-6 -mx-3 sm:-mx-6 px-3 sm:px-6 py-2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-rocket text-amber-400 text-sm"></i>
+          <span class="text-gray-300 font-semibold text-sm">Quick Navigation</span>
+        </div>
+        <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()">
+          <i id="hamburger-icon" class="fas fa-bars text-amber-400 text-lg"></i>
+        </button>
+      </div>
+      <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+        <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">1. Motion</a>
+        <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">2. Scalar vs Vector</a>
+        <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">3. UCM</a>
+        <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">4. Newton's Laws</a>
+        <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">5. Conservation</a>
+        <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">6. Friction</a>
+        <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">7. Comparisons</a>
+        <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">8. Mnemonics</a>
+        <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-amber-900/30 hover:text-amber-400">9. MCQs</a>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Motion -->
+    <!-- ============================================================ -->
+    <section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-person-running text-amber-400 text-sm"></i> 1. Motion – Distance, Displacement, Speed &amp; Velocity</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Motion</span> is a change in position of an object with time. When an object changes its position with respect to a fixed reference point, we say it is in motion. Everything in the universe is in motion – even the Earth is spinning!</p>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Distance vs Displacement</div>
+      <p class="text-sm text-gray-400 mb-2">Think of it this way: <span class="hl-event">distance is the total path you walked</span>, <span class="hl-date">displacement is how far you are from home as the crow flies</span>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Distance</th><th>Displacement</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Total length of the actual path travelled</td><td>Shortest straight-line distance from start to end point</td></tr>
+            <tr><td>Scalar/Vector</td><td><span class="hl-date">Scalar</span> (only magnitude)</td><td><span class="hl-event">Vector</span> (magnitude + direction)</td></tr>
+            <tr><td>Symbol</td><td>d or s</td><td><span class="hl-ruler">s</span> or <span class="hl-ruler">&#948;r</span></td></tr>
+            <tr><td>Value</td><td>Always <span class="hl-num">≥ 0</span></td><td>Can be +, –, or 0</td></tr>
+            <tr><td>Can it be zero?</td><td>Only if object does not move</td><td><span class="hl-date">Yes</span> (if you return to start)</td></tr>
+            <tr><td>Example</td><td>Walking 3 km to shop, then 3 km back = 6 km</td><td>Same round trip = 0 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-gauge-high text-amber-400 text-xs mr-2"></i>Speed vs Velocity</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Speed</span> tells you <em>how fast</em> you are going. <span class="hl-term">Velocity</span> tells you how fast <em>and in which direction</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Speed</th><th>Velocity</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Distance travelled per unit time</td><td>Displacement per unit time</td></tr>
+            <tr><td>Scalar/Vector</td><td><span class="hl-date">Scalar</span></td><td><span class="hl-event">Vector</span></td></tr>
+            <tr><td>Formula</td><td>Speed = Distance / Time</td><td>Velocity = Displacement / Time</td></tr>
+            <tr><td>SI Unit</td><td>m/s (or km/h)</td><td>m/s with direction</td></tr>
+            <tr><td>Can be zero?</td><td>No (if moving)</td><td><span class="hl-date">Yes</span> (if back to start)</td></tr>
+            <tr><td>Example</td><td>Car at 60 km/h</td><td>Car at 60 km/h <span class="hl-ruler">towards North</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">Uniform vs Non-uniform Motion</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Uniform Motion:</span> Object covers <span class="hl-date">equal distances in equal intervals of time</span> (no matter how small the interval). Example: A car cruising at constant 40 km/h on a straight highway.</li>
+        <li><span class="hl-term">Non-uniform Motion:</span> Object covers <span class="hl-event">unequal distances in equal intervals of time</span>. Example: A bus moving through traffic – sometimes fast, sometimes slow.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-trend-up text-amber-400 text-xs mr-2"></i>Acceleration</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-term">Acceleration</span> is the <span class="hl-event">rate of change of velocity</span>. In simple words: how quickly your speed (or direction) changes.</p>
+      <ul class="bullet-list text-sm">
+        <li>Formula: <span class="hl-ruler">a = (v – u) / t</span> where v = final velocity, u = initial velocity, t = time</li>
+        <li>SI Unit: <span class="hl-num">m/s²</span> (metre per second squared)</li>
+        <li><span class="hl-term">Positive acceleration:</span> velocity increases (speeding up) – e.g., a car starting from rest</li>
+        <li><span class="hl-term">Negative acceleration (Retardation/Deceleration):</span> velocity decreases (slowing down) – e.g., brakes applied</li>
+        <li><span class="hl-term">Uniform acceleration:</span> velocity changes by equal amount in equal time intervals – e.g., free fall under gravity (<span class="hl-num">g = 9.8 m/s²</span>)</li>
+        <li><span class="hl-term">Non-uniform acceleration:</span> velocity changes by unequal amounts in equal time intervals</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Equations of Motion (Constant Acceleration)</div>
+      <p class="text-sm text-gray-400 mb-3">These three equations are the <span class="hl-term">holy grail of kinematics</span>. They apply only when acceleration is constant (uniform).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Equation</th><th>Missing Variable</th><th>What it tells you</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="font-mono text-cyan-300">v = u + at</td><td>s (displacement)</td><td>Final velocity after time t</td></tr>
+            <tr><td>2</td><td class="font-mono text-cyan-300">s = ut + ½at²</td><td>v (final velocity)</td><td>Displacement after time t</td></tr>
+            <tr><td>3</td><td class="font-mono text-cyan-300">v² = u² + 2as</td><td>t (time)</td><td>Velocity-displacement relation</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-400 mb-2"><strong>Variables:</strong> u = initial velocity, v = final velocity, a = acceleration, t = time, s = displacement</p>
+
+      <p class="text-sm text-gray-300 font-semibold mb-1 mt-3">Analogy for Equations of Motion</p>
+      <p class="text-sm text-gray-400">Imagine you are on a <span class="hl-term">train</span> that starts at rest (u=0) and picks up speed steadily (uniform acceleration). The equations help you predict exactly where you'll be after 10 seconds, how fast you'll be going, and how much track you'll cover.</p>
+
+      <div class="subsection-heading"><i class="fas fa-chart-line text-amber-400 text-xs mr-2"></i>Graphical Analysis</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Distance–Time Graph:</span> A straight line = uniform speed; curved line = non-uniform speed. <span class="hl-date">Slope = speed</span>.</li>
+        <li><span class="hl-term">Velocity–Time Graph:</span> Straight horizontal line = uniform velocity; sloping line = uniform acceleration. <span class="hl-event">Slope = acceleration</span>. <span class="hl-ruler">Area under graph = displacement</span>.</li>
+        <li><span class="hl-term">Acceleration–Time Graph:</span> Horizontal line = constant acceleration. Area under graph = change in velocity.</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Remember:</span> If a velocity–time graph is a straight line sloping upwards, the object has <span class="hl-term">uniform acceleration</span>. The steeper the slope, the greater the acceleration.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Scalar vs Vector -->
+    <!-- ============================================================ -->
+    <section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrow-up-wide-short text-amber-400 text-sm"></i> 2. Scalar vs Vector Quantities</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Scalars</span> only have magnitude (size/number). <span class="hl-term">Vectors</span> have both magnitude AND direction. Think: "Vector has a direction arrow; Scalar is just a number."</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Property</th><th>Scalar</th><th>Vector</th></tr></thead>
+          <tbody>
+            <tr><td>Magnitude only?</td><td><span class="hl-date">Yes</span></td><td>No</td></tr>
+            <tr><td>Direction?</td><td>No</td><td><span class="hl-event">Yes – essential</span></td></tr>
+            <tr><td>Addition</td><td>Simple arithmetic (5 + 3 = 8)</td><td>Vector addition (direction matters)</td></tr>
+            <tr><td>Examples</td><td>Distance, Speed, Mass, Time, Temperature, Energy, Work, Power</td><td>Displacement, Velocity, Acceleration, Force, Momentum, Weight, Thrust</td></tr>
+            <tr><td>Representation</td><td>Just a number with unit</td><td>Arrow showing direction (e.g., 5 m <span class="hl-ruler">East</span>)</td></tr>
+            <tr><td>Multiplication by number</td><td>Scalar × number = scalar</td><td>Vector × number = vector (magnitude changes)</td></tr>
+            <tr><td>Can be negative?</td><td>No (unless temperature scale)</td><td><span class="hl-num">Yes</span> (opposite direction)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-cubes text-amber-400 text-xs mr-2"></i>More Examples for Easy Recall</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Scalar:</span> "The temperature is <span class="hl-num">30°C</span>" – no direction needed. "My mass is <span class="hl-num">70 kg</span>."</li>
+        <li><span class="hl-term">Vector:</span> "Wind is blowing <span class="hl-ruler">20 km/h towards East</span>" – direction matters. "Apply a force of <span class="hl-num">10 N upward</span>."</li>
+        <li><span class="hl-event">Trick:</span> If you can answer "which way?" for a quantity, it's a vector!</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Quick Tip:</span> <span class="hl-term">Distance + Direction = Displacement</span>. <span class="hl-term">Speed + Direction = Velocity</span>. Always add a direction to convert a scalar into a vector!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Uniform Circular Motion -->
+    <!-- ============================================================ -->
+    <section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-circle-notch text-amber-400 text-sm"></i> 3. Uniform Circular Motion (UCM)</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Uniform Circular Motion</span> is the motion of an object moving along a <span class="hl-ruler">circular path</span> with <span class="hl-date">constant speed</span>. Even though speed is constant, the <span class="hl-event">velocity keeps changing</span> because direction changes at every point!</p>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-amber-400 text-xs mr-2"></i>Key Concepts</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Speed is constant</span>, but <span class="hl-event">velocity is NOT constant</span> (direction changes) → this means the object is <span class="hl-term">accelerating</span>!</li>
+        <li>This acceleration is called <span class="hl-ruler">centripetal acceleration</span> – it always points towards the centre of the circle.</li>
+        <li>Formula for centripetal acceleration: <span class="hl-num">a<sub>c</sub> = v² / r</span> (where v = speed, r = radius)</li>
+        <li>Force required for UCM: <span class="hl-num">F<sub>c</sub> = mv² / r</span> (centripetal force)</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-list text-amber-400 text-xs mr-2"></i>Real-Life Examples</div>
+      <ul class="bullet-list text-sm">
+        <li>A stone tied to a string swung in a circle</li>
+        <li>Earth revolving around the Sun (almost circular orbit)</li>
+        <li>A car taking a turn on a circular road</li>
+        <li>Satellites orbiting Earth</li>
+        <li>A merry-go-round / Ferris wheel</li>
+        <li>Electrons revolving around the nucleus (simplified model)</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-calculator text-amber-400 text-xs mr-2"></i>Important Formulas</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Quantity</th><th>Formula</th><th>Symbol / Unit</th></tr></thead>
+          <tbody>
+            <tr><td>Circumference</td><td class="font-mono text-cyan-300">C = 2πr</td><td>m</td></tr>
+            <tr><td>Speed in UCM</td><td class="font-mono text-cyan-300">v = 2πr / T</td><td>T = time period (s)</td></tr>
+            <tr><td>Angular Velocity</td><td class="font-mono text-cyan-300">ω = 2π / T = v / r</td><td>rad/s</td></tr>
+            <tr><td>Centripetal Acceleration</td><td class="font-mono text-cyan-300">a<sub>c</sub> = v² / r = ω²r</td><td>m/s²</td></tr>
+            <tr><td>Centripetal Force</td><td class="font-mono text-cyan-300">F<sub>c</sub> = mv² / r = mω²r</td><td>N (Newton)</td></tr>
+            <tr><td>Frequency</td><td class="font-mono text-cyan-300">f = 1 / T</td><td>Hz (Hertz)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Think:</span> When you swing a bucket of water in a vertical circle, the water does not fall because of <span class="hl-term">centripetal force</span>. If the string breaks, the stone flies off <span class="hl-event">tangentially</span> (not radially) – that's Newton's First Law in action!
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: Newton's Laws of Motion -->
+    <!-- ============================================================ -->
+    <section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-apple-whole text-amber-400 text-sm"></i> 4. Newton's Laws of Motion</h2>
+      <p class="text-sm text-gray-400 mb-3">Sir <span class="hl-term">Isaac Newton</span> (1642–1727) gave three laws that form the foundation of classical mechanics. These laws describe how objects move when forces act on them.</p>
+
+      <div class="subsection-heading"><i class="fas fa-1 text-amber-400 text-xs mr-2"></i>First Law – Law of Inertia</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-event">Statement:</span> An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by an <span class="hl-term">external unbalanced force</span>.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Inertia</span> is the natural tendency of objects to resist change in their state of motion. <span class="hl-event">"Matter resists change"</span> – more mass = more inertia.</li>
+        <li>If you are in a bus that suddenly stops, you lurch forward – your body <span class="hl-date">wants to keep moving</span> (inertia of motion).</li>
+        <li>If you are in a bus that suddenly starts, you fall backward – your body <span class="hl-date">wants to stay at rest</span> (inertia of rest).</li>
+      </ul>
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Think of <span class="hl-term">inertia</span> as "laziness" of objects. A heavy box is "lazy" – it does not want to start moving, and once moving, it does not want to stop. The heavier it is, the lazier!
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-2 text-amber-400 text-xs mr-2"></i>Second Law – Law of Momentum / F = ma</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-event">Statement:</span> The rate of change of momentum of a body is directly proportional to the applied force, and takes place in the direction of the force.</p>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Momentum (p)</span> = mass × velocity = <span class="hl-num">p = mv</span>. Unit: kg·m/s</li>
+        <li>Force = <span class="hl-ruler">F = ma</span> (mass × acceleration). Because F = Δp/Δt = m·Δv/Δt = ma</li>
+        <li>Newton's Second Law gives us the <span class="hl-term">definition of force</span>: 1 Newton = force required to give 1 kg mass an acceleration of 1 m/s².</li>
+        <li><span class="hl-term">Impulse:</span> Force × time = change in momentum (<span class="hl-num">F·Δt = Δp</span>). That's why airbags save lives – they increase time of impact, reducing force.</li>
+      </ul>
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Real-Life Example:</span> A <span class="hl-term">cricket fielder</span> pulls his hands back while catching a ball. He increases the time of impact (Δt increases), so the force (F) decreases – the ball does not hurt his hands. <span class="hl-event">Same impulse, more time = less force.</span>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-3 text-amber-400 text-xs mr-2"></i>Third Law – Action-Reaction</div>
+      <p class="text-sm text-gray-400 mb-2"><span class="hl-event">Statement:</span> For every action, there is an equal and opposite reaction. These two forces act on <span class="hl-term">different bodies</span>.</p>
+      <ul class="bullet-list text-sm">
+        <li>Action and reaction are <span class="hl-date">equal in magnitude</span> but <span class="hl-event">opposite in direction</span>.</li>
+        <li>They act on <span class="hl-ruler">two different bodies</span> – that's why they do NOT cancel each other out.</li>
+        <li>You cannot touch without being touched! When you push a wall, the wall pushes you back with the same force.</li>
+      </ul>
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Think of it as:</span> When you <span class="hl-term">walk</span>, your foot pushes the ground <span class="hl-event">backward</span> (action). The ground pushes your foot <span class="hl-ruler">forward</span> (reaction) – that reaction is what moves you forward! Without friction, walking would be impossible.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-table text-amber-400 text-xs mr-2"></i>All Three Laws – Quick Comparison</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Law</th><th>Name</th><th>Statement</th><th>Formula</th><th>Everyday Example</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-num">1st</span></td><td>Law of Inertia</td><td>Object stays at rest/in motion unless external force applied</td><td>–</td><td>Lurch forward when bus stops</td></tr>
+            <tr><td><span class="hl-num">2nd</span></td><td>Law of Acceleration</td><td>Force = mass × acceleration</td><td><span class="hl-ruler">F = ma</span></td><td>Pushing a cart harder makes it accelerate more</td></tr>
+            <tr><td><span class="hl-num">3rd</span></td><td>Action-Reaction</td><td>Every action has equal & opposite reaction</td><td><span class="hl-ruler">F<sub>AB</sub> = –F<sub>BA</sub></span></td><td>Walking – foot pushes ground back, ground pushes you forward</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: Conservation of Momentum -->
+    <!-- ============================================================ -->
+    <section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-arrow-rotate-left text-amber-400 text-sm"></i> 5. Conservation of Momentum</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrow-right text-amber-400 text-xs mr-2"></i>Definition &amp; Law</div>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Law of Conservation of Momentum:</span> In an <span class="hl-event">isolated system</span> (no external force), the total momentum before collision equals the total momentum after collision. <span class="hl-ruler">Momentum is neither created nor destroyed – it is only transferred.</span></p>
+
+      <div class="subsection-heading"><i class="fas fa-square-root-variable text-amber-400 text-xs mr-2"></i>Derivation (using Newton's Laws)</div>
+      <p class="text-sm text-gray-400 mb-2">Consider two balls A and B of masses m₁ and m₂ moving with velocities u₁ and u₂. They collide and after collision have velocities v₁ and v₂.</p>
+      <ul class="bullet-list text-sm">
+        <li>Force on A due to B: <span class="hl-term">F<sub>AB</sub></span> = rate of change of momentum of A = <span class="hl-ruler">(m₁v₁ – m₁u₁) / t</span></li>
+        <li>Force on B due to A: <span class="hl-term">F<sub>BA</sub></span> = rate of change of momentum of B = <span class="hl-ruler">(m₂v₂ – m₂u₂) / t</span></li>
+        <li>By Newton's Third Law: <span class="hl-event">F<sub>AB</sub> = –F<sub>BA</sub></span></li>
+        <li>So: (m₁v₁ – m₁u₁) / t = – (m₂v₂ – m₂u₂) / t</li>
+        <li>Simplifying: <span class="hl-num">m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</span></li>
+        <li>This proves: <span class="hl-date">Total momentum before collision = Total momentum after collision</span></li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-gun text-amber-400 text-xs mr-2"></i>Example 1: Recoil of a Gun</div>
+      <p class="text-sm text-gray-400 mb-2">When a bullet is fired from a gun, the gun recoils (jerks backward). Before firing, both gun and bullet are at rest → total momentum = 0.</p>
+      <ul class="bullet-list text-sm">
+        <li>Let M = mass of gun, m = mass of bullet, V = recoil velocity of gun, v = velocity of bullet</li>
+        <li>After firing: <span class="hl-num">0 = MV + mv</span> (total momentum conserved)</li>
+        <li>So: <span class="hl-event">V = – (mv) / M</span> (negative sign = opposite direction)</li>
+        <li>The gun recoils backward. Heavier the gun, smaller the recoil velocity.</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-rocket text-amber-400 text-xs mr-2"></i>Example 2: Rocket Propulsion</div>
+      <ul class="bullet-list text-sm">
+        <li>A rocket works on the same principle – <span class="hl-term">conservation of momentum</span>.</li>
+        <li>Hot gases are expelled <span class="hl-event">downward</span> at high speed (action). The rocket moves <span class="hl-ruler">upward</span> (reaction).</li>
+        <li>Momentum of (rocket + fuel) before = 0. As gases go down, rocket goes up to keep total momentum = 0.</li>
+        <li>Formula: <span class="hl-num">m<sub>g</sub>v<sub>g</sub> = m<sub>r</sub>v<sub>r</sub></span> (mass of gases × velocity = mass of rocket × velocity of rocket)</li>
+        <li>This is why <span class="hl-term">Newton's Third Law + Conservation of Momentum</span> makes space travel possible!</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Analogy:</span> Imagine you are on a frictionless skateboard and you throw a heavy ball forward. What happens? <span class="hl-event">You roll backward!</span> The ball's forward momentum equals your backward momentum. Rocket works the same way – just with hot gases instead of a ball.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: Friction -->
+    <!-- ============================================================ -->
+    <section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-hand-back-fist text-amber-400 text-sm"></i> 6. Friction</h2>
+      <p class="text-sm text-gray-400 mb-3"><span class="hl-term">Friction</span> is a force that opposes the relative motion between two surfaces in contact. Think of it as the <span class="hl-event">"resistance"</span> that surfaces offer when one slides over another.</p>
+
+      <div class="subsection-heading"><i class="fas fa-diagram-project text-amber-400 text-xs mr-2"></i>Types of Friction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Description</th><th>Example</th><th>Magnitude</th></tr></thead>
+          <tbody>
+            <tr><td><span class="hl-term">Static Friction</span></td><td>Friction between two surfaces that are NOT moving relative to each other. It prevents motion from starting.</td><td>Pushing a heavy box that does not move; a book resting on a slanted table without sliding</td><td><span class="hl-num">Maximum</span> of all three</td></tr>
+            <tr><td><span class="hl-term">Sliding (Kinetic) Friction</span></td><td>Friction between two surfaces that ARE sliding relative to each other.</td><td>A box sliding across the floor; sliding a chair</td><td><span class="hl-event">Medium</span> (less than static)</td></tr>
+            <tr><td><span class="hl-term">Rolling Friction</span></td><td>Friction when one surface rolls over another.</td><td>A ball rolling on ground; wheels of a car; roller skates</td><td><span class="hl-date">Minimum</span> of all three</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Key Comparison:</span> <span class="hl-term">Static > Sliding > Rolling</span> friction. That's why we use <span class="hl-event">wheels</span> (rolling friction) instead of dragging things (sliding friction). And why it's harder to <span class="hl-event">start</span> pushing a car than to keep it moving.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-thumbs-up text-amber-400 text-xs mr-2"></i>Advantages of Friction</div>
+      <ul class="bullet-list text-sm">
+        <li>Walking is possible because friction between shoes and ground gives grip</li>
+        <li>Vehicles can brake and turn on roads due to friction between tyres and road</li>
+        <li>Writing with a pen/pencil requires friction between tip and paper</li>
+        <li>Lighting a matchstick works by friction</li>
+        <li>Nails and screws stay in walls because of friction</li>
+        <li>Belt drives in machines use friction to transmit power</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-thumbs-down text-amber-400 text-xs mr-2"></i>Disadvantages of Friction</div>
+      <ul class="bullet-list text-sm">
+        <li>Causes wear and tear of moving parts (engine parts, shoe soles, tyres)</li>
+        <li>Produces heat – engines overheat without proper cooling</li>
+        <li>Wastes energy – you need extra fuel to overcome friction</li>
+        <li>Reduces efficiency of machines</li>
+        <li>Causes noise in moving machinery</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-wrench text-amber-400 text-xs mr-2"></i>Methods to Reduce Friction</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Lubricants</span> (oil, grease, graphite) – fill the irregularities between surfaces</li>
+        <li><span class="hl-term">Polishing</span> surfaces – makes them smoother</li>
+        <li><span class="hl-term">Ball bearings</span> – convert sliding friction into rolling friction (much less)</li>
+        <li><span class="hl-term">Streamlining</span> – aerodynamic shapes reduce fluid friction (air resistance)</li>
+        <li>Using <span class="hl-term">wheels</span> instead of dragging</li>
+        <li>Applying <span class="hl-term">powders</span> (talcum) between surfaces</li>
+      </ul>
+
+      <div class="subsection-heading"><i class="fas fa-plus text-amber-400 text-xs mr-2"></i>Methods to Increase Friction</div>
+      <ul class="bullet-list text-sm">
+        <li><span class="hl-term">Treads</span> on tyres and shoe soles – create more grip</li>
+        <li><span class="hl-term">Grooved</span> surfaces (sandpaper, rough floor tiles)</li>
+        <li>Using <span class="hl-term">brake pads</span> in vehicles</li>
+        <li><span class="hl-term">Spikes</span> on sports shoes for better grip on ground</li>
+        <li><span class="hl-term">Sand</span> or gravel on icy roads to increase friction</li>
+      </ul>
+
+      <div class="fact-box">
+        <i class="fas fa-lightbulb text-amber-400 mr-2"></i>
+        <span class="text-amber-200 font-medium">Interesting Fact:</span> Without friction, you could not walk, cars could not move, and even a nail would not stay in the wall. But too much friction wastes energy. That's why engineers balance friction – enough for grip, but not too much for efficiency.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: Comparison Tables -->
+    <!-- ============================================================ -->
+    <section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-table text-amber-400 text-sm"></i> 7. Comparison Tables</h2>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Distance vs Displacement</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Distance</th><th>Displacement</th></tr></thead>
+          <tbody>
+            <tr><td>Type</td><td><span class="hl-date">Scalar</span></td><td><span class="hl-event">Vector</span></td></tr>
+            <tr><td>Dependence on path</td><td>Depends on path taken</td><td>Independent of path (only start & end matter)</td></tr>
+            <tr><td>Value</td><td>Always positive</td><td>Can be positive, negative, or zero</td></tr>
+            <tr><td>In circular motion</td><td>2πr (after 1 revolution)</td><td><span class="hl-num">0</span> (back to start point)</td></tr>
+            <tr><td>SI Unit</td><td>metre (m)</td><td>metre (m)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Speed vs Velocity</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Speed</th><th>Velocity</th></tr></thead>
+          <tbody>
+            <tr><td>Type</td><td><span class="hl-date">Scalar</span></td><td><span class="hl-event">Vector</span></td></tr>
+            <tr><td>Formula</td><td>Distance / Time</td><td>Displacement / Time</td></tr>
+            <tr><td>Direction</td><td>None</td><td><span class="hl-ruler">Has direction</span></td></tr>
+            <tr><td>Can be zero when moving?</td><td>No</td><td><span class="hl-date">Yes</span> (if return to start)</td></tr>
+            <tr><td>Average</td><td>Total distance / total time</td><td>Total displacement / total time</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Uniform vs Non-uniform Motion</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Uniform Motion</th><th>Non-uniform Motion</th></tr></thead>
+          <tbody>
+            <tr><td>Distance covered</td><td>Equal in equal time intervals</td><td>Unequal in equal time intervals</td></tr>
+            <tr><td>Speed</td><td>Constant</td><td>Varies with time</td></tr>
+            <tr><td>Acceleration</td><td><span class="hl-date">Zero</span></td><td>Non-zero (may be uniform or varying)</td></tr>
+            <tr><td>d–t graph</td><td>Straight line</td><td>Curved line</td></tr>
+            <tr><td>v–t graph</td><td>Horizontal line (parallel to time axis)</td><td>Sloping/curved line</td></tr>
+            <tr><td>Examples</td><td>Car at constant speed on highway; Earth's rotation (approx)</td><td>Bus in city traffic; a falling leaf; a ball thrown upward</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Static vs Sliding vs Rolling Friction</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Static Friction</th><th>Sliding Friction</th><th>Rolling Friction</th></tr></thead>
+          <tbody>
+            <tr><td>State of object</td><td>At rest (not moving)</td><td>Sliding over surface</td><td>Rolling over surface</td></tr>
+            <tr><td>Magnitude</td><td><span class="hl-num">Maximum</span></td><td><span class="hl-event">Medium</span></td><td><span class="hl-date">Minimum</span></td></tr>
+            <tr><td>Force needed to overcome</td><td>Highest force required</td><td>Moderate force</td><td>Least force</td></tr>
+            <tr><td>Example</td><td>Pushing a heavy box that does not budge</td><td>Box sliding on floor</td><td>Wheel of a car; ball bearing</td></tr>
+            <tr><td>Real-life application</td><td>Brakes at rest (parking brake)</td><td>Brakes while sliding</td><td>Ball bearings, wheels, casters</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-arrows-left-right text-amber-400 text-xs mr-2"></i>Scalar vs Vector Quantities</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Feature</th><th>Scalar</th><th>Vector</th></tr></thead>
+          <tbody>
+            <tr><td>Definition</td><td>Only magnitude</td><td>Magnitude + direction</td></tr>
+            <tr><td>Addition</td><td>Simple arithmetic</td><td>Vector (triangle/parallelogram law)</td></tr>
+            <tr><td>Examples in Physics</td><td>Mass, length, time, temperature, work, energy, power, speed, distance</td><td>Force, velocity, displacement, acceleration, momentum, weight, electric field, torque</td></tr>
+            <tr><td>Representation</td><td>Just a number (e.g., 5 kg)</td><td>Number + direction (e.g., 5 N <span class="hl-ruler">East</span>)</td></tr>
+            <tr><td>Can be multiplied with vector?</td><td>Scalar × vector = vector</td><td>Vector × vector = scalar or vector (dot/cross product)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: Mnemonics -->
+    <!-- ============================================================ -->
+    <section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-brain text-amber-400 text-sm"></i> 8. Mnemonics &amp; Memory Tricks</h2>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Three Equations of Motion</div>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"v = u + at"</span> – Think <span class="hl-event">"Very Useful + Always True"</span>. <span class="hl-event">"s = ut + ½at²"</span> – Think <span class="hl-event">"See You Tomorrow + Half At Two"</span>. <span class="hl-event">"v² = u² + 2as"</span> – Think <span class="hl-event">"Velocity Square = U Square + 2 A S"</span>.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>What's Missing in Each Equation</div>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"Shoes = v = u + at"</span> (missing <span class="hl-term">s</span> – displacement). <span class="hl-event">"Tie = s = ut + ½at²"</span> (missing <span class="hl-term">t</span> – time? No! <span class="hl-term">v</span> is missing). Actually think: <span class="hl-event">"uva – s"</span> = first eqn has u, v, a, t → missing s. <span class="hl-event">"usa – v"</span> = second has u, s, a, t → missing v. <span class="hl-event">"usv – t"</span> = third has u, s, v, a → missing t.
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Newton's Laws in One Line</div>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"Newton 1 = Lazy Objects"</span> (inertia = laziness). <span class="hl-event">"Newton 2 = F = ma"</span> (force makes things accelerate). <span class="hl-event">"Newton 3 = Push = Push Back"</span> (action = reaction). Or remember: <span class="hl-term">"No Force → No Change"</span> (1st), <span class="hl-term">"Force → Acceleration"</span> (2nd), <span class="hl-term">"Force → Opposite Force"</span> (3rd).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Friction Types – Order</div>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"SSR"</span> = <span class="hl-event">Static > Sliding > Rolling</span>. Trick: <span class="hl-term">"Super Strong Resistance"</span> (Static = Super, Sliding = Strong, Rolling = Resistance). Or: <span class="hl-term">"Stop, Slide, Roll"</span> – the force needed to <span class="hl-event">stop</span> (static) > <span class="hl-event">slide</span> (sliding) > <span class="hl-event">roll</span> (rolling).
+      </div>
+
+      <div class="subsection-heading"><i class="fas fa-lightbulb text-yellow-300 text-xs mr-2"></i>Scalar vs Vector – Key Examples</div>
+      <div class="mnemonic-box">
+        <i class="fas fa-brain text-indigo-400 mr-2"></i>
+        <span class="text-indigo-200 font-medium">"Scar = M.D.T.T.E.W.P"</span> – Scalar examples: <span class="hl-event">Mass, Distance, Time, Temperature, Energy, Work, Power</span>. <span class="hl-event">"Very = D.V.A.F.M"</span> – Vector examples: <span class="hl-event">Displacement, Velocity, Acceleration, Force, Momentum</span>. Trick: <span class="hl-term">"Scar"</span> = scalar, <span class="hl-term">"Very"</span> = vector.
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: Practice Questions (30+ MCQs) -->
+    <!-- ============================================================ -->
+    <section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+      <h2 class="section-heading"><i class="fas fa-pen-to-square text-amber-400 text-sm"></i> 9. Practice Questions – 33 MCQs</h2>
+      <p class="text-sm text-gray-400 mb-4">Click any question to reveal the answer.</p>
+
+      <!-- MCQ 1 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">1. Which of the following is a vector quantity?</div>
+        <div class="mcq-opt">A) Speed</div>
+        <div class="mcq-opt">B) Distance</div>
+        <div class="mcq-opt">C) Velocity</div>
+        <div class="mcq-opt">D) Mass</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Velocity</div>
+      </div>
+
+      <!-- MCQ 2 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">2. The SI unit of acceleration is:</div>
+        <div class="mcq-opt">A) m/s</div>
+        <div class="mcq-opt">B) m/s²</div>
+        <div class="mcq-opt">C) km/h</div>
+        <div class="mcq-opt">D) cm/s²</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) m/s²</div>
+      </div>
+
+      <!-- MCQ 3 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">3. If a car covers equal distances in equal intervals of time, its motion is called:</div>
+        <div class="mcq-opt">A) Non-uniform</div>
+        <div class="mcq-opt">B) Accelerated</div>
+        <div class="mcq-opt">C) Uniform</div>
+        <div class="mcq-opt">D) Circular</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Uniform</div>
+      </div>
+
+      <!-- MCQ 4 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">4. What is the displacement of an object that moves 5 m east, then 5 m west?</div>
+        <div class="mcq-opt">A) 10 m</div>
+        <div class="mcq-opt">B) 5 m</div>
+        <div class="mcq-opt">C) 0 m</div>
+        <div class="mcq-opt">D) 25 m</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 0 m (returns to starting point)</div>
+      </div>
+
+      <!-- MCQ 5 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">5. Newton's First Law of Motion is also called:</div>
+        <div class="mcq-opt">A) Law of Momentum</div>
+        <div class="mcq-opt">B) Law of Gravitation</div>
+        <div class="mcq-opt">C) Law of Inertia</div>
+        <div class="mcq-opt">D) Law of Reaction</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Law of Inertia</div>
+      </div>
+
+      <!-- MCQ 6 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">6. Which type of friction is the largest in magnitude?</div>
+        <div class="mcq-opt">A) Sliding friction</div>
+        <div class="mcq-opt">B) Rolling friction</div>
+        <div class="mcq-opt">C) Static friction</div>
+        <div class="mcq-opt">D) Fluid friction</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Static friction</div>
+      </div>
+
+      <!-- MCQ 7 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">7. The formula for centripetal force is:</div>
+        <div class="mcq-opt">A) F = ma</div>
+        <div class="mcq-opt">B) F = mv²/r</div>
+        <div class="mcq-opt">C) F = mv/r</div>
+        <div class="mcq-opt">D) F = mr²/v</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) F = mv²/r</div>
+      </div>
+
+      <!-- MCQ 8 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">8. In uniform circular motion, the direction of velocity is:</div>
+        <div class="mcq-opt">A) Towards centre</div>
+        <div class="mcq-opt">B) Away from centre</div>
+        <div class="mcq-opt">C) Tangent to the circle</div>
+        <div class="mcq-opt">D) Radially outward</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Tangent to the circle</div>
+      </div>
+
+      <!-- MCQ 9 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">9. What is the momentum of a 5 kg object moving at 2 m/s?</div>
+        <div class="mcq-opt">A) 2.5 kg·m/s</div>
+        <div class="mcq-opt">B) 7 kg·m/s</div>
+        <div class="mcq-opt">C) 10 kg·m/s</div>
+        <div class="mcq-opt">D) 25 kg·m/s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) 10 kg·m/s (p = mv = 5 × 2 = 10)</div>
+      </div>
+
+      <!-- MCQ 10 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">10. A cricket fielder pulls his hands back while catching a ball. This is based on:</div>
+        <div class="mcq-opt">A) Newton's First Law</div>
+        <div class="mcq-opt">B) Newton's Second Law (impulse)</div>
+        <div class="mcq-opt">C) Newton's Third Law</div>
+        <div class="mcq-opt">D) Conservation of energy</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Newton's Second Law (increases impact time, reduces force)</div>
+      </div>
+
+      <!-- MCQ 11 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">11. When a bullet is fired from a gun, the gun recoils. This is an example of:</div>
+        <div class="mcq-opt">A) Newton's First Law</div>
+        <div class="mcq-opt">B) Newton's Second Law</div>
+        <div class="mcq-opt">C) Newton's Third Law</div>
+        <div class="mcq-opt">D) Law of Universal Gravitation</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Newton's Third Law (action-reaction)</div>
+      </div>
+
+      <!-- MCQ 12 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">12. A passenger in a bus falls backward when the bus suddenly starts. This is due to:</div>
+        <div class="mcq-opt">A) Inertia of motion</div>
+        <div class="mcq-opt">B) Inertia of rest</div>
+        <div class="mcq-opt">C) Inertia of direction</div>
+        <div class="mcq-opt">D) Centripetal force</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Inertia of rest (body wants to stay at rest)</div>
+      </div>
+
+      <!-- MCQ 13 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">13. Which of the following is NOT a vector quantity?</div>
+        <div class="mcq-opt">A) Force</div>
+        <div class="mcq-opt">B) Momentum</div>
+        <div class="mcq-opt">C) Energy</div>
+        <div class="mcq-opt">D) Acceleration</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Energy (scalar)</div>
+      </div>
+
+      <!-- MCQ 14 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">14. Ball bearings are used to:</div>
+        <div class="mcq-opt">A) Increase friction</div>
+        <div class="mcq-opt">B) Reduce friction</div>
+        <div class="mcq-opt">C) Increase speed</div>
+        <div class="mcq-opt">D) Decrease speed</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Reduce friction (convert sliding to rolling friction)</div>
+      </div>
+
+      <!-- MCQ 15 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">15. The rate of change of velocity is called:</div>
+        <div class="mcq-opt">A) Speed</div>
+        <div class="mcq-opt">B) Acceleration</div>
+        <div class="mcq-opt">C) Displacement</div>
+        <div class="mcq-opt">D) Momentum</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Acceleration</div>
+      </div>
+
+      <!-- MCQ 16 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">16. A body of mass 5 kg is moving with a velocity of 10 m/s. Its momentum is:</div>
+        <div class="mcq-opt">A) 50 kg·m/s</div>
+        <div class="mcq-opt">B) 15 kg·m/s</div>
+        <div class="mcq-opt">C) 2 kg·m/s</div>
+        <div class="mcq-opt">D) 0.5 kg·m/s</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) 50 kg·m/s (p = 5 × 10 = 50)</div>
+      </div>
+
+      <!-- MCQ 17 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">17. Which law gives the formula F = ma?</div>
+        <div class="mcq-opt">A) Newton's First Law</div>
+        <div class="mcq-opt">B) Newton's Second Law</div>
+        <div class="mcq-opt">C) Newton's Third Law</div>
+        <div class="mcq-opt">D) Law of Conservation</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Newton's Second Law</div>
+      </div>
+
+      <!-- MCQ 18 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">18. The area under a velocity-time graph represents:</div>
+        <div class="mcq-opt">A) Acceleration</div>
+        <div class="mcq-opt">B) Displacement</div>
+        <div class="mcq-opt">C) Speed</div>
+        <div class="mcq-opt">D) Force</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Displacement</div>
+      </div>
+
+      <!-- MCQ 19 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">19. Treads on car tyres are designed to:</div>
+        <div class="mcq-opt">A) Reduce friction</div>
+        <div class="mcq-opt">B) Increase friction</div>
+        <div class="mcq-opt">C) Reduce weight</div>
+        <div class="mcq-opt">D) Increase speed</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Increase friction (better grip on road)</div>
+      </div>
+
+      <!-- MCQ 20 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">20. A rocket works on the principle of:</div>
+        <div class="mcq-opt">A) Conservation of energy</div>
+        <div class="mcq-opt">B) Conservation of momentum</div>
+        <div class="mcq-opt">C) Conservation of mass</div>
+        <div class="mcq-opt">D) Bernoulli's principle</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Conservation of momentum</div>
+      </div>
+
+      <!-- MCQ 21 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">21. If an object moves in a circular path at constant speed, its acceleration is:</div>
+        <div class="mcq-opt">A) Zero</div>
+        <div class="mcq-opt">B) Directed outward</div>
+        <div class="mcq-opt">C) Directed towards centre</div>
+        <div class="mcq-opt">D) Tangential</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Directed towards centre (centripetal acceleration)</div>
+      </div>
+
+      <!-- MCQ 22 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">22. Which of the following is the equation of motion that relates v², u², a, and s?</div>
+        <div class="mcq-opt">A) v = u + at</div>
+        <div class="mcq-opt">B) s = ut + ½at²</div>
+        <div class="mcq-opt">C) v² = u² + 2as</div>
+        <div class="mcq-opt">D) s = vt – ½at²</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) v² = u² + 2as</div>
+      </div>
+
+      <!-- MCQ 23 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">23. A car is moving at 20 m/s and comes to rest after applying brakes. The retardation is:</div>
+        <div class="mcq-opt">A) Positive acceleration</div>
+        <div class="mcq-opt">B) Negative acceleration</div>
+        <div class="mcq-opt">C) Uniform motion</div>
+        <div class="mcq-opt">D) No acceleration</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Negative acceleration (retardation)</div>
+      </div>
+
+      <!-- MCQ 24 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">24. The slope of a distance–time graph gives:</div>
+        <div class="mcq-opt">A) Acceleration</div>
+        <div class="mcq-opt">B) Displacement</div>
+        <div class="mcq-opt">C) Velocity</div>
+        <div class="mcq-opt">D) Speed</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: D) Speed</div>
+      </div>
+
+      <!-- MCQ 25 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">25. Friction can be reduced by using:</div>
+        <div class="mcq-opt">A) Treads on tyres</div>
+        <div class="mcq-opt">B) Sand on road</div>
+        <div class="mcq-opt">C) Lubricants like oil</div>
+        <div class="mcq-opt">D) Grooved surfaces</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Lubricants reduce friction</div>
+      </div>
+
+      <!-- MCQ 26 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">26. An object at rest will remain at rest unless acted upon by an external force. This is:</div>
+        <div class="mcq-opt">A) Newton's 1st Law</div>
+        <div class="mcq-opt">B) Newton's 2nd Law</div>
+        <div class="mcq-opt">C) Newton's 3rd Law</div>
+        <div class="mcq-opt">D) Law of Conservation</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: A) Newton's 1st Law (Law of Inertia)</div>
+      </div>
+
+      <!-- MCQ 27 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">27. The total momentum of a system is conserved when:</div>
+        <div class="mcq-opt">A) External force acts</div>
+        <div class="mcq-opt">B) No external force acts</div>
+        <div class="mcq-opt">C) Friction is present</div>
+        <div class="mcq-opt">D) Gravity is present</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) No external force acts (isolated system)</div>
+      </div>
+
+      <!-- MCQ 28 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">28. When you walk, the force that pushes you forward is the:</div>
+        <div class="mcq-opt">A) Action force by foot on ground</div>
+        <div class="mcq-opt">B) Reaction force by ground on foot</div>
+        <div class="mcq-opt">C) Frictional force by air</div>
+        <div class="mcq-opt">D) Gravitational force</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Reaction force by ground on foot (Newton's 3rd Law)</div>
+      </div>
+
+      <!-- MCQ 29 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">29. In a velocity-time graph, uniform acceleration is shown by:</div>
+        <div class="mcq-opt">A) A horizontal line</div>
+        <div class="mcq-opt">B) A straight sloping line</div>
+        <div class="mcq-opt">C) A curved line</div>
+        <div class="mcq-opt">D) A vertical line</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) A straight sloping line</div>
+      </div>
+
+      <!-- MCQ 30 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">30. A ball is thrown vertically upward. At the highest point, its velocity is:</div>
+        <div class="mcq-opt">A) Maximum</div>
+        <div class="mcq-opt">B) Zero</div>
+        <div class="mcq-opt">C) Negative</div>
+        <div class="mcq-opt">D) Equal to initial velocity</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Zero (momentarily at rest before falling down)</div>
+      </div>
+
+      <!-- MCQ 31 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">31. Which of the following produces the least friction?</div>
+        <div class="mcq-opt">A) Sliding a box</div>
+        <div class="mcq-opt">B) Rolling a ball</div>
+        <div class="mcq-opt">C) Pushing a stationary car</div>
+        <div class="mcq-opt">D) Dragging a bag</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) Rolling a ball (rolling friction is minimum)</div>
+      </div>
+
+      <!-- MCQ 32 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">32. The product of mass and velocity is called:</div>
+        <div class="mcq-opt">A) Acceleration</div>
+        <div class="mcq-opt">B) Force</div>
+        <div class="mcq-opt">C) Momentum</div>
+        <div class="mcq-opt">D) Impulse</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: C) Momentum (p = mv)</div>
+      </div>
+
+      <!-- MCQ 33 -->
+      <div class="mcq-block" onclick="toggleAns(this)">
+        <div class="mcq-q">33. A car accelerates uniformly from 0 to 20 m/s in 5 seconds. The acceleration is:</div>
+        <div class="mcq-opt">A) 2 m/s²</div>
+        <div class="mcq-opt">B) 4 m/s²</div>
+        <div class="mcq-opt">C) 10 m/s²</div>
+        <div class="mcq-opt">D) 100 m/s²</div>
+        <div class="mcq-ans"><i class="fas fa-check-circle text-green-400 mr-1"></i> Answer: B) 4 m/s² (a = Δv/t = 20/5 = 4 m/s²)</div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+      <i class="fas fa-rocket text-amber-400/50 mr-2"></i>
+      Motion &amp; Laws of Motion · NCERT Physics Notes · Class 7–11
+      <br>Compiled for BPSC / UPSC revision · Click MCQs to reveal answers
+    </div>
+
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function toggleAns(el) {
+      const ans = el.querySelector('.mcq-ans');
+      if (ans) {
+        ans.classList.toggle('show');
+      }
+    }
+
+    function toggleMenu() {
+      const m = document.getElementById('nav-menu');
+      const i = document.getElementById('hamburger-icon');
+      m.classList.toggle('hidden');
+      i.classList.toggle('fa-bars');
+      i.classList.toggle('fa-times');
+    }
+  </script>
+
+</body>
+</html>

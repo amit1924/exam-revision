@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Cell & Tissues — NCERT Class 6-10 Science Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(99,102,241,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+/* MULTI-COLOR HIGHLIGHT SYSTEM */
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+/* BACKGROUND HIGHLIGHTS */
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#6366f1; }
+.fact-box { background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.08)); border:1px solid rgba(99,102,241,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#818cf8; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.disease-box { background:linear-gradient(135deg, rgba(239,68,68,0.08), rgba(251,146,60,0.08)); border:1px solid rgba(239,68,68,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.disease-title { font-size:0.8rem; font-weight:600; color:#fb923c; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(99,102,241,0.15); color:#a5b4fc; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(99,102,241,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(99,102,241,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(99,102,241,0.1); border:1px solid rgba(99,102,241,0.2); font-size:0.82rem; color:#818cf8; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+<div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-indigo-500/20 text-center">
+  <i class="fa-solid fa-microscope text-4xl sm:text-5xl text-cyan-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Human Cell & Tissues</h1>
+  <p class="text-indigo-300 text-sm mt-1"><i class="fa-solid fa-book text-rose-400 mr-1"></i> NCERT Science · Class 6-10 · Complete Anatomy Notes</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-cyan-900/40 text-cyan-300 border border-cyan-500/30"><i class="fa-solid fa-microscope mr-1"></i>Cell Biology</span>
+    <span class="cat-badge bg-indigo-900/40 text-indigo-300 border border-indigo-500/30"><i class="fa-solid fa-layer-group mr-1"></i>Tissues</span>
+    <span class="cat-badge bg-emerald-900/40 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-star mr-1"></i>Exam Ready</span>
+  </div>
+</div>
+
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-list text-indigo-400"></i>
+      <span class="text-white font-semibold text-sm">Contents</span>
+    </div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()" aria-label="Toggle menu">
+      <i id="hamburger-icon" class="fas fa-bars text-indigo-400"></i>
+    </button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">1. Discovery</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">2. Cell Theory</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">3. Cell Structure</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">4. Organelles</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">5. Plant vs Animal</a>
+    <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">6. Cell Division</a>
+    <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">7. Tissues Intro</a>
+    <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">8. Epithelial</a>
+    <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">9. Connective</a>
+    <a href="#sec10" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">10. Muscular</a>
+    <a href="#sec11" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">11. Nervous</a>
+    <a href="#sec12" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-cyan-900/30 hover:text-cyan-400">12. MCQs</a>
+  </div>
+</div>
+
+<!-- SECTION 1: DISCOVERY -->
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-flask text-cyan-400"></i> 1. Discovery of Cell</h2>
+  <p class="content-text">The term <span class="hl-term hl-bg-term">"cell"</span> was first coined by <span class="hl-ruler hl-bg-ruler">Robert Hooke</span> in <span class="hl-date hl-bg-date">1665</span>. He observed a thin slice of <span class="hl-place hl-bg-place">cork</span> (dead plant cells) under his self-made microscope. He saw small compartments like rooms in a honeycomb and named them <span class="hl-term hl-bg-term">"cellulae"</span> (Latin for small rooms).</p>
+  <ul class="bullet-list">
+    <li><span class="hl-date">1665</span> — <span class="hl-ruler">Robert Hooke</span> discovered cell in <span class="hl-place">cork</span></li>
+    <li><span class="hl-date">1674</span> — <span class="hl-ruler">Antonie van Leeuwenhoek</span> first observed <span class="hl-term">living cells</span> (bacteria, protozoa) — called them <span class="hl-term">"animalcules"</span></li>
+    <li><span class="hl-date">1831</span> — <span class="hl-ruler">Robert Brown</span> discovered the <span class="hl-term">nucleus</span> in orchid cells</li>
+    <li><span class="hl-date">1839</span> — <span class="hl-ruler">Purkinje</span> coined the term <span class="hl-term">"protoplasm"</span> for the living fluid inside cells</li>
+  </ul>
+  <div class="fact-box">
+    <div class="fact-box-title"><i class="fa-solid fa-star"></i> Key Fact</div>
+    <div class="fact-box-content">Robert Hooke's microscope was a <span class="hl-num">30x</span> magnification simple microscope. His observations were published in the book <span class="hl-term">"Micrographia"</span> (1665) — the first book about microscopic observations.</div>
+  </div>
+</section>
+
+<!-- SECTION 2: CELL THEORY -->
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-scroll text-cyan-400"></i> 2. Cell Theory</h2>
+  <p class="content-text">The <span class="hl-term hl-bg-term">Cell Theory</span> was formulated by <span class="hl-ruler hl-bg-ruler">Matthias Schleiden</span> (botanist) and <span class="hl-ruler hl-bg-ruler">Theodor Schwann</span> (zoologist) in <span class="hl-date hl-bg-date">1838-1839</span>.</p>
+  <ul class="bullet-list">
+    <li><span class="hl-ruler">Schleiden</span> (1838): All <span class="hl-term">plants</span> are composed of cells</li>
+    <li><span class="hl-ruler">Schwann</span> (1839): All <span class="hl-term">animals</span> are composed of cells; cells have a <span class="hl-arch">cell membrane</span></li>
+    <li><span class="hl-ruler">Rudolf Virchow</span> (1855): <span class="hl-term hl-bg-term">"Omnis cellula e cellula"</span> — all cells arise from pre-existing cells</li>
+  </ul>
+  <p class="content-text font-semibold text-indigo-300 mt-3">Modern Cell Theory includes:</p>
+  <ul class="bullet-list">
+    <li>All living organisms are composed of <span class="hl-term">cells</span></li>
+    <li>The cell is the <span class="hl-term">basic structural and functional unit</span> of life</li>
+    <li>All cells arise from <span class="hl-policy">pre-existing cells</span> (biogenesis)</li>
+    <li>Energy flow occurs within cells (<span class="hl-term">metabolism</span>)</li>
+    <li>Hereditary information (<span class="hl-arch">DNA</span>) is passed from cell to cell</li>
+  </ul>
+  <div class="mnemonic-box">
+    <div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Mnemonic: <span class="text-white">"SSV"</span></div>
+    <div class="mnemonic-content"><span class="hl-ruler">S</span>chleiden = <span class="hl-term">Plants</span> | <span class="hl-ruler">S</span>chwann = <span class="hl-term">Animals</span> | <span class="hl-ruler">V</span>irchow = <span class="hl-term">Pre-existing cells</span></div>
+  </div>
+</section>
+
+<!-- SECTION 3: CELL STRUCTURE -->
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-diagram-project text-cyan-400"></i> 3. Cell Structure — Overview</h2>
+  <p class="content-text">A typical cell has <span class="hl-num hl-bg-num">3</span> main parts: <span class="hl-arch hl-bg-arch">Cell Membrane</span> (outer covering), <span class="hl-term hl-bg-term">Cytoplasm</span> (jelly-like substance), and <span class="hl-ruler hl-bg-ruler">Nucleus</span> (control center).</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Part</th><th>Location</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-arch">Cell Membrane</span></td><td>Outermost in animal cells</td><td>Selectively permeable; regulates entry/exit</td></tr>
+        <tr><td><span class="hl-term">Cytoplasm</span></td><td>Between membrane & nucleus</td><td>Jelly-like matrix; site of metabolic reactions</td></tr>
+        <tr><td><span class="hl-ruler">Nucleus</span></td><td>Center (usually)</td><td>Controls cell activities; contains DNA</td></tr>
+        <tr><td><span class="hl-policy">Cell Wall</span></td><td>Outside cell membrane (plants only)</td><td>Structural support; protection</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Detailed Parts</div>
+
+  <div class="subsubsection-heading">A. Cell Membrane (Plasma Membrane)</div>
+  <ul class="bullet-list">
+    <li>Made of <span class="hl-term">lipids</span> and <span class="hl-term">proteins</span> (fluid mosaic model — <span class="hl-ruler">Singer & Nicolson</span>, 1972)</li>
+    <li><span class="hl-term hl-bg-term">Selectively permeable</span> — allows some substances to pass through but not others</li>
+    <li>Structure: <span class="hl-arch">Phospholipid bilayer</span> with embedded <span class="hl-arch">proteins</span></li>
+    <li>Functions: <span class="hl-policy">Protection, transport, cell-cell recognition, communication</span></li>
+  </ul>
+
+  <div class="subsubsection-heading">B. Cell Wall (Only in Plants, Bacteria, Fungi)</div>
+  <ul class="bullet-list">
+    <li>Plant cell wall: made of <span class="hl-term">cellulose</span> (a carbohydrate)</li>
+    <li>Functions: <span class="hl-policy">Provides rigidity, maintains shape, prevents bursting</span></li>
+    <li><span class="hl-term">Fully permeable</span> — allows all substances to pass through</li>
+    <li>Primary wall (thin, flexible) + Middle lamella (glues cells together)</li>
+  </ul>
+
+  <div class="subsubsection-heading">C. Cytoplasm</div>
+  <ul class="bullet-list">
+    <li>Jelly-like <span class="hl-term">protoplasm</span> between cell membrane and nucleus</li>
+    <li>Contains <span class="hl-arch">organelles</span> — small structures with specific functions</li>
+    <li><span class="hl-term">Cytosol</span> = fluid portion; <span class="hl-term">Cytoplasm</span> = cytosol + organelles (excluding nucleus)</li>
+    <li>Site of many <span class="hl-policy">metabolic reactions</span> (glycolysis, protein synthesis)</li>
+  </ul>
+
+  <div class="subsubsection-heading">D. Nucleus — The Control Center</div>
+  <ul class="bullet-list">
+    <li>Discovered by <span class="hl-ruler">Robert Brown</span> (1831) in <span class="hl-place">orchid root cells</span></li>
+    <li>Structure: <span class="hl-arch">Nuclear membrane</span> (double-layered, porous), <span class="hl-term">Nucleoplasm</span>, <span class="hl-arch">Chromatin</span> (DNA + proteins), <span class="hl-arch">Nucleolus</span> (ribosome synthesis)</li>
+    <li>Functions: Controls <span class="hl-policy">cell division, growth, metabolism, heredity</span></li>
+    <li>Cells without nucleus: <span class="hl-term">RBCs (mammalian)</span> — enucleated; <span class="hl-term">Platelets</span> — anucleate</li>
+    <li>Cells with multiple nuclei: <span class="hl-term hl-bg-term">Skeletal muscle cells</span> (syncytium), <span class="hl-term hl-bg-term">Osteoclasts</span></li>
+  </ul>
+</section>
+
+<!-- SECTION 4: CELL ORGANELLES -->
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-cogs text-cyan-400"></i> 4. Cell Organelles — Structure & Functions</h2>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Endoplasmic Reticulum (ER)</div>
+  <ul class="bullet-list">
+    <li>Network of membranous tubes & sacs called <span class="hl-term">cisternae</span></li>
+    <li>Two types: <span class="hl-arch hl-bg-arch">Rough ER (RER)</span> — has ribosomes on surface → <span class="hl-policy">protein synthesis</span></li>
+    <li><span class="hl-arch hl-bg-arch">Smooth ER (SER)</span> — no ribosomes → <span class="hl-policy">lipid synthesis, detoxification</span></li>
+    <li>Functions: <span class="hl-policy">Transport of materials, synthesis of proteins/lipids, detoxification</span></li>
+    <li>Discovered by: <span class="hl-ruler">Porter, Claude & Thompson</span> (1945)</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Golgi Apparatus (Golgi Body)</div>
+  <ul class="bullet-list">
+    <li>Stack of flattened membrane sacs called <span class="hl-term">cisternae</span></li>
+    <li>Discovered by: <span class="hl-ruler">Camillo Golgi</span> (1898)</li>
+    <li>Functions: <span class="hl-policy">Packaging, modification, sorting of proteins; lysosome formation</span></li>
+    <li>Secretory vesicles bud off from <span class="hl-term">trans-face</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Lysosomes — "Suicide Bags"</div>
+  <ul class="bullet-list">
+    <li>Membrane-bound sacs containing <span class="hl-term hl-bg-term">digestive enzymes</span> (hydrolases)</li>
+    <li>Functions: <span class="hl-policy">Intracellular digestion, phagocytosis, autophagy, autolysis</span></li>
+    <li>Called <span class="hl-term">"suicide bags"</span> because if the lysosome bursts, it digests the entire cell</li>
+    <li>Discovered by: <span class="hl-ruler">Christian de Duve</span> (1955)</li>
+  </ul>
+  
+  <div class="disease-box">
+    <div class="disease-title"><i class="fa-solid fa-triangle-exclamation"></i> Lysosomal Storage Diseases</div>
+    <div class="fact-box-content">Deficiency of lysosomal enzymes causes diseases: <span class="hl-event">Tay-Sachs</span> (lipid accumulation), <span class="hl-event">Pompe disease</span> (glycogen accumulation), <span class="hl-event">Gaucher disease</span></div>
+  </div>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Mitochondria — "Powerhouse of the Cell"</div>
+  <ul class="bullet-list">
+    <li>Double-membrane organelle: outer membrane smooth, inner membrane folded into <span class="hl-term">cristae</span></li>
+    <li>Inner space: <span class="hl-term">Matrix</span> — contains DNA, ribosomes, enzymes for <span class="hl-term">Krebs cycle</span></li>
+    <li>Functions: <span class="hl-policy hl-bg-policy">ATP synthesis (cellular respiration), regulation of metabolism</span></li>
+    <li>Has its own <span class="hl-arch">DNA (mtDNA)</span> and <span class="hl-arch">ribosomes (70S)</span> — <span class="hl-term">semi-autonomous organelle</span></li>
+    <li><span class="hl-date hl-bg-date">Number per cell:</span> Liver cells ~<span class="hl-num">1000-2000</span>, Sperm ~<span class="hl-num">100-200</span></li>
+    <li><span class="hl-term">Maternal inheritance</span> — mtDNA comes only from mother</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Ribosomes — "Protein Factory"</div>
+  <ul class="bullet-list">
+    <li>Non-membrane bound organelles made of <span class="hl-term">rRNA + proteins</span></li>
+    <li>Two subunits: <span class="hl-num">70S</span> (prokaryotes, mitochondria) or <span class="hl-num">80S</span> (eukaryotes)</li>
+    <li>Location: Free in cytoplasm OR attached to <span class="hl-arch">RER</span></li>
+    <li>Function: <span class="hl-policy hl-bg-policy">Protein synthesis (translation)</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Centrosome & Centrioles</div>
+  <ul class="bullet-list">
+    <li>Found only in <span class="hl-term">animal cells</span></li>
+    <li><span class="hl-term">Centrosome</span> contains <span class="hl-num">2</span> centrioles arranged perpendicularly</li>
+    <li>Each centriole: <span class="hl-num">9+0</span> arrangement of microtubule triplets</li>
+    <li>Functions: <span class="hl-policy">Spindle fiber formation during cell division, cilia/flagella formation</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Vacuoles</div>
+  <ul class="bullet-list">
+    <li>Fluid-filled sacs bound by <span class="hl-term">tonoplast</span> membrane (in plants)</li>
+    <li>Plant cells: <span class="hl-term">Large central vacuole</span> — provides turgidity and stores nutrients</li>
+    <li>Animal cells: <span class="hl-term">Small vacuoles</span> — food vacuole, contractile vacuole (in protozoa)</li>
+    <li>Functions: <span class="hl-policy">Storage, waste disposal, osmoregulation, maintaining turgor pressure</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-circle text-rose-400"></i> Plastids (Plant Cells Only)</div>
+  <ul class="bullet-list">
+    <li>Types: <span class="hl-term">Leucoplasts</span> (colorless — storage), <span class="hl-term">Chromoplasts</span> (colored — pigments), <span class="hl-term">Chloroplasts</span> (green — <span class="hl-policy">photosynthesis</span>)</li>
+    <li><span class="hl-arch">Chloroplast</span>: Double membrane + internal <span class="hl-term">thylakoids</span> (stacked as <span class="hl-term">grana</span>) + <span class="hl-term">stroma</span></li>
+    <li>Chloroplast contains its own <span class="hl-arch">DNA</span> and <span class="hl-arch">ribosomes</span> — <span class="hl-term">semi-autonomous</span></li>
+    <li>Green pigment: <span class="hl-term">Chlorophyll</span> (absorbs sunlight for <span class="hl-policy">photosynthesis</span>)</li>
+  </ul>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Organelle</th><th>Structure</th><th>Function</th><th>Nickname</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-arch">Mitochondria</span></td><td>Double membrane, cristae</td><td>ATP production</td><td>Powerhouse</td></tr>
+        <tr><td><span class="hl-arch">Ribosomes</span></td><td>rRNA + proteins, 2 subunits</td><td>Protein synthesis</td><td>Protein factory</td></tr>
+        <tr><td><span class="hl-arch">Lysosomes</span></td><td>Single membrane, enzymes</td><td>Digestion</td><td>Suicide bags</td></tr>
+        <tr><td><span class="hl-arch">Golgi Body</span></td><td>Stacked cisternae</td><td>Packaging</td><td>Post office</td></tr>
+        <tr><td><span class="hl-arch">ER</span></td><td>Membrane network</td><td>Synthesis & transport</td><td>Highway</td></tr>
+        <tr><td><span class="hl-arch">Chloroplast</span></td><td>Double membrane, thylakoids</td><td>Photosynthesis</td><td>Kitchen (plants)</td></tr>
+        <tr><td><span class="hl-arch">Nucleus</span></td><td>Double membrane, nucleolus</td><td>Cell control</td><td>Brain/Control room</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="fact-box">
+    <div class="fact-box-title"><i class="fa-solid fa-star"></i> NCERT Exam Point</div>
+    <div class="fact-box-content"><span class="hl-term">Prokaryotic cells</span> (bacteria) lack membrane-bound organelles: no nucleus, no mitochondria, no ER, no Golgi. They have <span class="hl-term">70S ribosomes</span> and <span class="hl-arch">nucleoid</span> (circular DNA). <span class="hl-term">Eukaryotic cells</span> have all membrane-bound organelles with <span class="hl-num">80S</span> ribosomes.</div>
+  </div>
+</section>
+
+<!-- SECTION 5: PLANT VS ANIMAL CELL -->
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-seedling text-cyan-400"></i> 5. Plant Cell vs Animal Cell</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Feature</th><th>Plant Cell</th><th>Animal Cell</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-term">Cell Wall</span></td><td>Present (cellulose)</td><td>Absent</td></tr>
+        <tr><td><span class="hl-term">Shape</span></td><td>Fixed, rectangular</td><td>Irregular, round</td></tr>
+        <tr><td><span class="hl-term">Plastids</span></td><td>Present (chloroplasts etc.)</td><td>Absent</td></tr>
+        <tr><td><span class="hl-term">Vacuole</span></td><td>Large central vacuole</td><td>Small temporary vacuoles</td></tr>
+        <tr><td><span class="hl-term">Centrioles</span></td><td>Absent</td><td>Present</td></tr>
+        <tr><td><span class="hl-term">Nucleus</span></td><td>Peripheral (pushed)</td><td>Central (usually)</td></tr>
+        <tr><td><span class="hl-term">Storage</span></td><td>Starch grains</td><td>Glycogen granules</td></tr>
+        <tr><td><span class="hl-term">Lysosomes</span></td><td>Rare</td><td>Common</td></tr>
+        <tr><td><span class="hl-term">Flagella</span></td><td>Only in gametes</td><td>Present in some cells (sperm)</td></tr>
+        <tr><td><span class="hl-term">Nutrition</span></td><td>Autotrophic (photosynthesis)</td><td>Heterotrophic</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mnemonic-box">
+    <div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Mnemonic: <span class="text-white">"All Plants Have Cell Walls, Plastic Vacuoles"</span></div>
+    <div class="mnemonic-content"><span class="hl-term">A</span>ll <span class="hl-term">P</span>lants <span class="hl-term">H</span>ave <span class="hl-term">C</span>ell <span class="hl-term">W</span>alls, <span class="hl-term">P</span>lastids & large <span class="hl-term">V</span>acuoles | <span class="hl-term">A</span>nimals <span class="hl-term">L</span>ack these — they have <span class="hl-term">C</span>entrioles instead</div>
+  </div>
+</section>
+
+<!-- SECTION 6: CELL DIVISION -->
+<section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-arrows-split text-cyan-400"></i> 6. Cell Division</h2>
+  <p class="content-text">Two main types: <span class="hl-term hl-bg-term">Mitosis</span> (somatic cells) and <span class="hl-term hl-bg-term">Meiosis</span> (germ cells). <span class="hl-event">Interphase</span> is the preparatory phase before both.</p>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Cell Cycle</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term">Interphase</span> (<span class="hl-num">90%</span> of cell cycle): <span class="hl-term">G1 phase</span> (cell growth), <span class="hl-term">S phase</span> (DNA replication), <span class="hl-term">G2 phase</span> (preparation for division)</li>
+    <li><span class="hl-term">M phase</span> (Mitosis/Meiosis): actual division</li>
+    <li><span class="hl-term">Cytokinesis</span>: division of cytoplasm</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Mitosis — Equational Division</div>
+  <ul class="bullet-list">
+    <li>Occurs in <span class="hl-term hl-bg-term">somatic (body) cells</span></li>
+    <li>Divides: <span class="hl-num">1</span> parent cell → <span class="hl-num">2</span> identical daughter cells</li>
+    <li>Chromosome number: <span class="hl-term">remains same</span> (2n → 2n)</li>
+    <li>Phases: <span class="hl-term">Prophase → Metaphase → Anaphase → Telophase</span></li>
+    <li><span class="hl-term">PMAT</span> — Mnemonic: <span class="hl-arch">"People Meet At Tea"</span></li>
+    <li>Importance: <span class="hl-policy hl-bg-policy">Growth, repair, regeneration, asexual reproduction</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Meiosis — Reductional Division</div>
+  <ul class="bullet-list">
+    <li>Occurs in <span class="hl-term hl-bg-term">germ cells (gametes)</span></li>
+    <li>Divides: <span class="hl-num">1</span> parent cell → <span class="hl-num">4</span> non-identical daughter cells</li>
+    <li>Chromosome number: <span class="hl-term">halved</span> (2n → n)</li>
+    <li>Two stages: <span class="hl-term">Meiosis I</span> (reductional) + <span class="hl-term">Meiosis II</span> (equational)</li>
+    <li><span class="hl-policy hl-bg-policy">Crossing over</span> occurs in <span class="hl-term">Prophase I</span> — exchange of genetic material between homologous chromosomes → <span class="hl-term">genetic variation</span></li>
+    <li>Importance: <span class="hl-policy hl-bg-policy">Sexual reproduction, genetic diversity, evolution</span></li>
+  </ul>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-term">Cell type</span></td><td>Somatic cells</td><td>Germ cells</td></tr>
+        <tr><td><span class="hl-term">Daughter cells</span></td><td><span class="hl-num">2</span> identical</td><td><span class="hl-num">4</span> non-identical</td></tr>
+        <tr><td><span class="hl-term">Chromosome #</span></td><td>Same (2n)</td><td>Half (n)</td></tr>
+        <tr><td><span class="hl-term">Crossing over</span></td><td>No</td><td>Yes (Prophase I)</td></tr>
+        <tr><td><span class="hl-term">Divisions</span></td><td>1</td><td>2</td></tr>
+        <tr><td><span class="hl-term">Purpose</span></td><td>Growth, repair</td><td>Gamete formation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="fact-box">
+    <div class="fact-box-title"><i class="fa-solid fa-star"></i> Key Distinction</div>
+    <div class="fact-box-content"><span class="hl-term">Mitosis</span> = <span class="hl-policy">Growth & Repair</span> | <span class="hl-term">Meiosis</span> = <span class="hl-policy">Gamete (sperm/egg) formation</span>. If mitosis goes wrong → <span class="hl-event">Cancer</span>. If meiosis goes wrong → <span class="hl-event">Down syndrome, Turner syndrome, Klinefelter syndrome</span>.</div>
+  </div>
+</section>
+
+<!-- SECTION 7: TISSUES INTRO -->
+<section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-layer-group text-cyan-400"></i> 7. Introduction to Tissues</h2>
+  <p class="content-text">A <span class="hl-term hl-bg-term">tissue</span> is a group of similar cells performing a specific function. The study of tissues is called <span class="hl-term">Histology</span>.</p>
+  <ul class="bullet-list">
+    <li><span class="hl-term hl-bg-term">Meristematic tissue</span> — dividing cells (plants) — at root/shoot tips</li>
+    <li><span class="hl-term hl-bg-term">Permanent tissue</span> — differentiated, non-dividing</li>
+  </ul>
+  <p class="content-text font-semibold text-indigo-300 mt-2">Animal Tissues — <span class="hl-num">4</span> main types:</p>
+  <ul class="bullet-list">
+    <li><span class="hl-arch hl-bg-arch">Epithelial Tissue</span> — covering, lining, protection</li>
+    <li><span class="hl-arch hl-bg-arch">Connective Tissue</span> — support, connection, transport</li>
+    <li><span class="hl-arch hl-bg-arch">Muscular Tissue</span> — movement & locomotion</li>
+    <li><span class="hl-arch hl-bg-arch">Nervous Tissue</span> — conduction of nerve impulses</li>
+  </ul>
+  <div class="mnemonic-box">
+    <div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Mnemonic: <span class="text-white">"ECMN — Every Cell Makes New"</span></div>
+    <div class="mnemonic-content"><span class="hl-term">E</span>pithelial — <span class="hl-term">C</span>onnective — <span class="hl-term">M</span>uscular — <span class="hl-term">N</span>ervous → <span class="hl-arch">"Every Cell Must Nourish"</span></div>
+  </div>
+</section>
+
+<!-- SECTION 8: EPITHELIAL TISSUE -->
+<section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-grip-lines text-cyan-400"></i> 8. Epithelial Tissue</h2>
+  <p class="content-text"><span class="hl-term hl-bg-term">Epithelial tissue</span> covers body surfaces, lines cavities, and forms glands. It is <span class="hl-term">avascular</span> (no blood vessels) — gets nutrients by diffusion from underlying connective tissue.</p>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Simple Epithelium (single layer)</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term">Squamous</span> — flat cells; in <span class="hl-place hl-bg-place">lung alveoli, blood vessels (endothelium)</span>; function: <span class="hl-policy">diffusion, filtration</span></li>
+    <li><span class="hl-term">Cuboidal</span> — cube-shaped; in <span class="hl-place hl-bg-place">kidney tubules, glands</span>; function: <span class="hl-policy">secretion, absorption</span></li>
+    <li><span class="hl-term">Columnar</span> — tall column-like; in <span class="hl-place hl-bg-place">stomach, intestine</span>; function: <span class="hl-policy">secretion, absorption</span></li>
+    <li><span class="hl-term">Ciliated columnar</span> — with hair-like cilia; in <span class="hl-place hl-bg-place">respiratory tract, fallopian tubes</span>; function: <span class="hl-policy">movement of mucus/egg</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Compound Epithelium (multiple layers — stratified)</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term hl-bg-term">Stratified squamous</span> — in <span class="hl-place">skin (epidermis)</span>, mouth, esophagus; provides <span class="hl-policy">protection against wear & tear</span></li>
+    <li><span class="hl-term hl-bg-term">Transitional epithelium</span> — in <span class="hl-place">urinary bladder, ureters</span>; stretches to accommodate urine</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Glandular Epithelium</div>
+  <ul class="bullet-list">
+    <li>Glands formed from epithelial tissue</li>
+    <li><span class="hl-term">Exocrine glands</span> — with ducts (e.g., sweat glands, salivary glands, liver)</li>
+    <li><span class="hl-term">Endocrine glands</span> — ductless, secrete hormones into blood (e.g., pituitary, thyroid)</li>
+  </ul>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Type</th><th>Shape</th><th>Location</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-term">Squamous</span></td><td>Flat, irregular</td><td>Lungs, blood vessels</td><td>Diffusion</td></tr>
+        <tr><td><span class="hl-term">Cuboidal</span></td><td>Cube</td><td>Kidney, glands</td><td>Secretion</td></tr>
+        <tr><td><span class="hl-term">Columnar</span></td><td>Tall</td><td>Intestine</td><td>Absorption</td></tr>
+        <tr><td><span class="hl-term">Ciliated</span></td><td>Ciliated columnar</td><td>Trachea, oviduct</td><td>Move particles</td></tr>
+        <tr><td><span class="hl-term">Stratified</span></td><td>Multiple layers</td><td>Skin, esophagus</td><td>Protection</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SECTION 9: CONNECTIVE TISSUE -->
+<section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-link text-cyan-400"></i> 9. Connective Tissue</h2>
+  <p class="content-text">Most abundant and widely distributed tissue. Characterized by cells scattered in an <span class="hl-term">extracellular matrix</span> (ECM — ground substance + fibers).</p>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Loose Connective Tissue</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term">Areolar tissue</span> — most widely distributed; contains fibroblasts, collagen & elastic fibers; <span class="hl-policy">fills spaces, supports organs</span></li>
+    <li><span class="hl-term">Adipose tissue</span> — stores <span class="hl-term">fat (adipocytes)</span>; under skin, around kidneys; <span class="hl-policy">insulation, energy storage, cushioning</span></li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Dense Connective Tissue</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term hl-bg-term">Tendons</span> — connect <span class="hl-term">muscle to bone</span>; strong, inelastic (collagen fibers)</li>
+    <li><span class="hl-term hl-bg-term">Ligaments</span> — connect <span class="hl-term">bone to bone</span>; elastic (elastic fibers)</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Specialized Connective Tissues</div>
+
+  <div class="subsubsection-heading">Cartilage</div>
+  <ul class="bullet-list">
+    <li>Cells: <span class="hl-term">Chondrocytes</span> (in lacunae); matrix: <span class="hl-term">chondrin</span></li>
+    <li><span class="hl-term">Avascular</span> — no blood supply</li>
+    <li>Types: <span class="hl-term">Hyaline cartilage</span> (nose, trachea, joints — most common), <span class="hl-term">Fibrous cartilage</span> (intervertebral discs), <span class="hl-term">Elastic cartilage</span> (ear pinna)</li>
+  </ul>
+
+  <div class="subsubsection-heading">Bone</div>
+  <ul class="bullet-list">
+    <li>Cells: <span class="hl-term">Osteocytes</span> (in lacunae); matrix: <span class="hl-term">ossein</span> (collagen) + <span class="hl-term hl-bg-term">calcium phosphate</span> (hardness)</li>
+    <li><span class="hl-term">Vascular</span> — has blood supply</li>
+    <li>Functions: <span class="hl-policy hl-bg-policy">Support, protection (skull, ribs), movement (levers), mineral storage (Ca, P), blood cell formation (bone marrow)</span></li>
+    <li>Compact bone → Haversian system (<span class="hl-term">osteon</span>)</li>
+  </ul>
+
+  <div class="subsubsection-heading">Blood — Fluid Connective Tissue</div>
+  <ul class="bullet-list">
+    <li>Matrix: <span class="hl-term">Plasma</span> (<span class="hl-num">55%</span>) = water (<span class="hl-num">92%</span>) + proteins (<span class="hl-num">7%</span>: albumin, globulin, fibrinogen) + nutrients, hormones, wastes</li>
+    <li>Cells (<span class="hl-num">45%</span>): <span class="hl-term">RBCs (erythrocytes)</span> — <span class="hl-num">4.5-5.5 million/mm³</span>; <span class="hl-term">WBCs (leukocytes)</span> — <span class="hl-num">4000-11000/mm³</span>; <span class="hl-term">Platelets (thrombocytes)</span> — <span class="hl-num">1.5-4 lakh/mm³</span></li>
+    <li><span class="hl-event">RBC absence of nucleus</span> — more space for hemoglobin (<span class="hl-term">Hb</span>: <span class="hl-num">12-16 g/dL</span> in males, <span class="hl-num">11-14 g/dL</span> in females)</li>
+    <li><span class="hl-term hl-bg-term">Phagocytic WBCs</span>: Neutrophils (<span class="hl-num">60-65%</span>), Monocytes (<span class="hl-num">6-8%</span>) → <span class="hl-battle">first line defense</span></li>
+    <li><span class="hl-arch">Lymphocytes</span> (<span class="hl-num">20-25%</span>) → <span class="hl-arch">B-cells</span> (antibodies) & <span class="hl-arch">T-cells</span> (cellular immunity)</li>
+  </ul>
+
+  <div class="disease-box">
+    <div class="disease-title"><i class="fa-solid fa-triangle-exclamation"></i> Blood Disorders</div>
+    <div class="fact-box-content"><span class="hl-event">Anemia</span> — low Hb/RBCs | <span class="hl-event">Leukemia</span> — blood cancer (↑ WBCs) | <span class="hl-event">Thrombocytopenia</span> — low platelets | <span class="hl-event">Hemophilia</span> — genetic, blood doesn't clot</div>
+  </div>
+
+  <div class="subsubsection-heading">Lymph — A Fluid Connective Tissue</div>
+  <ul class="bullet-list">
+    <li>Similar to plasma but <span class="hl-term">less proteins</span>; contains <span class="hl-term">lymphocytes</span></li>
+    <li>Carries: absorbed fats (<span class="hl-term">lacteals</span> in intestine), <span class="hl-policy">drains excess tissue fluid back to blood</span></li>
+    <li><span class="hl-term">Lymph nodes</span> — filter lymph; site of immune response</li>
+  </ul>
+</section>
+
+<!-- SECTION 10: MUSCULAR TISSUE -->
+<section id="sec10" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-dumbbell text-cyan-400"></i> 10. Muscular Tissue</h2>
+  <p class="content-text">Specialized for <span class="hl-policy hl-bg-policy">contraction</span> — enables movement. <span class="hl-num">3</span> types based on structure & function:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Feature</th><th>Skeletal (Striated)</th><th>Smooth (Non-striated)</th><th>Cardiac</th></tr></thead>
+      <tbody>
+        <tr><td><span class="hl-term">Location</span></td><td>Attached to bones</td><td>Walls of organs (intestine, stomach)</td><td>Heart wall</td></tr>
+        <tr><td><span class="hl-term">Striations</span></td><td>Present</td><td>Absent</td><td>Present</td></tr>
+        <tr><td><span class="hl-term">Nuclei</span></td><td>Multinucleated</td><td>Single (central)</td><td>1-2 (central)</td></tr>
+        <tr><td><span class="hl-term">Control</span></td><td><span class="hl-policy">Voluntary</span></td><td><span class="hl-policy">Involuntary</span></td><td><span class="hl-policy">Involuntary</span></td></tr>
+        <tr><td><span class="hl-term">Branching</span></td><td>No (cylindrical)</td><td>No (spindle-shaped)</td><td>Yes (branched)</td></tr>
+        <tr><td><span class="hl-term">Intercalated discs</span></td><td>Absent</td><td>Absent</td><td><span class="hl-arch">Present</span></td></tr>
+        <tr><td><span class="hl-term">Fatigue</span></td><td>Fatigues easily</td><td>Non-fatiguing</td><td>Non-fatiguing</td></tr>
+        <tr><td><span class="hl-term">Speed of contraction</span></td><td>Fast</td><td>Slow</td><td>Rhythmic</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="fact-box">
+    <div class="fact-box-title"><i class="fa-solid fa-star"></i> Key Term</div>
+    <div class="fact-box-content"><span class="hl-term">Intercalated discs</span> — unique to cardiac muscle; contain gap junctions for rapid electrical impulse transmission → heart beats as a unit (<span class="hl-term">functional syncytium</span>)</div>
+  </div>
+
+  <div class="mnemonic-box">
+    <div class="mnemonic-title"><i class="fa-light fa-lightbulb"></i> Mnemonic: <span class="text-white">"SSC — Skeletal=Striated+Voluntary, Smooth=Non-striated+Involuntary, Cardiac=Striated+Involuntary"</span></div>
+    <div class="mnemonic-content">Tip: <span class="hl-term">Skeletal</span> = under your conscious control | <span class="hl-term">Smooth</span> = internal organs, automatic | <span class="hl-term">Cardiac</span> = heart, never rests, automatic</div>
+  </div>
+</section>
+
+<!-- SECTION 11: NERVOUS TISSUE -->
+<section id="sec11" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-brain text-cyan-400"></i> 11. Nervous Tissue</h2>
+  <p class="content-text">Specialized for <span class="hl-policy hl-bg-policy">conducting nerve impulses</span>. The structural & functional unit is the <span class="hl-term hl-bg-term">neuron (nerve cell)</span>.</p>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Neuron Structure</div>
+  <ul class="bullet-list">
+    <li><span class="hl-arch">Cell body (Soma/Cytom)</span> — contains nucleus, Nissl granules (RER), neurofibrils</li>
+    <li><span class="hl-arch">Dendrites</span> — short, branched; receive impulses from other neurons</li>
+    <li><span class="hl-arch">Axon</span> — long, single; carries impulses away from cell body</li>
+    <li>Myelin sheath — <span class="hl-term">Schwann cells</span> (PNS) / <span class="hl-term">Oligodendrocytes</span> (CNS); gaps = <span class="hl-term">Nodes of Ranvier</span></li>
+    <li><span class="hl-term">Synapse</span> — junction between two neurons; <span class="hl-policy">neurotransmitters</span> (acetylcholine, dopamine) transfer impulse</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Types of Neurons</div>
+  <ul class="bullet-list">
+    <li><span class="hl-term">Sensory (afferent) neurons</span> — carry impulses from receptors → CNS</li>
+    <li><span class="hl-term">Motor (efferent) neurons</span> — carry impulses from CNS → effectors (muscles/glands)</li>
+    <li><span class="hl-term">Interneurons (association)</span> — connect sensory & motor neurons within CNS</li>
+  </ul>
+
+  <div class="subsection-heading"><i class="fa-solid fa-arrow-right text-green-400"></i> Neuroglia (Glial Cells)</div>
+  <ul class="bullet-list">
+    <li>Non-neuronal supporting cells in CNS — <span class="hl-num">10x</span> more abundant than neurons</li>
+    <li>Types: <span class="hl-term">Astrocytes</span> (support, blood-brain barrier), <span class="hl-term">Microglia</span> (immune defense), <span class="hl-term">Oligodendrocytes</span> (myelin in CNS), <span class="hl-term">Ependymal cells</span> (line ventricles)</li>
+    <li>In PNS: <span class="hl-term">Schwann cells</span> (myelin), <span class="hl-term">Satellite cells</span> (support)</li>
+  </ul>
+
+  <div class="fact-box">
+    <div class="fact-box-title"><i class="fa-solid fa-star"></i> NCERT Connect</div>
+    <div class="fact-box-content">Nervous tissue is covered in detail in <span class="hl-term">Class 10 Biology — Control & Coordination</span> and <span class="hl-term">Class 11 — Neural Control & Coordination</span>. See the dedicated <span class="hl-ruler">Human Nervous System</span> notes for complete coverage.</div>
+  </div>
+</section>
+
+<!-- SECTION 12: MCQs -->
+<section id="sec12" class="gradient-card-1 glow-card mb-6 fade-in">
+  <h2 class="section-heading"><i class="fa-solid fa-question-circle text-cyan-400"></i> 12. Practice MCQs</h2>
+  
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">1. Who discovered the cell?</div>
+    <div class="mcq-opt">A) Leeuwenhoek</div>
+    <div class="mcq-opt">B) Robert Hooke</div>
+    <div class="mcq-opt">C) Robert Brown</div>
+    <div class="mcq-opt">D) Rudolf Virchow</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Robert Hooke (1665)</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">2. Which organelle is called the "powerhouse of the cell"?</div>
+    <div class="mcq-opt">A) Golgi apparatus</div>
+    <div class="mcq-opt">B) Ribosome</div>
+    <div class="mcq-opt">C) Mitochondria</div>
+    <div class="mcq-opt">D) Lysosome</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Mitochondria — site of ATP synthesis</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">3. Which tissue connects muscle to bone?</div>
+    <div class="mcq-opt">A) Ligament</div>
+    <div class="mcq-opt">B) Tendon</div>
+    <div class="mcq-opt">C) Cartilage</div>
+    <div class="mcq-opt">D) Areolar</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Tendon (muscle→bone); Ligament = bone→bone</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">4. Which of the following is NOT found in animal cells?</div>
+    <div class="mcq-opt">A) Centriole</div>
+    <div class="mcq-opt">B) Cell wall</div>
+    <div class="mcq-opt">C) Lysosome</div>
+    <div class="mcq-opt">D) Mitochondria</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Cell wall — present only in plants</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">5. "Omnis cellula e cellula" was given by:</div>
+    <div class="mcq-opt">A) Schleiden</div>
+    <div class="mcq-opt">B) Schwann</div>
+    <div class="mcq-opt">C) Virchow</div>
+    <div class="mcq-opt">D) Hooke</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Rudolf Virchow — all cells arise from pre-existing cells</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">6. Which blood cells help in blood clotting?</div>
+    <div class="mcq-opt">A) RBCs</div>
+    <div class="mcq-opt">B) WBCs</div>
+    <div class="mcq-opt">C) Platelets</div>
+    <div class="mcq-opt">D) Plasma</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Platelets (thrombocytes) — normal count: 1.5-4 lakh/mm³</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">7. Cardiac muscle is characterized by:</div>
+    <div class="mcq-opt">A) Voluntary control</div>
+    <div class="mcq-opt">B) Intercalated discs</div>
+    <div class="mcq-opt">C) Spindle-shaped cells</div>
+    <div class="mcq-opt">D) Single nucleus per cell</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Intercalated discs — unique to cardiac muscle for rapid impulse transmission</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">8. During mitosis, chromosome number in daughter cells:</div>
+    <div class="mcq-opt">A) Doubles</div>
+    <div class="mcq-opt">B) Remains same</div>
+    <div class="mcq-opt">C) Halves</div>
+    <div class="mcq-opt">D) Becomes zero</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Remains same (2n→2n) — equational division</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">9. Which epithelial tissue lines the respiratory tract?</div>
+    <div class="mcq-opt">A) Squamous</div>
+    <div class="mcq-opt">B) Cuboidal</div>
+    <div class="mcq-opt">C) Ciliated columnar</div>
+    <div class="mcq-opt">D) Stratified squamous</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Ciliated columnar — cilia move mucus upward</div>
+  </div>
+
+  <div class="mcq-block" onclick="toggleAns(this)">
+    <div class="mcq-q">10. Which organelle contains digestive enzymes?</div>
+    <div class="mcq-opt">A) Peroxisome</div>
+    <div class="mcq-opt">B) Lysosome</div>
+    <div class="mcq-opt">C) Vacuole</div>
+    <div class="mcq-opt">D) Golgi body</div>
+    <div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Lysosome — contains hydrolytic enzymes, called "suicide bags"</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6">
+  <i class="fa-solid fa-microscope text-cyan-400/50 mr-2"></i>Human Cell & Tissues · NCERT Science Notes · Class 6-10
+  <br>Compiled for revision · Click MCQs to reveal answers
+</div>
+
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+function toggleAns(el) {
+  const ans = el.querySelector('.mcq-ans');
+  if (ans) ans.classList.toggle('show');
+}
+
+function toggleMenu() {
+  const m = document.getElementById('nav-menu');
+  const i = document.getElementById('hamburger-icon');
+  m.classList.toggle('hidden');
+  i.classList.toggle('fa-bars');
+  i.classList.toggle('fa-times');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Anatomy — NCERT Class 6-10 Simple Notes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e1a; scroll-behavior: smooth; color: #e0e6f0; }
+@media (max-width: 640px) { .mobile-stack { flex-direction: column !important; } .mobile-full { width: 100% !important; } }
+.gradient-card-1 { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 12px; padding: 20px; border: 1px solid #2a3a5c; }
+.glow-card:hover { box-shadow: 0 0 20px rgba(99,102,241,0.15); transform: translateY(-2px); transition: all 0.3s ease; }
+.glow-card { transition: all 0.3s ease; }
+.gradient-top { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
+.section-heading { font-size:1.25rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width: 640px) { .section-heading { font-size:1rem; } }
+.subsection-heading { font-size:1.05rem; font-weight:600; color:#e2e8f0; display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; margin-top:1.25rem; }
+@media (max-width: 640px) { .subsection-heading { font-size:0.9rem; } }
+.subsubsection-heading { font-size:0.95rem; font-weight:600; color:#cbd5e1; margin-top:1rem; margin-bottom:0.5rem; padding-left:0.75rem; border-left:3px solid rgba(16,185,129,0.4); }
+.content-text { font-size:0.9rem; line-height:1.75; color:#cbd5e1; margin-bottom:0.5rem; }
+@media (max-width: 640px) { .content-text { font-size:0.8rem; line-height:1.6; } }
+.hl-ruler { color: #60a5fa; font-weight: 700; } .hl-date { color: #34d399; font-weight: 700; } .hl-policy { color: #a78bfa; font-weight: 700; }
+.hl-event { color: #fb923c; font-weight: 700; } .hl-num { color: #f87171; font-weight: 700; } .hl-place { color: #22d3ee; font-weight: 600; }
+.hl-term { color: #fbbf24; font-weight: 700; } .hl-arch { color: #f472b6; font-weight: 700; } .hl-battle { color: #ef4444; font-weight: 700; }
+.hl-bg-ruler { background:rgba(96,165,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-date { background:rgba(52,211,153,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-policy { background:rgba(167,139,250,0.15); padding:0 4px; border-radius:3px; } .hl-bg-event { background:rgba(251,146,60,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-num { background:rgba(248,113,113,0.15); padding:0 4px; border-radius:3px; } .hl-bg-place { background:rgba(34,211,238,0.12); padding:0 4px; border-radius:3px; }
+.hl-bg-term { background:rgba(251,191,36,0.15); padding:0 4px; border-radius:3px; } .hl-bg-arch { background:rgba(244,114,182,0.15); padding:0 4px; border-radius:3px; }
+.hl-bg-battle { background:rgba(239,68,68,0.15); padding:0 4px; border-radius:3px; }
+.bullet-list { list-style:none; padding-left:1rem; }
+.bullet-list li { position:relative; padding-left:1.25rem; margin-bottom:0.35rem; font-size:0.85rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .bullet-list li { font-size:0.78rem; } }
+.bullet-list li::before { content:'\f00c'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; left:0; top:0.35rem; font-size:0.5rem; color:#10b981; }
+.bullet-list-2 { list-style: none; padding-left: 0.5rem; }
+.bullet-list-2 li { position: relative; padding-left: 1.25rem; margin-bottom: 0.25rem; font-size: 0.82rem; color: #94a3b8; line-height: 1.6; }
+.bullet-list-2 li::before { content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 0.3rem; font-size: 0.45rem; color: #34d399; }
+.fact-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.fact-box-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.fact-box-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+@media (max-width: 640px) { .fact-box-content { font-size:0.75rem; } }
+.mnemonic-box { background:linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.08)); border:1px solid rgba(251,191,36,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.mnemonic-title { font-size:0.8rem; font-weight:600; color:#fbbf24; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.mnemonic-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.analogy-box { background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.08)); border:1px solid rgba(16,185,129,0.2); border-radius:0.75rem; padding:0.75rem 1rem; margin:0.75rem 0; }
+.analogy-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.analogy-content { font-size:0.82rem; color:#94a3b8; line-height:1.6; }
+.table-wrap { overflow-x:auto; margin:0.75rem 0; }
+.table-wrap table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+@media (max-width: 640px) { .table-wrap table { font-size:0.72rem; } }
+.table-wrap th { background:rgba(16,185,129,0.15); color:#6ee7b7; padding:0.5rem 0.75rem; text-align:left; border-bottom:1px solid rgba(16,185,129,0.3); font-weight:600; }
+.table-wrap td { padding:0.4rem 0.75rem; border-bottom:1px solid rgba(255,255,255,0.05); color:#94a3b8; }
+.table-wrap tr:hover td { background:rgba(255,255,255,0.02); }
+.cat-badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:9999px; font-size:0.7rem; font-weight:600; letter-spacing:0.025em; }
+.mcq-block { background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:0.75rem; padding:1rem; margin-bottom:1rem; cursor:pointer; transition:all 0.2s; }
+.mcq-block:hover { border-color:rgba(16,185,129,0.3); }
+.mcq-q { font-size:0.9rem; color:#e2e8f0; font-weight:500; margin-bottom:0.5rem; }
+.mcq-opt { font-size:0.82rem; color:#94a3b8; padding:0.2rem 0; }
+.mcq-ans { display:none; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:0.5rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.2); font-size:0.82rem; color:#6ee7b7; }
+.mcq-ans.show { display:block; }
+.sticky-toc { position:sticky; top:0; z-index:50; background:rgba(10,14,26,0.95); backdrop-filter:blur(10px); }
+.fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+.teacher-tip { background:linear-gradient(135deg, rgba(16,185,129,0.1), rgba(5,150,105,0.05)); border-left:4px solid #34d399; border-radius:0 0.75rem 0.75rem 0; padding:0.75rem 1rem; margin:0.75rem 0; }
+.teacher-tip-title { font-size:0.8rem; font-weight:600; color:#34d399; margin-bottom:0.25rem; display:flex; align-items:center; gap:0.5rem; }
+.teacher-tip-content { font-size:0.85rem; color:#e2e8f0; line-height:1.7; }
+</style></head>
+<body><div class="max-w-5xl mx-auto px-3 sm:px-6 py-6">
+<div class="gradient-top rounded-2xl p-6 sm:p-8 mb-6 border border-emerald-500/20 text-center">
+  <i class="fa-solid fa-tree text-4xl sm:text-5xl text-emerald-400 mb-3"></i>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">Plant Anatomy — Structure of a Plant</h1>
+  <p class="text-emerald-300 text-sm mt-1"><i class="fa-solid fa-chalkboard-user text-amber-400 mr-1"></i> NCERT Science · Class 6-10 · Simple Explanation</p>
+  <div class="flex flex-wrap gap-2 justify-center mt-3">
+    <span class="cat-badge bg-emerald-900/40 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-leaf mr-1"></i>Plant Biology</span>
+    <span class="cat-badge bg-amber-900/40 text-amber-300 border border-amber-500/30"><i class="fa-solid fa-graduation-cap mr-1"></i>Made Easy</span>
+  </div>
+</div>
+<div class="sticky-toc border-b border-gray-800 mb-6 pb-3">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2"><i class="fa-solid fa-list text-emerald-400"></i><span class="text-white font-semibold text-sm">Topics</span></div>
+    <button id="hamburger-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-800" onclick="toggleMenu()"><i id="hamburger-icon" class="fas fa-bars text-emerald-400"></i></button>
+  </div>
+  <div id="nav-menu" class="hidden sm:flex flex-wrap gap-1.5 text-xs mt-2">
+    <a href="#sec1" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Plant Body Overview</a>
+    <a href="#sec2" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Root System</a>
+    <a href="#sec3" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Stem</a>
+    <a href="#sec4" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Leaf</a>
+    <a href="#sec5" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Flower</a>
+    <a href="#sec6" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Plant Tissues</a>
+    <a href="#sec7" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Transport & Nutrition</a>
+    <a href="#sec8" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">Reproduction</a>
+    <a href="#sec9" class="px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700">MCQs</a>
+  </div>
+</div>
+
+<!-- SEC 1: PLANT BODY OVERVIEW -->
+<section id="sec1" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-seedling text-emerald-400"></i> 1. The Plant Body — A Quick Tour</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Teacher Says</div>
+<div class="teacher-tip-content">Think of a plant as a <span class="hl-term">building</span>. The <span class="hl-term">roots</span> are the foundation (underground). The <span class="hl-term">stem</span> is the main pillar/ hallway. The <span class="hl-term">leaves</span> are the kitchen (where food is made). The <span class="hl-term">flowers</span> are the nursery (where babies/seeds are made).</div>
+</div>
+
+<p class="content-text">A typical flowering plant has <span class="hl-num">2 main parts</span>: the <span class="hl-term hl-bg-term">Root System</span> (underground) and the <span class="hl-term hl-bg-term">Shoot System</span> (above ground). Together they keep the plant alive!</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+  <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-xl p-4">
+    <div class="text-center"><i class="fa-solid fa-arrow-down text-2xl text-emerald-400 mb-2"></i></div>
+    <h3 class="text-center font-bold text-emerald-300 mb-2">Root System</h3>
+    <p class="text-xs text-gray-400 text-center">Anchors the plant, absorbs water & minerals</p>
+  </div>
+  <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-4">
+    <div class="text-center"><i class="fa-solid fa-arrow-up text-2xl text-green-400 mb-2"></i></div>
+    <h3 class="text-center font-bold text-green-300 mb-2">Shoot System</h3>
+    <p class="text-xs text-gray-400 text-center">Stem + Leaves + Flowers + Fruits — everything above ground</p>
+  </div>
+</div>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-lightbulb"></i> The Plant as a Factory</div>
+<div class="analogy-content">
+<span class="hl-term">Roots</span> = Raw material buyer (buys water & minerals from soil)<br>
+<span class="hl-term">Stem</span> = Conveyor belt & support structure (transports materials, holds everything up)<br>
+<span class="hl-term">Leaves</span> = Kitchen/food processing unit (makes food using sunlight)<br>
+<span class="hl-term">Flowers</span> = Marketing & sales (attracts pollinators, makes seeds for next generation)<br>
+<span class="hl-term">Fruits</span> = Packaging & shipping (protects and spreads seeds)
+</div>
+</div>
+</section>
+
+<!-- SEC 2: ROOT SYSTEM -->
+<section id="sec2" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-arrow-down-wide-short text-emerald-400"></i> 2. Root System — The Foundation</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 6 — Getting to Know Plants</div>
+<div class="teacher-tip-content">Roots are the <span class="hl-term">underground part</span> of the plant. They grow <span class="hl-term">downward</span> (toward gravity) and <span class="hl-term">away from light</span>. This is called <span class="hl-term">positive geotropism</span> and <span class="hl-term">negative phototropism</span>.</div>
+</div>
+
+<div class="subsubsection-heading">Functions of Roots</div>
+<ul class="bullet-list">
+<li><span class="hl-policy hl-bg-policy">Anchoring</span> — holds the plant firmly in the soil (prevents falling over in wind)</li>
+<li><span class="hl-policy">Absorption</span> — absorbs water and minerals from the soil through <span class="hl-term">root hairs</span> (tiny hair-like projections)</li>
+<li><span class="hl-policy">Storage</span> — some roots store food (carrot, radish, beetroot, sweet potato)</li>
+<li><span class="hl-policy">Conduction</span> — conducts water & minerals upward to the stem</li>
+</ul>
+
+<div class="subsubsection-heading">Two Types of Root Systems</div>
+<div class="table-wrap">
+<table><thead><tr><th>Feature</th><th>Taproot</th><th>Fibrous Root</th></tr></thead>
+<tbody>
+<tr><td>Description</td><td>One <span class="hl-term">main thick root</span> going deep, with smaller side branches</td><td><span class="hl-term">Many thin roots</span> spreading out like a bunch of hair</td></tr>
+<tr><td>Examples</td><td><span class="hl-place">Mustard, Carrot, Radish, Neem, Mango, Rose, Sunflower, Gram</span></td><td><span class="hl-place">Wheat, Rice, Maize, Grass, Sugarcane, Onion, Bamboo</span></td></tr>
+<tr><td>Depth</td><td>Goes <span class="hl-num">deep</span> into soil (can reach water far below)</td><td>Spreads <span class="hl-num">near the surface</span> (covers wide area)</td></tr>
+<tr><td>Which plants?</td><td><span class="hl-term">Dicotyledons (dicots)</span> — plants with 2 seed leaves</td><td><span class="hl-term">Monocotyledons (monocots)</span> — plants with 1 seed leaf</td></tr>
+</tbody></table>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Taproot vs Fibrous Mnemonic</div>
+<div class="mnemonic-content"><span class="hl-term">Taproot</span> — Think "Tap" = one main tap (faucet) that goes deep. Plants: Dicots (2 leaves). <span class="text-white">"Mango has a TAProot"</span><br><span class="hl-term">Fibrous</span> — Think "Fiber" = many thin threads like a mop. Plants: Monocots. <span class="text-white">"Wheat has FIBROUS roots like a FIBER mop"</span></div>
+</div>
+
+<div class="subsubsection-heading">Specialized Roots (Modifications)</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Storage roots</span> — store food (carrot = enlarged taproot, sweet potato = enlarged fibrous root)</li>
+<li><span class="hl-term">Prop roots</span> — grow from stem into soil for support (banyan tree — those hanging pillar-like roots)</li>
+<li><span class="hl-term">Stilt roots</span> — grow from lower stem, provide support in shallow water (sugarcane, maize)</li>
+<li><span class="hl-term">Pneumatophores (Respiratory roots)</span> — grow upward in swampy areas to get oxygen (mangroves like Sundarbans)</li>
+<li><span class="hl-term">Parasitic roots (Haustoria)</span> — penetrate host plant to suck nutrients (Cuscuta/Amarbel — the yellow twining parasite)</li>
+<li><span class="hl-term">Nodulated roots</span> — contain nitrogen-fixing bacteria (Rhizobium) in root nodules (legumes — peas, beans, gram)</li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> Root Hairs — The Tiny Heroes</div>
+<div class="fact-box-content"><span class="hl-term">Root hairs</span> are tiny, thin extensions of root cells. They <span class="hl-term">increase surface area</span> for water absorption. A single plant can have <span class="hl-num">billions</span> of root hairs! They are so small you can barely see them — but without them, the plant would die of thirst.</div>
+</div>
+</section>
+
+<!-- SEC 3: STEM -->
+<section id="sec3" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-arrow-up-wide-short text-emerald-400"></i> 3. Stem — The Main Pillar</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 6 — Getting to Know Plants</div>
+<div class="teacher-tip-content">The stem is the <span class="hl-term">upward-growing part</span> of the plant. It grows toward light (<span class="hl-term">positive phototropism</span>). Unlike roots, it has <span class="hl-term">nodes and internodes</span>.</div>
+</div>
+
+<div class="subsubsection-heading">Functions of Stem</div>
+<ul class="bullet-list">
+<li><span class="hl-policy hl-bg-policy">Support</span> — holds leaves, flowers, and fruits upright (so leaves get sunlight, flowers attract pollinators)</li>
+<li><span class="hl-policy">Transport</span> — carries water & minerals <span class="hl-term">up</span> (from roots to leaves) and food <span class="hl-term">down</span> (from leaves to other parts)</li>
+<li><span class="hl-policy">Storage</span> — stores food in some plants (potato = underground stem, sugarcane = stem stores sugar)</li>
+<li><span class="hl-policy">Propagation</span> — some stems can grow into new plants (stem cuttings — rose, sugarcane, money plant)</li>
+</ul>
+
+<div class="subsubsection-heading">Parts of a Stem</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Node</span> — the point where leaves and buds arise (like a knot on a bamboo stick)</li>
+<li><span class="hl-term">Internode</span> — the space between two nodes</li>
+<li><span class="hl-term">Bud</span> — a small swelling that can grow into a new shoot, leaf, or flower</li>
+<li class="bullet-list-2"><span class="hl-term">Terminal (apical) bud</span> — at the tip of stem, makes stem grow taller</li>
+<li class="bullet-list-2"><span class="hl-term">Axillary (lateral) bud</span> — in the angle between leaf and stem (axil), can grow into a branch</li>
+</ul>
+
+<div class="subsubsection-heading">Types of Stems</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Herbaceous stem</span> — soft, green, flexible (grass, mint, tomato). No woody tissue</li>
+<li><span class="hl-term">Woody stem</span> — hard, brown, thick (tree trunks — mango, neem, banyan). Has bark and wood</li>
+<li><span class="hl-term">Climbing stem</span> — weak stem that climbs on support (money plant, grapevine, gourd)</li>
+<li><span class="hl-term">Underground stem</span> — grows underground, stores food, can grow into new plant (potato = tuber, ginger = rhizome, onion = bulb, grass = runner)</li>
+</ul>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-lightbulb"></i> Stem Analogy — A Highway System</div>
+<div class="analogy-content">The stem is like a <span class="hl-term">highway with two lanes</span>:<br>
+<span class="hl-term">Lane 1 (Xylem)</span> — water & minerals moving UP from roots to leaves (like a water supply truck)<br>
+<span class="hl-term">Lane 2 (Phloem)</span> — food moving DOWN from leaves to roots & storage (like a food delivery truck)<br>
+The <span class="hl-term">nodes</span> are like highway exits where leaves (towns) are connected.</div>
+</div>
+</section>
+
+<!-- SEC 4: LEAF -->
+<section id="sec4" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-leaf text-emerald-400"></i> 4. Leaf — The Food Factory</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 6 — Getting to Know Plants</div>
+<div class="teacher-tip-content">Leaves are the <span class="hl-term">kitchen of the plant</span>. They make food through <span class="hl-term">photosynthesis</span>. Without leaves, the plant would starve!</div>
+</div>
+
+<div class="subsubsection-heading">Parts of a Leaf</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Lamina (leaf blade)</span> — the flat, green, wide part of the leaf. This is where photosynthesis happens</li>
+<li><span class="hl-term">Petiole (leaf stalk)</span> — the thin stalk that connects the leaf to the stem (some leaves have no petiole — called <span class="hl-term">sessile leaves</span>)</li>
+<li><span class="hl-term">Midrib</span> — the thick central vein running down the middle of the leaf</li>
+<li><span class="hl-term">Veins</span> — thin branching lines on the leaf. They provide support and transport water & food</li>
+<li><span class="hl-term">Margin</span> — the edge of the leaf (can be smooth, serrated/toothed, or lobed)</li>
+<li><span class="hl-term">Stomata</span> — tiny pores (mostly on underside of leaf) for gas exchange. Each stoma is surrounded by two <span class="hl-term">guard cells</span></li>
+</ul>
+
+<div class="subsubsection-heading">Venation — The Pattern of Veins</div>
+<div class="table-wrap">
+<table><thead><tr><th>Type</th><th>Pattern</th><th>Examples</th><th>Plant Type</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term hl-bg-term">Reticulate venation</span></td><td>Veins form a <span class="hl-term">net-like pattern</span> (branching irregularly, like a fishing net)</td><td><span class="hl-place">Mango, Neem, Rose, Sunflower, Peepal, Hibiscus</span></td><td><span class="hl-term">Dicots</span> (taproot)</td></tr>
+<tr><td><span class="hl-term hl-bg-term">Parallel venation</span></td><td>Veins run <span class="hl-term">parallel</span> to each other (like train tracks)</td><td><span class="hl-place">Wheat, Rice, Maize, Grass, Sugarcane, Banana, Bamboo</span></td><td><span class="hl-term">Monocots</span> (fibrous root)</td></tr>
+</tbody></table>
+</div>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> Easy Way to Remember</div>
+<div class="teacher-tip-content">Look at the leaf veins to guess the root type! <span class="hl-term">Net-like veins</span> = taproot (dicot). <span class="hl-term">Parallel veins</span> = fibrous root (monocot). Example: If a mango leaf has net veins, it must have a taproot. Correct! If grass has parallel veins, it has fibrous roots. Correct!</div>
+</div>
+
+<div class="subsubsection-heading">Photosynthesis — How Leaves Make Food</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">Photosynthesis</span> = "Photo" (light) + "Synthesis" (to make). Making food using sunlight!</li>
+<li>Raw materials needed:
+  <ul class="bullet-list-2">
+    <li><span class="hl-term">Carbon dioxide (CO₂)</span> — enters through stomata from air</li>
+    <li><span class="hl-term">Water (H₂O)</span> — comes from roots through xylem</li>
+    <li><span class="hl-term">Sunlight</span> — absorbed by chlorophyll (green pigment in leaves)</li>
+  </ul>
+</li>
+<li>Products: <span class="hl-term hl-bg-policy">Glucose (food — C₆H₁₂O₆)</span> + <span class="hl-term">Oxygen (O₂ — released into air)</span></li>
+<li>Equation: <span class="text-white">CO₂ + H₂O  →(sunlight, chlorophyll)→  C₆H₁₂O₆ + O₂</span></li>
+<li><span class="hl-term">Chlorophyll</span> — the green pigment in <span class="hl-term">chloroplasts</span> (tiny organelles inside leaf cells). It traps sunlight energy</li>
+<li><span class="hl-term">Stomata</span> — tiny pores (mostly on underside of leaf) through which CO₂ enters and O₂ & water vapor exit. Each stoma is controlled by <span class="hl-term">guard cells</span> (they open & close the pore)</li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Photosynthesis Mnemonic: <span class="text-white">"Plants Make Their Own Food Using COWS"</span></div>
+<div class="mnemonic-content"><span class="hl-term">C</span>arbon dioxide + <span class="hl-term">O</span>xygen is released + <span class="hl-term">W</span>ater + <span class="hl-term">S</span>unlight = <span class="text-emerald-400">Food (Glucose)!</span></div>
+</div>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> NCERT Class 7 — Nutrition in Plants</div>
+<div class="fact-box-content"><span class="hl-term">Autotrophs</span> = plants that make their own food (using photosynthesis). They are called <span class="hl-term">"producers"</span> in the food chain. <span class="hl-term">Heterotrophs</span> = animals that depend on plants/other animals for food. Green plants are the <span class="hl-term">only living things</span> that can make their own food!</div>
+</div>
+
+<div class="subsubsection-heading">Leaf Modifications</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Tendrils</span> — leaves modified into thin, wiry coils for climbing (pea plant, cucumber)</li>
+<li><span class="hl-term">Spines</span> — leaves reduced to sharp points to reduce water loss & protect from animals (cactus, acacia)</li>
+<li><span class="hl-term">Fleshy leaves</span> — thick, juicy leaves that store water (aloe vera, agave)</li>
+<li><span class="hl-term">Insectivorous leaves</span> — modified to trap & digest insects (pitcher plant, Venus flytrap, sundew) — these grow in nitrogen-poor soil, so they get nitrogen from insects</li>
+</ul>
+</section>
+
+<!-- SEC 5: FLOWER -->
+<section id="sec5" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-flower text-emerald-400"></i> 5. Flower — The Reproductive Part</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 6 — Getting to Know Plants</div>
+<div class="teacher-tip-content">A flower is the <span class="hl-term">reproductive organ</span> of a plant. It's where seeds are made. Not all plants have flowers (non-flowering plants = ferns, mosses, gymnosperms like pine).</div>
+</div>
+
+<div class="subsubsection-heading">Parts of a Flower (4 Whorls)</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+  <div class="bg-pink-900/20 border border-pink-500/30 rounded-xl p-3">
+    <h3 class="font-bold text-pink-300 text-sm"><i class="fa-solid fa-circle text-[8px] text-pink-400 mr-1"></i> Calyx (Sepals)</h3>
+    <p class="text-xs text-gray-400">Green leaf-like parts at the bottom. Protect the bud before it opens.</p>
+  </div>
+  <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-3">
+    <h3 class="font-bold text-purple-300 text-sm"><i class="fa-solid fa-circle text-[8px] text-purple-400 mr-1"></i> Corolla (Petals)</h3>
+    <p class="text-xs text-gray-400">Colorful, attractive parts. Attract pollinators (bees, butterflies).</p>
+  </div>
+  <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-3">
+    <h3 class="font-bold text-yellow-300 text-sm"><i class="fa-solid fa-circle text-[8px] text-yellow-400 mr-1"></i> Androecium (Stamens) — Male part</h3>
+    <p class="text-xs text-gray-400">Each stamen has a <span class="hl-term">filament</span> (stalk) + <span class="hl-term">anther</span> (produces pollen — male gamete).</p>
+  </div>
+  <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-3">
+    <h3 class="font-bold text-green-300 text-sm"><i class="fa-solid fa-circle text-[8px] text-green-400 mr-1"></i> Gynoecium (Pistil) — Female part</h3>
+    <p class="text-xs text-gray-400">Has <span class="hl-term">Stigma</span> (sticky top) + <span class="hl-term">Style</span> (tube) + <span class="hl-term">Ovary</span> (contains ovules — female gamete).</p>
+  </div>
+</div>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-lightbulb"></i> Flower Analogy — A Wedding Event</div>
+<div class="analogy-content">
+<span class="hl-term">Sepals</span> = Security guards (protect before event)<br>
+<span class="hl-term">Petals</span> = Decoration (attract guests)<br>
+<span class="hl-term">Stamens (anther)</span> = Groom's side (produces pollen = male guests)<br>
+<span class="hl-term">Pistil (ovary)</span> = Bride's side (contains ovules = female guests)<br>
+<span class="hl-term">Pollination</span> = The bride & groom meet (pollen reaches stigma)<br>
+<span class="hl-term">Fertilization</span> = The wedding (male & female gametes fuse) → seed = baby!
+</div>
+</div>
+
+<div class="subsubsection-heading">Pollination — Transfer of Pollen</div>
+<ul class="bullet-list">
+<li><span class="hl-term hl-bg-term">Pollination</span> = transfer of pollen from <span class="hl-term">anther</span> (male) to <span class="hl-term">stigma</span> (female)</li>
+<li><span class="hl-term">Self-pollination</span> — pollen from same flower (pea, tomato, wheat). Simpler but less genetic variety</li>
+<li><span class="hl-term">Cross-pollination</span> — pollen from one flower to another flower on a different plant (apple, mango, sunflower). Creates more variety. Agents: <span class="hl-term">Wind</span> (grass, wheat, pine — light, floaty pollen), <span class="hl-term">Insects</span> (bees, butterflies — flowers are colorful, smell nice, have nectar), <span class="hl-term">Birds</span> (hummingbirds, sunbirds), <span class="hl-term">Water</span> (aquatic plants)</li>
+</ul>
+
+<div class="subsubsection-heading">Fertilization → Seed → Fruit</div>
+<ul class="bullet-list">
+<li>After pollination: <span class="hl-term">Pollen tube</span> grows down the style → reaches ovule → male gamete fuses with female gamete → <span class="hl-term hl-bg-term">Zygote</span> formed</li>
+<li><span class="hl-term">Ovule</span> → develops into <span class="hl-term">Seed</span></li>
+<li><span class="hl-term">Ovary</span> → develops into <span class="hl-term">Fruit</span> (the fruit protects the seeds and helps spread them)</li>
+<li>Example: In a mango flower, after fertilization, the ovary becomes the mango fruit, and the ovule inside becomes the mango seed (the hard stone)</li>
+</ul>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Flower Parts Mnemonic: <span class="text-white">"Some People See Flowers"</span></div>
+<div class="mnemonic-content"><span class="hl-term">S</span>epals (Calyx) → <span class="hl-term">P</span>etals (Corolla) → <span class="hl-term">S</span>tamens (Androecium) → <span class="hl-term">F</span>lower center (Pistil/Gynoecium) — arranged from outer to inner!</div>
+</div>
+</section>
+
+<!-- SEC 6: PLANT TISSUES -->
+<section id="sec6" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-layer-group text-emerald-400"></i> 6. Plant Tissues — What Plants Are Made Of</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 9 — Tissues</div>
+<div class="teacher-tip-content">Just like your body has different tissues (muscle, bone, blood), plants also have different tissues. But plant cells have <span class="hl-term">cell walls</span> — that's why plants stand upright even without bones!</div>
+</div>
+
+<div class="subsection-heading">Meristematic Tissues — "Growing Tissues"</div>
+<ul class="bullet-list">
+<li>Cells that keep dividing — found in growing regions</li>
+<li><span class="hl-term">Apical meristem</span> — at tips of roots & stems → plant grows taller/longer</li>
+<li><span class="hl-term">Lateral meristem</span> — in sides (cambium) → plant grows thicker (tree trunks widen)</li>
+<li><span class="hl-term">Intercalary meristem</span> — at base of leaves/nodes → grass grows back after cutting</li>
+</ul>
+
+<div class="subsection-heading">Permanent Tissues — "Specialized Tissues"</div>
+<div class="table-wrap">
+<table><thead><tr><th>Tissue</th><th>Type</th><th>Function</th><th>Features</th><th>Where Found</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-term">Parenchyma</span></td><td>Simple</td><td>Storage of food, photosynthesis (if it has chlorophyll = <span class="hl-term">chlorenchyma</span>), buoyancy in water (air spaces = <span class="hl-term">aerenchyma</span>)</td><td>Thin-walled, loosely packed, living cells with intercellular spaces</td><td>All plant parts — pith of stem, flesh of fruits, leaf mesophyll</td></tr>
+<tr><td><span class="hl-term">Collenchyma</span></td><td>Simple</td><td>Provides <span class="hl-term">flexibility</span> & mechanical support to growing stems</td><td>Living cells with thickened corners (pectin & cellulose), no intercellular spaces</td><td>Beneath epidermis of stem, leaf stalks (petioles), young stems — allows bending without breaking</td></tr>
+<tr><td><span class="hl-term">Sclerenchyma</span></td><td>Simple</td><td>Provides <span class="hl-term">strength & rigidity</span> (makes plants hard)</td><td>Thick lignified walls, <span class="hl-term">dead cells</span>, no protoplasm. Very strong! Cannot stretch</td><td>Seed coats, nut shells (coconut husk), stem of jute/hemp, veins of leaf</td></tr>
+<tr><td><span class="hl-term">Xylem</span></td><td>Complex</td><td><span class="hl-term hl-bg-policy">Conducts water & minerals UP</span> from roots to leaves + mechanical support</td><td>Made of: <span class="hl-term">Tracheids, Vessels</span> (water-conducting), <span class="hl-term">Xylem fibers</span> (support), <span class="hl-term">Xylem parenchyma</span> (storage). <span class="hl-event">Dead cells</span> (except parenchyma)</td><td>Throughout plant — from root hair → stem → leaf veins</td></tr>
+<tr><td><span class="hl-term">Phloem</span></td><td>Complex</td><td><span class="hl-term hl-bg-policy">Conducts food DOWN</span> from leaves to all parts</td><td>Made of: <span class="hl-term">Sieve tubes</span> (food transport — no nucleus!), <span class="hl-term">Companion cells</span> (help sieve tubes — have nucleus), <span class="hl-term">Phloem fibers</span>, <span class="hl-term">Phloem parenchyma</span>. <span class="hl-event">Living cells</span> (except fibers)</td><td>Bark side (inner bark) of stem — all over plant</td></tr>
+</tbody></table>
+</div>
+
+<div class="analogy-box">
+<div class="analogy-title"><i class="fa-solid fa-lightbulb"></i> Xylem vs Phloem — The Two Highways</div>
+<div class="analogy-content">
+<span class="hl-term">Xylem</span> = <span class="text-cyan-400">One-way water pipe</span> (water goes UP only). Like a drinking straw. Cells are dead — they're just hollow tubes.<br>
+<span class="hl-term">Phloem</span> = <span class="text-amber-400">Two-way food pipe</span> (food goes FROM leaves TO everywhere). Like a delivery truck. Cells are alive but the sieve tube cells lose their nucleus to make more space for food transport!</div>
+</div>
+
+<div class="mnemonic-box">
+<div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> Xylem vs Phloem Mnemonic: <span class="text-white">"Xylem = Up (X = X-tra Up)"</span></div>
+<div class="mnemonic-content"><span class="hl-term">X</span>ylem transports water <span class="hl-term">UP</span> (remember: X = "X-tra Up"). <span class="hl-term">P</span>hloem transports food in <span class="hl-term">P</span>lants (P = "P-food"). Or: <span class="text-white">"Xylem = Water, Phloem = Food"</span></div>
+</div>
+</section>
+
+<!-- SEC 7: TRANSPORT & NUTRITION -->
+<section id="sec7" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-truck-fast text-emerald-400"></i> 7. Transport & Nutrition in Plants</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 7 — Transportation in Plants</div>
+<div class="teacher-tip-content">How does water from the soil reach the top of a <span class="hl-num">100-meter tall</span> tree? And how does food from leaves reach the roots? That's transport in plants!</div>
+</div>
+
+<div class="subsection-heading">Water Transport — Root → Stem → Leaf</div>
+<ul class="bullet-list">
+<li>Water enters through <span class="hl-term">root hairs</span> (by osmosis)</li>
+<li>Moves through root cells → reaches <span class="hl-term">xylem</span> in root</li>
+<li>Travels UP through xylem vessels (continuous hollow tubes)</li>
+<li>How does water go up? <span class="hl-term hl-bg-policy">Transpiration pull</span> — water evaporates from leaves (through stomata), creating a suction force that pulls water up from roots. Like sucking on a straw!</li>
+<li><span class="hl-term hl-bg-term">Transpiration</span> = loss of water vapor from leaves through stomata. It also cools the plant (like sweating)</li>
+</ul>
+
+<div class="subsection-heading">Food Transport — Leaf → All Parts</div>
+<ul class="bullet-list">
+<li>Food (glucose/sucrose) made in leaves by photosynthesis</li>
+<li>Moves through <span class="hl-term">phloem</span> sieve tubes to all parts of the plant</li>
+<li>Can move <span class="hl-term">both up and down</span> — to growing tips (up) and to roots/storage (down)</li>
+<li>This process is called <span class="hl-term hl-bg-term">Translocation</span></li>
+</ul>
+
+<div class="subsubsection-heading">Other Types of Nutrition in Plants</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Parasitic plants</span> — suck nutrients from other plants. Example: <span class="hl-place">Cuscuta (Amarbel)</span> — yellow, leafless, twining stem with haustoria (sucking roots)</li>
+<li><span class="hl-term">Insectivorous plants</span> — catch and digest insects for nitrogen (since they grow in poor soil). Examples: <span class="hl-place">Pitcher plant, Venus flytrap, Sundew, Bladderwort</span></li>
+<li><span class="hl-term">Saprophytes</span> — feed on dead decaying matter. Examples: <span class="hl-place">Mushrooms, Fungi, Moulds</span></li>
+<li><span class="hl-term">Symbiosis</span> — two organisms live together for mutual benefit. Example: <span class="hl-place">Lichens</span> (algae + fungus). Algae makes food, fungus provides water & shelter. Another: <span class="hl-place">Rhizobium</span> bacteria in root nodules of legumes — bacteria fixes nitrogen, plant gives food</li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> NCERT Class 7 — Nutrition in Plants</div>
+<div class="fact-box-content">Quick summary of plant nutrition types:<br>
+<span class="hl-term">Autotrophic</span> = Make own food (green plants — photosynthesis)<br>
+<span class="hl-term">Heterotrophic</span> = Depend on others for food → <span class="hl-term">Parasitic</span> (Cuscuta), <span class="hl-term">Insectivorous</span> (Pitcher plant), <span class="hl-term">Saprophytic</span> (Mushroom), <span class="hl-term">Symbiotic</span> (Lichens, Rhizobium)</div>
+</div>
+</section>
+
+<!-- SEC 8: REPRODUCTION -->
+<section id="sec8" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-seedling text-emerald-400"></i> 8. Reproduction in Plants</h2>
+
+<div class="teacher-tip">
+<div class="teacher-tip-title"><i class="fa-solid fa-chalkboard-user"></i> NCERT Class 7 & 10</div>
+<div class="teacher-tip-content">Plants can make babies in <span class="hl-num">two ways</span>: <span class="hl-term">Asexual</span> (only one parent — exact copy) and <span class="hl-term">Sexual</span> (two parents — unique baby).</div>
+</div>
+
+<div class="subsection-heading">Asexual Reproduction — "Clone-making"</div>
+<ul class="bullet-list">
+<li><span class="hl-term">Vegetative propagation</span> — new plant grows from a part of the parent (root, stem, leaf)</li>
+<li class="bullet-list-2"><span class="hl-term">Stem cuttings</span> — Rose, sugarcane, money plant (cut a stem, put in soil → grows new plant)</li>
+<li class="bullet-list-2"><span class="hl-term">Tubers</span> — Potato (underground stem with "eyes" = buds). Each eye can grow into a new plant</li>
+<li class="bullet-list-2"><span class="hl-term">Runners</span> — Grass, strawberry (horizontal stems above ground that root at nodes)</li>
+<li class="bullet-list-2"><span class="hl-term">Rhizomes</span> — Ginger, turmeric (underground stems that grow horizontally)</li>
+<li class="bullet-list-2"><span class="hl-term">Bulbs</span> — Onion, garlic (underground modified stem with fleshy leaves)</li>
+<li class="bullet-list-2"><span class="hl-term">Root cuttings</span> — Sweet potato, dahlia (adventitious buds on roots grow new plants)</li>
+<li class="bullet-list-2"><span class="hl-term">Leaf cuttings</span> — Bryophyllum (leaves have small buds at edges that fall off and grow into new plants!)</li>
+<li><span class="hl-term">Budding</span> — Yeast (a tiny bud grows on parent cell, then detaches)</li>
+<li><span class="hl-term">Spore formation</span> — Ferns, mosses, mushrooms (spores are tiny cells that grow into new plants in favorable conditions)</li>
+</ul>
+
+<div class="subsection-heading">Sexual Reproduction — "Seed-making"</div>
+<ul class="bullet-list">
+<li>Happens through <span class="hl-term">flowers</span> (as explained in Section 5)</li>
+<li>Process: <span class="hl-term">Pollination</span> (pollen reaches stigma) → <span class="hl-term">Fertilization</span> (male & female gametes fuse) → <span class="hl-term">Zygote</span> (baby cell) → <span class="hl-term">Seed</span> (baby + food + protection) → <span class="hl-term">Fruit</span> (protective cover)</li>
+<li><span class="hl-term">Germination</span> — when a seed gets water, air, and warmth, it sprouts. The <span class="hl-term">radicle</span> (tiny root) grows down, and the <span class="hl-term">plumule</span> (tiny shoot) grows up</li>
+<li><span class="hl-term">Seed dispersal</span> — seeds spread away from the parent plant to avoid overcrowding. Methods: <span class="hl-term">Wind</span> (dandelion, maple — light with wings/parachutes), <span class="hl-term">Water</span> (coconut — fibrous outer layer floats), <span class="hl-term">Animals</span> (mango, guava — fruit eaten, seed passes through; or burrs like Xanthium stick to fur), <span class="hl-term">Explosion</span> (balsam, pea — pods burst open and throw seeds)</li>
+</ul>
+
+<div class="fact-box">
+<div class="fact-box-title"><i class="fa-solid fa-star"></i> Why Seed Dispersal Matters</div>
+<div class="fact-box-content">If seeds all fall under the parent tree, they'd compete for water, sunlight, and minerals. Most would die. <span class="hl-term">Dispersal</span> helps seeds reach new places with space, sunlight, and fewer competitors. That's why coconuts can float across oceans and dandelion seeds fly for kilometers!</div>
+</div>
+</section>
+
+<!-- SEC 9: MCQs -->
+<section id="sec9" class="gradient-card-1 glow-card mb-6 fade-in">
+<h2 class="section-heading"><i class="fa-solid fa-question-circle text-emerald-400"></i> 9. Practice MCQs</h2>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">1. Which part of the plant absorbs water and minerals?</div><div class="mcq-opt">A) Leaf</div><div class="mcq-opt">B) Stem</div><div class="mcq-opt">C) Root</div><div class="mcq-opt">D) Flower</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Root — root hairs absorb water & minerals from soil</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">2. Which type of root system does wheat have?</div><div class="mcq-opt">A) Taproot</div><div class="mcq-opt">B) Fibrous root</div><div class="mcq-opt">C) Prop root</div><div class="mcq-opt">D) Storage root</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Fibrous root — wheat is a monocot with parallel venation and fibrous roots</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">3. The process of making food in plants is called:</div><div class="mcq-opt">A) Respiration</div><div class="mcq-opt">B) Photosynthesis</div><div class="mcq-opt">C) Transpiration</div><div class="mcq-opt">D) Germination</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Photosynthesis — uses CO₂ + water + sunlight + chlorophyll to make glucose + O₂</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">4. The green pigment in leaves that traps sunlight is called:</div><div class="mcq-opt">A) Chloroplast</div><div class="mcq-opt">B) Chlorophyll</div><div class="mcq-opt">C) Xylem</div><div class="mcq-opt">D) Stomata</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Chlorophyll — green pigment found in chloroplasts</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">5. Which part of the flower becomes the fruit?</div><div class="mcq-opt">A) Stigma</div><div class="mcq-opt">B) Ovary</div><div class="mcq-opt">C) Petal</div><div class="mcq-opt">D) Anther</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Ovary — after fertilization, ovary develops into fruit, ovules become seeds</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">6. Which plant tissue conducts water upward?</div><div class="mcq-opt">A) Phloem</div><div class="mcq-opt">B) Xylem</div><div class="mcq-opt">C) Parenchyma</div><div class="mcq-opt">D) Collenchyma</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Xylem — conducts water & minerals from roots upward (X = "X-tra Up")</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">7. Reticulate venation is found in which type of plants?</div><div class="mcq-opt">A) Monocots</div><div class="mcq-opt">B) Dicots</div><div class="mcq-opt">C) Both</div><div class="mcq-opt">D) Neither</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Dicots — net-like veins, taproot system (e.g., mango, rose, sunflower)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">8. Which of the following is NOT a method of seed dispersal?</div><div class="mcq-opt">A) Wind</div><div class="mcq-opt">B) Water</div><div class="mcq-opt">C) Photosynthesis</div><div class="mcq-opt">D) Animals</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: C) Photosynthesis is food-making — not seed dispersal. Others are: wind (dandelion), water (coconut), animals (mango), explosion (balsam)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">9. The loss of water vapor from leaves is called:</div><div class="mcq-opt">A) Transportation</div><div class="mcq-opt">B) Transpiration</div><div class="mcq-opt">C) Translocation</div><div class="mcq-opt">D) Transformation</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Transpiration — water evaporates through stomata; creates suction pull for water transport</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">10. Which of these is an insectivorous plant?</div><div class="mcq-opt">A) Cactus</div><div class="mcq-opt">B) Pitcher plant</div><div class="mcq-opt">C) Mango</div><div class="mcq-opt">D) Cuscuta</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Pitcher plant — catches insects for nitrogen. Cuscuta is parasitic, cactus has spines, mango is normal</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">11. The male part of a flower (stamen) consists of:</div><div class="mcq-opt">A) Stigma + Style</div><div class="mcq-opt">B) Anther + Filament</div><div class="mcq-opt">C) Ovary + Ovules</div><div class="mcq-opt">D) Petals + Sepals</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Anther (produces pollen) + Filament (stalk) = Stamen (male reproductive part)</div></div>
+<div class="mcq-block" onclick="toggleAns(this)"><div class="mcq-q">12. Potato is an example of which modified stem?</div><div class="mcq-opt">A) Rhizome</div><div class="mcq-opt">B) Tuber</div><div class="mcq-opt">C) Bulb</div><div class="mcq-opt">D) Runner</div><div class="mcq-ans"><i class="fa-solid fa-check-circle text-green-400 mr-1"></i> Answer: B) Tuber — underground stem with "eyes" (buds). Ginger = rhizome, Onion = bulb, Grass = runner</div></div>
+</section>
+<div class="text-center text-gray-500 text-xs py-6 border-t border-gray-800 mt-6"><i class="fa-solid fa-leaf text-emerald-400/50 mr-2"></i>Plant Biology · NCERT Science Notes · Class 6-10<br>Made simple for revision · Click MCQs to reveal answers</div></div>
+<script>
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.1 });
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+function toggleAns(el) { const ans = el.querySelector(".mcq-ans"); if (ans) ans.classList.toggle("show"); }
+function toggleMenu() { const m = document.getElementById("nav-menu"); const i = document.getElementById("hamburger-icon"); m.classList.toggle("hidden"); i.classList.toggle("fa-bars"); i.classList.toggle("fa-times"); }
+</script>
+</body>
+</html>
